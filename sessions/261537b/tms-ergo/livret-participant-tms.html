@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Livret participant — Ergonomie et Prévention des TMS — Version imprimable V5</title>
+<style>
+
+/* ===== VARIABLES CSS ===== */
+:root {
+  /* Couleurs institutionnelles */
+  --charbon-consulteam: #4b4b4b;
+  --rose-consulteam: #e5007d;
+  --rose-consulteam: #f9b000;
+
+  /* Neutrales */
+  --gris-50: #f8fafb;
+  --gris-100: #f1f5f9;
+  --gris-200: #e2e8f0;
+  --gris-300: #cbd5e1;
+  --gris-500: #64748b;
+  --gris-700: #334155;
+  --gris-800: #1e293b;
+
+  /* Sémantiques */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+
+  /* Typographie */
+  --font-base: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  /* Espacements */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Effets */
+  --radius: 8px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-base);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--gris-800);
+  background: var(--gris-50);
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: white;
+  border-bottom: 3px solid var(--charbon-consulteam);
+  padding: var(--space-lg) 0;
+  margin-bottom: var(--space-xl);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.logos {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+  object-fit: contain;
+}
+
+.title-area {
+  flex: 1;
+  min-width: 300px;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--charbon-consulteam);
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--gris-500);
+  margin-bottom: var(--space-md);
+}
+
+.meta-info {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: var(--gris-500);
+}
+
+.badge {
+  background: var(--gris-100);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* ===== NAVIGATION ===== */
+.nav-bar {
+  background: white;
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--space-xl);
+  position: sticky;
+  top: var(--space-md);
+  z-index: 100;
+}
+
+.nav-controls {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 16px;
+  border: 2px solid var(--gris-200);
+  border-radius: var(--radius);
+  font-family: var(--font-base);
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--charbon-consulteam);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-base);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--charbon-consulteam);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #004070;
+}
+
+.btn-secondary {
+  background: var(--rose-consulteam);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #008c82;
+}
+
+.btn-outline {
+  background: white;
+  border: 2px solid var(--gris-300);
+  color: var(--gris-700);
+}
+
+.btn-outline:hover {
+  background: var(--gris-50);
+  border-color: var(--gris-500);
+}
+
+/* ===== SOMMAIRE ===== */
+.sommaire {
+  background: white;
+  padding: var(--space-lg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--space-xl);
+}
+
+.sommaire h2 {
+  color: var(--charbon-consulteam);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--gris-200);
+}
+
+.sommaire-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.sommaire-item {
+  padding: var(--space-md);
+  background: var(--gris-50);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--charbon-consulteam);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sommaire-item:hover {
+  background: white;
+  box-shadow: var(--shadow);
+  transform: translateX(4px);
+}
+
+.sommaire-item h3 {
+  color: var(--charbon-consulteam);
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.sommaire-item p {
+  font-size: 0.9rem;
+  color: var(--gris-500);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  background: white;
+  padding: var(--space-xl);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--space-xl);
+}
+
+.section-header {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 3px solid var(--charbon-consulteam);
+}
+
+.section-number {
+  display: inline-block;
+  background: var(--charbon-consulteam);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+  margin-right: var(--space-sm);
+}
+
+.section-title {
+  display: inline;
+  font-size: 1.8rem;
+  color: var(--charbon-consulteam);
+  font-weight: 700;
+}
+
+.section h3 {
+  color: var(--rose-consulteam);
+  font-size: 1.3rem;
+  margin: var(--space-lg) 0 var(--space-md);
+  font-weight: 700;
+}
+
+.section h4 {
+  color: var(--gris-700);
+  font-size: 1.1rem;
+  margin: var(--space-md) 0 var(--space-sm);
+  font-weight: 600;
+}
+
+.section p {
+  margin-bottom: var(--space-md);
+  text-align: justify;
+}
+
+.section ul, .section ol {
+  margin: var(--space-md) 0;
+  padding-left: var(--space-xl);
+}
+
+.section li {
+  margin-bottom: var(--space-sm);
+}
+
+/* ===== ENCADRÉS ===== */
+.info-box {
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  margin: var(--space-lg) 0;
+  border-left: 4px solid;
+}
+
+.info-box.important {
+  background: #fef2f2;
+  border-color: var(--danger);
+}
+
+.info-box.warning {
+  background: #fef3c7;
+  border-color: var(--warning);
+}
+
+.info-box.success {
+  background: #d1fae5;
+  border-color: var(--success);
+}
+
+.info-box.info {
+  background: #dbeafe;
+  border-color: var(--charbon-consulteam);
+}
+
+.info-box strong {
+  display: block;
+  margin-bottom: var(--space-sm);
+  font-weight: 700;
+}
+
+/* ===== STATISTIQUES ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
+}
+
+.stat-card {
+  text-align: center;
+  padding: var(--space-lg);
+  background: linear-gradient(135deg, var(--charbon-consulteam), #004070);
+  color: white;
+  border-radius: var(--radius);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: var(--space-sm);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* ===== SCHÉMAS ANATOMIQUES ===== */
+.anatomie-container {
+  margin: var(--space-xl) 0;
+  padding: var(--space-lg);
+  background: var(--gris-50);
+  border-radius: var(--radius);
+}
+
+.anatomie-svg {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ===== EXERCICES ===== */
+.exercice {
+  background: var(--gris-50);
+  padding: var(--space-lg);
+  border-radius: var(--radius);
+  margin: var(--space-lg) 0;
+  border: 2px solid var(--rose-consulteam);
+}
+
+.exercice-title {
+  color: var(--rose-consulteam);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  font-size: 1.2rem;
+}
+
+.question {
+  margin: var(--space-md) 0;
+  padding: var(--space-md);
+  background: white;
+  border-radius: var(--radius);
+}
+
+.question-text {
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.reponse {
+  margin-left: var(--space-lg);
+  padding: var(--space-sm);
+  cursor: pointer;
+}
+
+.reponse input[type="checkbox"] {
+  margin-right: var(--space-sm);
+}
+
+/* ===== CITATIONS ===== */
+.citation {
+  border-left: 4px solid var(--charbon-consulteam);
+  padding: var(--space-md);
+  margin: var(--space-lg) 0;
+  background: var(--gris-50);
+  font-style: italic;
+}
+
+.citation-source {
+  display: block;
+  margin-top: var(--space-sm);
+  font-style: normal;
+  font-weight: 600;
+  color: var(--gris-500);
+  font-size: 0.9rem;
+}
+
+/* ===== TABLEAUX ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-lg) 0;
+}
+
+thead {
+  background: var(--charbon-consulteam);
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--gris-200);
+}
+
+tbody tr:hover {
+  background: var(--gris-50);
+}
+
+/* ===== IMAGES & FIGURES ===== */
+figure {
+  margin: var(--space-xl) 0;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: var(--space-sm);
+  font-size: 0.9rem;
+  color: var(--gris-500);
+  font-style: italic;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--gris-800);
+  color: white;
+  padding: var(--space-xl) 0;
+  margin-top: var(--space-xl);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: center;
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .nav-controls {
+    flex-direction: column;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+}
+
+/* ===== IMPRESSION ===== */
+@media print {
+  body {
+    background: white;
+  }
+
+  .nav-bar, .btn, .footer {
+    display: none;
+  }
+
+  .section {
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid var(--gris-300);
+  }
+
+  .section-header {
+    page-break-after: avoid;
+  }
+}
+
+</style>
+<style>
+
+/* =========================
+   PRINT PACK (A4) — v3
+   Découpage revu : chapitres (h2) maîtrisés, moins de blancs, sections longues segmentées.
+   ========================= */
+@page { size: A4; margin: 12mm 12mm 14mm 12mm; }
+
+@media print {
+  html, body { background: #fff !important; }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a { color: inherit; text-decoration: none; }
+  a[href^="http"]:after { content: " (" attr(href) ")"; font-size: 9pt; color: #555; }
+  .no-print, nav, header, footer, .floating-btn, .scroll-top, .topbar, .controls, .searchbar { display:none !important; }
+
+  body { font-size: 11pt; line-height: 1.35; }
+  h1 { font-size: 20pt; }
+  h2 { font-size: 15pt; margin-top: 10mm; }
+  h3 { font-size: 12.5pt; margin-top: 6mm; }
+
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+  p, li { orphans: 3; widows: 3; }
+}
+
+.print-shell { max-width: 980px; margin: 0 auto; padding: 0; }
+
+@media print {
+  .print-running {
+    position: fixed; left: 0; right: 0; top: 0;
+    padding: 6mm 12mm 0 12mm;
+    font-size: 9pt; color: #333;
+    display:flex; justify-content:space-between;
+    z-index: 9999;
+  }
+  .print-running .brand { font-weight:700; color:#0b3a67; }
+  .print-running .doc { color:#555; }
+}
+
+.cover-inner, .back-inner {
+  border: 2px solid #0b3a67;
+  border-radius: 14px;
+  padding: 26mm 18mm;
+  min-height: 255mm;
+  position: relative;
+}
+.cover-kicker { font-weight: 700; letter-spacing: .02em; color: #0b3a67; text-transform: uppercase; font-size: 11pt; }
+.cover-title { margin-top: 10mm; font-size: 28pt; line-height: 1.05; color:#0b3a67; }
+.cover-sub { margin-top: 4mm; font-size: 13pt; color:#d77b00; font-weight:700; }
+.cover-meta { margin-top: 16mm; font-size: 11pt; display:grid; gap: 6mm; }
+.cover-credits { margin-top: 14mm; font-size: 10.5pt; color:#333; border-left: 4px solid #d77b00; padding-left: 8mm; }
+.cover-footer {
+  position:absolute; left: 18mm; right: 18mm; bottom: 14mm;
+  display:flex; justify-content:space-between; font-size: 10pt; color:#333;
+  border-top: 1px solid #dfe7f2; padding-top: 6mm;
+}
+.back-note { margin-top: 10mm; padding: 8mm; border-radius: 12px; background: #f4f8ff; border: 1px solid #dfe7f2; }
+
+/* TOC */
+.toc { padding-left: 18px; }
+.toc li { margin: 6px 0; }
+.toc a { text-decoration: none; border-bottom: 1px dotted #c8d6ea; }
+.toc-num { display:inline-block; width: 22px; color:#0b3a67; font-weight:700; }
+
+/* Break rules — tuned to reduce whitespace */
+.page-break-before { break-before: page; page-break-before: always; }
+.page-break-after  { break-after: page; page-break-after: always; }
+/* Soft breaks used for long chapters (before certain h3) */
+.page-break-before-soft { break-before: page; page-break-before: always; }
+
+/* Keep together only for elements that should not split */
+figure, table, .info-box, .schema, svg, .stat-card, .print-answer {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* Chapters */
+.chapter { padding-top: 2mm; }
+/* Avoid cutting immediately after chapter title */
+.chapter > h2 + * { break-before: avoid; page-break-before: avoid; }
+
+/* Tables */
+@media print {
+  table { width: 100% !important; }
+  thead { display: table-header-group; }
+  tfoot { display: table-footer-group; }
+  tr, td, th { break-inside: avoid; page-break-inside: avoid; }
+}
+
+/* Print answers */
+@media print {
+  .print-answer {
+    margin-top: 4mm; margin-bottom: 6mm;
+    border: 1px solid #cfd9e6;
+    border-radius: 10px;
+    padding: 6mm;
+  }
+  .print-answer-label { font-weight:700; color:#0b3a67; margin-bottom: 3mm; }
+  .print-answer-lines {
+    min-height: 22mm;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 18px, rgba(207,217,230,1) 19px);
+    background-size: 100% 20px;
+  }
+}
+
+</style>
+<style>
+/* =========================
+   PRINT PATCH — v4
+   Objectif : corriger les découpages Chrome (flex/grid + blocs pédagogiques coupés)
+   ========================= */
+@media print {
+  /* Chrome coupe mal les flex/grid : on force en bloc pour l'impression */
+  .info-box, .stat-card, .section-header, .anatomie-container, .exercice, .question, .reponse,
+  .sommaire-item, .section {
+    display: block !important;
+  }
+
+  /* On évite les découpes au milieu des blocs pédagogiques */
+  .info-box, .stat-card, .anatomie-container, .exercice, .question, .reponse, .schema {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Images/SVG : pas de débordement + taille auto */
+  img, svg {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  svg { width: 100% !important; }
+
+  /* Titres : éviter qu'un H3 se retrouve seul en bas de page */
+  h3 { break-after: avoid !important; page-break-after: avoid !important; }
+  h3 + * { break-before: avoid !important; page-break-before: avoid !important; }
+
+  /* Liens : garder lisible en print */
+  a[href^="http"]:after { word-break: break-all; }
+
+  /* Petites respirations visuelles */
+  .info-box, .exercice { margin-top: 4mm !important; margin-bottom: 4mm !important; }
+}
+
+/* Désactive les soft breaks automatiques si trop agressifs */
+@media print {
+  .page-break-before-soft { break-before: auto !important; page-break-before: auto !important; }
+}
+
+
+/* =========================
+   PRINT PATCH — v5 (Chrome print stability)
+   Objectif : corriger les dernières erreurs de découpage (grids/cards/témoignages)
+   ========================= */
+@media print {
+
+  /* 1) Grids/Flex : Chrome coupe mal => on force un flux vertical stable */
+  .grid, .row, .columns, .col, .cards, .card-grid, .grid-2, .grid-3, .grid-4,
+  .two-col, .two-columns, .three-col, .three-columns,
+  .anatomie-container, .testimonials, .testimonials-grid, .temoignages, .temoignages-grid,
+  .stats-grid, .stat-grid, .kpi-grid {
+    display: block !important;
+  }
+
+  /* 2) Cartes : éviter les demi-cartes sur 2 pages */
+  .card, .stat-card, .info-box, .schema-card, .quote-card, .testimonial, .temoignage {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* 3) Sections sensibles : on évite qu’un titre parte en bas de page avec 1 carte derrière */
+  h2, h3 {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+  h2 + .cards, h2 + .card-grid, h2 + .grid, h2 + .row, h2 + .testimonials-grid, h2 + .temoignages-grid,
+  h3 + .cards, h3 + .card-grid, h3 + .grid, h3 + .row {
+    break-before: avoid !important;
+    page-break-before: avoid !important;
+  }
+
+  /* 4) Ajustement des espacements : réduit les “blancs” induits par margin/padding web */
+  .chapter { padding-top: 0 !important; }
+  h2 { margin-top: 7mm !important; }
+  h3 { margin-top: 4mm !important; }
+  .card, .info-box, figure, table, svg { margin-bottom: 4mm !important; }
+
+  /* 5) Images/SVG : bornage strict pour éviter débordements */
+  img, svg, figure img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  svg { max-height: 220mm !important; }
+
+  /* 6) Tables : éviter les lignes orphelines */
+  table { break-inside: auto !important; }
+  tr { break-inside: avoid !important; page-break-inside: avoid !important; }
+
+  /* 7) Témoignages : on force chaque carte à rester entière et on autorise le passage page suivante */
+  .testimonials-grid .card, .temoignages-grid .card,
+  .testimonials .card, .temoignages .card {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}
+</style></head>
+<body>
+<div class="print-running no-print">
+<div class="brand">Livret participant — Ergonomie et Prévention des TMS</div>
+<div class="doc">Benoît Deflandre — Consulteam • Consulteam</div>
+</div>
+<div class="print-shell">
+<section class="cover page-break-after">
+<div class="cover-inner">
+<div class="cover-kicker">Consulteam • Consulteam</div>
+<h1 class="cover-title">Livret participant — Ergonomie et Prévention des TMS</h1>
+<div class="cover-sub">Version imprimable — livret participant (V5)</div>
+<div class="cover-meta">
+<div><strong>Session :</strong> ____________________</div>
+<div><strong>Groupe :</strong> ____________________</div>
+<div><strong>Dates :</strong> ____________________</div>
+<div><strong>Formateur :</strong> ____________________</div>
+</div>
+<div class="cover-credits">Benoît Deflandre — Consulteam • Consulteam</div>
+<div class="cover-footer">
+<span>Document pédagogique — impression A4</span>
+<span class="cover-date">Date : ____ / ____ / ______</span>
+</div>
+</div>
+</section>
+<section class="page-break-after">
+<h2>Sommaire</h2>
+<p class="muted">Sommaire cliquable en PDF (si impression “Enregistrer en PDF”).</p>
+<ol class="toc">
+<li class="toc-l2"><a href="#sommaire"><span class="toc-num">1.</span> 📑 Sommaire</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#1-comprendre-les-tms">1. Comprendre les TMS</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#2-situations-risque">2. Situations à risque</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#3-pr-vention">3. Prévention</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#4-mise-en-pratique">4. Mise en pratique</a></li>
+<li class="toc-l2"><a href="#comprendre-les-tms"><span class="toc-num">2.</span> Comprendre les TMS</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#qu-est-ce-qu-un-tms">Qu'est-ce qu'un TMS ?</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#anatomie-de-base">Anatomie de base</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#les-facteurs-de-risque">Les facteurs de risque</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#les-principales-pathologies">Les principales pathologies</a></li>
+<li class="toc-l2"><a href="#situations-risque-2"><span class="toc-num">3.</span> Situations à risque</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#les-postures-contraignantes">Les postures contraignantes</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#les-gestes-r-p-titifs">Les gestes répétitifs</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#la-manutention-de-charges">La manutention de charges</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#l-environnement-de-travail">L'environnement de travail</a></li>
+<li class="toc-l2"><a href="#pr-vention"><span class="toc-num">4.</span> Prévention</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#principes-d-conomie-d-effort">Principes d'économie d'effort</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#am-nagement-du-poste-de-travail">Aménagement du poste de travail</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#chauffements-et-tirements">Échauffements et étirements</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#organisation-du-travail">Organisation du travail</a></li>
+<li class="toc-l2"><a href="#mise-en-pratique"><span class="toc-num">5.</span> Mise en pratique</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#tudes-de-cas-m-tier">Études de cas métier</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#exercices-d-application">Exercices d'application</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#t-moignages-de-stagiaires">Témoignages de stagiaires</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#auto-valuation-de-mon-poste">Auto-évaluation de mon poste</a></li>
+<li class="toc-l3" style="margin-left:18px"><a href="#ressources-et-contacts">Ressources et contacts</a></li>
+</ol>
+</section>
+<section class="page-break-before">
+<h2>Contenu</h2>
+<p class="muted">Version optimisée pour impression A4 (découpage revu). Pour un rendu “livret”, exportez en PDF puis imprimez en 2 pages par feuille (recto/verso) si besoin.</p>
+</section>
+<body><div class="print-content"><section class="preface">
+<!-- HEADER -->
+<header class="header">
+<div class="container">
+<div class="header-content">
+<div class="logos"><img alt="Consulteam" class="logo-img" src="images/logo-consulteam.png"/></div>
+<div class="title-area">
+<h1 class="main-title" id="ergonomie-et-pr-vention-des-tms">Ergonomie et Prévention des TMS</h1>
+<p class="subtitle">Livret participant — Formation Professionnelle</p>
+<div class="meta-info">
+<span class="badge">📚 16 modules</span>
+<span class="badge">⏱️ ~4h de formation</span>
+<span class="badge">✅ Repères INRS</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- NAVIGATION -->
+<div class="container">
+<nav class="nav-bar">
+</nav>
+<!-- SOMMAIRE -->
+<section class="sommaire">
+<h2 id="sommaire">📑 Sommaire</h2>
+<div class="sommaire-grid">
+<div class="sommaire-item" onclick="scrollToSection('comprendre-tms')">
+<h3 id="1-comprendre-les-tms">1. Comprendre les TMS</h3>
+<p>Définition, anatomie, facteurs de risque</p>
+</div>
+<div class="sommaire-item" onclick="scrollToSection('situations-risque')">
+<h3 id="2-situations-risque">2. Situations à risque</h3>
+<p>Postures, gestes, manutention</p>
+</div>
+<div class="sommaire-item" onclick="scrollToSection('prevention')">
+<h3 id="3-pr-vention">3. Prévention</h3>
+<p>Principes, aménagement, exercices</p>
+</div>
+<div class="sommaire-item" onclick="scrollToSection('pratique')">
+<h3 id="4-mise-en-pratique">4. Mise en pratique</h3>
+<p>Cas métier, exercices, évaluation</p>
+</div>
+</div>
+</section>
+<!-- SECTION 1 : COMPRENDRE LES TMS -->
+<section class="section" id="comprendre-tms">
+<div class="section-header">
+<span class="section-number">1</span>
+<h2 class="section-title" id="comprendre-les-tms">Comprendre les TMS</h2>
+</div>
+<h3 id="qu-est-ce-qu-un-tms">Qu'est-ce qu'un TMS ?</h3>
+<p>
+      Les <strong>Troubles Musculo-Squelettiques (TMS)</strong> sont des affections qui touchent les muscles, les tendons, les nerfs et les articulations. Ils se manifestent principalement au niveau des membres supérieurs (épaules, coudes, poignets, mains) et de la colonne vertébrale (dos, nuque).
+    </p>
+<div class="info-box important">
+<strong>⚠️ Première cause de maladie professionnelle en France</strong>
+      Les TMS représentent 87% des maladies professionnelles reconnues et sont responsables de millions de journées de travail perdues chaque année.
+    </div>
+<div class="stats-grid">
+<div class="stat-card">
+<div class="stat-number">87%</div>
+<div class="stat-label">Des maladies professionnelles</div>
+</div>
+<div class="stat-card" style="background: linear-gradient(135deg, var(--rose-consulteam), #008c82);">
+<div class="stat-number">10M</div>
+<div class="stat-label">Journées perdues/an</div>
+</div>
+<div class="stat-card" style="background: linear-gradient(135deg, var(--rose-consulteam), #d99d00);">
+<div class="stat-number">2 Mds€</div>
+<div class="stat-label">Coût annuel</div>
+</div>
+</div>
+<h3 id="anatomie-de-base">Anatomie de base</h3>
+<p>
+      Pour comprendre les TMS, il est essentiel de connaître les principales structures du corps humain sollicitées dans le travail quotidien.
+    </p>
+<h4>La colonne vertébrale</h4>
+<p>
+      La colonne vertébrale est composée de 33 vertèbres empilées, séparées par des disques intervertébraux qui jouent le rôle d'amortisseurs. Elle se divise en 5 régions :
+    </p>
+<ul>
+<li><strong>Cervicales (7 vertèbres)</strong> : Support de la tête, grande mobilité</li>
+<li><strong>Dorsales (12 vertèbres)</strong> : Protection du thorax, attachement des côtes</li>
+<li><strong>Lombaires (5 vertèbres)</strong> : Zone la plus sollicitée, 87% des TMS du dos</li>
+<li><strong>Sacrées (5 vertèbres soudées)</strong> : Base de la colonne, transmission des forces</li>
+<li><strong>Coccyx (4 vertèbres soudées)</strong> : Vestige évolutif</li>
+</ul>
+<div class="anatomie-container">
+<svg class="anatomie-svg" viewbox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+<!-- Colonne vertébrale simplifiée -->
+<defs>
+<lineargradient id="vertebreGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1"></stop>
+<stop offset="100%" style="stop-color:#b3d9e8;stop-opacity:1"></stop>
+</lineargradient>
+</defs>
+<rect fill="#f8fafb" height="600" rx="8" width="400"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="18" font-weight="700" text-anchor="middle" x="200" y="30">Colonne vertébrale</text>
+<!-- Cervicales -->
+<text fill="#005a8c" font-family="Segoe UI" font-size="14" font-weight="600" x="50" y="80">Cervicales</text>
+<ellipse cx="200" cy="90" fill="url(#vertebreGrad)" rx="30" ry="12" stroke="#005a8c" stroke-width="1.5"></ellipse>
+<ellipse cx="200" cy="120" fill="url(#vertebreGrad)" rx="30" ry="12" stroke="#005a8c" stroke-width="1.5"></ellipse>
+<ellipse cx="200" cy="150" fill="url(#vertebreGrad)" rx="30" ry="12" stroke="#005a8c" stroke-width="1.5"></ellipse>
+<!-- Dorsales -->
+<text fill="#005a8c" font-family="Segoe UI" font-size="14" font-weight="600" x="50" y="220">Dorsales</text>
+<path d="M 210 180 Q 190 260 200 340" fill="none" stroke="#005a8c" stroke-width="3"></path>
+<ellipse cx="205" cy="220" fill="url(#vertebreGrad)" rx="32" ry="14" stroke="#005a8c" stroke-width="1.5"></ellipse>
+<ellipse cx="200" cy="270" fill="url(#vertebreGrad)" rx="32" ry="14" stroke="#005a8c" stroke-width="1.5"></ellipse>
+<!-- Lombaires (zone à risque) -->
+<text fill="#f9b000" font-family="Segoe UI" font-size="14" font-weight="600" x="50" y="380">Lombaires</text>
+<rect fill="#fef3c7" height="60" opacity="0.3" rx="4" stroke="#f9b000" stroke-width="2" width="110" x="40" y="390"></rect>
+<path d="M 200 340 Q 215 400 205 460" fill="none" stroke="#f9b000" stroke-width="3"></path>
+<ellipse cx="207" cy="380" fill="url(#vertebreGrad)" rx="38" ry="16" stroke="#f9b000" stroke-width="2"></ellipse>
+<ellipse cx="210" cy="420" fill="url(#vertebreGrad)" rx="38" ry="16" stroke="#f9b000" stroke-width="2"></ellipse>
+<text fill="#f9b000" font-family="Segoe UI" font-size="11" font-weight="600" x="280" y="420">⚠️ 87% des TMS</text>
+<!-- Sacrum -->
+<text fill="#005a8c" font-family="Segoe UI" font-size="14" font-weight="600" x="50" y="510">Sacrum</text>
+<path d="M 205 460 L 200 520" fill="none" stroke="#005a8c" stroke-width="3"></path>
+<ellipse cx="200" cy="500" fill="url(#vertebreGrad)" rx="35" ry="20" stroke="#005a8c" stroke-width="1.5"></ellipse>
+</svg>
+</div>
+<h4>L'épaule et le membre supérieur</h4>
+<p>
+      L'épaule est l'articulation la plus mobile du corps humain, mais aussi l'une des plus vulnérables aux TMS. Elle comprend plusieurs structures :
+    </p>
+<ul>
+<li><strong>La coiffe des rotateurs</strong> : 4 muscles permettant la rotation et l'élévation du bras</li>
+<li><strong>L'articulation gléno-humérale</strong> : Entre l'omoplate et l'humérus</li>
+<li><strong>Le coude</strong> : Articulation complexe sollicitée dans les gestes répétitifs</li>
+<li><strong>Le poignet et la main</strong> : 27 os, zones sensibles (canal carpien)</li>
+</ul>
+<div class="anatomie-container">
+<svg class="anatomie-svg" viewbox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f8fafb" height="400" rx="8" width="400"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="18" font-weight="700" text-anchor="middle" x="200" y="30">Anatomie de l'épaule</text>
+<!-- Omoplate -->
+<path d="M 150 180 Q 120 200 130 260 L 160 280 Q 170 250 160 220 Z" fill="#b3d9e8" stroke="#005a8c" stroke-width="2"></path>
+<text fill="#005a8c" font-family="Segoe UI" font-size="10" font-weight="600" x="145" y="240">Omoplate</text>
+<!-- Clavicule -->
+<ellipse cx="220" cy="120" fill="#b3d9e8" rx="60" ry="8" stroke="#005a8c" stroke-width="2"></ellipse>
+<text fill="#005a8c" font-family="Segoe UI" font-size="10" font-weight="600" text-anchor="middle" x="220" y="110">Clavicule</text>
+<!-- Tête humérale -->
+<circle cx="200" cy="160" fill="#e8f4f8" r="35" stroke="#005a8c" stroke-width="2"></circle>
+<text fill="#005a8c" font-family="Segoe UI" font-size="9" text-anchor="middle" x="200" y="165">Tête</text>
+<text fill="#005a8c" font-family="Segoe UI" font-size="9" text-anchor="middle" x="200" y="177">humérale</text>
+<!-- Humérus -->
+<rect fill="#b3d9e8" height="120" rx="4" stroke="#005a8c" stroke-width="2" width="30" x="185" y="195"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="10" font-weight="600" text-anchor="middle" x="200" y="260">Humérus</text>
+<!-- Coiffe des rotateurs -->
+<path d="M 160 140 Q 180 135 200 140" fill="none" stroke="#10b981" stroke-width="4"></path>
+<path d="M 200 140 Q 220 135 240 140" fill="none" stroke="#10b981" stroke-width="4"></path>
+<text fill="#059669" font-family="Segoe UI" font-size="9" font-weight="600" text-anchor="middle" x="200" y="130">Sus-épineux</text>
+<path d="M 165 160 Q 180 155 200 160" fill="none" stroke="#3b82f6" stroke-width="3"></path>
+<text fill="#1d4ed8" font-family="Segoe UI" font-size="8" x="180" y="175">Sous-épineux</text>
+<path d="M 165 180 Q 180 178 195 180" fill="none" stroke="#8b5cf6" stroke-width="3"></path>
+<text fill="#6d28d9" font-family="Segoe UI" font-size="8" x="175" y="195">Petit rond</text>
+<!-- Zone de conflit -->
+<ellipse cx="200" cy="145" fill="none" rx="30" ry="15" stroke="#dc2626" stroke-dasharray="4,3" stroke-width="2"></ellipse>
+<text fill="#dc2626" font-family="Segoe UI" font-size="10" font-weight="600" x="250" y="145">⚠️ Zone de conflit</text>
+<line stroke="#dc2626" stroke-width="1.5" x1="230" x2="248" y1="145" y2="145"></line>
+<!-- Légende -->
+<rect fill="white" height="60" rx="4" stroke="#cbd5e1" stroke-width="1" width="360" x="20" y="330"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="12" font-weight="700" text-anchor="middle" x="200" y="350">Muscles de la coiffe des rotateurs</text>
+<line stroke="#10b981" stroke-width="3" x1="30" x2="50" y1="365" y2="365"></line>
+<text fill="#475569" font-family="Segoe UI" font-size="10" x="55" y="369">Sus-épineux (abduction)</text>
+<line stroke="#3b82f6" stroke-width="3" x1="220" x2="240" y1="365" y2="365"></line>
+<text fill="#475569" font-family="Segoe UI" font-size="10" x="245" y="369">Sous-épineux</text>
+</svg>
+</div>
+<h3 id="les-facteurs-de-risque">Les facteurs de risque</h3>
+<p>
+      Les TMS résultent d'une combinaison de plusieurs facteurs. On distingue trois grandes catégories :
+    </p>
+<h4>1. Facteurs biomécaniques</h4>
+<ul>
+<li><strong>Répétitivité</strong> : Répétition des mêmes gestes plusieurs fois par minute</li>
+<li><strong>Force</strong> : Efforts physiques importants, port de charges lourdes</li>
+<li><strong>Postures contraignantes</strong> : Positions articulaires extrêmes, maintenues longtemps</li>
+<li><strong>Vibrations</strong> : Utilisation d'outils vibrants</li>
+<li><strong>Froid</strong> : Température ambiante basse affectant la dextérité</li>
+</ul>
+<h4>2. Facteurs organisationnels</h4>
+<ul>
+<li>Cadences de travail élevées et pression temporelle</li>
+<li>Absence de pauses ou temps de récupération insuffisants</li>
+<li>Monotonie des tâches et manque de variété</li>
+<li>Manque d'autonomie dans l'organisation du travail</li>
+</ul>
+<h4>3. Facteurs psychosociaux</h4>
+<ul>
+<li>Stress et charge mentale élevée</li>
+<li>Manque de reconnaissance du travail accompli</li>
+<li>Relations difficiles avec la hiérarchie ou les collègues</li>
+<li>Insécurité de l'emploi</li>
+</ul>
+<div class="citation">
+      "La prévention des TMS nécessite une approche globale intégrant les dimensions physique, organisationnelle et psychosociale du travail."
+      <span class="citation-source">— INRS, Démarche de prévention des TMS (ED 6518)</span>
+</div>
+<h3 id="les-principales-pathologies">Les principales pathologies</h3>
+<p>
+      Les TMS regroupent plusieurs pathologies distinctes, affectant différentes parties du corps :
+    </p>
+<table>
+<thead>
+<tr>
+<th>Pathologie</th>
+<th>Localisation</th>
+<th>Symptômes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lombalgie</strong></td>
+<td>Bas du dos</td>
+<td>Douleur, raideur, limitation des mouvements</td>
+</tr>
+<tr>
+<td><strong>Tendinite de l'épaule</strong></td>
+<td>Épaule, coiffe des rotateurs</td>
+<td>Douleur à la mobilisation, perte de force</td>
+</tr>
+<tr>
+<td><strong>Épicondylite</strong></td>
+<td>Coude</td>
+<td>Douleur externe du coude, faiblesse préhension</td>
+</tr>
+<tr>
+<td><strong>Syndrome du canal carpien</strong></td>
+<td>Poignet</td>
+<td>Fourmillements, engourdissements main</td>
+</tr>
+<tr>
+<td><strong>Cervicalgie</strong></td>
+<td>Nuque</td>
+<td>Douleur, raideur, maux de tête</td>
+</tr>
+</tbody>
+</table>
+<h4>Focus : La hernie discale</h4>
+<p>
+      La hernie discale est l'une des pathologies les plus invalidantes. Elle survient lorsque le noyau du disque intervertébral fait saillie et comprime un nerf.
+    </p>
+<div class="anatomie-container">
+<svg class="anatomie-svg" viewbox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialgradient id="disqueSain">
+<stop offset="0%" style="stop-color:#ffd700;stop-opacity:1"></stop>
+<stop offset="100%" style="stop-color:#ffa500;stop-opacity:1"></stop>
+</radialgradient>
+<radialgradient id="disqueHernie">
+<stop offset="0%" style="stop-color:#dc2626;stop-opacity:1"></stop>
+<stop offset="100%" style="stop-color:#991b1b;stop-opacity:1"></stop>
+</radialgradient>
+</defs>
+<rect fill="#f8fafb" height="350" rx="8" width="400"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="18" font-weight="700" text-anchor="middle" x="200" y="30">Hernie discale lombaire</text>
+<!-- PARTIE GAUCHE : Disque sain -->
+<text fill="#10b981" font-family="Segoe UI" font-size="14" font-weight="600" text-anchor="middle" x="100" y="60">Disque sain</text>
+<rect fill="#b3d9e8" height="30" rx="4" stroke="#005a8c" stroke-width="2" width="120" x="40" y="80"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="10" font-weight="600" text-anchor="middle" x="100" y="100">L4</text>
+<ellipse cx="100" cy="125" fill="url(#disqueSain)" rx="50" ry="15" stroke="#d97706" stroke-width="2"></ellipse>
+<ellipse cx="100" cy="125" fill="#fef3c7" opacity="0.6" rx="25" ry="8"></ellipse>
+<text fill="#78350f" font-family="Segoe UI" font-size="9" text-anchor="middle" x="100" y="128">Noyau</text>
+<rect fill="#b3d9e8" height="30" rx="4" stroke="#005a8c" stroke-width="2" width="120" x="40" y="140"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="10" font-weight="600" text-anchor="middle" x="100" y="160">L5</text>
+<line stroke="#10b981" stroke-width="1.5" x1="150" x2="190" y1="125" y2="105"></line>
+<text fill="#10b981" font-family="Segoe UI" font-size="10" x="195" y="105">Hauteur normale</text>
+<!-- PARTIE DROITE : Hernie -->
+<text fill="#dc2626" font-family="Segoe UI" font-size="14" font-weight="600" text-anchor="middle" x="300" y="60">Hernie discale</text>
+<rect fill="#b3d9e8" height="30" rx="4" stroke="#005a8c" stroke-width="2" width="120" x="240" y="80"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="10" font-weight="600" text-anchor="middle" x="300" y="100">L4</text>
+<ellipse cx="300" cy="122" fill="url(#disqueSain)" rx="50" ry="12" stroke="#d97706" stroke-width="2"></ellipse>
+<ellipse cx="330" cy="122" fill="url(#disqueHernie)" rx="15" ry="10" stroke="#991b1b" stroke-width="2"></ellipse>
+<path d="M 340 122 Q 350 122 355 125" fill="none" stroke="#dc2626" stroke-width="2"></path>
+<line stroke="#dc2626" stroke-width="3" x1="355" x2="370" y1="125" y2="160"></line>
+<line stroke="#fca5a5" stroke-width="1.5" x1="357" x2="372" y1="127" y2="162"></line>
+<rect fill="#b3d9e8" height="30" rx="4" stroke="#005a8c" stroke-width="2" width="120" x="240" y="134"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="10" font-weight="600" text-anchor="middle" x="300" y="154">L5</text>
+<text fill="#dc2626" font-family="Segoe UI" font-size="9" font-weight="600" x="340" y="105">Hernie</text>
+<text fill="#dc2626" font-family="Segoe UI" font-size="9" x="375" y="150">Nerf</text>
+<text fill="#dc2626" font-family="Segoe UI" font-size="9" x="375" y="162">comprimé</text>
+<!-- Symptômes -->
+<rect fill="white" height="130" rx="6" stroke="#cbd5e1" stroke-width="1" width="360" x="20" y="200"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="14" font-weight="700" text-anchor="middle" x="200" y="225">Symptômes et conséquences</text>
+<circle cx="40" cy="250" fill="#dc2626" r="5"></circle>
+<text fill="#1e293b" font-family="Segoe UI" font-size="11" x="55" y="254">Douleur lombaire intense (lombalgie)</text>
+<circle cx="40" cy="275" fill="#dc2626" r="5"></circle>
+<text fill="#1e293b" font-family="Segoe UI" font-size="11" x="55" y="279">Sciatique : douleur irradiant dans la jambe</text>
+<circle cx="40" cy="300" fill="#dc2626" r="5"></circle>
+<text fill="#1e293b" font-family="Segoe UI" font-size="11" x="55" y="304">Engourdissements, fourmillements, perte de force</text>
+<rect fill="#fef2f2" height="15" rx="3" width="340" x="30" y="310"></rect>
+<text fill="#991b1b" font-family="Segoe UI" font-size="10" font-weight="600" text-anchor="middle" x="200" y="320">⚠️ Urgence médicale si perte de contrôle sphinctérien</text>
+</svg>
+</div>
+</section>
+<!-- SECTION 2 : SITUATIONS À RISQUE -->
+<section class="section" id="situations-risque">
+<div class="section-header">
+<span class="section-number">2</span>
+<h2 class="section-title" id="situations-risque-2">Situations à risque</h2>
+</div>
+<h3 id="les-postures-contraignantes">Les postures contraignantes</h3>
+<p>
+      Une posture est dite contraignante lorsqu'elle éloigne une articulation de sa position neutre de confort. Ces postures augmentent considérablement le risque de TMS lorsqu'elles sont maintenues longtemps ou répétées fréquemment.
+    </p>
+<h4>Postures à risque pour le dos</h4>
+<ul>
+<li><strong>Flexion du tronc</strong> : Se pencher en avant au-delà de 30°</li>
+<li><strong>Torsion</strong> : Rotation du buste sans bouger les pieds</li>
+<li><strong>Extension prolongée</strong> : Cambrure excessive (travail bras levés)</li>
+<li><strong>Position assise prolongée</strong> : Sans soutien lombaire adapté</li>
+<li><strong>Position debout statique</strong> : Plus de 2 heures sans bouger</li>
+</ul>
+<div class="anatomie-container">
+<svg class="anatomie-svg" viewbox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f8fafb" height="300" rx="8" width="500"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="18" font-weight="700" text-anchor="middle" x="250" y="30">Port de charge : Postures comparées</text>
+<!-- MAUVAISE POSTURE -->
+<text fill="#dc2626" font-family="Segoe UI" font-size="14" font-weight="600" text-anchor="middle" x="120" y="60">❌ Mauvaise posture</text>
+<!-- Personnage penché -->
+<circle cx="120" cy="90" fill="#fca5a5" r="12" stroke="#dc2626" stroke-width="2"></circle>
+<path d="M 120 102 Q 140 140 120 180" fill="none" stroke="#dc2626" stroke-width="4"></path>
+<line stroke="#dc2626" stroke-width="3" x1="120" x2="90" y1="115" y2="130"></line>
+<line stroke="#dc2626" stroke-width="3" x1="120" x2="150" y1="115" y2="130"></line>
+<line stroke="#dc2626" stroke-width="3" x1="120" x2="90" y1="180" y2="220"></line>
+<line stroke="#dc2626" stroke-width="3" x1="120" x2="150" y1="180" y2="220"></line>
+<!-- Carton loin -->
+<rect fill="#fca5a5" height="25" stroke="#dc2626" stroke-width="2" width="30" x="140" y="200"></rect>
+<text fill="#991b1b" font-family="Segoe UI" font-size="10" text-anchor="middle" x="155" y="216">15kg</text>
+<!-- Flèches de contrainte -->
+<path d="M 125 140 Q 130 150 125 160" fill="none" marker-end="url(#arrow-red)" stroke="#dc2626" stroke-width="2"></path>
+<text fill="#dc2626" font-family="Segoe UI" font-size="10" x="140" y="155">Pression x10</text>
+<!-- Problèmes -->
+<rect fill="#fef2f2" height="50" rx="4" stroke="#dc2626" stroke-width="1" width="160" x="40" y="240"></rect>
+<text fill="#991b1b" font-family="Segoe UI" font-size="10" font-weight="600" text-anchor="middle" x="120" y="258">Problèmes :</text>
+<text fill="#991b1b" font-family="Segoe UI" font-size="9" text-anchor="middle" x="120" y="272">• Dos rond (hernie)</text>
+<text fill="#991b1b" font-family="Segoe UI" font-size="9" text-anchor="middle" x="120" y="284">• Jambes tendues</text>
+<!-- BONNE POSTURE -->
+<text fill="#10b981" font-family="Segoe UI" font-size="14" font-weight="600" text-anchor="middle" x="380" y="60">✅ Bonne posture</text>
+<!-- Personnage accroupi -->
+<circle cx="380" cy="90" fill="#a7f3d0" r="12" stroke="#10b981" stroke-width="2"></circle>
+<line stroke="#10b981" stroke-width="4" x1="380" x2="380" y1="102" y2="140"></line>
+<line stroke="#10b981" stroke-width="3" x1="380" x2="355" y1="115" y2="125"></line>
+<line stroke="#10b981" stroke-width="3" x1="380" x2="405" y1="115" y2="125"></line>
+<path d="M 380 140 Q 365 160 365 190" fill="none" stroke="#10b981" stroke-width="3"></path>
+<path d="M 380 140 Q 395 160 395 190" fill="none" stroke="#10b981" stroke-width="3"></path>
+<!-- Carton près du corps -->
+<rect fill="#a7f3d0" height="20" stroke="#10b981" stroke-width="2" width="25" x="370" y="125"></rect>
+<text fill="#059669" font-family="Segoe UI" font-size="9" text-anchor="middle" x="382" y="138">15kg</text>
+<!-- Flèches bonnes pratiques -->
+<path d="M 380 105 L 380 100" stroke="#10b981" stroke-width="2"></path>
+<text fill="#10b981" font-family="Segoe UI" font-size="9" x="350" y="108">Dos droit</text>
+<!-- Avantages -->
+<rect fill="#d1fae5" height="50" rx="4" stroke="#10b981" stroke-width="1" width="160" x="300" y="240"></rect>
+<text fill="#059669" font-family="Segoe UI" font-size="10" font-weight="600" text-anchor="middle" x="380" y="258">Avantages :</text>
+<text fill="#059669" font-family="Segoe UI" font-size="9" text-anchor="middle" x="380" y="272">• Dos droit protégé</text>
+<text fill="#059669" font-family="Segoe UI" font-size="9" text-anchor="middle" x="380" y="284">• Genoux fléchis (force)</text>
+<!-- Ligne de séparation -->
+<line stroke="#cbd5e1" stroke-dasharray="5,5" stroke-width="2" x1="250" x2="250" y1="50" y2="290"></line>
+</svg>
+</div>
+<div class="info-box warning">
+<strong>⚠️ La règle des 30°</strong>
+      Au-delà de 30° de flexion du tronc, la pression sur les disques lombaires augmente de 50%. C'est le seuil critique à partir duquel le risque de lombalgie augmente significativement.
+    </div>
+<h4>Postures à risque pour les membres supérieurs</h4>
+<ul>
+<li><strong>Bras levés au-dessus des épaules</strong> : Travail en hauteur prolongé</li>
+<li><strong>Coudes écartés du corps</strong> : Tension sur les épaules</li>
+<li><strong>Poignets en flexion/extension</strong> : Au-delà de 30°</li>
+<li><strong>Préhension en pince</strong> : Doigts en hyperextension</li>
+<li><strong>Tête penchée en avant</strong> : Travail sur écran mal positionné</li>
+</ul>
+<h3 id="les-gestes-r-p-titifs">Les gestes répétitifs</h3>
+<p>
+      Un geste est considéré comme répétitif lorsqu'il est effectué au moins 10 fois par minute ou que le cycle de travail dure moins de 30 secondes. La répétitivité devient problématique lorsqu'elle est associée à d'autres facteurs (force, posture).
+    </p>
+<div class="info-box important">
+<strong>🔄 Cycle de travail et répétitivité</strong>
+      Un cycle de travail de moins de 30 secondes, répété durant plus de 4 heures par jour, multiplie par 3 le risque de développer un TMS du membre supérieur.
+    </div>
+<h4>Secteurs particulièrement concernés</h4>
+<ul>
+<li><strong>Restauration</strong> : Découpe, épluchage, manipulation d'ustensiles</li>
+<li><strong>Aide à la personne</strong> : Transferts, toilettes, habillage</li>
+<li><strong>Travail sur écran</strong> : Frappe au clavier, utilisation souris</li>
+<li><strong>Industrie</strong> : Assemblage, conditionnement, manutention</li>
+</ul>
+<h3 id="la-manutention-de-charges">La manutention de charges</h3>
+<p>
+      Le port de charges est l'une des principales causes de lombalgies. Le risque dépend du poids, de la fréquence, de la distance et de la technique utilisée.
+    </p>
+<h4>Seuils réglementaires</h4>
+<table>
+<thead>
+<tr>
+<th>Population</th>
+<th>Limite ponctuelle</th>
+<th>Limite répétée</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Homme adulte</strong></td>
+<td>25 kg</td>
+<td>15 kg</td>
+</tr>
+<tr>
+<td><strong>Femme adulte</strong></td>
+<td>15 kg</td>
+<td>10 kg</td>
+</tr>
+<tr>
+<td><strong>Jeune (15-18 ans)</strong></td>
+<td>10 kg</td>
+<td>5 kg</td>
+</tr>
+</tbody>
+</table>
+<div class="info-box success">
+<strong>✅ Principe de base</strong>
+      Avant de soulever une charge, toujours se poser la question : "Puis-je utiliser une aide mécanique (diable, chariot, transpalette) ?" La meilleure prévention est d'éviter le port manuel.
+    </div>
+<h4>Facteurs aggravants</h4>
+<ul>
+<li>Distance de transport supérieure à 10 mètres</li>
+<li>Charge éloignée du corps (bras tendus)</li>
+<li>Charge volumineuse limitant la visibilité</li>
+<li>Prise difficile (surfaces glissantes, pas de poignées)</li>
+<li>Sol inégal ou encombré</li>
+<li>Travail en hauteur (en dessous des genoux ou au-dessus des épaules)</li>
+</ul>
+<h3 id="l-environnement-de-travail">L'environnement de travail</h3>
+<p>
+      L'aménagement de l'espace de travail et les conditions environnementales ont un impact direct sur le risque de TMS.
+    </p>
+<h4>Facteurs d'ambiance</h4>
+<ul>
+<li><strong>Froid</strong> : Réduit la dextérité, augmente la force nécessaire</li>
+<li><strong>Bruit</strong> : Génère du stress, fatigue mentale</li>
+<li><strong>Éclairage insuffisant</strong> : Provoque des postures compensatoires</li>
+<li><strong>Vibrations</strong> : Outils vibrants, véhicules</li>
+</ul>
+<h4>Organisation de l'espace</h4>
+<ul>
+<li>Zone de préhension : objets entre genoux et épaules</li>
+<li>Hauteur de plan de travail adaptée à l'activité</li>
+<li>Espaces de rangement accessibles sans flexion/torsion</li>
+<li>Circulation dégagée, pas d'obstacle</li>
+</ul>
+</section>
+<!-- SECTION 3 : PRÉVENTION -->
+<section class="section" id="prevention">
+<div class="section-header">
+<span class="section-number">3</span>
+<h2 class="section-title" id="pr-vention">Prévention</h2>
+</div>
+<h3 id="principes-d-conomie-d-effort">Principes d'économie d'effort</h3>
+<p>
+      L'économie d'effort consiste à accomplir une tâche en minimisant la sollicitation des structures corporelles. Ces principes sont issus de l'ergonomie et de la biomécanique.
+    </p>
+<h4>Les 9 principes fondamentaux</h4>
+<div class="info-box success">
+<strong>1. Rapprocher la charge du corps</strong>
+      Plus un objet est proche du centre de gravité, moins il demande d'effort. Une charge tenue à bout de bras sollicite 10 fois plus le dos qu'une charge collée au corps.
+    </div>
+<div class="info-box success">
+<strong>2. Fléchir les genoux, pas le dos</strong>
+      Les jambes sont 4 fois plus puissantes que le dos. Plier les genoux préserve la colonne vertébrale et utilise les muscles des cuisses.
+    </div>
+<div class="info-box success">
+<strong>3. Garder le dos droit</strong>
+      Maintenir les courbures naturelles de la colonne (lordose lombaire et cervicale) répartit uniformément les pressions sur les disques.
+    </div>
+<div class="info-box success">
+<strong>4. Éviter les torsions</strong>
+      Toujours pivoter avec les pieds, jamais avec le buste seul. La rotation combinée à la flexion est particulièrement dangereuse pour les disques.
+    </div>
+<div class="info-box success">
+<strong>5. Alterner les positions</strong>
+      Changer de position toutes les 30 minutes minimum. Varier entre debout, assis, marche réduit la fatigue musculaire.
+    </div>
+<div class="info-box success">
+<strong>6. Faire des pauses actives</strong>
+      Pauses courtes (2-3 min) toutes les heures avec mobilisations et étirements légers.
+    </div>
+<div class="info-box success">
+<strong>7. Utiliser les aides techniques</strong>
+      Chariots, transpalettes, plans inclinés, pinces de préhension... Tous les moyens pour éviter l'effort direct.
+    </div>
+<div class="info-box success">
+<strong>8. Organiser son poste</strong>
+      Ranger les objets fréquemment utilisés entre les hanches et les épaules. Éviter les flexions et élévations répétées.
+    </div>
+<div class="info-box success">
+<strong>9. Demander de l'aide</strong>
+      Porter à deux au-delà de 15 kg pour une femme, 25 kg pour un homme. Communiquer pour synchroniser les mouvements.
+    </div>
+<h3 id="am-nagement-du-poste-de-travail">Aménagement du poste de travail</h3>
+<h4>Poste debout</h4>
+<ul>
+<li><strong>Hauteur du plan de travail</strong> : 5-10 cm sous les coudes en position debout</li>
+<li><strong>Repose-pied</strong> : Permet d'alterner l'appui et soulager le dos</li>
+<li><strong>Tapis anti-fatigue</strong> : Réduit la pression sur les pieds et articulations</li>
+<li><strong>Chaussures adaptées</strong> : Semelles antidérapantes, soutien de la voûte plantaire</li>
+</ul>
+<h4>Poste assis</h4>
+<ul>
+<li><strong>Siège réglable</strong> : Hauteur, dossier, accoudoirs</li>
+<li><strong>Pieds à plat</strong> : Utiliser un repose-pieds si nécessaire</li>
+<li><strong>Angle cuisses-tronc</strong> : 90° ou légèrement ouvert (100-110°)</li>
+<li><strong>Soutien lombaire</strong> : Maintien de la courbure naturelle du bas du dos</li>
+<li><strong>Écran face aux yeux</strong> : Bord supérieur à hauteur des yeux, distance 50-70 cm</li>
+<li><strong>Clavier et souris</strong> : Devant soi, coudes près du corps</li>
+</ul>
+<div class="anatomie-container">
+<svg class="anatomie-svg" viewbox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f8fafb" height="400" rx="8" width="500"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="18" font-weight="700" text-anchor="middle" x="250" y="30">Poste de travail ergonomique</text>
+<!-- Bureau -->
+<rect fill="#8b5a3c" height="15" stroke="#6b4423" stroke-width="2" width="280" x="120" y="220"></rect>
+<!-- Écran -->
+<rect fill="#334155" height="70" rx="4" stroke="#1e293b" stroke-width="2" width="100" x="220" y="140"></rect>
+<rect fill="#64748b" height="60" width="90" x="225" y="145"></rect>
+<rect fill="#475569" height="8" width="20" x="260" y="212"></rect>
+<!-- Clavier -->
+<rect fill="#e2e8f0" height="30" rx="2" stroke="#cbd5e1" stroke-width="1" width="80" x="200" y="235"></rect>
+<!-- Souris -->
+<ellipse cx="300" cy="250" fill="#e2e8f0" rx="15" ry="20" stroke="#cbd5e1" stroke-width="1"></ellipse>
+<!-- Personnage assis -->
+<!-- Tête -->
+<circle cx="180" cy="160" fill="#fca5a5" r="15" stroke="#dc2626" stroke-width="2"></circle>
+<!-- Tronc -->
+<line stroke="#dc2626" stroke-width="5" x1="180" x2="180" y1="175" y2="240"></line>
+<!-- Bras gauche -->
+<path d="M 180 190 L 160 210 L 170 230" fill="none" stroke="#dc2626" stroke-width="4"></path>
+<!-- Bras droit -->
+<path d="M 180 190 L 210 210 L 220 235" fill="none" stroke="#dc2626" stroke-width="4"></path>
+<!-- Jambes -->
+<path d="M 180 240 L 170 280 L 165 320" fill="none" stroke="#dc2626" stroke-width="4"></path>
+<path d="M 180 240 L 185 280 L 180 320" fill="none" stroke="#dc2626" stroke-width="4"></path>
+<!-- Chaise -->
+<rect fill="#475569" height="10" rx="2" width="70" x="145" y="240"></rect>
+<rect fill="#475569" height="50" width="8" x="175" y="200"></rect>
+<path d="M 175 200 Q 165 190 165 175" fill="none" stroke="#475569" stroke-width="6"></path>
+<!-- Pieds -->
+<rect fill="#1e293b" height="5" width="30" x="150" y="320"></rect>
+<!-- Annotations avec flèches -->
+<!-- Écran -->
+<line marker-end="url(#arrow-green)" stroke="#10b981" stroke-width="2" x1="270" x2="270" y1="140" y2="110"></line>
+<text fill="#10b981" font-family="Segoe UI" font-size="10" font-weight="600" x="275" y="115">Haut écran = hauteur yeux</text>
+<!-- Distance écran -->
+<line stroke="#10b981" stroke-dasharray="3,2" stroke-width="1" x1="220" x2="180" y1="175" y2="175"></line>
+<text fill="#10b981" font-family="Segoe UI" font-size="9" text-anchor="middle" x="200" y="165">50-70 cm</text>
+<!-- Angle dos -->
+<path d="M 180 220 Q 185 220 185 215" fill="none" stroke="#10b981" stroke-width="2"></path>
+<text fill="#10b981" font-family="Segoe UI" font-size="9" x="195" y="220">90-110°</text>
+<!-- Coudes -->
+<circle cx="160" cy="210" fill="#10b981" r="4"></circle>
+<line stroke="#10b981" stroke-width="1.5" x1="140" x2="155" y1="210" y2="210"></line>
+<text fill="#10b981" font-family="Segoe UI" font-size="9" x="130" y="215">90°</text>
+<!-- Genoux -->
+<circle cx="170" cy="280" fill="#10b981" r="4"></circle>
+<line stroke="#10b981" stroke-width="1.5" x1="150" x2="165" y1="280" y2="280"></line>
+<text fill="#10b981" font-family="Segoe UI" font-size="9" x="140" y="285">90°</text>
+<!-- Pieds -->
+<line stroke="#10b981" stroke-width="2" x1="165" x2="165" y1="340" y2="360"></line>
+<text fill="#10b981" font-family="Segoe UI" font-size="9" x="170" y="355">Pieds à plat</text>
+<!-- Soutien lombaire -->
+<ellipse cx="177" cy="220" fill="none" rx="8" ry="15" stroke="#f9b000" stroke-width="2"></ellipse>
+<line stroke="#f9b000" stroke-width="1.5" x1="160" x2="170" y1="225" y2="225"></line>
+<text fill="#d97706" font-family="Segoe UI" font-size="9" x="140" y="230">Soutien</text>
+<!-- Légende -->
+<rect fill="white" height="50" rx="4" stroke="#cbd5e1" stroke-width="1" width="460" x="20" y="340"></rect>
+<text fill="#005a8c" font-family="Segoe UI" font-size="12" font-weight="700" text-anchor="middle" x="250" y="360">Points clés de l'ergonomie</text>
+<circle cx="40" cy="375" fill="#10b981" r="3"></circle>
+<text fill="#475569" font-family="Segoe UI" font-size="10" x="50" y="379">Angles 90° (coudes, genoux, cheville)</text>
+<circle cx="250" cy="375" fill="#10b981" r="3"></circle>
+<text fill="#475569" font-family="Segoe UI" font-size="10" x="260" y="379">Écran à hauteur des yeux</text>
+<circle cx="410" cy="375" fill="#f9b000" r="3"></circle>
+<text fill="#475569" font-family="Segoe UI" font-size="10" x="420" y="379">Soutien lombaire</text>
+</svg>
+</div>
+<h4>Environnement général</h4>
+<ul>
+<li><strong>Éclairage</strong> : 300-500 lux pour travail de précision</li>
+<li><strong>Température</strong> : 18-20°C pour travail physique, 20-22°C pour travail sédentaire</li>
+<li><strong>Espace de circulation</strong> : Largeur minimum 80 cm</li>
+<li><strong>Hauteur sous plafond</strong> : Minimum 2,5 m</li>
+</ul>
+<h3 id="chauffements-et-tirements">Échauffements et étirements</h3>
+<p>
+      L'échauffement prépare les muscles et articulations à l'effort. Les étirements maintiennent la souplesse et réduisent les tensions. Ils sont complémentaires mais distincts.
+    </p>
+<h4>Échauffement (avant le travail)</h4>
+<div class="exercice">
+<div class="exercice-title">🏃 Routine d'échauffement (5 minutes)</div>
+<div class="question">
+<div class="question-text"><strong>1. Nuque</strong></div>
+<p>Incliner doucement la tête de gauche à droite, puis d'avant en arrière. 10 répétitions.</p>
+</div>
+<div class="question">
+<div class="question-text"><strong>2. Épaules</strong></div>
+<p>Rotations des épaules d'avant en arrière, puis d'arrière en avant. 10 répétitions dans chaque sens.</p>
+</div>
+<div class="question">
+<div class="question-text"><strong>3. Bras</strong></div>
+<p>Mouvements de rotation des bras (moulinet). 10 répétitions.</p>
+</div>
+<div class="question">
+<div class="question-text"><strong>4. Poignets</strong></div>
+<p>Rotations des poignets dans les deux sens. 10 répétitions.</p>
+</div>
+<div class="question">
+<div class="question-text"><strong>5. Dos</strong></div>
+<p>Flexions latérales du tronc, en gardant les hanches fixes. 5 répétitions de chaque côté.</p>
+</div>
+<div class="question">
+<div class="question-text"><strong>6. Jambes</strong></div>
+<p>Montées de genoux alternées sur place. 20 répétitions.</p>
+</div>
+</div>
+<h4>Étirements (pendant les pauses)</h4>
+<div class="info-box info">
+<strong>💡 Règle d'or des étirements</strong>
+      Maintenir chaque étirement 20-30 secondes, sans à-coup, en respirant calmement. Ne jamais forcer jusqu'à la douleur.
+    </div>
+<div class="exercice">
+<div class="exercice-title">🧘 Étirements essentiels</div>
+<div class="question">
+<div class="question-text"><strong>Nuque</strong></div>
+<p>Incliner la tête sur le côté, main posée sur la tempe pour accompagner le mouvement (sans forcer). Maintenir 20 secondes.</p>
+</div>
+<div class="question">
+<div class="question-text"><strong>Épaules</strong></div>
+<p>Ramener un bras devant soi à l'horizontale, l'autre bras vient le pousser contre la poitrine. Maintenir 20 secondes de chaque côté.</p>
+</div>
+<div class="question">
+<div class="question-text"><strong>Dos</strong></div>
+<p>Debout, mains jointes au-dessus de la tête, pousser vers le haut en grandissant. Maintenir 20 secondes.</p>
+</div>
+<div class="question">
+<div class="question-text"><strong>Lombaires</strong></div>
+<p>Assis, ramener un genou contre la poitrine, l'autre jambe tendue. Maintenir 20 secondes de chaque côté.</p>
+</div>
+<div class="question">
+<div class="question-text"><strong>Poignets</strong></div>
+<p>Bras tendu devant, paume vers le haut, l'autre main tire doucement les doigts vers soi. 20 secondes de chaque côté.</p>
+</div>
+</div>
+<h3 id="organisation-du-travail">Organisation du travail</h3>
+<p>
+      La prévention des TMS ne repose pas uniquement sur l'individu. L'organisation collective du travail joue un rôle majeur.
+    </p>
+<h4>Principes organisationnels</h4>
+<ul>
+<li><strong>Rotation des postes</strong> : Varier les tâches pour solliciter différents groupes musculaires</li>
+<li><strong>Pauses régulières</strong> : Minimum 5 minutes toutes les heures pour travail répétitif</li>
+<li><strong>Rythme adapté</strong> : Éviter les cadences excessives, prévoir du temps pour les tâches</li>
+<li><strong>Autonomie</strong> : Permettre au salarié d'adapter son organisation</li>
+<li><strong>Formation</strong> : Gestes et postures, utilisation des équipements</li>
+<li><strong>Signalement</strong> : Encourager le signalement des situations à risque</li>
+</ul>
+<div class="citation">
+      "L'organisation du travail doit permettre au salarié de gérer son activité en fonction de son état de fatigue et de varier les sollicitations biomécaniques tout au long de la journée."
+      <span class="citation-source">— INRS, Prévention des TMS (ED 6087)</span>
+</div>
+</section>
+<!-- SECTION 4 : MISE EN PRATIQUE -->
+<section class="section" id="pratique">
+<div class="section-header">
+<span class="section-number">4</span>
+<h2 class="section-title" id="mise-en-pratique">Mise en pratique</h2>
+</div>
+<h3 id="tudes-de-cas-m-tier">Études de cas métier</h3>
+<div class="info-box info">
+<strong>💼 Conseils spécifiques par métier</strong>
+<p style="margin-top: 8px;">Les TMS se manifestent différemment selon les métiers. Voici des recommandations ciblées pour les deux filières de formation.</p>
+</div>
+<h4>🍳 Métier : Commis de cuisine</h4>
+<div style="background: var(--gris-50); padding: var(--space-lg); border-radius: var(--radius); margin: var(--space-md) 0;">
+<h5 style="color: var(--rose-consulteam); margin-bottom: var(--space-md);">Gestes à risque identifiés</h5>
+<ul>
+<li>Découpe répétitive (légumes, viandes) : sollicitation poignet et avant-bras</li>
+<li>Position debout prolongée : fatigue lombaire et membres inférieurs</li>
+<li>Port de charges (casseroles, plaques de cuisson) : dos et épaules</li>
+<li>Flexions répétées (four, placards bas) : lombaires</li>
+<li>Gestes brusques (cadence en service) : tous les segments</li>
+</ul>
+<h5 style="color: var(--rose-consulteam); margin: var(--space-md) 0 var(--space-sm);">Recommandations préventives</h5>
+<ul>
+<li>✅ Alterner les tâches toutes les 30-45 minutes (découpe, cuisson, plonge)</li>
+<li>✅ Utiliser des couteaux bien affûtés pour réduire l'effort</li>
+<li>✅ Régler la hauteur du plan de travail (5-10 cm sous les coudes)</li>
+<li>✅ Porter les charges lourdes à deux ou utiliser un chariot</li>
+<li>✅ Ranger les ustensiles fréquents entre hanches et épaules</li>
+<li>✅ Utiliser un repose-pied pour alterner l'appui</li>
+<li>✅ Porter des chaussures antidérapantes avec soutien de voûte</li>
+<li>✅ Faire des pauses actives : étirements poignets, nuque, dos</li>
+</ul>
+</div>
+<h4>🏥 Métier : DEAES (Aide à la personne)</h4>
+<div style="background: var(--gris-50); padding: var(--space-lg); border-radius: var(--radius); margin: var(--space-md) 0;">
+<h5 style="color: var(--rose-consulteam); margin-bottom: var(--space-md);">Gestes à risque identifiés</h5>
+<ul>
+<li>Transferts de personnes (lit-fauteuil, fauteuil-toilettes) : dos, épaules</li>
+<li>Toilette et soins (postures contraignantes) : dos, genoux</li>
+<li>Aide à l'habillage (bras levés, flexions) : épaules, dos</li>
+<li>Accompagnement de la marche (soutien prolongé) : dos, bras</li>
+<li>Tâches ménagères (aspirateur, repassage) : dos, épaules, poignets</li>
+</ul>
+<h5 style="color: var(--rose-consulteam); margin: var(--space-md) 0 var(--space-sm);">Recommandations préventives</h5>
+<ul>
+<li>✅ Toujours utiliser les aides techniques disponibles (lève-personne, planche de transfert, ceinture de maintien)</li>
+<li>✅ Expliquer et faire participer la personne autant que possible</li>
+<li>✅ Se placer PROCHE de la personne, jamais bras tendus</li>
+<li>✅ Fléchir les genoux, garder le dos droit, écarter les pieds (stabilité)</li>
+<li>✅ Pivoter avec les pieds, JAMAIS avec le dos seul</li>
+<li>✅ Travailler à DEUX pour les personnes lourdes ou très dépendantes</li>
+<li>✅ Prévoir l'espace nécessaire avant chaque manipulation</li>
+<li>✅ Adapter la hauteur du lit (mi-cuisse pour soins, genoux pour transfert)</li>
+<li>✅ Faire des pauses entre les transferts difficiles</li>
+</ul>
+</div>
+<h4>Cas pratiques détaillés</h4>
+<h4>Cas 1 : Commis de cuisine</h4>
+<div class="exercice">
+<div class="exercice-title">🍳 Situation : Préparation des légumes</div>
+<p><strong>Contexte :</strong> Marie, 22 ans, commis de cuisine, doit éplucher 10 kg de carottes pour le service du midi. Elle travaille debout devant un plan de travail pendant 1h30 sans pause.</p>
+<p><strong>Risques identifiés :</strong></p>
+<ul>
+<li>Position debout statique prolongée</li>
+<li>Gestes répétitifs des poignets et des mains</li>
+<li>Flexion de la nuque pour regarder le plan de travail</li>
+<li>Préhension prolongée de l'éplucheur</li>
+</ul>
+<p><strong>Solutions proposées :</strong></p>
+<div class="info-box success">
+<ul>
+<li>✅ Alterner avec d'autres tâches toutes les 30 minutes</li>
+<li>✅ Régler la hauteur du plan de travail (5-10 cm sous les coudes)</li>
+<li>✅ Utiliser un repose-pied pour alterner l'appui</li>
+<li>✅ Prévoir une pause de 5 minutes après 45 minutes</li>
+<li>✅ Utiliser des outils ergonomiques (éplucheur adapté)</li>
+</ul>
+</div>
+</div>
+<h4>Cas 2 : Aide à la personne (DEAES)</h4>
+<div class="exercice">
+<div class="exercice-title">🏥 Situation : Transfert d'une personne du lit au fauteuil</div>
+<p><strong>Contexte :</strong> Jean, 28 ans, DEAES, doit réaliser 15 transferts par jour de personnes âgées semi-dépendantes.</p>
+<p><strong>Risques identifiés :</strong></p>
+<ul>
+<li>Port de charges lourdes (poids de la personne)</li>
+<li>Flexion et torsion du dos</li>
+<li>Répétition des gestes tout au long de la journée</li>
+<li>Espace parfois restreint limitant les mouvements</li>
+</ul>
+<p><strong>Solutions proposées :</strong></p>
+<div class="info-box success">
+<ul>
+<li>✅ Utiliser les aides techniques disponibles (lève-personne, planche de transfert)</li>
+<li>✅ Demander à la personne de participer autant que possible</li>
+<li>✅ Se placer proche de la personne, pieds écartés pour stabilité</li>
+<li>✅ Fléchir les genoux, garder le dos droit</li>
+<li>✅ Pivoter avec les pieds, pas avec le dos</li>
+<li>✅ Travailler à deux si la personne est lourde ou ne peut pas aider</li>
+<li>✅ Prévoir l'espace nécessaire avant le transfert</li>
+</ul>
+</div>
+</div>
+<h3 id="exercices-d-application">Exercices d'application</h3>
+<div class="exercice">
+<div class="exercice-title">📝 Quiz : Vrai ou Faux</div>
+<div class="question">
+<div class="question-text">1. Les TMS représentent 87% des maladies professionnelles reconnues en France.</div>
+<div class="reponse">
+<input data-correct="true" id="q1" type="checkbox"/>
+<label for="q1"><strong>VRAI</strong> - Les TMS sont la première cause de maladie professionnelle.</label>
+</div>
+</div><div class="print-answer"><div class="print-answer-label">Réponse :</div><div class="print-answer-lines"></div></div>
+<div class="question">
+<div class="question-text">2. Il est recommandé de porter une charge de 30 kg seul si on est un homme adulte.</div>
+<div class="reponse">
+<input data-correct="false" id="q2" type="checkbox"/>
+<label for="q2"><strong>FAUX</strong> - La limite est de 25 kg en ponctuel, et il est préférable d'utiliser une aide mécanique.</label>
+</div>
+</div><div class="print-answer"><div class="print-answer-label">Réponse :</div><div class="print-answer-lines"></div></div>
+<div class="question">
+<div class="question-text">3. Fléchir les genoux plutôt que le dos permet de protéger la colonne vertébrale.</div>
+<div class="reponse">
+<input data-correct="true" id="q3" type="checkbox"/>
+<label for="q3"><strong>VRAI</strong> - Les jambes sont plus puissantes et préservent le dos.</label>
+</div>
+</div><div class="print-answer"><div class="print-answer-label">Réponse :</div><div class="print-answer-lines"></div></div>
+<div class="question">
+<div class="question-text">4. Les étirements doivent être maintenus 5 secondes pour être efficaces.</div>
+<div class="reponse">
+<input data-correct="false" id="q4" type="checkbox"/>
+<label for="q4"><strong>FAUX</strong> - Un étirement efficace doit être maintenu 20-30 secondes.</label>
+</div>
+</div><div class="print-answer"><div class="print-answer-label">Réponse :</div><div class="print-answer-lines"></div></div>
+<div class="question">
+<div class="question-text">5. La zone lombaire concentre 87% des TMS du dos.</div>
+<div class="reponse">
+<input data-correct="true" id="q5" type="checkbox"/>
+<label for="q5"><strong>VRAI</strong> - Les lombaires sont la zone la plus sollicitée et vulnérable.</label>
+</div>
+</div><div class="print-answer"><div class="print-answer-label">Réponse :</div><div class="print-answer-lines"></div></div>
+<div class="question">
+<div class="question-text">6. Une position debout statique de 4 heures sans bouger ne présente aucun risque.</div>
+<div class="reponse">
+<input data-correct="false" id="q6" type="checkbox"/>
+<label for="q6"><strong>FAUX</strong> - Il faut alterner les positions et bouger régulièrement.</label>
+</div>
+</div><div class="print-answer"><div class="print-answer-label">Réponse :</div><div class="print-answer-lines"></div></div>
+<div class="question">
+<div class="question-text">7. Un geste est répétitif s'il est effectué plus de 10 fois par minute.</div>
+<div class="reponse">
+<input data-correct="true" id="q7" type="checkbox"/>
+<label for="q7"><strong>VRAI</strong> - C'est le seuil défini pour la répétitivité.</label>
+</div>
+</div><div class="print-answer"><div class="print-answer-label">Réponse :</div><div class="print-answer-lines"></div></div>
+<div class="question">
+<div class="question-text">8. Les facteurs psychosociaux (stress, reconnaissance) n'ont aucun impact sur les TMS.</div>
+<div class="reponse">
+<input data-correct="false" id="q8" type="checkbox"/>
+<label for="q8"><strong>FAUX</strong> - Les facteurs psychosociaux aggravent significativement les TMS.</label>
+</div>
+</div><div class="print-answer"><div class="print-answer-label">Réponse :</div><div class="print-answer-lines"></div></div>
+</div>
+<h3 id="t-moignages-de-stagiaires">Témoignages de stagiaires</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-md); margin: var(--space-lg) 0;">
+<div style="background: white; padding: var(--space-lg); border-radius: var(--radius); border-left: 4px solid var(--rose-consulteam); box-shadow: var(--shadow);">
+<div style="font-size: 2rem; color: var(--rose-consulteam); margin-bottom: var(--space-sm);">💬</div>
+<p style="font-style: italic; color: var(--gris-700);">
+          "Depuis que j'applique les techniques de port de charge apprises en formation, je n'ai plus de douleurs lombaires en fin de service. Fléchir les genoux change vraiment tout !"
+        </p>
+<p style="margin-top: var(--space-md); font-weight: 600; color: var(--rose-consulteam);">
+          — Sophie, 24 ans, Commis de cuisine
+        </p>
+</div>
+<div style="background: white; padding: var(--space-lg); border-radius: var(--radius); border-left: 4px solid var(--charbon-consulteam); box-shadow: var(--shadow);">
+<div style="font-size: 2rem; color: var(--charbon-consulteam); margin-bottom: var(--space-sm);">💬</div>
+<p style="font-style: italic; color: var(--gris-700);">
+          "J'ai longtemps pensé qu'avoir mal au dos faisait partie du métier. Maintenant j'utilise systématiquement le lève-personne et je demande l'aide d'un collègue. Ma santé n'a pas de prix."
+        </p>
+<p style="margin-top: var(--space-md); font-weight: 600; color: var(--charbon-consulteam);">
+          — Marc, 31 ans, DEAES
+        </p>
+</div>
+<div style="background: white; padding: var(--space-lg); border-radius: var(--radius); border-left: 4px solid var(--rose-consulteam); box-shadow: var(--shadow);">
+<div style="font-size: 2rem; color: var(--rose-consulteam); margin-bottom: var(--space-sm);">💬</div>
+<p style="font-style: italic; color: var(--gris-700);">
+          "Les échauffements du matin en équipe prennent 5 minutes, mais ça fait toute la différence. Mon chef a même installé des tapis anti-fatigue, c'est beaucoup plus confortable."
+        </p>
+<p style="margin-top: var(--space-md); font-weight: 600; color: var(--rose-consulteam);">
+          — Emma, 27 ans, Commis de cuisine
+        </p>
+</div>
+</div>
+<h3 id="auto-valuation-de-mon-poste">Auto-évaluation de mon poste</h3>
+<div class="exercice">
+<div class="exercice-title">🔍 Grille d'analyse de mon activité</div>
+<p><strong>Instructions :</strong> Pour chaque question, cochez si la situation s'applique à votre poste.</p>
+<h4>Postures</h4>
+<div class="question">
+<div class="reponse">
+<input id="eval1" type="checkbox"/>
+<label for="eval1">Je maintiens des postures contraignantes (flexion, torsion, bras levés) plus de 2h/jour</label>
+</div>
+<div class="reponse">
+<input id="eval2" type="checkbox"/>
+<label for="eval2">Je travaille en position statique (debout ou assis) plus de 4h/jour sans variation</label>
+</div>
+<div class="reponse">
+<input id="eval3" type="checkbox"/>
+<label for="eval3">Mon plan de travail n'est pas réglable en hauteur</label>
+</div>
+</div><div class="print-answer"><div class="print-answer-label">Réponse :</div><div class="print-answer-lines"></div></div>
+<h4>Gestes et efforts</h4>
+<div class="question">
+<div class="reponse">
+<input id="eval4" type="checkbox"/>
+<label for="eval4">Je réalise des gestes répétitifs plus de 2h/jour</label>
+</div>
+<div class="reponse">
+<input id="eval5" type="checkbox"/>
+<label for="eval5">Je porte des charges lourdes (&gt;10kg) régulièrement</label>
+</div>
+<div class="reponse">
+<input id="eval6" type="checkbox"/>
+<label for="eval6">Je n'ai pas d'aide mécanique disponible (chariot, diable...)</label>
+</div>
+</div><div class="print-answer"><div class="print-answer-label">Réponse :</div><div class="print-answer-lines"></div></div>
+<h4>Organisation</h4>
+<div class="question">
+<div class="reponse">
+<input id="eval7" type="checkbox"/>
+<label for="eval7">Je travaille avec des cadences imposées et soutenues</label>
+</div>
+<div class="reponse">
+<input id="eval8" type="checkbox"/>
+<label for="eval8">Je ne peux pas faire de pause quand j'en ressens le besoin</label>
+</div>
+<div class="reponse">
+<input id="eval9" type="checkbox"/>
+<label for="eval9">Mon travail est monotone, sans variation des tâches</label>
+</div>
+</div><div class="print-answer"><div class="print-answer-label">Réponse :</div><div class="print-answer-lines"></div></div>
+<h4>Environnement</h4>
+<div class="question">
+<div class="reponse">
+<input id="eval10" type="checkbox"/>
+<label for="eval10">L'éclairage est insuffisant sur mon poste</label>
+</div>
+<div class="reponse">
+<input id="eval11" type="checkbox"/>
+<label for="eval11">Il fait trop froid ou trop chaud</label>
+</div>
+<div class="reponse">
+<input id="eval12" type="checkbox"/>
+<label for="eval12">Mon espace de travail est encombré ou exigu</label>
+</div>
+</div><div class="print-answer"><div class="print-answer-label">Réponse :</div><div class="print-answer-lines"></div></div>
+<div class="info-box warning" style="margin-top: 20px;">
+<strong>⚠️ Interprétation</strong>
+<ul>
+<li><strong>0-2 cases cochées :</strong> Risque faible - Maintenir les bonnes pratiques</li>
+<li><strong>3-5 cases cochées :</strong> Risque modéré - Améliorer certains points</li>
+<li><strong>6-8 cases cochées :</strong> Risque élevé - Action prioritaire nécessaire</li>
+<li><strong>9+ cases cochées :</strong> Risque très élevé - Alerter l'encadrement et le médecin du travail</li>
+</ul>
+</div>
+</div>
+<h3 id="ressources-et-contacts">Ressources et contacts</h3>
+<h4>📚 Documentation INRS</h4>
+<ul>
+<li><strong>ED 6518</strong> - Démarche de prévention des TMS</li>
+<li><strong>ED 6087</strong> - Prévention des TMS : comprendre et agir</li>
+<li><strong>ED 6226</strong> - Travail sur écran : santé et ergonomie</li>
+<li><strong>ED 6379</strong> - Gestes et postures de manutention</li>
+</ul>
+<h4>🌐 Sites web utiles</h4>
+<ul>
+<li><strong>www.inrs.fr</strong> - Institut National de Recherche et de Sécurité</li>
+<li><strong>www.ameli.fr/assure/sante/themes/tms</strong> - Assurance Maladie</li>
+<li><strong>www.anact.fr</strong> - Agence Nationale pour l'Amélioration des Conditions de Travail</li>
+</ul>
+<h4>📞 Contacts locaux</h4>
+<div class="info-box info">
+<strong>Votre référent formation</strong><br/>
+      Benoît Deflandre<br/>
+      📧 formation@consul-team.fr<br/>
+<br/>
+<strong>Consulteam</strong><br/>
+      Réseau de formation professionnelle<br/>
+      Consulteam
+    </div>
+<h4>🏥 En cas de symptômes</h4>
+<div class="info-box important">
+<strong>⚠️ Ne pas attendre</strong>
+<p>En cas de douleur persistante (plus de 7 jours), consultez :</p>
+<ul>
+<li>Votre médecin du travail</li>
+<li>Votre médecin traitant</li>
+<li>Un kinésithérapeute (sur prescription)</li>
+</ul>
+<p>Plus la prise en charge est précoce, meilleur est le pronostic.</p>
+</div>
+</section>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-content">
+<div class="footer-links">
+<a class="footer-link" href="https://www.inrs.fr" target="_blank">INRS</a>
+<a class="footer-link" href="https://www.ameli.fr" target="_blank">Ameli</a>
+<a class="footer-link" href="https://www.anact.fr" target="_blank">ANACT</a>
+<a class="footer-link" href="mailto:formation@consul-team.fr">Contact formateur</a>
+</div>
+<p style="margin-top: 16px; opacity: 0.8;">
+      © 2026 Consulteam<br/>
+      Document pédagogique conforme aux recommandations INRS
+    </p>
+</div>
+</footer>
+</section></div></body>
+<section class="back-cover page-break-before">
+<div class="back-inner">
+<h2>Crédits &amp; utilisation</h2>
+<ul>
+<li><strong>Auteur / conception :</strong> Benoît Deflandre — Consulteam • Consulteam</li>
+<li><strong>Usage :</strong> support de formation — reproduction interne autorisée dans le cadre pédagogique.</li>
+<li><strong>Sources :</strong> INRS / Assurance Maladie / ressources institutionnelles citées dans le document.</li>
+</ul>
+<div class="back-note">Astuce : pour un rendu “livret”, exportez en PDF puis imprimez en 2 pages par feuille (recto/verso).</div>
+</div>
+</section>
+</div>
+
+<button class="btn-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<button class="btn-top scroll-top-left" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+</body>
+</html>

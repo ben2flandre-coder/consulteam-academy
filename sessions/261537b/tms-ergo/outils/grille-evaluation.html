@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grille d'Évaluation TMS | Plateforme TMS</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;z-index:9999;padding:.6rem 1rem;background:#fff;color:#000;border-radius:.5rem;box-shadow:0 4px 18px rgba(0,0,0,.25);}
+  </style>
+</head>
+<body>
+
+
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+<header class="header-modern">
+    <div class="header-content">
+      <div class="logos-header">
+        <img src="../images/logo-consulteam.png" alt="Consulteam" class="logo-consulteam">
+      </div>
+      <h1>📋 Grille d'Évaluation TMS</h1>
+      <p class="subtitle">Analyse des postes de travail</p>
+    </div>
+  </header>
+
+  <div id="main" class="container">
+    <nav class="nav-bar">
+      <a href="../index.html" class="nav-pill">🏠 Accueil</a>
+      <a href="calculateur-criticite.html" class="nav-pill">📊 Calculateur</a>
+      <a href="../cours/module-e-evaluation.html" class="nav-pill">📖 Module E</a>
+    </nav>
+
+    <div class="content-bloc" style="background: linear-gradient(135deg, #fff3e0 0%, #fff 100%); border-left: 4px solid #f57c00; margin-bottom: 2rem;">
+      <h3>💡 Exemple pré-rempli : Poste de commis de cuisine</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr><th>Facteur de risque</th><th>Cotation</th><th>Observation</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>🏋 Efforts physiques</td><td style="background:#ffcdd2; text-align:center;"><strong>3</strong></td><td>Port de sacs 25 kg, caisses de légumes</td></tr>
+            <tr><td>🔄 Gestes répétitifs</td><td style="background:#ffcdd2; text-align:center;"><strong>3</strong></td><td>Découpe : 200+ gestes/service</td></tr>
+            <tr><td>🧍 Postures contraignantes</td><td style="background:#ffe0b2; text-align:center;"><strong>2</strong></td><td>Flexions pour accéder aux bacs bas</td></tr>
+            <tr><td>⏱ Positions statiques</td><td style="background:#ffe0b2; text-align:center;"><strong>2</strong></td><td>Station debout 8h, piétinement</td></tr>
+            <tr><td>📳 Vibrations</td><td style="background:#c8e6c9; text-align:center;"><strong>0</strong></td><td>Non applicable</td></tr>
+          </tbody>
+          <tfoot>
+            <tr style="background:#e3f2fd;"><td colspan="2"><strong>Score total : 10/15</strong></td><td><strong>→ Risque ÉLEVÉ</strong></td></tr>
+          </tfoot>
+        </table>
+      </div>
+      <p style="margin-top:1rem;"><strong>Actions prioritaires :</strong> Chariot de transport, rotation des tâches, tapis anti-fatigue</p>
+    </div>
+
+    <div class="content-bloc">
+      <h2>Grille d'observation des facteurs de risque TMS</h2>
+
+      <p>Cette grille permet d'identifier et d'évaluer les facteurs de risque TMS sur un poste de travail. Utilisez les pictogrammes pour repérer rapidement les facteurs.</p>
+
+      <form id="grille-evaluation">
+        <h3>1. Identification du poste</h3>
+        <div class="grid-2">
+          <div>
+            <label><strong>Intitulé du poste :</strong></label>
+            <input type="text" style="width:100%; padding:0.5rem; border-radius:8px; border:1px solid #ddd;" placeholder="Ex: Commis de cuisine, Aide-soignant...">
+          </div>
+          <div>
+            <label><strong>Date d'évaluation :</strong></label>
+            <input type="date" style="width:100%; padding:0.5rem; border-radius:8px; border:1px solid #ddd;">
+          </div>
+        </div>
+
+        <h3 style="margin-top:2rem;">2. Facteurs biomécaniques</h3>
+        <div class="alert alert-info" style="padding:0.75rem; margin-bottom:1rem;">
+          <strong>Légende :</strong> 🟢 Absent (0) | 🟡 Faible (1) | 🟠 Modéré (2) | 🔴 Élevé (3)
+        </div>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr><th>Facteur</th><th>🟢 0</th><th>🟡 1</th><th>🟠 2</th><th>🔴 3</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>🏋 Efforts physiques</strong></td>
+                <td><input type="radio" name="efforts" value="0"></td>
+                <td><input type="radio" name="efforts" value="1"></td>
+                <td><input type="radio" name="efforts" value="2"></td>
+                <td><input type="radio" name="efforts" value="3"></td>
+              </tr>
+              <tr>
+                <td><strong>Gestes répétitifs</strong></td>
+                <td><input type="radio" name="repetitif" value="0"></td>
+                <td><input type="radio" name="repetitif" value="1"></td>
+                <td><input type="radio" name="repetitif" value="2"></td>
+                <td><input type="radio" name="repetitif" value="3"></td>
+              </tr>
+              <tr>
+                <td><strong>Postures contraignantes</strong></td>
+                <td><input type="radio" name="postures" value="0"></td>
+                <td><input type="radio" name="postures" value="1"></td>
+                <td><input type="radio" name="postures" value="2"></td>
+                <td><input type="radio" name="postures" value="3"></td>
+              </tr>
+              <tr>
+                <td><strong>Positions statiques</strong></td>
+                <td><input type="radio" name="statique" value="0"></td>
+                <td><input type="radio" name="statique" value="1"></td>
+                <td><input type="radio" name="statique" value="2"></td>
+                <td><input type="radio" name="statique" value="3"></td>
+              </tr>
+              <tr>
+                <td><strong>Vibrations</strong></td>
+                <td><input type="radio" name="vibrations" value="0"></td>
+                <td><input type="radio" name="vibrations" value="1"></td>
+                <td><input type="radio" name="vibrations" value="2"></td>
+                <td><input type="radio" name="vibrations" value="3"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin-top:2rem;">3. Facteurs organisationnels</h3>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr><th>Facteur</th><th>Absent (0)</th><th>Faible (1)</th><th>Modéré (2)</th><th>Élevé (3)</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Cadences imposées</strong></td>
+                <td><input type="radio" name="cadence" value="0"></td>
+                <td><input type="radio" name="cadence" value="1"></td>
+                <td><input type="radio" name="cadence" value="2"></td>
+                <td><input type="radio" name="cadence" value="3"></td>
+              </tr>
+              <tr>
+                <td><strong>Manque de pauses</strong></td>
+                <td><input type="radio" name="pauses" value="0"></td>
+                <td><input type="radio" name="pauses" value="1"></td>
+                <td><input type="radio" name="pauses" value="2"></td>
+                <td><input type="radio" name="pauses" value="3"></td>
+              </tr>
+              <tr>
+                <td><strong>Faible autonomie</strong></td>
+                <td><input type="radio" name="autonomie" value="0"></td>
+                <td><input type="radio" name="autonomie" value="1"></td>
+                <td><input type="radio" name="autonomie" value="2"></td>
+                <td><input type="radio" name="autonomie" value="3"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="text-align:center; margin-top:2rem;">
+          <button type="button" class="btn btn-primary" onclick="calculerScore()">📊 Calculer le score</button>
+          <button type="button" class="btn btn-secondary" onclick="window.print()">🖨 Imprimer</button>
+        </div>
+
+        <div id="resultat" style="display:none; margin-top:2rem;" class="alert alert-info">
+          <strong>Score total : </strong><span id="score-total">0</span>/24
+          <p id="interpretation"></p>
+        </div>
+      </form>
+    </div>
+
+    <a href="../index.html" class="btn-retour" style="margin-top:2rem;">← Retour accueil</a>
+  </div>
+
+  <footer class="footer-modern">
+    <div class="footer-content">
+      <div class="footer-logos">
+        <img src="../images/logo-consulteam.png" alt="Consulteam" class="footer-logo">
+      </div>
+      <div class="footer-info">
+        <p><strong>Benoît Deflandre</strong> — Consulteam</p>
+        <p class="version-footer">Plateforme TMS v1.0</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  function calculerScore() {
+    const radios = document.querySelectorAll('input[type="radio"]:checked');
+    let total = 0;
+    radios.forEach(r => total += parseInt(r.value));
+
+    document.getElementById('score-total').textContent = total;
+    document.getElementById('resultat').style.display = 'block';
+
+    let interp = document.getElementById('interpretation');
+    if (total <= 6) {
+      interp.innerHTML = '✅ <strong>Risque faible</strong> — Maintenir la vigilance';
+      document.getElementById('resultat').className = 'alert alert-success';
+    } else if (total <= 12) {
+      interp.innerHTML = '⚠ <strong>Risque modéré</strong> — Actions de prévention recommandées';
+      document.getElementById('resultat').className = 'alert alert-warning';
+    } else {
+      interp.innerHTML = '🔴 <strong>Risque élevé</strong> — Actions correctives urgentes';
+      document.getElementById('resultat').className = 'alert alert-danger';
+    }
+  }
+  </script>
+
+<button class="btn-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<button class="btn-top scroll-top-left" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+</body>
+</html>

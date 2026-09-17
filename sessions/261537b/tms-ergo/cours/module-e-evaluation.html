@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module E — Évaluation des Risques | Cours TMS</title>
+<link href="../css/style.css" rel="stylesheet"/>
+
+  <style>
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;z-index:9999;padding:.6rem 1rem;background:#fff;color:#000;border-radius:.5rem;box-shadow:0 4px 18px rgba(0,0,0,.25);}
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+<header class="header-modern">
+<div class="header-content">
+<div class="logos-header">
+<img alt="Consulteam" src="../images/logo-consulteam.png"/>
+</div>
+<div class="header-title">
+<h1>Module E — Évaluation des Risques</h1>
+<p class="subtitle">Méthode EVRP et cotation de la criticité</p>
+</div>
+</div>
+</header>
+<nav class="nav-bar">
+<div class="">
+<a class="nav-pill" href="../index.html">🏠 Accueil</a>
+<a class="nav-pill" href="module-d-reglementation.html">← Module D</a>
+<a class="nav-pill" href="index-cours.html">📖 Sommaire</a>
+<a class="nav-pill" href="module-f-prevention.html">Module F →</a>
+</div>
+</nav>
+<main class="container" id="main">
+<div class="sommaire-box">
+<h3>📋 Dans ce module</h3>
+<ul>
+<li><a href="#inrs">1. Démarche INRS de prévention TMS (ED 6518)</a></li>
+<li><a href="#evrp">2. Méthode EVRP en 5 étapes</a></li>
+<li><a href="#cotation">3. Calcul de la criticité</a></li>
+<li><a href="#matrice">4. Matrice de criticité</a></li>
+<li><a href="#actions">5. Priorisation des actions</a></li>
+</ul>
+</div>
+<!-- DÉMARCHE INRS ED 6518 -->
+<section class="content-bloc" id="inrs">
+<h2>1. Démarche INRS de prévention TMS (ED 6518)</h2>
+<div class="alert alert-info">
+<strong>📘 Référence :</strong> La brochure INRS ED 6518 (mars 2026) décrit une démarche structurée
+                en <strong>4 étapes</strong> et <strong>3 actions transverses</strong> pour prévenir efficacement les TMS.
+            </div>
+<!-- SCHÉMA VISUEL DÉMARCHE INRS -->
+<div style="text-align: center; margin: 2rem 0;">
+<svg style="max-width: 550px; margin: 0 auto; display: block;" viewbox="0 0 500 280">
+<!-- Flèche principale -->
+<defs>
+<marker id="arrowE" markerheight="10" markerwidth="10" orient="auto" refx="9" refy="3">
+<path d="M0,0 L0,6 L9,3 z" fill="#1565c0"></path>
+</marker>
+</defs>
+<!-- Étapes 1 à 4 -->
+<rect fill="#d32f2f" height="60" rx="8" width="100" x="20" y="100"></rect>
+<text fill="white" font-size="11" font-weight="bold" text-anchor="middle" x="70" y="125">ÉTAPE 1</text>
+<text fill="white" font-size="10" text-anchor="middle" x="70" y="142">Engagement</text>
+<line marker-end="url(#arrowE)" stroke="#1565c0" stroke-width="3" x1="120" x2="145" y1="130" y2="130"></line>
+<rect fill="#ff9800" height="60" rx="8" width="100" x="150" y="100"></rect>
+<text fill="white" font-size="11" font-weight="bold" text-anchor="middle" x="200" y="125">ÉTAPE 2</text>
+<text fill="white" font-size="10" text-anchor="middle" x="200" y="142">État des lieux</text>
+<line marker-end="url(#arrowE)" stroke="#1565c0" stroke-width="3" x1="250" x2="275" y1="130" y2="130"></line>
+<rect fill="#ffc107" height="60" rx="8" width="100" x="280" y="100"></rect>
+<text fill="#333" font-size="11" font-weight="bold" text-anchor="middle" x="330" y="125">ÉTAPE 3</text>
+<text fill="#333" font-size="10" text-anchor="middle" x="330" y="142">Analyse</text>
+<line marker-end="url(#arrowE)" stroke="#1565c0" stroke-width="3" x1="380" x2="405" y1="130" y2="130"></line>
+<rect fill="#4caf50" height="60" rx="8" width="80" x="410" y="100"></rect>
+<text fill="white" font-size="11" font-weight="bold" text-anchor="middle" x="450" y="125">ÉTAPE 4</text>
+<text fill="white" font-size="10" text-anchor="middle" x="450" y="142">Action</text>
+<!-- Actions transverses en bas -->
+<rect fill="#e3f2fd" height="45" rx="6" stroke="#1565c0" stroke-width="2" width="110" x="70" y="200"></rect>
+<text fill="#1565c0" font-size="11" font-weight="bold" text-anchor="middle" x="125" y="220">👥 MOBILISER</text>
+<text fill="#1565c0" font-size="9" text-anchor="middle" x="125" y="235">Impliquer tous</text>
+<rect fill="#e8f5e9" height="45" rx="6" stroke="#4caf50" stroke-width="2" width="110" x="195" y="200"></rect>
+<text fill="#2e7d32" font-size="11" font-weight="bold" text-anchor="middle" x="250" y="220">📢 COMMUNIQUER</text>
+<text fill="#2e7d32" font-size="9" text-anchor="middle" x="250" y="235">Informer</text>
+<rect fill="#fff3e0" height="45" rx="6" stroke="#ff9800" stroke-width="2" width="110" x="320" y="200"></rect>
+<text fill="#e65100" font-size="11" font-weight="bold" text-anchor="middle" x="375" y="220">📊 ÉVALUER</text>
+<text fill="#e65100" font-size="9" text-anchor="middle" x="375" y="235">Mesurer</text>
+<!-- Titre -->
+<text fill="#1565c0" font-size="14" font-weight="bold" text-anchor="middle" x="250" y="30">Démarche INRS ED 6518</text>
+<text fill="#666" font-size="11" text-anchor="middle" x="250" y="50">4 étapes + 3 actions transverses</text>
+<!-- Lignes pointillées reliant -->
+<line stroke="#1565c0" stroke-dasharray="4" stroke-width="1" x1="125" x2="125" y1="200" y2="170"></line>
+<line stroke="#4caf50" stroke-dasharray="4" stroke-width="1" x1="250" x2="250" y1="200" y2="170"></line>
+<line stroke="#ff9800" stroke-dasharray="4" stroke-width="1" x1="375" x2="375" y1="200" y2="170"></line>
+</svg>
+<p style="font-style: italic; color: #666; margin-top: 0.5rem;">Schéma : Les 4 étapes et 3 actions transverses de la démarche INRS</p>
+</div>
+<h3>Les 4 étapes de la démarche</h3>
+<div class="grid-2">
+<div class="alert alert-warning" style="margin:0">
+<strong>🔴 Étape 1 — Engagement</strong>
+<p>La direction s'engage formellement dans la démarche. Définition des objectifs, moyens alloués, pilote désigné.</p>
+</div>
+<div class="alert alert-warning" style="margin:0">
+<strong>🟠 Étape 2 — État des lieux</strong>
+<p>Recueil des données existantes : AT/MP, plaintes, absentéisme. Identification des situations à risque prioritaires.</p>
+</div>
+<div class="alert alert-warning" style="margin:0">
+<strong>🟡 Étape 3 — Analyse approfondie</strong>
+<p>Observation des situations de travail. Identification des déterminants (techniques, organisationnels, humains).</p>
+</div>
+<div class="alert alert-success" style="margin:0">
+<strong>🟢 Étape 4 — Transformation</strong>
+<p>Mise en œuvre des actions de prévention. Suivi et évaluation de l'efficacité des mesures.</p>
+</div>
+</div>
+<h3>Les 3 actions transverses</h3>
+<div class="grid-3">
+<div class="info-box info-blue">
+<h4>👥 Mobiliser</h4>
+<p>Impliquer tous les acteurs : direction, encadrement, salariés, IRP, médecin du travail.</p>
+</div>
+<div class="info-box info-green">
+<h4>📢 Communiquer</h4>
+<p>Informer régulièrement sur l'avancement, les résultats, valoriser les réussites.</p>
+</div>
+<div class="info-box info-orange">
+<h4>📊 Évaluer</h4>
+<p>Mesurer l'efficacité des actions, ajuster la démarche, capitaliser les bonnes pratiques.</p>
+</div>
+</div>
+<div class="alert alert-success">
+<strong>✅ Critères de réussite :</strong>
+<ul style="margin-top:0.5rem;">
+<li><strong>Détermination</strong> de la direction et des acteurs</li>
+<li><strong>Compétence</strong> acquise par formation (PRAP)</li>
+<li><strong>Temps</strong> dédié à l'analyse et aux actions</li>
+<li><strong>Engagement volontaire</strong> de tous les acteurs</li>
+</ul>
+</div>
+</section>
+<!-- EVRP -->
+<section class="content-bloc" id="evrp">
+<div class="">
+<h2 class="">2. Méthode EVRP en 5 étapes</h2>
+</div>
+<div class="alert alert-info">
+<strong>EVRP = Évaluation des Risques Professionnels</strong><br/>
+                Démarche structurée pour identifier, évaluer et maîtriser les risques.
+            </div>
+<div class="table-container">
+<table>
+<thead><tr><th>Étape</th><th>Action</th><th>Résultat</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="badge badge-primary">1</span></td>
+<td><strong>Décrire</strong> la situation de travail</td>
+<td>Unité de travail identifiée</td>
+</tr>
+<tr>
+<td><span class="badge badge-primary">2</span></td>
+<td><strong>Identifier</strong> les dangers</td>
+<td>Liste des dangers présents</td>
+</tr>
+<tr>
+<td><span class="badge badge-primary">3</span></td>
+<td><strong>Évaluer</strong> le risque (cotation)</td>
+<td>Score de criticité C = G × P</td>
+</tr>
+<tr>
+<td><span class="badge badge-primary">4</span></td>
+<td><strong>Décider</strong> des mesures</td>
+<td>Actions de prévention définies</td>
+</tr>
+<tr>
+<td><span class="badge badge-primary">5</span></td>
+<td><strong>Tracer</strong> (plan d'actions + preuves)</td>
+<td>DUERP documenté</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note-metier">
+<strong>🔧 Règle d'or :</strong> Une cotation sans justification est fragile. Toujours documenter :
+                exposition réelle + mesures de maîtrise + preuves.
+            </div>
+</section>
+<!-- COTATION -->
+<section class="content-bloc" id="cotation">
+<div class="">
+<h2 class="">2. Calcul de la criticité</h2>
+</div>
+<div class="alert alert-warning" style="text-align: center; font-size: 1.3rem;">
+<strong>Criticité = Gravité × Probabilité</strong><br/>
+<span style="font-size: 1rem;">C = G × P</span>
+</div>
+<div class="grid-2">
+<div>
+<h3 class="section-subtitle">Échelle de Gravité (G)</h3>
+<div class="table-container">
+<table>
+<thead><tr><th>Niveau</th><th>G</th><th>Description</th></tr></thead>
+<tbody>
+<tr style="background: #c8e6c9;"><td>Mineur</td><td><strong>1</strong></td><td>Gêne, inconfort passager</td></tr>
+<tr style="background: #fff9c4;"><td>Modéré</td><td><strong>2</strong></td><td>Soins légers, douleur</td></tr>
+<tr style="background: #ffe0b2;"><td>Grave</td><td><strong>3</strong></td><td>Arrêt de travail, soins médicaux</td></tr>
+<tr style="background: #ffcdd2;"><td>Très grave</td><td><strong>4</strong></td><td>Incapacité permanente, décès</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<h3 class="section-subtitle">Échelle de Probabilité (P)</h3>
+<div class="table-container">
+<table>
+<thead><tr><th>Niveau</th><th>P</th><th>Description</th></tr></thead>
+<tbody>
+<tr style="background: #c8e6c9;"><td>Rare</td><td><strong>1</strong></td><td>Exceptionnel</td></tr>
+<tr style="background: #fff9c4;"><td>Occasionnel</td><td><strong>2</strong></td><td>Quelques fois/an</td></tr>
+<tr style="background: #ffe0b2;"><td>Fréquent</td><td><strong>3</strong></td><td>Plusieurs fois/mois</td></tr>
+<tr style="background: #ffcdd2;"><td>Très fréquent</td><td><strong>4</strong></td><td>Quotidien</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="alert alert-info" style="margin-top: 1rem;">
+<strong>💡 Variante G×F×M :</strong> Criticité = Gravité × Fréquence × Maîtrise<br/>
+                Où Maîtrise (1-4) évalue l'efficacité des mesures de prévention existantes.
+            </div>
+</section>
+<!-- MATRICE -->
+<section class="content-bloc" id="matrice">
+<div class="">
+<h2 class="">3. Matrice de criticité</h2>
+</div>
+<div class="table-container">
+<table style="text-align: center;">
+<thead>
+<tr>
+<th style="background: var(--bleu-fonce); color: white;">G \ P</th>
+<th style="background: var(--rose-consulteam); color: white;">P=1</th>
+<th style="background: var(--rose-consulteam); color: white;">P=2</th>
+<th style="background: var(--rose-consulteam); color: white;">P=3</th>
+<th style="background: var(--rose-consulteam); color: white;">P=4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="background: var(--rose-consulteam); color: white;"><strong>G=1</strong></td>
+<td style="background: #c8e6c9; color: #2e7d32;"><strong>1</strong></td>
+<td style="background: #c8e6c9; color: #2e7d32;"><strong>2</strong></td>
+<td style="background: #c8e6c9; color: #2e7d32;"><strong>3</strong></td>
+<td style="background: #fff9c4; color: #f57f17;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="background: var(--rose-consulteam); color: white;"><strong>G=2</strong></td>
+<td style="background: #c8e6c9; color: #2e7d32;"><strong>2</strong></td>
+<td style="background: #fff9c4; color: #f57f17;"><strong>4</strong></td>
+<td style="background: #ffe0b2; color: #e65100;"><strong>6</strong></td>
+<td style="background: #ffe0b2; color: #e65100;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="background: var(--rose-consulteam); color: white;"><strong>G=3</strong></td>
+<td style="background: #c8e6c9; color: #2e7d32;"><strong>3</strong></td>
+<td style="background: #ffe0b2; color: #e65100;"><strong>6</strong></td>
+<td style="background: #ffcdd2; color: #c62828;"><strong>9</strong></td>
+<td style="background: #ffcdd2; color: #c62828;"><strong>12</strong></td>
+</tr>
+<tr>
+<td style="background: var(--rose-consulteam); color: white;"><strong>G=4</strong></td>
+<td style="background: #fff9c4; color: #f57f17;"><strong>4</strong></td>
+<td style="background: #ffe0b2; color: #e65100;"><strong>8</strong></td>
+<td style="background: #ffcdd2; color: #c62828;"><strong>12</strong></td>
+<td style="background: #ef5350; color: white;"><strong>16</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="grid-3" style="margin-top: 1.5rem;">
+<div class="content-bloc" style="background: #c8e6c9; text-align: center;">
+<h4 style="color: #2e7d32;">🟢 Acceptable</h4>
+<p><strong>C = 1 à 4</strong></p>
+<p style="font-size: 0.9rem;">Maintenir la vigilance</p>
+</div>
+<div class="content-bloc" style="background: #ffe0b2; text-align: center;">
+<h4 style="color: #e65100;">🟠 À surveiller</h4>
+<p><strong>C = 5 à 8</strong></p>
+<p style="font-size: 0.9rem;">Actions à planifier</p>
+</div>
+<div class="content-bloc" style="background: #ffcdd2; text-align: center;">
+<h4 style="color: #c62828;">🔴 Critique</h4>
+<p><strong>C = 9 à 16</strong></p>
+<p style="font-size: 0.9rem;">Action immédiate requise</p>
+</div>
+</div>
+<div class="alert alert-success" style="margin-top: 1.5rem; text-align: center;">
+<strong>📊 Utilisez le calculateur interactif :</strong>
+<a class="btn btn-primary" href="../calculateur-criticite.html" style="margin-left: 1rem;">Ouvrir le calculateur</a>
+</div>
+</section>
+<!-- ACTIONS -->
+<section class="content-bloc" id="actions">
+<div class="">
+<h2 class="">4. Priorisation des actions</h2>
+</div>
+<p>Suite à l'évaluation, les actions sont priorisées selon le niveau de criticité :</p>
+<div class="table-container">
+<table>
+<thead><tr><th>Priorité</th><th>Criticité</th><th>Délai</th><th>Type d'action</th></tr></thead>
+<tbody>
+<tr style="background: #ffcdd2;">
+<td><span class="badge badge-danger">P1</span></td>
+<td>9-16</td>
+<td><strong>Immédiat</strong></td>
+<td>Arrêt activité si nécessaire, mesures d'urgence</td>
+</tr>
+<tr style="background: #ffe0b2;">
+<td><span class="badge badge-warning">P2</span></td>
+<td>5-8</td>
+<td><strong>Court terme</strong> (1-3 mois)</td>
+<td>Plan d'actions avec échéances</td>
+</tr>
+<tr style="background: #c8e6c9;">
+<td><span class="badge badge-success">P3</span></td>
+<td>1-4</td>
+<td><strong>Moyen terme</strong></td>
+<td>Amélioration continue, veille</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note-metier">
+<strong>📝 Plan d'actions type :</strong> Pour chaque risque identifié : Mesure envisagée | Responsable | Délai | Budget | Indicateur de suivi | Preuve de réalisation
+            </div>
+</section>
+<section class="content-bloc">
+<h3 class="section-subtitle">📚 Sources</h3>
+<ul>
+<li><a href="https://www.inrs.fr/demarche/evaluation-risques-professionnels/ce-qu-il-faut-retenir.html" rel="noreferrer noopener" target="_blank">INRS — Évaluation des risques</a></li>
+<li><a href="https://www.esst-inrs.fr/3rb/ressources/ed6163.pdf" rel="noreferrer noopener" target="_blank">INRS — ED 6163 Arbre des causes</a></li>
+</ul>
+</section>
+</main>
+<footer class="footer-modern">
+<div class="footer-content">
+<div class="footer-nav">
+<a href="module-d-reglementation.html">← Module D</a>
+<a href="index-cours.html">Sommaire</a>
+<a href="module-f-prevention.html">Module F →</a>
+</div>
+<p class="footer-credit">© 2026 — <strong>Benoît Deflandre</strong> — Consulteam — Consulteam</p>
+</div>
+</footer>
+<button class="btn-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<button class="btn-top scroll-top-left" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+</body>
+</html>

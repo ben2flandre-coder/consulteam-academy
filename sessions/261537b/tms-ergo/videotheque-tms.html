@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vidéothèque TMS | Plateforme TMS</title>
+<link href="css/style.css" rel="stylesheet"/>
+<style>
+        .video-card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.08);transition:all 0.3s}
+        .video-card:hover{transform:translateY(-5px);box-shadow:0 8px 25px rgba(0,0,0,0.12)}
+        .video-thumb{width:100%;height:180px;background:linear-gradient(135deg,var(--bleu-fonce),var(--rose-consulteam));display:flex;align-items:center;justify-content:center;color:white;font-size:4rem}
+        .video-info{padding:1.5rem}
+        .video-info h4{color:var(--bleu-fonce);margin-bottom:0.5rem}
+        .video-info p{color:var(--texte-clair);font-size:0.9rem;margin-bottom:1rem}
+        .video-source{font-size:0.8rem;color:var(--charbon-consulteam);font-weight:600}
+    </style>
+
+  <style>
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;z-index:9999;padding:.6rem 1rem;background:#fff;color:#000;border-radius:.5rem;box-shadow:0 4px 18px rgba(0,0,0,.25);}
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+<header class="header-modern">
+<div class="header-content">
+<div class="logos-header">
+<img alt="Consulteam" src="images/logo-consulteam.png"/>
+</div>
+<div class="header-title">
+<h1>Vidéothèque TMS</h1>
+<p class="subtitle">Ressources vidéo de référence</p>
+</div>
+</div>
+</header>
+<nav class="nav-bar">
+<div class="nav-pills-content">
+<a class="nav-pill" href="index.html">🏠 Accueil</a>
+<a class="nav-pill" href="cours/index-cours.html">📖 Cours</a>
+<a class="nav-pill" href="documents-tms.html">📚 Documents</a>
+</div>
+</nav>
+<main class="container" id="main">
+<div class="alert alert-info">
+<strong>📺 Mode consultation :</strong> Les vidéos s'ouvrent sur YouTube dans un nouvel onglet.
+            Sources : INRS, CARSAT, chaînes institutionnelles.
+        </div>
+<!-- PLAYLISTS -->
+<section class="content-bloc">
+<div class="card-header">
+<h2 class="card-title">📂 Playlists complètes</h2>
+</div>
+<div class="grid-2">
+<a class="menu-card" href="https://youtube.com/playlist?list=PLqlw8IH6G3t2kGa2NjnNiVveB_WHp0AZy" rel="noreferrer noopener" target="_blank">
+<div class="icon">🎬</div>
+<h3>Gestes et Postures INRS</h3>
+<p>Série complète de sensibilisation à la prévention des TMS</p>
+</a>
+<a class="menu-card" href="https://youtube.com/playlist?list=PLvjYdo22j7cU21y7IwUTu8lYXNkYOAMPT" rel="noreferrer noopener" target="_blank">
+<div class="icon">🎬</div>
+<h3>Playlist complémentaire</h3>
+<p>Ressources additionnelles sur les TMS</p>
+</a>
+</div>
+</section>
+<!-- VIDÉOS THÉMATIQUES -->
+<h2 class="section-title">Vidéos thématiques</h2>
+<div class="grid-3">
+<!-- Sensibilisation -->
+<div class="video-card">
+<div class="video-thumb">🎯</div>
+<div class="video-info">
+<h4>TMS : Ce qu'il faut retenir</h4>
+<p>Introduction aux troubles musculo-squelettiques et à leur prévention</p>
+<span class="video-source">INRS</span>
+<a class="btn btn-outline" href="https://www.inrs.fr/risques/tms-troubles-musculosquelettiques/ce-qu-il-faut-retenir.html" rel="noreferrer noopener" style="margin-top:0.5rem;display:block;text-align:center" target="_blank">Voir sur INRS ↗</a>
+</div>
+</div>
+<!-- Napo -->
+<div class="video-card">
+<div class="video-thumb">👷</div>
+<div class="video-info">
+<h4>Napo — Allégez la charge</h4>
+<p>Film d'animation sur la manutention et les TMS (série Napo)</p>
+<span class="video-source">INRS / Napo</span>
+<a class="btn btn-outline" href="https://www.youtube.com/watch?v=qGUfmVVLnGk" rel="noreferrer noopener" style="margin-top:0.5rem;display:block;text-align:center" target="_blank">Voir sur YouTube ↗</a>
+</div>
+</div>
+<!-- Mortel ton taf -->
+<div class="video-card">
+<div class="video-thumb">⚠</div>
+<div class="video-info">
+<h4>Mortel ton taf — TMS</h4>
+<p>Campagne de sensibilisation pour les jeunes travailleurs</p>
+<span class="video-source">Gouvernement</span>
+<a class="btn btn-outline" href="https://www.mortel-ton-taf.fr/html/tms.html" rel="noreferrer noopener" style="margin-top:0.5rem;display:block;text-align:center" target="_blank">Voir le site ↗</a>
+</div>
+</div>
+<!-- Aide à la personne -->
+<div class="video-card">
+<div class="video-thumb">🏥</div>
+<div class="video-info">
+<h4>TMS dans l'aide à la personne</h4>
+<p>Prévention des TMS dans le secteur sanitaire et social</p>
+<span class="video-source">INRS</span>
+<a class="btn btn-outline" href="https://www.inrs.fr/actualites/videos-tms-soin-personne.html" rel="noreferrer noopener" style="margin-top:0.5rem;display:block;text-align:center" target="_blank">Voir sur INRS ↗</a>
+</div>
+</div>
+<!-- Facteurs de risque -->
+<div class="video-card">
+<div class="video-thumb">📊</div>
+<div class="video-info">
+<h4>Facteurs de risque TMS</h4>
+<p>Comprendre les causes biomécaniques, organisationnelles et psychosociales</p>
+<span class="video-source">INRS</span>
+<a class="btn btn-outline" href="https://www.inrs.fr/risques/tms-troubles-musculosquelettiques/facteurs-risque.html" rel="noreferrer noopener" style="margin-top:0.5rem;display:block;text-align:center" target="_blank">Voir sur INRS ↗</a>
+</div>
+</div>
+<!-- Prévention -->
+<div class="video-card">
+<div class="video-thumb">🛡</div>
+<div class="video-info">
+<h4>Démarche de prévention</h4>
+<p>Méthodologie pour mettre en place une démarche TMS efficace</p>
+<span class="video-source">INRS</span>
+<a class="btn btn-outline" href="https://www.inrs.fr/risques/tms-troubles-musculosquelettiques/prevention.html" rel="noreferrer noopener" style="margin-top:0.5rem;display:block;text-align:center" target="_blank">Voir sur INRS ↗</a>
+</div>
+</div>
+</div>
+<!-- CHAÎNES DE RÉFÉRENCE -->
+<section class="content-bloc" style="margin-top:2rem">
+<div class="card-header">
+<h2 class="card-title">📺 Chaînes de référence</h2>
+</div>
+<div class="grid-2">
+<a class="menu-card" href="https://www.youtube.com/@INRSFrance" rel="noreferrer noopener" target="_blank">
+<h3>INRS France</h3>
+<p>Chaîne officielle de l'Institut National de Recherche et de Sécurité</p>
+</a>
+<a class="menu-card" href="https://www.inrs.fr/publications/videos.html" rel="noreferrer noopener" target="_blank">
+<h3>Portail vidéos INRS</h3>
+<p>Toutes les vidéos INRS classées par thématique</p>
+</a>
+</div>
+</section>
+</main>
+<footer class="footer-modern">
+<div class="footer-content">
+<div class="footer-nav">
+<a href="index.html">🏠 Accueil</a>
+<a href="documents-tms.html">📚 Documents</a>
+</div>
+<p class="footer-credit">© 2026 — <strong>Benoît Deflandre</strong> — Consulteam</p>
+</div>
+</footer>
+<button class="btn-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<button class="btn-top scroll-top-left" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+</body>
+</html>

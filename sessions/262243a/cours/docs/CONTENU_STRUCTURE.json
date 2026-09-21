@@ -1,0 +1,1293 @@
+{
+  "lessons": [
+    {
+      "id": "h01",
+      "domain": "haccp",
+      "title": "Positionner la journée et le PMS",
+      "objective": "Relier les tâches du petit-déjeuner aux preuves de maîtrise.",
+      "body": "<p>Le PMS organise trois ensembles complémentaires : bonnes pratiques d’hygiène, procédures fondées sur les principes HACCP, traçabilité et gestion des non-conformités. Un dossier rangé ne suffit pas : les pratiques, les contrôles et les décisions doivent correspondre à ce qui s’y trouve.</p><p>Décrire d’abord l’activité réelle : produits achetés ou préparés, conditionnements ouverts, maintien froid/chaud, consommateurs, équipements et organisation. La réception, les réserves, la préparation et le buffet forment un même flux ; un contrôle isolé ne permet pas d’en garantir la maîtrise.</p><p>Cette journée de <strong>7 h HACCP/BPH/PMS adaptées à l’activité</strong> est distincte de la formation spécifique de 14 h applicable à la restauration commerciale. Elle ne produit pas l’attestation de cette dernière. Les obligations de l’établissement s’apprécient séparément.</p>",
+      "deep": "<p>Le règlement 852/2004 prévoit des documents proportionnés à la nature et à la taille de l’entreprise. Construire un système utile : une procédure à jour, une consigne comprise, un enregistrement exploitable, puis une vérification. Les modèles de ce support sont des exercices à adapter et à valider ; aucune procédure interne Adonis n’a été fournie.</p>",
+      "case": "Le buffet propose des produits livrés fermés et des préparations réalisées sur place. Que faut-il inventorier avant de choisir les contrôles ?",
+      "answer": "Produits, étapes, usages, consommateurs, équipements, dangers et procédures existantes. Le formateur fait préciser ce qui est réellement pratiqué ; les hypothèses sont marquées comme telles.",
+      "question": "La journée Adonis de 7 h vaut-elle la formation spécifique de 14 h ?",
+      "choices": [
+        "Oui, si le questionnaire est réussi",
+        "Non, ce sont deux dispositifs distincts"
+      ],
+      "correct": 1,
+      "feedback": "La réussite pédagogique ne change ni la durée ni la portée du dispositif.",
+      "refs": [
+        "H1",
+        "H2"
+      ],
+      "image": "media-haccp-hero.png"
+    },
+    {
+      "id": "h02",
+      "domain": "haccp",
+      "title": "Dangers : contamination, multiplication, survie",
+      "objective": "Choisir une mesure qui agit sur le mécanisme identifié.",
+      "body": "<p>Un danger biologique peut être une bactérie pathogène, un virus ou un parasite. Un résidu de produit d’entretien relève d’un danger chimique ; un éclat de verre d’un danger physique. Les allergènes sont traités séparément pour faciliter la maîtrise et l’information des clients.</p><p><strong>Contaminer</strong> : introduire ou transférer un danger, par les mains, un ustensile, une surface ou un aliment. <strong>Multiplier</strong> : permettre à des micro-organismes de se développer lorsque les conditions le favorisent. <strong>Survivre</strong> : subsister après un traitement insuffisant. Tous les agents ne se multiplient pas dans les aliments : un virus peut être transmis sans s’y multiplier.</p><p>Le froid ralentit certains développements mais n’assainit pas un produit contaminé. L’aspect, l’odeur et le goût ne permettent pas de conclure à l’absence de pathogènes. Ne jamais goûter pour décider si un produit suspect est sûr.</p>",
+      "deep": "<p>À chaque étape du diagramme, demander : d’où vient le danger ? Est-il introduit, transféré, multiplié ou insuffisamment éliminé ? Quelles mesures sont déjà efficaces ? Une désinfection ne supprime pas un morceau de verre ; une cuisson ne justifie pas une rupture de traçabilité ni une promesse d’absence d’allergène.</p>",
+      "case": "Une pince utilisée pour une préparation contenant un allergène est replacée dans un autre plat. Quel mécanisme doit être maîtrisé ?",
+      "answer": "Transfert par l’ustensile. Arrêter l’usage, identifier les plats potentiellement concernés et appliquer la décision du responsable ; changer seulement la pince ne retire pas l’allergène déjà transféré.",
+      "question": "Un produit d’aspect normal peut-il contenir un danger biologique ?",
+      "choices": [
+        "Oui",
+        "Non"
+      ],
+      "correct": 0,
+      "feedback": "Les caractères sensoriels ne suffisent pas à démontrer la sécurité sanitaire.",
+      "refs": [
+        "H1",
+        "H4",
+        "H5"
+      ],
+      "image": "haccp-hd.png"
+    },
+    {
+      "id": "h03",
+      "domain": "haccp",
+      "title": "BPH : mains, tenue et séparation des flux",
+      "objective": "Prévenir le transfert entre sale, cru et prêt à consommer.",
+      "body": "<p>Laver les mains aux changements d’activité à risque, après les toilettes, les déchets, le nettoyage ou la manipulation d’aliments crus, et avant de reprendre des aliments prêts à consommer. Mouiller, savonner toutes les surfaces, frictionner, rincer et sécher avec le moyen hygiénique prévu. Les gants ne remplacent pas le lavage ; des gants souillés transfèrent les contaminants.</p><p>Porter une tenue propre adaptée, protéger les cheveux selon l’activité et retirer les objets qui gênent l’hygiène. Signaler les symptômes ou lésions susceptibles de contaminer les denrées au responsable ; une personne présentant un risque de contamination ne doit pas manipuler les aliments dans ces conditions.</p><p>Séparer produits et matériels propres des éléments souillés. Une organisation dans l’espace ou dans le temps avec nettoyage adapté peut éviter les croisements. Ranger les denrées protégées, éviter les écoulements sur les produits prêts à consommer et maintenir les déchets à l’écart des préparations.</p>",
+      "deep": "<p>Définir des standards observables : point de lavage accessible, consommables présents, matériel distinct ou nettoyé entre usages, circuit des déchets, prévention des nuisibles. La fréquence de surveillance des nuisibles dépend de l’analyse du site ; le support ne fixe ni contrat prestataire obligatoire universel ni contrôle mensuel réglementaire.</p>",
+      "case": "Après avoir vidé une poubelle, un salarié garde ses gants pour disposer les viennoiseries.",
+      "answer": "Interrompre la tâche. Retirer les gants, réaliser l’hygiène des mains, reprendre avec les moyens propres prévus. Évaluer les denrées déjà touchées.",
+      "question": "Les mêmes gants peuvent-ils passer des déchets aux aliments ?",
+      "choices": [
+        "Oui, s’ils paraissent propres",
+        "Non"
+      ],
+      "correct": 1,
+      "feedback": "La contamination peut être invisible ; changer de tâche impose de rétablir l’hygiène.",
+      "refs": [
+        "H1"
+      ],
+      "image": "haccp-hd.png"
+    },
+    {
+      "id": "h04",
+      "domain": "haccp",
+      "title": "Réception, froid, chaud et service",
+      "objective": "Choisir le critère du produit et du procédé, puis décider sur preuve.",
+      "body": "<p>À réception, rapprocher commande, fournisseur, produit, quantité et lot. Vérifier l’emballage, la date et les conditions de transport ; mesurer selon la procédure avec un appareil approprié. La mesure de l’air d’un réfrigérateur n’est pas une mesure à cœur de la denrée. Une sonde doit être entretenue et utilisée sans contaminer le produit.</p><table><caption>Repères de conservation : annexe I de l’arrêté du 21/12/2009, remise directe/restauration collective, denrées animales ou en contenant</caption><thead><tr><th>Catégorie</th><th>Repère</th></tr></thead><tbody><tr><td>Viandes hachées réfrigérées</td><td>Maximum +2 °C</td></tr><tr><td>Préparations de viandes réfrigérées</td><td>Maximum +4 °C</td></tr><tr><td>Préparations culinaires élaborées à l’avance réfrigérées</td><td>Maximum +3 °C</td></tr><tr><td>Plats cuisinés ou repas remis/livrés chauds</td><td>Minimum +63 °C</td></tr><tr><td>Glaces et crèmes glacées</td><td>Maximum −18 °C</td></tr></tbody></table><p>Ce tableau est une sélection, pas une règle unique pour tout aliment. Identifier la catégorie, consulter l’étiquetage et les dispositions applicables. <strong>+63 °C au maintien chaud n’est pas une température universelle de cuisson.</strong> Aucun dépassement n’est accepté automatiquement au motif qu’il serait bref.</p><p>Au buffet, protéger les produits, limiter les manipulations, utiliser des ustensiles adaptés et maintenir les conditions prévues. Un aliment exposé au public n’est pas assimilé à une réserve restée protégée. Tracer l’écart et isoler avant toute décision de réemploi.</p>",
+      "deep": "<p>Les règles de refroidissement de +63 °C à +10 °C en deux heures au maximum et de remise en température de +10 °C à +63 °C en une heure au maximum figurent à l’annexe IV pour la restauration collective, sous les réserves d’analyse des dangers qu’elle prévoit. Elles ne sont pas transposées ici en procédure réglementaire automatique pour tout buffet hôtelier. En remise directe, établir le couple temps/température à partir du procédé, du GBPH pertinent et de la validation du PMS. Ne pas inventer de durée de vie après ouverture.</p>",
+      "case": "Exercice fictif : un produit dont le critère validé est ≤ +3 °C est mesuré à +7 °C à réception. La durée de l’écart est inconnue.",
+      "answer": "Ne pas accepter sur le seul aspect. Identifier et isoler le lot, conserver la mesure et les conditions, solliciter la décision prévue au PMS et tracer acceptation justifiée/refus. Remettre au froid ne démontre pas que le produit est redevenu sûr.",
+      "question": "Le repère de +63 °C pour le chaud impose-t-il une cuisson identique à tous les produits ?",
+      "choices": [
+        "Oui",
+        "Non"
+      ],
+      "correct": 1,
+      "feedback": "Il s’agit ici d’un repère de conservation/remise chaude ; la cuisson dépend du danger et du procédé.",
+      "refs": [
+        "H1",
+        "H3"
+      ],
+      "image": "media-reception-v2.png"
+    },
+    {
+      "id": "h05",
+      "domain": "haccp",
+      "title": "Nettoyage, désinfection et TACT",
+      "objective": "Construire un protocole reproductible sans improviser le dosage.",
+      "body": "<p>Nettoyer retire les souillures ; désinfecter vise les micro-organismes dans les conditions validées du produit. Débarrasser les déchets, appliquer le nettoyage prévu, rincer si nécessaire, désinfecter selon le protocole puis rincer si la notice l’exige. Certains produits combinent des fonctions : suivre leur usage autorisé et leurs conditions d’efficacité.</p><p>TACT regroupe le <strong>temps</strong> de contact, l’<strong>action mécanique</strong>, la <strong>concentration/action chimique</strong> et la <strong>température</strong>. Ce repère de méthode ne permet pas de modifier arbitrairement la dilution ou de compenser un temps trop court en ajoutant du produit. Lire la notice et la fiche de données de sécurité.</p><p>Pour une surface en contact avec les aliments, vérifier que le produit et le protocole conviennent à cet usage. Ne jamais mélanger des produits ; un détartrant acide mélangé à un produit chloré peut libérer un gaz dangereux. Les contenants doivent rester identifiés ; aucune bouteille alimentaire ne sert au transvasement.</p>",
+      "deep": "<p>Un biofilm est une communauté microbienne associée à une matrice adhérente ; les zones difficiles d’accès et l’entretien insuffisant favorisent sa persistance. Rechercher les joints, angles et équipements démontables suivant leur notice. Contrôler visuellement, vérifier les opérations et utiliser les contrôles prévus au PMS ; un contrôle visuel seul ne prouve pas une désinfection efficace.</p><p>Le plan précise : quoi, qui, quand, avec quel produit, quelle dilution, quel temps, quelle méthode, quel rinçage, quel équipement de protection, quel contrôle et quelle action en cas d’écart.</p>",
+      "case": "Le produit impose un temps de contact indiqué sur sa notice, mais la surface est essuyée immédiatement.",
+      "answer": "L’efficacité n’est pas démontrée. Reprendre le protocole validé avant réutilisation, sans augmenter empiriquement la concentration. Corriger l’organisation qui empêche de respecter le temps.",
+      "question": "Peut-on doubler la dose pour raccourcir un temps de contact ?",
+      "choices": [
+        "Non, suivre les conditions validées",
+        "Oui, systématiquement"
+      ],
+      "correct": 0,
+      "feedback": "TACT explique les facteurs ; seule une procédure validée permet de fixer leurs valeurs.",
+      "refs": [
+        "H1",
+        "H7",
+        "H8"
+      ],
+      "image": "haccp-hd.png"
+    },
+    {
+      "id": "h06",
+      "domain": "haccp",
+      "title": "Allergènes : une information fiable au buffet",
+      "objective": "Relier chaque recette aux ingrédients réellement utilisés.",
+      "body": "<p>Vérifier la recette et les étiquettes de tous les ingrédients, y compris sauces, garnitures et produits de substitution. Mettre à jour la matrice quand le fournisseur ou la composition change. L’information sur les allergènes des denrées non préemballées doit être accessible par écrit selon les modalités applicables ; une réponse de mémoire ne suffit pas.</p><p>Les 14 catégories de l’annexe II sont : céréales contenant du gluten ; crustacés ; œufs ; poissons ; arachides ; soja ; lait ; fruits à coque ; céleri ; moutarde ; sésame ; anhydride sulfureux et sulfites au-delà de 10 mg/kg ou 10 mg/l exprimés en SO₂ ; lupin ; mollusques. L’annexe définit les produits concernés et certaines exceptions. « Sans lactose » ne signifie pas « sans protéines de lait ».</p><p>Éviter les transferts par pinces, couteaux, surfaces, mains ou récipients. Retirer une décoration contenant un allergène ne garantit pas son absence. Si la composition ou les conditions ne sont pas connues, annoncer l’incertitude et obtenir une réponse vérifiée ; ne jamais promettre l’absence sur supposition.</p>",
+      "deep": "<p>La matrice relie plat, version de recette, références ingrédients, allergènes présents, date de vérification et responsable. Les mentions de présence possible ne remplacent pas la prévention des contaminations croisées. Distinguer ingrédient volontaire et risque de présence involontaire issu de l’analyse ; ne pas mettre « tous allergènes possibles » pour se dispenser de vérifier.</p>",
+      "case": "Un client demande si une viennoiserie sans lactose convient à une allergie aux protéines de lait.",
+      "answer": "Vérifier la composition complète et les informations du fournisseur ; le seul libellé sans lactose ne permet pas de conclure. Ne pas servir comme garanti sans lait en l’absence de preuve.",
+      "question": "« Sans lactose » garantit-il l’absence de protéines de lait ?",
+      "choices": [
+        "Oui",
+        "Non"
+      ],
+      "correct": 1,
+      "feedback": "Le lactose est un sucre ; une information sur le lactose ne remplace pas celle relative à l’allergène lait.",
+      "refs": [
+        "H4"
+      ],
+      "image": "media-allergen.png"
+    },
+    {
+      "id": "h07",
+      "domain": "haccp",
+      "title": "Traçabilité, dates et non-conformités",
+      "objective": "Retrouver un lot et documenter une décision.",
+      "body": "<p>Relier le produit reçu au fournisseur, au lot, à la date de réception et à son utilisation. Conserver les informations utiles après déconditionnement selon l’organisation du PMS. La traçabilité doit permettre d’identifier les fournisseurs et les clients professionnels concernés ; elle n’impose pas d’identifier nominativement chaque client final du buffet.</p><p>La <strong>DLC</strong> est une limite sanitaire pour des aliments microbiologiquement très périssables. La <strong>DDM</strong> concerne principalement les qualités du produit : son dépassement n’implique pas automatiquement un danger, mais ne dispense pas d’évaluer son état et sa conservation. Après ouverture, les conditions et durées peuvent changer ; suivre la notice et le PMS, sans inventer une prolongation.</p><p>Face à un écart : maîtriser immédiatement l’exposition, identifier et isoler les produits concernés, alerter le responsable, décider sur les critères applicables, enregistrer, puis rechercher la cause. Une correction traite la situation ; l’action corrective évite sa répétition. Vérifier ensuite son efficacité.</p>",
+      "deep": "<p>Le retrait empêche la circulation d’un produit non sûr dans la chaîne ; le rappel vise aussi les consommateurs déjà servis lorsque nécessaire. L’exploitant applique l’article 19 du règlement 178/2002 et informe l’autorité compétente quand les conditions sont réunies. L’organisation du site doit préciser qui décide et qui communique. Ne pas fixer cinq ans comme durée légale uniforme pour tous les documents sanitaires.</p>",
+      "case": "Un fournisseur signale un lot non sûr déjà utilisé au petit-déjeuner. Quelles informations doivent être disponibles ?",
+      "answer": "Lot, quantités reçues/utilisées/restantes, dates et services concernés, stockage, décisions et interlocuteurs. Isoler le restant et déclencher la procédure de retrait/rappel appropriée avec le responsable.",
+      "question": "Une DDM dépassée signifie-t-elle automatiquement la même chose qu’une DLC dépassée ?",
+      "choices": [
+        "Non",
+        "Oui"
+      ],
+      "correct": 0,
+      "feedback": "La portée des deux dates diffère ; les conditions de conservation et l’état restent déterminants.",
+      "refs": [
+        "H5",
+        "H6"
+      ],
+      "image": "haccp-hd.png"
+    },
+    {
+      "id": "h08",
+      "domain": "haccp",
+      "title": "Méthode HACCP et atelier de flux",
+      "objective": "Passer de l’analyse des dangers à une maîtrise vérifiable.",
+      "body": "<p>Préparer la démarche : constituer les compétences utiles, décrire le produit et son usage, tracer le diagramme, puis le vérifier sur le terrain. Le diagramme doit inclure les attentes, transferts et retours réellement pratiqués.</p><ol><li>Analyser les dangers et les mesures de maîtrise.</li><li>Déterminer les points critiques pour la maîtrise (CCP) quand ils sont nécessaires.</li><li>Fixer des limites critiques justifiées.</li><li>Organiser la surveillance.</li><li>Prévoir les actions en cas de perte de maîtrise.</li><li>Vérifier l’efficacité du système.</li><li>Tenir les documents et enregistrements appropriés.</li></ol><p>Les BPH/prérequis restent indispensables. Une étape n’est pas un CCP parce qu’elle figure dans un exemple. Une note de criticité aide à discuter les priorités ; elle ne remplace pas l’analyse du danger ni la justification du CCP. Le support ne déclare pas automatiquement réception, cuisson ou refroidissement CCP pour Adonis.</p>",
+      "deep": "<p>Distinguer surveillance et vérification : relever une température surveille une opération ; examiner les relevés, les écarts et la fiabilité du thermomètre contribue à vérifier le système. La validation établit que la mesure choisie peut maîtriser le danger avant sa mise en œuvre ou après modification. Toute modification de recette, d’équipement ou d’organisation déclenche une réévaluation appropriée.</p>",
+      "case": "Tracer réception → réserve → préparation → buffet pour un produit choisi. Pour chaque étape : danger, maîtrise, critère, surveillance, correction, preuve.",
+      "answer": "Le groupe justifie chaque critère et laisse « à valider » ce qui dépend d’un document du site. Il explique pourquoi une étape est ou n’est pas un CCP, sans imposer un CCP à toutes les étapes.",
+      "question": "Un CCP est-il obligatoire à chaque étape ?",
+      "choices": [
+        "Oui",
+        "Non"
+      ],
+      "correct": 1,
+      "feedback": "Les CCP résultent de l’analyse des dangers et des mesures de maîtrise.",
+      "refs": [
+        "H1"
+      ],
+      "image": "haccp-hd.png"
+    },
+    {
+      "id": "s01",
+      "domain": "hse",
+      "title": "1 · Rôle et missions du référent HSE",
+      "objective": "Observer, transmettre et suivre sans se substituer à l’employeur.",
+      "body": "<p>Le référent observe les situations, recueille les difficultés, contribue à l’évaluation des risques, propose des actions et suit leur réalisation. Il prépare des échanges courts et vérifie que les consignes sont comprises. La fonction demande des moyens, du temps et des interlocuteurs identifiés.</p><p>L’employeur conserve son obligation de prévention. Un titre de « référent » ne transfère pas automatiquement ses responsabilités, ni une compétence technique particulière. Ne pas confondre ce rôle avec une désignation réglementaire, une délégation de pouvoirs ou une habilitation électrique.</p><p>Décrire des faits précis : lieu, tâche, personnes exposées, conditions, protections présentes et défaillances. Une photographie peut documenter si elle est autorisée et prise sans exposition ; elle ne remplace pas l’échange avec les salariés qui réalisent la tâche.</p>",
+      "deep": "<p>Organiser une boucle de retour : réception du signalement, évaluation de l’urgence, mesure immédiate si possible dans son rôle, responsable de traitement, échéance puis retour au déclarant. Distinguer « transmis », « corrigé » et « efficacité vérifiée ». Un tableau d’actions clôturé sans contrôle terrain peut masquer un risque persistant.</p>",
+      "case": "Trois salariés signalent un chariot difficile à pousser ; aucune blessure n’est déclarée.",
+      "answer": "Observer la tâche avec eux, documenter roues/charges/parcours/contraintes temporelles, organiser une action et contrôler l’amélioration. Ne pas attendre l’accident.",
+      "question": "L’absence d’accident suffit-elle à conclure qu’un risque est maîtrisé ?",
+      "choices": [
+        "Oui",
+        "Non"
+      ],
+      "correct": 1,
+      "feedback": "L’EvRP porte sur les expositions et les situations réelles, même sans accident antérieur.",
+      "refs": [
+        "S1",
+        "S3",
+        "S6"
+      ],
+      "image": "hse-hd.png"
+    },
+    {
+      "id": "s02",
+      "domain": "hse",
+      "title": "2 · Cadre réglementaire, EvRP et DUERP",
+      "objective": "Distinguer la méthode, sa transcription et le plan d’actions.",
+      "body": "<p>L’employeur met en œuvre prévention, information/formation et organisation adaptée. Les neuf principes : éviter ; évaluer l’inévitable ; combattre à la source ; adapter le travail à l’homme ; tenir compte de l’évolution technique ; remplacer ce qui est dangereux ; planifier ; privilégier la protection collective ; donner les instructions appropriées.</p><p>L’EvRP identifie et apprécie les risques par unités de travail pertinentes. Le DUERP en transcrit les résultats. La mise à jour est au moins annuelle à partir de 11 salariés, et également lors d’un aménagement important modifiant les conditions de santé/sécurité ou de travail, ou lorsqu’une information supplémentaire sur un risque est recueillie. Ces déclencheurs concernent aussi les plus petites entreprises.</p><p>À partir de 50 salariés, les résultats débouchent sur un programme annuel de prévention des risques professionnels et d’amélioration des conditions de travail ; en dessous, sur une liste d’actions consignée dans le DUERP et ses mises à jour. La cotation numérique n’est pas une formule imposée par le Code.</p>",
+      "deep": "<p>Les versions successives du DUERP sont conservées selon les règles de R4121-4, pendant 40 ans à compter de leur élaboration, pour les versions relevant du dispositif entré en vigueur le 31 mars 2022. Organiser un archivage identifiable et les accès prévus. La sécurité du public dans un ERP relève aussi du Code de la construction et de l’habitation et du règlement de sécurité incendie ; elle ne se confond pas avec la protection des travailleurs. Le type, la catégorie et les consignes propres au site doivent être confirmés avant toute prescription locale.</p>",
+      "case": "Un nouvel équipement et une nouvelle organisation de nettoyage modifient l’exposition chimique dans une petite équipe.",
+      "answer": "Réexaminer le risque et mettre à jour le DUERP et les actions si les conditions de R4121-2 sont réunies ; ne pas attendre une échéance annuelle sous prétexte que l’équipe a moins de 11 salariés.",
+      "question": "Le seuil de 11 salariés supprime-t-il tous les autres déclencheurs de mise à jour ?",
+      "choices": [
+        "Non",
+        "Oui"
+      ],
+      "correct": 0,
+      "feedback": "Il concerne l’obligation annuelle ; les changements importants et nouvelles informations restent des déclencheurs.",
+      "refs": [
+        "S1",
+        "S2",
+        "S5"
+      ],
+      "image": "hse-hd.png"
+    },
+    {
+      "id": "s03",
+      "domain": "hse",
+      "title": "3 · Identifier et évaluer les risques hôteliers",
+      "objective": "Analyser une situation de travail avec ceux qui la réalisent.",
+      "body": "<p><strong>Danger</strong> : source possible de dommage. <strong>Situation dangereuse</strong> : personne exposée dans certaines conditions. <strong>Risque</strong> : possibilité de dommage appréciée au regard de la gravité et de la probabilité. <strong>Dommage</strong> : atteinte à la santé. Exemple : produit corrosif → transvasement avec projection possible → risque de brûlure → lésion.</p><p>Observer accueil/réception, étages, chambres, restauration, réserves et maintenance. Examiner chutes, manutentions et TMS, chimique, biologique, coupures/brûlures, incendie, électrique, agressions, RPS, isolement et interférences avec les entreprises extérieures. Les clients et salariés peuvent être exposés différemment au même événement.</p><p>Décrire fréquence, durée, personnes, charge, cadence et protections effectivement utilisées. Hiérarchiser avec une méthode expliquée ; ne pas diminuer artificiellement un score parce qu’un EPI est simplement disponible. Un danger grave nécessitant une mesure immédiate ne doit pas attendre la fin d’un calcul.</p>",
+      "deep": "<p>Les TMS sont multifactoriels : efforts, postures, répétition, durée, récupération et organisation. Prévenir par la conception des tâches, les aides adaptées, l’entretien des roues, le rangement et la régulation de la charge. « Plier les genoux » seul ne traite pas une organisation générant des efforts répétés. Pour le travail isolé et les agressions, prévoir prévention, moyens d’alerte et organisation des secours ; un appareil d’alarme seul ne suffit pas.</p>",
+      "case": "Housekeeping : sol humide, chariot lourd, linge au sol et produits dans une circulation occupée.",
+      "answer": "Décrire les expositions, mettre fin au danger immédiat selon les consignes, organiser le passage, traiter la cause du sol humide et des encombrements, évaluer le chariot et la charge. Vérifier ensuite l’usage réel.",
+      "question": "Une matrice G × P est-elle une formule réglementaire universelle ?",
+      "choices": [
+        "Oui",
+        "Non"
+      ],
+      "correct": 1,
+      "feedback": "C’est un outil méthodologique possible, à justifier et compléter par l’observation.",
+      "refs": [
+        "S1",
+        "S3"
+      ],
+      "image": "media-ergonomie-v2.png"
+    },
+    {
+      "id": "s04",
+      "domain": "hse",
+      "title": "4 · Plan d’actions et entreprises extérieures",
+      "objective": "Organiser les mesures et traiter la coactivité.",
+      "body": "<p>Le plan d’actions issu de l’EvRP précise la situation, les mesures immédiates et durables, le responsable, les moyens, l’échéance et le contrôle d’efficacité. Chercher d’abord à supprimer le risque ou agir à la source ; les EPI complètent les mesures qui restent nécessaires.</p><p>Le <strong>plan de prévention des entreprises extérieures</strong> traite les risques d’interférence entre activités, installations et matériels dans le cadre applicable. Une inspection commune préalable et une analyse partagée précèdent l’opération. En présence de risques d’interférence, les mesures de prévention sont définies conjointement.</p><p>Dans ce régime, l’écrit est obligatoire lorsque le total prévisible de l’opération atteint 400 heures sur une période d’au plus 12 mois, ou pour les travaux dangereux de la liste réglementaire quelle que soit la durée. Un chantier court n’est donc pas automatiquement dispensé. D’autres régimes, notamment la coordination SPS pour certains chantiers, doivent être distingués.</p>",
+      "deep": "<p>Avant une maintenance pendant l’exploitation : préciser zones, horaires, circulations, séparation du public, énergies, accès, intervenants, consignes d’urgence et conditions de restitution. Vérifier que les entreprises et responsables compétents définissent les opérations techniques. Un référent HSE ne réalise pas une consignation électrique au titre de son seul rôle.</p>",
+      "case": "Une entreprise intervient deux heures dans un local technique pendant le service. « Moins de 400 h, donc rien à préparer » est-il recevable ?",
+      "answer": "Non. Inspection et analyse des interférences restent à traiter ; vérifier en outre si les travaux figurent dans la liste rendant l’écrit obligatoire quelle que soit leur durée.",
+      "question": "Le plan d’actions EvRP et le plan de prévention entreprises extérieures sont-ils interchangeables ?",
+      "choices": [
+        "Non",
+        "Oui"
+      ],
+      "correct": 0,
+      "feedback": "Le premier suit la prévention interne ; le second organise la prévention des interférences dans son cadre réglementaire.",
+      "refs": [
+        "S1",
+        "S4"
+      ],
+      "image": "hse-hd.png"
+    },
+    {
+      "id": "s05",
+      "domain": "hse",
+      "title": "5 · Sensibiliser et communiquer",
+      "objective": "Faire comprendre une action et vérifier son application.",
+      "body": "<p>Un brief utile tient sur une situation concrète : ce qui change, qui est exposé, quelle action est attendue, qui contacter et comment vérifier. Éviter les messages généraux tels que « soyez prudents ». Faire reformuler la consigne et observer un exemple.</p><p>Le signalement décrit les faits sans attribuer hâtivement une faute. Séparer l’urgence, le traitement de la cause et le retour d’expérience. Les nouveaux arrivants, remplaçants et entreprises extérieures doivent recevoir les informations adaptées à leur activité et aux accès autorisés.</p><p>Après une action, revenir sur le terrain : le problème a-t-il disparu ? La mesure est-elle comprise, disponible et compatible avec le travail réel ? A-t-elle déplacé le risque ? Mettre à jour les documents et communiquer le résultat.</p>",
+      "deep": "<p>Trame de causerie : montrer une situation, faire nommer le danger, demander deux mesures dont une à la source, choisir une action réalisable, désigner le responsable et la vérification. Un indicateur de participation renseigne l’activité de formation ; il ne démontre pas à lui seul la réduction de l’exposition.</p>",
+      "case": "Préparer un brief sur le nettoyage d’une circulation en présence de clients.",
+      "answer": "Préciser le cheminement maintenu sûr, le phasage, les accès protégés, le responsable et les conditions de réouverture ; demander une reformulation.",
+      "question": "Quel message est le plus opérationnel ?",
+      "choices": [
+        "« Soyez prudents »",
+        "« Utilisez le passage balisé et signalez toute barrière déplacée au responsable »"
+      ],
+      "correct": 1,
+      "feedback": "La consigne nomme une action observable et un relais.",
+      "refs": [
+        "S1",
+        "S3"
+      ],
+      "image": "media-hse-hero.png"
+    },
+    {
+      "id": "e01",
+      "domain": "h0b0",
+      "title": "Formation, titre et mission",
+      "objective": "Identifier les trois conditions sans élargir son périmètre.",
+      "body": "<p>La formation apporte des connaissances et des savoir-faire de prévention. L’employeur délivre le titre d’habilitation adapté aux opérations confiées, après les vérifications nécessaires. Les instructions précisent la mission, le lieu, les limites et l’organisation. Une attestation de stage ou un score au questionnaire ne remplace aucun de ces éléments.</p><p>Le parcours Adonis reste H0/B0, pour des opérations d’ordre non électrique. Il ne prépare pas aux gestes BS, BE ou BR. Ces symboles servent seulement à comprendre qu’un relais compétent peut être nécessaire. Les conditions pratiques doivent être évaluées dans un environnement représentatif ; une demi-journée annoncée ne prouve pas à elle seule leur satisfaction.</p><p>Depuis le 1er octobre 2025, R4544-10 conditionne la validité d’une habilitation autorisant le voisinage de pièces nues sous tension à une attestation d’absence de contre-indications médicales. L’employeur vérifie l’application aux opérations réellement autorisées ; le nom du stage ne suffit pas à trancher.</p>",
+      "deep": "<p>Lire identité, symboles, fonction, installations, restrictions et validité du titre ; vérifier les instructions. La théorie H0/B0 ne doit pas devenir un avis favorable automatique. Le formateur documente les acquis et les points non évalués ; l’employeur reste décisionnaire. Les conditions particulières du voisinage doivent être examinées à partir des textes et de la norme applicable.</p>",
+      "case": "« Tu as suivi le cours, remplace cette prise. » Quelle réponse professionnelle ?",
+      "answer": "Expliquer que la mission est électrique et hors périmètre H0/B0, signaler le besoin et demander le relais prévu. Ne pas démonter.",
+      "question": "Qui délivre le titre d’habilitation ?",
+      "choices": [
+        "Le logiciel après 70 %",
+        "L’employeur"
+      ],
+      "correct": 1,
+      "feedback": "Le score renseigne les acquis ; il ne délivre pas un titre.",
+      "refs": [
+        "E1",
+        "E2"
+      ],
+      "image": "assets/visuels/V08.png"
+    },
+    {
+      "id": "e02",
+      "domain": "h0b0",
+      "title": "Reconnaître le danger électrique",
+      "objective": "Distinguer contact direct, indirect et arc.",
+      "body": "<p>Le contact direct touche une partie active normalement sous tension. Le contact indirect touche une masse devenue accidentellement sous tension. Un arc électrique peut provoquer brûlures, projections et effets de pression sans contact direct du corps avec le conducteur.</p><p>L’électrisation désigne le passage du courant dans le corps ; l’électrocution son issue mortelle. Les conséquences dépendent notamment du trajet, de la durée, de l’intensité, de la fréquence et des conditions de contact. L’humidité et les surfaces conductrices aggravent certaines situations. Aucun chiffre isolé n’est une autorisation de contact.</p><p>Un câble entaillé, une enveloppe ouverte, une odeur ou un échauffement imposent de signaler et d’empêcher l’utilisation selon les consignes. Un appareil qui fonctionne peut être dangereux. Ne pas remettre sous tension pour « voir si cela recommence ».</p>",
+      "deep": "<p>U (volt) désigne la tension, I (ampère) le courant, R (ohm) la résistance. U = R × I est un modèle pour un conducteur ohmique ; il ne calcule pas une situation sans danger pour une personne. Une source peut être présente même si aucun courant ne circule dans un circuit ouvert. Une alimentation de secours ou une batterie peut maintenir un danger.</p>",
+      "case": "Un cordon endommagé alimente encore correctement un appareil utilisé en chambre.",
+      "answer": "Le bon fonctionnement n’établit pas la sécurité. Suspendre l’usage suivant les consignes, empêcher la réutilisation et faire prendre en charge par le relais compétent.",
+      "question": "Une masse métallique devenue accidentellement sous tension expose à un contact…",
+      "choices": [
+        "Indirect",
+        "Direct"
+      ],
+      "correct": 0,
+      "feedback": "La masse n’est pas une partie active normalement sous tension.",
+      "refs": [
+        "E2",
+        "E3"
+      ],
+      "image": "assets/visuels/V01.png"
+    },
+    {
+      "id": "e03",
+      "domain": "h0b0",
+      "title": "Environnement, zones et accès",
+      "objective": "Respecter les limites avec le corps, les outils et les charges.",
+      "body": "<p>B désigne le domaine basse tension, H le domaine haute tension. B0 et H0 concernent des opérations non électriques dans les conditions autorisées. H0V est un symbole distinct lié au voisinage renforcé HT ; l’évoquer ne le confère pas. Le symbole B0V n’existe pas.</p><p>Les opérations non électriques sont interdites dans la zone de voisinage renforcé BT. Dans le cas illustré en champ libre de pièces nues sous tension en BT, la limite de voisinage renforcé est de 0,30 m, et celle du voisinage simple de 3 m. Ces limites de zones ne sont ni une distance d’approche à viser ni un droit d’accès. L’installation, les protections, les instructions et le titre conditionnent le travail.</p><p>Prendre en compte l’enveloppe entière des mouvements : corps, échelle, outils, manches et charges. Le balisage est défini par l’organisation compétente ; ne pas le déplacer. Si les conditions changent, suspendre et demander une nouvelle définition de la sécurité.</p>",
+      "deep": "<p>Ne pas transposer le schéma BT à la HT, à une ligne aérienne, à un câble enterré ou à un engin. Pour ces situations, le responsable applique les distances et procédures correspondant à l’installation et à la tension. Les opérations non électriques au voisinage sont limitées par leur finalité ; H0/H0V ne signifient pas accès libre. Un non-habilité ne pénètre pas seul dans un local à risque particulier de choc électrique.</p><p>Dans un local à risque particulier de choc électrique, la zone 1 est limitée par le local : la zone 0 n’y existe pas. Le schéma en champ libre ne sert donc pas à autoriser un accès dans ce local (INRS ED 6127, p. 40).</p>",
+      "case": "Une échelle doit passer dans un local, mais une protection ou une barrière a été déplacée.",
+      "answer": "Arrêter le déplacement sans s’exposer, signaler et faire rétablir ou redéfinir les conditions. La position des pieds ne garantit pas celle de l’échelle.",
+      "question": "B0 autorise-t-il les travaux non électriques dans le voisinage renforcé BT ?",
+      "choices": [
+        "Oui avec des gants",
+        "Non"
+      ],
+      "correct": 1,
+      "feedback": "Les gants ne créent pas un droit d’accès et B0V n’existe pas.",
+      "refs": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "image": "media-h0b0-hero.png"
+    },
+    {
+      "id": "e04",
+      "domain": "h0b0",
+      "title": "Travaux non électriques : préparer et interrompre",
+      "objective": "Organiser le chantier dans les limites de la mission.",
+      "body": "<p>Avant de commencer : identifier le responsable, décrire la tâche, vérifier l’accès, les instructions et le balisage, reconnaître les installations concernées et les autres activités. Le chargé de chantier et l’exécutant n’ont pas le même rôle ; la fonction doit être précisée.</p><p>L’exécutant de travaux d’ordre non électrique agit sous la conduite et la surveillance prévues ; il ne travaille pas seul dans ce cadre. Une information manquante se traite avant de commencer. L’habitude ou l’urgence commerciale ne remplacent pas l’organisation de la sécurité.</p><p>H0/B0 ne donne pas compétence pour remplacer une prise, effectuer une VAT, rechercher une panne ou assurer une consignation. Le personnel chargé de ces opérations intervient avec ses compétences et habilitations adaptées. Ne pas assimiler « hors tension » supposé à une mise en sécurité établie.</p>",
+      "deep": "<p>Le simple usage normal d’un matériel électrique en bon état n’est pas automatiquement une opération exigeant une habilitation. Inversement, une opération électrique ne devient pas non électrique parce qu’elle paraît courte. Décrire l’action et son environnement, puis appliquer l’analyse et les consignes compétentes.</p>",
+      "case": "Une tâche de nettoyage est interrompue par l’ouverture d’une enveloppe électrique à proximité.",
+      "answer": "Suspendre et rester hors exposition. Faire réévaluer la situation par le responsable ; ne pas poursuivre avec une simple vigilance accrue.",
+      "question": "Peut-on se fier au voyant éteint pour conclure à l’absence de tension ?",
+      "choices": [
+        "Non",
+        "Oui"
+      ],
+      "correct": 0,
+      "feedback": "L’état d’un voyant ne démontre pas l’absence de toutes les sources.",
+      "refs": [
+        "E2",
+        "E3"
+      ],
+      "image": "media-h0b0-field.png"
+    },
+    {
+      "id": "e05",
+      "domain": "h0b0",
+      "title": "Matériels et anomalies dans l’hôtel",
+      "objective": "Observer sans ouvrir, réparer ou diagnostiquer.",
+      "body": "<p>Observer les enveloppes, cordons, prises et traces visibles sans ouvrir les matériels. Décrire ce qui est vu : gaine coupée, fixation rompue, liquide à proximité, odeur, bruit ou échauffement. Éviter un diagnostic technique improvisé.</p><p>Le tableau électrique, le dispositif différentiel et le disjoncteur ont des fonctions à comprendre, mais leur présence ne garantit pas l’absence de danger. Un arrêt d’urgence n’est pas une preuve de séparation de toutes les sources. Une protection qui déclenche à nouveau exige un relais ; le parcours n’enseigne pas à la réarmer.</p><p>Empêcher l’utilisation involontaire dans les limites des consignes, identifier l’équipement et transmettre lieu, heure et faits. Ne pas masquer un défaut avec du ruban adhésif, ne pas retirer une protection et ne pas rendre le matériel au client avant décision compétente.</p>",
+      "deep": "<p>Les photographies servent à l’observation. Le tableau ancien fourni n’est pas une référence de conformité. Les classes de protection et indices décrivent certaines caractéristiques du matériel ; ils ne dispensent pas de lire sa notice et de vérifier son état, l’environnement et les conditions d’utilisation.</p>",
+      "case": "Une cliente signale une prise qui chauffe et une odeur inhabituelle.",
+      "answer": "Faire cesser l’usage selon les consignes sans toucher une partie dangereuse, protéger l’accès et alerter le responsable technique ; si un sinistre est suspecté, déclencher l’organisation d’urgence.",
+      "question": "Quelle information transmettre en priorité ?",
+      "choices": [
+        "Un diagnostic de câblage supposé",
+        "Le lieu, le matériel et les faits observés"
+      ],
+      "correct": 1,
+      "feedback": "Un signalement factuel permet au relais de décider sans engager une investigation hors périmètre.",
+      "refs": [
+        "E2",
+        "E3"
+      ],
+      "image": "assets/photos/tableau_electrique.jpg"
+    },
+    {
+      "id": "e06",
+      "domain": "h0b0",
+      "title": "Accident, incendie et alerte",
+      "objective": "Protéger sans devenir une seconde victime.",
+      "body": "<p>Ne pas toucher une victime ou un équipement tant que le danger électrique n’est pas maîtrisé. Empêcher les tiers de s’exposer. Appliquer une consigne de coupure accessible et identifiée seulement si elle peut être exécutée sans danger ; sinon maintenir l’éloignement et alerter.</p><p>Donner le lieu exact, les accès, la nature électrique du danger, le nombre de victimes, leur état apparent et les actions réalisées. Suivre les instructions des secours et les consignes du site. Une fois l’accès sûr, agir selon sa formation et les instructions reçues.</p><p>En cas d’incendie : déclencher l’alerte, préserver l’évacuation et ne pas improviser un moyen d’extinction. L’usage d’un extincteur dépend de la formation et des conditions de sécurité. Ne pas remettre en service l’installation sinistrée de sa propre initiative.</p>",
+      "deep": "<p>Une ligne tombée au sol, un engin en contact avec une ligne et une installation HT exigent un éloignement et un relais spécialisé ; ne pas extrapoler la limite BT de 0,30 m. Après l’événement, conserver les faits utiles au retour d’expérience. La formation de ce parcours ne remplace pas une formation de secouriste.</p>",
+      "case": "Une personne est au sol près d’un équipement ; l’état de l’alimentation est inconnu.",
+      "answer": "Protéger le sauveteur et les tiers, faire traiter le danger sans exposition, alerter et suivre les consignes. Ne pas se précipiter au contact.",
+      "question": "Quelle priorité avant le contact avec la victime ?",
+      "choices": [
+        "La tirer immédiatement",
+        "Maîtriser le risque d’exposition"
+      ],
+      "correct": 1,
+      "feedback": "Une seconde victime compliquerait les secours ; protéger précède le contact.",
+      "refs": [
+        "E2",
+        "E3"
+      ],
+      "image": "assets/photos/arret-urgence.jpg"
+    }
+  ],
+  "fiches": [
+    [
+      "F01",
+      "h03",
+      "Hygiène des mains",
+      "Identifier le changement de tâche|Retirer les gants souillés|Laver, rincer et sécher selon le protocole|Reprendre avec des moyens propres",
+      "Les gants ne remplacent pas le lavage.",
+      "Disponibilité eau, savon et séchage ; observation du geste."
+    ],
+    [
+      "F02",
+      "h04",
+      "Chaîne du froid",
+      "Identifier le produit et son critère|Distinguer mesure d’air et mesure du produit|Réduire les sorties et protéger les denrées|Isoler et signaler tout écart",
+      "Un refroidissement ultérieur ne prouve pas la sécurité.",
+      "Produit/lot, heure, mesure, appareil, critère, décision."
+    ],
+    [
+      "F03",
+      "h04",
+      "Réception des denrées",
+      "Rapprocher livraison et commande|Contrôler emballage, lot et dates|Vérifier les conditions de conservation|Accepter ou isoler/refuser suivant la procédure",
+      "Pas de tolérance universelle « +2 °C pendant 2 h ».",
+      "Fournisseur, lot, quantités, contrôles, décision et responsable."
+    ],
+    [
+      "F04",
+      "h03",
+      "Contamination croisée",
+      "Repérer cru, sale et prêt à consommer|Séparer flux et ustensiles|Nettoyer entre usages selon le plan|Évaluer les aliments déjà exposés",
+      "Changer la pince ne retire pas une contamination transférée.",
+      "Organisation des zones, matériel et contrôle de mise en œuvre."
+    ],
+    [
+      "F05",
+      "h06",
+      "Allergènes au buffet",
+      "Vérifier recette et ingrédients réels|Actualiser la matrice écrite|Attribuer les ustensiles et prévenir les transferts|Répondre sur preuve ou annoncer l’incertitude",
+      "Ne pas garantir « sans » sur la seule apparence.",
+      "Recette datée, étiquettes fournisseur, validation de l’information."
+    ],
+    [
+      "F06",
+      "h05",
+      "Nettoyage-désinfection",
+      "Lire la notice et la FDS|Retirer les souillures puis appliquer le protocole|Respecter dilution, contact et rinçage requis|Contrôler et enregistrer",
+      "Ne jamais mélanger les produits ni improviser une dose.",
+      "Zone, produit, méthode, opérateur, contrôle et écart."
+    ],
+    [
+      "F07",
+      "h07",
+      "Non-conformité sanitaire",
+      "Stopper l’exposition|Identifier et isoler le lot|Alerter puis décider selon les critères|Tracer, rechercher la cause et vérifier",
+      "Ni goût ni odeur ne valent preuve de sécurité.",
+      "Fiche écart, quantité concernée, décision et efficacité."
+    ],
+    [
+      "F08",
+      "h07",
+      "Traçabilité et dates",
+      "Conserver le lien fournisseur-produit-lot|Relier au service ou à la fabrication|Lire DLC/DDM et conditions après ouverture|Retrouver les éléments pour retrait/rappel",
+      "Aucune durée d’archivage unique ne convient à tous les documents.",
+      "Lot, réception, utilisation, quantités et décisions."
+    ],
+    [
+      "F09",
+      "s03",
+      "Identifier un danger",
+      "Décrire la tâche réelle|Repérer la source de dommage|Identifier qui est exposé et comment|Nommer le dommage possible",
+      "Un mot comme « chimique » seul ne décrit pas la situation.",
+      "Lieu, activité, personnes, conditions et observations."
+    ],
+    [
+      "F10",
+      "s03",
+      "Analyser une situation",
+      "Observer avec les salariés|Décrire durée et fréquence d’exposition|Vérifier les protections réelles|Justifier la priorité et les incertitudes",
+      "Un score ne doit pas retarder la maîtrise d’un danger immédiat.",
+      "Situation, exposition, maîtrise, justification et priorité."
+    ],
+    [
+      "F11",
+      "s02",
+      "EvRP et DUERP",
+      "Définir les unités de travail|Évaluer les risques réels|Transcrire les résultats|Mettre à jour et suivre les actions",
+      "Le seuil de 11 salariés concerne la mise à jour annuelle seulement.",
+      "Version datée, participants, risques, actions et déclencheur."
+    ],
+    [
+      "F12",
+      "s02",
+      "Hiérarchie de prévention",
+      "Chercher à éviter le risque|Agir à la source et adapter le travail|Privilégier les protections collectives|Compléter par organisation, instructions et EPI",
+      "Un EPI n’efface pas une cause organisationnelle.",
+      "Mesures comparées et raisons du choix."
+    ],
+    [
+      "F13",
+      "s01",
+      "Signaler une anomalie",
+      "Se protéger dans son périmètre|Décrire les faits et le lieu|Alerter le bon interlocuteur|Suivre le traitement jusqu’au retour terrain",
+      "Ne pas diagnostiquer ou réparer hors compétence.",
+      "Signalement, destinataire, urgence et état du traitement."
+    ],
+    [
+      "F14",
+      "s04",
+      "Plan d’actions",
+      "Nommer la situation à traiter|Fixer mesure, responsable et moyens|Définir échéance et preuve|Vérifier l’efficacité avant clôture",
+      "Ce tableau ne remplace pas le plan de prévention des entreprises extérieures.",
+      "Action, échéance, avancement, résultat et réévaluation."
+    ],
+    [
+      "F15",
+      "s05",
+      "Brief sécurité",
+      "Partir d’une situation concrète|Dire ce qui change et qui est concerné|Faire reformuler l’action attendue|Vérifier sa mise en œuvre",
+      "« Faites attention » ne décrit aucune action.",
+      "Sujet, consigne, participants et retour observé."
+    ],
+    [
+      "F16",
+      "e02",
+      "Reconnaître le risque électrique",
+      "Observer sans ouvrir|Repérer détérioration, eau ou échauffement|Suspendre l’usage selon les consignes|Alerter le relais compétent",
+      "Un appareil peut fonctionner et être dangereux.",
+      "Lieu, équipement, défaut visible et mesure prise."
+    ],
+    [
+      "F17",
+      "e03",
+      "Zones et signalisation",
+      "Identifier accès et responsable|Lire les limites expliquées|Intégrer outils, corps et charges|Suspendre si les conditions changent",
+      "Ne pas transposer une distance BT à une ligne HT.",
+      "Instruction reçue, zone et conditions de travail."
+    ],
+    [
+      "F18",
+      "e01",
+      "Limites H0/B0",
+      "Nommer la mission exacte|Vérifier titre et instructions|Rester dans l’ordre non électrique|Demander le relais pour toute autre opération",
+      "Formation et questionnaire ne délivrent pas le titre.",
+      "Mission, rôle, restrictions et interlocuteur."
+    ],
+    [
+      "F19",
+      "e05",
+      "Matériel détérioré",
+      "Cesser l’usage selon les consignes|Empêcher une réutilisation involontaire|Identifier et signaler|Attendre la décision compétente",
+      "Ni ruban adhésif ni démontage improvisé.",
+      "Identification, défaut, heure et prise en charge."
+    ],
+    [
+      "F20",
+      "e04",
+      "Accès au local électrique",
+      "Vérifier l’autorisation et la mission|Identifier conduite et surveillance|Reconnaître le cheminement prévu|Ne pas pénétrer si les conditions sont inconnues",
+      "Une porte ouverte n’est pas une autorisation.",
+      "Responsable, instructions et périmètre d’accès."
+    ],
+    [
+      "F21",
+      "e03",
+      "Balisage du chantier",
+      "Prendre connaissance de la zone|Respecter les obstacles et les cheminements|Anticiper l’encombrement des charges|Arrêter si une protection est déplacée",
+      "Ne pas déplacer une protection électrique pour gagner de la place.",
+      "Organisation expliquée et anomalie transmise."
+    ],
+    [
+      "F22",
+      "e06",
+      "Accident ou anomalie grave",
+      "Ne pas s’exposer ni toucher avant sécurité|Empêcher l’approche des tiers|Alerter avec lieu, danger et victimes|Suivre les consignes et le relais des secours",
+      "Un arrêt d’urgence ne prouve pas l’absence de toutes les alimentations.",
+      "Alerte, actions sans exposition et faits utiles."
+    ]
+  ],
+  "sources": {
+    "H1": [
+      "Hygiène et HACCP",
+      "Règlement (CE) 852/2004, art. 5 et annexe II, notamment ch. VIII, IX et XII",
+      "https://eur-lex.europa.eu/eli/reg/2004/852/oj?locale=fr"
+    ],
+    "H2": [
+      "Portée de la formation",
+      "Ministère de l’Agriculture, 16/07/2026 ; instruction DGAL/SDSSA/2026-185 du 03/04/2026",
+      "https://agriculture.gouv.fr/restauration-quelles-obligations-en-matiere-de-formation-a-lhygiene-des-aliments"
+    ],
+    "H3": [
+      "Températures par catégorie",
+      "Arrêté du 21/12/2009, art. 3, annexe I ; annexe IV réservée à la restauration collective ; version consolidée consultée le 18/09/2026",
+      "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000021573483"
+    ],
+    "H4": [
+      "Allergènes",
+      "Règlement (UE) 1169/2011, art. 9, 21, 44 et annexe II ; information avant achat/consommation",
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F32192"
+    ],
+    "H5": [
+      "Traçabilité, retrait et rappel",
+      "Règlement (CE) 178/2002, art. 14, 18 et 19",
+      "https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=fr"
+    ],
+    "H6": [
+      "DLC et DDM",
+      "DGCCRF, fiche pratique DLC/DDM ; règlement (UE) 1169/2011, art. 24 et annexe X",
+      "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/date-limite-de-consommation-et-date-de-durabilite-minimale-ce-que-vous-devez-savoir"
+    ],
+    "S1": [
+      "Principes de prévention",
+      "Code du travail L4121-1 et L4121-2",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033019913/"
+    ],
+    "S2": [
+      "DUERP : mises à jour",
+      "Code du travail R4121-2, version depuis le 31/03/2022",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023795559/"
+    ],
+    "S3": [
+      "Évaluation des risques",
+      "INRS, démarche EvRP : préparation, identification, classement et actions",
+      "https://www.inrs.fr/demarche/evaluation-risques-professionnels/ce-qu-il-faut-retenir.html"
+    ],
+    "S4": [
+      "Entreprises extérieures",
+      "Code du travail R4512-2 à R4512-8 ; seuil écrit R4512-7 ; arrêté du 19/03/1993",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018529783/"
+    ],
+    "S5": [
+      "Plan d’actions et conservation",
+      "Code du travail L4121-3-1 ; R4121-4 pour la conservation des versions successives",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043893919/"
+    ],
+    "E1": [
+      "Délivrance de l’habilitation",
+      "Code du travail R4544-10, version depuis le 01/10/2025",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051500368/"
+    ],
+    "E2": [
+      "Limites B0, H0 et H0V",
+      "INRS, FAQ habilitation électrique ; NF C 18-510 citée comme référence normative",
+      "https://www.inrs.fr/risques/electriques/habilitation-electrique-foire-aux-questions"
+    ],
+    "E3": [
+      "Organisation des opérations",
+      "INRS, opérations sur les installations électriques ; R4544-9",
+      "https://www.inrs.fr/risques/electriques/operations-installations.html"
+    ],
+    "E4": [
+      "Prévention et distances",
+      "INRS ED 6127, décembre 2020, annexe 8.1 p. 40-41 ; volet médical remplacé par R4544-10 depuis octobre 2025",
+      "https://www.inrs.fr/media.html?refINRS=ED%206127"
+    ],
+    "H7": [
+      "Nettoyage : conditions d’efficacité",
+      "INRS, FAQ nettoyage en entreprise : notice, dosage, temps et température",
+      "https://www.inrs.fr/actualites/faq-nettoyage-entreprise"
+    ],
+    "H8": [
+      "Produits chlorés : incompatibilités",
+      "INRS FT 157, recommandations, version 2017 ; mélange acides / hypochlorite",
+      "https://www.inrs.fr/publications/bdd/fichetox/fiche.html?refINRS=FICHETOX_157&section=recommandations"
+    ],
+    "S6": [
+      "Définition d’un ERP",
+      "Code de la construction et de l’habitation R143-2, version depuis le 01/07/2021",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043818941/"
+    ]
+  },
+  "questions": [
+    {
+      "id": "H01",
+      "domain": "haccp",
+      "type": "s",
+      "text": "À réception, le critère validé d’une denrée est dépassé et la durée de l’écart est inconnue. Quelle décision est appropriée ?",
+      "choices": [
+        "La remettre au froid puis la servir",
+        "L’accepter si son odeur est normale",
+        "L’identifier, l’isoler et appliquer la procédure de décision sur les critères pertinents"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Le retour au froid et les caractères sensoriels ne démontrent pas la sécurité du lot.",
+      "lesson": "h04",
+      "refs": [
+        "H3",
+        "H5"
+      ]
+    },
+    {
+      "id": "H02",
+      "domain": "haccp",
+      "type": "s",
+      "text": "Après manipulation de déchets, un salarié reprend les denrées prêtes à consommer avec les mêmes gants. Que doit-il faire ?",
+      "choices": [
+        "Essuyer les gants sur sa tenue",
+        "Retirer les gants et rétablir l’hygiène des mains avant de reprendre avec des moyens propres",
+        "Continuer si les gants ne sont pas déchirés"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Le gant peut transférer une contamination invisible.",
+      "lesson": "h03",
+      "refs": [
+        "H1"
+      ]
+    },
+    {
+      "id": "H03",
+      "domain": "haccp",
+      "type": "m",
+      "text": "Une pince a été utilisée pour deux plats dont l’un contient du lait. Quelles actions sont cohérentes ?",
+      "choices": [
+        "Évaluer le plat potentiellement contaminé",
+        "Remplacer seulement l’étiquette du premier plat",
+        "Rétablir des ustensiles adaptés et séparés",
+        "Informer le responsable pour décider du devenir du produit"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "La prévention du transfert et la décision sur le produit déjà exposé sont deux actions distinctes.",
+      "lesson": "h06",
+      "refs": [
+        "H4"
+      ]
+    },
+    {
+      "id": "H04",
+      "domain": "haccp",
+      "type": "s",
+      "text": "La mention « sans lactose » permet-elle de garantir à un client allergique aux protéines de lait que le produit convient ?",
+      "choices": [
+        "Oui, ces termes sont équivalents",
+        "Non, il faut vérifier la composition et les informations relatives à l’allergène lait",
+        "Oui, si le produit est cuit"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Le lactose est un sucre ; l’absence annoncée de lactose ne démontre pas celle des protéines de lait.",
+      "lesson": "h06",
+      "refs": [
+        "H4"
+      ]
+    },
+    {
+      "id": "H05",
+      "domain": "haccp",
+      "type": "s",
+      "text": "Le repère +63 °C pour les plats remis chauds est utilisé comme température de cuisson de toutes les recettes. Quelle analyse est correcte ?",
+      "choices": [
+        "Il faut distinguer maintien chaud et traitement de cuisson validé",
+        "Toute cuisson doit s’arrêter exactement à +63 °C",
+        "La température de cuisson n’a jamais d’importance"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Le traitement de cuisson dépend du produit, du danger et du procédé.",
+      "lesson": "h04",
+      "refs": [
+        "H3"
+      ]
+    },
+    {
+      "id": "H06",
+      "domain": "haccp",
+      "type": "s",
+      "text": "Pour désinfecter plus vite, un opérateur double la dose et essuie immédiatement. Que retenir ?",
+      "choices": [
+        "Le doublement garantit l’efficacité",
+        "La couleur du produit suffit à choisir la dose",
+        "Il faut respecter les conditions validées de la notice : dosage, temps, température et rinçage éventuel"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "TACT ne permet pas de compenser empiriquement un facteur par un autre.",
+      "lesson": "h05",
+      "refs": [
+        "H1"
+      ]
+    },
+    {
+      "id": "H07",
+      "domain": "haccp",
+      "type": "m",
+      "text": "Quels éléments permettent de retrouver un lot utilisé au petit-déjeuner ?",
+      "choices": [
+        "Le produit et le fournisseur",
+        "Le numéro de lot",
+        "Les dates et services d’utilisation",
+        "Le prénom supposé de chaque client final"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Relier réception et usage permet de cibler les produits concernés ; l’identification de chaque consommateur final n’est pas l’obligation générale de traçabilité.",
+      "lesson": "h07",
+      "refs": [
+        "H5"
+      ]
+    },
+    {
+      "id": "H08",
+      "domain": "haccp",
+      "type": "s",
+      "text": "Une DDM vient d’être dépassée. Quelle affirmation est exacte ?",
+      "choices": [
+        "Elle a exactement la même portée qu’une DLC",
+        "Le produit est toujours consommable, quel que soit son état",
+        "Le dépassement ne signifie pas automatiquement un danger ; il faut examiner les conditions et l’état du produit"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "DDM et DLC ont des portées différentes. Aucun produit altéré ne doit être présumé sûr.",
+      "lesson": "h07",
+      "refs": [
+        "H6"
+      ]
+    },
+    {
+      "id": "H09",
+      "domain": "haccp",
+      "type": "s",
+      "text": "Le groupe veut classer chaque étape de son diagramme comme CCP « pour être prudent ». Que faut-il faire ?",
+      "choices": [
+        "Tout classer CCP sans justification",
+        "Analyser les dangers et les mesures pour justifier les CCP nécessaires",
+        "Supprimer toutes les bonnes pratiques d’hygiène"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "L’analyse détermine les CCP ; les prérequis continuent d’assurer leur rôle.",
+      "lesson": "h08",
+      "refs": [
+        "H1"
+      ]
+    },
+    {
+      "id": "H10",
+      "domain": "haccp",
+      "type": "s",
+      "text": "Après cette journée Adonis de 7 h, quel document serait trompeur ?",
+      "choices": [
+        "Une attestation de participation à HACCP/BPH/PMS 7 h",
+        "Un bilan des acquis pédagogiques",
+        "Une attestation affirmant que les 14 h du dispositif spécifique ont été suivies"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Le module adapté de 7 h n’équivaut pas au dispositif spécifique de 14 h.",
+      "lesson": "h01",
+      "refs": [
+        "H2"
+      ]
+    },
+    {
+      "id": "S01",
+      "domain": "hse",
+      "type": "s",
+      "text": "Le référent reçoit plusieurs signalements sur un chariot difficile à pousser, sans accident déclaré. Que faire ?",
+      "choices": [
+        "Attendre un accident",
+        "Observer la tâche et les expositions avec les salariés, puis suivre des actions",
+        "Conclure qu’il n’y a aucun risque"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "La prévention porte aussi sur les expositions avant tout accident.",
+      "lesson": "s01",
+      "refs": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "S02",
+      "domain": "hse",
+      "type": "s",
+      "text": "Dans une analyse de projection d’un produit corrosif, quel élément est le dommage ?",
+      "choices": [
+        "Le bidon de produit",
+        "Le transvasement",
+        "La brûlure chimique possible"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Le dommage est l’atteinte à la santé ; le produit est une source de danger et le transvasement décrit une situation.",
+      "lesson": "s03",
+      "refs": [
+        "S3"
+      ]
+    },
+    {
+      "id": "S03",
+      "domain": "hse",
+      "type": "s",
+      "text": "Une entreprise de moins de 11 salariés modifie fortement son organisation de travail. Peut-elle ignorer toute mise à jour du DUERP ?",
+      "choices": [
+        "Oui, seules les entreprises d’au moins 11 salariés ont un DUERP",
+        "Non, les changements importants restent un déclencheur prévu",
+        "Oui, pendant les cinq premières années"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Le seuil de 11 salariés concerne la périodicité annuelle, pas tous les déclencheurs.",
+      "lesson": "s02",
+      "refs": [
+        "S2"
+      ]
+    },
+    {
+      "id": "S04",
+      "domain": "hse",
+      "type": "m",
+      "text": "Face à des manutentions difficiles, quelles pistes vont au-delà d’une consigne de posture ?",
+      "choices": [
+        "Adapter l’équipement et le rangement",
+        "Réduire les efforts à la source",
+        "Examiner la cadence et les possibilités de récupération",
+        "Afficher uniquement « pliez les genoux »"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Les TMS sont multifactoriels ; conception et organisation font partie de la prévention.",
+      "lesson": "s03",
+      "refs": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "S05",
+      "domain": "hse",
+      "type": "s",
+      "text": "Une action est marquée « terminée » parce qu’un achat a été réalisé. Que manque-t-il pour vérifier son efficacité ?",
+      "choices": [
+        "Rien, une facture suffit toujours",
+        "L’observation de l’usage réel et de la réduction de l’exposition",
+        "Une augmentation automatique du score"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "La réalisation administrative d’une action ne démontre pas sa maîtrise sur le terrain.",
+      "lesson": "s04",
+      "refs": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "S06",
+      "domain": "hse",
+      "type": "m",
+      "text": "Une entreprise extérieure intervient brièvement dans un local technique. Quelles vérifications restent nécessaires dans le régime du plan de prévention ?",
+      "choices": [
+        "Inspection commune et analyse des interférences",
+        "Nature des travaux au regard de la liste des travaux dangereux",
+        "Dispense automatique de toute préparation en dessous de 400 h",
+        "Conditions d’accès et de restitution"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Le seuil de durée ne dispense pas de l’analyse ; les travaux dangereux peuvent imposer l’écrit quelle que soit leur durée.",
+      "lesson": "s04",
+      "refs": [
+        "S4"
+      ]
+    },
+    {
+      "id": "S07",
+      "domain": "hse",
+      "type": "s",
+      "text": "Quel ensemble rend un plan d’actions exploitable ?",
+      "choices": [
+        "Un score seul",
+        "Un responsable, des moyens, une échéance et une vérification d’efficacité",
+        "Une liste sans suivi"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Le classement doit déboucher sur des mesures attribuées et suivies.",
+      "lesson": "s04",
+      "refs": [
+        "S3"
+      ]
+    },
+    {
+      "id": "S08",
+      "domain": "hse",
+      "type": "s",
+      "text": "Le référent HSE est sollicité pour consigner électriquement un équipement du seul fait de son titre de référent. Que répondre ?",
+      "choices": [
+        "Le titre suffit",
+        "Une urgence supprime les exigences de compétence",
+        "Cette opération exige un relais disposant des compétences et habilitations adaptées"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Le rôle de référent ne confère pas de périmètre électrique.",
+      "lesson": "s01",
+      "refs": [
+        "E1",
+        "S1"
+      ]
+    },
+    {
+      "id": "S09",
+      "domain": "hse",
+      "type": "s",
+      "text": "Quel brief décrit une action observable ?",
+      "choices": [
+        "« Soyez prudents »",
+        "« Évitez les accidents »",
+        "« Maintenez le passage défini et signalez au responsable toute barrière déplacée »"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "La consigne précise le comportement attendu et le relais.",
+      "lesson": "s05",
+      "refs": [
+        "S1"
+      ]
+    },
+    {
+      "id": "S10",
+      "domain": "hse",
+      "type": "s",
+      "text": "Le plan d’actions de l’EvRP et le plan de prévention des entreprises extérieures :",
+      "choices": [
+        "Ont des objets distincts et doivent être articulés",
+        "Sont toujours un seul document obligatoire identique",
+        "Dispensent de toute observation terrain"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "L’un organise les actions issues de l’EvRP ; l’autre traite les interférences dans son régime réglementaire.",
+      "lesson": "s04",
+      "refs": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "id": "E01",
+      "domain": "h0b0",
+      "type": "s",
+      "text": "Un candidat obtient un score parfait au questionnaire H0/B0. Quel effet en découle ?",
+      "choices": [
+        "Un titre d’habilitation est automatiquement délivré",
+        "Un résultat théorique est disponible ; pratique et décision employeur restent distinctes",
+        "Il peut dépanner une prise immédiatement"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Le logiciel ne délivre ni habilitation ni autorisation d’opération.",
+      "lesson": "e01",
+      "refs": [
+        "E1"
+      ]
+    },
+    {
+      "id": "E02",
+      "domain": "h0b0",
+      "type": "s",
+      "text": "Un salarié H0/B0 doit remplacer une prise « très simple ». Quelle réponse respecte son périmètre ?",
+      "choices": [
+        "Remplacer si le client est absent",
+        "Démonter pour identifier le défaut",
+        "Refuser le geste hors périmètre, signaler et demander le relais prévu"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "H0/B0 concerne des opérations d’ordre non électrique.",
+      "lesson": "e01",
+      "refs": [
+        "E2"
+      ]
+    },
+    {
+      "id": "E03",
+      "domain": "h0b0",
+      "type": "s",
+      "text": "Toucher la carcasse métallique devenue accidentellement sous tension correspond à :",
+      "choices": [
+        "Un contact indirect",
+        "Un contact direct avec une partie active normalement sous tension",
+        "Une absence de danger si l’appareil fonctionne"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Le défaut rend la masse dangereuse ; son fonctionnement ne démontre pas sa sécurité.",
+      "lesson": "e02",
+      "refs": [
+        "E3"
+      ]
+    },
+    {
+      "id": "E04",
+      "domain": "h0b0",
+      "type": "s",
+      "text": "Le transport d’une échelle doit tenir compte :",
+      "choices": [
+        "Seulement des pieds du porteur",
+        "Du corps, de l’échelle, des rotations et des gestes possibles",
+        "Seulement de la longueur du local"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "La distance de sécurité concerne l’enveloppe des mouvements et objets.",
+      "lesson": "e03",
+      "refs": [
+        "E2",
+        "E4"
+      ]
+    },
+    {
+      "id": "E05",
+      "domain": "h0b0",
+      "type": "s",
+      "text": "Une barrière a été déplacée depuis l’explication du chantier. Que faire ?",
+      "choices": [
+        "Continuer en étant prudent",
+        "La déplacer encore pour élargir le passage",
+        "Suspendre et faire rétablir ou redéfinir les conditions de sécurité"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Le changement remet en cause l’organisation initiale.",
+      "lesson": "e04",
+      "refs": [
+        "E3"
+      ]
+    },
+    {
+      "id": "E06",
+      "domain": "h0b0",
+      "type": "s",
+      "text": "Le symbole B0V autoriserait-il un travail non électrique dans le voisinage renforcé BT ?",
+      "choices": [
+        "Oui avec un écran facial",
+        "Non : B0V n’existe pas et ces opérations y sont interdites",
+        "Oui pour une durée courte"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Un EPI ou une courte durée ne crée pas un périmètre autorisé.",
+      "lesson": "e03",
+      "refs": [
+        "E2"
+      ]
+    },
+    {
+      "id": "E07",
+      "domain": "h0b0",
+      "type": "m",
+      "text": "Quels faits sont utiles pour signaler un matériel détérioré ?",
+      "choices": [
+        "Lieu et identification du matériel",
+        "Défaut visible sans démontage",
+        "Heure et mesures prises selon les consignes",
+        "Diagnostic de câblage inventé"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Transmettre des faits sans engager de diagnostic hors compétence.",
+      "lesson": "e05",
+      "refs": [
+        "E2"
+      ]
+    },
+    {
+      "id": "E08",
+      "domain": "h0b0",
+      "type": "s",
+      "text": "Une victime est près d’un équipement dont l’alimentation est inconnue. Quelle priorité ?",
+      "choices": [
+        "La saisir immédiatement",
+        "Protéger sans s’exposer, faire maîtriser le danger et alerter",
+        "Verser de l’eau sur le matériel"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Le contact avec la victime attend un accès sûr ; il ne faut pas créer une seconde victime.",
+      "lesson": "e06",
+      "refs": [
+        "E3"
+      ]
+    },
+    {
+      "id": "E09",
+      "domain": "h0b0",
+      "type": "s",
+      "text": "Un voyant est éteint et un arrêt d’urgence a été actionné. Que peut-on conclure ?",
+      "choices": [
+        "Toutes les sources sont nécessairement supprimées",
+        "Une VAT est autorisée à tout H0/B0",
+        "Ces seuls indices ne prouvent pas l’absence de tension"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Ni voyant ni arrêt d’urgence ne remplacent les opérations de mise en sécurité par les personnes compétentes.",
+      "lesson": "e04",
+      "refs": [
+        "E2",
+        "E3"
+      ]
+    },
+    {
+      "id": "E10",
+      "domain": "h0b0",
+      "type": "m",
+      "text": "Avant une opération non électrique dans un environnement électrique, vérifier notamment :",
+      "choices": [
+        "Mission, rôle et limites",
+        "Accès, balisage et instructions",
+        "Organisation de la conduite/surveillance",
+        "Accord du client pour dépasser son titre"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Une demande client ne modifie pas le titre, les compétences ni les conditions de sécurité.",
+      "lesson": "e04",
+      "refs": [
+        "E1",
+        "E3"
+      ]
+    }
+  ]
+}

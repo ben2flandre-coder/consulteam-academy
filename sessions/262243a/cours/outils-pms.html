@@ -1,0 +1,92 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="Benoît Deflandre"><meta name="description" content="Parcours Adonis Sanary : HACCP, référent HSE et H0/B0. Consul Team."><title>Outils PMS · Consul Team</title><link rel="stylesheet" href="assets/adonis.css"></head><body id="top" class="page-outils-pms"><a class="skip" href="#main">Aller au contenu</a><div class="course-banner"><span>CONSUL TEAM</span><i></i><span>ADONIS SANARY · 22 &amp; 24 SEPTEMBRE 2026</span><i></i><span>PARCOURS PRÉSENTIEL</span></div><header class="topbar"><a href="index.html" aria-label="Consul Team — accueil"><img src="assets/logo-consulteam.png" alt="Consul Team" width="190" height="62"></a><span class="brandline">PARCOURS <b>ADONIS SANARY</b></span><div class="course-progress" aria-label="Trois domaines"><span class="done"></span><span class="done"></span><span></span></div><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu</button><button id="theme" aria-pressed="false">Contraste nuit</button></header><div class="layout"><aside class="sidebar"><p class="eyebrow">PARCOURS</p><nav id="navigation" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="haccp.html">HACCP</a><a href="hse.html">Référent HSE</a><a href="h0b0.html">H0/B0</a><a href="cas-pratiques.html">Cas Adonis</a><a href="fiches-reflexes.html">Fiches réflexes</a><a href="videotheque.html">Vidéothèque</a><a href="outils-pms.html" aria-current="page">Outils PMS</a><a href="outils-hse.html">Outils HSE</a><a href="evaluation-finale/index.html">Évaluation finale</a><a href="references.html">Références</a></nav><div class="aside-pulse"><strong>Progression</strong><p>Lire · s’exercer · vérifier</p><div><b></b><b></b><b></b></div></div></aside><main id="main" tabindex="-1">
+
+<p class="eyebrow">ESPACE DE TRAVAIL PMS</p>
+<h1>Outils PMS</h1>
+<p class="lead">Un espace de travail réel — pas une liste de téléchargements. Tableau de bord, calculateur de criticité, suivi des températures, réception, registre de non-conformités, audit interne et plan de nettoyage fonctionnent directement dans le navigateur, sans connexion et sans Excel. Les 19 supports d’origine restent disponibles en complément.</p>
+<div class="callout"><strong>Usage :</strong> ces outils organisent le suivi de séance. Chaque seuil, fréquence, procédure et responsable doit être vérifié et validé par l’établissement avant tout emploi comme enregistrement officiel du PMS. Les données restent uniquement dans le navigateur utilisé (aucun envoi, aucun serveur).</div>
+
+<nav class="tools-quicknav" aria-label="Accès rapide aux outils PMS">
+  <a href="#pms-tb">Tableau de bord</a>
+  <a href="#pms-crit">Criticité HACCP</a>
+  <a href="#pms-temp">Températures</a>
+  <a href="#pms-recept">Réception</a>
+  <a href="#pms-ncsec">Non-conformités</a>
+  <a href="#pms-aud">Audit interne</a>
+  <a href="#pms-net">Nettoyage &amp; maintenance</a>
+  <a href="#pms-dl">Supports téléchargeables</a>
+</nav>
+
+<section class="tool-block" id="pms-tb">
+  <h2>Tableau de bord PMS</h2>
+  <p class="tool-intro">Indicateurs calculés en direct à partir des relevés, réceptions, non-conformités et audits enregistrés dans ce navigateur.</p>
+  <div data-tool="pms-dashboard"></div>
+</section>
+
+<section class="tool-block" id="pms-crit">
+  <h2>Calculateur de criticité HACCP</h2>
+  <p class="tool-intro">Méthode Fréquence × Gravité × Maîtrise. Chaque cotation est enregistrée avec son analyse et peut être transférée en un clic vers le registre de non-conformités / plan d’actions.</p>
+  <div class="tool-limits">Seuils et méthode <strong>pédagogiques Consul Team</strong>, non réglementaires — la classification définitive d’un CCP relève du PMS validé par l’établissement.</div>
+  <div data-tool="pms-haccp-calc"></div>
+</section>
+
+<section class="tool-block" id="pms-temp">
+  <h2>Suivi des températures</h2>
+  <p class="tool-intro">Relevé daté, zone/équipement, seuil validé localement, mesure, écart et décision. L’écart est suggéré automatiquement à partir du seuil saisi (formats « ≤ 4 », « ≥ -18 », « -18 à -15 ») et reste modifiable.</p>
+  <div data-tool="pms-temperature"></div>
+</section>
+
+<section class="tool-block" id="pms-recept">
+  <h2>Réception / traçabilité</h2>
+  <p class="tool-intro">Contrôle à réception : fournisseur, produit, lot, DLC/DDM, état, température observée, décision et action. Tableau exportable en CSV.</p>
+  <div data-tool="pms-reception"></div>
+</section>
+
+<section class="tool-block" id="pms-ncsec">
+  <h2>Registre de non-conformités</h2>
+  <p class="tool-intro">Fait constaté, détection, mise en sécurité immédiate, cause, action corrective, pilote, échéance, statut, preuve et vérification d’efficacité. Ce registre reçoit aussi les écarts transférés depuis le calculateur de criticité et l’audit interne.</p>
+  <div data-tool="pms-nc"></div>
+</section>
+
+<section class="tool-block" id="pms-aud">
+  <h2>Audit interne PMS</h2>
+  <p class="tool-intro">Grille de 40 points répartis en 10 catégories (hygiène, flux, réception, températures, nettoyage-désinfection, traçabilité, allergènes, maintenance/métrologie, formation, gestion des écarts). Le score et les points non conformes peuvent être transférés au registre de non-conformités.</p>
+  <div class="tool-limits">Auto-évaluation interne, sans valeur d’audit officiel ni de certification.</div>
+  <div data-tool="pms-audit"></div>
+</section>
+
+<section class="tool-block" id="pms-net">
+  <h2>Plan de nettoyage-désinfection et maintenance</h2>
+  <p class="tool-intro">Tableau directement utilisable : zone/équipement, produit ou opération, fréquence, responsable, méthode de contrôle, dernière réalisation et preuve. Lignes ajoutables à volonté.</p>
+  <div data-tool="pms-nettoyage"></div>
+</section>
+
+<section class="tool-block" id="pms-dl">
+  <h2>Supports PMS téléchargeables (compléments)</h2>
+  <p class="tool-intro">Les 19 supports extraits de la maquette PMS fournie restent disponibles hors connexion, en complément des outils web ci-dessus — ils ne les remplacent pas.</p>
+  <div class="pms-tools">
+    <article class="card pms-tool"><span class="tag">PDF · MODÈLE PMS</span><h2>Fiche Chaine Froid</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Fiche_Chaine_Froid.pdf" download>Télécharger le document ↓</a></article>
+    <article class="card pms-tool"><span class="tag">PDF · MODÈLE PMS</span><h2>Fiche Controle Reception</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Fiche_Controle_Reception.pdf" download>Télécharger le document ↓</a></article>
+    <article class="card pms-tool"><span class="tag">PDF · MODÈLE PMS</span><h2>Fiche Cuisson Temperature</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Fiche_Cuisson_Temperature.pdf" download>Télécharger le document ↓</a></article>
+    <article class="card pms-tool"><span class="tag">PDF · MODÈLE PMS</span><h2>Fiche Dangers Alimentaires</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Fiche_Dangers_Alimentaires.pdf" download>Télécharger le document ↓</a></article>
+    <article class="card pms-tool"><span class="tag">PDF · MODÈLE PMS</span><h2>Fiche Gestion Dechets</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Fiche_Gestion_Dechets.pdf" download>Télécharger le document ↓</a></article>
+    <article class="card pms-tool"><span class="tag">PDF · MODÈLE PMS</span><h2>Fiche Gestion TIAC</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Fiche_Gestion_TIAC.pdf" download>Télécharger le document ↓</a></article>
+    <article class="card pms-tool"><span class="tag">PDF · MODÈLE PMS</span><h2>Fiche Hygiene Personnel</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Fiche_Hygiene_Personnel.pdf" download>Télécharger le document ↓</a></article>
+    <article class="card pms-tool"><span class="tag">PDF · MODÈLE PMS</span><h2>Fiche Lavage Mains</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Fiche_Lavage_Mains.pdf" download>Télécharger le document ↓</a></article>
+    <article class="card pms-tool"><span class="tag">PDF · MODÈLE PMS</span><h2>Fiche Nettoyage Desinfection</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Fiche_Nettoyage_Desinfection.pdf" download>Télécharger le document ↓</a></article>
+    <article class="card pms-tool"><span class="tag">PDF · MODÈLE PMS</span><h2>Fiche Rappel Produit</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Fiche_Rappel_Produit.pdf" download>Télécharger le document ↓</a></article>
+    <article class="card pms-tool"><span class="tag">PDF · MODÈLE PMS</span><h2>Fiche Tracabilite Aval</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Fiche_Tracabilite_Aval.pdf" download>Télécharger le document ↓</a></article>
+    <article class="card pms-tool"><span class="tag">PDF · MODÈLE PMS</span><h2>Tableau Temperatures Reglementaires</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Tableau_Temperatures_Reglementaires.pdf" download>Télécharger le document ↓</a></article>
+    <article class="card pms-tool"><span class="tag">XLSX · MODÈLE PMS</span><h2>Fiche Tracabilite Produits</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Fiche_Tracabilite_Produits.xlsx" download>Télécharger le tableur ↓</a></article>
+    <article class="card pms-tool"><span class="tag">XLSX · MODÈLE PMS</span><h2>Grille Audit PMS</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Grille_Audit_PMS.xlsx" download>Télécharger le tableur ↓</a></article>
+    <article class="card pms-tool"><span class="tag">XLSX · MODÈLE PMS</span><h2>Plan Nettoyage Desinfection</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Plan_Nettoyage_Desinfection.xlsx" download>Télécharger le tableur ↓</a></article>
+    <article class="card pms-tool"><span class="tag">XLSX · MODÈLE PMS</span><h2>Registre Maintenance</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Registre_Maintenance.xlsx" download>Télécharger le tableur ↓</a></article>
+    <article class="card pms-tool"><span class="tag">XLSX · MODÈLE PMS</span><h2>Registre Non Conformites</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Registre_Non_Conformites.xlsx" download>Télécharger le tableur ↓</a></article>
+    <article class="card pms-tool"><span class="tag">XLSX · MODÈLE PMS</span><h2>Releves Temperature</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Releves_Temperature.xlsx" download>Télécharger le tableur ↓</a></article>
+    <article class="card pms-tool"><span class="tag">XLSX · MODÈLE PMS</span><h2>Tableau HACCP Vierge</h2><p>Support extrait de la maquette PMS fournie, disponible hors connexion.</p><a class="button primary" href="outils-pms/Tableau_HACCP_Vierge.xlsx" download>Télécharger le tableur ↓</a></article>
+  </div>
+  <p class="small" style="margin-top:18px"><a href="outils-pms/OUTILS_PMS_PILOTAGE_ADONIS.xlsx" download>Télécharger le classeur complémentaire OUTILS_PMS_PILOTAGE_ADONIS.xlsx ↓</a> — tableaux et registres hors ligne, en plus des outils web ci-dessus.</p>
+</section>
+
+<section class="lesson"><h2>Comment utiliser ces outils pendant l’animation</h2><ol class="steps"><li>Présenter chaque outil comme une base de travail, jamais comme une procédure déjà approuvée par l’établissement.</li><li>Faire identifier les champs qui dépendent de l’activité réelle, des produits, des équipements et de l’organisation Adonis.</li><li>Faire valider la version complétée par les responsables compétents avant tout emploi comme enregistrement officiel.</li></ol><p><a href="cas-pratiques.html#cas-1">Utiliser le cas Flux petit-déjeuner avec ces outils →</a></p></section>
+
+</main></div><footer>Consul Team · Conception et adaptation pédagogique : Benoît Deflandre<br><a href="credits-medias.html">Crédits des médias</a> · <a href="references.html">Sources et périmètres</a></footer><div class="floatnav"><a href="index.html">Accueil</a><a href="#top">↑ Haut</a></div><dialog id="zoom" aria-label="Agrandissement du visuel"><button class="close">Fermer</button><img alt=""><p></p></dialog><script src="assets/app.js"></script><script src="assets/tools-engine.js"></script></body></html>

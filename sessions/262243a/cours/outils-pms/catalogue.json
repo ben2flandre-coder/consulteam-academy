@@ -1,0 +1,116 @@
+[
+  {
+    "filename": "Fiche_Chaine_Froid.pdf",
+    "format": "PDF",
+    "sha256": "f82e9c99e1edb7914485f013d80d64854d5c286ba8c662ca685381add40c79ed",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Fiche_Controle_Reception.pdf",
+    "format": "PDF",
+    "sha256": "aef1f210085a7f39faa5fe263d0421230396222a5d4684a6f5e8cb538029451a",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Fiche_Cuisson_Temperature.pdf",
+    "format": "PDF",
+    "sha256": "989bbadfe0706192adeeb6f9fcf5ee98eb61d74c71e026a4b836794ea8c65efe",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Fiche_Dangers_Alimentaires.pdf",
+    "format": "PDF",
+    "sha256": "ff3f8856ce534593512d8fa53c1aa64b59a7e8598c5f42f3af8c326f85bb5b34",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Fiche_Gestion_Dechets.pdf",
+    "format": "PDF",
+    "sha256": "134b9577726b1e73c13928aadae45cec3b6e97322512ed3d28c64865632322fb",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Fiche_Gestion_TIAC.pdf",
+    "format": "PDF",
+    "sha256": "24491db4d99c30ad857046a560e786272947fefef7b3d51532aae90e352384c3",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Fiche_Hygiene_Personnel.pdf",
+    "format": "PDF",
+    "sha256": "d8eae80d99a03cbee4c505317813d3c1afa7efae2814cfd8069016e71ec1fd04",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Fiche_Lavage_Mains.pdf",
+    "format": "PDF",
+    "sha256": "61e30a33ff6a50ee43ca9709f135c75836014dc2d0681bd76d4356c91c90be2f",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Fiche_Nettoyage_Desinfection.pdf",
+    "format": "PDF",
+    "sha256": "f1bb733b45269171b13692b7de72c1141e58871040b6f6aefafd75ffe3f8b814",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Fiche_Rappel_Produit.pdf",
+    "format": "PDF",
+    "sha256": "99503f1d2038e982a3586be7232ae309c841b792bd73bc5c68a809486bcb43eb",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Fiche_Tracabilite_Aval.pdf",
+    "format": "PDF",
+    "sha256": "117c97c83d2b6cc52ee448e343c917e15a5f3a54c9f91e5f30c70c4910980388",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Tableau_Temperatures_Reglementaires.pdf",
+    "format": "PDF",
+    "sha256": "692a21d0c438e64ca5041ad06be862ea37dcd0bf4398157d4d29f3e8987a07e5",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Fiche_Tracabilite_Produits.xlsx",
+    "format": "XLSX",
+    "sha256": "adcc8dbaf81bf442475d22cc2ac1fb535327266ccee440cef1afba778f532960",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Grille_Audit_PMS.xlsx",
+    "format": "XLSX",
+    "sha256": "ce34749494db5b5889203dfdcd855384d05949476d328a65f809ae72c7c7974e",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Plan_Nettoyage_Desinfection.xlsx",
+    "format": "XLSX",
+    "sha256": "f8a388711bb119edfb27801ea0290cedf73db9b5cca6b0703bc6aa92cb2c1896",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Registre_Maintenance.xlsx",
+    "format": "XLSX",
+    "sha256": "fa8cff845b5961cda94c94bf6ea21f3711fec2597ee75aae4da7c654b6faa085",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Registre_Non_Conformites.xlsx",
+    "format": "XLSX",
+    "sha256": "0a9867d44de5fd053ad691e22723d18f2107da1e44622228fcd8070b26b3d6a6",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Releves_Temperature.xlsx",
+    "format": "XLSX",
+    "sha256": "87f7de6f7b8b1fa8cf675176479a22daf6bfd8ea4dedc19c68fdeb403af4c812",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  },
+  {
+    "filename": "Tableau_HACCP_Vierge.xlsx",
+    "format": "XLSX",
+    "sha256": "4e2e4738b0a6484b3e4fe35f7e2ff26801e0fc0de6eaa2166ff559877d8e2831",
+    "source": "Maquette PMS fournie — document embarqué dans index.html"
+  }
+]

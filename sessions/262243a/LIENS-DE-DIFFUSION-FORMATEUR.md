@@ -1,7 +1,8 @@
-# Liens de diffusion — 262243A (ADONIS SANARY)
+# Liens de diffusion â€” 262243A (ADONIS SANARY)
 
-À transmettre individuellement selon le besoin. Ne pas envoyer le lien du dépôt.
+Ã€ transmettre individuellement selon le besoin. Ne pas envoyer le lien du dÃ©pÃ´t.
 
 | Ressource | URL GitHub Pages |
 |---|---|
-| Parcours complet (HACCP, HSE, H0/B0, cas pratiques, fiches réflexes, outils, évaluation finale) | https://ben2flandre-coder.github.io/consulteam-academy/sessions/262243a/cours/ |
+| **Ã‰dition apprenant complÃ¨te (page unique, Ã  diffuser)** â€” HACCP, HSE, H0/B0, cas pratiques, fiches rÃ©flexes, outils, Ã©valuation finale, tous mÃ©dias inclus, aucune mention formateur | https://ben2flandre-coder.github.io/consulteam-academy/sessions/262243a/cours-complet-apprenant.html |
+| Parcours complet multi-pages (version de rÃ©fÃ©rence, usage interne/formateur) | https://ben2flandre-coder.github.io/consulteam-academy/sessions/262243a/cours/ |

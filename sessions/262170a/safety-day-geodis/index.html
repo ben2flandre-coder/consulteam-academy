@@ -1,3 +1,5 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#343234">
 <title>Safety Day Quai & Tournée</title>
 <meta name="description" content="Plateforme participant — Prévention des TMS, biomécanique, réveil musculaire et outils pour les métiers quai, tri et tournée GEODIS">
 <style>
@@ -362,6 +364,77 @@
   footer .logos{display:flex;gap:22px;justify-content:center;align-items:center;margin-bottom:10px;flex-wrap:wrap}
   footer .logos img{height:26px;opacity:.8}
   footer small{color:var(--ink-faint);font-size:.75rem}
+
+  /* ================= MOBILE / TABLETTE (desktop inchangé) ================= */
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  @media (max-width:960px){
+    html{scroll-padding-top:64px}
+    body{margin:0}
+    .shell{flex-direction:column}
+    aside.rail{flex:none}
+    .wrap{padding-inline:max(16px,env(safe-area-inset-left)) max(16px,env(safe-area-inset-right))}
+    /* barre du haut : logo + boutons toujours visibles, liens qui défilent */
+    aside.rail{padding-block:6px;gap:2px;scrollbar-width:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+    aside.rail::-webkit-scrollbar{display:none}
+    aside.rail .brand{order:0}
+    aside.rail .bottom-block{order:1}
+    aside.rail a.navlink{order:2;min-height:44px;padding:0 12px}
+    aside.rail a.navlink .icon{display:none}
+    aside.rail .tool-btn{width:40px;height:40px}
+    .hero{padding-block:30px}
+    .parcours{-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .parcours::-webkit-scrollbar{display:none}
+    section{padding-block:34px}
+    .card:hover,.gauge-tile:hover,.diagram:hover,.photo-card:hover,.risk-card:hover,.video-card:hover,.stat:hover,.practice .good:hover,.practice .bad:hover{transform:none;box-shadow:var(--shadow-sm)}
+    .photo-card .pc-media:hover img,.risk-card .pc-media:hover img{transform:none}
+  }
+  @media (max-width:600px){
+    body{font-size:16px}
+    .hero{padding-block:24px}
+    .hero h1{max-width:none}
+    .hero p.lead{font-size:.97rem}
+    .hero .chips span{font-size:.7rem}
+    .takeaways{display:grid;grid-template-columns:1fr;gap:7px}
+    .hero-scene{max-width:340px;margin-inline:auto}
+    .sec-head .ghost{font-size:3.4rem;top:-14px}
+    .sec-head h2{font-size:1.3rem}
+    .sec-head .row .icon{width:1.3em;height:1.3em}
+    .gauges{grid-template-columns:repeat(2,1fr);gap:10px}
+    .gauge-tile{padding:14px 8px 12px}
+    .gauge-wrap{width:84px;height:84px}
+    .gauge-n{font-size:1.1rem}
+    .gauge-label{font-size:.74rem}
+    .card,.calc{padding:15px}
+    .diagram{padding:12px}
+    .callout{font-size:.88rem;padding:13px 14px}
+    .step{grid-template-columns:36px 1fr;gap:10px}
+    .step .num{width:30px;height:30px}
+    /* tableaux -> fiches empilées (data-label injecté par le JS) */
+    .tbl-wrap{overflow:visible;box-shadow:none}
+    .tbl-wrap table,.tbl-wrap tbody,.tbl-wrap tr,.tbl-wrap td{display:block;width:100%}
+    .tbl-wrap table{background:none;border:none}
+    .tbl-wrap thead{display:none}
+    .tbl-wrap tr{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:6px 14px;margin-bottom:12px;box-shadow:var(--shadow-sm)}
+    .tbl-wrap td{border-bottom:1px dashed var(--line);padding:9px 0;font-size:.88rem}
+    .tbl-wrap tr td:last-child{border-bottom:none}
+    .tbl-wrap td[data-label]::before{content:attr(data-label);display:block;font-family:var(--font-mono);font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;color:var(--taupe);margin-bottom:2px}
+    .tbl-wrap tbody tr:hover td{background:none}
+    /* quiz : zones de tap confortables */
+    .quiz-q{padding:14px}
+    .quiz-q label{padding:12px 12px;min-height:46px;display:flex;align-items:center;font-size:.95rem}
+    .quiz-q input{width:20px;height:20px;flex:none;margin:0 10px 0 0}
+    #quiz-score{bottom:max(10px,env(safe-area-inset-bottom));padding:8px 10px 8px 12px;font-size:.8rem}
+    #quiz-score button{min-height:40px;padding:8px 14px}
+    .calc select{min-height:46px;font-size:16px}
+    /* lightbox */
+    .lightbox{padding:60px 10px 54px}
+    .lb-close{top:max(12px,env(safe-area-inset-top));right:12px;width:44px;height:44px}
+    .video-body a{display:inline-block;padding:6px 0}
+    footer .logos img{height:22px}
+  }
+  @media (max-width:360px){
+    .gauges{grid-template-columns:1fr}
+  }
 
   /* ================= PRINT ================= */
   @media print{
@@ -1180,7 +1253,16 @@
       var pos = window.scrollY + 140;
       var current = uniqueSecs[0];
       uniqueSecs.forEach(function(s){ if(s.offsetTop <= pos) current = s; });
-      links.forEach(function(l, i){ l.classList.toggle('active', linkTargets[i] === current); });
+      links.forEach(function(l, i){
+        var on = linkTargets[i] === current;
+        var was = l.classList.contains('active');
+        l.classList.toggle('active', on);
+        /* mobile : garde le lien actif visible dans les barres qui défilent */
+        if(on && !was && window.innerWidth <= 960 && l.parentNode && l.parentNode.scrollWidth > l.parentNode.clientWidth){
+          var box = l.parentNode.closest('.parcours, aside.rail') || l.parentNode;
+          box.scrollTo({left: l.offsetLeft - box.clientWidth/2 + l.offsetWidth/2, behavior:'smooth'});
+        }
+      });
       if(scrollbar){
         var max = document.documentElement.scrollHeight - window.innerHeight;
         var pct = max > 0 ? Math.min(100, Math.max(0, (window.scrollY / max) * 100)) : 0;
@@ -1190,6 +1272,14 @@
     window.addEventListener('scroll', onScroll, {passive:true});
     window.addEventListener('resize', onScroll);
     onScroll();
+
+    /* ---- tableaux : libellés de colonnes pour l'affichage en fiches sur mobile ---- */
+    Array.prototype.slice.call(document.querySelectorAll('.tbl-wrap table')).forEach(function(t){
+      var heads = Array.prototype.slice.call(t.querySelectorAll('thead th')).map(function(h){ return h.textContent.trim(); });
+      Array.prototype.slice.call(t.querySelectorAll('tbody tr')).forEach(function(tr){
+        Array.prototype.slice.call(tr.children).forEach(function(td, i){ if(heads[i]) td.setAttribute('data-label', heads[i]); });
+      });
+    });
 
     /* ---- theme toggle ---- */
     var root = document.documentElement;

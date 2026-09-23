@@ -1,0 +1,1379 @@
+<title>Safety Day Quai & Tournée</title>
+<meta name="description" content="Plateforme participant — Prévention des TMS, biomécanique, réveil musculaire et outils pour les métiers quai, tri et tournée GEODIS">
+<style>
+  :root{
+    /* Palette CONSULTEAM réelle (charte transmise par Noémie, extraite de consulteam-academy) */
+    --paper:#F5F6F8; --surface:#FFFFFF; --surface-2:#ECEEF1; --surface-3:#DDE1E6;
+    --ink:#2C3E50; --ink-soft:#4B4B4B; --ink-faint:#8A8A8C;
+    --dark:#343234;
+    --navy:#E5007D; --navy-2:#FF3D9E; --navy-soft:#FCE4F0;
+    --taupe:#6B6B6B; --taupe-soft:#EDEDEE;
+    --gold:#FF9800; --gold-soft:#FFF3E0;
+    --good:#4CAF50; --good-soft:#E8F5E9;
+    --warn:#F44336; --warn-soft:#FDECEA;
+    --info:#2196F3; --info-soft:#E3F2FD;
+    --line:#E2E5E9;
+    --grain: rgba(52,50,52,.05);
+    --shadow-sm: 0 1px 2px rgba(52,50,52,.08), 0 1px 1px rgba(52,50,52,.05);
+    --shadow-md: 0 14px 30px -12px rgba(229,0,125,.16), 0 2px 8px rgba(52,50,52,.07);
+    --shadow-lg: 0 24px 60px -20px rgba(229,0,125,.22);
+    --radius:12px;
+    --font-display:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    --font-body:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    --font-mono:'Consolas','SFMono-Regular',Menlo,monospace;
+    color-scheme: light dark;
+    --sidebar-w:264px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#211F20; --surface:#2A2828; --surface-2:#343234; --surface-3:#403D3E;
+      --ink:#EDEEF0; --ink-soft:#C7C5C6; --ink-faint:#8A8A8C;
+      --dark:#141314;
+      --navy:#FF4FA8; --navy-2:#FF7FC0; --navy-soft:#3D1C2C;
+      --taupe:#A6A4A5; --taupe-soft:#38363A;
+      --gold:#FFB74D; --gold-soft:#3D2E15;
+      --good:#81C784; --good-soft:#1E3320;
+      --warn:#EF7069; --warn-soft:#3B1E1B;
+      --info:#64B5F6; --info-soft:#132A3D;
+      --line:#454345;
+      --grain: rgba(237,238,240,.045);
+      --shadow-sm: 0 1px 2px rgba(0,0,0,.3);
+      --shadow-md: 0 14px 30px -12px rgba(0,0,0,.5);
+      --shadow-lg: 0 24px 60px -20px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#211F20; --surface:#2A2828; --surface-2:#343234; --surface-3:#403D3E;
+    --ink:#EDEEF0; --ink-soft:#C7C5C6; --ink-faint:#8A8A8C;
+    --dark:#141314;
+    --navy:#FF4FA8; --navy-2:#FF7FC0; --navy-soft:#3D1C2C;
+    --taupe:#A6A4A5; --taupe-soft:#38363A;
+    --gold:#FFB74D; --gold-soft:#3D2E15;
+    --good:#81C784; --good-soft:#1E3320;
+    --warn:#EF7069; --warn-soft:#3B1E1B;
+    --info:#64B5F6; --info-soft:#132A3D;
+    --line:#454345;
+    --grain: rgba(237,238,240,.045);
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.3);
+    --shadow-md: 0 14px 30px -12px rgba(0,0,0,.5);
+    --shadow-lg: 0 24px 60px -20px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box}
+  body{
+    background-color:var(--paper);color:var(--ink);font-family:var(--font-body);line-height:1.58;
+    background-image:radial-gradient(circle at 1px 1px, var(--grain) 1px, transparent 0);
+    background-size:22px 22px;
+  }
+  h1,h2,h3,h4{font-family:var(--font-display);color:var(--ink);text-wrap:balance;margin:0 0 .4em}
+  a{color:var(--navy-2)}
+  svg{display:block}
+  .mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+  .icon{width:1.15em;height:1.15em;flex:none;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.22em}
+
+  /* ================= SCROLL PROGRESS ================= */
+  #scrollbar{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--gold),var(--navy-2));z-index:60;transition:width .12s linear}
+
+  /* ================= LAYOUT SHELL ================= */
+  .shell{display:flex;min-height:100%}
+  .content{flex:1;min-width:0;padding-left:0}
+  @media (min-width:961px){
+    .content{margin-left:var(--sidebar-w)}
+  }
+  .wrap{max-width:960px;margin-inline:auto;padding-inline:24px}
+
+  /* ================= SIDEBAR (desktop) / TOPBAR (mobile) ================= */
+  aside.rail{
+    background:var(--dark);color:#EDEBEC;
+    display:flex;flex-direction:column;gap:2px;
+  }
+  @media (min-width:961px){
+    aside.rail{position:fixed;top:0;left:0;bottom:0;width:var(--sidebar-w);overflow-y:auto;padding:22px 14px 24px;z-index:20}
+  }
+  aside.rail .brand{display:flex;align-items:center;gap:10px;padding:4px 10px 18px}
+  aside.rail .brand img{height:26px;filter:brightness(0) invert(1);opacity:.95}
+  aside.rail .grp-label{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#A8A6A7;padding:14px 10px 6px}
+  aside.rail a.navlink{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;color:#D8D5D6;text-decoration:none;font-size:.88rem;transition:background .15s,color .15s}
+  aside.rail a.navlink:hover{background:rgba(255,255,255,.07);color:#fff}
+  aside.rail a.navlink.active{background:var(--navy);color:#fff}
+  aside.rail a.navlink .icon{color:var(--gold)}
+  aside.rail .bottom-block{margin-top:auto}
+  aside.rail .rail-tools{display:flex;gap:8px;padding:10px 10px 2px}
+  aside.rail .tool-btn{width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:#D8D5D6;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .15s,color .15s}
+  aside.rail .tool-btn:hover{background:rgba(255,255,255,.14);color:#fff}
+  aside.rail .tool-btn .icon{width:1.05em;height:1.05em}
+  aside.rail .tool-btn .i-moon-icon{display:none}
+  aside.rail .tool-btn.is-dark .i-sun-icon{display:none}
+  aside.rail .tool-btn.is-dark .i-moon-icon{display:block}
+  aside.rail .meta-box{margin-top:10px;padding:14px 10px 0;border-top:1px solid rgba(255,255,255,.1);font-family:var(--font-mono);font-size:.72rem;color:#A8A6A7;line-height:1.9}
+
+  @media (max-width:960px){
+    aside.rail{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;flex-direction:row;align-items:center;overflow-x:auto;padding:10px 8px;gap:4px}
+    aside.rail .brand{padding:2px 8px;flex:none}
+    aside.rail .brand img{height:20px}
+    aside.rail .grp-label{display:none}
+    aside.rail a.navlink{flex:none;white-space:nowrap;padding:8px 11px;font-size:.78rem}
+    aside.rail .bottom-block{margin-top:0;display:flex;flex:none}
+    aside.rail .rail-tools{padding:2px 6px}
+    aside.rail .meta-box{display:none}
+  }
+
+  /* ================= HERO ================= */
+  .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--dark) 0%,var(--navy) 100%);color:#FFFFFF;padding-block:46px}
+  .hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px, rgba(255,255,255,.06) 1px, transparent 0);background-size:26px 26px;pointer-events:none}
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
+  @media (max-width:820px){.hero .wrap{grid-template-columns:1fr}}
+  .hero .eyebrow{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+  .hero h1{font-size:clamp(1.7rem,3.6vw,2.65rem);max-width:17ch;color:#fff}
+  .hero p.lead{max-width:52ch;color:#D8D5D6;font-size:1.03rem;margin-top:10px}
+  .hero .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+  .hero .chips span{font-family:var(--font-mono);font-size:.74rem;padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16)}
+  .takeaways{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+  .takeaways .tk{display:flex;align-items:center;gap:7px;font-size:.8rem;color:#FFFFFF;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.14);padding:7px 12px 7px 9px;border-radius:10px}
+  .takeaways .tk .icon{color:var(--gold);width:1.05em;height:1.05em}
+  .hero-scene{width:100%;height:auto}
+  @media (prefers-reduced-motion: no-preference){
+    .hero-anim-float{animation:hfloat 5s ease-in-out infinite}
+    .hero-anim-float-delay{animation:hfloat 5s ease-in-out infinite;animation-delay:-2.4s}
+    .hero-anim-pulse{animation:hpulse 2.6s ease-in-out infinite}
+    @keyframes hfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    @keyframes hpulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.12);opacity:.85}}
+  }
+
+  /* ================= PARCOURS (module map) ================= */
+  .parcours{background:var(--surface);border-bottom:1px solid var(--line);padding-block:14px;overflow-x:auto}
+  .parcours-track{display:flex;align-items:flex-start;gap:0;position:relative;min-width:max-content;padding-inline:4px}
+  .parcours-track::before{content:"";position:absolute;left:38px;right:38px;top:17px;height:2px;background:var(--line);z-index:0}
+  .parcours-node{display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;color:var(--ink-soft);position:relative;z-index:1;padding-inline:16px;flex:none}
+  .parcours-node .pn-ico{width:34px;height:34px;border-radius:50%;background:var(--surface);border:2px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink-faint);transition:all .2s}
+  .parcours-node .pn-ico .icon{width:1em;height:1em}
+  .parcours-node .pn-label{font-family:var(--font-mono);font-size:.66rem;white-space:nowrap}
+  .parcours-node.active .pn-ico{background:var(--navy);border-color:var(--navy);color:#fff;box-shadow:0 0 0 4px var(--navy-soft)}
+  .parcours-node.active .pn-label{color:var(--navy);font-weight:600}
+  .parcours-node:hover .pn-ico{border-color:var(--navy)}
+
+  /* ================= SECTIONS ================= */
+  section{padding-block:46px;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:none}
+  .sec-head{position:relative;margin-bottom:24px}
+  .sec-head .ghost{position:absolute;right:0;top:-30px;font-family:var(--font-display);font-weight:800;font-size:5.5rem;color:var(--surface-2);z-index:0;line-height:1;user-select:none}
+  .sec-head .row{position:relative;z-index:1;display:flex;align-items:center;gap:10px}
+  .sec-head .row .icon{width:1.5em;height:1.5em;color:var(--navy);stroke-width:1.5}
+  .sec-head h2{font-size:1.55rem}
+  .sec-eyebrow{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--taupe);margin-bottom:4px}
+  .sec-sub{color:var(--ink-soft);max-width:70ch;margin-bottom:24px;position:relative;z-index:1}
+
+  /* ---- reveal-on-scroll ---- */
+  .reveal{opacity:1;transform:none}
+  @media (prefers-reduced-motion: no-preference){
+    .reveal{opacity:0;transform:translateY(14px);transition:opacity .55s cubic-bezier(.16,1,.3,1), transform .55s cubic-bezier(.16,1,.3,1)}
+    .reveal.is-visible{opacity:1;transform:none}
+  }
+
+  /* ---- stat tiles (legacy, still used for non-% figures) ---- */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px;margin-bottom:26px}
+  .stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;position:relative;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .2s ease, box-shadow .2s ease}
+  .stat:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+  .stat::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:var(--navy)}
+  .stat .n{font-family:var(--font-mono);font-size:1.75rem;font-weight:700;color:var(--navy)}
+  .stat .l{font-size:.82rem;color:var(--ink-soft)}
+  .stat .src{font-size:.68rem;color:var(--ink-faint);margin-top:4px}
+
+  /* ---- gauge tiles (radial %) ---- */
+  .gauges{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:26px}
+  .gauge-tile{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 14px 15px;text-align:center;box-shadow:var(--shadow-sm);transition:transform .2s ease, box-shadow .2s ease}
+  .gauge-tile:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+  .gauge-wrap{position:relative;width:100px;height:100px;margin:0 auto}
+  .gauge-wrap.sm{width:40px;height:40px}
+  .gauge-wrap svg{width:100%;height:100%}
+  .gauge-bg{fill:none;stroke:var(--surface-3);stroke-width:10}
+  .gauge-fg{fill:none;stroke:var(--navy);stroke-width:10;stroke-linecap:round;transition:stroke-dashoffset 1.15s cubic-bezier(.16,1,.3,1)}
+  .gauge-wrap.sm .gauge-bg,.gauge-wrap.sm .gauge-fg{stroke-width:7}
+  .gauge-center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+  .gauge-n{font-family:var(--font-mono);font-weight:700;font-size:1.32rem;color:var(--navy)}
+  .gauge-label{font-size:.79rem;color:var(--ink-soft);margin-top:9px}
+  .gauge-src{font-size:.66rem;color:var(--ink-faint);margin-top:3px}
+
+  /* ---- pastilles / badges ---- */
+  .pastille{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:.72rem;padding:4px 10px;border-radius:999px;font-weight:600}
+  .pastille .dot{width:7px;height:7px;border-radius:50%}
+  .pastille.good{background:var(--good-soft);color:var(--good)}
+  .pastille.good .dot{background:var(--good)}
+  .pastille.warn{background:var(--warn-soft);color:var(--warn)}
+  .pastille.warn .dot{background:var(--warn)}
+  .pastille.mid{background:var(--gold-soft);color:var(--gold)}
+  .pastille.mid .dot{background:var(--gold)}
+  .pastille.info{background:var(--info-soft);color:var(--info)}
+  .pastille.info .dot{background:var(--info)}
+
+  /* ---- cards / grid ---- */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  @media (max-width:760px){.grid2,.grid3,.grid4{grid-template-columns:1fr}}
+  @media (max-width:960px) and (min-width:761px){.grid4{grid-template-columns:repeat(2,1fr)}}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow-sm);transition:transform .2s ease, box-shadow .2s ease}
+  .card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+  .card h4{font-size:1rem;margin-bottom:.5em;display:flex;align-items:center;gap:8px}
+  .card h4 .icon{color:var(--navy)}
+
+  table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);font-size:.9rem;vertical-align:top}
+  th{background:var(--surface-2);font-family:var(--font-display);font-size:.76rem;text-transform:uppercase;letter-spacing:.03em;color:var(--ink-soft)}
+  tr:last-child td{border-bottom:none}
+  tbody tr:hover td{background:var(--surface-2)}
+  .tbl-wrap{overflow-x:auto;margin-bottom:8px;box-shadow:var(--shadow-sm);border-radius:var(--radius)}
+
+  .practice{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media (max-width:600px){.practice{grid-template-columns:1fr}}
+  .practice .good, .practice .bad{border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow-sm);transition:transform .2s ease, box-shadow .2s ease}
+  .practice .good:hover, .practice .bad:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+  .practice .good{background:var(--good-soft);border:1px solid color-mix(in srgb, var(--good) 30%, transparent)}
+  .practice .bad{background:var(--warn-soft);border:1px solid color-mix(in srgb, var(--warn) 30%, transparent)}
+  .practice h5{font-family:var(--font-display);font-size:.85rem;margin-bottom:10px;display:flex;align-items:center;gap:7px}
+  .practice .good h5{color:var(--good)}
+  .practice .bad h5{color:var(--warn)}
+  .practice ul{margin:0;padding-left:1.1em;font-size:.9rem}
+  .practice li{margin-bottom:5px}
+
+  /* ---- diagrams ---- */
+  .diagram-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:20px}
+  @media (max-width:760px){.diagram-row{grid-template-columns:1fr}}
+  .diagram{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;text-align:center;box-shadow:var(--shadow-sm);transition:transform .2s ease, box-shadow .2s ease}
+  .diagram:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+  .diagram svg{max-width:100%;height:auto;margin-inline:auto}
+  .diagram figcaption{font-size:.83rem;color:var(--ink-soft);margin-top:10px;text-align:left}
+
+  /* ---- body map legend ---- */
+  .bodymap-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:20px;align-items:center;margin-bottom:20px}
+  @media (max-width:700px){.bodymap-wrap{grid-template-columns:1fr}}
+  .bm-legend{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media (max-width:480px){.bm-legend{grid-template-columns:1fr}}
+  .bm-item{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 13px;display:flex;gap:10px;align-items:flex-start;box-shadow:var(--shadow-sm)}
+  .bm-item .bm-num{width:22px;height:22px;border-radius:50%;background:var(--gold);color:#241C0C;font-family:var(--font-mono);font-weight:700;font-size:.75rem;display:flex;align-items:center;justify-content:center;flex:none}
+  .bm-item h6{margin:0 0 2px;font-family:var(--font-display);font-size:.86rem}
+  .bm-item p{margin:0;font-size:.78rem;color:var(--ink-soft)}
+  .bm-marker text{font-family:var(--font-mono);font-weight:700;font-size:11px;fill:#241C0C;text-anchor:middle;dominant-baseline:central}
+
+  /* ---- routine steps ---- */
+  .steps{counter-reset:step;display:flex;flex-direction:column;gap:0}
+  .step{display:grid;grid-template-columns:46px 1fr;gap:14px;padding-block:15px;border-top:1px dashed var(--line)}
+  .step:first-child{border-top:none}
+  .step .num{counter-increment:step;width:34px;height:34px;border-radius:50%;background:var(--navy-soft);color:var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-weight:700;font-size:.88rem}
+  .step .num::before{content:counter(step)}
+  .step h5{font-size:.96rem;margin-bottom:2px}
+  .step p{margin:0;font-size:.88rem;color:var(--ink-soft)}
+  .step .tag{font-family:var(--font-mono);font-size:.68rem;color:var(--gold);font-weight:600}
+
+  /* ---- quiz ---- */
+  .quiz-q{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:14px;box-shadow:var(--shadow-sm)}
+  .quiz-q p.q{font-weight:600;margin-bottom:10px;display:flex;gap:8px}
+  .quiz-q p.q .qn{font-family:var(--font-mono);color:var(--gold);flex:none}
+  .quiz-q label{display:block;padding:9px 12px;border:1px solid var(--line);border-radius:8px;margin-bottom:6px;cursor:pointer;font-size:.92rem;transition:border-color .15s,background .15s}
+  .quiz-q label:hover{border-color:var(--navy)}
+  .quiz-q input{margin-right:8px}
+  .quiz-q .explain{display:none;margin-top:10px;padding:10px 12px;border-radius:8px;font-size:.87rem}
+  .quiz-q .explain.ok{background:var(--good-soft);color:var(--good)}
+  .quiz-q .explain.ko{background:var(--warn-soft);color:var(--warn)}
+  #quiz-score{position:sticky;bottom:14px;background:var(--dark);color:#fff;padding:10px 20px 10px 14px;border-radius:999px;display:flex;justify-content:space-between;align-items:center;gap:14px;font-family:var(--font-mono);font-size:.85rem;box-shadow:var(--shadow-lg)}
+  #quiz-score .qs-left{display:flex;align-items:center;gap:10px}
+  #quiz-score .qs-left .gauge-bg{stroke:rgba(255,255,255,.18)}
+  #quiz-score .qs-left .gauge-fg{stroke:var(--navy)}
+  #quiz-score button{font-family:var(--font-body);background:var(--navy);color:#fff;border:none;padding:8px 16px;border-radius:999px;cursor:pointer;font-weight:700}
+
+  .callout{border-left:3px solid var(--navy);background:var(--navy-soft);padding:15px 18px;border-radius:0 var(--radius) var(--radius) 0;font-size:.92rem}
+  .callout.scope{border-color:var(--taupe);background:var(--taupe-soft)}
+
+  .refs{font-size:.85rem;color:var(--ink-soft)}
+  .refs li{margin-bottom:7px}
+
+  /* ---- calculateur ---- */
+  .calc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-sm)}
+  .calc .row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+  @media (max-width:600px){.calc .row{grid-template-columns:1fr}}
+  .calc label{display:block;font-size:.82rem;color:var(--ink-soft);margin-bottom:6px;font-family:var(--font-mono)}
+  .calc select{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit}
+  .calc-result{display:flex;align-items:center;gap:18px;padding-top:14px;border-top:1px dashed var(--line);flex-wrap:wrap}
+  .calc-gauge{width:84px;height:84px;flex:none}
+
+  /* ---- photo gallery (terrain + étude de cas) ---- */
+  .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+  @media (max-width:860px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:560px){.photo-grid{grid-template-columns:1fr}}
+  .photo-card{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .2s ease, box-shadow .2s ease}
+  .photo-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+  .photo-card .pc-media{position:relative;overflow:hidden}
+  .photo-card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--surface-2);cursor:zoom-in;transition:transform .3s ease}
+  .photo-card .pc-media:hover img{transform:scale(1.04)}
+  .pc-body{padding:11px 13px 13px}
+  .pc-body h5{font-size:.85rem;margin:0 0 3px;display:flex;align-items:center;gap:6px}
+  .pc-body h5 .pastille{font-size:.63rem;padding:2px 7px}
+  .pc-body p{font-size:.79rem;color:var(--ink-soft);margin:0}
+  .ai-disclaimer{display:flex;gap:9px;align-items:flex-start;background:var(--info-soft);border:1px solid color-mix(in srgb, var(--info) 28%, transparent);border-radius:var(--radius);padding:12px 14px;font-size:.82rem;color:var(--ink-soft);margin:18px 0}
+  .ai-disclaimer .icon{color:var(--info);width:1.2em;height:1.2em;flex:none;margin-top:.1em}
+  .ai-disclaimer b{color:var(--ink)}
+
+  .case-study{margin-top:30px;padding-top:26px;border-top:1px dashed var(--line)}
+  .case-study .cs-head{display:flex;align-items:center;gap:9px;margin-bottom:4px}
+  .case-study .cs-head .icon{width:1.3em;height:1.3em;color:var(--navy)}
+  .case-study .cs-head h3{font-size:1.18rem;margin:0}
+  .case-study .cs-sub{color:var(--ink-soft);font-size:.9rem;max-width:70ch;margin-bottom:6px}
+  .risk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+  @media (max-width:700px){.risk-grid{grid-template-columns:1fr}}
+  .risk-card{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .2s ease, box-shadow .2s ease}
+  .risk-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+  .risk-card .pc-media{position:relative;overflow:hidden}
+  .risk-card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--surface-2);cursor:zoom-in;transition:transform .3s ease}
+  .risk-card .pc-media:hover img{transform:scale(1.04)}
+  .zoom-hint{position:absolute;top:9px;right:9px;width:28px;height:28px;border-radius:50%;background:rgba(20,19,20,.55);color:#fff;display:flex;align-items:center;justify-content:center;pointer-events:none;opacity:0;transition:opacity .2s ease;backdrop-filter:blur(2px)}
+  .zoom-hint .icon{width:1rem;height:1rem}
+  .pc-media:hover .zoom-hint{opacity:1}
+  @media (hover:none){.zoom-hint{opacity:.85}}
+
+  /* ---- lightbox ---- */
+  .lightbox{position:fixed;inset:0;background:rgba(10,9,10,.92);display:none;align-items:center;justify-content:center;z-index:80;padding:38px 20px;cursor:zoom-out}
+  .lightbox.open{display:flex}
+  .lightbox img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 30px 70px -20px rgba(0,0,0,.6);cursor:default}
+  .lightbox figcaption{position:absolute;left:0;right:0;bottom:14px;text-align:center;color:#EDEEF0;font-size:.82rem;padding:0 20px}
+  .lb-close{position:absolute;top:16px;right:18px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.24);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer}
+  .lb-close:hover{background:rgba(255,255,255,.2)}
+  .lb-close .icon{width:1.2em;height:1.2em}
+  .risk-body{padding:14px 16px 16px}
+  .risk-body h5{font-size:.92rem;margin:0 0 8px;display:flex;align-items:center;gap:8px}
+  .risk-body h5 .risk-num{font-family:var(--font-mono);font-size:.68rem;font-weight:700;background:var(--navy);color:#fff;border-radius:999px;width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;flex:none}
+  .risk-body ul{margin:0;padding-left:1.05em;font-size:.83rem;color:var(--ink-soft)}
+  .risk-body li{margin-bottom:4px}
+  .risk-body .risk-note{margin-top:8px;font-size:.78rem;color:var(--gold);display:flex;gap:5px;align-items:flex-start}
+  .risk-body .risk-note .icon{width:1.05em;height:1.05em;flex:none;margin-top:.1em}
+
+  /* ---- video library ---- */
+  .video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  @media (max-width:700px){.video-grid{grid-template-columns:1fr}}
+  .video-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-sm);transition:transform .2s ease, box-shadow .2s ease}
+  .video-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+  .video-thumb{aspect-ratio:16/9;background:linear-gradient(135deg,var(--dark),var(--navy));display:flex;align-items:center;justify-content:center;position:relative}
+  .video-thumb .icon{width:2.4rem;height:2.4rem;color:#fff;opacity:.92}
+  .video-thumb .src-tag{position:absolute;top:10px;left:10px;font-family:var(--font-mono);font-size:.66rem;color:#fff;background:rgba(0,0,0,.35);padding:3px 8px;border-radius:999px}
+  .video-body{padding:14px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+  .video-body h5{font-size:.92rem;margin:0}
+  .video-body p{font-size:.82rem;color:var(--ink-soft);margin:0;flex:1}
+  .video-body a{font-family:var(--font-mono);font-size:.76rem;font-weight:600}
+
+  footer{padding-block:34px;text-align:center;background:var(--surface-2)}
+  footer .logos{display:flex;gap:22px;justify-content:center;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+  footer .logos img{height:26px;opacity:.8}
+  footer small{color:var(--ink-faint);font-size:.75rem}
+
+  /* ================= PRINT ================= */
+  @media print{
+    #scrollbar,aside.rail,.parcours,.theme-toggle,#quiz-score button{display:none !important}
+    .content{margin-left:0 !important}
+    body{background:#fff !important}
+    .hero{background:none !important;color:var(--ink) !important;padding-block:12px}
+    .hero::after{display:none}
+    .hero-scene{display:none}
+    .hero h1,.hero p.lead,.hero .eyebrow{color:#111 !important}
+    .hero .chips span,.takeaways .tk{background:none !important;border-color:#999 !important;color:#111 !important}
+    section{padding-block:16px;border-bottom:1px solid #ccc;break-inside:avoid}
+    .card,.gauge-tile,.diagram,.video-card,.quiz-q,.stat{box-shadow:none !important;break-inside:avoid}
+    a{color:#111 !important}
+    .wrap{max-width:100% !important}
+  }
+</style>
+
+<!-- ============ ICON SPRITE ============ -->
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+<defs>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></symbol>
+<symbol id="i-body" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.2"/><path d="M12 8v7"/><path d="M8 11l4-1.5L16 11"/><path d="M9 22l3-7 3 7"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+<symbol id="i-lever" viewBox="0 0 24 24"><path d="M3 17l18-6"/><circle cx="12" cy="14" r="1.6"/><path d="M12 14v7"/><path d="M8 21h8"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V12"/><path d="M11 12V4.5a1.5 1.5 0 0 1 3 0V12"/><path d="M14 12V6.5a1.5 1.5 0 0 1 3 0V13"/><path d="M17 13v-3.5a1.5 1.5 0 0 1 3 0V15a6 6 0 0 1-6 6h-2a7 7 0 0 1-6-3.5L4 14.5c-.6-.9-.2-2 .8-2.2.6-.1 1.2.1 1.6.6L8 15"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><rect x="1" y="8" width="13" height="9"/><path d="M14 11h4l4 3.5V17h-8z"/><circle cx="6" cy="19" r="1.6"/><circle cx="17.5" cy="19" r="1.6"/></symbol>
+<symbol id="i-refresh" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15.4-6.4L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.4 6.4L3 16"/><path d="M3 21v-5h5"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5 5.5-6"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M4 7l4-1.5L12 7"/><path d="M16 7l4-1.5L24 7" transform="translate(-4)"/><path d="M4 7l-2 5a3 3 0 0 0 6 0L6 7"/><path d="M18 7l-2 5a3 3 0 0 0 6 0l-2-5"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M10 8.5l6 3.5-6 3.5z" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 1-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 1 5.4-5.4L15 12l-3-3z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+<symbol id="i-brain" viewBox="0 0 24 24"><path d="M9 4a3 3 0 0 0-3 3v1a3 3 0 0 0-1 5.8 3 3 0 0 0 3 3.2h1"/><path d="M15 4a3 3 0 0 1 3 3v1a3 3 0 0 1 1 5.8 3 3 0 0 1-3 3.2h-1"/><path d="M9 4v13"/><path d="M15 4v13"/></symbol>
+<symbol id="i-hazard" viewBox="0 0 24 24"><path d="M12 3l10 18H2z"/><path d="M12 10v4"/><circle cx="12" cy="17" r="0.6" fill="currentColor"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.4M12 19.6V22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2 12h2.4M19.6 12H22M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7.2 7.2 0 0 0 9.8 9.8z"/></symbol>
+<symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V3h12v6"/><rect x="4" y="9" width="16" height="8" rx="1.5"/><path d="M6 17v4h12v-4"/></symbol>
+<symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5"/><circle cx="12" cy="8" r="0.6" fill="currentColor"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></symbol>
+</defs>
+</svg>
+
+<div id="scrollbar" aria-hidden="true"></div>
+
+<div class="shell">
+
+<aside class="rail" id="rail">
+  <div class="brand"><img src="images/logo-consulteam.png" alt="Consulteam Groupe"></div>
+
+  <div class="grp-label">Formation</div>
+  <a class="navlink" href="#comprendre"><svg class="icon"><use href="#i-body"/></svg>Comprendre les TMS</a>
+  <a class="navlink" href="#facteurs"><svg class="icon"><use href="#i-layers"/></svg>Facteurs de risque</a>
+  <a class="navlink" href="#biomeca"><svg class="icon"><use href="#i-lever"/></svg>Biomécanique</a>
+  <a class="navlink" href="#gestes"><svg class="icon"><use href="#i-hand"/></svg>Gestes &amp; postures</a>
+  <a class="navlink" href="#metier"><svg class="icon"><use href="#i-truck"/></svg>Fiche métier</a>
+  <a class="navlink" href="#reveil"><svg class="icon"><use href="#i-refresh"/></svg>Réveil musculaire</a>
+  <a class="navlink" href="#quiz"><svg class="icon"><use href="#i-check"/></svg>Auto-évaluation</a>
+
+  <div class="grp-label">Outils professionnels</div>
+  <a class="navlink" href="#outils"><svg class="icon"><use href="#i-tool"/></svg>Calculateur de criticité</a>
+
+  <div class="grp-label">Ressources</div>
+  <a class="navlink" href="#video"><svg class="icon"><use href="#i-play"/></svg>Vidéothèque</a>
+  <a class="navlink" href="#cadre"><svg class="icon"><use href="#i-scale"/></svg>Cadre réglementaire</a>
+
+  <div class="bottom-block">
+    <div class="rail-tools">
+      <button id="theme-toggle" type="button" class="tool-btn" aria-label="Basculer le thème clair / sombre" title="Thème clair / sombre">
+        <svg class="icon i-sun-icon"><use href="#i-sun"/></svg>
+        <svg class="icon i-moon-icon"><use href="#i-moon"/></svg>
+      </button>
+      <button id="print-btn" type="button" class="tool-btn" aria-label="Imprimer ou enregistrer en PDF" title="Imprimer / enregistrer en PDF">
+        <svg class="icon"><use href="#i-printer"/></svg>
+      </button>
+    </div>
+    <div class="meta-box">262170A · Safety Day<br>16/10/2026 · 10h–14h<br>GEODIS D&amp;E Méditerranée</div>
+  </div>
+</aside>
+
+<div class="content">
+
+  <div class="hero" id="accueil">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Plateforme participant · Session 262170A</div>
+        <h1>Prévenir les TMS au quai, au tri et en tournée</h1>
+        <p class="lead">Démarche de prévention des risques liés à l'activité physique, inspirée des référentiels INRS — comprendre, adapter son geste, s'échauffer avant la prise de poste. Cette plateforme accompagne les 4 heures de la session et reste disponible ensuite, sur tous vos écrans.</p>
+        <div class="chips">
+          <span>16/10/2026 · 10h00–14h00</span>
+          <span>GEODIS D&amp;E Méditerranée · La Garde</span>
+          <span>10 participants</span>
+        </div>
+        <div class="takeaways">
+          <span class="tk"><svg class="icon"><use href="#i-lever"/></svg>Les gestes qui protègent le dos</span>
+          <span class="tk"><svg class="icon"><use href="#i-refresh"/></svg>Une routine de réveil en 5 min</span>
+          <span class="tk"><svg class="icon"><use href="#i-tool"/></svg>Un outil pour évaluer un risque</span>
+          <span class="tk"><svg class="icon"><use href="#i-check"/></svg>Un quiz pour valider les acquis</span>
+        </div>
+      </div>
+      <svg class="hero-scene" viewBox="0 0 420 320" role="img" aria-label="Illustration d'un quai de messagerie avec un geste de manutention correct">
+        <defs>
+          <linearGradient id="gsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5007D" stop-opacity=".38"/><stop offset="1" stop-color="#E5007D" stop-opacity="0"/></linearGradient>
+          <linearGradient id="gwall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#39373B"/><stop offset="1" stop-color="#242226"/></linearGradient>
+          <linearGradient id="gfloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2C2A2E"/><stop offset="1" stop-color="#19171A"/></linearGradient>
+          <linearGradient id="gtruck" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".06"/></linearGradient>
+          <radialGradient id="gshadow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#000000" stop-opacity=".4"/><stop offset="1" stop-color="#000000" stop-opacity="0"/></radialGradient>
+        </defs>
+        <rect x="0" y="0" width="420" height="200" fill="url(#gsky)"/>
+        <!-- warehouse back wall & dock -->
+        <rect x="0" y="86" width="420" height="164" fill="url(#gwall)"/>
+        <rect x="0" y="86" width="420" height="4" fill="#E5007D" opacity=".7"/>
+        <rect x="248" y="104" width="140" height="146" rx="3" fill="#141315"/>
+        <line x1="248" y1="111" x2="388" y2="111" stroke="#403E42" stroke-width="2"/>
+        <line x1="248" y1="117" x2="388" y2="117" stroke="#403E42" stroke-width="2"/>
+        <line x1="248" y1="123" x2="388" y2="123" stroke="#403E42" stroke-width="2"/>
+        <rect x="34" y="104" width="30" height="38" rx="3" fill="#FFFFFF" opacity=".07"/>
+        <rect x="76" y="104" width="30" height="38" rx="3" fill="#FFFFFF" opacity=".07"/>
+        <rect x="118" y="104" width="30" height="38" rx="3" fill="#FFFFFF" opacity=".07"/>
+        <!-- floor -->
+        <rect x="0" y="250" width="420" height="70" fill="url(#gfloor)"/>
+        <rect x="0" y="246" width="420" height="6" fill="#E5007D" opacity=".85"/>
+        <g opacity=".5">
+          <rect x="14" y="298" width="20" height="5" rx="2" fill="#FF9800"/>
+          <rect x="42" y="298" width="20" height="5" rx="2" fill="#FF9800"/>
+          <rect x="70" y="298" width="20" height="5" rx="2" fill="#FF9800"/>
+        </g>
+        <!-- truck parked at dock -->
+        <g transform="translate(232,128)">
+        <g class="hero-anim-float">
+          <ellipse cx="88" cy="122" rx="100" ry="10" fill="url(#gshadow)"/>
+          <rect x="46" y="6" width="140" height="96" rx="6" fill="url(#gtruck)" stroke="#FFFFFF" stroke-opacity=".38" stroke-width="1.5"/>
+          <rect x="46" y="6" width="140" height="10" rx="5" fill="#FFFFFF" opacity=".14"/>
+          <line x1="66" y1="10" x2="66" y2="98" stroke="#FFFFFF" stroke-opacity=".08"/>
+          <line x1="86" y1="10" x2="86" y2="98" stroke="#FFFFFF" stroke-opacity=".08"/>
+          <line x1="106" y1="10" x2="106" y2="98" stroke="#FFFFFF" stroke-opacity=".08"/>
+          <line x1="126" y1="10" x2="126" y2="98" stroke="#FFFFFF" stroke-opacity=".08"/>
+          <line x1="146" y1="10" x2="146" y2="98" stroke="#FFFFFF" stroke-opacity=".08"/>
+          <line x1="166" y1="10" x2="166" y2="98" stroke="#FFFFFF" stroke-opacity=".08"/>
+          <line x1="116" y1="6" x2="116" y2="102" stroke="#000000" stroke-opacity=".22" stroke-width="2"/>
+          <rect x="110" y="48" width="4" height="10" rx="1.5" fill="#DADCE0"/>
+          <rect x="118" y="48" width="4" height="10" rx="1.5" fill="#DADCE0"/>
+          <path d="M0 55 Q2 30 26 26 L46 26 L46 102 L14 102 Q0 102 0 88 Z" fill="#E8EAED" stroke="#B9BCC0" stroke-width="1.5"/>
+          <path d="M8 52 Q10 36 26 33 L40 33 L40 58 L8 58 Z" fill="#AED4DE" opacity=".85"/>
+          <line x1="10" y1="50" x2="22" y2="37" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="2"/>
+          <circle cx="8" cy="90" r="5" fill="#FFDE7A" stroke="#C9A227" stroke-width="1"/>
+          <rect x="2" y="96" width="10" height="5" rx="1.5" fill="#4B4B4B"/>
+          <rect x="-4" y="50" width="6" height="10" rx="2" fill="#4B4B4B"/>
+          <circle cx="24" cy="104" r="16" fill="#1C1B1D" stroke="#E8EAED" stroke-opacity=".5" stroke-width="2.5"/>
+          <circle cx="24" cy="104" r="6" fill="#8A8A8C"/>
+          <circle cx="150" cy="104" r="16" fill="#1C1B1D" stroke="#E8EAED" stroke-opacity=".5" stroke-width="2.5"/>
+          <circle cx="150" cy="104" r="6" fill="#8A8A8C"/>
+          <circle cx="172" cy="104" r="16" fill="#161516" stroke="#E8EAED" stroke-opacity=".35" stroke-width="2.5"/>
+          <circle cx="172" cy="104" r="6" fill="#727274"/>
+        </g>
+        </g>
+        <!-- pallet + stacked boxes -->
+        <g transform="translate(26,168)">
+        <g class="hero-anim-float-delay">
+          <ellipse cx="46" cy="86" rx="58" ry="9" fill="url(#gshadow)"/>
+          <rect x="-6" y="78" width="104" height="6" rx="2" fill="#8A6A3F" opacity=".55"/>
+          <rect x="-6" y="86" width="104" height="6" rx="2" fill="#8A6A3F" opacity=".4"/>
+          <rect x="2" y="30" width="46" height="46" rx="4" fill="#FF9800" opacity=".92"/>
+          <line x1="25" y1="30" x2="25" y2="76" stroke="#FFFFFF" stroke-opacity=".45" stroke-width="2.5"/>
+          <line x1="2" y1="53" x2="48" y2="53" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="2"/>
+          <rect x="52" y="42" width="38" height="36" rx="4" fill="#E5007D" opacity=".88"/>
+          <line x1="71" y1="42" x2="71" y2="78" stroke="#FFFFFF" stroke-opacity=".4" stroke-width="2"/>
+          <rect x="10" y="-8" width="34" height="34" rx="4" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1.5"/>
+          <rect x="17" y="2" width="20" height="7" rx="1.5" fill="#2C3E50" opacity=".18"/>
+          <line x1="27" y1="-8" x2="27" y2="26" stroke="#DADCE0" stroke-width="1.5"/>
+        </g>
+        </g>
+        <!-- worker: correct lifting posture, box held close to the body -->
+        <g transform="translate(120,158)">
+          <ellipse cx="16" cy="96" rx="26" ry="7" fill="url(#gshadow)"/>
+          <path d="M6 40 Q0 58 4 78" stroke="#211F21" stroke-width="13" stroke-linecap="round" fill="none"/>
+          <path d="M4 78 Q1 90 6 98" stroke="#1A1819" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M26 40 Q32 58 27 78" stroke="#2A282A" stroke-width="13" stroke-linecap="round" fill="none"/>
+          <path d="M27 78 Q30 90 25 98" stroke="#211F21" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <ellipse cx="7" cy="99" rx="8" ry="4" fill="#141315"/>
+          <ellipse cx="24" cy="99" rx="8" ry="4" fill="#141315"/>
+          <rect x="1" y="0" width="30" height="44" rx="13" fill="#343234"/>
+          <rect x="1" y="22" width="30" height="9" rx="3" fill="#E5007D" opacity=".92"/>
+          <path d="M4 6 Q-8 18 -2 32" stroke="#2A282A" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <path d="M-2 32 Q2 40 14 42" stroke="#211F21" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <path d="M28 6 Q40 18 34 32" stroke="#3A383A" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <path d="M34 32 Q30 40 18 42" stroke="#2A282A" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <rect x="1" y="32" width="30" height="26" rx="3" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1.5"/>
+          <line x1="16" y1="32" x2="16" y2="58" stroke="#DADCE0" stroke-width="1.5"/>
+          <rect x="6" y="40" width="20" height="6" rx="1.5" fill="#2C3E50" opacity=".16"/>
+          <rect x="9" y="-10" width="14" height="11" rx="4" fill="#E3B491"/>
+          <circle cx="16" cy="-20" r="11" fill="#E3B491"/>
+          <path d="M4 -22 Q16 -32 28 -22 L28 -18 Q16 -25 4 -18 Z" fill="#343234"/>
+        </g>
+        <g transform="translate(96,260)">
+        <g class="hero-anim-pulse">
+          <circle cx="0" cy="0" r="18" fill="#FFFFFF" opacity=".08"/>
+          <circle cx="0" cy="0" r="16" fill="none" stroke="#4CAF50" stroke-width="2.5"/>
+          <path d="M-5.5 0l4 4 7-8" stroke="#4CAF50" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        </g>
+        <text x="120" y="264" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" opacity=".92">posture correcte</text>
+      </svg>
+    </div>
+  </div>
+
+  <nav class="parcours" aria-label="Parcours de la session">
+    <div class="wrap">
+      <div class="parcours-track">
+        <a class="parcours-node" href="#comprendre"><span class="pn-ico"><svg class="icon"><use href="#i-body"/></svg></span><span class="pn-label">01 · TMS</span></a>
+        <a class="parcours-node" href="#facteurs"><span class="pn-ico"><svg class="icon"><use href="#i-layers"/></svg></span><span class="pn-label">02 · Facteurs</span></a>
+        <a class="parcours-node" href="#biomeca"><span class="pn-ico"><svg class="icon"><use href="#i-lever"/></svg></span><span class="pn-label">03 · Biomécanique</span></a>
+        <a class="parcours-node" href="#gestes"><span class="pn-ico"><svg class="icon"><use href="#i-hand"/></svg></span><span class="pn-label">04 · Gestes</span></a>
+        <a class="parcours-node" href="#metier"><span class="pn-ico"><svg class="icon"><use href="#i-truck"/></svg></span><span class="pn-label">05 · Métier</span></a>
+        <a class="parcours-node" href="#reveil"><span class="pn-ico"><svg class="icon"><use href="#i-refresh"/></svg></span><span class="pn-label">06 · Réveil</span></a>
+        <a class="parcours-node" href="#quiz"><span class="pn-ico"><svg class="icon"><use href="#i-check"/></svg></span><span class="pn-label">07 · Quiz</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+  <div class="wrap">
+
+  <section id="comprendre">
+    <div class="sec-head">
+      <span class="ghost">01</span>
+      <div class="sec-eyebrow">Formation · Module 1</div>
+      <div class="row"><svg class="icon"><use href="#i-body"/></svg><h2>Comprendre les TMS</h2></div>
+    </div>
+    <p class="sec-sub">Un trouble musculo-squelettique n'apparaît presque jamais d'un coup : c'est un dommage corporel différé, résultat d'une accumulation de microtraumatismes sur les tendons, muscles, nerfs et articulations. Le comprendre, c'est pouvoir agir en amont.</p>
+
+    <div class="gauges">
+      <div class="gauge-tile"><div class="gauge-wrap"><svg viewBox="0 0 120 120"><circle class="gauge-bg" cx="60" cy="60" r="46"/><circle class="gauge-fg" data-pct="90" cx="60" cy="60" r="46" transform="rotate(-90 60 60)"/></svg><div class="gauge-center"><span class="gauge-n">90%</span></div></div><div class="gauge-label">des maladies professionnelles reconnues sont des TMS</div><div class="gauge-src">Cnam, données 2024</div></div>
+      <div class="gauge-tile"><div class="gauge-wrap"><svg viewBox="0 0 120 120"><circle class="gauge-bg" cx="60" cy="60" r="46"/><circle class="gauge-fg" data-pct="93" cx="60" cy="60" r="46" transform="rotate(-90 60 60)"/></svg><div class="gauge-center"><span class="gauge-n">93%</span></div></div><div class="gauge-label">des MP du secteur transport/logistique sont des TMS</div><div class="gauge-src">Ameli.fr, données sectorielles</div></div>
+      <div class="gauge-tile"><div class="gauge-wrap"><svg viewBox="0 0 120 120"><circle class="gauge-bg" cx="60" cy="60" r="46"/><circle class="gauge-fg" data-pct="55" cx="60" cy="60" r="46" transform="rotate(-90 60 60)"/></svg><div class="gauge-center"><span class="gauge-n">50%+</span></div></div><div class="gauge-label">des AT du secteur liés à la manutention manuelle</div><div class="gauge-src">Ameli.fr</div></div>
+      <div class="gauge-tile"><div class="gauge-wrap"><svg viewBox="0 0 120 120"><circle class="gauge-bg" cx="60" cy="60" r="46"/><circle class="gauge-fg" data-pct="42" cx="60" cy="60" r="46" transform="rotate(-90 60 60)"/></svg><div class="gauge-center"><span class="gauge-n">42%</span></div></div><div class="gauge-label">des AT sectoriels liés au port/transport de charges</div><div class="gauge-src">Ameli.fr</div></div>
+    </div>
+
+    <div class="card" style="margin-bottom:20px">
+      <h4><svg class="icon"><use href="#i-arrow"/></svg>Le mécanisme d'apparition du dommage</h4>
+      <p style="font-size:.92rem;color:var(--ink-soft);margin-bottom:0">Danger (charge, geste, cadence) → situation dangereuse (exposition répétée) → événement déclencheur → dommage. Le risque global s'exprime comme <span class="mono">Risque = Probabilité × Gravité</span> : deux leviers d'action existent toujours — réduire la fréquence d'exposition, ou réduire la gravité potentielle de chaque exposition.</p>
+    </div>
+
+    <div class="callout scope">
+      <span class="pastille info"><span class="dot"></span>Repère groupe</span>
+      &nbsp;Taux de fréquence des accidents avec arrêt : <b>10,3</b> en 2024 (objectif <b>9,2</b> à horizon 2027) · Taux de gravité : <b>0,54</b>. Données groupe (rapport de durabilité GEODIS 2024), non spécifiques à l'agence de La Garde — à considérer comme repère de tendance, pas comme diagnostic local.
+    </div>
+  </section>
+
+  <section id="facteurs">
+    <div class="sec-head">
+      <span class="ghost">02</span>
+      <div class="sec-eyebrow">Formation · Module 2</div>
+      <div class="row"><svg class="icon"><use href="#i-layers"/></svg><h2>Quatre familles de facteurs de risque</h2></div>
+    </div>
+    <p class="sec-sub">Le geste et la charge ne sont qu'une partie de l'équation. L'organisation du travail, le vécu psychosocial et l'environnement pèsent tout autant dans l'apparition et l'aggravation des TMS.</p>
+
+    <div class="grid4" style="margin-bottom:16px">
+      <div class="card">
+        <h4><svg class="icon"><use href="#i-lever"/></svg>Biomécanique</h4>
+        <p style="font-size:.88rem;color:var(--ink-soft);margin:0">Répétitivité des gestes, efforts excessifs, postures contraignantes, port de charges.</p>
+        <div style="margin-top:10px"><span class="pastille warn"><span class="dot"></span>Module 3</span></div>
+      </div>
+      <div class="card">
+        <h4><svg class="icon"><use href="#i-clock"/></svg>Organisationnel</h4>
+        <p style="font-size:.88rem;color:var(--ink-soft);margin:0">Cadences de tri, chargement et livraison, pression horaire, variabilité de la charge de travail.</p>
+      </div>
+      <div class="card">
+        <h4><svg class="icon"><use href="#i-brain"/></svg>Psychosocial</h4>
+        <p style="font-size:.88rem;color:var(--ink-soft);margin:0">Exigences de rythme, autonomie dans le geste, soutien collectif — facteur reconnu d'aggravation des TMS.</p>
+      </div>
+      <div class="card">
+        <h4><svg class="icon"><use href="#i-hazard"/></svg>Environnemental</h4>
+        <p style="font-size:.88rem;color:var(--ink-soft);margin:0">Coactivité avec engins et véhicules sur les voies de circulation quai ; horaires décalés / travail de nuit.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:16px">
+      <p style="font-size:.9rem;color:var(--ink-soft);margin:0">Le facteur <b>environnemental</b> mérite une vigilance à part : la coactivité avec chariots, transpalettes et poids lourds en manœuvre porte un risque de <b>sévérité potentiellement supérieure au TMS</b> (collision, écrasement), tout en partageant les mêmes situations de terrain — précipitation, charge mentale, fatigue.</p>
+    </div>
+
+    <div class="callout">
+      Quel que soit l'horaire de prise de poste — matin, soir ou nuit — une routine de préparation physique <b>et mentale</b> reste pertinente. C'est tout l'enjeu du module 6.
+    </div>
+  </section>
+
+  <section id="biomeca">
+    <div class="sec-head">
+      <span class="ghost">03</span>
+      <div class="sec-eyebrow">Formation · Module 3</div>
+      <div class="row"><svg class="icon"><use href="#i-lever"/></svg><h2>Biomécanique appliquée</h2></div>
+    </div>
+    <p class="sec-sub">Pas un cours d'anatomie savante : quelques principes mécaniques simples, qui expliquent pourquoi certains gestes coûtent beaucoup plus cher au corps que d'autres, à charge identique.</p>
+
+    <div class="diagram-row">
+      <figure class="diagram">
+        <svg viewBox="0 0 320 200" role="img" aria-label="Bras de levier court contre bras de levier long">
+          <defs>
+            <linearGradient id="lvG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--good-soft)"/><stop offset="1" stop-color="var(--surface)"/></linearGradient>
+            <linearGradient id="lvW" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--warn-soft)"/><stop offset="1" stop-color="var(--surface)"/></linearGradient>
+          </defs>
+          <rect x="2" y="4" width="150" height="182" rx="14" fill="url(#lvG)" stroke="var(--good)" stroke-opacity=".35"/>
+          <rect x="168" y="4" width="150" height="182" rx="14" fill="url(#lvW)" stroke="var(--warn)" stroke-opacity=".35"/>
+
+          <g transform="translate(48,0)">
+            <ellipse cx="0" cy="164" rx="26" ry="6" fill="#00000014"/>
+            <rect x="-8" y="98" width="16" height="34" rx="7" fill="var(--ink)" opacity=".55"/>
+            <circle cx="0" cy="90" r="8" fill="var(--ink)" opacity=".55"/>
+            <line x1="0" y1="132" x2="-3" y2="160" stroke="var(--ink)" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+            <line x1="0" y1="132" x2="3" y2="160" stroke="var(--ink)" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+            <line x1="0" y1="40" x2="0" y2="98" stroke="var(--ink)" stroke-width="4"/>
+            <circle cx="0" cy="40" r="6" fill="var(--navy)"/>
+            <line x1="0" y1="40" x2="14" y2="128" stroke="var(--good)" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="14" cy="128" r="9" fill="var(--good)"/>
+          </g>
+          <text x="77" y="178" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10.5" font-weight="600" fill="var(--good)">charge près du corps</text>
+          <text x="77" y="192" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8.5" fill="var(--ink-soft)">moment de force faible</text>
+
+          <g transform="translate(198,0)">
+            <ellipse cx="0" cy="164" rx="26" ry="6" fill="#00000014"/>
+            <rect x="-8" y="98" width="16" height="34" rx="7" fill="var(--ink)" opacity=".55"/>
+            <circle cx="0" cy="90" r="8" fill="var(--ink)" opacity=".55"/>
+            <line x1="0" y1="132" x2="-3" y2="160" stroke="var(--ink)" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+            <line x1="0" y1="132" x2="3" y2="160" stroke="var(--ink)" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+            <line x1="0" y1="40" x2="0" y2="98" stroke="var(--ink)" stroke-width="4"/>
+            <circle cx="0" cy="40" r="6" fill="var(--navy)"/>
+            <line x1="0" y1="40" x2="92" y2="112" stroke="var(--warn)" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="92" cy="112" r="9" fill="var(--warn)"/>
+            <path d="M14 46 A70 70 0 0 1 60 74" fill="none" stroke="var(--warn)" stroke-width="1.5" stroke-dasharray="2 3" opacity=".7"/>
+          </g>
+          <text x="243" y="178" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10.5" font-weight="600" fill="var(--warn)">levier long = risque ×</text>
+          <text x="243" y="192" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8.5" fill="var(--ink-soft)">moment de force élevé</text>
+        </svg>
+        <figcaption><b>Moment de force</b> — à poids égal, une charge tenue loin du corps (bras tendus) multiplie la contrainte sur les lombaires par rapport à une charge ramenée près du tronc. Le premier réflexe : rapprocher, toujours.</figcaption>
+      </figure>
+      <figure class="diagram">
+        <svg viewBox="0 0 320 200" role="img" aria-label="Zones de posture verte orange rouge">
+          <defs>
+            <linearGradient id="pzG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--good-soft)"/><stop offset="1" stop-color="var(--surface)"/></linearGradient>
+            <linearGradient id="pzO" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--gold-soft)"/><stop offset="1" stop-color="var(--surface)"/></linearGradient>
+            <linearGradient id="pzR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--warn-soft)"/><stop offset="1" stop-color="var(--surface)"/></linearGradient>
+          </defs>
+          <rect x="16" y="14" width="86" height="172" rx="10" fill="url(#pzG)" stroke="var(--good)" stroke-width="1.5"/>
+          <rect x="117" y="14" width="86" height="172" rx="10" fill="url(#pzO)" stroke="var(--gold)" stroke-width="1.5"/>
+          <rect x="218" y="14" width="86" height="172" rx="10" fill="url(#pzR)" stroke="var(--warn)" stroke-width="1.5"/>
+
+          <g transform="translate(59,150)">
+            <ellipse cx="0" cy="10" rx="18" ry="4" fill="#00000012"/>
+            <rect x="-9" y="-44" width="18" height="46" rx="8" fill="var(--good)"/>
+            <circle cx="0" cy="-52" r="7" fill="var(--good)"/>
+          </g>
+          <text x="59" y="42" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="var(--good)">verte</text>
+          <text x="59" y="178" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="var(--ink-soft)">confortable</text>
+
+          <g transform="translate(160,158) rotate(35)">
+            <rect x="-9" y="-44" width="18" height="46" rx="8" fill="var(--gold)"/>
+            <circle cx="0" cy="-52" r="7" fill="var(--gold)"/>
+          </g>
+          <ellipse cx="160" cy="168" rx="18" ry="4" fill="#00000012"/>
+          <path d="M160 158 L160 120" stroke="var(--gold)" stroke-width="1.5" stroke-dasharray="2 3" opacity=".6"/>
+          <path d="M160 140 A20 20 0 0 1 178 152" fill="none" stroke="var(--gold)" stroke-width="1.5" opacity=".7"/>
+          <text x="160" y="42" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="var(--gold)">orange</text>
+          <text x="160" y="178" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="var(--ink-soft)">extrême ponctuelle</text>
+
+          <g transform="translate(250,168) rotate(60)">
+            <rect x="-9" y="-44" width="18" height="46" rx="8" fill="var(--warn)"/>
+            <circle cx="0" cy="-52" r="7" fill="var(--warn)"/>
+          </g>
+          <ellipse cx="250" cy="172" rx="18" ry="4" fill="#00000012"/>
+          <path d="M250 168 L250 120" stroke="var(--warn)" stroke-width="1.5" stroke-dasharray="2 3" opacity=".6"/>
+          <path d="M250 140 A28 28 0 0 1 275 160" fill="none" stroke="var(--warn)" stroke-width="1.5" opacity=".7"/>
+          <text x="261" y="42" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="var(--warn)">rouge</text>
+          <text x="261" y="178" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="var(--ink-soft)">flexion + rotation</text>
+        </svg>
+        <figcaption><b>Zones de posture</b> — verte : amplitude confortable, tenable. Orange : amplitude extrême ponctuelle, à limiter. Rouge : flexion/rotation combinées ou maintenues, terrain d'apparition du TMS.</figcaption>
+      </figure>
+    </div>
+
+    <div class="practice" style="margin-bottom:20px">
+      <div class="bad">
+        <h5><span class="pastille warn"><span class="dot"></span>À éviter</span>La combinaison la plus délétère</h5>
+        <ul>
+          <li>Flexion du tronc <b>+ torsion</b> du rachis en même temps (ex : attraper un colis au fond du véhicule en pivotant)</li>
+          <li>Le disque intervertébral encaisse mal la torsion sous charge : situation la plus documentée comme génératrice de lombalgies et hernies</li>
+        </ul>
+      </div>
+      <div class="good">
+        <h5><span class="pastille good"><span class="dot"></span>À privilégier</span>Le réflexe qui change tout</h5>
+        <ul>
+          <li>Pivoter avec les pieds, pas avec le dos : orienter le bassin avant de déplacer la charge</li>
+          <li>Fléchir les genoux plutôt que le dos ; garder le dos gainé, proche de sa position naturelle</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4>Morphologie et gabarit individuel</h4>
+      <p style="font-size:.92rem;color:var(--ink-soft);margin:0">Chacun n'a ni la même taille, ni la même force, ni la même souplesse. Les repères ci-dessus sont des principes mécaniques universels — leur application (hauteur de prise, largeur d'appui, rythme) se règle sur son propre gabarit. Un poste ou un geste qui « passe » pour un collègue peut être en zone rouge pour un autre : c'est une information à faire remonter, pas une faiblesse à cacher.</p>
+    </div>
+  </section>
+
+  <section id="gestes">
+    <div class="sec-head">
+      <span class="ghost">04</span>
+      <div class="sec-eyebrow">Formation · Module 4</div>
+      <div class="row"><svg class="icon"><use href="#i-hand"/></svg><h2>Gestes &amp; postures adaptés au quai</h2></div>
+    </div>
+    <p class="sec-sub">Application directe des principes du module 3 aux situations réelles de l'activité GEODIS D&amp;E.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Situation</th><th>Risque principal</th><th>Zone</th><th>Geste à privilégier</th></tr></thead>
+        <tbody>
+          <tr><td>Réception / tri quai</td><td>Flexion-torsion répétée, cadence</td><td><span class="pastille warn"><span class="dot"></span>Rouge</span></td><td>Pivoter les pieds, rapprocher le colis du corps avant de le soulever, fractionner les gros volumes</td></tr>
+          <tr><td>Chargement / déchargement colis-palettes</td><td>Port de charge, levier long</td><td><span class="pastille mid"><span class="dot"></span>Orange</span></td><td>Prise à deux mains, charge collée au corps, jambes fléchies, dos gainé</td></tr>
+          <tr><td>Usage transpalette / diable</td><td>Efforts de poussée-traction, chocs</td><td><span class="pastille mid"><span class="dot"></span>Orange</span></td><td>Pousser plutôt que tirer quand possible, corps engagé dans le mouvement, trajet dégagé</td></tr>
+          <tr><td>Tournée / livraison</td><td>Répétitivité, terrain varié, contrainte de temps</td><td><span class="pastille mid"><span class="dot"></span>Orange</span></td><td>Anticiper le poids avant de saisir, adapter la prise selon le sol (trottoir, escalier)</td></tr>
+          <tr><td>Port de colis volumineux</td><td>Perte de visibilité, déséquilibre</td><td><span class="pastille warn"><span class="dot"></span>Rouge</span></td><td>Fractionner si possible, dégager la ligne de vue, tester le poids avant de s'engager</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="ai-disclaimer">
+      <svg class="icon"><use href="#i-info"/></svg>
+      <div><b>Images de synthèse à visée pédagogique.</b> Les photos ci-dessous sont générées par IA pour illustrer les gestes et situations décrits ci-dessus ; elles ne représentent pas un site GEODIS réel.</div>
+    </div>
+
+    <h3 style="font-size:1.05rem;margin:26px 0 4px">Galerie terrain — gestes de référence</h3>
+    <p style="color:var(--ink-soft);font-size:.9rem;margin-bottom:4px;max-width:70ch">Cinq situations types du quai à la tournée, avec le geste à privilégier illustré.</p>
+    <div class="photo-grid">
+      <figure class="photo-card">
+        <div class="pc-media"><img src="images/photos/01-quai-messagerie.jpg" alt="Quai de messagerie avec camion à quai et palettes en attente" data-caption="Quai de chargement" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+        <div class="pc-body">
+          <h5>Quai de chargement</h5>
+          <p>Vue d'ensemble d'un quai de messagerie : camion à quai, flux de palettes, circulation à dégager.</p>
+        </div>
+      </figure>
+      <figure class="photo-card">
+        <div class="pc-media"><img src="images/photos/02-manutention-carton.jpg" alt="Manutentionnaire soulevant un carton, dos droit, genoux fléchis" data-caption="Prise au sol — zone verte" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+        <div class="pc-body">
+          <h5><span class="pastille good"><span class="dot"></span>Zone verte</span>Prise au sol</h5>
+          <p>Dos droit, genoux fléchis, charge collée au corps : le geste de référence pour soulever un carton.</p>
+        </div>
+      </figure>
+      <figure class="photo-card">
+        <div class="pc-media"><img src="images/photos/03-transpalette.jpg" alt="Agent poussant un transpalette manuel chargé" data-caption="Transpalette — zone orange" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+        <div class="pc-body">
+          <h5><span class="pastille mid"><span class="dot"></span>Zone orange</span>Transpalette</h5>
+          <p>Corps engagé dans le mouvement, on pousse plutôt qu'on tire, trajet dégagé devant soi.</p>
+        </div>
+      </figure>
+      <figure class="photo-card">
+        <div class="pc-media"><img src="images/photos/04-tri-convoyeur.jpg" alt="Employé triant des colis sur un convoyeur à rouleaux" data-caption="Tri convoyeur — zone rouge" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+        <div class="pc-body">
+          <h5><span class="pastille warn"><span class="dot"></span>Zone rouge</span>Tri convoyeur</h5>
+          <p>Prise proche du corps, rythme adapté à la cadence, éviter la torsion du buste en pivotant.</p>
+        </div>
+      </figure>
+      <figure class="photo-card">
+        <div class="pc-media"><img src="images/photos/05-livraison.jpg" alt="Livreur portant un colis volumineux en descendant d'un véhicule utilitaire" data-caption="Colis volumineux — zone rouge" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+        <div class="pc-body">
+          <h5><span class="pastille warn"><span class="dot"></span>Zone rouge</span>Colis volumineux</h5>
+          <p>Ligne de vue dégagée, poids testé avant de s'engager, fractionner si le colis le permet.</p>
+        </div>
+      </figure>
+    </div>
+
+    <div class="case-study">
+      <div class="cs-head"><svg class="icon"><use href="#i-search"/></svg><h3>Étude de cas — repérer les risques</h3></div>
+      <p class="cs-sub">Six mises en situation à discuter en groupe : observer, expliquer, puis proposer une amélioration adaptée au travail réel.</p>
+      <div class="risk-grid">
+        <figure class="risk-card">
+          <div class="pc-media"><img src="images/photos/risques/01-reperer-les-risques.jpg" alt="Scène d'entrepôt avec carton dans l'allée, film au sol, pile masquant la vue" data-caption="01 — Repérer les risques" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+          <div class="risk-body">
+            <h5><span class="risk-num">1</span>Repérer les risques</h5>
+            <ul>
+              <li>Qu'observez-vous ? Quels éléments gênent le déplacement ou la visibilité ?</li>
+              <li>Points visibles : carton dans l'allée, film au sol, pile masquant la vue.</li>
+              <li>Quelles situations similaires rencontrez-vous sur votre site ?</li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="risk-card">
+          <div class="pc-media"><img src="images/photos/risques/02-organisation-avant-apres.jpg" alt="Comparaison d'un poste de travail avant et après réorganisation" data-caption="02 — Organisation avant / après" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+          <div class="risk-body">
+            <h5><span class="risk-num">2</span>Organisation avant / après</h5>
+            <ul>
+              <li>Qu'est-ce qui change entre les deux vues ?</li>
+              <li>Quel effet sur les gestes et déplacements ?</li>
+              <li>Quelle amélioration serait possible à votre poste ?</li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="risk-card">
+          <div class="pc-media"><img src="images/photos/risques/03-choisir-aide-manutention.jpg" alt="Agent face à un diable et une caisse volumineuse" data-caption="03 — Choisir une aide à la manutention" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+          <div class="risk-body">
+            <h5><span class="risk-num">3</span>Choisir une aide à la manutention</h5>
+            <ul>
+              <li>Quelles informations manquent sur le colis : poids, stabilité, prises ?</li>
+              <li>Le diable montré convient-il réellement à cette charge ? Quel autre matériel envisager ?</li>
+            </ul>
+            <div class="risk-note"><svg class="icon"><use href="#i-hazard"/></svg>Cette image pose une question de choix ; elle ne valide pas l'adéquation du diable à la caisse.</div>
+          </div>
+        </figure>
+        <figure class="risk-card">
+          <div class="pc-media"><img src="images/photos/risques/04-circulation-pieton-engin.jpg" alt="Croisement entre un piéton et un engin de manutention en entrepôt" data-caption="04 — Circulation piéton / engin" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+          <div class="risk-body">
+            <h5><span class="risk-num">4</span>Circulation piéton / engin</h5>
+            <ul>
+              <li>Où sont les voies, les protections et les zones de visibilité ?</li>
+              <li>Quelles règles de circulation s'appliquent sur votre site ?</li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="risk-card">
+          <div class="pc-media"><img src="images/photos/risques/05-livraison-acces-difficile.jpg" alt="Livraison avec accès difficile, obstacles au sol" data-caption="05 — Livraison avec accès difficile" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+          <div class="risk-body">
+            <h5><span class="risk-num">5</span>Livraison avec accès difficile</h5>
+            <ul>
+              <li>Quels obstacles voyez-vous ?</li>
+              <li>Quelles informations ou aides rechercher avant de poursuivre ?</li>
+              <li>Quelles possibilités prévoit votre organisation pour ce type de livraison ?</li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="risk-card">
+          <div class="pc-media"><img src="images/photos/risques/06-distance-prise-convoyeur.jpg" alt="Comparaison de la distance de prise d'un carton au convoyeur" data-caption="06 — Distance de prise au convoyeur" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+          <div class="risk-body">
+            <h5><span class="risk-num">6</span>Distance de prise au convoyeur</h5>
+            <ul>
+              <li>Quelles différences observez-vous dans la distance du carton et la position des bras ?</li>
+              <li>Comment l'organisation du poste pourrait-elle faciliter la prise ?</li>
+            </ul>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="metier">
+    <div class="sec-head">
+      <span class="ghost">05</span>
+      <div class="sec-eyebrow">Formation · Module 5</div>
+      <div class="row"><svg class="icon"><use href="#i-truck"/></svg><h2>Fiche métier — Transport / Logistique / Messagerie</h2></div>
+    </div>
+
+    <div class="gauges">
+      <div class="gauge-tile"><div class="gauge-wrap"><svg viewBox="0 0 120 120"><circle class="gauge-bg" cx="60" cy="60" r="46"/><circle class="gauge-fg" data-pct="93" cx="60" cy="60" r="46" transform="rotate(-90 60 60)"/></svg><div class="gauge-center"><span class="gauge-n">93%</span></div></div><div class="gauge-label">des MP du secteur = TMS</div></div>
+      <div class="gauge-tile"><div class="gauge-wrap"><svg viewBox="0 0 120 120"><circle class="gauge-bg" cx="60" cy="60" r="46"/><circle class="gauge-fg" data-pct="42" cx="60" cy="60" r="46" transform="rotate(-90 60 60)"/></svg><div class="gauge-center"><span class="gauge-n">42%</span></div></div><div class="gauge-label">AT liés au port de charges</div></div>
+      <div class="gauge-tile"><div class="gauge-wrap"><svg viewBox="0 0 120 120"><circle class="gauge-bg" cx="60" cy="60" r="46"/><circle class="gauge-fg" data-pct="55" cx="60" cy="60" r="46" transform="rotate(-90 60 60)"/></svg><div class="gauge-center"><span class="gauge-n">50%+</span></div></div><div class="gauge-label">AT liés à la manutention manuelle</div></div>
+    </div>
+
+    <div class="card">
+      <p style="color:var(--ink-soft);font-size:.92rem;margin-top:0">Chauffeurs-livreurs, agents de quai et de tri, manutentionnaires : l'exposition combine port de charges répété, cadences de traitement, station debout prolongée, et coactivité avec les engins de manutention. Le risque n'est pas homogène : il varie fortement selon le poste tenu dans la chaîne.</p>
+
+      <div class="bodymap-wrap">
+        <figure class="diagram" style="margin:0">
+          <svg viewBox="0 0 220 260" role="img" aria-label="Schéma des quatre zones du corps les plus exposées en logistique : dos, épaule, poignet, genou">
+            <defs>
+              <linearGradient id="bmBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--ink)" stop-opacity=".88"/><stop offset="1" stop-color="var(--ink)" stop-opacity=".55"/></linearGradient>
+            </defs>
+            <ellipse cx="112" cy="248" rx="46" ry="8" fill="#00000014"/>
+            <circle cx="112" cy="30" r="16" fill="url(#bmBody)"/>
+            <rect x="96" y="46" width="32" height="70" rx="14" fill="url(#bmBody)"/>
+            <path d="M100 55 L64 88 L56 132" stroke="url(#bmBody)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M124 55 L158 92 L170 128" stroke="var(--gold)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".92"/>
+            <path d="M120 114 L132 178 L138 232" stroke="var(--navy)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".5"/>
+            <path d="M104 114 L94 176 L88 232" stroke="var(--navy)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".92"/>
+            <ellipse cx="138" cy="236" rx="12" ry="7" fill="var(--ink)" opacity=".55"/>
+            <ellipse cx="88" cy="236" rx="12" ry="7" fill="var(--ink)" opacity=".9"/>
+            <g class="bm-marker"><ellipse cx="110" cy="102" rx="4" ry="7" fill="#00000022"/><circle cx="108" cy="100" r="12.5" fill="var(--gold)" stroke="#FFFFFF" stroke-width="2.5"/><text x="108" y="100">1</text></g>
+            <g class="bm-marker"><ellipse cx="126" cy="57" rx="4" ry="7" fill="#00000022"/><circle cx="124" cy="55" r="12.5" fill="var(--gold)" stroke="#FFFFFF" stroke-width="2.5"/><text x="124" y="55">2</text></g>
+            <g class="bm-marker"><ellipse cx="172" cy="130" rx="4" ry="7" fill="#00000022"/><circle cx="170" cy="128" r="12.5" fill="var(--gold)" stroke="#FFFFFF" stroke-width="2.5"/><text x="170" y="128">3</text></g>
+            <g class="bm-marker"><ellipse cx="96" cy="178" rx="4" ry="7" fill="#00000022"/><circle cx="94" cy="176" r="12.5" fill="var(--gold)" stroke="#FFFFFF" stroke-width="2.5"/><text x="94" y="176">4</text></g>
+          </svg>
+          <figcaption>Localisation schématique des sollicitations les plus fréquentes de l'activité quai / tri / tournée.</figcaption>
+        </figure>
+        <div class="bm-legend">
+          <div class="bm-item"><span class="bm-num">1</span><div><h6>Dos (lombaires)</h6><p>Lombalgies, hernies discales — port de colis/palettes, flexion-torsion au tri</p></div></div>
+          <div class="bm-item"><span class="bm-num">2</span><div><h6>Épaule</h6><p>Tendinopathies — gestes au-dessus de la ligne d'épaule, chargement en hauteur</p></div></div>
+          <div class="bm-item"><span class="bm-num">3</span><div><h6>Poignet</h6><p>Canal carpien, tendinites — transpalette, gestes de saisie répétés</p></div></div>
+          <div class="bm-item"><span class="bm-num">4</span><div><h6>Genoux</h6><p>Fatigue articulaire — station debout prolongée, 10-15 km/jour en logistique</p></div></div>
+        </div>
+      </div>
+
+      <div class="tbl-wrap" style="margin-top:16px">
+        <table>
+          <thead><tr><th>Équipement</th><th>Usage</th><th>Bénéfice TMS</th></tr></thead>
+          <tbody>
+            <tr><td>Transpalette électrique</td><td>Déplacement de palettes lourdes</td><td>Supprime l'effort de traction manuelle</td></tr>
+            <tr><td>Diable / chariot pliant</td><td>Colis multiples, tournée</td><td>Réduit le port direct, répartit la charge</td></tr>
+            <tr><td>Ceinture lombaire de maintien</td><td>Port répété, usage ponctuel</td><td>Rappel proprioceptif de gainage (pas une protection à elle seule)</td></tr>
+            <tr><td>Rampe / hayon réglable</td><td>Chargement véhicule</td><td>Évite le port en hauteur ou en contrebas</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="reveil">
+    <div class="sec-head">
+      <span class="ghost">06</span>
+      <div class="sec-eyebrow">Formation · Module 6</div>
+      <div class="row"><svg class="icon"><use href="#i-refresh"/></svg><h2>Réveil musculaire — la routine avant prise de poste</h2></div>
+    </div>
+    <p class="sec-sub">Quelques minutes avant de commencer, quel que soit l'horaire. Ce n'est pas un échauffement sportif de haut niveau : c'est mettre en route ce qui va être sollicité dans la première demi-heure.</p>
+
+    <div class="grid2" style="margin-bottom:22px">
+      <div class="card">
+        <h4>Pourquoi ça compte réellement</h4>
+        <ul style="font-size:.9rem;color:var(--ink-soft);padding-left:1.1em;margin:0">
+          <li><b>Pompes veineuses</b> activées : meilleur retour sanguin dès les premiers efforts</li>
+          <li><b>Système cardiaque et nerveux</b> mis en route progressivement plutôt que sollicités à froid</li>
+          <li><b>Unités motrices et proprioception</b> réveillées : le corps « répond » mieux, on ressent mieux ses limites</li>
+          <li><b>Préparation mentale</b> : quelques minutes pour se mettre en condition, se recentrer — d'autant plus utile en horaires décalés ou de nuit</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Pourquoi c'est renforcé à l'approche de l'hiver</h4>
+        <p style="font-size:.9rem;color:var(--ink-soft);margin:0">Un muscle froid est moins extensible et moins réactif ; par température basse, les tissus tendino-musculaires encaissent moins bien un effort brusque. Sur une activité aussi intense que celle de GEODIS en période de forte charge (fin d'année), préparer son corps avant de l'exposer au froid et à l'effort devient un vrai levier de prévention des blessures, au-delà du seul TMS.</p>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step"><div class="num"></div><div><h5>Mobilisation articulaire globale <span class="tag">1 min</span></h5><p>Chevilles, genoux, hanches, épaules, nuque : quelques rotations douces, sans forcer l'amplitude.</p></div></div>
+      <div class="step"><div class="num"></div><div><h5>Activation cardio-vasculaire légère <span class="tag">1-2 min</span></h5><p>Marche sur place, talons-fesses légers : faire monter le rythme cardiaque progressivement.</p></div></div>
+      <div class="step"><div class="num"></div><div><h5>Réveil du dos et du tronc <span class="tag">1-2 min</span></h5><p>Enroulé-déroulé du dos, rotations de buste contrôlées (sans charge), gainage bref.</p></div></div>
+      <div class="step"><div class="num"></div><div><h5>Activation spécifique membres sollicités <span class="tag">1-2 min</span></h5><p>Épaules et poignets pour le port/saisie, jambes pour la station debout et la marche prolongée.</p></div></div>
+      <div class="step"><div class="num"></div><div><h5>Temps de recentrage <span class="tag">30 s</span></h5><p>Quelques respirations, se projeter dans la prise de poste : c'est le volet mental de la routine.</p></div></div>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <div class="sec-head">
+      <span class="ghost">07</span>
+      <div class="sec-eyebrow">Formation · Validation</div>
+      <div class="row"><svg class="icon"><use href="#i-check"/></svg><h2>Auto-évaluation</h2></div>
+    </div>
+    <p class="sec-sub">10 questions pour vérifier ce qui est acquis. Chaque réponse s'accompagne d'une explication.</p>
+    <div id="quiz"></div>
+    <div id="quiz-score">
+      <div class="qs-left">
+        <div class="gauge-wrap sm"><svg viewBox="0 0 60 60"><circle class="gauge-bg" cx="30" cy="30" r="24"/><circle class="gauge-fg" id="quiz-ring" cx="30" cy="30" r="24" transform="rotate(-90 30 30)"/></svg></div>
+        <span>Score : <span id="score-val">0</span> / 10</span>
+      </div>
+      <button id="quiz-reset" type="button">Recommencer</button>
+    </div>
+  </section>
+
+  <section id="outils">
+    <div class="sec-head">
+      <span class="ghost">01</span>
+      <div class="sec-eyebrow">Outils professionnels</div>
+      <div class="row"><svg class="icon"><use href="#i-tool"/></svg><h2>Calculateur de criticité (G × P)</h2></div>
+    </div>
+    <p class="sec-sub">Le même outil que celui utilisé sur les autres plateformes CONSULTEAM : estimez rapidement la criticité d'une situation à risque en croisant Gravité et Probabilité.</p>
+
+    <div class="calc">
+      <div class="row">
+        <div>
+          <label for="calc-g">Gravité (G) — conséquence si l'événement survient</label>
+          <select id="calc-g">
+            <option value="1">1 — Bénigne (gêne passagère)</option>
+            <option value="2">2 — Modérée (arrêt court)</option>
+            <option value="3" selected>3 — Sérieuse (TMS déclaré, arrêt prolongé)</option>
+            <option value="4">4 — Grave (lésion irréversible, collision)</option>
+          </select>
+        </div>
+        <div>
+          <label for="calc-p">Probabilité (P) — fréquence d'exposition</label>
+          <select id="calc-p">
+            <option value="1">1 — Rare</option>
+            <option value="2">2 — Occasionnelle</option>
+            <option value="3" selected>3 — Fréquente (plusieurs fois/jour)</option>
+            <option value="4">4 — Quasi permanente</option>
+          </select>
+        </div>
+      </div>
+      <div class="calc-result">
+        <div class="gauge-wrap calc-gauge"><svg viewBox="0 0 120 120"><circle class="gauge-bg" cx="60" cy="60" r="46"/><circle class="gauge-fg" id="calc-ring" cx="60" cy="60" r="46" transform="rotate(-90 60 60)"/></svg><div class="gauge-center"><span class="gauge-n mono" id="calc-score">9</span></div></div>
+        <div id="calc-pastille"><span class="pastille mid"><span class="dot"></span>Criticité modérée</span></div>
+        <p style="margin:0;font-size:.85rem;color:var(--ink-soft);flex:1 1 220px">Au-delà de 12 : action prioritaire à engager sans délai. Entre 6 et 12 : à traiter, planifier une action. En dessous de 6 : vigilance courante.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="video">
+    <div class="sec-head">
+      <span class="ghost">02</span>
+      <div class="sec-eyebrow">Ressources</div>
+      <div class="row"><svg class="icon"><use href="#i-play"/></svg><h2>Vidéothèque</h2></div>
+    </div>
+    <p class="sec-sub">Une sélection de ressources vidéo officielles INRS pour prolonger la session. Les liens ouvrent le site source dans un nouvel onglet.</p>
+
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">INRS</span><svg class="icon" style="width:2.4rem;height:2.4rem"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>TMS — Démarche de prévention</h5>
+          <p>La page de référence INRS sur la démarche de prévention des troubles musculosquelettiques.</p>
+          <a href="https://www.inrs.fr/risques/tms-troubles-musculosquelettiques/prevention.html" target="_blank" rel="noopener">Voir sur inrs.fr →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">INRS · Napo</span><svg class="icon" style="width:2.4rem;height:2.4rem"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>Napo dans… Allégez la charge !</h5>
+          <p>Série d'animation INRS sur la prévention des risques liés à la manutention et au port de charges.</p>
+          <a href="https://www.inrs.fr/actualites/napo-allegez-charge.html" target="_blank" rel="noopener">Voir sur inrs.fr →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">INRS · YouTube</span><svg class="icon" style="width:2.4rem;height:2.4rem"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>TMS — Logistique et les éléments de variabilité</h5>
+          <p>Vidéo officielle INRS : comment la variabilité des situations de travail en logistique influe sur le risque TMS.</p>
+          <a href="https://youtu.be/1CslCClwrA8" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">INRS · YouTube</span><svg class="icon" style="width:2.4rem;height:2.4rem"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>TMS — Logistique et les marges de manœuvre</h5>
+          <p>Vidéo officielle INRS : les marges de manœuvre dont disposent les opérateurs logistiques pour adapter leur geste.</p>
+          <a href="https://youtu.be/8chMi7VC6xQ" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">Playlist</span><svg class="icon" style="width:2.4rem;height:2.4rem"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>Ergo anatomie — playlist complète</h5>
+          <p>28 vidéos sur l'anatomie fonctionnelle et les principes ergonomiques, en complément du module biomécanique.</p>
+          <a href="https://youtube.com/playlist?list=PLvjYdo22j7cU21y7IwUTu8lYXNkYOAMPT" target="_blank" rel="noopener">Voir la playlist →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">Ameli</span><svg class="icon" style="width:2.4rem;height:2.4rem"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>TMS — Risques pour l'entreprise</h5>
+          <p>Ressources Ameli à destination des entreprises sur les troubles musculosquelettiques.</p>
+          <a href="https://www.ameli.fr/entreprise/sante-travail/risques/troubles-musculosquelettiques-tms" target="_blank" rel="noopener">Voir sur ameli.fr →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">GEODIS</span><svg class="icon" style="width:2.4rem;height:2.4rem"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>Rapport de durabilité GEODIS 2024</h5>
+          <p>Politique « Health &amp; Safety with Heart » et indicateurs sécurité du groupe.</p>
+          <a href="https://geodis.com/rapportdurabilite2024/" target="_blank" rel="noopener">Voir sur geodis.com →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cadre">
+    <div class="sec-head">
+      <span class="ghost">03</span>
+      <div class="sec-eyebrow">Ressources</div>
+      <div class="row"><svg class="icon"><use href="#i-scale"/></svg><h2>Cadre réglementaire &amp; sources</h2></div>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <h4>Textes de référence</h4>
+        <ul class="refs" style="padding-left:1.1em">
+          <li><b>Code du travail, art. R4541-2</b> — obligation d'évaluer le risque lié à la manutention manuelle et de réduire le recours à celle-ci</li>
+          <li><b>Art. R4541-8</b> — l'employeur met à disposition les aides mécaniques appropriées lorsque possible</li>
+          <li><b>Art. R4541-9</b> — au-delà de <b>55 kg</b> portés par un homme, l'aptitude médicale du médecin du travail est requise ; la limite réglementaire absolue est de <b>105 kg</b>. Ce n'est pas un « maximum légal » fixé à 55 kg : c'est un seuil de vigilance médicale.</li>
+          <li><b>Norme NF X35-109</b> — valeurs limites recommandées de port de charges pour limiter le risque</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Sources chiffrées</h4>
+        <ul class="refs" style="padding-left:1.1em">
+          <li>Cnam — données maladies professionnelles reconnues, 2024</li>
+          <li>Ameli.fr — statistiques sectorielles transport et logistique</li>
+          <li>GEODIS — rapport de durabilité 2024 (indicateurs groupe)</li>
+          <li>INRS — méthodologie d'analyse de la charge physique de travail (démarche de référence de cette plateforme, hors habilitation PRAP)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout scope" style="margin-top:16px">
+      Cette plateforme s'inspire fortement de la démarche INRS de prévention des risques liés à l'activité physique. Elle ne constitue ni une habilitation, ni une formation certifiée INRS.
+    </div>
+  </section>
+
+  </div>
+  </main>
+</div>
+</div>
+
+<footer>
+  <div class="logos">
+    <img src="images/logo-consulteam.png" alt="Consulteam Groupe">
+  </div>
+  <small>Consulteam · Formation professionnelle · Session 262170A · Groupe Valto — contenu conçu pour GEODIS D&amp;E Méditerranée, 16/10/2026</small>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo agrandie">
+  <button class="lb-close" id="lb-close" type="button" aria-label="Fermer"><svg class="icon"><use href="#i-close"/></svg></button>
+  <img id="lb-img" src="" alt="">
+  <figcaption id="lb-caption"></figcaption>
+</div>
+
+<script>
+(function(){
+  try{
+    /* ---- scroll progress + active nav (rail + parcours) ---- */
+    var links = Array.prototype.slice.call(document.querySelectorAll('a.navlink, a.parcours-node'));
+    var linkTargets = links.map(function(l){ return document.querySelector(l.getAttribute('href')); });
+    var uniqueSecs = [];
+    linkTargets.forEach(function(s){ if(s && uniqueSecs.indexOf(s) === -1) uniqueSecs.push(s); });
+    var scrollbar = document.getElementById('scrollbar');
+    function onScroll(){
+      var pos = window.scrollY + 140;
+      var current = uniqueSecs[0];
+      uniqueSecs.forEach(function(s){ if(s.offsetTop <= pos) current = s; });
+      links.forEach(function(l, i){ l.classList.toggle('active', linkTargets[i] === current); });
+      if(scrollbar){
+        var max = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = max > 0 ? Math.min(100, Math.max(0, (window.scrollY / max) * 100)) : 0;
+        scrollbar.style.width = pct + '%';
+      }
+    }
+    window.addEventListener('scroll', onScroll, {passive:true});
+    window.addEventListener('resize', onScroll);
+    onScroll();
+
+    /* ---- theme toggle ---- */
+    var root = document.documentElement;
+    var themeBtn = document.getElementById('theme-toggle');
+    function currentTheme(){
+      var explicit = root.getAttribute('data-theme');
+      if(explicit) return explicit;
+      return (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+    }
+    function syncThemeBtn(){
+      if(themeBtn) themeBtn.classList.toggle('is-dark', currentTheme() === 'dark');
+    }
+    if(themeBtn){
+      themeBtn.addEventListener('click', function(){
+        var next = currentTheme() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        syncThemeBtn();
+      });
+    }
+    syncThemeBtn();
+
+    /* ---- print / save as PDF ---- */
+    var printBtn = document.getElementById('print-btn');
+    if(printBtn) printBtn.addEventListener('click', function(){ window.print(); });
+
+    /* ---- generic radial gauge helper ---- */
+    function setGaugeValue(circleEl, pct){
+      if(!circleEl) return;
+      var r = circleEl.r.baseVal.value;
+      var c = 2 * Math.PI * r;
+      pct = Math.max(0, Math.min(100, pct));
+      circleEl.style.strokeDasharray = c;
+      circleEl.style.strokeDashoffset = c * (1 - pct / 100);
+    }
+    /* initialize all data-pct gauges to 0 (pre-reveal state) */
+    var pctGauges = Array.prototype.slice.call(document.querySelectorAll('.gauge-fg[data-pct]'));
+    pctGauges.forEach(function(el){ setGaugeValue(el, 0); });
+
+    /* ---- reveal-on-scroll + gauge fill-in ---- */
+    var revealTargets = Array.prototype.slice.call(document.querySelectorAll(
+      '.card, .gauge-tile, .diagram, .practice > div, .step, .video-card, .tbl-wrap, .quiz-q, .stat'
+    ));
+    revealTargets.forEach(function(el){ el.classList.add('reveal'); });
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            entry.target.classList.add('is-visible');
+            var g = entry.target.querySelector('.gauge-fg[data-pct]');
+            if(g) setGaugeValue(g, parseFloat(g.getAttribute('data-pct')));
+            io.unobserve(entry.target);
+          }
+        });
+      }, {threshold:0.15, rootMargin:'0px 0px -8% 0px'});
+      revealTargets.forEach(function(el){ io.observe(el); });
+    } else {
+      revealTargets.forEach(function(el){ el.classList.add('is-visible'); });
+      pctGauges.forEach(function(el){ setGaugeValue(el, parseFloat(el.getAttribute('data-pct'))); });
+    }
+
+    /* ---- photo lightbox ---- */
+    var lightbox = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lb-img');
+    var lbCaption = document.getElementById('lb-caption');
+    var lbClose = document.getElementById('lb-close');
+    var lastFocus = null;
+    function openLightbox(imgEl){
+      lbImg.src = imgEl.currentSrc || imgEl.src;
+      lbImg.alt = imgEl.alt || '';
+      lbCaption.textContent = imgEl.getAttribute('data-caption') || imgEl.alt || '';
+      lightbox.classList.add('open');
+      lastFocus = document.activeElement;
+      lbClose.focus();
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox(){
+      lightbox.classList.remove('open');
+      lbImg.src = '';
+      document.body.style.overflow = '';
+      if(lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+    Array.prototype.slice.call(document.querySelectorAll('.photo-card img, .risk-card img')).forEach(function(img){
+      img.setAttribute('tabindex', '0');
+      img.setAttribute('role', 'button');
+      img.setAttribute('aria-label', 'Agrandir la photo : ' + (img.getAttribute('data-caption') || img.alt || ''));
+      img.addEventListener('click', function(){ openLightbox(img); });
+      img.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openLightbox(img); }
+      });
+    });
+    lbClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', function(e){ if(e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox(); });
+
+    /* ---- criticality calculator ---- */
+    var g = document.getElementById('calc-g'), p = document.getElementById('calc-p');
+    var scoreEl = document.getElementById('calc-score'), pastEl = document.getElementById('calc-pastille');
+    var calcRing = document.getElementById('calc-ring');
+    function updateCalc(){
+      var val = parseInt(g.value,10) * parseInt(p.value,10);
+      scoreEl.textContent = val;
+      setGaugeValue(calcRing, (val / 16) * 100);
+      var cls = 'good', label = 'Criticité faible';
+      if(val > 12){ cls = 'warn'; label = 'Criticité élevée — action prioritaire'; }
+      else if(val >= 6){ cls = 'mid'; label = 'Criticité modérée'; }
+      pastEl.innerHTML = '<span class="pastille '+cls+'"><span class="dot"></span>'+label+'</span>';
+    }
+    g.addEventListener('change', updateCalc);
+    p.addEventListener('change', updateCalc);
+    updateCalc();
+
+    /* ---- quiz ---- */
+    var Q = [
+      {q:"Quelle proportion des maladies professionnelles reconnues en France correspond à des TMS ?",
+       opts:["Environ 50%","Environ 90%","Environ 30%"], a:1,
+       ex:"Environ 90% des maladies professionnelles reconnues sont des TMS (Cnam, données 2024)."},
+      {q:"Un homme adulte porte 60 kg dans le cadre de son activité. Que dit la réglementation ?",
+       opts:["C'est interdit, 55 kg est le maximum légal","C'est autorisé sous réserve de l'aptitude délivrée par le médecin du travail","Aucune règle ne s'applique en dessous de 105 kg"], a:1,
+       ex:"L'art. R4541-9 fixe 55 kg comme seuil déclenchant l'exigence d'une aptitude médicale, pas comme plafond absolu. La limite réglementaire absolue est 105 kg."},
+      {q:"Pourquoi une charge tenue bras tendus est-elle plus dangereuse qu'une charge identique ramenée près du corps ?",
+       opts:["Elle est physiquement plus lourde","Elle augmente le moment de force sur les lombaires","Elle sollicite uniquement les bras"], a:1,
+       ex:"À poids égal, plus la charge est éloignée du corps, plus le bras de levier — et donc la contrainte sur le bas du dos — augmente."},
+      {q:"Quelle combinaison de mouvements est la plus délétère pour le rachis ?",
+       opts:["Flexion seule","Torsion seule","Flexion et torsion combinées"], a:2,
+       ex:"Le disque intervertébral encaisse mal la torsion sous charge ; combinée à la flexion, c'est la situation la plus documentée comme génératrice de lombalgies."},
+      {q:"Parmi ces quatre familles de facteurs de risque TMS, laquelle inclut les cadences de tri et la pression horaire ?",
+       opts:["Biomécanique","Organisationnel","Environnemental"], a:1,
+       ex:"Les cadences et la pression horaire relèvent des facteurs organisationnels — distincts du geste lui-même mais tout aussi déterminants."},
+      {q:"Le réveil musculaire avant la prise de poste sert principalement à…",
+       opts:["Remplacer l'échauffement sportif de haut niveau","Mettre en route pompes veineuses, système cardio-nerveux et proprioception avant l'effort","Uniquement s'assouplir avant les étirements du soir"], a:1,
+       ex:"Il ne s'agit pas de performance sportive : c'est une mise en route progressive du corps et du système nerveux avant l'effort réel."},
+      {q:"Pourquoi le réveil musculaire prend-il une importance particulière à l'approche de l'hiver ?",
+       opts:["Un muscle froid est moins extensible et réagit moins bien à un effort brusque","Le froid n'a aucun effet sur les tissus musculaires","Cela ne concerne que les postes en extérieur"], a:0,
+       ex:"Par température basse, les tissus tendino-musculaires sont moins réactifs : préparer le corps devient un vrai levier de prévention des blessures."},
+      {q:"Le réveil musculaire est-il utile uniquement pour une prise de poste le matin ?",
+       opts:["Oui, uniquement le matin","Non, il reste pertinent quel que soit l'horaire, y compris en horaires décalés ou de nuit","Non, uniquement l'après-midi"], a:1,
+       ex:"La préparation physique et mentale reste pertinente à toute heure de prise de poste — les horaires décalés réduisent la vigilance et la récupération, ce qui renforce l'intérêt de la routine."},
+      {q:"Face à un colis lourd à saisir au fond d'un véhicule, quel réflexe limite le risque ?",
+       opts:["Pivoter avec le dos pour gagner du temps","Orienter les pieds et le bassin avant de déplacer la charge","Tendre les bras au maximum pour l'atteindre sans bouger les pieds"], a:1,
+       ex:"Pivoter avec les pieds évite la combinaison flexion-torsion du rachis, la plus à risque."},
+      {q:"Sur le quai, un risque de coactivité avec les engins (chariots, poids lourds en manœuvre) relève de quelle famille de facteurs ?",
+       opts:["Environnemental","Psychosocial","Biomécanique"], a:0,
+       ex:"C'est un facteur environnemental — avec une sévérité potentielle qui dépasse le seul TMS (risque de collision)."}
+    ];
+    var host = document.getElementById('quiz');
+    var quizRing = document.getElementById('quiz-ring');
+    var answered = {};
+    Q.forEach(function(item, i){
+      var div = document.createElement('div');
+      div.className = 'quiz-q reveal';
+      var optsHtml = item.opts.map(function(o,j){
+        return '<label><input type="radio" name="q'+i+'" value="'+j+'"> '+o+'</label>';
+      }).join('');
+      div.innerHTML = '<p class="q"><span class="qn">Q'+(i+1)+'</span>'+item.q+'</p>'+optsHtml+'<div class="explain" id="ex'+i+'"></div>';
+      host.appendChild(div);
+      if('IntersectionObserver' in window){
+        var obs = new IntersectionObserver(function(entries){
+          entries.forEach(function(entry){ if(entry.isIntersecting){ entry.target.classList.add('is-visible'); obs.unobserve(entry.target); } });
+        }, {threshold:0.1});
+        obs.observe(div);
+      } else { div.classList.add('is-visible'); }
+      div.querySelectorAll('input').forEach(function(inp){
+        inp.addEventListener('change', function(){
+          var val = parseInt(inp.value,10);
+          var exBox = document.getElementById('ex'+i);
+          var correct = val === item.a;
+          exBox.className = 'explain ' + (correct ? 'ok' : 'ko');
+          exBox.style.display = 'block';
+          exBox.textContent = (correct ? 'Exact. ' : 'Pas tout à fait. ') + item.ex;
+          answered[i] = correct;
+          var score = Object.keys(answered).filter(function(k){return answered[k];}).length;
+          document.getElementById('score-val').textContent = score;
+          setGaugeValue(quizRing, score * 10);
+        });
+      });
+    });
+    setGaugeValue(quizRing, 0);
+    document.getElementById('quiz-reset').addEventListener('click', function(){
+      answered = {};
+      document.getElementById('score-val').textContent = '0';
+      setGaugeValue(quizRing, 0);
+      host.querySelectorAll('input[type=radio]').forEach(function(i){i.checked=false;});
+      host.querySelectorAll('.explain').forEach(function(e){e.style.display='none';});
+    });
+  }catch(e){}
+})();
+</script>

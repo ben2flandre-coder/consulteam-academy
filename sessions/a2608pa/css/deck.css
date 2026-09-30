@@ -1,5 +1,5 @@
 /* Mode animation — diaporama plein écran, adaptatif projecteur / tablette / smartphone */
-:root{--fs:clamp(15px,.62vw + 1.2vh,27px);--bar:52px}
+:root{--fs:clamp(16px,.7vw + 1.3vh,30px);--bar:52px}
 html,body{height:100%;margin:0;overflow:hidden;background:var(--navy)}
 body.deck{font-size:var(--fs);line-height:1.4;color:var(--ink);font-family:var(--font)}
 .dk-top{position:fixed;inset:0 0 auto 0;height:var(--bar);z-index:20;display:flex;align-items:center;gap:12px;padding:0 max(12px,env(safe-area-inset-left));background:var(--navy);color:#fff;border-bottom:3px solid var(--rose);font-size:14px}
@@ -101,5 +101,29 @@ main#stage{max-width:none;margin:0;padding:0}
 .cols3.sm{grid-template-columns:repeat(3,minmax(0,1fr));gap:.6em}.cols3.sm .tile{padding:.5em .6em}.cols3.sm .tile p{font-size:.8em}
 .below .vis:not(.svg) img{max-height:27vh;aspect-ratio:16/7}
 .split .vis.svg img{max-height:50vh;width:100%}
-.below .vis.svg img{max-height:28vh}
+.below .vis.svg img{max-height:40vh}
 .figs:has(.vis + .vis) .vis.svg img{max-height:32vh;width:auto;margin:0 auto}
+
+/* schémas agrandis */
+.split:has(.vis.svg){grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+.split .vis.svg img{max-height:66vh}
+.split.wide .cols3,.split.wide .cols4,.split.wide .cols5{grid-template-columns:1fr}
+.split.wide .cols3 .tile,.split.wide .cols3>div{padding:.4em .7em}
+.slide .note{display:none}
+@media(max-width:900px){.split:has(.vis.svg){grid-template-columns:1fr}}
+.split:has(.vis.svg){grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}
+.split .cols2{grid-template-columns:1fr}
+.split .txt .big{font-size:1.1em}
+.split .vis.svg img{max-height:58vh}
+.slide.active:has(> .below .vis.svg){display:flex;flex-direction:column}
+.slide:has(> .below .vis.svg) > .below{flex:1 1 auto;min-height:34vh;margin-top:.6em}
+.slide:has(> .below .vis.svg) > .below .vis{height:100%;display:flex;justify-content:center;max-width:none}
+.slide:has(> .below .vis.svg) > .below .vis.svg img{height:100%;width:auto;max-height:none;max-width:100%;object-fit:contain}
+.split .vis:not(.svg) img{max-height:42vh}
+.slide input[type=text]{min-height:30px}
+@media(max-height:860px){.slide .tile .q{display:none}}
+.figs:has(.vis:not(.svg) + .vis:not(.svg)){grid-template-columns:1fr 1fr;align-items:start}
+.figs:has(.vis:not(.svg) + .vis:not(.svg)) .vis img{max-height:30vh}
+.split .figs figure:not(.svg) img{max-height:32vh;width:100%;object-fit:cover}
+.split .figs:has(figure + figure) {grid-template-columns:1fr 1fr}
+.nosplit .cols2{grid-template-columns:1fr 1fr}

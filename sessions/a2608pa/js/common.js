@@ -12,9 +12,15 @@ document.addEventListener('DOMContentLoaded',function(){
     var k='h-'+pg+'-'+(el.dataset.keep||i);el.checked=store.get(k)==='1';
     el.addEventListener('change',function(){store.set(k,el.checked?'1':'0')});
   });
+  /* autres champs mémorisés : data-save="clé" (radio, select, texte) */
+  document.querySelectorAll('[data-save]').forEach(function(el){
+    var k='h-'+pg+'-s-'+el.dataset.save+(el.type==='radio'?'-'+el.name:''),v=store.get(k);
+    if(el.type==='radio'){el.checked=(v===el.value);el.addEventListener('change',function(){if(el.checked)store.set(k,el.value)})}
+    else{if(v!==null&&v!==undefined)el.value=v;el.addEventListener('input',function(){store.set(k,el.value)})}
+  });
   document.querySelectorAll('[data-reset]').forEach(function(b){b.addEventListener('click',function(){
     var box=document.querySelector(b.dataset.reset);if(!box)return;
-    box.querySelectorAll('input[type=checkbox]').forEach(function(c){c.checked=false;c.dispatchEvent(new Event('change'))});
+    box.querySelectorAll('input[type=checkbox]').forEach(function(c){c.checked=false;c.dispatchEvent(new Event('change'))});box.querySelectorAll('[data-save]').forEach(function(c){if(c.type==='radio')c.checked=false;else c.value=c.tagName==='SELECT'?c.options[0].value:'';c.dispatchEvent(new Event(c.type==='radio'?'change':'input'))});
   })});
   /* onglets */
   document.querySelectorAll('.tabs[data-tabs]').forEach(function(t){

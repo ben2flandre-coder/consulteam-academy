@@ -121,3 +121,12 @@ dl.defs dt{font-weight:800;color:var(--navy);margin-top:12px}dl.defs dd{margin:2
 .zm-cap{margin:0;padding:10px 16px max(12px,env(safe-area-inset-bottom));font-size:1rem;text-align:center;color:#dbe8f1}
 .zm-cnt{white-space:nowrap}#zm{background:#061624}
 @media(max-width:480px){.zm-bar{gap:5px;padding-inline:8px}.zm-bar button{min-width:44px}}
+
+/* en-tête compact : 10 liens */
+.top nav a{padding:10px 9px;font-size:.86rem;white-space:nowrap}
+@media(max-width:2100px){.top .ttl{display:none}}
+@media(max-width:1400px){
+  .top{flex-wrap:wrap}.menu-btn{display:inline-flex;align-items:center;justify-content:center}
+  .top nav{display:none;width:100%;margin:0;flex-direction:column}.top nav.open{display:flex}
+}
+@media(min-width:761px) and (max-width:1400px){.top nav.open{display:grid;grid-template-columns:repeat(3,1fr)}}

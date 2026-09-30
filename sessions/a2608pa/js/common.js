@@ -4,6 +4,7 @@
 var store={get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}},del:function(k){try{localStorage.removeItem(k)}catch(e){}}};
 window.HStore=store;
 document.addEventListener('DOMContentLoaded',function(){
+  if(document.documentElement.classList.contains('esp-p')){var lg=document.querySelector('.top > a');if(lg)lg.setAttribute('href','apprenants.html')}
   var mb=document.querySelector('.menu-btn'),nav=document.querySelector('.top nav');
   if(mb&&nav){mb.addEventListener('click',function(){var o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)})}
   /* cases à cocher mémorisées (par page) */

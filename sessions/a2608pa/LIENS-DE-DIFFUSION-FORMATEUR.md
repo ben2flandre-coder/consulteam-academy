@@ -27,3 +27,7 @@ Le dossier contient **tout** (version de travail complète). Avant envoi aux app
 | `formateur.html` | Corrigés, déroulé, vigilance | formateur uniquement |
 
 Points à valider à la relecture : périodicités de contrôle (fiches réflexes), seuils de criticité (proposés), liens vidéo de la section « à tester ».
+
+## Deux entrées distinctes
+- **Formateur (version complète)** : `index.html` — animation, espace formateur, formulaires, éléments de relecture (cases « Validée », notes « à valider »).
+- **Participants (version cadrée)** : `apprenants.html?e=p` — accueil participant, programme, support, nœuds, fiches réflexes, vidéos. Le menu est réduit à ces pages et les éléments de relecture sont masqués.

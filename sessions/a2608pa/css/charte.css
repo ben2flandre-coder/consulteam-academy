@@ -130,3 +130,5 @@ dl.defs dt{font-weight:800;color:var(--navy);margin-top:12px}dl.defs dd{margin:2
   .top nav{display:none;width:100%;margin:0;flex-direction:column}.top nav.open{display:flex}
 }
 @media(min-width:761px) and (max-width:1400px){.top nav.open{display:grid;grid-template-columns:repeat(3,1fr)}}
+.only-p{display:none}.esp-p .only-p,.top nav a.only-p{display:inline-flex}.esp-p .only-f{display:none!important}
+.esp-p .top .ttl small::after{content:" · ESPACE PARTICIPANT"}

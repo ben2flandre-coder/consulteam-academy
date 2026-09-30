@@ -94,3 +94,10 @@ footer.site a{color:#fff}
 @media print{[role=tabpanel][hidden]{display:block!important}.tabs{display:none}}
 .photo{align-self:start}
 @media(max-width:760px){.top .ttl{display:none}.top{padding-block:6px}html{scroll-behavior:auto}}
+
+/* figures pédagogiques (schémas) et définitions */
+.fig{margin:14px 0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px;min-width:0}
+.fig img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.fig figcaption{font-size:.84rem;color:var(--muted);text-align:center;padding-top:6px}
+.figs2{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}.figs2 .fig{margin:0}
+dl.defs dt{font-weight:800;color:var(--navy);margin-top:12px}dl.defs dd{margin:2px 0 0}

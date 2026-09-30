@@ -1,5 +1,5 @@
 /* Mode animation — diaporama plein écran, adaptatif projecteur / tablette / smartphone */
-:root{--fs:clamp(14px,.55vw + 1.05vh,24px);--bar:52px}
+:root{--fs:clamp(15px,.62vw + 1.2vh,27px);--bar:52px}
 html,body{height:100%;margin:0;overflow:hidden;background:var(--navy)}
 body.deck{font-size:var(--fs);line-height:1.4;color:var(--ink);font-family:var(--font)}
 .dk-top{position:fixed;inset:0 0 auto 0;height:var(--bar);z-index:20;display:flex;align-items:center;gap:12px;padding:0 max(12px,env(safe-area-inset-left));background:var(--navy);color:#fff;border-bottom:3px solid var(--rose);font-size:14px}
@@ -80,10 +80,26 @@ body.deck{font-size:var(--fs);line-height:1.4;color:var(--ink);font-family:var(-
 #qcm-slides{display:contents}
 .tile img{aspect-ratio:16/10;max-height:20vh}
 .slide th,.slide td{padding:.28em .6em}
-.slide label.f{margin:.35em 0}.slide input[type=text],.slide select{min-height:38px;padding:6px 10px}
+.slide label.f{margin:.2em 0}.slide input[type=text],.slide select{min-height:34px;padding:4px 10px}
 .slide .out{margin-top:.5em;padding:.6em .8em}
 @media(max-width:640px){.tile img{max-height:none;aspect-ratio:16/9}}
 main#stage{max-width:none;margin:0;padding:0}
 .slide .note{display:none}
 .slide{overflow-wrap:break-word}
 .slide h1,.slide h2{overflow-wrap:break-word;hyphens:manual}
+
+/* ===== Illustrations : photos et schémas ===== */
+.split{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:clamp(16px,2.4vw,44px);align-items:center}
+.split .figs{display:grid;gap:.8em}
+.vis{margin:0}
+.vis img{width:100%;height:auto;max-height:60vh;border-radius:14px;object-fit:cover;display:block;box-shadow:0 6px 24px rgba(8,43,69,.18)}
+.vis.svg img{object-fit:contain;background:#fff;border:1px solid #cddae3;box-shadow:none}
+.below{display:flex;gap:1em;justify-content:center;align-items:flex-start;margin-top:.9em}
+.below .vis{flex:1 1 0;min-width:0;max-width:760px}
+.below .vis img{max-height:34vh;width:auto;max-width:100%;margin:0 auto}
+@media(max-width:900px){.split{grid-template-columns:1fr}.below{flex-direction:column}.vis img{max-height:none}}
+.cols3.sm{grid-template-columns:repeat(3,minmax(0,1fr));gap:.6em}.cols3.sm .tile{padding:.5em .6em}.cols3.sm .tile p{font-size:.8em}
+.below .vis:not(.svg) img{max-height:27vh;aspect-ratio:16/7}
+.split .vis.svg img{max-height:50vh;width:100%}
+.below .vis.svg img{max-height:28vh}
+.figs:has(.vis + .vis) .vis.svg img{max-height:32vh;width:auto;margin:0 auto}

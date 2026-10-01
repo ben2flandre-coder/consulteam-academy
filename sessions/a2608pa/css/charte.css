@@ -132,3 +132,4 @@ dl.defs dt{font-weight:800;color:var(--navy);margin-top:12px}dl.defs dd{margin:2
 @media(min-width:761px) and (max-width:1400px){.top nav.open{display:grid;grid-template-columns:repeat(3,1fr)}}
 .only-p{display:none}.esp-p .only-p,.top nav a.only-p{display:inline-flex}.esp-p .only-f{display:none!important}
 .esp-p .top .ttl small::after{content:" · ESPACE PARTICIPANT"}
+.vt{display:block;margin:0 0 10px;border-radius:10px;overflow:hidden;background:var(--navy)}.vt img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}

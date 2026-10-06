@@ -1334,3 +1334,172 @@ p {
 .video-card .play-button,
 .video-card a::before,
 .video-card a::after { pointer-events: none; }
+
+/* =======================================================
+   v2 — 06/10/2026 : cohérence visuelle, accessibilité, pictos
+   ======================================================= */
+
+/* --- Accessibilité --- */
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;z-index:9999;padding:.6rem 1rem;background:#fff;color:#000;border-radius:.5rem;box-shadow:0 4px 18px rgba(0,0,0,.25)}
+:focus-visible{outline:3px solid #e5007d;outline-offset:3px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* --- Pictos SVG (remplacent les emojis) --- */
+.ic{width:1.15em;height:1.15em;vertical-align:-.2em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.dot{display:inline-block;width:.8em;height:.8em;border-radius:50%;vertical-align:-.05em;margin-right:.1em}
+.dot-red{background:#c62828}.dot-orange{background:#ef6c00}.dot-yellow{background:#f9a825}.dot-green{background:#2e7d32}
+.card-icon .ic{width:30px;height:30px;color:var(--rose-consulteam)}
+.card-icon{background:linear-gradient(135deg,#fde6f2,#f9cfe4)}
+.column-header .icon .ic{width:1.1em;height:1.1em;stroke:#fff}
+.doc-icon .ic,.menu-card .icon .ic{width:1.6rem;height:1.6rem;color:var(--rose-consulteam)}
+.secteur-icon .ic{width:2.5rem;height:2.5rem;color:var(--rose-consulteam)}
+.info-box h4 .ic,.alert strong .ic{color:inherit}
+
+/* --- En-tête : logo propre (plus de cadre arrondi/ombre) --- */
+img[src$="logo-consulteam-blanc.png"]{border-radius:0;box-shadow:none;background:none}
+.logos-header img,.logo-consulteam{height:auto;width:auto;max-height:58px;max-width:min(300px,72vw);object-fit:contain}
+.footer-logo{height:auto;max-height:52px;max-width:min(260px,70vw);filter:none;opacity:1}
+.header-title{text-align:center}
+.header-modern{position:relative}
+
+/* --- Navigation : alignée sur la grille du contenu --- */
+.nav-bar{display:block;background:#fff;padding:.7rem 1rem;margin:0;box-shadow:0 2px 10px rgba(0,0,0,.06);border-bottom:1px solid #ececf1}
+.nav-pills-content{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.nav-pill{display:inline-flex;align-items:center;gap:.45rem;box-shadow:none;border:1px solid #e3e3ea;background:#fafafc}
+.nav-pill:hover{box-shadow:0 2px 8px var(--ombre)}
+.nav-pill.active{border-color:var(--charbon-consulteam)}
+.nav-bar + .container{padding-top:2rem}
+@media(max-width:640px){.nav-pills-content{justify-content:center}}
+
+/* --- Classes utilisées par les pages internes mais jusqu'ici non définies --- */
+.card-header{margin-bottom:1rem}
+.card-title{display:flex;align-items:center;gap:.6rem;color:var(--rose-consulteam);font-size:1.45rem;line-height:1.25;margin:0;padding-bottom:.5rem;border-bottom:3px solid var(--charbon-consulteam)}
+.content-bloc .card-header h2{border:0;padding-bottom:.5rem;margin-bottom:0}
+.section-title{color:var(--rose-consulteam);font-size:1.3rem;margin:0 0 1rem}
+.section-subtitle{color:var(--bleu-fonce);font-size:1.1rem;margin:1.5rem 0 .75rem}
+.menu-card{display:block;background:#fff;border:2px solid #e8e8ee;border-radius:12px;padding:1.1rem 1.25rem;color:var(--texte);transition:border-color .2s,box-shadow .2s,transform .2s;height:100%}
+.menu-card:hover{border-color:var(--rose-consulteam);box-shadow:0 6px 18px var(--ombre);transform:translateY(-2px);color:var(--texte)}
+.menu-card h3,.menu-card h4{color:var(--rose-consulteam);margin:.25rem 0;font-size:1.1rem}
+.menu-card p{margin:0;font-size:.92rem;color:#555}
+.list-styled{list-style:none;margin:1rem 0;padding:0}
+.list-styled li{position:relative;padding:.35rem 0 .35rem 1.6rem}
+.list-styled li::before{content:"";position:absolute;left:.2rem;top:.95em;width:.5rem;height:.5rem;border-radius:50%;background:var(--rose-consulteam)}
+.note-metier{background:#fff7fb;border-left:4px solid var(--rose-consulteam);border-radius:8px;padding:1rem 1.25rem;margin:1.25rem 0}
+.action-links{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem}
+.action-links .btn{margin:0}
+.kpi-sources{font-size:.8rem;color:#666;margin:.25rem 0 0}
+.footer-nav{display:flex;gap:1.25rem;flex-wrap:wrap}
+.footer-credit{font-size:.9rem;opacity:.85;margin:0}
+.footer-modern a{color:#fff;text-decoration:underline}
+.footer-modern a:hover{opacity:.8}
+.footer-nav a,.footer-info a{display:inline-flex;align-items:center;gap:.4rem;color:#fff}
+.btn-secondary:hover,.btn-retour:hover{background:var(--bleu-fonce)}
+@media(max-width:640px){.footer-nav{justify-content:center}}
+
+/* --- Vidéothèque --- */
+.video-thumb{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#343234,#e5007d);color:#fff}
+.video-thumb .ic{width:3rem;height:3rem;stroke:#fff}
+.video-info{padding:1.25rem}
+.video-source{display:inline-block;background:var(--charbon-consulteam);color:#fff;border-radius:999px;font-size:.75rem;font-weight:700;padding:.15rem .7rem;margin-bottom:.4rem}
+.qr-bloc{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.qr-bloc svg{width:96px;height:96px;background:#fff;border:1px solid #ddd;border-radius:8px;padding:6px}
+
+/* --- Badges : étiquette posée sur le bord supérieur de la carte (ne recouvre plus le titre) --- */
+.badge{top:-.65rem;right:1rem;box-shadow:0 2px 6px rgba(0,0,0,.18);padding:.2rem .7rem;font-size:.7rem;z-index:2}
+.card-highlight{margin-top:.35rem}
+
+/* --- Retour en haut : 2 boutons (PC / tablette), 1 seul sur smartphone --- */
+@media(max-width:640px){.scroll-top-left{display:none}.btn-top{width:46px;height:46px;font-size:1.3rem}}
+.btn-top:focus-visible{outline-color:#fff;box-shadow:0 0 0 3px var(--rose-consulteam)}
+
+/* --- Images : l'arrondi/ombre global ne s'applique plus aux logos ni aux schémas --- */
+.schema{display:block;width:100%;height:auto;border-radius:12px;box-shadow:none;border:1px solid #ececf1;background:#f8f9fb}
+
+/* --- Statistiques (accueil) : tuiles homogènes, sourcées --- */
+.stats-row{display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:1fr;gap:.75rem;margin:.5rem 0}
+.stat-mini{display:flex;flex-direction:column;justify-content:flex-start;gap:.15rem;text-align:left;padding:.9rem 1rem;background:#fff;color:var(--texte);border:1px solid #ececf1;border-top:4px solid var(--rose-consulteam);box-shadow:0 2px 8px var(--ombre)}
+.stat-mini .stat-value{font-size:1.9rem;line-height:1.1;color:var(--rose-consulteam);font-weight:800}
+.stat-mini .stat-label{font-size:.85rem;opacity:1;line-height:1.3;color:#333}
+.stat-mini .stat-src{font-size:.72rem;color:#666;margin-top:auto;padding-top:.35rem;line-height:1.25}
+.stats-why{background:#fff;border:1px solid #ececf1;border-radius:12px;padding:.75rem 1rem;font-size:.88rem;box-shadow:0 2px 8px var(--ombre)}
+.stats-why summary{cursor:pointer;font-weight:700;color:var(--bleu-fonce)}
+.stats-why p{margin:.6rem 0 0;color:#444}
+.stats-why ul{margin:.5rem 0 0 1.1rem}
+@media(max-width:480px){.stats-row{grid-template-columns:1fr}}
+table.compar td:first-child{font-weight:700}
+table.compar td.num{white-space:nowrap;font-weight:700;color:var(--rose-consulteam)}
+
+/* --- Frise du parcours --- */
+.frise{list-style:none;margin:0 0 2rem;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:.5rem;counter-reset:f}
+.frise li{position:relative}
+.frise a{display:flex;flex-direction:column;align-items:center;text-align:center;gap:.4rem;padding:.8rem .35rem;background:#fff;border:2px solid #e8e8ee;border-radius:12px;color:var(--texte);font-size:.82rem;font-weight:600;line-height:1.25;height:100%;transition:border-color .2s,transform .2s}
+.frise a:hover{border-color:var(--rose-consulteam);transform:translateY(-2px);color:var(--texte)}
+.frise .n{display:grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:var(--rose-consulteam);color:#fff;font-weight:800}
+.frise .ic{width:1.6rem;height:1.6rem;color:var(--charbon-consulteam)}
+@media(max-width:900px){.frise{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:520px){.frise{grid-template-columns:repeat(2,1fr)}}
+.sequence{scroll-margin-top:1rem}
+.decision{background:#fff;border:2px solid var(--rose-consulteam);border-radius:14px;padding:1.5rem;margin-bottom:2rem}
+.decision h2{color:var(--rose-consulteam);margin-bottom:.25rem;font-size:1.4rem}
+.decision ol{list-style:none;margin:1rem 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.75rem}
+.decision li{background:#fff7fb;border-radius:10px;padding:.8rem .9rem;font-size:.92rem}
+.decision li strong{display:flex;align-items:center;gap:.4rem;color:var(--bleu-fonce);margin-bottom:.2rem}
+.decision li .ic{color:var(--rose-consulteam)}
+.decision .stop{margin-top:1rem;background:#fff3e0;border-left:4px solid #ef6c00;border-radius:8px;padding:.7rem 1rem;font-weight:600}
+
+/* --- Ateliers : schémas --- */
+.atelier-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:1.5rem;align-items:start}
+@media(max-width:760px){.atelier-grid{grid-template-columns:1fr}}
+.atelier h2{display:flex;align-items:center;gap:.6rem}
+.atelier .vignette{margin:0}
+.atelier .vignette figcaption{font-size:.78rem;color:#666;margin-top:.35rem}
+
+/* --- Quiz v2 --- */
+.quiz-meta{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between}
+.quiz-progress{font-weight:700;color:var(--bleu-fonce)}
+.q{background:#fff;border-radius:16px;padding:1.25rem 1.5rem;margin:1rem 0;box-shadow:0 2px 8px var(--ombre);border:0}
+.q legend{float:left;width:100%;padding:0;font-weight:700;color:var(--bleu-fonce);font-size:1.05rem;margin-bottom:.75rem}
+.q legend + *{clear:both}
+.q .tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:#fde6f2;color:#b0005f;border-radius:999px;padding:.1rem .65rem;margin-bottom:.4rem}
+.q label{display:flex;gap:.7rem;align-items:flex-start;padding:.7rem .9rem;margin:.45rem 0;background:var(--gris-fond);border-radius:10px;cursor:pointer;border:2px solid transparent}
+.q label:hover{background:#fde6f2}
+.q input{margin-top:.3rem;accent-color:var(--rose-consulteam)}
+.q.done label{cursor:default}
+.q.done label.ok{background:#e3f4e5;border-color:#2e7d32}
+.q.done label.ko{background:#fde7e9;border-color:#c62828}
+.verdict{margin-top:.9rem;padding:.9rem 1rem;border-radius:10px;font-size:.93rem;background:#f1f6ff;border-left:4px solid #1976d2}
+.verdict.bad{background:#fff4f4;border-left-color:#c62828}
+.verdict.good{background:#f0f9f1;border-left-color:#2e7d32}
+.verdict p{margin:.25rem 0}
+.verdict .lbl{font-weight:700}
+.bilan{background:#fff;border-radius:16px;box-shadow:0 2px 8px var(--ombre);padding:1.5rem;margin:1.5rem 0}
+.bilan h3{color:var(--rose-consulteam);margin-bottom:.75rem}
+.theme-row{display:grid;grid-template-columns:minmax(150px,1.2fr) 3fr auto;gap:.75rem;align-items:center;padding:.4rem 0;font-size:.92rem}
+.theme-bar{height:10px;background:#eee;border-radius:99px;overflow:hidden}
+.theme-bar span{display:block;height:100%;background:var(--rose-consulteam)}
+@media(max-width:560px){.theme-row{grid-template-columns:1fr auto}.theme-bar{grid-column:1/-1}}
+
+/* --- Mémo-débat --- */
+.debat{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+.debat > div{border-radius:12px;padding:1rem 1.25rem}
+.debat .avant{background:#f4f4f6;border-left:4px solid #8d8d99}
+.debat .apres{background:#fff7fb;border-left:4px solid var(--rose-consulteam)}
+.debat h4{margin:.1rem 0 .4rem}
+.debat ul{margin:.3rem 0 0 1.1rem}
+.questions-debat{counter-reset:qd;list-style:none;margin:1rem 0 0;padding:0}
+.questions-debat li{counter-increment:qd;position:relative;padding:.6rem .8rem .6rem 2.6rem;margin:.4rem 0;background:#fff;border:1px solid #ececf1;border-radius:10px}
+.questions-debat li::before{content:counter(qd);position:absolute;left:.7rem;top:.55rem;width:1.5rem;height:1.5rem;border-radius:50%;background:var(--rose-consulteam);color:#fff;font-weight:700;font-size:.85rem;display:grid;place-items:center}
+
+/* --- Calculateur : légende cohérente avec la matrice --- */
+.legende{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;justify-content:center;margin-top:1rem;font-size:.9rem}
+.legende span.sw{display:inline-block;width:1.1rem;height:1.1rem;border-radius:4px;vertical-align:-.2em;margin-right:.35rem;border:1px solid rgba(0,0,0,.15)}
+
+/* --- Impression --- */
+@media print{
+  .nav-bar,.btn-top,.skip-link,.no-print{display:none!important}
+  .q,.bilan,.debat>div,.decision{box-shadow:none;border:1px solid #ccc;break-inside:avoid}
+  .schema{border:1px solid #ccc}
+}
+.video-thumb .big{font-size:2.8rem;font-weight:800;line-height:1}
+.logos-header img[src$="logo-consulteam-blanc.png"],.footer-logo[src$="logo-consulteam-blanc.png"]{height:auto}

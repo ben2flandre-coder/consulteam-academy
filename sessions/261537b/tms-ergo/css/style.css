@@ -1503,3 +1503,21 @@ table.compar td.num{white-space:nowrap;font-weight:700;color:var(--rose-consulte
 }
 .video-thumb .big{font-size:2.8rem;font-weight:800;line-height:1}
 .logos-header img[src$="logo-consulteam-blanc.png"],.footer-logo[src$="logo-consulteam-blanc.png"]{height:auto}
+
+/* --- Médiathèque (photos et schémas) --- */
+.vignettes{display:grid;gap:1rem}
+.vignettes.duo{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:1rem 0}
+.atelier-grid{grid-template-columns:minmax(0,1fr) minmax(0,440px)}
+@media(max-width:860px){.atelier-grid{grid-template-columns:1fr}}
+.schema.photo{aspect-ratio:3/2;object-fit:cover;background:#eee}
+.vignette figcaption{font-size:.82rem;color:#444;margin-top:.4rem;line-height:1.35}
+.aides-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.75rem;margin:1rem 0}
+.aides-grid figure{background:#fff;border:1px solid #ececf1;border-radius:12px;padding:.5rem;text-align:center}
+.aides-grid img{width:100%;height:auto;border-radius:0;box-shadow:none;background:#fff}
+.aides-grid figcaption{font-size:.82rem;font-weight:600;color:var(--bleu-fonce)}
+.repere-duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1rem 0}
+.repere-duo figure{background:#fff;border:1px solid #ececf1;border-radius:12px;padding:.6rem;text-align:center}
+.repere-duo img{width:100%;max-width:240px;height:auto;border-radius:0;box-shadow:none}
+.repere-duo figcaption{font-size:.82rem;color:#444}
+.atelier-grid{grid-template-columns:1fr!important}
+.atelier-grid .vignettes{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}

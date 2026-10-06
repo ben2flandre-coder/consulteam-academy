@@ -19,11 +19,6 @@
         .result-surveiller{background:#ffe0b2;color:#e65100}
         .result-critique{background:#ffcdd2;color:#b71c1c}
     </style>
-
-  <style>
-    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
-    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;z-index:9999;padding:.6rem 1rem;background:#fff;color:#000;border-radius:.5rem;box-shadow:0 4px 18px rgba(0,0,0,.25);}
-  </style>
 </head>
 <body>
 
@@ -31,7 +26,7 @@
 <header class="header-modern">
 <div class="header-content">
 <div class="logos-header">
-<img alt="Consulteam" src="images/logo-consulteam.png"/>
+<img alt="Consulteam" src="images/logo-consulteam-blanc.png"/>
 </div>
 <div class="header-title">
 <h1>Calculateur de Criticité</h1>
@@ -41,8 +36,8 @@
 </header>
 <nav class="nav-bar">
 <div class="nav-pills-content">
-<a class="nav-pill" href="index.html">🏠 Accueil</a>
-<a class="nav-pill" href="cours/module-e-evaluation.html">📖 Cours</a>
+<a class="nav-pill" href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg> Accueil</a>
+<a class="nav-pill" href="cours/module-e-evaluation.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4h6a3 3 0 013 3v13a2 2 0 00-2-2H4z"/><path d="M20 4h-6a3 3 0 00-3 3v13a2 2 0 012-2h7z"/></svg> Cours</a>
 </div>
 </nav>
 <main class="container" id="main">
@@ -70,30 +65,26 @@
 </div>
 </div>
 <div class="content-bloc" id="result" style="display:none">
-<h3 class="section-title">📊 Résultat</h3>
+<h3 class="section-title"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4v16h16"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="2" height="4"/></svg> Résultat</h3>
 <div class="result-box" id="result-box">
 <span class="result-value" id="score">-</span>
 <span id="niveau">-</span>
 </div>
 <div class="alert" id="recommandation"></div>
-<button class="btn btn-secondary" onclick="resetCalc()" style="margin-top:1rem">🔄 Réinitialiser</button>
+<button class="btn btn-secondary" onclick="resetCalc()" style="margin-top:1rem"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 12a8 8 0 01-14 5.300M4 12a8 8 0 0114-5.300"/><path d="M18 3v4h-4M6 21v-4h4"/></svg> Réinitialiser</button>
 </div>
 <div class="content-bloc">
 <h3 class="section-title">Matrice de criticité</h3>
 <table style="text-align:center;width:100%">
 <thead><tr><th>G\P</th><th>1</th><th>2</th><th>3</th><th>4</th></tr></thead>
 <tbody>
-<tr><td><strong>1</strong></td><td style="background:#c8e6c9">1</td><td style="background:#c8e6c9">2</td><td style="background:#c8e6c9">3</td><td style="background:#fff9c4">4</td></tr>
-<tr><td><strong>2</strong></td><td style="background:#c8e6c9">2</td><td style="background:#fff9c4">4</td><td style="background:#ffe0b2">6</td><td style="background:#ffe0b2">8</td></tr>
+<tr><td><strong>1</strong></td><td style="background:#c8e6c9">1</td><td style="background:#c8e6c9">2</td><td style="background:#c8e6c9">3</td><td style="background:#c8e6c9">4</td></tr>
+<tr><td><strong>2</strong></td><td style="background:#c8e6c9">2</td><td style="background:#c8e6c9">4</td><td style="background:#ffe0b2">6</td><td style="background:#ffe0b2">8</td></tr>
 <tr><td><strong>3</strong></td><td style="background:#c8e6c9">3</td><td style="background:#ffe0b2">6</td><td style="background:#ffcdd2">9</td><td style="background:#ffcdd2">12</td></tr>
-<tr><td><strong>4</strong></td><td style="background:#fff9c4">4</td><td style="background:#ffe0b2">8</td><td style="background:#ffcdd2">12</td><td style="background:#ef9a9a">16</td></tr>
+<tr><td><strong>4</strong></td><td style="background:#c8e6c9">4</td><td style="background:#ffe0b2">8</td><td style="background:#ffcdd2">12</td><td style="background:#ef9a9a">16</td></tr>
 </tbody>
 </table>
-<div class="grid-3" style="margin-top:1rem;text-align:center;font-size:0.9rem">
-<div><span style="background:#c8e6c9;padding:0.25rem 0.5rem;border-radius:4px">1-4</span> Acceptable</div>
-<div><span style="background:#ffe0b2;padding:0.25rem 0.5rem;border-radius:4px">5-8</span> À surveiller</div>
-<div><span style="background:#ffcdd2;padding:0.25rem 0.5rem;border-radius:4px">9-16</span> Critique</div>
-</div>
+<div class="legende"><span><span class="sw" style="background:#c8e6c9"></span><strong>1 à 4</strong> : acceptable</span><span><span class="sw" style="background:#ffe0b2"></span><strong>5 à 8</strong> : à surveiller</span><span><span class="sw" style="background:#ffcdd2"></span><strong>9 à 16</strong> : critique</span></div>
 </div>
 </main>
 <footer class="footer-modern">
@@ -101,8 +92,8 @@
 <p class="footer-credit">© 2026 — <strong>Benoît Deflandre</strong> — Consulteam</p>
 </div>
 </footer>
-<button class="btn-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-<button class="btn-top scroll-top-left" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<button type="button" aria-label="Retour en haut de la page" class="btn-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<button type="button" aria-label="Retour en haut de la page" class="btn-top scroll-top-left" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 <script>
         let g=0,p=0;
         function selectOption(el,type,val){
@@ -123,17 +114,17 @@
                 box.classList.add('result-acceptable');
                 document.getElementById('niveau').textContent='Risque ACCEPTABLE';
                 rec.className='alert alert-success';
-                rec.innerHTML='<strong>✅ Maintenir la vigilance.</strong> Surveiller et documenter.';
+                rec.innerHTML='<strong><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg> Maintenir la vigilance.</strong> Surveiller et documenter.';
             }else if(c<=8){
                 box.classList.add('result-surveiller');
                 document.getElementById('niveau').textContent='Risque À SURVEILLER';
                 rec.className='alert alert-warning';
-                rec.innerHTML='<strong>⚠ Planifier des actions</strong> dans les 1-3 mois.';
+                rec.innerHTML='<strong><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.5"/></svg> Planifier des actions</strong> dans les 1-3 mois.';
             }else{
                 box.classList.add('result-critique');
                 document.getElementById('niveau').textContent='Risque CRITIQUE';
                 rec.className='alert alert-danger';
-                rec.innerHTML='<strong>🚨 Action IMMÉDIATE requise.</strong> Arrêt si nécessaire.';
+                rec.innerHTML='<strong><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.5"/></svg> Action IMMÉDIATE requise.</strong> Arrêt si nécessaire.';
             }
         }
         function resetCalc(){

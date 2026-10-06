@@ -1521,3 +1521,9 @@ table.compar td.num{white-space:nowrap;font-weight:700;color:var(--rose-consulte
 .repere-duo figcaption{font-size:.82rem;color:#444}
 .atelier-grid{grid-template-columns:1fr!important}
 .atelier-grid .vignettes{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.dot-blue{background:#1565c0}.dot-purple{background:#6a1b9a}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.75rem;margin:.75rem 0}
+.stat-card{display:flex;flex-direction:column;gap:.2rem;text-align:center;padding:.9rem 1rem;background:#4b4b4b;color:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.stat-card .stat-value{font-size:1.7rem;line-height:1.1;font-weight:800;color:#fff}
+.stat-card .stat-label{font-size:.9rem;line-height:1.3;color:#fff}
+.chaine{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-top:.4rem}.chaine svg{width:1.1em;height:1.1em;flex:none}

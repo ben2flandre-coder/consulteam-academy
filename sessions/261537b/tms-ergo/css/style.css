@@ -1547,3 +1547,6 @@ html.zoom-open{overflow:hidden}
 .lien-3d a.btn-ext{display:inline-block;background:var(--rose-consulteam);color:#fff;padding:.7rem 1.1rem;border-radius:8px;font-weight:700;text-decoration:none}
 .lien-3d a.btn-ext:hover{filter:brightness(.92)}
 .lien-3d small{color:#555}
+em.doute,p.doute{color:#6b5b00;background:#fff8d6;border-radius:4px;padding:0 .3em;font-size:.85em;font-style:italic}
+p.doute{padding:.4rem .6rem;margin:.4rem 0}
+.fort{font-weight:700}

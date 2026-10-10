@@ -1,0 +1,10 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Consulteam · Bonifay · Recyclage A2604QA</title><body><p id="loading" role="status">Chargement du parcours Bonifay…</p><script>
+(async()=>{try{
+const response=await fetch('base.html');if(!response.ok)throw Error('HTTP '+response.status);
+let html=await response.text();
+const changes=[['16–17 septembre 2026','12–13 octobre 2026'],['DGA Toulon','Bonifay · La Garde'],['consulteam.he.2026.v1','consulteam.he.a2604qa.2026.v1'],['SESSION · 14 HEURES','RECYCLAGE · A2604QA'],['12 participants','6 participants'],['Édition enrichie · 12 septembre','Édition Bonifay · 10 octobre'],['Édition finale consolidée du 12 septembre 2026.','Édition Bonifay du 10 octobre 2026.'],['Édition enrichie du 12 septembre 2026.','Édition Bonifay du 10 octobre 2026.']];
+for(const [from,to] of changes)html=html.replaceAll(from,to);
+html=html.replace('</body>','<script src="bonifay.js"><\/script></body>');
+document.open();document.write(html);document.close();
+}catch(error){document.getElementById('loading').textContent='Le parcours ne peut pas être chargé. Actualisez la page ou contactez le formateur. '+error.message;}})();
+</script></body></html>

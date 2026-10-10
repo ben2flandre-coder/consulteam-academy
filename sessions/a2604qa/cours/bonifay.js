@@ -19,7 +19,7 @@ const bonifayCases=[
 V6_CASES.splice(0,V6_CASES.length,...bonifayCases);
 const bonifayLinks=()=>`<div class="row"><a class="button primary" href="../evaluation/">Évaluation finale</a><a class="button" href="../livret/livret-bonifay.pdf">Livret PDF</a><a class="button" href="../">Accueil de session</a></div>`;
 home=function(){bonifayHome();main.insertAdjacentHTML('afterbegin',`<section class="card"><p class="eyebrow">BONIFAY · LA GARDE · 12–13 OCTOBRE 2026</p><h2>Réactiver · corriger les habitudes · démontrer</h2><p>Recyclage B0 · H0/H0V · BS · BE Manœuvre — 6 participants. Les situations ci-dessous sont des exercices génériques, sans description présumée des installations du client.</p>${bonifayLinks()}<ol><li>Présenter ses missions et son retour d’expérience.</li><li>Réactiver les règles et traiter les écarts avec les huit séquences.</li><li>Réaliser les ateliers et une évaluation individuelle par symbole.</li></ol><p class="muted">Le libellé administratif « BE/HE BS » ne vaut pas ajout d’une préparation HE Manœuvre : les symboles de la liste de mission sont B0 H0V, BS et BE Manœuvre.</p></section>`);};
-trainer=function(){bonifayTrainer();const cards=main.querySelectorAll('.card');for(const c of cards){if(c.querySelector('h2')?.textContent.includes('Déroulé proposé'))c.innerHTML=`<h2>Déroulé de recyclage · 6 participants</h2><div class="callout"><b>Écart documentaire à lever avec Consul Team.</b> L’ordre de mission annonce 10,5 h. Les créneaux 12/10 08:30–12:00 et 13:30–16:30, puis 13/10 08:30–12:00 représentent 10 h avant toute pause supplémentaire. Ne pas inventer une demi-heure : conserver les horaires reçus, faire confirmer l’ajustement et reporter la durée réellement réalisée.</div><table><thead><tr><th>Créneau reçu</th><th>Objectifs et activités</th></tr></thead><tbody><tr><td>12/10 · 08:30–12:00</td><td>Accueil, titre et missions, retour d’expérience, positionnement, réactivation du socle et des zones B0/H0/H0V ; ateliers de repérage.</td></tr><tr><td>12/10 · 13:30–16:30</td><td>BS : préparation, limites, mise hors tension, VAT et remplacement à l’identique sur banc ; BE Manœuvre : ordre, appareil, état final, anomalie et compte rendu.</td></tr><tr><td>13/10 · 08:30–12:00</td><td>Réactivation, observations individuelles complémentaires, évaluation théorique, remédiation et réévaluation, bilan et avis par symbole.</td></tr></tbody></table><p>Organiser les rotations pour observer chacun. L’atelier HT est simulé et explicitement annoncé ; aucune opération réelle sur une installation HT du client n’est présumée.</p>`;}
+const bonifayTrainerView=function(){bonifayTrainer();const cards=main.querySelectorAll('.card');for(const c of cards){if(c.querySelector('h2')?.textContent.includes('Déroulé proposé'))c.innerHTML=`<h2>Déroulé de recyclage · 6 participants</h2><div class="callout"><b>Écart documentaire à lever avec Consul Team.</b> L’ordre de mission annonce 10,5 h. Les créneaux 12/10 08:30–12:00 et 13:30–16:30, puis 13/10 08:30–12:00 représentent 10 h avant toute pause supplémentaire. Ne pas inventer une demi-heure : conserver les horaires reçus, faire confirmer l’ajustement et reporter la durée réellement réalisée.</div><table><thead><tr><th>Créneau reçu</th><th>Objectifs et activités</th></tr></thead><tbody><tr><td>12/10 · 08:30–12:00</td><td>Accueil, titre et missions, retour d’expérience, positionnement, réactivation du socle et des zones B0/H0/H0V ; ateliers de repérage.</td></tr><tr><td>12/10 · 13:30–16:30</td><td>BS : préparation, limites, mise hors tension, VAT et remplacement à l’identique sur banc ; BE Manœuvre : ordre, appareil, état final, anomalie et compte rendu.</td></tr><tr><td>13/10 · 08:30–12:00</td><td>Réactivation, observations individuelles complémentaires, évaluation théorique, remédiation et réévaluation, bilan et avis par symbole.</td></tr></tbody></table><p>Organiser les rotations pour observer chacun. L’atelier HT est simulé et explicitement annoncé ; aucune opération réelle sur une installation HT du client n’est présumée.</p>`;}
 main.insertAdjacentHTML('afterbegin',`<div class="callout"><b>Contrôle avant session :</b> titres en cours, opérations réellement confiées, prérequis du recyclage, prescriptions locales, moyens de TP et équipements. Ne joindre aucune liste nominative à ce site public.</div>`);};
 const media=[
  ['bs-limites.svg','BS : les limites se vérifient ensemble','Seuils INRS, intervention hors tension, sans voisinage, sur circuit terminal ; aucun exécutant sous ses ordres.'],
@@ -31,4 +31,32 @@ const media=[
 function bonifayMedia(){return `<section class="card bonifay-media"><p class="eyebrow">COMPLÉMENTS BONIFAY · 10 OCTOBRE 2026</p><h2>Planches de réactivation</h2><div class="grid">${media.map(([file,title,note])=>`<figure style="margin:0"><a href="assets/${file}" target="_blank" rel="noopener"><img loading="eager" src="assets/${file}" alt="${E(title)}" style="width:100%;height:auto;border:1px solid #d5dfeb;border-radius:12px"></a><figcaption><b>${E(title)}</b><p>${E(note)}</p><a href="assets/${file}" download>Télécharger le visuel</a></figcaption></figure>`).join('')}</div><p class="muted">Ouvrir une planche pour zoomer. Schémas originaux ; aucune reproduction de planches MémoForma. Les seuils et périmètres sont sourcés dans le registre de session.</p></section>`;}
 visuals=function(){bonifayVisuals();main.insertAdjacentHTML('afterbegin',bonifayMedia());};
 const bonifayBook=book;book=function(){bonifayBook();main.insertAdjacentHTML('beforeend',bonifayMedia());};
+let bonifayTrainerUnlocked=false;
+trainer=function(){
+ if(bonifayTrainerUnlocked){
+  bonifayTrainerView();
+  const subtitle=main.querySelector('.subtitle');
+  if(subtitle)subtitle.textContent='Préparation de la session et traces de TP.';
+  for(const p of main.querySelectorAll('p'))if(p.textContent.includes('sans contrôle d’accès'))p.textContent='Préparation de la session et traces de TP.';
+  main.insertAdjacentHTML('afterbegin','<div class="row"><button type="button" id="lockTrainer">Verrouiller l’espace formateur</button></div>');
+  document.querySelector('#lockTrainer').onclick=()=>{bonifayTrainerUnlocked=false;trainer();};
+  return;
+ }
+ main.innerHTML=heading('ACCÈS RÉSERVÉ','Espace formateur','Saisissez votre code pour ouvrir cet espace.')+
+ '<section class="card"><form id="trainerAccess"><label for="trainerCode">Code d’accès formateur</label><input id="trainerCode" type="password" required autocomplete="off" maxlength="64"><p id="trainerAccessError" role="alert"></p><div class="row"><button class="primary" type="submit">Déverrouiller</button><a class="button" href="#home">Retour au parcours</a></div></form></section>';
+ document.querySelector('#trainerAccess').onsubmit=async event=>{
+  event.preventDefault();
+  const input=document.querySelector('#trainerCode'),button=event.currentTarget.querySelector('button');
+  const value=input.value;input.value='';button.disabled=true;
+  try{
+   const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value));
+   const hash=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');
+   if(location.hash!=='#trainer')return;
+   if(hash==='e43f7cef0cae2f561069709fe9a2e5abfc01e931d5412e2bf989fdeab4653047'){bonifayTrainerUnlocked=true;trainer();}
+   else{document.querySelector('#trainerAccessError').textContent='Code incorrect.';input.focus();}
+  }catch(error){if(location.hash==='#trainer')document.querySelector('#trainerAccessError').textContent='Vérification indisponible. Rechargez la page en HTTPS.';}
+  finally{if(button.isConnected)button.disabled=false;}
+ };
+};
+
 render();

@@ -127,3 +127,5 @@ main#stage{max-width:none;margin:0;padding:0}
 .split .figs figure:not(.svg) img{max-height:32vh;width:100%;object-fit:cover}
 .split .figs:has(figure + figure) {grid-template-columns:1fr 1fr}
 .nosplit .cols2{grid-template-columns:1fr 1fr}
+
+.slide.planche{padding-top:8px}.slide.planche figure img{width:auto;max-width:100%;max-height:calc(100vh - 160px);object-fit:contain;margin:0 auto;box-shadow:0 2px 14px rgba(8,43,69,.18)}

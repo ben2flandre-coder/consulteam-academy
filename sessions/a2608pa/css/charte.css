@@ -133,3 +133,9 @@ dl.defs dt{font-weight:800;color:var(--navy);margin-top:12px}dl.defs dd{margin:2
 .only-p{display:none}.esp-p .only-p,.top nav a.only-p{display:inline-flex}.esp-p .only-f{display:none!important}
 .esp-p .top .ttl small::after{content:" · ESPACE PARTICIPANT"}
 .vt{display:block;margin:0 0 10px;border-radius:10px;overflow:hidden;background:var(--navy)}.vt img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+
+.pl-row{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 14px}
+.pl{display:inline-flex;align-items:center;gap:10px;padding:6px 12px 6px 6px;border:1px solid var(--line);border-radius:12px;background:#fff;text-decoration:none;color:var(--navy);font-size:.92em;line-height:1.25;max-width:100%}
+.pl:hover,.pl:focus-visible{border-color:var(--rose);box-shadow:0 0 0 2px rgba(236,22,140,.15)}
+.pl img{width:84px;height:47px;object-fit:cover;border-radius:8px;flex:none;background:#eef4f8}
+.pl b{display:block;color:var(--rose);font-size:.78em;letter-spacing:.08em;text-transform:uppercase}

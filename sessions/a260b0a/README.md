@@ -1,6 +1,6 @@
 # Session a260b0a — Travail en hauteur / port du harnais (SECU37)
 
-Session **A260B0A** · lundi 26 octobre 2026 · 09 h–12 h / 13 h 30–17 h 30 (7 h) · Consulteam Security, 119 avenue Robert Brun, 83500 La Seyne-sur-Mer.
+Session **A260B0A** · lundi 26 octobre 2026 · 09 h–12 h / 13 h–17 h (7 h) · Consulteam Security, 119 avenue Robert Brun, 83500 La Seyne-sur-Mer.
 
 | Page | Usage | Diffusion |
 |---|---|---|

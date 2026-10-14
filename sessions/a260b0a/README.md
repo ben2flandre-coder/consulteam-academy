@@ -14,3 +14,7 @@ Session **A260B0A** · lundi 26 octobre 2026 · 09 h–12 h / 13 h–17 h (7 h) 
 
 Diffuser uniquement les liens des pages concernées, jamais celui du dépôt.
 Les visuels d'équipements et de nœuds sont générés (non contractuels) : à remplacer par des photos réelles.
+
+
+## Version et traçabilité
+Version 1.2 du 14/10/2026. Voir `tracabilite.html` (historique, sources, rapprochement des illustrations, validation Consulteam en attente). Horaires : 9 h–12 h / 13 h–17 h (convocation Consulteam) ; déroulé formateur et mode animation recalés.

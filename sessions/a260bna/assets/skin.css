@@ -19,3 +19,5 @@ th{background:#102c53;color:#fff}
 :focus-visible{outline:3px solid #f6b63d;outline-offset:2px}
 @media(prefers-color-scheme:dark){body{background:#0d1722!important;color:#e7eef6!important}h1,h2,h3{color:#a9d0f5}article,section.panel{background:#15253a!important;border-color:#2b4160!important;color:#e7eef6}article img{background:#fff!important}.notice,details{background:#16314f!important;color:#d7e9fb}a{color:#74b8f2}td,th{border-color:#2b4160!important}}
 @media print{header{border-image:none;background:#fff!important;color:#000!important}}
+header .logo{height:46px;width:auto;display:block;margin-bottom:14px}
+article img{cursor:zoom-in}

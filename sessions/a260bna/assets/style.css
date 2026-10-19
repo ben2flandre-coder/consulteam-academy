@@ -4,7 +4,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--i);font:17px/1.65 var(--fb)}
 a{color:var(--b)}:focus-visible{outline:3px solid var(--y);outline-offset:2px;border-radius:3px}
 header.top{position:sticky;top:0;z-index:20;background:#102c53;color:#fff;border-bottom:6px solid transparent;border-image:repeating-linear-gradient(135deg,#f6b63d 0 14px,#102c53 14px 28px) 6;display:flex;flex-wrap:wrap;gap:6px 24px;align-items:center;padding:10px 22px}
-header.top .brand{font:700 18px/1 var(--ff);letter-spacing:.02em;display:flex;gap:10px;align-items:baseline}header.top .brand small{font:600 13px var(--ff);color:#f6b63d}
+header.top .brand{font:700 18px/1 var(--ff);display:flex;gap:14px;align-items:center}.logo{height:39px;width:auto;display:block}.flogo{display:inline-block;background:#102c53;padding:10px 16px;border-radius:8px;margin-bottom:14px}.flogo img{display:block;height:46px;width:auto}header.top .brand small{font:600 14px var(--ff);color:#f6b63d}
 header.top nav{display:flex;flex-wrap:wrap;gap:2px 6px;margin-left:auto}header.top nav a{color:#d6e8fa;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:15px}
 header.top nav a:hover{background:#ffffff1f;color:#fff}header.top nav a.on{background:#f6b63d;color:#102c53;font-weight:700}
 main{max-width:1000px;margin:auto;padding:34px 20px 70px}
@@ -45,5 +45,5 @@ img[data-zoom],.zoomable img{cursor:zoom-in}
 .lb{position:fixed;inset:0;z-index:100;background:#06101dee;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px}
 .lb img{max-width:96vw;max-height:84vh;object-fit:contain;background:#fff;border-radius:6px;cursor:zoom-out}.lb .cap{color:#e7eef6;margin-top:10px;max-width:90vw;text-align:center;font-size:15px}
 .lb button{position:absolute;background:#ffffff26;color:#fff;border-radius:50%;width:46px;height:46px;padding:0;font-size:24px}.lb .x{top:14px;right:14px}.lb .p{left:14px;top:50%}.lb .n{right:14px;top:50%}
-@media print{header.top,.no-print,button,.lb{display:none!important}body{background:#fff;color:#000}.card,.q{break-inside:avoid}}
+@media print{header.top{position:static;-webkit-print-color-adjust:exact;print-color-adjust:exact}.flogo{-webkit-print-color-adjust:exact;print-color-adjust:exact}.no-print,button,.lb{display:none!important}body{background:#fff;color:#000}.card,.q{break-inside:avoid}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}

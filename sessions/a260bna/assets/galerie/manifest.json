@@ -1,5 +1,125 @@
 [
  {
+  "fichier": "../../mediatheque/parties/affiche-synthese.webp",
+  "titre": "Affiche de synthèse B2V · BR · BC",
+  "legende": "Les 14 rubriques en une vue : environnement, rôles, voisinage, consignation, VAT, EPI, sources, reprise.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif, sans visa de conformité NF C 18-510 ; relecture par l’assistant, pas de relecteur indépendant.",
+  "alt": "Affiche de synthèse en 14 rubriques sur B2V, BR et BC"
+ },
+ {
+  "fichier": "../../mediatheque/parties/01.webp",
+  "titre": "Partie 01 · Environnement industriel",
+  "legende": "Reconnaître les contraintes d’un environnement agroalimentaire.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Contexte fictif ; accès, protections et hygiène non validés.",
+  "alt": "Environnement industriel : Reconnaître les contraintes d’un environnement agroalimentaire."
+ },
+ {
+  "fichier": "../../mediatheque/parties/02.webp",
+  "titre": "Partie 02 · Armoire électrique",
+  "legende": "Identifier le besoin de repérage et de documentation.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Aucun indice IP, état de séparation ou origine d’alimentation vérifié.",
+  "alt": "Armoire électrique : Identifier le besoin de repérage et de documentation."
+ },
+ {
+  "fichier": "../../mediatheque/parties/03.webp",
+  "titre": "Partie 03 · Habilitations et rôles",
+  "legende": "Distinguer B2V, BR et BC.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Vue synthétique ; aucune équivalence générale ni autorisation de travaux sous tension.",
+  "alt": "Habilitations et rôles : Distinguer B2V, BR et BC."
+ },
+ {
+  "fichier": "../../mediatheque/parties/04.webp",
+  "titre": "Partie 04 · Voisinage électrique",
+  "legende": "Rechercher la suppression du voisinage et définir les protections.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Aucune cote ni zone géométrique normative ; module chiffré à vérifier sur le texte applicable.",
+  "alt": "Voisinage électrique : Rechercher la suppression du voisinage et définir les protections."
+ },
+ {
+  "fichier": "../../mediatheque/parties/05.webp",
+  "titre": "Partie 05 · Balisage et coordination",
+  "legende": "Organiser les accès et les échanges entre équipes.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : La scène ne certifie ni le balisage réel ni une zone devenue sûre.",
+  "alt": "Balisage et coordination : Organiser les accès et les échanges entre équipes."
+ },
+ {
+  "fichier": "../../mediatheque/parties/06.webp",
+  "titre": "Partie 06 · Consignation : repères",
+  "legende": "Comprendre les composantes d’une consignation électrique.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Repères pédagogiques, pas une procédure complète ou exécutable. Photos sans preuve d’état ou de position réelle.",
+  "alt": "Consignation : repères : Comprendre les composantes d’une consignation électrique."
+ },
+ {
+  "fichier": "../../mediatheque/parties/07.webp",
+  "titre": "Partie 07 · VAT et mesurage",
+  "legende": "Distinguer la vérification d’absence de tension d’une mesure de diagnostic.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Objet synthétique non identifié comme modèle certifié ; aucun contact de pointes enseigné par le visuel.",
+  "alt": "VAT et mesurage : Distinguer la vérification d’absence de tension d’une mesure de diagnostic."
+ },
+ {
+  "fichier": "../../mediatheque/parties/08.webp",
+  "titre": "Partie 08 · Intervention BR",
+  "legende": "Garder la mission dans le périmètre confié.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Pas d’autorisation générale de gestes. Intervention de courte durée et de faible étendue ; limites applicables à vérifier.",
+  "alt": "Intervention BR : Garder la mission dans le périmètre confié."
+ },
+ {
+  "fichier": "../../mediatheque/parties/09.webp",
+  "titre": "Partie 09 · EPI et matériels",
+  "legende": "Partir de l’analyse des risques pour choisir les protections.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Aucun équipement généré n’est certifié. Les chaussures de sécurité ne sont pas déclarées isolantes.",
+  "alt": "EPI et matériels : Partir de l’analyse des risques pour choisir les protections."
+ },
+ {
+  "fichier": "../../mediatheque/parties/10.webp",
+  "titre": "Partie 10 · Risques électriques",
+  "legende": "Reconnaître contact direct, contact indirect et arc électrique.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Illustrations de dangers, sans courant de défaut, énergie incidente ou seuil physiologique calculé.",
+  "alt": "Risques électriques : Reconnaître contact direct, contact indirect et arc électrique."
+ },
+ {
+  "fichier": "../../mediatheque/parties/11.webp",
+  "titre": "Partie 11 · Équipements à identifier",
+  "legende": "Observer les équipements sans déduire une procédure de leur apparence.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Exercice ouvert ; aucune association exhaustive modèle/légende validée. Aucune conformité mécanique affirmée.",
+  "alt": "Équipements à identifier : Observer les équipements sans déduire une procédure de leur apparence."
+ },
+ {
+  "fichier": "../../mediatheque/parties/12.webp",
+  "titre": "Partie 12 · Repérage des sources",
+  "legende": "Rechercher des origines d’alimentation indépendantes.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Dépendances fonctionnelles, pas schéma de câblage ; aucune source réelle du site supposée.",
+  "alt": "Repérage des sources : Rechercher des origines d’alimentation indépendantes."
+ },
+ {
+  "fichier": "../../mediatheque/parties/13.webp",
+  "titre": "Partie 13 · Situations à analyser",
+  "legende": "Repérer les incertitudes et décider de suspendre une opération non maîtrisée.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Cas d’analyse fictifs ; l’image seule ne prouve pas une non-conformité.",
+  "alt": "Situations à analyser : Repérer les incertitudes et décider de suspendre une opération non maîtrisée."
+ },
+ {
+  "fichier": "../../mediatheque/parties/14.webp",
+  "titre": "Partie 14 · Avant la reprise",
+  "legende": "Organiser la restitution et la reprise.",
+  "categorie": "Affiche et parties",
+  "statut": "Support pédagogique illustratif ; aucune conformité normative intégrale ni procédure de site validée. Limites : Pas de séquence universelle de déconsignation ; aucun retrait arbitraire de condamnation d’un tiers.",
+  "alt": "Avant la reprise : Organiser la restitution et la reprise."
+ },
+ {
   "fichier": "../../mediatheque/svg/V01.svg",
   "titre": "V01 · B2V, BR, BC : trois missions",
   "legende": "Choisir le rôle avant de choisir le geste.",

@@ -33,3 +33,9 @@ Limite : le chargement du manifeste de la galerie échoue en ouverture directe d
 - Agrandissement : galerie, médiathèque et cours (clic, flèches, Échap) testés.
 - Mentions « non validé » : retirées des pages apprenants (galerie, cours, SVG, médiathèque) ; le registre des statuts est dans l’espace formateur.
 - Évaluation : inscription obligatoire ; correction contrôlée (37/37 si tout juste, 36/37 avec une erreur, 0/37 sans réponse) ; position de la bonne réponse répartie (15/12/9/4 sur les rangs 1 à 4) ; résultat envoyé par e-mail prérempli ou téléchargé, point de collecte automatique possible (`assets/config.json`).
+
+## 19 octobre, lots GPT « affiche corrigée » et « 14 parties »
+- Archives lues en entier ; empreintes SHA-256 des 14 PNG vérifiées avant conversion en WebP ; planches 03, 06, 13 relues en plein format.
+- Contrôle de fond : consignation dans l’ordre ED 6109 (séparer, condamner, identifier, vérifier l’absence de tension, MALT/CC), rôles B2V/BR/BC conformes à l’ED 6127, aucune cote ni classe inventée. Aucune correction nécessaire.
+- Intégration : 15 visuels dans la galerie (55 au total), section « L’affiche en 14 parties » dans la médiathèque, page de corrigés réservée au formateur.
+- Logos Consulteam Groupe et Groupe Valto en en-tête, pied de page, médiathèque et écran d’accès formateur.

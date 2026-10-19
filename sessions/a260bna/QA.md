@@ -24,3 +24,6 @@ Limite : le chargement du manifeste de la galerie échoue en ouverture directe d
 ## Lot panneaux/images et tri des scénarios (19/10/2026)
 - Galerie du site et du cours : 40 visuels (24 schémas, 2 + 6 images, 8 panneaux), aucun cassé, aucune erreur JavaScript, pas de débordement mobile.
 - Scénarios : 11 conservés (C12 supprimé, C04 reformulé) ; liens internes de la médiathèque revérifiés.
+
+## Confirmations (19/10/2026, suite)
+- Parcours et évaluation recalés sur l'arrêté du 9 juillet 2013 (zone jusqu'à 3 m ; BT : voisinage renforcé 0,30 m) et sur la page INRS « Opérations sur les installations électriques » (BR consigne pour son compte). Évaluation : jeu de réponses attendues 37/37 avec ordre mélangé.

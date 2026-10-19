@@ -104,3 +104,4 @@ Réserves : le manuel cite l'article R. 4534-108 pour la DLVS (3 m) alors que l'
 - Réserve : type d'extincteur et attaque d'un feu en présence de dépôts de farine non publiés par les sources lues ; l'avertissement sur le jet à fort débit est une déduction, signalée et à valider avec le site.
 - Matériels : fiche fabricant CATU (classes 00 : 500 V AC, 0 : 1 000 V AC ; essai de gonflage 6 mois ; testé depuis moins de 12 mois) ; normes du manuel pp. 63-67. Texte NF C 18-510 toujours non lu. Matériel d'essai non ATEX en zone classée : décision du site.
 - Mode animation : diapositives correspondantes non ajoutées (code formateur indisponible pour réchiffrer) ; la page est ouverte et se projette telle quelle.
+- Mode animation : section « Sur le site : secours, poussières, incendie » (6 diapositives, 62 au total), testée à 1366 et 390 px ; pages chiffrées reconstruites (accès inchangés).

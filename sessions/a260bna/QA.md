@@ -45,3 +45,4 @@ Limite : le chargement du manifeste de la galerie échoue en ouverture directe d
 - Mode animation : 17 diapositives, 0 image cassée, aucune erreur JS, accès par e-mail et code (Chromium headless).
 - Pages publiques : aucune mention « non validé », aucun débordement horizontal (bureau et mobile), galerie 55 images, lightbox active.
 - Limites : texte de la NF C 18-510 non consulté ; validation du contenu par Anaïs Iversi en attente ; test sur appareil réel et sur le site en ligne à refaire après publication.
+- Mode animation : accès par l'accueil, la navigation et la page formateur ; boutons ‹ ›, sommaire déroulant, clavier, balayage tactile ; défilement vertical contrôlé à 1366 et 390 px, sans débordement horizontal ; 43 questions à l'évaluation.

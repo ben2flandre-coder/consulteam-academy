@@ -4,3 +4,5 @@ Habilitation électrique H0V B2V BR BC, recyclage, 30 octobre 2026. Accueil : `i
 - `parcours.html` : parcours H0V · B2V · BR · BC (6 séquences). `evaluation.html` : 37 questions, ordre des réponses mélangé.
 - `galerie.html` : médiathèque (maquettes IA non validées). `formateur.html` : déroulé, à ne pas diffuser.
 - `REGISTRE-SOURCES.md` : sources et limites ; `QA.md` : contrôles. Servir par HTTP.
+
+19/10 : le libellé « Consulteam Academy » n'est plus affiché (accueil, titre, pied de page et couverture du cours) ; seul « Consulteam » apparaît. Le nom du dépôt et de l'URL restent inchangés.

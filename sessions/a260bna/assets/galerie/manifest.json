@@ -3,156 +3,182 @@
   "fichier": "planche-1.png",
   "titre": "Planche d’ensemble 1",
   "statut": "Maquette IA non validée — À VÉRIFIER avant usage (zones et distances)",
-  "alt": "Planche d’ensemble"
+  "alt": "Planche d’ensemble",
+  "categorie": "Planches d’ensemble"
  },
  {
   "fichier": "planche-2.png",
   "titre": "Planche d’ensemble 2",
   "statut": "Maquette IA non validée — À VÉRIFIER avant usage (zones et distances)",
-  "alt": "Planche d’ensemble"
+  "alt": "Planche d’ensemble",
+  "categorie": "Planches d’ensemble"
  },
  {
   "fichier": "planche-3-industrielle.png",
   "titre": "Planche d’ensemble 3 (version industrielle)",
   "statut": "Maquette IA non validée — À VÉRIFIER avant usage (zones et distances)",
-  "alt": "Planche d’ensemble"
+  "alt": "Planche d’ensemble",
+  "categorie": "Planches d’ensemble"
  },
  {
   "fichier": "01_environnement_agroalimentaire.png",
   "titre": "Environnement agroalimentaire",
   "statut": "Maquette IA non validée",
-  "alt": "Environnement agroalimentaire"
+  "alt": "Environnement agroalimentaire",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "02_armoire_production.png",
   "titre": "Armoire électrique de production",
   "statut": "Maquette IA non validée",
-  "alt": "Armoire électrique de production"
+  "alt": "Armoire électrique de production",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "03_role_B2V.png",
   "titre": "Rôle B2V",
   "statut": "Maquette IA non validée",
-  "alt": "Rôle B2V"
+  "alt": "Rôle B2V",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "04_role_BR.png",
   "titre": "Rôle BR",
   "statut": "Maquette IA non validée",
-  "alt": "Rôle BR"
+  "alt": "Rôle BR",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "05_role_BC.png",
   "titre": "Rôle BC",
   "statut": "Maquette IA non validée",
-  "alt": "Rôle BC"
+  "alt": "Rôle BC",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "06_zones_voisinage.png",
   "titre": "Zones de voisinage et distances",
   "statut": "Maquette IA non validée — À VÉRIFIER avant usage",
-  "alt": "Zones de voisinage et distances"
+  "alt": "Zones de voisinage et distances",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "07_consignation.png",
   "titre": "Consignation BT, étapes",
   "statut": "Maquette IA non validée — À VÉRIFIER avant usage",
-  "alt": "Consignation BT, étapes"
+  "alt": "Consignation BT, étapes",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "08_VAT.png",
   "titre": "Vérification d’absence de tension",
   "statut": "Maquette IA non validée — À VÉRIFIER avant usage",
-  "alt": "Vérification d’absence de tension"
+  "alt": "Vérification d’absence de tension",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "09_depannage_BR.png",
   "titre": "Intervention BR : dépannage",
   "statut": "Maquette IA non validée",
-  "alt": "Intervention BR : dépannage"
+  "alt": "Intervention BR : dépannage",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "10_EPI.png",
   "titre": "EPI et matériels",
   "statut": "Maquette IA non validée",
-  "alt": "EPI et matériels"
+  "alt": "EPI et matériels",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "11_risques_electriques.png",
   "titre": "Risques électriques",
   "statut": "Maquette IA non validée",
-  "alt": "Risques électriques"
+  "alt": "Risques électriques",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "12_equipements_industriels.png",
   "titre": "Équipements industriels",
   "statut": "Maquette IA non validée",
-  "alt": "Équipements industriels"
+  "alt": "Équipements industriels",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "13_schema.png",
   "titre": "Schéma de principe",
   "statut": "Maquette IA non validée — À VÉRIFIER avant usage",
-  "alt": "Schéma de principe"
+  "alt": "Schéma de principe",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "14_situations_risque.png",
   "titre": "Situations à risques",
   "statut": "Maquette IA non validée",
-  "alt": "Situations à risques"
+  "alt": "Situations à risques",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "15_remise_service.png",
   "titre": "Remise en service",
   "statut": "Maquette IA non validée — À VÉRIFIER avant usage",
-  "alt": "Remise en service"
+  "alt": "Remise en service",
+  "categorie": "Maquettes (extraits)"
  },
  {
   "fichier": "hd-01_armoire_de_commande_industrielle.png",
   "titre": "Armoire de commande industrielle (illustration HD)",
   "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Armoire de commande industrielle"
+  "alt": "Armoire de commande industrielle",
+  "categorie": "Illustrations HD"
  },
  {
   "fichier": "hd-02_convoyeur_et_motoreducteur.png",
   "titre": "Convoyeur et motoréducteur (illustration HD)",
   "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Convoyeur et motoréducteur"
+  "alt": "Convoyeur et motoréducteur",
+  "categorie": "Illustrations HD"
  },
  {
   "fichier": "hd-03_consignation_de_depart_moteur.png",
   "titre": "Consignation de départ moteur (illustration HD)",
   "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Consignation de départ moteur"
+  "alt": "Consignation de départ moteur",
+  "categorie": "Illustrations HD"
  },
  {
   "fichier": "hd-04_verification_absence_de_tension.png",
   "titre": "Vérification d’absence de tension (illustration HD)",
   "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Vérification d’absence de tension"
+  "alt": "Vérification d’absence de tension",
+  "categorie": "Illustrations HD"
  },
  {
   "fichier": "hd-05_zone_de_travaux_b2v.png",
   "titre": "Zone de travaux B2V (illustration HD)",
   "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Zone de travaux B2V"
+  "alt": "Zone de travaux B2V",
+  "categorie": "Illustrations HD"
  },
  {
   "fichier": "hd-06_intervention_br.png",
   "titre": "Intervention BR (illustration HD)",
   "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Intervention BR"
+  "alt": "Intervention BR",
+  "categorie": "Illustrations HD"
  },
  {
   "fichier": "hd-07_prevention_arc_electrique.png",
   "titre": "Prévention de l’arc électrique (illustration HD)",
   "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Prévention de l’arc électrique"
+  "alt": "Prévention de l’arc électrique",
+  "categorie": "Illustrations HD"
  },
  {
   "fichier": "hd-08_reprise_de_production.png",
   "titre": "Reprise de production (illustration HD)",
   "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Reprise de production"
+  "alt": "Reprise de production",
+  "categorie": "Illustrations HD"
  }
 ]

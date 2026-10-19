@@ -206,5 +206,117 @@
   "categorie": "Illustrations de contexte",
   "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche P02",
   "alt": "Pompe et moteur — illustration corrigée"
+ },
+ {
+  "fichier": "../../mediatheque/panneaux/PN01.webp",
+  "titre": "PN01 · B2V · BR · BC",
+  "legende": "Trois missions à distinguer avant toute opération. Question : Qui consigne pour l’équipe ? Qui dirige les travaux ? Qui réalise l’intervention ?",
+  "categorie": "Panneaux pédagogiques",
+  "statut": "Support pédagogique, non validé par un relecteur indépendant · Les rôles représentés ne donnent aucune autorisation générale ; aucun travail sous tension autorisé par ce panneau.",
+  "alt": "B2V · BR · BC"
+ },
+ {
+  "fichier": "../../mediatheque/panneaux/PN02.webp",
+  "titre": "PN02 · CONSIGNATION ÉLECTRIQUE",
+  "legende": "Repères à comprendre — la procédure dépend de l’installation. Question : Quelles preuves manquent si l’on voit seulement un cadenas ?",
+  "categorie": "Panneaux pédagogiques",
+  "statut": "Support pédagogique, non validé par un relecteur indépendant · Vue de repères, pas une procédure exécutable. Organisation, personnes, documents, sources réelles et conditions MALT/CC à définir.",
+  "alt": "CONSIGNATION ÉLECTRIQUE"
+ },
+ {
+  "fichier": "../../mediatheque/panneaux/PN03.webp",
+  "titre": "PN03 · VÉRIFICATION D’ABSENCE DE TENSION",
+  "legende": "La VAT et le mesurage de diagnostic ont des objectifs distincts. Question : Que conclure si le contrôle du vérificateur après la VAT échoue ?",
+  "categorie": "Panneaux pédagogiques",
+  "statut": "Support pédagogique, non validé par un relecteur indépendant · Aucun appareil réel identifié ou certifié. Aucun contact de pointes ou point de vérification n’est enseigné par la photo.",
+  "alt": "VÉRIFICATION D’ABSENCE DE TENSION"
+ },
+ {
+  "fichier": "../../mediatheque/panneaux/PN04.webp",
+  "titre": "PN04 · ÉQUIPEMENTS DE PROTECTION",
+  "legende": "Le symbole d’habilitation ne détermine pas à lui seul les EPI. Question : Quelles données faut-il connaître avant de choisir des gants et une protection contre l’arc ?",
+  "categorie": "Panneaux pédagogiques",
+  "statut": "Support pédagogique, non validé par un relecteur indépendant · Aucun classement de gant, casque, écran, vêtement ou outil n’est déduit de l’image ; conformité, marquages et performances non vérifiables.",
+  "alt": "ÉQUIPEMENTS DE PROTECTION"
+ },
+ {
+  "fichier": "../../mediatheque/panneaux/PN05.webp",
+  "titre": "PN05 · MAINTENANCE : TOUTES LES ÉNERGIES",
+  "legende": "La machine arrêtée peut encore présenter des dangers. Question : Qu’est-ce qui peut encore bouger ou rester alimenté après séparation du départ moteur ?",
+  "categorie": "Panneaux pédagogiques",
+  "statut": "Support pédagogique, non validé par un relecteur indépendant · Énergies présentées comme risques à rechercher ; aucun schéma, délai, purge ou blocage réel prescrit.",
+  "alt": "MAINTENANCE : TOUTES LES ÉNERGIES"
+ },
+ {
+  "fichier": "../../mediatheque/panneaux/PN06.webp",
+  "titre": "PN06 · NETTOYAGE ET MAINTENANCE",
+  "legende": "En agroalimentaire, la coordination fait partie de la préparation. Question : Qui doit confirmer la fin du lavage et les conditions de reprise ?",
+  "categorie": "Panneaux pédagogiques",
+  "statut": "Support pédagogique, non validé par un relecteur indépendant · Aucun indice IP, compatible chimique ou équipement de lavage validé par la scène. Aucun lavage en cours montré.",
+  "alt": "NETTOYAGE ET MAINTENANCE"
+ },
+ {
+  "fichier": "../../mediatheque/panneaux/PN07.webp",
+  "titre": "PN07 · RISQUES ÉLECTRIQUES",
+  "legende": "Reconnaître le mécanisme pour préparer la prévention. Question : Pourquoi une masse métallique peut-elle devenir dangereuse après un défaut ?",
+  "categorie": "Panneaux pédagogiques",
+  "statut": "Support pédagogique, non validé par un relecteur indépendant · Pas de distance, de courant de défaut, d’énergie incidente ni de temps de coupure déduit de l’image.",
+  "alt": "RISQUES ÉLECTRIQUES"
+ },
+ {
+  "fichier": "../../mediatheque/panneaux/PN08.webp",
+  "titre": "PN08 · FIN D’OPÉRATION ET REPRISE",
+  "legende": "La remise en service exige une coordination organisée. Question : Peut-on redémarrer si une autre équipe n’a pas restitué sa zone ?",
+  "categorie": "Panneaux pédagogiques",
+  "statut": "Support pédagogique, non validé par un relecteur indépendant · Ni ordre universel de déconsignation ni autorisation de reprise. Documents et conditions locales restent nécessaires.",
+  "alt": "FIN D’OPÉRATION ET REPRISE"
+ },
+ {
+  "fichier": "../../mediatheque/images/I03.webp",
+  "titre": "I03 · Préparation du travail en équipe",
+  "legende": "Question : Quelles informations faut-il partager avant de confier l’opération ?",
+  "categorie": "Illustrations de contexte",
+  "statut": "Image synthétique, ni photo du site ni preuve technique · La tenue représentée n’est pas qualifiée comme un EPI électrique ; aucune intervention sur le coffret fermé.",
+  "alt": "Préparation du travail en équipe"
+ },
+ {
+  "fichier": "../../mediatheque/images/I04.webp",
+  "titre": "I04 · Vérificateur bipolaire — illustration",
+  "legende": "Question : Comment distinguer la fonction VAT de la fonction de mesurage ?",
+  "categorie": "Illustrations de contexte",
+  "statut": "Image synthétique, ni photo du site ni preuve technique · Appareil synthétique sans référence, marquage ou caractéristiques certifiés. Ne pas utiliser pour enseigner le modèle exact ou une manipulation.",
+  "alt": "Vérificateur bipolaire — illustration"
+ },
+ {
+  "fichier": "../../mediatheque/images/I05.webp",
+  "titre": "I05 · Matériel de condamnation présenté séparément",
+  "legende": "Question : Que manque-t-il pour passer d’un cadenas à une consignation établie ?",
+  "categorie": "Illustrations de contexte",
+  "statut": "Image synthétique, ni photo du site ni preuve technique · Aucun dispositif posé sur une installation ; aucune adéquation mécanique, gestion des clés ou consignation validée.",
+  "alt": "Matériel de condamnation présenté séparément"
+ },
+ {
+  "fichier": "../../mediatheque/images/I06.webp",
+  "titre": "I06 · Équipements de protection — catégories illustrées",
+  "legende": "Question : Pourquoi le symbole d’habilitation ne permet-il pas de choisir seul les EPI ?",
+  "categorie": "Illustrations de contexte",
+  "statut": "Image synthétique, ni photo du site ni preuve technique · Objets synthétiques sans marquage ni performances attestées. Ce n’est pas une prescription de kit, de classe de gants ou de protection contre l’arc.",
+  "alt": "Équipements de protection — catégories illustrées"
+ },
+ {
+  "fichier": "../../mediatheque/images/I07.webp",
+  "titre": "I07 · Armoire électrique fermée en environnement industriel",
+  "legende": "Question : Quelles vérifications et informations sont nécessaires avant une ouverture ?",
+  "categorie": "Illustrations de contexte",
+  "statut": "Image synthétique, ni photo du site ni preuve technique · La porte fermée ne prouve ni l’absence de tension ni un indice de protection ou une conformité.",
+  "alt": "Armoire électrique fermée en environnement industriel"
+ },
+ {
+  "fichier": "../../mediatheque/images/I08.webp",
+  "titre": "I08 · Coordination avant nettoyage et maintenance",
+  "legende": "Question : Comment coordonner les deux activités avant de commencer ?",
+  "categorie": "Illustrations de contexte",
+  "statut": "Image synthétique, ni photo du site ni preuve technique · Aucun lavage actif et aucune intervention électrique montrés ; règles d’hygiène et procédures du site non validées.",
+  "alt": "Coordination avant nettoyage et maintenance"
  }
 ]

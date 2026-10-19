@@ -1,0 +1,40 @@
+{
+  "id": "PN05",
+  "title": "MAINTENANCE : TOUTES LES ÉNERGIES",
+  "sub": "La machine arrêtée peut encore présenter des dangers.",
+  "image": "I02",
+  "headline": "Élargir l’analyse au-delà du moteur.",
+  "bullets": [
+    [
+      "Électricité",
+      "Puissance, commande et alimentation auxiliaire."
+    ],
+    [
+      "Stockage",
+      "Condensateurs et autres réserves d’énergie."
+    ],
+    [
+      "Fluides",
+      "Pression, température et produits présents."
+    ],
+    [
+      "Mouvement",
+      "Inertie, gravité et déplacement imprévu."
+    ]
+  ],
+  "note": "Sur un variateur, ne jamais inventer un temps de décharge : consulter la notice de la référence exacte.",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "question": "Qu’est-ce qui peut encore bouger ou rester alimenté après séparation du départ moteur ?",
+  "limits": "Énergies présentées comme risques à rechercher ; aucun schéma, délai, purge ou blocage réel prescrit.",
+  "file": "panneaux/PN05.png",
+  "kind": "Panneau pédagogique illustré",
+  "width": 3200,
+  "height": 1800,
+  "status": "Principes relus sur sources accessibles ; pas une procédure validée pour le site.",
+  "reviewer": "Relecture et inspection par l’assistant ; aucun visa technique indépendant.",
+  "date": "2026-10-19",
+  "sha256": "eb2684fb48f0b0cc8c505a0ea1e96abd9ebccd3a0c9dfc3a1a7815610c8ea0d8"
+}

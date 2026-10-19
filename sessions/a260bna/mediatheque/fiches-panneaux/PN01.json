@@ -1,0 +1,24 @@
+{
+  "id": "PN01",
+  "title": "B2V · BR · BC",
+  "sub": "Trois missions à distinguer avant toute opération.",
+  "image": "I03",
+  "style": "roles",
+  "headline": "Choisir le cadre, puis organiser l’opération.",
+  "bullets": [],
+  "note": "Le titre de l’employeur précise les symboles, le domaine et les limites.",
+  "refs": [
+    "S02",
+    "S03"
+  ],
+  "question": "Qui consigne pour l’équipe ? Qui dirige les travaux ? Qui réalise l’intervention ?",
+  "limits": "Les rôles représentés ne donnent aucune autorisation générale ; aucun travail sous tension autorisé par ce panneau.",
+  "file": "panneaux/PN01.png",
+  "kind": "Panneau pédagogique illustré",
+  "width": 3200,
+  "height": 1800,
+  "status": "Principes relus sur sources accessibles ; pas une procédure validée pour le site.",
+  "reviewer": "Relecture et inspection par l’assistant ; aucun visa technique indépendant.",
+  "date": "2026-10-19",
+  "sha256": "2030183780a7dec7b8c54c3abf8fc500a0de1791579428b74bbe6b0d475b2d8d"
+}

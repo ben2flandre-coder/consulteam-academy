@@ -20,3 +20,7 @@ Limite : le chargement du manifeste de la galerie échoue en ouverture directe d
 - Galerie du site et galerie du cours : 26 visuels chargés, aucun cassé, pas de débordement mobile.
 - Anciennes maquettes retirées de la galerie (voir `REGISTRE-SOURCES.md`).
 - Relecture indépendante des SVG et des corrigés : non réalisée.
+
+## Lot panneaux/images et tri des scénarios (19/10/2026)
+- Galerie du site et du cours : 40 visuels (24 schémas, 2 + 6 images, 8 panneaux), aucun cassé, aucune erreur JavaScript, pas de débordement mobile.
+- Scénarios : 11 conservés (C12 supprimé, C04 reformulé) ; liens internes de la médiathèque revérifiés.

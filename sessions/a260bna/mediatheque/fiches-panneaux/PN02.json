@@ -1,0 +1,44 @@
+{
+  "id": "PN02",
+  "title": "CONSIGNATION ÉLECTRIQUE",
+  "sub": "Repères à comprendre — la procédure dépend de l’installation.",
+  "image": "I05",
+  "headline": "Un cadenas ne suffit pas.",
+  "bullets": [
+    [
+      "Séparer",
+      "Toutes les sources électriques concernées."
+    ],
+    [
+      "Condamner",
+      "Les organes de séparation en position ouverte."
+    ],
+    [
+      "Identifier",
+      "La partie concernée sur le lieu de travail."
+    ],
+    [
+      "Vérifier",
+      "L’absence de tension."
+    ],
+    [
+      "MALT / CC",
+      "Applicabilité à déterminer selon le contexte."
+    ]
+  ],
+  "note": "Le matériel présenté n’est pas posé sur une installation : aucune consignation achevée n’est montrée.",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "question": "Quelles preuves manquent si l’on voit seulement un cadenas ?",
+  "limits": "Vue de repères, pas une procédure exécutable. Organisation, personnes, documents, sources réelles et conditions MALT/CC à définir.",
+  "file": "panneaux/PN02.png",
+  "kind": "Panneau pédagogique illustré",
+  "width": 3200,
+  "height": 1800,
+  "status": "Principes relus sur sources accessibles ; pas une procédure validée pour le site.",
+  "reviewer": "Relecture et inspection par l’assistant ; aucun visa technique indépendant.",
+  "date": "2026-10-19",
+  "sha256": "6b9441c3399b7361c695143e4a63f9de240d5ee0dfccd3c55afa9575f95fd9c2"
+}

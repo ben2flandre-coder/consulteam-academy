@@ -1,0 +1,40 @@
+{
+  "id": "PN07",
+  "title": "RISQUES ÉLECTRIQUES",
+  "sub": "Reconnaître le mécanisme pour préparer la prévention.",
+  "image": "I07",
+  "headline": "Le danger peut être invisible.",
+  "bullets": [
+    [
+      "Contact direct",
+      "Avec une partie active normalement sous tension."
+    ],
+    [
+      "Contact indirect",
+      "Avec une masse accidentellement sous tension."
+    ],
+    [
+      "Arc électrique",
+      "Risque de brûlures et de projections."
+    ],
+    [
+      "Avant d’ouvrir",
+      "Préparer l’opération et maîtriser l’exposition."
+    ]
+  ],
+  "note": "Une armoire fermée sur une photo ne prouve ni son état électrique ni la conformité de ses protections.",
+  "refs": [
+    "S01",
+    "S09"
+  ],
+  "question": "Pourquoi une masse métallique peut-elle devenir dangereuse après un défaut ?",
+  "limits": "Pas de distance, de courant de défaut, d’énergie incidente ni de temps de coupure déduit de l’image.",
+  "file": "panneaux/PN07.png",
+  "kind": "Panneau pédagogique illustré",
+  "width": 3200,
+  "height": 1800,
+  "status": "Principes relus sur sources accessibles ; pas une procédure validée pour le site.",
+  "reviewer": "Relecture et inspection par l’assistant ; aucun visa technique indépendant.",
+  "date": "2026-10-19",
+  "sha256": "3367fbc5d50fd6dc54c749633d831779f18f6240e261ec88b91ad4dc007ebebc"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "PN06",
+  "title": "NETTOYAGE ET MAINTENANCE",
+  "sub": "En agroalimentaire, la coordination fait partie de la préparation.",
+  "image": "I08",
+  "headline": "Se coordonner avant d’agir.",
+  "bullets": [
+    [
+      "Partager",
+      "Les zones, les horaires et les opérations prévues."
+    ],
+    [
+      "Repérer",
+      "Humidité, produits, projections et accès."
+    ],
+    [
+      "Suspendre",
+      "Une ouverture de coffret exposé au lavage."
+    ],
+    [
+      "Reprendre",
+      "Après confirmation des conditions de sécurité."
+    ]
+  ],
+  "note": "Scène fictive : les procédures de nettoyage, d’hygiène et de maintenance du site restent à appliquer.",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "question": "Qui doit confirmer la fin du lavage et les conditions de reprise ?",
+  "limits": "Aucun indice IP, compatible chimique ou équipement de lavage validé par la scène. Aucun lavage en cours montré.",
+  "file": "panneaux/PN06.png",
+  "kind": "Panneau pédagogique illustré",
+  "width": 3200,
+  "height": 1800,
+  "status": "Principes relus sur sources accessibles ; pas une procédure validée pour le site.",
+  "reviewer": "Relecture et inspection par l’assistant ; aucun visa technique indépendant.",
+  "date": "2026-10-19",
+  "sha256": "acd5adb149c991d67df74ed709015d63bacc8b0ccf56a5ebb24c714bac82ee34"
+}

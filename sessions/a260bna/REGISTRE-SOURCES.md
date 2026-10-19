@@ -21,3 +21,12 @@ Les créneaux du CPS totalisent 6 h 30 pour 7 h annoncées (voir espace formateu
 
 ## Galerie
 Aucune image à ce jour. Les visuels seront produits par le formateur (outil d'images) ; chaque image sera consignée ici avec son prompt avant publication.
+
+## Médiathèque du 19/10/2026 (maquettes IA, non validées)
+Dépôt de 15 extraits et de 2 planches d'ensemble fournis par le formateur (générés par IA, voir `LISEZ_MOI` d'origine : maquettes non validées, textes, distances, EPI et séquences possiblement inexacts). Basse définition (~300 px de large pour les extraits) : à régénérer en haute définition avant projection.
+Écarts constatés à la relecture :
+- Zones (planches et `06`) : « voisinage simple BT : jusqu'à 0,30 m » et « renforcé : à l'intérieur de l'armoire », avec une cote de 0,10 m sur la planche 1. Ceci ne correspond pas à la lecture usuelle (0,30 m = limite du voisinage renforcé en BT ; limite de voisinage à 3 m dans la plupart des cas, source secondaire consultée le 19/10). Planche à refaire ; valeurs à confirmer sur le texte de la norme et l'annexe de l'arrêté du 9 juillet 2013 (tableau non accessible en ligne lors de cette production).
+- Consignation (`07`) : séquence en 6 étapes avec mise à la terre en 5 et attestation en 6 ; à rapprocher du parcours (4 étapes + mise à la terre si nécessaire). La mention « Condamnation » doit rester sur l'organe séparé.
+- Textes générés dans l'image (vocabulaire, « classe 0 / 500 V », « outils 1000 V ») à relire un par un.
+- Rôles : la planche attribue à BR « consigne pour son intervention » et à BC « autorise les travaux » ; ces attributions sont à confirmer (voir limite 1 ci-dessus).
+Chaque image porte le bandeau « non validée » dans la galerie.

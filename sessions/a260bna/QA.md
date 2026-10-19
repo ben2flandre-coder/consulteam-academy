@@ -39,3 +39,9 @@ Limite : le chargement du manifeste de la galerie échoue en ouverture directe d
 - Contrôle de fond : consignation dans l’ordre ED 6109 (séparer, condamner, identifier, vérifier l’absence de tension, MALT/CC), rôles B2V/BR/BC conformes à l’ED 6127, aucune cote ni classe inventée. Aucune correction nécessaire.
 - Intégration : 15 visuels dans la galerie (55 au total), section « L’affiche en 14 parties » dans la médiathèque, page de corrigés réservée au formateur.
 - Logos Consulteam Groupe et Groupe Valto en en-tête, pied de page, médiathèque et écran d’accès formateur.
+
+## Contrôles du 19/10/2026 — red team, animation, consolidation
+- Évaluation : 42 questions, correction vérifiée (42/42 sur réponses exactes, 0 sur vide), mailto prérempli, ordre des réponses mélangé.
+- Mode animation : 17 diapositives, 0 image cassée, aucune erreur JS, accès par e-mail et code (Chromium headless).
+- Pages publiques : aucune mention « non validé », aucun débordement horizontal (bureau et mobile), galerie 55 images, lightbox active.
+- Limites : texte de la NF C 18-510 non consulté ; validation du contenu par Anaïs Iversi en attente ; test sur appareil réel et sur le site en ligne à refaire après publication.

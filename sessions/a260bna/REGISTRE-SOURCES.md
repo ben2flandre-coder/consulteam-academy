@@ -40,3 +40,11 @@ Non résolu : la page OPPBTP « Qui doit faire la consignation » est bloquée �
 - [Arrêté du 9 juillet 2013, annexe (relais INERIS-SSTIE)](https://sstie.ineris.fr/reglementation/arrete-090713-relatif-dimensions-zone-voisinage-autour-dune-piece-nue-sous-tension) : ligne 1 kV, distance de garde 0,30 m, DMA 0,30 m. Confirme 0,30 m en BT. La limite de 3 m (hors voisinage) et la distinction DLVS/DLVR relèvent de la NF C 18-510, non lue : source secondaire seulement.
 - [INRS ED 6187](https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6187.pdf) : renvoie aux § 3.3.2 (p. 40) et 4.15 (p. 106) pour les zones ; texte non extrait.
 - Légifrance (arrêté 2013) : lecture automatique refusée lors de cette production.
+
+## Corrections de la médiathèque par Claude (19/10/2026)
+Après relecture des 24 schémas et des 12 scénarios :
+- V21 : texte qui chevauchait le tracé, déplacé.
+- V03 : mention « absence de MALT/CC en BT non systématique » remplacée par « cinquième opération, selon l'analyse des risques (INRS ED 6109) ».
+- V13 : « aidé d'au plus un exécutant B1 » retiré (effectif et titre de l'assistant non confirmés par les sources lues) ; à vérifier sur la NF C 18-510. Le scénario C04 (« diriger une équipe de trois exécutants ») et V13 (assistance) sont à relire sur la norme.
+- Scénario C12 et V13 : le lot cite « la FAQ INRS » pour la distinction hors tension / connexion sous tension ; la page FAQ lue le 19/10 ne publie que les intitulés des questions. Le seuil de 500 V / 63 A figure dans l'ED 6127 (p. 13), source retenue dans le parcours.
+- Les fichiers `svg/*.svg` modifiés ne correspondent plus aux empreintes de `manifest_sha256.json` pour V03, V13 et V21 (empreintes d'origine du lot GPT).

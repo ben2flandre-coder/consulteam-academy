@@ -1,0 +1,25 @@
+{
+  "id": "V10",
+  "title": "EPI : partir de l’analyse de l’opération",
+  "category": "Schéma vectoriel",
+  "file": "svg/V10.svg",
+  "refs": [
+    "S01"
+  ],
+  "objective": "Éviter les kits d’EPI présentés comme suffisants dans tous les cas.",
+  "checks": [
+    "Pas de performance inventée ; hiérarchie de prévention conservée."
+  ],
+  "limits": "Pas d’étude d’énergie incidente ni de choix d’EPI du site vérifié.",
+  "questions": [
+    "Que faut-il connaître avant de sélectionner une protection contre l’arc ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "f8fdc8f692cb42d730fe872bdfb4f76c7fbb10fb8923f545ba4cd757de36f782"
+}

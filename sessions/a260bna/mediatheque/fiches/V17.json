@@ -1,0 +1,26 @@
+{
+  "id": "V17",
+  "title": "Séparer illustration et preuve",
+  "category": "Schéma vectoriel",
+  "file": "svg/V17.svg",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "objective": "Interdire l’usage d’une image comme justification d’une consignation.",
+  "checks": [
+    "Statut inscrit dans chaque fiche et chaque SVG."
+  ],
+  "limits": "Aucun relevé terrain, mesure, visa ni procédure employeur reçu.",
+  "questions": [
+    "Qu’est-ce qui permet de passer d’une image à une décision de terrain ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "e9f3cfbeae425eca298f153ff0c76c889c2aae974d72fa9083f7c049d262ad95"
+}

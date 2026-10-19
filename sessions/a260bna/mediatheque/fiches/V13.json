@@ -1,0 +1,25 @@
+{
+  "id": "V13",
+  "title": "BR : rester dans l’intervention confiée",
+  "category": "Schéma vectoriel",
+  "file": "svg/V13.svg",
+  "refs": [
+    "S02"
+  ],
+  "objective": "Qualifier l’activité sans attribuer tout dépannage au seul intitulé de métier.",
+  "checks": [
+    "Cadre BR et aide limitée recoupés dans FAQ INRS."
+  ],
+  "limits": "Aucune connexion en présence de tension enseignée ou autorisée par ce média.",
+  "questions": [
+    "Une rénovation d’armoire entière reste-t-elle une intervention courte et de faible étendue ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "f3b01703fa970a0f71a2031f5ed454bb8935c6d6846f88c9e8e37c82d0d202c6"
+}

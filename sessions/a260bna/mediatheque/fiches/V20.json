@@ -1,0 +1,27 @@
+{
+  "id": "V20",
+  "title": "Deux alimentations dans une armoire",
+  "category": "Schéma vectoriel",
+  "file": "svg/V20.svg",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "objective": "Détecter qu’une même enveloppe peut contenir des circuits d’origines différentes.",
+  "checks": [
+    "Deux sources sans liaison électrique entre elles dans ce schéma.",
+    "Périmètre commun de l’enveloppe matérialisé ; pas de symbole donnant l’armoire globalement hors tension."
+  ],
+  "limits": "Représentation agrégée : aucun nombre de pôles, neutre, PE ni protection détaillés ; non utilisable comme plan de consignation.",
+  "questions": [
+    "Quelle erreur commet-on en contrôlant uniquement le départ de puissance ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "9fea2bc6ae635f2050fe0d42fdb4b1b8c72aa125b3b2375e7adf2867dc4a7510"
+}

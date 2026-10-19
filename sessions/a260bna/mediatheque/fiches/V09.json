@@ -1,0 +1,25 @@
+{
+  "id": "V09",
+  "title": "Voisinage : supprimer l’exposition d’abord",
+  "category": "Schéma vectoriel",
+  "file": "svg/V09.svg",
+  "refs": [
+    "S01"
+  ],
+  "objective": "Éviter les distances visuelles arbitraires et les zones dessinées comme sûres.",
+  "checks": [
+    "Aucune cotation ; absence d’échelle inscrite dans le visuel."
+  ],
+  "limits": "Ce visuel ne sert pas à enseigner les limites chiffrées de zones ; les vérifier dans la norme applicable.",
+  "questions": [
+    "Pourquoi un écran schématique ne permet-il pas de conclure à sa suffisance réelle ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "3058d5f4920ccbc19cc56e2b2da5a4074d638cc55738d2d0ce12a2ca3d281a36"
+}

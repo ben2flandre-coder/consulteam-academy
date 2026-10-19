@@ -1,0 +1,26 @@
+{
+  "id": "V02",
+  "title": "Cartographier toutes les alimentations",
+  "category": "Schéma vectoriel",
+  "file": "svg/V02.svg",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "objective": "Détecter les sources oubliées avant consignation.",
+  "checks": [
+    "Schéma fonctionnel explicitement non électrique ; aucune alimentation supposée existante."
+  ],
+  "limits": "Présence réelle d’ASI ou de batterie inconnue chez Panzani.",
+  "questions": [
+    "Le départ de puissance suffit-il à isoler une commande alimentée séparément ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "e8efc95c70c9092896948d4c57990ee79da821b497449534229a04a2bcb591f1"
+}

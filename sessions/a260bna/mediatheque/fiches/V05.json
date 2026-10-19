@@ -1,0 +1,26 @@
+{
+  "id": "V05",
+  "title": "VAT et mesurage : objectifs distincts",
+  "category": "Schéma vectoriel",
+  "file": "svg/V05.svg",
+  "refs": [
+    "S01",
+    "S07"
+  ],
+  "objective": "Empêcher la substitution d’un multimètre ou d’un détecteur sans contact à la VAT.",
+  "checks": [
+    "Fonctions séparées ; aucune fausse lecture 0 V."
+  ],
+  "limits": "Séquence détaillée, points de contrôle et contrôles de fonctionnement à établir avec norme et notice réelles.",
+  "questions": [
+    "Une mesure affichant zéro suffit-elle à autoriser les travaux ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "7c775466a88e8ebcb76b9e69dda29fd0504ea22cfd8eacc18398f05f1c352b73"
+}

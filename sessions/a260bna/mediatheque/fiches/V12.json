@@ -1,0 +1,26 @@
+{
+  "id": "V12",
+  "title": "Consignation pour des travaux : coordination",
+  "category": "Schéma vectoriel",
+  "file": "svg/V12.svg",
+  "refs": [
+    "S02",
+    "S03"
+  ],
+  "objective": "Organiser la transmission du périmètre et la restitution.",
+  "checks": [
+    "BC et B2V séparés ; aucun document officiel simulé."
+  ],
+  "limits": "Consignation en une ou deux étapes et délégations à formaliser localement.",
+  "questions": [
+    "Quel risque crée une attestation portant sur une autre machine ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "657d49ba4fc5791664d56dded233701b17ed24fe2ce787f9e45e71949328c273"
+}

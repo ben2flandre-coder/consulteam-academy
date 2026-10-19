@@ -1,0 +1,32 @@
+{
+  "id": "P01",
+  "title": "Convoyeur et armoire fermée",
+  "category": "Illustration réaliste synthétique",
+  "file": "photos/P01.png",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "objective": "Contexte de ligne agroalimentaire fictive pour rechercher les données absentes de l’image.",
+  "checks": [
+    "Fichier PNG 1672 × 941 pixels natifs ; pas de suréchantillonnage.",
+    "Contrôle visuel consigné dans le rapport de contrôle ; image non probante.",
+    "Inspection visuelle : armoire fermée, aucun opérateur ni geste électrique ; accès mécaniques visibles non qualifiés comme sûrs.",
+    "Inspection visuelle : armoire fermée, aucun opérateur ni geste électrique ; accès mécaniques visibles non qualifiés comme sûrs.",
+    "Inspection visuelle : armoire fermée, aucun opérateur ni geste électrique ; accès mécaniques visibles non qualifiés comme sûrs."
+  ],
+  "limits": "Aucun état électrique, indice IP, qualité des EPI ou dispositif de sécurité ne peut être validé par cette image. Aucune personne ni manipulation électrique représentée.",
+  "questions": [
+    "Quelles informations de terrain faut-il obtenir avant une intervention ?"
+  ],
+  "status": "Image synthétique illustrative ; aucune validation technique de l’équipement représenté",
+  "origin": "Génération par outil Imagegen intégré ; scène fictive, aucun relevé ni photographie du site",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "width": 1672,
+  "height": 941,
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "7be8e3b0e1946f5fdda20f243c9684610eb12a24a474b34c6c1661da30b8f844"
+}

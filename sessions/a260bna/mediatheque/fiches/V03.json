@@ -1,0 +1,25 @@
+{
+  "id": "V03",
+  "title": "Consignation : repères et points d’arrêt",
+  "category": "Schéma vectoriel",
+  "file": "svg/V03.svg",
+  "refs": [
+    "S01"
+  ],
+  "objective": "Reconnaître les étapes sans confondre arrêt et consignation.",
+  "checks": [
+    "Ordre de principe recoupé ; MALT/CC conditionnelle signalée."
+  ],
+  "limits": "Ne décrit pas une consignation en deux étapes ni ses documents ; procédure locale nécessaire.",
+  "questions": [
+    "Quels actes restent non prouvés par une photo de cadenas ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "7c8e8ea06fb375dee8b475f194f514f69e66317a1627815f8021048948694513"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "V23",
+  "title": "Machine : croiser les périmètres d’énergie",
+  "category": "Schéma vectoriel",
+  "file": "svg/V23.svg",
+  "refs": [
+    "S04"
+  ],
+  "objective": "Situer les interfaces d’énergie sur une représentation de machine.",
+  "checks": [
+    "Circuits agrégés distingués par libellés et couleurs ; aucun organe de purge improvisé."
+  ],
+  "limits": "Le dessin n’est ni un plan mécanique ni un schéma pneumatique normalisé. Aucun carter ou accès n’est déclaré sûr par sa forme.",
+  "questions": [
+    "À qui confier la maîtrise de l’énergie fluidique et comment la coordonner avec BC ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "99924ab6069fb45bfa8df63e9731f475c2fb1cc05ef891e7319bc71ac172e466"
+}

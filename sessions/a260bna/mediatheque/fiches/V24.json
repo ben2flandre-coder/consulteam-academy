@@ -1,0 +1,28 @@
+{
+  "id": "V24",
+  "title": "VAT : contrôler aussi le vérificateur",
+  "category": "Schéma vectoriel",
+  "file": "svg/V24.svg",
+  "refs": [
+    "S01",
+    "S07",
+    "S10"
+  ],
+  "objective": "Associer au contrôle d’absence les contrôles de fonctionnement requis par la notice.",
+  "checks": [
+    "La notice fabricant S10 prescrit des autotests avant et après pour les matériels qu’elle cite.",
+    "Aucun mode de test unique transposé à tous les vérificateurs."
+  ],
+  "limits": "S10 concerne un adaptateur et des détecteurs précis ; ne pas transposer sa manipulation à un autre VAT. Notice exacte, méthode et points de vérification restent nécessaires.",
+  "questions": [
+    "Que conclure si le contrôle de fonctionnement après la VAT échoue ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "c69cab09c657a350b55a9ebd82e8b631a2ba1f0a2dab1f480a0d6591d8c2eb60"
+}

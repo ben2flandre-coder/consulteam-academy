@@ -1,0 +1,27 @@
+{
+  "id": "V19",
+  "title": "Moteur triphasé : séparation et masse",
+  "category": "Schéma vectoriel",
+  "file": "svg/V19.svg",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "objective": "Lire les trois phases, la séparation multipolaire et la liaison à la masse.",
+  "checks": [
+    "Trois chemins de phase distincts ; liaison mécanique en pointillé distincte des conducteurs.",
+    "Le PE est dessiné séparément des contacts de séparation ; aucune valeur de protection donnée."
+  ],
+  "limits": "Symboles graphiques simplifiés, pas une planche normalisée IEC. Protections amont, commande, bornier et couplage absents volontairement ; aucun régime de neutre du site supposé.",
+  "questions": [
+    "La position ouverte des contacts prouve-t-elle à elle seule l’absence de tension au moteur ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "d64f25c3d75b15eed2c4339c9bc380ee09dd34f0f63dae63b5e1f1dd9ea9e167"
+}

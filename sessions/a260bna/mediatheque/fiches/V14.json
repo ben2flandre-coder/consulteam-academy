@@ -1,0 +1,26 @@
+{
+  "id": "V14",
+  "title": "Commande et puissance : deux périmètres à vérifier",
+  "category": "Schéma vectoriel",
+  "file": "svg/V14.svg",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "objective": "Rechercher les auxiliaires et les retours d’énergie.",
+  "checks": [
+    "Pas de bornier ni polarité fictive ; flèches fonctionnelles identifiées."
+  ],
+  "limits": "Alimentations et sécurité machine réelles non relevées.",
+  "questions": [
+    "Comment prouver qu’un capteur dépend du départ effectivement séparé ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "20a3dfe47e6be6f11d744665ad31fb57b5d49a4f07ae1a8b6861a878dd3069a0"
+}

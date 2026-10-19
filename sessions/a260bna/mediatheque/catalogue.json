@@ -1,0 +1,689 @@
+[
+  {
+    "id": "V01",
+    "title": "B2V, BR, BC : trois missions",
+    "category": "Schéma vectoriel",
+    "file": "svg/V01.svg",
+    "refs": [
+      "S02",
+      "S03"
+    ],
+    "objective": "Choisir le rôle avant de choisir le geste.",
+    "checks": [
+      "Rôles distingués ; aucune équivalence générale affirmée."
+    ],
+    "limits": "B2V ne vaut pas BC ; aucun droit général de travaux sous tension.",
+    "questions": [
+      "Quel rôle manque si une personne uniquement BC doit remplacer un contacteur ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "7f57a765b37b65da01ecd7577ff47c1fcb394436c97face477f76a99877f67f3"
+  },
+  {
+    "id": "V02",
+    "title": "Cartographier toutes les alimentations",
+    "category": "Schéma vectoriel",
+    "file": "svg/V02.svg",
+    "refs": [
+      "S01",
+      "S04"
+    ],
+    "objective": "Détecter les sources oubliées avant consignation.",
+    "checks": [
+      "Schéma fonctionnel explicitement non électrique ; aucune alimentation supposée existante."
+    ],
+    "limits": "Présence réelle d’ASI ou de batterie inconnue chez Panzani.",
+    "questions": [
+      "Le départ de puissance suffit-il à isoler une commande alimentée séparément ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "e8efc95c70c9092896948d4c57990ee79da821b497449534229a04a2bcb591f1"
+  },
+  {
+    "id": "V03",
+    "title": "Consignation : repères et points d’arrêt",
+    "category": "Schéma vectoriel",
+    "file": "svg/V03.svg",
+    "refs": [
+      "S01"
+    ],
+    "objective": "Reconnaître les étapes sans confondre arrêt et consignation.",
+    "checks": [
+      "Ordre de principe recoupé ; MALT/CC conditionnelle signalée."
+    ],
+    "limits": "Ne décrit pas une consignation en deux étapes ni ses documents ; procédure locale nécessaire.",
+    "questions": [
+      "Quels actes restent non prouvés par une photo de cadenas ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "7c8e8ea06fb375dee8b475f194f514f69e66317a1627815f8021048948694513"
+  },
+  {
+    "id": "V04",
+    "title": "Un cadenas ne prouve pas toute la consignation",
+    "category": "Schéma vectoriel",
+    "file": "svg/V04.svg",
+    "refs": [
+      "S01",
+      "S04"
+    ],
+    "objective": "Distinguer objet visible et état de sécurité démontré.",
+    "checks": [
+      "Aucun type de cadenas présenté comme universel."
+    ],
+    "limits": "Aucun modèle, repère ou verrouillage réel du site vérifié.",
+    "questions": [
+      "Peut-on ouvrir une boîte à bornes sur la seule présence d’un cadenas ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "1bed6ac71ed515dd3ffa73ff92aac4baf817111a737d4b356474e664ca01e317"
+  },
+  {
+    "id": "V05",
+    "title": "VAT et mesurage : objectifs distincts",
+    "category": "Schéma vectoriel",
+    "file": "svg/V05.svg",
+    "refs": [
+      "S01",
+      "S07"
+    ],
+    "objective": "Empêcher la substitution d’un multimètre ou d’un détecteur sans contact à la VAT.",
+    "checks": [
+      "Fonctions séparées ; aucune fausse lecture 0 V."
+    ],
+    "limits": "Séquence détaillée, points de contrôle et contrôles de fonctionnement à établir avec norme et notice réelles.",
+    "questions": [
+      "Une mesure affichant zéro suffit-elle à autoriser les travaux ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "7c775466a88e8ebcb76b9e69dda29fd0504ea22cfd8eacc18398f05f1c352b73"
+  },
+  {
+    "id": "V06",
+    "title": "Arrêt d’urgence et consignation",
+    "category": "Schéma vectoriel",
+    "file": "svg/V06.svg",
+    "refs": [
+      "S04",
+      "S08"
+    ],
+    "objective": "Refuser le raccourci machine arrêtée = machine consignée.",
+    "checks": [
+      "Fonction d’arrêt et mise en sécurité distinguées."
+    ],
+    "limits": "Aucun schéma d’arrêt d’urgence, relais de sécurité ou câblage fourni.",
+    "questions": [
+      "Pourquoi une bande arrêtée peut-elle encore présenter un danger électrique ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "89b47a8eb02f882254c0cd4d38cc9bfd3aab6aff68b63583d5df30977f4ae4bd"
+  },
+  {
+    "id": "V07",
+    "title": "Variateur : anticiper l’énergie résiduelle",
+    "category": "Schéma vectoriel",
+    "file": "svg/V07.svg",
+    "refs": [
+      "S01",
+      "S04"
+    ],
+    "objective": "Identifier une énergie stockée après séparation de la source.",
+    "checks": [
+      "Aucun délai inventé ; pas de valeur de tension du bus."
+    ],
+    "limits": "Aucune notice constructeur de variateur du site consultée.",
+    "questions": [
+      "Quelle référence documentaire faut-il obtenir avant de préparer l’opération ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "1eee71a424fe8e8c68e6c587f7e3319268d6c17800e032cf9c1d768bd217d423"
+  },
+  {
+    "id": "V08",
+    "title": "Convoyeur : raisonner sur plusieurs énergies",
+    "category": "Schéma vectoriel",
+    "file": "svg/V08.svg",
+    "refs": [
+      "S04"
+    ],
+    "objective": "Étendre l’analyse au-delà du moteur.",
+    "checks": [
+      "Énergies présentées comme hypothèses à rechercher."
+    ],
+    "limits": "Purges, blocages et essais de sécurité non définis : ingénierie et procédure du site requises.",
+    "questions": [
+      "Un arrêt électrique suffit-il si un vérin peut encore déplacer un guide ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "5be2710708f01c166dd5f0a9a203d584c3d771b04dbe9ba71f3989d22d85ef3a"
+  },
+  {
+    "id": "V09",
+    "title": "Voisinage : supprimer l’exposition d’abord",
+    "category": "Schéma vectoriel",
+    "file": "svg/V09.svg",
+    "refs": [
+      "S01"
+    ],
+    "objective": "Éviter les distances visuelles arbitraires et les zones dessinées comme sûres.",
+    "checks": [
+      "Aucune cotation ; absence d’échelle inscrite dans le visuel."
+    ],
+    "limits": "Ce visuel ne sert pas à enseigner les limites chiffrées de zones ; les vérifier dans la norme applicable.",
+    "questions": [
+      "Pourquoi un écran schématique ne permet-il pas de conclure à sa suffisance réelle ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "3058d5f4920ccbc19cc56e2b2da5a4074d638cc55738d2d0ce12a2ca3d281a36"
+  },
+  {
+    "id": "V10",
+    "title": "EPI : partir de l’analyse de l’opération",
+    "category": "Schéma vectoriel",
+    "file": "svg/V10.svg",
+    "refs": [
+      "S01"
+    ],
+    "objective": "Éviter les kits d’EPI présentés comme suffisants dans tous les cas.",
+    "checks": [
+      "Pas de performance inventée ; hiérarchie de prévention conservée."
+    ],
+    "limits": "Pas d’étude d’énergie incidente ni de choix d’EPI du site vérifié.",
+    "questions": [
+      "Que faut-il connaître avant de sélectionner une protection contre l’arc ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "f8fdc8f692cb42d730fe872bdfb4f76c7fbb10fb8923f545ba4cd757de36f782"
+  },
+  {
+    "id": "V11",
+    "title": "Nettoyage et électricité : coordonner",
+    "category": "Schéma vectoriel",
+    "file": "svg/V11.svg",
+    "refs": [
+      "S01",
+      "S04"
+    ],
+    "objective": "Repérer l’humidité et la coactivité comme facteurs de risque.",
+    "checks": [
+      "Aucun IP de lavage ni compatibilité chimique déduits."
+    ],
+    "limits": "Règles d’hygiène, zonage et protocole de nettoyage Panzani non obtenus.",
+    "questions": [
+      "Qui doit confirmer la fin du lavage et les conditions d’accès ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "c157211d453c77f445df23cb48150d584456e35cb1da5b6c65ca10832e287689"
+  },
+  {
+    "id": "V12",
+    "title": "Consignation pour des travaux : coordination",
+    "category": "Schéma vectoriel",
+    "file": "svg/V12.svg",
+    "refs": [
+      "S02",
+      "S03"
+    ],
+    "objective": "Organiser la transmission du périmètre et la restitution.",
+    "checks": [
+      "BC et B2V séparés ; aucun document officiel simulé."
+    ],
+    "limits": "Consignation en une ou deux étapes et délégations à formaliser localement.",
+    "questions": [
+      "Quel risque crée une attestation portant sur une autre machine ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "657d49ba4fc5791664d56dded233701b17ed24fe2ce787f9e45e71949328c273"
+  },
+  {
+    "id": "V13",
+    "title": "BR : rester dans l’intervention confiée",
+    "category": "Schéma vectoriel",
+    "file": "svg/V13.svg",
+    "refs": [
+      "S02"
+    ],
+    "objective": "Qualifier l’activité sans attribuer tout dépannage au seul intitulé de métier.",
+    "checks": [
+      "Cadre BR et aide limitée recoupés dans FAQ INRS."
+    ],
+    "limits": "Aucune connexion en présence de tension enseignée ou autorisée par ce média.",
+    "questions": [
+      "Une rénovation d’armoire entière reste-t-elle une intervention courte et de faible étendue ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "f3b01703fa970a0f71a2031f5ed454bb8935c6d6846f88c9e8e37c82d0d202c6"
+  },
+  {
+    "id": "V14",
+    "title": "Commande et puissance : deux périmètres à vérifier",
+    "category": "Schéma vectoriel",
+    "file": "svg/V14.svg",
+    "refs": [
+      "S01",
+      "S04"
+    ],
+    "objective": "Rechercher les auxiliaires et les retours d’énergie.",
+    "checks": [
+      "Pas de bornier ni polarité fictive ; flèches fonctionnelles identifiées."
+    ],
+    "limits": "Alimentations et sécurité machine réelles non relevées.",
+    "questions": [
+      "Comment prouver qu’un capteur dépend du départ effectivement séparé ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "20a3dfe47e6be6f11d744665ad31fb57b5d49a4f07ae1a8b6861a878dd3069a0"
+  },
+  {
+    "id": "V15",
+    "title": "Avant remise en service : une décision organisée",
+    "category": "Schéma vectoriel",
+    "file": "svg/V15.svg",
+    "refs": [
+      "S04"
+    ],
+    "objective": "Traiter les interfaces humaines avant le redémarrage.",
+    "checks": [
+      "Pas d’ordre inverse automatique ni retrait arbitraire de cadenas."
+    ],
+    "limits": "Séquence de reprise, personnes autorisées et essais non validés pour le site.",
+    "questions": [
+      "Quelle information manque si l’autre équipe n’a pas restitué sa zone ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "cc47af8864bb689cef2c6cfa2609df79b62678a8f25e0e56d84aabaa445e5c55"
+  },
+  {
+    "id": "V16",
+    "title": "Repérage incertain : arrêter et résoudre",
+    "category": "Schéma vectoriel",
+    "file": "svg/V16.svg",
+    "refs": [
+      "S01",
+      "S04"
+    ],
+    "objective": "Refuser une identification fondée sur une supposition.",
+    "checks": [
+      "Aucun repère de site inventé présenté comme vrai."
+    ],
+    "limits": "Les lettres A sont des repères d’exercice, pas des identifiants Panzani.",
+    "questions": [
+      "Quels recoupements documentaires et de terrain sont nécessaires ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "b0921fefdef63aa2f83a09312a25cd57c8881f2a538e369f06445ec4859ecd87"
+  },
+  {
+    "id": "V17",
+    "title": "Séparer illustration et preuve",
+    "category": "Schéma vectoriel",
+    "file": "svg/V17.svg",
+    "refs": [
+      "S01",
+      "S04"
+    ],
+    "objective": "Interdire l’usage d’une image comme justification d’une consignation.",
+    "checks": [
+      "Statut inscrit dans chaque fiche et chaque SVG."
+    ],
+    "limits": "Aucun relevé terrain, mesure, visa ni procédure employeur reçu.",
+    "questions": [
+      "Qu’est-ce qui permet de passer d’une image à une décision de terrain ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "e9f3cfbeae425eca298f153ff0c76c889c2aae974d72fa9083f7c049d262ad95"
+  },
+  {
+    "id": "V18",
+    "title": "Cadrer l’opération avant de commencer",
+    "category": "Schéma vectoriel",
+    "file": "svg/V18.svg",
+    "refs": [
+      "S01",
+      "S02",
+      "S04"
+    ],
+    "objective": "Structurer l’analyse préalable sans produire un permis de travail fictif.",
+    "checks": [
+      "Questions ouvertes ; aucune réponse terrain supposée."
+    ],
+    "limits": "L’exercice ne tient pas lieu d’analyse de risques signée ni de titre d’habilitation.",
+    "questions": [
+      "Quel manque suffit à suspendre la préparation ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "1ef108fc73443c88ad22c8f83c69a4f6f5d54f3c228dd8a3a9ddbfd3af89a44f"
+  },
+  {
+    "id": "V19",
+    "title": "Moteur triphasé : séparation et masse",
+    "category": "Schéma vectoriel",
+    "file": "svg/V19.svg",
+    "refs": [
+      "S01",
+      "S04"
+    ],
+    "objective": "Lire les trois phases, la séparation multipolaire et la liaison à la masse.",
+    "checks": [
+      "Trois chemins de phase distincts ; liaison mécanique en pointillé distincte des conducteurs.",
+      "Le PE est dessiné séparément des contacts de séparation ; aucune valeur de protection donnée."
+    ],
+    "limits": "Symboles graphiques simplifiés, pas une planche normalisée IEC. Protections amont, commande, bornier et couplage absents volontairement ; aucun régime de neutre du site supposé.",
+    "questions": [
+      "La position ouverte des contacts prouve-t-elle à elle seule l’absence de tension au moteur ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "d64f25c3d75b15eed2c4339c9bc380ee09dd34f0f63dae63b5e1f1dd9ea9e167"
+  },
+  {
+    "id": "V20",
+    "title": "Deux alimentations dans une armoire",
+    "category": "Schéma vectoriel",
+    "file": "svg/V20.svg",
+    "refs": [
+      "S01",
+      "S04"
+    ],
+    "objective": "Détecter qu’une même enveloppe peut contenir des circuits d’origines différentes.",
+    "checks": [
+      "Deux sources sans liaison électrique entre elles dans ce schéma.",
+      "Périmètre commun de l’enveloppe matérialisé ; pas de symbole donnant l’armoire globalement hors tension."
+    ],
+    "limits": "Représentation agrégée : aucun nombre de pôles, neutre, PE ni protection détaillés ; non utilisable comme plan de consignation.",
+    "questions": [
+      "Quelle erreur commet-on en contrôlant uniquement le départ de puissance ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "9fea2bc6ae635f2050fe0d42fdb4b1b8c72aa125b3b2375e7adf2867dc4a7510"
+  },
+  {
+    "id": "V21",
+    "title": "Défaut d’isolement : danger de contact indirect",
+    "category": "Schéma vectoriel",
+    "file": "svg/V21.svg",
+    "refs": [
+      "S01",
+      "S09"
+    ],
+    "objective": "Comprendre pourquoi une masse peut devenir dangereuse à la suite d’un défaut.",
+    "checks": [
+      "Le conducteur actif est distinct de la masse ; seul le défaut en rouge crée la liaison.",
+      "Aucune affirmation qu’une simple terre suffit à garantir la protection."
+    ],
+    "limits": "Boucle de défaut, source, protections et régime de neutre non détaillés. La coupure automatique et les liaisons doivent être vérifiées sur l’installation réelle.",
+    "questions": [
+      "Quelles données manquent pour vérifier le fonctionnement de la protection ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "4276aa58021cf1a076885a2185d14a6e560d1f3447921e0905d540899bbd9102"
+  },
+  {
+    "id": "V22",
+    "title": "Contact direct et contact indirect",
+    "category": "Schéma vectoriel",
+    "file": "svg/V22.svg",
+    "refs": [
+      "S01",
+      "S09"
+    ],
+    "objective": "Distinguer les mécanismes pour choisir les mesures de prévention.",
+    "checks": [
+      "Définitions recoupées sur INRS ; aucune personne en contact représentée."
+    ],
+    "limits": "Ce visuel n’établit pas qu’une protection particulière est suffisante ; aucune valeur physiologique ni temps de survie fournis.",
+    "questions": [
+      "Quelle différence de prévention faut-il analyser entre les deux situations ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "3b68aebb1c31510d46968e204e817cc878a1cc1b2cbde496211358e35b02b67d"
+  },
+  {
+    "id": "V23",
+    "title": "Machine : croiser les périmètres d’énergie",
+    "category": "Schéma vectoriel",
+    "file": "svg/V23.svg",
+    "refs": [
+      "S04"
+    ],
+    "objective": "Situer les interfaces d’énergie sur une représentation de machine.",
+    "checks": [
+      "Circuits agrégés distingués par libellés et couleurs ; aucun organe de purge improvisé."
+    ],
+    "limits": "Le dessin n’est ni un plan mécanique ni un schéma pneumatique normalisé. Aucun carter ou accès n’est déclaré sûr par sa forme.",
+    "questions": [
+      "À qui confier la maîtrise de l’énergie fluidique et comment la coordonner avec BC ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "99924ab6069fb45bfa8df63e9731f475c2fb1cc05ef891e7319bc71ac172e466"
+  },
+  {
+    "id": "V24",
+    "title": "VAT : contrôler aussi le vérificateur",
+    "category": "Schéma vectoriel",
+    "file": "svg/V24.svg",
+    "refs": [
+      "S01",
+      "S07",
+      "S10"
+    ],
+    "objective": "Associer au contrôle d’absence les contrôles de fonctionnement requis par la notice.",
+    "checks": [
+      "La notice fabricant S10 prescrit des autotests avant et après pour les matériels qu’elle cite.",
+      "Aucun mode de test unique transposé à tous les vérificateurs."
+    ],
+    "limits": "S10 concerne un adaptateur et des détecteurs précis ; ne pas transposer sa manipulation à un autre VAT. Notice exacte, méthode et points de vérification restent nécessaires.",
+    "questions": [
+      "Que conclure si le contrôle de fonctionnement après la VAT échoue ?"
+    ],
+    "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+    "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "c69cab09c657a350b55a9ebd82e8b631a2ba1f0a2dab1f480a0d6591d8c2eb60"
+  },
+  {
+    "id": "P01",
+    "title": "Convoyeur et armoire fermée",
+    "category": "Illustration réaliste synthétique",
+    "file": "photos/P01.png",
+    "refs": [
+      "S01",
+      "S04"
+    ],
+    "objective": "Contexte de ligne agroalimentaire fictive pour rechercher les données absentes de l’image.",
+    "checks": [
+      "Fichier PNG 1672 × 941 pixels natifs ; pas de suréchantillonnage.",
+      "Contrôle visuel consigné dans le rapport de contrôle ; image non probante.",
+      "Inspection visuelle : armoire fermée, aucun opérateur ni geste électrique ; accès mécaniques visibles non qualifiés comme sûrs.",
+      "Inspection visuelle : armoire fermée, aucun opérateur ni geste électrique ; accès mécaniques visibles non qualifiés comme sûrs.",
+      "Inspection visuelle : armoire fermée, aucun opérateur ni geste électrique ; accès mécaniques visibles non qualifiés comme sûrs."
+    ],
+    "limits": "Aucun état électrique, indice IP, qualité des EPI ou dispositif de sécurité ne peut être validé par cette image. Aucune personne ni manipulation électrique représentée.",
+    "questions": [
+      "Quelles informations de terrain faut-il obtenir avant une intervention ?"
+    ],
+    "status": "Image synthétique illustrative ; aucune validation technique de l’équipement représenté",
+    "origin": "Génération par outil Imagegen intégré ; scène fictive, aucun relevé ni photographie du site",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "width": 1672,
+    "height": 941,
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "7be8e3b0e1946f5fdda20f243c9684610eb12a24a474b34c6c1661da30b8f844"
+  },
+  {
+    "id": "P02",
+    "title": "Pompe et moteur — illustration corrigée",
+    "category": "Illustration réaliste synthétique",
+    "file": "photos/P02.png",
+    "refs": [
+      "S01",
+      "S04"
+    ],
+    "objective": "Contexte fictif pour discuter du périmètre électrique, mécanique et fluidique avant maintenance.",
+    "checks": [
+      "Fichier PNG 1536 × 1024 pixels natifs ; pas de suréchantillonnage.",
+      "Contrôle visuel consigné dans le rapport de contrôle ; image non probante.",
+      "Premier rendu rejeté : accouplement visible. Nouveau rendu inspecté : zone d’accouplement recouverte par un carter opaque ; aucune validation de conception du carter.",
+      "Premier rendu rejeté : accouplement visible. Nouveau rendu inspecté : zone d’accouplement recouverte par un carter opaque ; aucune validation de conception du carter.",
+      "Premier rendu rejeté : accouplement visible. Nouveau rendu inspecté : zone d’accouplement recouverte par un carter opaque ; aucune validation de conception du carter."
+    ],
+    "limits": "Aucun état électrique, indice IP, qualité des EPI ou dispositif de sécurité ne peut être validé par cette image. Aucune personne ni manipulation électrique représentée.",
+    "questions": [
+      "Quelles informations de terrain faut-il obtenir avant une intervention ?"
+    ],
+    "status": "Image synthétique illustrative ; aucune validation technique de l’équipement représenté",
+    "origin": "Génération par outil Imagegen intégré ; scène fictive, aucun relevé ni photographie du site",
+    "version": "1.0",
+    "date": "2026-10-19",
+    "width": 1536,
+    "height": 1024,
+    "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+    "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+    "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+    "sha256": "40d68ead997efc6d42be8b7410ef63aa3712926405c3c6719a30c3426004e060"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "id": "P02",
+  "title": "Pompe et moteur — illustration corrigée",
+  "category": "Illustration réaliste synthétique",
+  "file": "photos/P02.png",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "objective": "Contexte fictif pour discuter du périmètre électrique, mécanique et fluidique avant maintenance.",
+  "checks": [
+    "Fichier PNG 1536 × 1024 pixels natifs ; pas de suréchantillonnage.",
+    "Contrôle visuel consigné dans le rapport de contrôle ; image non probante.",
+    "Premier rendu rejeté : accouplement visible. Nouveau rendu inspecté : zone d’accouplement recouverte par un carter opaque ; aucune validation de conception du carter.",
+    "Premier rendu rejeté : accouplement visible. Nouveau rendu inspecté : zone d’accouplement recouverte par un carter opaque ; aucune validation de conception du carter.",
+    "Premier rendu rejeté : accouplement visible. Nouveau rendu inspecté : zone d’accouplement recouverte par un carter opaque ; aucune validation de conception du carter."
+  ],
+  "limits": "Aucun état électrique, indice IP, qualité des EPI ou dispositif de sécurité ne peut être validé par cette image. Aucune personne ni manipulation électrique représentée.",
+  "questions": [
+    "Quelles informations de terrain faut-il obtenir avant une intervention ?"
+  ],
+  "status": "Image synthétique illustrative ; aucune validation technique de l’équipement représenté",
+  "origin": "Génération par outil Imagegen intégré ; scène fictive, aucun relevé ni photographie du site",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "width": 1536,
+  "height": 1024,
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "40d68ead997efc6d42be8b7410ef63aa3712926405c3c6719a30c3426004e060"
+}

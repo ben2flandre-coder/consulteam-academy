@@ -1,0 +1,26 @@
+{
+  "id": "V01",
+  "title": "B2V, BR, BC : trois missions",
+  "category": "Schéma vectoriel",
+  "file": "svg/V01.svg",
+  "refs": [
+    "S02",
+    "S03"
+  ],
+  "objective": "Choisir le rôle avant de choisir le geste.",
+  "checks": [
+    "Rôles distingués ; aucune équivalence générale affirmée."
+  ],
+  "limits": "B2V ne vaut pas BC ; aucun droit général de travaux sous tension.",
+  "questions": [
+    "Quel rôle manque si une personne uniquement BC doit remplacer un contacteur ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "7f57a765b37b65da01ecd7577ff47c1fcb394436c97face477f76a99877f67f3"
+}

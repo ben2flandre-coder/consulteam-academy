@@ -1,0 +1,26 @@
+{
+  "id": "V16",
+  "title": "Repérage incertain : arrêter et résoudre",
+  "category": "Schéma vectoriel",
+  "file": "svg/V16.svg",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "objective": "Refuser une identification fondée sur une supposition.",
+  "checks": [
+    "Aucun repère de site inventé présenté comme vrai."
+  ],
+  "limits": "Les lettres A sont des repères d’exercice, pas des identifiants Panzani.",
+  "questions": [
+    "Quels recoupements documentaires et de terrain sont nécessaires ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "b0921fefdef63aa2f83a09312a25cd57c8881f2a538e369f06445ec4859ecd87"
+}

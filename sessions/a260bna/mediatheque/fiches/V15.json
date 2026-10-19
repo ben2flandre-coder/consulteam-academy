@@ -1,0 +1,25 @@
+{
+  "id": "V15",
+  "title": "Avant remise en service : une décision organisée",
+  "category": "Schéma vectoriel",
+  "file": "svg/V15.svg",
+  "refs": [
+    "S04"
+  ],
+  "objective": "Traiter les interfaces humaines avant le redémarrage.",
+  "checks": [
+    "Pas d’ordre inverse automatique ni retrait arbitraire de cadenas."
+  ],
+  "limits": "Séquence de reprise, personnes autorisées et essais non validés pour le site.",
+  "questions": [
+    "Quelle information manque si l’autre équipe n’a pas restitué sa zone ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "cc47af8864bb689cef2c6cfa2609df79b62678a8f25e0e56d84aabaa445e5c55"
+}

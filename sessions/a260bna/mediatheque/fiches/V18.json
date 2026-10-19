@@ -1,0 +1,27 @@
+{
+  "id": "V18",
+  "title": "Cadrer l’opération avant de commencer",
+  "category": "Schéma vectoriel",
+  "file": "svg/V18.svg",
+  "refs": [
+    "S01",
+    "S02",
+    "S04"
+  ],
+  "objective": "Structurer l’analyse préalable sans produire un permis de travail fictif.",
+  "checks": [
+    "Questions ouvertes ; aucune réponse terrain supposée."
+  ],
+  "limits": "L’exercice ne tient pas lieu d’analyse de risques signée ni de titre d’habilitation.",
+  "questions": [
+    "Quel manque suffit à suspendre la préparation ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "1ef108fc73443c88ad22c8f83c69a4f6f5d54f3c228dd8a3a9ddbfd3af89a44f"
+}

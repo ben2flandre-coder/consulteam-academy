@@ -1,0 +1,18 @@
+[
+  {
+    "id": "P01",
+    "tool": "Imagegen intégré",
+    "prompt": "Use case: photorealistic-natural. Create one individual high resolution landscape editorial illustration for French industrial electrical safety training. Fictional clean food manufacturing maintenance environment, stainless steel conveyor with all machine guards fitted and closed, a closed grey electrical cabinet in background, dry clean floor, no people, no electrical intervention, no visible conductors, no logos or brands, no fake instrument readings or labels. Natural realistic photography, detailed industrial textures, 1920x1080 or larger if possible. This is a synthetic contextual illustration, never evidence of compliance or a real Panzani factory. No collage, no multiple panels, no text."
+  },
+  {
+    "id": "P02-initial-rejete",
+    "tool": "Imagegen intégré",
+    "prompt": "Use case: photorealistic-natural. One individual realistic landscape high definition editorial photograph-style synthetic illustration for industrial food factory electrical safety teaching. A clean stainless steel food processing pump with enclosed electric motor and all rotating couplings fully enclosed by opaque guards, closed terminal box, intact cable gland and cable, dry clean floor. No people, no hands, no open electrical panels, no tools, no intervention, no brand, no labels, no displays, no text. Fictional generic factory, not a real Panzani site. Detailed industrial texture, natural lighting. Single image, no collage. At least 1920 pixels wide if possible.",
+    "decision": "Accouplement visible : rejeté ; absent des médias diffusés."
+  },
+  {
+    "id": "P02-correction",
+    "tool": "Imagegen intégré",
+    "prompt": "Edit the second recent generated image: the industrial stainless steel pump and motor. Correct the safety defect: the shaft coupling between pump and motor is currently visible. Enclose the entire shaft and coupling area completely within a solid opaque stainless steel protective housing, with no openings and no visible rotating parts anywhere. Keep the closed motor terminal box and all electrical enclosures closed. Preserve realistic photograph style and overall scene. No humans, no tools, no interventions, no text. This is a synthetic contextual illustration, not proof of conformity. Produce one image, not a collage."
+  }
+]

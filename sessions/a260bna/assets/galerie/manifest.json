@@ -1,184 +1,210 @@
 [
  {
-  "fichier": "planche-1.png",
-  "titre": "Planche d’ensemble 1",
-  "statut": "Maquette IA non validée — À VÉRIFIER avant usage (zones et distances)",
-  "alt": "Planche d’ensemble",
-  "categorie": "Planches d’ensemble"
+  "fichier": "../../mediatheque/svg/V01.svg",
+  "titre": "V01 · B2V, BR, BC : trois missions",
+  "legende": "Choisir le rôle avant de choisir le geste.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V01",
+  "alt": "B2V, BR, BC : trois missions"
  },
  {
-  "fichier": "planche-2.png",
-  "titre": "Planche d’ensemble 2",
-  "statut": "Maquette IA non validée — À VÉRIFIER avant usage (zones et distances)",
-  "alt": "Planche d’ensemble",
-  "categorie": "Planches d’ensemble"
+  "fichier": "../../mediatheque/svg/V02.svg",
+  "titre": "V02 · Cartographier toutes les alimentations",
+  "legende": "Détecter les sources oubliées avant consignation.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V02",
+  "alt": "Cartographier toutes les alimentations"
  },
  {
-  "fichier": "planche-3-industrielle.png",
-  "titre": "Planche d’ensemble 3 (version industrielle)",
-  "statut": "Maquette IA non validée — À VÉRIFIER avant usage (zones et distances)",
-  "alt": "Planche d’ensemble",
-  "categorie": "Planches d’ensemble"
+  "fichier": "../../mediatheque/svg/V03.svg",
+  "titre": "V03 · Consignation : repères et points d’arrêt",
+  "legende": "Reconnaître les étapes sans confondre arrêt et consignation.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V03",
+  "alt": "Consignation : repères et points d’arrêt"
  },
  {
-  "fichier": "01_environnement_agroalimentaire.png",
-  "titre": "Environnement agroalimentaire",
-  "statut": "Maquette IA non validée",
-  "alt": "Environnement agroalimentaire",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V04.svg",
+  "titre": "V04 · Un cadenas ne prouve pas toute la consignation",
+  "legende": "Distinguer objet visible et état de sécurité démontré.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V04",
+  "alt": "Un cadenas ne prouve pas toute la consignation"
  },
  {
-  "fichier": "02_armoire_production.png",
-  "titre": "Armoire électrique de production",
-  "statut": "Maquette IA non validée",
-  "alt": "Armoire électrique de production",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V05.svg",
+  "titre": "V05 · VAT et mesurage : objectifs distincts",
+  "legende": "Empêcher la substitution d’un multimètre ou d’un détecteur sans contact à la VAT.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V05",
+  "alt": "VAT et mesurage : objectifs distincts"
  },
  {
-  "fichier": "03_role_B2V.png",
-  "titre": "Rôle B2V",
-  "statut": "Maquette IA non validée",
-  "alt": "Rôle B2V",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V06.svg",
+  "titre": "V06 · Arrêt d’urgence et consignation",
+  "legende": "Refuser le raccourci machine arrêtée = machine consignée.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V06",
+  "alt": "Arrêt d’urgence et consignation"
  },
  {
-  "fichier": "04_role_BR.png",
-  "titre": "Rôle BR",
-  "statut": "Maquette IA non validée",
-  "alt": "Rôle BR",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V07.svg",
+  "titre": "V07 · Variateur : anticiper l’énergie résiduelle",
+  "legende": "Identifier une énergie stockée après séparation de la source.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V07",
+  "alt": "Variateur : anticiper l’énergie résiduelle"
  },
  {
-  "fichier": "05_role_BC.png",
-  "titre": "Rôle BC",
-  "statut": "Maquette IA non validée",
-  "alt": "Rôle BC",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V08.svg",
+  "titre": "V08 · Convoyeur : raisonner sur plusieurs énergies",
+  "legende": "Étendre l’analyse au-delà du moteur.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V08",
+  "alt": "Convoyeur : raisonner sur plusieurs énergies"
  },
  {
-  "fichier": "06_zones_voisinage.png",
-  "titre": "Zones de voisinage et distances",
-  "statut": "Maquette IA non validée — À VÉRIFIER avant usage",
-  "alt": "Zones de voisinage et distances",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V09.svg",
+  "titre": "V09 · Voisinage : supprimer l’exposition d’abord",
+  "legende": "Éviter les distances visuelles arbitraires et les zones dessinées comme sûres.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V09",
+  "alt": "Voisinage : supprimer l’exposition d’abord"
  },
  {
-  "fichier": "07_consignation.png",
-  "titre": "Consignation BT, étapes",
-  "statut": "Maquette IA non validée — À VÉRIFIER avant usage",
-  "alt": "Consignation BT, étapes",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V10.svg",
+  "titre": "V10 · EPI : partir de l’analyse de l’opération",
+  "legende": "Éviter les kits d’EPI présentés comme suffisants dans tous les cas.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V10",
+  "alt": "EPI : partir de l’analyse de l’opération"
  },
  {
-  "fichier": "08_VAT.png",
-  "titre": "Vérification d’absence de tension",
-  "statut": "Maquette IA non validée — À VÉRIFIER avant usage",
-  "alt": "Vérification d’absence de tension",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V11.svg",
+  "titre": "V11 · Nettoyage et électricité : coordonner",
+  "legende": "Repérer l’humidité et la coactivité comme facteurs de risque.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V11",
+  "alt": "Nettoyage et électricité : coordonner"
  },
  {
-  "fichier": "09_depannage_BR.png",
-  "titre": "Intervention BR : dépannage",
-  "statut": "Maquette IA non validée",
-  "alt": "Intervention BR : dépannage",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V12.svg",
+  "titre": "V12 · Consignation pour des travaux : coordination",
+  "legende": "Organiser la transmission du périmètre et la restitution.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V12",
+  "alt": "Consignation pour des travaux : coordination"
  },
  {
-  "fichier": "10_EPI.png",
-  "titre": "EPI et matériels",
-  "statut": "Maquette IA non validée",
-  "alt": "EPI et matériels",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V13.svg",
+  "titre": "V13 · BR : rester dans l’intervention confiée",
+  "legende": "Qualifier l’activité sans attribuer tout dépannage au seul intitulé de métier.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V13",
+  "alt": "BR : rester dans l’intervention confiée"
  },
  {
-  "fichier": "11_risques_electriques.png",
-  "titre": "Risques électriques",
-  "statut": "Maquette IA non validée",
-  "alt": "Risques électriques",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V14.svg",
+  "titre": "V14 · Commande et puissance : deux périmètres à vérifier",
+  "legende": "Rechercher les auxiliaires et les retours d’énergie.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V14",
+  "alt": "Commande et puissance : deux périmètres à vérifier"
  },
  {
-  "fichier": "12_equipements_industriels.png",
-  "titre": "Équipements industriels",
-  "statut": "Maquette IA non validée",
-  "alt": "Équipements industriels",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V15.svg",
+  "titre": "V15 · Avant remise en service : une décision organisée",
+  "legende": "Traiter les interfaces humaines avant le redémarrage.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V15",
+  "alt": "Avant remise en service : une décision organisée"
  },
  {
-  "fichier": "13_schema.png",
-  "titre": "Schéma de principe",
-  "statut": "Maquette IA non validée — À VÉRIFIER avant usage",
-  "alt": "Schéma de principe",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V16.svg",
+  "titre": "V16 · Repérage incertain : arrêter et résoudre",
+  "legende": "Refuser une identification fondée sur une supposition.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V16",
+  "alt": "Repérage incertain : arrêter et résoudre"
  },
  {
-  "fichier": "14_situations_risque.png",
-  "titre": "Situations à risques",
-  "statut": "Maquette IA non validée",
-  "alt": "Situations à risques",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V17.svg",
+  "titre": "V17 · Séparer illustration et preuve",
+  "legende": "Interdire l’usage d’une image comme justification d’une consignation.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V17",
+  "alt": "Séparer illustration et preuve"
  },
  {
-  "fichier": "15_remise_service.png",
-  "titre": "Remise en service",
-  "statut": "Maquette IA non validée — À VÉRIFIER avant usage",
-  "alt": "Remise en service",
-  "categorie": "Maquettes (extraits)"
+  "fichier": "../../mediatheque/svg/V18.svg",
+  "titre": "V18 · Cadrer l’opération avant de commencer",
+  "legende": "Structurer l’analyse préalable sans produire un permis de travail fictif.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V18",
+  "alt": "Cadrer l’opération avant de commencer"
  },
  {
-  "fichier": "hd-01_armoire_de_commande_industrielle.png",
-  "titre": "Armoire de commande industrielle (illustration HD)",
-  "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Armoire de commande industrielle",
-  "categorie": "Illustrations HD"
+  "fichier": "../../mediatheque/svg/V19.svg",
+  "titre": "V19 · Moteur triphasé : séparation et masse",
+  "legende": "Lire les trois phases, la séparation multipolaire et la liaison à la masse.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V19",
+  "alt": "Moteur triphasé : séparation et masse"
  },
  {
-  "fichier": "hd-02_convoyeur_et_motoreducteur.png",
-  "titre": "Convoyeur et motoréducteur (illustration HD)",
-  "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Convoyeur et motoréducteur",
-  "categorie": "Illustrations HD"
+  "fichier": "../../mediatheque/svg/V20.svg",
+  "titre": "V20 · Deux alimentations dans une armoire",
+  "legende": "Détecter qu’une même enveloppe peut contenir des circuits d’origines différentes.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V20",
+  "alt": "Deux alimentations dans une armoire"
  },
  {
-  "fichier": "hd-03_consignation_de_depart_moteur.png",
-  "titre": "Consignation de départ moteur (illustration HD)",
-  "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Consignation de départ moteur",
-  "categorie": "Illustrations HD"
+  "fichier": "../../mediatheque/svg/V21.svg",
+  "titre": "V21 · Défaut d’isolement : danger de contact indirect",
+  "legende": "Comprendre pourquoi une masse peut devenir dangereuse à la suite d’un défaut.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V21",
+  "alt": "Défaut d’isolement : danger de contact indirect"
  },
  {
-  "fichier": "hd-04_verification_absence_de_tension.png",
-  "titre": "Vérification d’absence de tension (illustration HD)",
-  "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Vérification d’absence de tension",
-  "categorie": "Illustrations HD"
+  "fichier": "../../mediatheque/svg/V22.svg",
+  "titre": "V22 · Contact direct et contact indirect",
+  "legende": "Distinguer les mécanismes pour choisir les mesures de prévention.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V22",
+  "alt": "Contact direct et contact indirect"
  },
  {
-  "fichier": "hd-05_zone_de_travaux_b2v.png",
-  "titre": "Zone de travaux B2V (illustration HD)",
-  "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Zone de travaux B2V",
-  "categorie": "Illustrations HD"
+  "fichier": "../../mediatheque/svg/V23.svg",
+  "titre": "V23 · Machine : croiser les périmètres d’énergie",
+  "legende": "Situer les interfaces d’énergie sur une représentation de machine.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V23",
+  "alt": "Machine : croiser les périmètres d’énergie"
  },
  {
-  "fichier": "hd-06_intervention_br.png",
-  "titre": "Intervention BR (illustration HD)",
-  "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Intervention BR",
-  "categorie": "Illustrations HD"
+  "fichier": "../../mediatheque/svg/V24.svg",
+  "titre": "V24 · VAT : contrôler aussi le vérificateur",
+  "legende": "Associer au contrôle d’absence les contrôles de fonctionnement requis par la notice.",
+  "categorie": "Schémas vectoriels",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche V24",
+  "alt": "VAT : contrôler aussi le vérificateur"
  },
  {
-  "fichier": "hd-07_prevention_arc_electrique.png",
-  "titre": "Prévention de l’arc électrique (illustration HD)",
-  "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Prévention de l’arc électrique",
-  "categorie": "Illustrations HD"
+  "fichier": "../../mediatheque/photos/P01.png",
+  "titre": "P01 · Convoyeur et armoire fermée",
+  "legende": "Contexte de ligne agroalimentaire fictive pour rechercher les données absentes de l’image.",
+  "categorie": "Illustrations de contexte",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche P01",
+  "alt": "Convoyeur et armoire fermée"
  },
  {
-  "fichier": "hd-08_reprise_de_production.png",
-  "titre": "Reprise de production (illustration HD)",
-  "statut": "Illustration schématique de contexte — ne pas utiliser comme procédure",
-  "alt": "Reprise de production",
-  "categorie": "Illustrations HD"
+  "fichier": "../../mediatheque/photos/P02.png",
+  "titre": "P02 · Pompe et moteur — illustration corrigée",
+  "legende": "Contexte fictif pour discuter du périmètre électrique, mécanique et fluidique avant maintenance.",
+  "categorie": "Illustrations de contexte",
+  "statut": "Support pédagogique non validé par un relecteur indépendant — voir la fiche P02",
+  "alt": "Pompe et moteur — illustration corrigée"
  }
 ]

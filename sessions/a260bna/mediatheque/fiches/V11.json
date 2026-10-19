@@ -1,0 +1,26 @@
+{
+  "id": "V11",
+  "title": "Nettoyage et électricité : coordonner",
+  "category": "Schéma vectoriel",
+  "file": "svg/V11.svg",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "objective": "Repérer l’humidité et la coactivité comme facteurs de risque.",
+  "checks": [
+    "Aucun IP de lavage ni compatibilité chimique déduits."
+  ],
+  "limits": "Règles d’hygiène, zonage et protocole de nettoyage Panzani non obtenus.",
+  "questions": [
+    "Qui doit confirmer la fin du lavage et les conditions d’accès ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "c157211d453c77f445df23cb48150d584456e35cb1da5b6c65ca10832e287689"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "V08",
+  "title": "Convoyeur : raisonner sur plusieurs énergies",
+  "category": "Schéma vectoriel",
+  "file": "svg/V08.svg",
+  "refs": [
+    "S04"
+  ],
+  "objective": "Étendre l’analyse au-delà du moteur.",
+  "checks": [
+    "Énergies présentées comme hypothèses à rechercher."
+  ],
+  "limits": "Purges, blocages et essais de sécurité non définis : ingénierie et procédure du site requises.",
+  "questions": [
+    "Un arrêt électrique suffit-il si un vérin peut encore déplacer un guide ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "5be2710708f01c166dd5f0a9a203d584c3d771b04dbe9ba71f3989d22d85ef3a"
+}

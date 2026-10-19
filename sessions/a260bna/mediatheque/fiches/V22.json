@@ -1,0 +1,26 @@
+{
+  "id": "V22",
+  "title": "Contact direct et contact indirect",
+  "category": "Schéma vectoriel",
+  "file": "svg/V22.svg",
+  "refs": [
+    "S01",
+    "S09"
+  ],
+  "objective": "Distinguer les mécanismes pour choisir les mesures de prévention.",
+  "checks": [
+    "Définitions recoupées sur INRS ; aucune personne en contact représentée."
+  ],
+  "limits": "Ce visuel n’établit pas qu’une protection particulière est suffisante ; aucune valeur physiologique ni temps de survie fournis.",
+  "questions": [
+    "Quelle différence de prévention faut-il analyser entre les deux situations ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "3b68aebb1c31510d46968e204e817cc878a1cc1b2cbde496211358e35b02b67d"
+}

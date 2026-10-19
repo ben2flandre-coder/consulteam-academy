@@ -1,0 +1,26 @@
+{
+  "id": "V07",
+  "title": "Variateur : anticiper l’énergie résiduelle",
+  "category": "Schéma vectoriel",
+  "file": "svg/V07.svg",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "objective": "Identifier une énergie stockée après séparation de la source.",
+  "checks": [
+    "Aucun délai inventé ; pas de valeur de tension du bus."
+  ],
+  "limits": "Aucune notice constructeur de variateur du site consultée.",
+  "questions": [
+    "Quelle référence documentaire faut-il obtenir avant de préparer l’opération ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "1eee71a424fe8e8c68e6c587f7e3319268d6c17800e032cf9c1d768bd217d423"
+}

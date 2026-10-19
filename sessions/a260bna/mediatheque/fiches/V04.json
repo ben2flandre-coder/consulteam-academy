@@ -1,0 +1,26 @@
+{
+  "id": "V04",
+  "title": "Un cadenas ne prouve pas toute la consignation",
+  "category": "Schéma vectoriel",
+  "file": "svg/V04.svg",
+  "refs": [
+    "S01",
+    "S04"
+  ],
+  "objective": "Distinguer objet visible et état de sécurité démontré.",
+  "checks": [
+    "Aucun type de cadenas présenté comme universel."
+  ],
+  "limits": "Aucun modèle, repère ou verrouillage réel du site vérifié.",
+  "questions": [
+    "Peut-on ouvrir une boîte à bornes sur la seule présence d’un cadenas ?"
+  ],
+  "status": "Principes recoupés sur sources accessibles ; validation opérationnelle non réalisée",
+  "origin": "Création originale SVG déterministe ; aucun plan du site utilisé",
+  "version": "1.0",
+  "date": "2026-10-19",
+  "reviewer": "Relecture par l’assistant ; aucun relecteur technique indépendant ni visa employeur.",
+  "hypothesis": "Installation industrielle agroalimentaire fictive. Aucun équipement Panzani relevé.",
+  "prerequisites": "Personnel compétent ; titre, mission, analyse de risques, procédure locale et notices adaptés avant tout acte réel.",
+  "sha256": "1bed6ac71ed515dd3ffa73ff92aac4baf817111a737d4b356474e664ca01e317"
+}

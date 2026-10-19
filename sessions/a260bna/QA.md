@@ -27,3 +27,9 @@ Limite : le chargement du manifeste de la galerie échoue en ouverture directe d
 
 ## Confirmations (19/10/2026, suite)
 - Parcours et évaluation recalés sur l'arrêté du 9 juillet 2013 (zone jusqu'à 3 m ; BT : voisinage renforcé 0,30 m) et sur la page INRS « Opérations sur les installations électriques » (BR consigne pour son compte). Évaluation : jeu de réponses attendues 37/37 avec ordre mélangé.
+
+## Contrôles du 19 octobre (accès, agrandissement, évaluation)
+- Espace formateur : 34 pages chiffrées (AES-GCM, clé dérivée de l’e-mail et du code par PBKDF2). Mauvais code refusé ; bon code accepté ; navigation entre pages formateur sans ressaisie dans la session. Protection côté navigateur : elle écarte les lecteurs occasionnels, elle ne remplace pas un serveur authentifié.
+- Agrandissement : galerie, médiathèque et cours (clic, flèches, Échap) testés.
+- Mentions « non validé » : retirées des pages apprenants (galerie, cours, SVG, médiathèque) ; le registre des statuts est dans l’espace formateur.
+- Évaluation : inscription obligatoire ; correction contrôlée (37/37 si tout juste, 36/37 avec une erreur, 0/37 sans réponse) ; position de la bonne réponse répartie (15/12/9/4 sur les rangs 1 à 4) ; résultat envoyé par e-mail prérempli ou téléchargé, point de collecte automatique possible (`assets/config.json`).

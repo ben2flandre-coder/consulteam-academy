@@ -63,3 +63,6 @@ Confirmé par source primaire ou institutionnelle lue :
 - Recyclage (INRS, journée technique « Habilitation électrique des travailleurs ») : périodicité à définir par l'employeur selon les opérations ; 3 ans recommandés.
 Restent non confirmés (texte de la NF C 18-510 non lu) : les noms exacts DLVS/DLVR/DLI en BT dans la norme ; qui peut assister un BR (effectif, titre de l'assistant) ; la FAQ INRS publie des intitulés sans réponses lisibles.
 Lien consultable : https://ben2flandre-coder.github.io/consulteam-academy/sessions/a260bna/
+
+## 19 octobre : visibilité des mentions de relecture
+Les supports restent non validés par un relecteur indépendant. Cette mention n’est plus affichée aux apprenants ; elle figure dans l’espace formateur (registre des médias, fiches, rapport). Les bandeaux inclus dans les 24 SVG ont été retirés des fichiers ; les versions d’origine sont dans l’historique git.

@@ -12,7 +12,7 @@ Support écrit pour cette session : contenu, évaluation, galerie et espace form
 
 ## Limites déclarées
 - Le texte consolidé de la NF C 18-510 et ses amendements n'a pas été fourni à cette production. Le contenu repose sur les connaissances générales de la norme et les pages INRS ci-dessus ; il n'atteste aucune conformité complète.
-- À confirmer avec la norme ou le titre du participant : (1) qui peut consigner pour une intervention BR ; (2) la périodicité de recyclage retenue par l'employeur (« trois ans » présenté comme valeur usuelle recommandée) ; (3) distances de voisinage HT ; (4) vocabulaire exact des documents de consignation du site (attestation, avis de fin de travail).
+- À confirmer avec la norme ou le titre du participant : (1) [levé le 19/10, voir ci-dessous] ; (2) la périodicité de recyclage retenue par l'employeur (« trois ans » présenté comme valeur usuelle recommandée) ; (3) distances de voisinage HT ; (4) vocabulaire exact des documents de consignation du site (attestation, avis de fin de travail).
 - Les scénarios sont génériques ; les prescriptions et installations du site client ne sont pas connues.
 - Le seuil de 70 % est un repère pédagogique interne, pas un avis favorable.
 
@@ -30,3 +30,11 @@ Dépôt de 15 extraits et de 2 planches d'ensemble fournis par le formateur (gé
 - Textes générés dans l'image (vocabulaire, « classe 0 / 500 V », « outils 1000 V ») à relire un par un.
 - Rôles : la planche attribue à BR « consigne pour son intervention » et à BC « autorise les travaux » ; ces attributions sont à confirmer (voir limite 1 ci-dessus).
 Chaque image porte le bandeau « non validée » dans la galerie.
+
+
+## Vérification BR / BC du 19/10/2026 (OPPBTP, INRS ED 6127)
+Sources lues :
+- [INRS ED 6127 — L'habilitation électrique, démarche de prévention (déc. 2020)](https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6127.pdf) : BR = interventions générales d'entretien et de dépannage (recherche de panne, remplacement, mise en service partielle et temporaire, connexion/déconnexion) ; connexion/déconnexion en présence de tension : maxi 500 V, 63 A alternatif, hors charge ; formation BR incluant la consignation pour son propre compte ; BC = consignation ; habilitation + désignation par l'employeur ; attestation de consignation (une ou deux étapes), avis de fin de travail, autorisation de travail, instructions de sécurité ; recyclage recommandé 3 ans (§ 6.2.1), réduit si pratique occasionnelle.
+- [OPPBTP — Doit-on être formé pour faire une consignation sur une armoire électrique ?](https://www.preventionbtp.fr/ressources/questions/doit-on-etre-forme-pour-faire-une-consignation-sur-une-armoire-electrique_yDpmVLoTfTemKCej8uvWk7) : dans le cadre d'un travail, consignation par un chargé de consignation BC ou HC ; dans le cadre d'une intervention, par un chargé d'intervention générale BR.
+Corrections apportées : mon premier jet laissait entendre que le BR ne consigne pas seul ; c'est inexact pour son propre ouvrage. Parcours, évaluation (+2 questions) et recyclage (3 ans) corrigés.
+Non résolu : la page OPPBTP « Qui doit faire la consignation » est bloquée à la lecture automatique (robots) ; le site UTE et le texte de la NF C 18-510 sont payants/non lus ; les distances de voisinage BT (0,30 m / 3 m) n'figurent pas dans l'ED 6127 (renvoi au § 8.1 de la norme) ; la liste détaillée des étapes (pré-identification, séparation, condamnation, identification, VAT, mise à la terre et en court-circuit) n'est pas détaillée dans l'ED 6127 et reste fondée sur la pratique de la norme. À confirmer sur l'exemplaire de la norme de Benoît.

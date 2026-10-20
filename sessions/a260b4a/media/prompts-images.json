@@ -1,0 +1,58 @@
+[
+  {
+    "id": "E01",
+    "slug": "cuisine",
+    "tool": "Imagegen intégré",
+    "prompt": "Use case: photorealistic-natural. One single high resolution landscape editorial photograph-style synthetic illustration for French electrical safety training of non-electricians. Fictional generic setting, not a real place. No people, no hands, no tools, no electrical intervention in progress, no open electrical panels, no exposed conductors, no logos, no brands, no readable text, no labels, no displays or instrument readings. Natural realistic lighting and textures, at least 1920 pixels wide, single image, no collage, no panels. Scene: Professional restaurant kitchen, stainless steel worktops, a commercial oven and a dishwashing area, wall sockets intact and closed, floor dry, cables neatly out of the way. A scene to discuss the electrical risks of a kitchen (water, appliances) without showing any fault.",
+    "contrôle": "Claude : vérifier l’absence de texte, de marque, de conducteur nu, de geste dangereux ; refuser tout visuel qui montre un défaut non voulu ou une intervention ; noter la décision dans le registre."
+  },
+  {
+    "id": "E02",
+    "slug": "quai",
+    "tool": "Imagegen intégré",
+    "prompt": "Use case: photorealistic-natural. One single high resolution landscape editorial photograph-style synthetic illustration for French electrical safety training of non-electricians. Fictional generic setting, not a real place. No people, no hands, no tools, no electrical intervention in progress, no open electrical panels, no exposed conductors, no logos, no brands, no readable text, no labels, no displays or instrument readings. Natural realistic lighting and textures, at least 1920 pixels wide, single image, no collage, no panels. Scene: A small marina pontoon in the Mediterranean in daylight, a closed generic shore-power pedestal on the quay with its door shut, cables stowed on a reel, dry quay, a few moored boats in the background. A scene to discuss quay power supply and humid, salty environments.",
+    "contrôle": "Claude : vérifier l’absence de texte, de marque, de conducteur nu, de geste dangereux ; refuser tout visuel qui montre un défaut non voulu ou une intervention ; noter la décision dans le registre."
+  },
+  {
+    "id": "E03",
+    "slug": "local-technique",
+    "tool": "Imagegen intégré",
+    "prompt": "Use case: photorealistic-natural. One single high resolution landscape editorial photograph-style synthetic illustration for French electrical safety training of non-electricians. Fictional generic setting, not a real place. No people, no hands, no tools, no electrical intervention in progress, no open electrical panels, no exposed conductors, no logos, no brands, no readable text, no labels, no displays or instrument readings. Natural realistic lighting and textures, at least 1920 pixels wide, single image, no collage, no panels. Scene: A technical room with a closed grey electrical cabinet on the wall, red-and-white barrier tape across the floor in front of it and a blank pancarte hanging from the tape (no writing), clean dry floor. A scene about marking a zone (balisage) and not touching.",
+    "contrôle": "Claude : vérifier l’absence de texte, de marque, de conducteur nu, de geste dangereux ; refuser tout visuel qui montre un défaut non voulu ou une intervention ; noter la décision dans le registre."
+  },
+  {
+    "id": "E04",
+    "slug": "anomalie-rallonge",
+    "tool": "Imagegen intégré",
+    "prompt": "Use case: photorealistic-natural. One single high resolution landscape editorial photograph-style synthetic illustration for French electrical safety training of non-electricians. Fictional generic setting, not a real place. No people, no hands, no tools, no electrical intervention in progress, no open electrical panels, no exposed conductors, no logos, no brands, no readable text, no labels, no displays or instrument readings. Natural realistic lighting and textures, at least 1920 pixels wide, single image, no collage, no panels. Scene: A damp stone floor near a washing area, an extension cord with a multi-socket block lying on the wet ground with visible water puddle nearby. No person. A hazard-spotting scene: the viewer must identify what is wrong. Keep the cable intact (no bare conductors visible).",
+    "contrôle": "Claude : vérifier l’absence de texte, de marque, de conducteur nu, de geste dangereux ; refuser tout visuel qui montre un défaut non voulu ou une intervention ; noter la décision dans le registre."
+  },
+  {
+    "id": "E05",
+    "slug": "luminaire",
+    "tool": "Imagegen intégré",
+    "prompt": "Use case: photorealistic-natural. One single high resolution landscape editorial photograph-style synthetic illustration for French electrical safety training of non-electricians. Fictional generic setting, not a real place. No people, no hands, no tools, no electrical intervention in progress, no open electrical panels, no exposed conductors, no logos, no brands, no readable text, no labels, no displays or instrument readings. Natural realistic lighting and textures, at least 1920 pixels wide, single image, no collage, no panels. Scene: A hotel corridor ceiling with a flush ceiling light switched off and a closed folding stepladder standing against the wall, a closed distribution board door in the wall. No person, no intervention. A scene to discuss replacing a lamp (BS) and the steps before climbing.",
+    "contrôle": "Claude : vérifier l’absence de texte, de marque, de conducteur nu, de geste dangereux ; refuser tout visuel qui montre un défaut non voulu ou une intervention ; noter la décision dans le registre."
+  },
+  {
+    "id": "E06",
+    "slug": "humide",
+    "tool": "Imagegen intégré",
+    "prompt": "Use case: photorealistic-natural. One single high resolution landscape editorial photograph-style synthetic illustration for French electrical safety training of non-electricians. Fictional generic setting, not a real place. No people, no hands, no tools, no electrical intervention in progress, no open electrical panels, no exposed conductors, no logos, no brands, no readable text, no labels, no displays or instrument readings. Natural realistic lighting and textures, at least 1920 pixels wide, single image, no collage, no panels. Scene: A wellness-centre style wet area: tiled floor with water, a waterproof wall socket with its flap closed, a light fitting with sealed cover. No person, no bare wires. A scene about humidity as an aggravating factor.",
+    "contrôle": "Claude : vérifier l’absence de texte, de marque, de conducteur nu, de geste dangereux ; refuser tout visuel qui montre un défaut non voulu ou une intervention ; noter la décision dans le registre."
+  },
+  {
+    "id": "PN-BS",
+    "slug": "pn-bs",
+    "tool": "Imagegen intégré",
+    "prompt": "Create one clean flat-design educational poster in French, landscape 1920x1080, Consul Team style (dark navy #102c53 background bands, yellow #f6b63d accents, white and light blue cards), simple icons, large readable sans-serif text. Reproduce the following text EXACTLY, character for character, with accents, adding no other text, numbers, norms, logos or brands:\nTITRE : INTERVENTION ÉLÉMENTAIRE BS\nSous-titre : circuits terminaux, 400 V et 32 A au plus\nÉTAPES (numérotées 1 à 6) :\n1 Analyser : mon titre couvre-t-il cette opération ?\n2 Séparer : ouvrir la coupure du circuit\n3 Condamner : cadenas et pancarte\n4 Vérifier l’absence de tension\n5 Remplacer ou raccorder à l’identique\n6 Terminer : retirer ma condamnation, remettre sous tension selon la procédure\nBANDEAU BAS : En cas de doute, je m’arrête et je demande.",
+    "contrôle": "Claude : relire chaque mot contre le texte source, corriger ou refuser ; ne diffuser qu’après relecture ; aucun chiffre ni symbole ajouté par l’outil."
+  },
+  {
+    "id": "PN-BE",
+    "slug": "pn-be",
+    "tool": "Imagegen intégré",
+    "prompt": "Create one clean flat-design educational poster in French, landscape 1920x1080, Consul Team style (dark navy #102c53 background bands, yellow #f6b63d accents, white and light blue cards), simple icons, large readable sans-serif text. Reproduce the following text EXACTLY, character for character, with accents, adding no other text, numbers, norms, logos or brands:\nTITRE : MANŒUVRE BE\nColonne gauche, titre « Je fais » : manœuvrer selon l’instruction de sécurité ; réarmer un disjoncteur ou un relais thermique si l’instruction le prévoit ; couper en cas d’urgence.\nColonne droite, titre « Je ne fais pas » : dépanner ; ouvrir un tableau ; insister si ça redéclenche ; travailler sous tension.\nBANDEAU BAS : Si ça redéclenche, je signale.",
+    "contrôle": "Claude : relire chaque mot contre le texte source, corriger ou refuser ; ne diffuser qu’après relecture ; aucun chiffre ni symbole ajouté par l’outil."
+  }
+]

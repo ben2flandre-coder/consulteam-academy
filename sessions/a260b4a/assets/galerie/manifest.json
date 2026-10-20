@@ -1,0 +1,37 @@
+[
+ {
+  "fichier": "svg/V22.svg",
+  "titre": "V22 · Contact direct et contact indirect",
+  "legende": "Deux mécanismes de choc électrique."
+ },
+ {
+  "fichier": "svg/V21.svg",
+  "titre": "V21 · Défaut d’isolement : danger de contact indirect",
+  "legende": "Schéma de défaut, sans simulation de geste."
+ },
+ {
+  "fichier": "svg/V09.svg",
+  "titre": "V09 · Voisinage : supprimer l’exposition d’abord",
+  "legende": "Sans échelle : aucune distance déduite de l’image."
+ },
+ {
+  "fichier": "svg/V10.svg",
+  "titre": "V10 · EPI : partir de l’analyse de l’opération",
+  "legende": "Le symbole ne suffit pas à choisir les protections."
+ },
+ {
+  "fichier": "svg/V05.svg",
+  "titre": "V05 · VAT et mesurage : objectifs distincts",
+  "legende": "Une indication chiffrée seule ne prouve pas l’absence de tension."
+ },
+ {
+  "fichier": "svg/V24.svg",
+  "titre": "V24 · VAT : contrôler aussi le vérificateur",
+  "legende": "Avant et après la vérification."
+ },
+ {
+  "fichier": "svg/V02.svg",
+  "titre": "V02 · Cartographier toutes les alimentations",
+  "legende": "Les flèches représentent des dépendances, pas des conducteurs."
+ }
+]

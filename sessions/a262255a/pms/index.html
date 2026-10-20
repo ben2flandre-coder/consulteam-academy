@@ -5057,7 +5057,7 @@ a.link-ref,a.link-ref:visited{font-weight:800;color:var(--blue-dk);text-decorati
 <button class="fab-sm fab-home" onclick="nav('accueil')" title="Accueil">⌂</button>
 <button class="fab-sm" onclick="scrollDown()" title="Bas de page">↓</button>
 </div>
-<script>const FORMATEURS_EMAILS = ["rmbd.riskmanagement@gmail.com","bdeflandre@rmbd-media.com"];
+<script>const FORMATEURS_EMAILS = ["rmbd.riskmanagement@gmail.com"];
 const KEY = {
   q1:{type:"single",correct:["B"],points:1,corr:"B",
     just:"Le PMS est un outil opérationnel de maîtrise sanitaire (BPH, HACCP, traçabilité), pas un simple classeur administratif."},
@@ -5081,7 +5081,7 @@ const KEY = {
     just:"L'exploitant reste responsable : conformité fournisseur, allergènes, traçabilité."},
   q11:{type:"single",correct:["B"],points:1,corr:"B",
     just:"PMS non déployé = non-conformité de pilotage : maîtrise jugée sur pratiques réelles."},
-  q12:{type:"free",points:0,correctText:"Maintenir la revue périodique : analyser NC, autocontrôles, audits ; mettre à jour selon changements (carte, équipe, matériel, organisation).",
+  q12:{type:"free",points:0,correctText:"Maintenir la revue périodique : analyser NC, autocontrôles, audits ; mettre à jour selon changements (carte, équipe, matériel, organisation) ; démarche d'amélioration continue avec actions correctives et préventives.",
     just:"Attendus : amélioration continue + indicateurs + mise à jour. Absence d'incident ≠ preuve durable."},
   q13:{type:"multi",correct:["B","C","D"],points:1,corr:"B, C et D",
     just:"Plan documenté/suivi. Prestataire absent = NC. Responsabilité finale = exploitant. Pièges saturés = inefficaces."}
@@ -5106,6 +5106,27 @@ const RUBRIC = {
   ]}
 };
 
+/* Mélange de la position des réponses (ordre aléatoire à chaque ouverture) ; les lettres sont renumérotées et la clé de correction suit. */
+(function(){
+  function joinL(a){return a.length<2?a.join(''):a.slice(0,-1).join(', ')+' et '+a[a.length-1]}
+  Object.keys(KEY).forEach(function(qid){
+    var k=KEY[qid]; if(k.type!=='single'&&k.type!=='multi') return;
+    var first=document.querySelector('#page-questionnaire input[name="'+qid+'"]'); if(!first) return;
+    var ul=first.closest('ul'); if(!ul) return;
+    var lis=[].slice.call(ul.children).filter(function(x){return x.tagName==='LI'});
+    for(var i=lis.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=lis[i];lis[i]=lis[j];lis[j]=t}
+    var map={};
+    lis.forEach(function(li,idx){
+      var inp=li.querySelector('input'),old=inp.value,nl=String.fromCharCode(65+idx);map[old]=nl;inp.value=nl;
+      var lab=li.querySelector('label');
+      var nodes=[].slice.call(lab.childNodes).filter(function(n){return n.nodeType===3});
+      var tn=nodes[nodes.length-1]; if(tn) tn.nodeValue=tn.nodeValue.replace(/^(\s*)[A-Z]\.\s/,'$1'+nl+'. ');
+      ul.appendChild(li);
+    });
+    k.correct=k.correct.map(function(c){return map[c]}).sort();
+    k.corr=joinL(k.correct);
+  });
+})();
 let MATCH_MODE = "pro";
 const AUTO_GRADED = ["q1","q3","q4","q5","q6","q8","q9","q10","q11","q13"];
 const RUBRIC_GRADED = ["q2","q7","q12"];

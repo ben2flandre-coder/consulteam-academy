@@ -1,6 +1,10 @@
 # A262255A — sources et limites (édition du 20 octobre 2026)
 
-- **Plateforme PMS** : support autonome conçu par B. Deflandre (RMBD), repris tel quel du dépôt de travail `pms-virgin` ; seul l'emplacement du logo a été renseigné.
-- **Document unique** : trame et cotation inspirées des contenus Prévention 360 et du livret PSE (démarche DUERP). Références : Code du travail L. 4121-1 à L. 4121-3-1, R. 4121-1 à R. 4121-4 ; INRS, démarche d'évaluation des risques. Les dispositions sont à vérifier sur les textes en vigueur avant toute utilisation contractuelle.
+- **Plateforme PMS** : support autonome conçu par B. Deflandre (RMBD), repris du dépôt de travail `pms-virgin`. Adaptations : logo Consulteam, destinataire des résultats (rmbd.riskmanagement@gmail.com), correction d’un mot-clé de la question 12, ordre des réponses mélangé.
+- **Document unique** : trame et cotation inspirées des contenus Prévention 360 et du livret PSE (démarche DUERP). Références : Code du travail L. 4121-1 à L. 4121-3-1, R. 4121-1 à R. 4121-4. À vérifier sur les textes en vigueur.
 - **Gestes qui sauvent** : rappel des principes de la démarche du sauveteur secouriste du travail (INRS). Aide-mémoire : ni la formation pratique ni le référentiel SST en vigueur ne sont remplacés.
-- Aucune donnée nominative ni information propre à l'établissement n'est publiée.
+- **Schémas S01 à S16** : créations originales (SVG) fondées sur les repères du paquet hygiène (règlements (CE) 852/2004 et 178/2002), l’arrêté du 21 décembre 2009 et les principes du Codex Alimentarius.
+- **Évaluations** : questions originales, avec explication de chaque réponse ; seuil pédagogique de 70 %, sans valeur de certification.
+- **Vidéothèque** : aucune vidéo hébergée ; liens vers des sites officiels (racines uniquement).
+- **Scènes réalistes** : illustrations générées, sans texte ni personne identifiable, ajoutées via assets/scenes/manifest.json.
+- Aucune donnée nominative ni information propre à l’établissement n’est publiée.

@@ -1,1 +1,74 @@
-[]
+[
+ {
+  "fichier": "R01.webp",
+  "titre": "R01 · Marche en avant en cuisine",
+  "legende": "À observer : le flux des produits de la réception vers la préparation, le passage dégagé au sol, le poste de découpe distinct.",
+  "pole": "hy"
+ },
+ {
+  "fichier": "R02.webp",
+  "titre": "R02 · Réception : contrôle de température",
+  "legende": "À observer : la sonde, les gants, l’emballage. Que faut-il encore enregistrer (lot, DLC, température) ?",
+  "pole": "hy"
+ },
+ {
+  "fichier": "R03.webp",
+  "titre": "R03 · Chambre froide : rangement",
+  "legende": "À observer : contenants filmés, produits crus en bas, thermomètre visible. Qu’est-ce qui manque encore (étiquettes, dates) ?",
+  "pole": "hy"
+ },
+ {
+  "fichier": "R04.webp",
+  "titre": "R04 · Lavage des mains au lavabo dédié",
+  "legende": "À observer : savon, essuie-mains à usage unique. Combien de temps frotte-t-on, et quelles zones oublie-t-on souvent ?",
+  "pole": "hy"
+ },
+ {
+  "fichier": "R05.webp",
+  "titre": "R05 · Nettoyage-désinfection du plan de travail",
+  "legende": "À observer : produit, gants, lavette propre ; planches de couleurs à l’arrière-plan. Dans quel ordre agit-on (nettoyer, rincer, désinfecter) ?",
+  "pole": "hy"
+ },
+ {
+  "fichier": "R06.webp",
+  "titre": "R06 · Sol mouillé à la plonge",
+  "legende": "À observer : panneau de signalisation, bottes, tuyau. Quelle mesure supprimerait le danger plutôt que de le signaler ?",
+  "pole": "ss"
+ },
+ {
+  "fichier": "R07.webp",
+  "titre": "R07 · Friteuse et moyens de lutte contre l’incendie",
+  "legende": "À observer : extincteur et couverture anti-feu à portée. Que fait-on en cas de feu d’huile, et que ne fait-on jamais ?",
+  "pole": "ss"
+ },
+ {
+  "fichier": "R08.webp",
+  "titre": "R08 · Étiquetage des préparations",
+  "legende": "À observer : étiquettes vierges. Quelles mentions faut-il y porter (nom, date, DLC, lot) pour la traçabilité ?",
+  "pole": "pm"
+ },
+ {
+  "fichier": "R09.webp",
+  "titre": "R09 · Service en salle",
+  "legende": "À observer : plateau de verres, tapis de sol, circulation. Quels risques (chute, coupure, TMS) et quelles mesures ?",
+  "pole": "du"
+ },
+ {
+  "fichier": "R10.webp",
+  "titre": "R10 · Armoire de secours et défibrillateur",
+  "legende": "À observer : signalisation du défibrillateur, rangement. Le contenu de la trousse se définit avec le médecin du travail : l’image n’en est pas la liste.",
+  "pole": "ss"
+ },
+ {
+  "fichier": "R11.webp",
+  "titre": "R11 · Plaie légère : pansement",
+  "legende": "À observer : trousse, compresse, pansement. Après le geste, que faut-il écrire et analyser (registre, causes) ?",
+  "pole": "ss"
+ },
+ {
+  "fichier": "R12.webp",
+  "titre": "R12 · Température à cœur d’une cuisson",
+  "legende": "À observer : la sonde plantée au cœur du produit. Quelle limite critique, quelle action corrective, quel enregistrement ?",
+  "pole": "pm"
+ }
+]

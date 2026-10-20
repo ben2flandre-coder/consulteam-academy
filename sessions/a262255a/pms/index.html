@@ -1107,28 +1107,30 @@ a.link-ref,a.link-ref:visited{font-weight:800;color:var(--blue-dk);text-decorati
 .fab-sm:hover{opacity:1}
 
 </style>
+<style id="ct-charte">
+:root{--blue:#0b68ae;--blue-dk:#102c53;--blue-soft:#e3effa;--blue-soft-2:#f0f6fc;--red:#c0392b;--bg:#f3f5f8}
+html body .ban-bar{background:#0a2142!important}
+html body .app-header-wrap{background:#102c53!important;backdrop-filter:none!important;box-shadow:none!important;border-bottom:6px solid transparent!important;border-image:repeating-linear-gradient(135deg,#f6b63d 0 14px,#102c53 14px 28px) 6!important}
+.ct-in{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;max-width:var(--max);margin:0 auto;padding:10px 22px}
+.ct-logo img{display:block;height:38px;width:auto}.ct-logo:hover{text-decoration:none}
+.ct-title small{display:block;color:#f6b63d;font:600 13px Bahnschrift,"Segoe UI Semibold",system-ui,sans-serif}.ct-h1{color:#fff;font:700 26px/1.1 Bahnschrift,"DIN Alternate","Segoe UI Semibold",system-ui,sans-serif;margin-top:2px}
+.ct-links{display:flex;flex-wrap:wrap;gap:2px 6px;margin-left:auto}.ct-links a{color:#d6e8fa;padding:6px 10px;border-radius:6px;font-size:14px;text-decoration:none}.ct-links a:hover{background:#ffffff1f;color:#fff;text-decoration:none}.ct-links a.ct-home{background:#f6b63d;color:#102c53;font-weight:700}
+html body #projToggle{background:#ffffff1a;color:#fff;border-color:#ffffff40;padding:7px 14px}
+html body #projToggle:hover{background:#ffffff33}
+h1,h2,h3,.page-header h2,.section-header h2{font-family:Bahnschrift,"DIN Alternate","Segoe UI Semibold",system-ui,sans-serif}
+@media(max-width:1000px){.ct-links a:not(.ct-home){display:none}.ct-links{margin-left:0}}
+@media(max-width:560px){.ct-title small{display:none}.ct-h1{font-size:20px}.ct-in{padding:8px 14px}}
+</style>
 </head>
 <body>
 <div class="app-shell">
 <div class="ban-bar">
 <span>📴 MODE OFFLINE</span><div class="ban-dot"></div>
-<span>Plateforme PMS 3.0 · RMBD Risk Management</span><div class="ban-dot"></div>
-<span>Benoît Deflandre</span>
+<span>Plateforme PMS 3.0 · Conception : Benoît Deflandre · RMBD Risk Management</span><div class="ban-dot"></div>
+<span>Consulteam Groupe · A262255A</span>
 </div>
 <div class="app-header-wrap">
-<header>
-<div class="header-content">
-<div class="logos-header">
-<!-- EMPLACEMENT LOGO : remplacer cet encart par <img class="logo-slot" src="..." alt="..."/> -->
-<a href="../index.html" class="logo-slot" style="background:#102c53;border:0;padding:6px 14px" aria-label="Retour à l’accueil de la session"><img src="../assets/img/logo-consulteam-groupe.png" alt="Consulteam Groupe" height="30" style="height:30px;width:auto;display:block"></a>
-</div>
-<div class="title-block">
-<h1>Plateforme PMS</h1>
-<p class="subtitle">Plan de Maîtrise Sanitaire · HACCP · BPH · 2026</p>
-</div>
-<button aria-pressed="false" class="btn btn-secondary projection-toggle" id="projToggle" type="button">Mode projection</button>
-</div>
-</header>
+<!--CT-HEADER--><header class="ct-head"><div class="ct-in"><a class="ct-logo" href="../index.html" aria-label="Retour à l’accueil de la session"><img src="../assets/img/logo-consulteam-groupe.png" alt="Consulteam Groupe" height="38"></a><div class="ct-title"><small>Hygiène et sécurité en restauration · A262255A</small><div class="ct-h1">Plateforme PMS</div></div><nav class="ct-links" aria-label="Session"><a class="ct-home" href="../index.html">← Accueil de la session</a><a href="../parcours.html">Parcours</a><a href="../document-unique.html">Document unique</a><a href="../gestes-qui-sauvent.html">Gestes qui sauvent</a><a href="../glossaire.html">Glossaire</a><a href="../evaluation.html">Évaluations</a></nav><button aria-pressed="false" class="btn btn-secondary projection-toggle" id="projToggle" type="button">Mode projection</button></div></header><!--/CT-HEADER-->
 </div>
 <div class="app-nav-wrap">
 <nav class="top-nav"><button class="nav-btn" id="nb-accueil" onclick="nav('accueil')">🏠 Accueil</button>

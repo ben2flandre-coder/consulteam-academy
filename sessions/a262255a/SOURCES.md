@@ -6,5 +6,7 @@
 - **Schémas S01 à S16** : créations originales (SVG) fondées sur les repères du paquet hygiène (règlements (CE) 852/2004 et 178/2002), l’arrêté du 21 décembre 2009 et les principes du Codex Alimentarius.
 - **Évaluations** : questions originales, avec explication de chaque réponse ; seuil pédagogique de 70 %, sans valeur de certification.
 - **Vidéothèque** : aucune vidéo hébergée ; liens vers des sites officiels (racines uniquement).
-- **Scènes réalistes** : illustrations générées, sans texte ni personne identifiable, ajoutées via assets/scenes/manifest.json.
+- **Scènes réalistes (R01 à R12)** : illustrations générées par intelligence artificielle (GPT), extraites d’une planche, recadrées pour retirer les jointures puis converties en WebP ; définition limitée, valeur indicative, aucune validation réglementaire.
+- **Charte graphique** : propre à l’action (page charte.html) ; logos Consulteam Groupe et Groupe Valto fournis par le client ; conception : B. Deflandre / RMBD Risk Management.
+- **Contenus SST et document unique** : adaptés des principes de l’INRS (SST, évaluation des risques), du Code du travail et des contenus de formation Prévention 360 et PSE ; à vérifier sur les textes et référentiels en vigueur.
 - Aucune donnée nominative ni information propre à l’établissement n’est publiée.

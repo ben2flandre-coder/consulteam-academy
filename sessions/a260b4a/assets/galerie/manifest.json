@@ -1,5 +1,70 @@
 [
  {
+  "fichier": "scenes/E01.png",
+  "titre": "E01 · Cuisine professionnelle",
+  "legende": "Eau, appareils, projections, sols glissants."
+ },
+ {
+  "fichier": "scenes/E02.png",
+  "titre": "E02 · Quai et environnement marin",
+  "legende": "Humidité, sel, câbles au sol, capots."
+ },
+ {
+  "fichier": "scenes/E03.png",
+  "titre": "E03 · Local technique",
+  "legende": "Zone électrique balisée, accès réservé."
+ },
+ {
+  "fichier": "scenes/E04.png",
+  "titre": "E04 · Rallonge dans un environnement humide",
+  "legende": "Rallonge au sol, eau, trébuchement."
+ },
+ {
+  "fichier": "scenes/E05.png",
+  "titre": "E05 · Luminaire dans un couloir",
+  "legende": "Travail en hauteur, escabeau, éclairage."
+ },
+ {
+  "fichier": "scenes/E06.png",
+  "titre": "E06 · Zone de lavage",
+  "legende": "Projections d’eau, enrouleur, sol humide."
+ },
+ {
+  "fichier": "scenes/E08.png",
+  "titre": "E08 · Planche BE Manœuvre",
+  "legende": "Identification, manœuvre, après la manœuvre."
+ },
+ {
+  "fichier": "svg/F05.svg",
+  "titre": "F05 · Du titre à la tâche",
+  "legende": "La formation donne un avis ; l’employeur délivre le titre."
+ },
+ {
+  "fichier": "svg/F06.svg",
+  "titre": "F06 · Domaines de tension",
+  "legende": "TBT, BT, HT en alternatif."
+ },
+ {
+  "fichier": "svg/F01.svg",
+  "titre": "F01 · Accident électrique : les quatre réflexes",
+  "legende": "Couper, dégager, alerter, secourir."
+ },
+ {
+  "fichier": "svg/F02.svg",
+  "titre": "F02 · Incendie d’origine électrique",
+  "legende": "Cinq réflexes, pas d’eau sur une installation sous tension."
+ },
+ {
+  "fichier": "svg/F03.svg",
+  "titre": "F03 · BS : les six temps",
+  "legende": "Analyser, séparer, condamner, vérifier, remplacer, terminer."
+ },
+ {
+  "fichier": "svg/F04.svg",
+  "titre": "F04 · BE Manœuvre : réarmer, oui, insister, non",
+  "legende": "Un déclenchement répété signale un défaut."
+ },
+ {
   "fichier": "svg/V22.svg",
   "titre": "V22 · Contact direct et contact indirect",
   "legende": "Deux mécanismes de choc électrique."
@@ -33,5 +98,50 @@
   "fichier": "svg/V02.svg",
   "titre": "V02 · Cartographier toutes les alimentations",
   "legende": "Les flèches représentent des dépendances, pas des conducteurs."
+ },
+ {
+  "fichier": "svg/V01.svg",
+  "titre": "V01 · B2V, BR, BC : trois missions",
+  "legende": "Choisir le rôle avant de choisir le geste."
+ },
+ {
+  "fichier": "svg/V03.svg",
+  "titre": "V03 · Consignation : repères et points d’arrêt",
+  "legende": "Reconnaître les étapes sans confondre arrêt et consignation."
+ },
+ {
+  "fichier": "svg/V04.svg",
+  "titre": "V04 · Un cadenas ne prouve pas toute la consignation",
+  "legende": "Distinguer objet visible et état de sécurité démontré."
+ },
+ {
+  "fichier": "svg/V12.svg",
+  "titre": "V12 · Consignation pour des travaux : coordination",
+  "legende": "Organiser la transmission du périmètre et la restitution."
+ },
+ {
+  "fichier": "svg/V13.svg",
+  "titre": "V13 · BR : rester dans l’intervention confiée",
+  "legende": "Qualifier l’activité sans attribuer tout dépannage au seul métier."
+ },
+ {
+  "fichier": "svg/V15.svg",
+  "titre": "V15 · Avant remise en service : une décision organisée",
+  "legende": "Traiter les interfaces humaines avant le redémarrage."
+ },
+ {
+  "fichier": "svg/V18.svg",
+  "titre": "V18 · Cadrer l’opération avant de commencer",
+  "legende": "Structurer l’analyse préalable sans produire un permis de travail fictif."
+ },
+ {
+  "fichier": "svg/V19.svg",
+  "titre": "V19 · Moteur triphasé : séparation et masse",
+  "legende": "Lire les trois phases, la séparation multipolaire et la liaison à la masse."
+ },
+ {
+  "fichier": "svg/V20.svg",
+  "titre": "V20 · Deux alimentations dans une armoire",
+  "legende": "Une même enveloppe peut contenir des circuits d’origines différentes."
  }
 ]

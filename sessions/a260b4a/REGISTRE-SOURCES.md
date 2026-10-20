@@ -14,3 +14,9 @@
 - Attestation médicale (depuis le 01/10/2025) : voir parcours ; H0V non listé, à confirmer par l’employeur.
 - Aucune information sur les installations réelles de la Société : tout ce qui les touche reste « à demander sur place ».
 - Visuels : sept schémas génériques sans échelle ; autres médias à produire et contrôler (dossier `media/`).
+
+## Mise à jour du 20/10/2026 — visuels ajoutés
+- **Scènes E01 à E08 (illustrations générées par IA)** : planche d'origine 1536 × 1024 px découpée en 8 sans agrandissement ni retouche (SHA-256 de la source : 222996738ee519f0439693be6d8199a6b3e18efbca53930b304965e19ca991d9). Le texte des planches est limité par la résolution et peut être flou ; les photos seules (E01 à E06, légende retirée) servent au mode animation et aux cas par métier. **E07 (planche BS) non publiée** : « condamner si nécessaire » est plus souple que le support (séparation, condamnation, VAT) ; à reprendre avant usage. Aucune de ces images ne représente une installation du client.
+- **Schémas F01 à F06** : création originale (SVG), contenu repris des pages du support (INRS, ED 6127, arrêté du 9 juillet 2013).
+- **Visuels repris d'un autre support Consul Team** : schémas V01, V03, V04, V12, V13, V15, V18, V19, V20 et V02, V05, V09, V10, V21, V22, V24 ; planches PN01 à PN04 ; illustrations I04 à I06. Choisis pour leur caractère générique ; ceux propres à un autre secteur d'activité n'ont pas été repris.
+- **Cas de maintenance (espace électricien)** : neuf situations génériques, décisions rédigées à partir de l'INRS ED 6127 et ED 6109 ; non évaluées, hors programme.

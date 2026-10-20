@@ -4,7 +4,7 @@ const response=await fetch('base.html');if(!response.ok)throw Error('HTTP '+resp
 let html=await response.text();
 const changes=[['16–17 septembre 2026','30 octobre 2026'],['DGA Toulon','Panzani · Marseille'],['consulteam.he.2026.v1','consulteam.he.a260bna.2026.v1'],['SESSION · 14 HEURES','RECYCLAGE · A260BNA'],['12 participants','1 participant'],['Édition enrichie · 12 septembre','Édition du 19 octobre'],['Édition finale consolidée du 12 septembre 2026.','Édition du 19 octobre 2026.'],['Édition enrichie du 12 septembre 2026.','Édition du 19 octobre 2026.']];
 for(const [from,to] of changes)html=html.replaceAll(from,to);
-html=html.replace('</body>','<script src="panzani.js"><\/script></body>');
+html=html.replace('</body>','<script src="panzani.js"><\/script><script src="charte-panzani.js"><\/script></body>');
 document.open();document.write(html);document.close();
 }catch(error){document.getElementById('loading').textContent='Le parcours ne peut pas être chargé. Actualisez la page ou contactez le formateur. '+error.message;}})();
 </script></body></html>

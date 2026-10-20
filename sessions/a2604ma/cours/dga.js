@@ -1,0 +1,7 @@
+'use strict';
+// Adaptation isolée du support : le fichier de base n'est pas modifié.
+document.head.insertAdjacentHTML('beforeend','<style>@media(max-width:720px){header button{position:static;margin-left:auto}header div{order:2}header button{order:3}aside nav{max-height:210px;overflow:auto}}.pz-warn{background:#fde8e6;border-left:5px solid #b3261e;padding:10px 14px;border-radius:6px;color:#4a0f0a}.pz-gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}.pz-gal figure{margin:0}.pz-gal img{width:100%;height:auto;border:1px solid #d5dfeb;border-radius:12px}@media print{.pz-gal figure{break-inside:avoid}}</style>');
+const dgHome=home;
+home=function(){dgHome();main.insertAdjacentHTML('afterbegin',`<section class="card"><p class="eyebrow">DGA TOULON · 16 ET 17 SEPTEMBRE 2026</p><h2>Support de la formation initiale</h2><p>Édition mise à jour : nouvelle présentation et visuels à agrandir dans la galerie. Le contenu du cours est inchangé.</p><div class="row"><a class="button primary" href="../galerie.html">Galerie de visuels</a><a class="button" href="../evaluation/">Évaluation finale</a><a class="button" href="../index.html">Accueil du site</a></div></section>`)};
+trainer=function(){main.innerHTML=heading('ESPACE FORMATEUR','Espace réservé','Cet espace n’est pas diffusé dans cette édition du support.')+'<section class="card"><div class="row"><a class="button primary" href="#home">Retour au parcours</a></div></section>'};
+render();

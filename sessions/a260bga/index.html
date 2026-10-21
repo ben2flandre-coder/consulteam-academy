@@ -331,6 +331,16 @@
   .pc-media:hover .zoom-hint{opacity:1}
   @media (hover:none){.zoom-hint{opacity:.85}}
 
+  /* ---- visuels A260BGA (natifs 3:2, jamais recadrés) ---- */
+  .photo-card.vis img{height:auto;aspect-ratio:3/2;object-fit:contain}
+  .vgrid.c2{grid-template-columns:repeat(2,1fr)}
+  @media (max-width:700px){.vgrid.c2{grid-template-columns:1fr}}
+  .lecture{margin-top:8px;font-size:.78rem;color:var(--ink-soft)}
+  .lecture summary{cursor:pointer;font-weight:600;color:var(--ink)}
+  .lecture p{margin:6px 0 0}
+  .photo-card.vis .risk-note{margin-top:8px}
+  .vis-solo{max-width:760px;margin:18px auto 0}
+  .vis-solo.photo-card img{aspect-ratio:3/2}
   /* ---- lightbox ---- */
   .lightbox{position:fixed;inset:0;background:rgba(10,9,10,.92);display:none;align-items:center;justify-content:center;z-index:80;padding:38px 20px;cursor:zoom-out}
   .lightbox.open{display:flex}
@@ -890,87 +900,44 @@
 
     <div class="ai-disclaimer">
       <svg class="icon"><use href="#i-info"/></svg>
-      <div><b>Images de synthèse à visée pédagogique.</b> Les photos ci-dessous sont générées par IA pour illustrer les gestes et situations décrits ; elles ne représentent aucun lieu de travail réel.</div>
+      <div><b>Images de synthèse à visée pédagogique.</b> Les images de ce support sont générées par IA pour illustrer les gestes et situations décrits ; elles ne représentent aucun lieu de travail réel et ne certifient ni un geste, ni un équipement.</div>
     </div>
 
-    <h3 style="font-size:1.05rem;margin:26px 0 4px">Galerie terrain — gestes de référence</h3>
-    <p style="color:var(--ink-soft);font-size:.9rem;margin-bottom:4px;max-width:70ch">Trois situations types de manutention, avec le geste à privilégier illustré.</p>
-    <div class="photo-grid">
-      
-      <figure class="photo-card">
-        <div class="pc-media"><img src="images/photos/02-manutention-carton.jpg" alt="Manutentionnaire soulevant un carton, dos droit, genoux fléchis" data-caption="Prise au sol — zone verte" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
-        <div class="pc-body">
-          <h5><span class="pastille good"><span class="dot"></span>Zone verte</span>Prise au sol</h5>
-          <p>Dos droit, genoux fléchis, charge collée au corps : le geste de référence pour soulever un carton.</p>
-        </div>
-      </figure>
-      <figure class="photo-card">
-        <div class="pc-media"><img src="images/photos/03-transpalette.jpg" alt="Agent poussant un transpalette manuel chargé" data-caption="Transpalette — zone orange" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
-        <div class="pc-body">
-          <h5><span class="pastille mid"><span class="dot"></span>Zone orange</span>Chariot / transpalette</h5>
-          <p>Corps engagé dans le mouvement, on pousse plutôt qu'on tire, trajet dégagé devant soi.</p>
-        </div>
-      </figure>
-      <figure class="photo-card">
-        <div class="pc-media"><img src="images/photos/04-tri-convoyeur.jpg" alt="Employé triant des colis sur un poste de tri" data-caption="Poste de tri — zone rouge" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
-        <div class="pc-body">
-          <h5><span class="pastille warn"><span class="dot"></span>Zone rouge</span>Poste de tri</h5>
-          <p>Prise proche du corps, rythme adapté, éviter la torsion du buste en pivotant.</p>
-        </div>
-      </figure>
-      
-    </div>
+    <h3 style="font-size:1.05rem;margin:26px 0 4px">Galerie — gestes et situations</h3>
+    <p style="color:var(--ink-soft);font-size:.9rem;margin-bottom:4px;max-width:70ch">Trois situations de manutention illustrées : porter, pivoter, pousser. Chaque image se lit avec ses points de vigilance et ses limites.</p>
+    <div class="photo-grid vgrid ">
+<figure class="photo-card vis">
+<div class="pc-media"><img src="images/visuels/G02.webp" width="1536" height="1024" alt="Porter une charge près du corps — Déplacement d’un carton tenu contre le tronc." data-caption="Porter une charge près du corps" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Porter une charge près du corps</h5><p>Déplacement d’un carton tenu contre le tronc.</p>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Vérifier poids, visibilité du trajet, adhérence des prises et distance à parcourir.</p><p><b>Principes.</b> Garder la charge proche et les coudes près du corps ; réduire le trajet et privilégier une aide.</p><p><b>Limites.</b> La proximité de la charge ne suffit pas à rendre acceptable un effort excessif.</p></details></div></figure>
+<figure class="photo-card vis">
+<div class="pc-media"><img src="images/visuels/G03.webp" width="1536" height="1024" alt="Pivoter avec les pieds — Changement de direction avant une dépose." data-caption="Pivoter avec les pieds" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Pivoter avec les pieds</h5><p>Changement de direction avant une dépose.</p>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Examiner l’orientation des pieds, du bassin et du tronc ; éviter flexion et torsion combinées.</p><p><b>Principes.</b> Réorienter les appuis par petits pas et déplacer l’ensemble du corps ; préparer la dépose.</p><p><b>Limites.</b> Le mouvement complet n’est pas démontré par une seule photographie.</p></details></div></figure>
+<figure class="photo-card vis">
+<div class="pc-media"><img src="images/visuels/G04.webp" width="1536" height="1024" alt="Pousser un chariot chargé — Déplacement d’un chariot à plateau." data-caption="Pousser un chariot chargé" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Pousser un chariot chargé</h5><p>Déplacement d’un chariot à plateau.</p>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Contrôler roues, stabilité du chargement, visibilité, pente et effort de démarrage.</p><p><b>Principes.</b> Adapter la hauteur de prise et favoriser une poussée maîtrisée lorsque le trajet le permet.</p><p><b>Limites.</b> Un chariot peut imposer des efforts élevés ; son choix dépend du sol et de la charge.</p></details></div></figure>
+</div>
 
     <div class="case-study">
       <div class="cs-head"><svg class="icon"><use href="#i-search"/></svg><h3>Étude de cas — repérer les risques</h3></div>
-      <p class="cs-sub">Quatre mises en situation à discuter en groupe : observer, expliquer, puis proposer une amélioration adaptée au travail réel.</p>
-      <div class="risk-grid">
-        <figure class="risk-card">
-          <div class="pc-media"><img src="images/photos/risques/01-reperer-les-risques.jpg" alt="Scène d'entrepôt avec carton dans l'allée, film au sol, pile masquant la vue" data-caption="01 — Repérer les risques" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
-          <div class="risk-body">
-            <h5><span class="risk-num">1</span>Repérer les risques</h5>
-            <ul>
-              <li>Qu'observez-vous ? Quels éléments gênent le déplacement ou la visibilité ?</li>
-              <li>Points visibles : carton dans l'allée, film au sol, pile masquant la vue.</li>
-              <li>Quelles situations similaires rencontrez-vous à votre poste ?</li>
-            </ul>
-          </div>
-        </figure>
-        <figure class="risk-card">
-          <div class="pc-media"><img src="images/photos/risques/02-organisation-avant-apres.jpg" alt="Comparaison d'un poste de travail avant et après réorganisation" data-caption="02 — Organisation avant / après" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
-          <div class="risk-body">
-            <h5><span class="risk-num">2</span>Organisation avant / après</h5>
-            <ul>
-              <li>Qu'est-ce qui change entre les deux vues ?</li>
-              <li>Quel effet sur les gestes et déplacements ?</li>
-              <li>Quelle amélioration serait possible à votre poste ?</li>
-            </ul>
-          </div>
-        </figure>
-        <figure class="risk-card">
-          <div class="pc-media"><img src="images/photos/risques/03-choisir-aide-manutention.jpg" alt="Agent face à un diable et une caisse volumineuse" data-caption="03 — Choisir une aide à la manutention" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
-          <div class="risk-body">
-            <h5><span class="risk-num">3</span>Choisir une aide à la manutention</h5>
-            <ul>
-              <li>Quelles informations manquent sur le colis : poids, stabilité, prises ?</li>
-              <li>Le diable montré convient-il réellement à cette charge ? Quel autre matériel envisager ?</li>
-            </ul>
-            <div class="risk-note"><svg class="icon"><use href="#i-hazard"/></svg>Cette image pose une question de choix ; elle ne valide pas l'adéquation du diable à la caisse.</div>
-          </div>
-        </figure>
-        
-        
-        <figure class="risk-card">
-          <div class="pc-media"><img src="images/photos/risques/06-distance-prise-convoyeur.jpg" alt="Comparaison de la distance de prise d'un carton" data-caption="06 — Distance de prise" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
-          <div class="risk-body">
-            <h5><span class="risk-num">4</span>Distance de prise</h5>
-            <ul>
-              <li>Quelles différences observez-vous dans la distance du carton et la position des bras ?</li>
-              <li>Comment l'organisation du poste pourrait-elle faciliter la prise ?</li>
-            </ul>
-          </div>
-        </figure>
-      </div>
+      <p class="cs-sub">Deux situations à analyser en groupe : observer, expliquer, puis proposer une amélioration adaptée au travail réel. Ce sont des cas d’analyse, pas des gestes certifiés.</p>
+      <div class="photo-grid vgrid c2">
+<figure class="photo-card vis">
+<div class="pc-media"><img src="images/visuels/G01.webp" width="1536" height="1024" alt="Prise initiale d’un carton au sol — Prise initiale au sol, avant le soulèvement." data-caption="Prise initiale d’un carton au sol" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Prise initiale d’un carton au sol</h5><p>Prise initiale au sol, avant le soulèvement.</p>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Observer l’inclinaison du tronc, la distance carton-corps et la qualité réelle des prises. La masse et le contenu ne sont pas visibles.</p><p><b>Principes.</b> Réduire le port manuel, surélever la prise et utiliser une aide adaptée. Si la prise reste nécessaire, rapprocher la charge, assurer les appuis et éviter la torsion.</p><p><b>Limites.</b> Une image fixe ne valide ni un geste idéal ni la capacité à soulever. G01 sert à analyser la prise initiale, sans étiquette de geste de référence.</p></details></div></figure>
+<figure class="photo-card vis">
+<div class="pc-media"><img src="images/visuels/G08.webp" width="1536" height="1024" alt="Atteindre avec une plateforme protégée — Approche d’un petit carton depuis une plateforme protégée." data-caption="Atteindre avec une plateforme protégée" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Atteindre avec une plateforme protégée</h5><p>Approche d’un petit carton depuis une plateforme protégée.</p>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Vérifier stabilité, verrouillage, garde-corps, fermeture de l’accès, proximité de l’étagère et bras sous l’épaule.</p><p><b>Principes.</b> Privilégier un stockage accessible au sol. Utiliser une plateforme adaptée ; monter mains disponibles avec appuis sûrs. La scène montre deux pieds posés et une main sur la protection, l’autre touchant un carton encore soutenu par l’étagère.</p><p><b>Limites.</b> Ne pas exiger simultanément trois points d’appui et un port à deux mains. L’accès et le transfert doivent suivre la notice ; une image ne certifie pas l’équipement.</p></details></div></figure>
+</div>
     </div>
   </section>
 
@@ -1040,6 +1007,30 @@
         <li><b>La piste d'amélioration</b> : que pourrait-on supprimer, rapprocher, alléger, aider ?</li>
       </ul>
     </div>
+  <h3 style="font-size:1.05rem;margin:26px 0 4px">Postes et aides en images</h3>
+    <p style="color:var(--ink-soft);font-size:.9rem;max-width:70ch">Comparer un poste réglé, un contre-exemple, et les aides qui réduisent le port manuel.</p>
+    <div class="photo-grid vgrid c2">
+<figure class="photo-card vis">
+<div class="pc-media"><img src="images/visuels/G05.webp" width="1536" height="1024" alt="Poste de travail debout bien réglé — Conditionnement debout à un plan de travail." data-caption="Poste de travail debout bien réglé" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Poste de travail debout bien réglé</h5><p>Conditionnement debout à un plan de travail.</p>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Vérifier portée, hauteur du coude, précision ou force requise, et stabilité du tapis.</p><p><b>Principes.</b> Adapter la hauteur à la tâche, rapprocher les objets et alterner les positions.</p><p><b>Limites.</b> Une hauteur unique et un tapis ne suppriment pas les risques liés à la station debout prolongée.</p></details></div></figure>
+<figure class="photo-card vis">
+<div class="pc-media"><img src="images/visuels/G06.webp" width="1536" height="1024" alt="Poste assis bien réglé — Travail sur écran avec réglages favorables." data-caption="Poste assis bien réglé" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Poste assis bien réglé</h5><p>Travail sur écran avec réglages favorables.</p>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Observer appuis des pieds, soutien du dos, position des avant-bras, reflets et distance écran.</p><p><b>Principes.</b> Ajuster siège et écran à la personne ; proposer un repose-pieds si nécessaire ; varier l’activité.</p><p><b>Limites.</b> Le haut de l’écran près de la hauteur des yeux est un repère à adapter, notamment aux verres progressifs.</p></details></div></figure>
+<figure class="photo-card vis">
+<div class="pc-media"><img src="images/visuels/G07.webp" width="1536" height="1024" alt="Poste assis mal réglé — contre-exemple — Poste volontairement mal réglé à comparer avec G06." data-caption="Poste assis mal réglé — contre-exemple" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Poste assis mal réglé — contre-exemple</h5><p>Poste volontairement mal réglé à comparer avec G06.</p><div class="risk-note"><svg class="icon"><use href="#i-hazard"/></svg>Contre-exemple : ne pas reproduire cette position.</div>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Repérer écran bas, flexion cervicale, épaules enroulées et absence d’appui des pieds.</p><p><b>Principes.</b> Relever l’écran, dissocier clavier et écran pour un usage prolongé du portable, régler siège et appuis.</p><p><b>Limites.</b> CONTRE-EXEMPLE : ne jamais présenter G07 comme une position recommandée.</p></details></div></figure>
+<figure class="photo-card vis">
+<div class="pc-media"><img src="images/visuels/G09.webp" width="1536" height="1024" alt="Aides à la manutention — Présentation d’un diable, d’un chariot et d’une table élévatrice." data-caption="Aides à la manutention" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Aides à la manutention</h5><p>Présentation d’un diable, d’un chariot et d’une table élévatrice.</p>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Vérifier capacité, état, freinage et compatibilité avec charge et parcours.</p><p><b>Principes.</b> Choisir l’aide qui réduit port, distance et hauteur de prise.</p><p><b>Limites.</b> La présence d’une aide ne garantit pas son adéquation ni la formation à son utilisation.</p></details></div></figure>
+</div>
   </section>
 
   <section id="epi">
@@ -1099,6 +1090,25 @@
     <div class="callout" style="margin-top:16px">
       <b>Cinq réflexes</b> : adapté au risque · à ma taille · en bon état · porté tout le temps de l'exposition · rangé et entretenu selon la notice.
     </div>
+  <h3 style="font-size:1.05rem;margin:26px 0 4px">Les EPI en images</h3>
+    <p style="color:var(--ink-soft);font-size:.9rem;max-width:70ch">Images illustratives sans marque : sur le matériel réel, on vérifie marquages et notices.</p>
+    <div class="photo-grid vgrid ">
+<figure class="photo-card vis">
+<div class="pc-media"><img src="images/visuels/G10.webp" width="1536" height="1024" alt="Les EPI disposés à plat — Inventaire visuel d’équipements de protection individuelle." data-caption="Les EPI disposés à plat" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Les EPI disposés à plat</h5><p>Inventaire visuel d’équipements de protection individuelle.</p>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Vérifier l’adaptation aux risques et la compatibilité des équipements.</p><p><b>Principes.</b> Choisir les EPI après les mesures de prévention collective ; vérifier ajustement et état.</p><p><b>Limites.</b> L’absence de marquage est une contrainte graphique : sur le matériel réel, vérifier marquages et notices. Tous les EPI ne sont pas nécessaires dans chaque situation.</p></details></div></figure>
+<figure class="photo-card vis">
+<div class="pc-media"><img src="images/visuels/G11.webp" width="1536" height="1024" alt="Choisir la taille de gants — Essai d’un gant et comparaison de tailles." data-caption="Choisir la taille de gants" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Choisir la taille de gants</h5><p>Essai d’un gant et comparaison de tailles.</p>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Observer serrage, longueur des doigts, mobilité et tenue de la manchette.</p><p><b>Principes.</b> Choisir une taille permettant préhension et dextérité, avec une protection adaptée au danger.</p><p><b>Limites.</b> La taille et la couleur ne renseignent pas le niveau de protection ; consulter la notice du gant réel.</p></details></div></figure>
+<figure class="photo-card vis">
+<div class="pc-media"><img src="images/visuels/G12.webp" width="1536" height="1024" alt="Chaussures de sécurité : contrôler l’usure — Comparaison d’une semelle usée avec une chaussure neuve." data-caption="Chaussures de sécurité : contrôler l’usure" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Chaussures de sécurité : contrôler l’usure</h5><p>Comparaison d’une semelle usée avec une chaussure neuve.</p>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Examiner reliefs, fissures, décollement, perforation et état de la tige.</p><p><b>Principes.</b> Contrôler régulièrement l’état et remplacer selon défauts, usage et notice.</p><p><b>Limites.</b> Une photo de semelle ne permet ni de certifier l’adhérence ni de vérifier toutes les protections. Les chaussures illustrées sont sans marque.</p></details></div></figure>
+</div>
   </section>
 
   <section id="reveil">
@@ -1132,6 +1142,11 @@
       <div class="step"><div class="num"></div><div><h5>Activation spécifique membres sollicités <span class="tag">1-2 min</span></h5><p>Épaules et poignets pour le port/saisie, jambes pour la station debout et la marche prolongée.</p></div></div>
       <div class="step"><div class="num"></div><div><h5>Temps de recentrage <span class="tag">30 s</span></h5><p>Quelques respirations, se projeter dans la prise de poste : c'est le volet mental de la routine.</p></div></div>
     </div>
+  <div class="vgrid-solo"><figure class="photo-card vis vis-solo">
+<div class="pc-media"><img src="images/visuels/G13.webp" width="1536" height="1024" alt="Réveil musculaire en équipe — Mobilisation douce des épaules avant la prise de poste." data-caption="Réveil musculaire en équipe" loading="lazy"><span class="zoom-hint"><svg class="icon"><use href="#i-search"/></svg></span></div>
+<div class="pc-body"><h5>Réveil musculaire en équipe</h5><p>Mobilisation douce des épaules avant la prise de poste.</p>
+<details class="lecture"><summary>Lire l’image</summary>
+<p><b>Points de vigilance.</b> Rester dans une amplitude confortable, sans à-coups ni douleur ; adapter aux personnes.</p><p><b>Principes.</b> Proposer des mouvements progressifs volontaires, accompagnés d’une organisation qui réduit les contraintes.</p><p><b>Limites.</b> Le réveil musculaire ne remplace pas l’aménagement du poste et ne garantit pas la prévention des TMS.</p></details></div></figure></div>
   </section>
 
   <section id="quiz">

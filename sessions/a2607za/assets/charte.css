@@ -1,0 +1,26 @@
+/* Charte A262255A — Hygiène et sécurité en restauration : Consulteam (marine, jaune de sécurité) + quatre pôles. */
+:root{--hy:#2e7d4f;--hy-t:#e5f3ea;--pm:#0b68ae;--pm-t:#e3effa;--ss:#c0392b;--ss-t:#fbe9e6;--du:#a15c07;--du-t:#fbf0dc}
+@media(prefers-color-scheme:dark){:root{--hy:#5cc08a;--hy-t:#143325;--pm:#74b8f2;--pm-t:#10304d;--ss:#ff8a7a;--ss-t:#431d19;--du:#f0b660;--du-t:#40300f}}
+body.p-hy{--pole:var(--hy);--pole-t:var(--hy-t)}body.p-pm{--pole:var(--pm);--pole-t:var(--pm-t)}body.p-ss{--pole:var(--ss);--pole-t:var(--ss-t)}body.p-du{--pole:var(--du);--pole-t:var(--du-t)}
+h2::before{background:var(--pole,var(--y))}
+.skip{position:absolute;left:-999px;top:0;background:#f6b63d;color:#102c53;padding:8px 14px;z-index:99;font-weight:700}.skip:focus{left:8px;top:8px}
+.polehead{display:flex;gap:20px;align-items:center;background:var(--pole-t);border-left:10px solid var(--pole);border-radius:12px;padding:20px 24px;margin:0 0 22px}
+.polehead img{width:72px;height:72px;flex:none}.polehead h1{margin:.05em 0}.polehead small{font:700 14px var(--ff);letter-spacing:.09em;text-transform:uppercase;color:var(--pole)}
+@media(max-width:560px){.polehead{flex-direction:column;align-items:flex-start}}
+@media(max-width:820px){header.top{position:static!important;padding:8px 14px}header.top .brand small{font-size:13px}header.top nav{margin-left:0;flex-wrap:nowrap;overflow-x:auto;width:100%;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:4px}header.top nav a{white-space:nowrap;flex:none;padding:7px 11px}}
+.grid a.card.ic{display:flex;gap:14px;align-items:flex-start}.grid a.card.ic img{width:46px;height:46px;flex:none}.grid a.card.ic span{display:block}
+.grid a.card.hy{border-left-color:var(--hy)}.grid a.card.pm{border-left-color:var(--pm)}.grid a.card.ss{border-left-color:var(--ss)}.grid a.card.du{border-left-color:var(--du)}
+.pole-hy{border-left:8px solid var(--hy)!important}.pole-pm{border-left:8px solid var(--pm)!important}.pole-ss{border-left:8px solid var(--ss)!important}.pole-du{border-left:8px solid var(--du)!important}
+.tag.t-hy{background:var(--hy)}.tag.t-pm{background:var(--pm)}.tag.t-ss{background:var(--ss)}.tag.t-du{background:var(--du)}
+.pill{display:inline-block;border-radius:999px;padding:1px 10px;font:700 13px var(--ff);color:#fff;background:var(--n)}.pill.hy{background:var(--hy)}.pill.pm{background:var(--pm)}.pill.ss{background:var(--ss)}.pill.du{background:var(--du)}
+@media(prefers-color-scheme:dark){.polebar a{color:#0d1722}}
+.polebar{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 18px}.polebar a{display:flex;gap:8px;align-items:center;text-decoration:none;color:#fff;border-radius:999px;padding:5px 16px 5px 6px;font:700 15px var(--ff)}.polebar a img{width:28px;height:28px}.polebar a.hy{background:var(--hy)}.polebar a.pm{background:var(--pm)}.polebar a.ss{background:var(--ss)}.polebar a.du{background:var(--du)}
+footer.credits{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap;max-width:none;border-top:6px solid transparent;border-image:repeating-linear-gradient(135deg,#f6b63d 0 14px,#102c53 14px 28px) 6;padding-top:22px}
+footer.credits .flogo{margin:0}footer.credits .cr{flex:1;min-width:260px}footer.credits p{margin:.3em 0;max-width:80ch}footer.credits .mention{font-size:13px}
+details.fiche-r{background:var(--w);border:1px solid var(--l);border-left:8px solid var(--pole,var(--b));border-radius:10px;padding:2px 18px;margin:10px 0;max-width:80ch}details.fiche-r summary{cursor:pointer;font:700 19px var(--ff);color:var(--n);padding:12px 0;list-style:none}details.fiche-r summary::-webkit-details-marker{display:none}details.fiche-r summary::before{content:"＋";color:var(--pole,var(--b));margin-right:10px}details.fiche-r[open] summary::before{content:"－"}details.fiche-r[open]{padding-bottom:10px}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}.sw div{border-radius:10px;overflow:hidden;border:1px solid var(--l);background:var(--w)}.sw i{display:block;height:64px}.sw b,.sw span{display:block;padding:2px 12px}.sw span{font-size:14px;color:var(--m);padding-bottom:10px}
+table.mx{border-collapse:collapse;margin:12px 0}table.mx td,table.mx th{border:1px solid var(--l);padding:8px 12px;text-align:center;min-width:64px}table.mx .g1{background:#d7efe0;color:#0d3b22}table.mx .g2{background:#fff1c9;color:#4a3300}table.mx .g3{background:#ffd9b0;color:#4a2300}table.mx .g4{background:#f5b9b2;color:#4a0f0a}
+@media(min-width:700px){table{display:table;overflow:visible}}
+#t select{width:72px}#t td.sc{white-space:nowrap}#t input{min-width:140px}table td:first-child{min-width:110px}
+@media(prefers-color-scheme:dark){table.mx .g1{background:#143d29;color:#c6f1d9}table.mx .g2{background:#4a3a10;color:#ffe9a8}table.mx .g3{background:#55300f;color:#ffd9b0}table.mx .g4{background:#5a1f1a;color:#ffd5d0}}
+@media print{.polehead{-webkit-print-color-adjust:exact;print-color-adjust:exact}details.fiche-r{break-inside:avoid}}

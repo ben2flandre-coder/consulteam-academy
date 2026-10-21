@@ -513,6 +513,7 @@
   <a class="navlink" href="#outils"><svg class="icon"><use href="#i-tool"/></svg>Calculateur de criticité</a>
 
   <div class="grp-label">Ressources</div>
+  <a class="navlink" href="#glossaire"><svg class="icon"><use href="#i-body"/></svg>Glossaire</a>
   <a class="navlink" href="#video"><svg class="icon"><use href="#i-play"/></svg>Vidéothèque</a>
   <a class="navlink" href="#cadre"><svg class="icon"><use href="#i-scale"/></svg>Cadre réglementaire</a>
 
@@ -1164,6 +1165,17 @@
       </div>
       <button id="quiz-reset" type="button">Recommencer</button>
     </div>
+    <div id="quiz-envoi" class="card" style="margin-top:16px">
+      <h4>Transmettre mon résultat au formateur (facultatif)</h4>
+      <p style="font-size:.86rem;color:var(--ink-soft);margin:0 0 10px">Ce site ne conserve ni ne transmet rien automatiquement : c’est vous qui choisissez d’envoyer votre résultat. Repère pédagogique : 70 % (soit 9 réponses sur 12).</p>
+      <label for="qe-nom" style="font-size:.85rem;font-weight:600">Nom et prénom</label>
+      <input id="qe-nom" type="text" autocomplete="name" style="display:block;width:100%;max-width:360px;margin:4px 0 12px;padding:9px 11px;border:1px solid var(--line);border-radius:8px;font:inherit;background:var(--surface);color:var(--ink)">
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a id="qe-mail" class="btn" href="#" style="padding:9px 16px;border-radius:8px;background:#E5007D;color:#fff;text-decoration:none;font-weight:600;font-size:.88rem">Envoyer par e-mail</a>
+        <button id="qe-dl" type="button" style="padding:9px 16px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-weight:600;font-size:.88rem;cursor:pointer">Télécharger le résultat</button>
+      </div>
+      <div id="qe-msg" role="status" style="font-size:.82rem;color:var(--ink-soft);margin-top:8px"></div>
+    </div>
   </section>
 
   <section id="outils">
@@ -1203,6 +1215,37 @@
     </div>
   </section>
 
+  <section id="glossaire">
+    <div class="sec-head">
+      <span class="ghost">04</span>
+      <div class="sec-eyebrow">Ressources</div>
+      <div class="row"><svg class="icon"><use href="#i-body"/></svg><h2>Glossaire</h2></div>
+    </div>
+    <p class="sec-sub">Les termes utilisés pendant la journée, en langage simple. Les définitions réglementaires renvoient aux articles cités dans le cadre réglementaire.</p>
+    <div class="grid2">
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Aptitude médicale</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Avis du médecin du travail sur la compatibilité d’un salarié avec un poste. Pour la manutention, elle est requise au-delà de 55 kg portés par un homme (art. R4541-9).</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Charge physique de travail</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Ensemble des efforts physiques demandés par le travail : postures, port de charges, déplacements, répétition des gestes.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Contrainte biomécanique</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Force ou posture que le travail impose au corps (articulations, muscles, tendons, disques).</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Criticité (G × P)</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Niveau de risque estimé en multipliant la gravité (G) par la probabilité (P). Il aide à hiérarchiser les actions, il ne remplace pas l’analyse de la situation.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Disque intervertébral</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Coussinet situé entre deux vertèbres. Il encaisse les pressions de la colonne ; flexion et torsion répétées sous charge le sollicitent fortement.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Document unique (DUERP)</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Document qui recense les risques professionnels de l’entreprise et les actions de prévention. Il est mis à jour régulièrement.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">EPI</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Équipement de protection individuelle : gants, chaussures, lunettes, casque, protection auditive, vêtement haute visibilité… Il vient en dernier, après la suppression ou la réduction du risque et la protection collective.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Ergonomie</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Adaptation du travail à la personne : poste, outils, organisation, plutôt que l’inverse.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Facteurs de risque (TMS)</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Biomécaniques (efforts, postures, répétition), organisationnels, psychosociaux et environnementaux (froid, vibrations). Ils se cumulent.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Geste répétitif</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Mouvement reproduit à fréquence élevée sans récupération suffisante : facteur de risque pour poignets, coudes et épaules.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Lombalgie</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Douleur du bas du dos. Elle peut avoir des origines multiples ; le travail physique, la manutention et les postures contraintes en font partie.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Manutention manuelle</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Transport ou soutien d’une charge par l’effort physique d’une ou plusieurs personnes : lever, poser, pousser, tirer, porter, déplacer (art. R4541-2).</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Marquage CE</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Marque par laquelle le fabricant déclare que l’EPI respecte le règlement (UE) 2016/425. Il ne dit rien de l’adéquation à un risque précis : lire la notice.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Catégories d’EPI (I, II, III)</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Niveaux de risque couverts. Catégorie I : risques minimes ; catégorie III : risques pouvant causer des conséquences très graves (mortelles ou irréversibles) ; catégorie II : les autres.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Moment de force</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Effet de rotation d’une force : charge × distance au corps. Une charge tenue loin du corps sollicite beaucoup plus le dos qu’une charge collée au tronc.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Posture statique</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Position maintenue longtemps (debout, assis, penché) : fatigue musculaire et gêne circulatoire même sans effort important.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Prévention collective</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Mesures qui protègent tout le monde : aménagement, garde-corps, aides mécaniques, organisation. Elle passe avant la protection individuelle (art. L4121-2).</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Proprioception</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Sens de la position et du mouvement du corps. Le réveil musculaire contribue à la mettre en route.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">Rachis</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Colonne vertébrale : cervicale, dorsale, lombaire, sacrum et coccyx.</p></div>
+<div class="card" style="padding:12px 16px"><h4 style="margin:0 0 4px;font-size:.95rem">TMS</h4><p style="font-size:.86rem;color:var(--ink-soft);margin:0">Troubles musculosquelettiques : affections des muscles, tendons, nerfs et articulations liées au travail. Ils sont la première cause de maladie professionnelle reconnue.</p></div>
+    </div>
+  </section>
+
   <section id="video">
     <div class="sec-head">
       <span class="ghost">02</span>
@@ -1211,7 +1254,101 @@
     </div>
     <p class="sec-sub">Des ressources pour prolonger la session. Les liens ouvrent le site source dans un nouvel onglet ; les recherches vidéo renvoient vers des résultats à choisir par vous-même.</p>
 
-        <div class="video-grid">
+        <h3 style="font-size:1.05rem;margin:6px 0 4px">Vidéos de prévention (TMS, anatomie, ergonomie)</h3>
+    <p style="color:var(--ink-soft);font-size:.9rem;max-width:70ch">Vidéos d’organismes de prévention, sélectionnées pour prolonger la session. Elles s’ouvrent sur YouTube dans un nouvel onglet ; leur contenu relève de leurs auteurs.</p>
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">INRS</span><svg class="icon"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>Napo dans… Allégez la charge !</h5>
+          <p>Film d’animation INRS sur la manutention manuelle.</p>
+          <a href="https://www.youtube.com/watch?v=GZbrvNjPhNY" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">INRS</span><svg class="icon"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>TMS – Lombalgie</h5>
+          <p>Mécanisme et prévention du mal de dos. Durée : 1 min 41.</p>
+          <a href="https://www.youtube.com/watch?v=oxQBwTRs6To" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">INRS</span><svg class="icon"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>TMS – Cervicalgie</h5>
+          <p>Douleurs de la nuque : causes et prévention. Durée : 1 min 45.</p>
+          <a href="https://www.youtube.com/watch?v=JndtMulFMXc" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">INRS</span><svg class="icon"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>TMS – Anatomie de l’épaule</h5>
+          <p>Comprendre l’articulation pour comprendre le risque. Durée : 2 min 02.</p>
+          <a href="https://www.youtube.com/watch?v=cEq1YB41RdI" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">INRS</span><svg class="icon"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>TMS – Anatomie du rachis lombaire</h5>
+          <p>La colonne lombaire, zone la plus sollicitée en manutention. Durée : 2 min 06.</p>
+          <a href="https://www.youtube.com/watch?v=nOQFsAKD0Jw" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">INRS</span><svg class="icon"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>TMS – Le meilleur des mondes : logistique et marges de manœuvre</h5>
+          <p>Film INRS sur la logistique et les marges de manœuvre. Durée : 7 min 46.</p>
+          <a href="https://www.youtube.com/watch?v=8chMi7VC6xQ" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">INRS</span><svg class="icon"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>Exosquelettes au travail : comment s’y préparer ?</h5>
+          <p>Aides techniques et prévention : repères INRS.</p>
+          <a href="https://www.youtube.com/watch?v=AoNkk02XiA4" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">Carsat</span><svg class="icon"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>Les TMS, c’est quoi ?</h5>
+          <p>Introduction aux TMS par la Carsat Hauts-de-France. Durée : 6 min 22.</p>
+          <a href="https://www.youtube.com/watch?v=jOAuQi8KkMg" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">Cramif</span><svg class="icon"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>2 minutes entreprise : les TMS</h5>
+          <p>Exemple d’action de prévention en entreprise. Durée : 2 min 21.</p>
+          <a href="https://www.youtube.com/watch?v=CphuEYOqx2k" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">ESE Formation</span><svg class="icon"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>L’ergonomie au poste de travail</h5>
+          <p>Repères rapides pour régler son poste. Durée : 2 min 09.</p>
+          <a href="https://www.youtube.com/watch?v=dhi8ElvraHg" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><span class="src-tag">SIST BTP</span><svg class="icon"><use href="#i-play"/></svg></div>
+        <div class="video-body">
+          <h5>Prévention des TMS – motion design</h5>
+          <p>Animation de sensibilisation, transposable à d’autres secteurs. Durée : 4 min 13.</p>
+          <a href="https://www.youtube.com/watch?v=a4niEbOorAk" target="_blank" rel="noopener">Voir sur YouTube →</a>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size:1.05rem;margin:26px 0 4px">Sites de référence</h3>
+    <div class="video-grid">
       <div class="video-card">
         <div class="video-thumb"><span class="src-tag">INRS</span><svg class="icon"><use href="#i-play"/></svg></div>
         <div class="video-body">
@@ -1508,6 +1645,7 @@
        opts:["Remplacer l'échauffement sportif de haut niveau","Mettre en route pompes veineuses, système cardio-nerveux et proprioception avant l'effort","Uniquement s'assouplir avant les étirements du soir"], a:1,
        ex:"Il ne s'agit pas de performance sportive : c'est une mise en route progressive du corps et du système nerveux avant l'effort réel."}
     ];
+    Q.forEach(function(it){var c=it.opts[it.a];for(var i=it.opts.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=it.opts[i];it.opts[i]=it.opts[j];it.opts[j]=t;}it.a=it.opts.indexOf(c);});
     var host = document.getElementById('quiz-host');
     var quizRing = document.getElementById('quiz-ring');
     var answered = {};
@@ -1540,6 +1678,13 @@
         });
       });
     });
+    (function(){
+      var DEST='rmbd.riskmanagement@gmail.com';
+      function rapport(){var n=parseInt(document.getElementById('score-val').textContent,10)||0;var nom=document.getElementById('qe-nom').value.trim();var d=new Date();var ds=('0'+d.getDate()).slice(-2)+'/'+('0'+(d.getMonth()+1)).slice(-2)+'/'+d.getFullYear();
+        var pc=Math.round(n*100/12);return {sujet:'A260BGA - résultat auto-évaluation',corps:'Session : A260BGA - Gestes et postures (13/11/2026)\nParticipant : '+(nom||'(non renseigné)')+'\nDate : '+ds+'\nRésultat : '+n+' / 12 ('+pc+' %)\nRepère pédagogique : 70 % ('+(pc>=70?'atteint':'non atteint : reprise avec le formateur')+')'};}
+      document.getElementById('qe-mail').addEventListener('click',function(ev){var r=rapport();this.href='mailto:'+DEST+'?subject='+encodeURIComponent(r.sujet)+'&body='+encodeURIComponent(r.corps);document.getElementById('qe-msg').textContent='Votre messagerie s’ouvre : vérifiez, puis envoyez.';});
+      document.getElementById('qe-dl').addEventListener('click',function(){var r=rapport();var b=new Blob([r.corps+'\n'],{type:'text/plain;charset=utf-8'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='resultat-A260BGA.txt';document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},500);document.getElementById('qe-msg').textContent='Fichier téléchargé : remettez-le au formateur.';});
+    })();
     setGaugeValue(quizRing, 0);
     document.getElementById('quiz-reset').addEventListener('click', function(){
       answered = {};

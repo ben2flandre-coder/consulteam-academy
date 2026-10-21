@@ -14,3 +14,9 @@ Points à contrôler avant diffusion : liens de la rubrique Ressources (ouvrir c
 
 ## Visuels (v2)
 13 images natives 1536×1024 (G01–G13), générées par IA, non recadrées, livrées en WebP. Les originaux PNG et leurs empreintes SHA-256 sont référencés dans `images/visuels/manifeste-sources.json`. Ces images illustrent ; elles ne certifient ni un geste ni un équipement. G07 est un contre-exemple.
+
+## Contenu (v3)
+- `index.html` : plateforme participant (8 modules, galerie, glossaire de 20 termes, vidéothèque de 11 vidéos issues des playlists du formateur + sites de référence, auto-évaluation de 12 questions mélangées avec envoi facultatif du résultat par le stagiaire).
+- `formateur.html` et `animation.html` : espace formateur chiffré (e-mail + code, déchiffrement dans le navigateur). 33 diapositives avec notes.
+- Aucune donnée de stagiaire n'est conservée par le site.
+- Vidéos : titres, auteurs et durées lus dans les playlists ; contenus à visionner avant diffusion.

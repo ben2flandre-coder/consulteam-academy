@@ -2,11 +2,13 @@
 
 | Contrôle | Résultat |
 |---|---|
-| 11 pages, Chromium, 390 × 844 et 1280 × 800 | Aucun débordement horizontal |
+| 18 pages, Chromium, 390 × 844 et 1280 × 800 | Aucun débordement horizontal (espace formateur verrouillé et ouvert compris) |
 | Console JavaScript, réponses HTTP | Aucune erreur, aucune réponse >= 400 |
-| Auto-évaluation | 12 questions ; 12/12 avec les bonnes réponses sélectionnées par texte (ordre mélangé) |
-| Seuil pédagogique 70 % + mention sans valeur de certification | Ajoutés à l'auto-évaluation (relance QA à faire) |
-| Données personnelles / noms de stagiaires / code formateur | Aucun dans le dossier |
-| Chiffres réglementaires | Chacun rattaché à une source du registre ; DT (9/15 j) et DICT (7/9 j) distingués |
+| Entraînement type examen | 30 questions dont 3 prioritaires ; toutes justes = 60/60 ; toutes fausses = −42/60 (3×−5 + 27×−1) ; seuil 36 |
+| Espace formateur chiffré (AES-GCM, PBKDF2 250 000) | Mauvais code refusé ; bon code ouvre le contenu |
+| Code formateur / données personnelles | Absents du dossier (recherche textuelle) |
+| Chiffres réglementaires | Chacun rattaché à une source du registre |
 
-Non vérifié : rendu sur vrais téléphones, lecteur d'écran, impression. Contenu non relu par Consul Team.
+Limite connue : le code formateur est court ; un chiffrement côté navigateur sur un dépôt public ne résiste pas à une attaque hors ligne déterminée. L'espace formateur ne contient donc que du contenu pédagogique, sans donnée personnelle ni confidentielle.
+
+Non vérifié : vrais téléphones, lecteur d'écran, impression. Contenu non relu par Consul Team.

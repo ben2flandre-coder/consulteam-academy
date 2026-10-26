@@ -5,6 +5,7 @@
 | 11 pages, Chromium, 390 × 844 et 1280 × 800 | Aucun débordement horizontal |
 | Console JavaScript, réponses HTTP | Aucune erreur, aucune réponse >= 400 |
 | Auto-évaluation | 12 questions ; 12/12 avec les bonnes réponses sélectionnées par texte (ordre mélangé) |
+| Seuil pédagogique 70 % + mention sans valeur de certification | Ajoutés à l'auto-évaluation (relance QA à faire) |
 | Données personnelles / noms de stagiaires / code formateur | Aucun dans le dossier |
 | Chiffres réglementaires | Chacun rattaché à une source du registre ; DT (9/15 j) et DICT (7/9 j) distingués |
 

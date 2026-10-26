@@ -7,7 +7,7 @@
 
 ## Non consulté
 - Légifrance (accès refusé par le site) : les articles du code sont lus via OPPBTP, à reconfirmer sur Légifrance/AIDA.
-- Fascicules 2 et 3, arrêté du 15/02/2012, NF S 70-003 (payante), banque de questions officielle.
+- Fascicule 2 : le lien tenté (GUIDE_FASCICULE2…VERSION3.pdf) a renvoyé un document sans rapport (création de compte Cerbère) ; rien n'en est repris. Fascicule 3 non lu. Autres : arrêté du 15/02/2012, NF S 70-003 (payante), banque de questions officielle.
 - Plateforme QCM-AIPR : page d'accueil seulement, aucun accès authentifié.
 
 ## Limites

@@ -5,5 +5,5 @@ const opts=sh(q.o.map((t,k)=>({t,k})));const h=document.createElement('p');h.inn
 const fb=document.createElement('p');fb.setAttribute('aria-live','polite');
 opts.forEach(o=>{const l=document.createElement('label');const r=document.createElement('input');r.type='radio';r.name='q'+i;
 r.onchange=()=>{if(d.dataset.done)return;d.dataset.done=1;n++;if(o.k===q.c){ok++;fb.innerHTML='<span class="ok">Juste.</span> '+q.e}else fb.innerHTML='<span class="ko">Pas tout à fait.</span> '+q.e;
-document.getElementById('score').textContent=ok+' bonne(s) réponse(s) sur '+n+' répondue(s).'};
+document.getElementById('score').textContent=ok+' bonne(s) réponse(s) sur '+n+' répondue(s).'+(n===Q.length?(ok/Q.length>=0.7?' Seuil pédagogique de 70 % atteint.':' Seuil pédagogique de 70 % non atteint : relisez les pages concernées, puis recommencez.')+' Repère pédagogique sans valeur de certification.':'')};
 l.appendChild(r);l.append(' '+o.t);d.appendChild(l)});d.appendChild(fb);box.appendChild(d)});

@@ -1,11 +1,8 @@
-# Consulteam Academy — AIPR 260018A
+# AIPR Opérateur · session INTER 260018A (29/10/2026)
 
-Session INTER 260018A, jeudi 29 octobre 2026, La Seyne-sur-Mer. Profil principal : opérateur. Accueil : `index.html`.
+Site statique (GitHub Pages) : 8 séquences sourcées, socle débutants, 65 questions originales, examen blanc (arrêté du 22/12/2015, 30 questions), cas, retours d'expérience, mises en situation, 11 schémas, livret imprimable, espace formateur chiffré.
 
-- Parcours en 7 étapes (`p1` à `p6`, `reseaux`), avec schémas SVG originaux : `journee.html` pour l'agenda.
-- Cas pratiques (`cas.html`), fiche réflexe imprimable (`fiche.html`), glossaire, aide, charte, sources.
-- Auto-évaluation (20 questions, correction immédiate) et **entraînement type examen** (`entrainement.html`) : 30 questions dont 3 prioritaires, barème +2 / 0 / −1 / −5, seuil 36/60, 1 h. Questions originales (banque de 38, `assets/questions.js`), aucune question de l'examen officiel.
-- Espace formateur chiffré (`formateur.html`, code détenu par le formateur, jamais dans le dépôt).
-- Sources et limites : `REGISTRE-SOURCES.md` ; contrôles : `QA.md` ; adresse à diffuser : `LIENS-DE-DIFFUSION-FORMATEUR.md`.
-
-Aucun CDN, aucun suivi, aucune donnée personnelle. Support de formation : sans valeur de certification.
+- Références et limites : page « Références et limites » du site.
+- Non vérifié : fascicule 3 en vigueur (code couleur lu dans l'ED 6164 de 2014), profondeurs d'enfouissement, fascicule 2 ch. 5 et 8, EPI/EPC, numéros d'urgence, photographies Wikimedia Commons.
+- Aucune donnée de stagiaire dans ce dépôt. Le code formateur n'y figure pas.
+- Les illustrations générées par IA sont indicatives.

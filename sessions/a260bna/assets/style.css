@@ -58,3 +58,4 @@ header.top{padding:12px clamp(20px,4vw,72px)}
 .cols2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr));gap:22px;align-items:start}
 .cols2>*{min-width:0}figure.big{margin:18px 0;background:var(--w);border:1px solid var(--l);border-radius:14px;padding:12px}figure.big img{width:100%;height:auto;display:block;border-radius:8px}figure.big figcaption{font-size:15px;color:var(--m);padding:8px 4px 0}
 table{display:table}
+@media(max-width:900px){table{display:block;overflow-x:auto}.band{grid-template-columns:1fr 1fr}}

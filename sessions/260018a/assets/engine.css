@@ -414,3 +414,4 @@ main svg.sv{background:transparent!important}
 .lesson details.teaching p,.lesson details.teaching ul,.lesson details.teaching ol{max-width:none}
 .seccell.hasmedia.stack .secmedia{justify-items:center}
 .seccell.hasmedia.stack .mfig:only-child{width:100%}
+.ecfig{margin:0 0 16px;max-width:880px}.ecfig img{width:100%;height:auto;border-radius:12px;display:block;cursor:zoom-in}.ecfig figcaption{font-size:.85rem;color:var(--muted,#5b6577);margin-top:6px}

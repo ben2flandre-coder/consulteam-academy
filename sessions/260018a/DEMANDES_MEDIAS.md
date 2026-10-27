@@ -45,3 +45,8 @@ Suivi des images fournies (GPT Images)
 - Livraison AIPR_visuels_modules_2026-10-27 : toutes les images ont été comparées ; seules M10 (I11) et M17 (I15) remplacent ou complètent la série. Les autres ont été écartées : marquage avec pelle en position irréelle (M02), affleurant avec engin près de la bande (M03), pictogramme « = » ambigu (M18), fuseaux qui se recouvrent (M08).
 - À redemander éventuellement : une version de M08 où les deux enveloppes sont nettement séparées.
 - Pour mémoire : ces images illustrent ; aucune distance ne se lit sur elles.
+
+## M19 · SST : visuel officiel et certificat (à fournir par le formateur)
+- Constat du 27/10/2026 : aucune photo de certificat SST sous licence libre n'a été trouvée ; le logo SST est créé et protégé par l'INRS (reproduction intégrale, sans modification).
+- À fournir : (a) la photo de ton propre certificat ou carte SST, nom et numéro masqués, ou (b) le visuel officiel et la charte INRS avec leur autorisation d'usage ; éventuellement une photo de l'autocollant de casque vert.
+- Une fois reçu : l'ajouter à la séquence 8, section « Le logo SST et le casque », avec sa mention de crédit.

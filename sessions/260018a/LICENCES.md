@@ -4,7 +4,7 @@
 - **Illustrations I01 à I15** : générées par IA (I07 à I15 : GPT Images, à partir de demandes écrites par Claude, choisies et fournies par le formateur), valeur indicative, sans validation réglementaire.
 - **Plan de Gournay-en-Bray** : Géoportail de l'urbanisme, Licence Ouverte (Etalab).
 - **Logo et nom Consul Team** : marques de leur titulaire, usage validé par Consul Team pour cette session.
-- **Textes, schémas V01 à V19, questions** : création pour cette session ; aucune licence d'usage libre n'est accordée à ce stade. Le choix d'une licence (par exemple MIT pour le seul code du moteur, ou aucune) appartient à Benoît Deflandre / Consul Team.
+- **Textes, schémas V01 à V21, questions** : création pour cette session ; aucune licence d'usage libre n'est accordée à ce stade. Le choix d'une licence (par exemple MIT pour le seul code du moteur, ou aucune) appartient à Benoît Deflandre / Consul Team.
 - Les exigences réglementaires citées proviennent de sources officielles listées sur le site ; ce support n'a aucune valeur de certification.
 - **Droits sur les illustrations I07 à I15** : aucune licence libre n'est attribuée. Selon les conditions européennes d'OpenAI consultées par l'outil de génération (16 janvier 2026), les droits éventuels sur les sorties sont attribués à l'utilisateur, sans garantie d'exclusivité ni de protection par le droit d'auteur ; pour un compte professionnel, se reporter au contrat correspondant. Mention affichée : « Illustration générée par IA ».
 - Logo SST : créé et protégé par l'INRS ; non reproduit dans ce support. Les textes sur le SST sont des synthèses de pages de l'INRS (sources S32 à S35).

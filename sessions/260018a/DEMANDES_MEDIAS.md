@@ -29,3 +29,12 @@ Après réception
 1. Le formateur valide chaque média (exactitude, légende, droits).
 2. Le média est déposé avec sa fiche de licence dans assets/img et listé dans LICENCES.md.
 3. Le texte ne change que si la source change : le média illustre, il ne décide pas.
+
+Demandes ajoutées après réception des pages 40 à 45
+
+| N° | Module | Type | Sujet | Éléments obligatoires | À éviter | Référence | Usage |
+|----|--------|------|-------|-----------------------|----------|-----------|-------|
+| M15 | 2 | Illustration (coupe) | Gaz : profondeur de pose en général (80 cm) et filet jaune à 20 cm | Mention « en général » ; cotes lisibles | Généraliser à d'autres réseaux | S31 p. 40 ; schéma V18 | Complète V18 |
+| M16 | 7 | Document pédagogique | Exemple rempli (fictif) d'un constat contradictoire d'arrêt de travaux | Données inventées signalées « exemple », formulaire officiel vierge téléchargé depuis la source officielle | Reproduire la page de l'ouvrage ; données réelles | S1 ; formulaire 14767*01 | Atelier module 7 |
+| M17 | 7 | Illustration (frise) | Du droit de retrait à la reprise des travaux | Cinq étapes, rôles | Délais non sourcés | S31 p. 42-43 ; schéma V17 | Complète V17 |
+| M18 | 1 | Affiche A3 | Les cinq missions de l'opérateur | Cinq lignes courtes, source indiquée | Logo d'exploitant ; promesse de réussite à l'examen | S31 p. 45 ; schéma V19 | Salle de formation |

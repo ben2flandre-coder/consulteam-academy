@@ -85,3 +85,19 @@ const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;let io=null;
 if(!reduce&&'IntersectionObserver' in window){io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const t=e.target;t.classList.add('in');io.unobserve(t);setTimeout(()=>{t.classList.remove('rv','in');t.style.transitionDelay=''},700)}}),{rootMargin:'0px 0px -6% 0px'})}
 const arm=()=>{upd();if(!io)return;main.querySelectorAll('.card,.gi,.visual,.callout,.stepbar').forEach((el,i)=>{if(el.closest('details')&&!el.closest('details[open]'))return;el.classList.add('rv');el.style.transitionDelay=Math.min(i%6,5)*60+'ms';io.observe(el)})};
 new MutationObserver(()=>{clearTimeout(arm.t);arm.t=setTimeout(arm,30)}).observe(main,{childList:true});arm()}catch(e){}})();
+(function(){try{
+const ico=()=>document.querySelector('#nav .ic')?0:0;
+function tag(){document.querySelectorAll('main .visual img,main .hero img,main figure img,main svg.sv').forEach(e=>{if(e.dataset.zoom)return;e.dataset.zoom='1';e.setAttribute('tabindex','0');e.setAttribute('role','button');e.setAttribute('aria-label','Agrandir l’image');})}
+function open(el){const old=document.querySelector('#lb');if(old)old.remove();const fig=el.closest('figure');const cap=fig&&fig.querySelector('figcaption')?fig.querySelector('figcaption').textContent.trim():(el.getAttribute('alt')||'');
+const lb=document.createElement('div');lb.id='lb';lb.setAttribute('role','dialog');lb.setAttribute('aria-modal','true');lb.setAttribute('aria-label','Image agrandie');
+lb.innerHTML='<div class="bar"><div class="cap"></div><button type="button" id="lz" aria-pressed="false">Zoom +</button><button type="button" id="lc" aria-label="Fermer">✕ Fermer</button></div><div class="stage"></div>';
+lb.querySelector('.cap').textContent=cap;const st=lb.querySelector('.stage');const c=el.cloneNode(true);c.removeAttribute('data-zoom');c.removeAttribute('tabindex');c.removeAttribute('role');c.removeAttribute('aria-label');if(c.tagName==='IMG'){c.removeAttribute('loading');c.alt=el.alt||''}else{c.removeAttribute('style')}st.appendChild(c);
+document.body.appendChild(lb);document.body.style.overflow='hidden';const prev=document.activeElement;
+const close=()=>{lb.remove();document.body.style.overflow='';document.removeEventListener('keydown',key);try{prev&&prev.focus()}catch(e){}};
+const zoom=()=>{const z=st.classList.toggle('z');lb.querySelector('#lz').textContent=z?'Zoom −':'Zoom +';lb.querySelector('#lz').setAttribute('aria-pressed',z)};
+const key=e=>{if(e.key==='Escape')close();else if(e.key==='+'||e.key==='-')zoom()};
+document.addEventListener('keydown',key);lb.querySelector('#lc').onclick=close;lb.querySelector('#lz').onclick=zoom;c.onclick=zoom;st.onclick=e=>{if(e.target===st)close()};lb.querySelector('#lc').focus()}
+document.addEventListener('click',e=>{const t=e.target.closest('main [data-zoom]');if(t&&!e.target.closest('a'))open(t)});
+document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.dataset&&e.target.dataset.zoom){e.preventDefault();open(e.target)}});
+new MutationObserver(()=>tag()).observe(main,{childList:true,subtree:true});tag()}catch(e){}})();
+(function(){try{const nv=document.querySelector('#nav');new MutationObserver(()=>{const a=nv.querySelector('a.active');if(a&&nv.scrollWidth>nv.clientWidth+4){const x=a.offsetLeft-(nv.clientWidth-a.offsetWidth)/2;nv.scrollLeft=Math.max(0,x)}}).observe(nv,{childList:true})}catch(e){}})();

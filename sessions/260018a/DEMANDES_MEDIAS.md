@@ -38,3 +38,8 @@ Demandes ajoutées après réception des pages 40 à 45
 | M16 | 7 | Document pédagogique | Exemple rempli (fictif) d'un constat contradictoire d'arrêt de travaux | Données inventées signalées « exemple », formulaire officiel vierge téléchargé depuis la source officielle | Reproduire la page de l'ouvrage ; données réelles | S1 ; formulaire 14767*01 | Atelier module 7 |
 | M17 | 7 | Illustration (frise) | Du droit de retrait à la reprise des travaux | Cinq étapes, rôles | Délais non sourcés | S31 p. 42-43 ; schéma V17 | Complète V17 |
 | M18 | 1 | Affiche A3 | Les cinq missions de l'opérateur | Cinq lignes courtes, source indiquée | Logo d'exploitant ; promesse de réussite à l'examen | S31 p. 45 ; schéma V19 | Salle de formation |
+
+Suivi des images fournies (GPT Images)
+- Reçues et intégrées au site : I07 (fuseaux), I08 (grillage), I09 (affleurant), I10 (marquage et bande), I11 (ligne aérienne), I12 et I13 (4 A), I14 (cinq missions).
+- Reçue et non publiée : droit de retrait (M17). Dans l'image, un ouvrier se tient dans la fouille sous le godet relevé d'une pelle : contraire au message de sécurité. À redemander avec : « ouvrier au bord de la fouille, loin du godet, main levée ».
+- Réserve pour I11 : les zones colorées entourent le pylône, alors que les distances de 3 m et 5 m se mesurent depuis les lignes. À signaler à l'oral : schéma de principe.

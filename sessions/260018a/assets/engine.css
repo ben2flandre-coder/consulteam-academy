@@ -416,3 +416,5 @@ main svg.sv{background:transparent!important}
 .seccell.hasmedia.stack .mfig:only-child{width:100%}
 .ecfig{margin:0 0 16px;max-width:880px}.ecfig img{width:100%;height:auto;border-radius:12px;display:block;cursor:zoom-in}.ecfig figcaption{font-size:.85rem;color:var(--muted,#5b6577);margin-top:6px}
 .toc ol{margin:.4rem 0 0;padding-left:1.3rem;columns:2;column-gap:2rem}.toc li{break-inside:avoid;margin:.25rem 0}@media(max-width:800px){.toc ol{columns:1}}
+
+@media(max-width:520px){.srcchip{white-space:normal;max-width:100%;overflow-wrap:anywhere}}

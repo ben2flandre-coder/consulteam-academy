@@ -40,6 +40,8 @@ Demandes ajoutées après réception des pages 40 à 45
 | M18 | 1 | Affiche A3 | Les cinq missions de l'opérateur | Cinq lignes courtes, source indiquée | Logo d'exploitant ; promesse de réussite à l'examen | S31 p. 45 ; schéma V19 | Salle de formation |
 
 Suivi des images fournies (GPT Images)
-- Reçues et intégrées au site : I07 (fuseaux), I08 (grillage), I09 (affleurant), I10 (marquage et bande), I11 (ligne aérienne), I12 et I13 (4 A), I14 (cinq missions).
-- Reçue et non publiée : droit de retrait (M17). Dans l'image, un ouvrier se tient dans la fouille sous le godet relevé d'une pelle : contraire au message de sécurité. À redemander avec : « ouvrier au bord de la fouille, loin du godet, main levée ».
-- Réserve pour I11 : les zones colorées entourent le pylône, alors que les distances de 3 m et 5 m se mesurent depuis les lignes. À signaler à l'oral : schéma de principe.
+- Intégrées au site : I07 (fuseaux), I08 (grillage), I09 (affleurant), I10 (marquage et bande), I11 (ligne aérienne, version à zones autour des lignes), I12 et I13 (4 A), I14 (cinq missions), I15 (droit de retrait : personnes en surface derrière une barrière, loin du godet).
+- Première version du droit de retrait écartée : un ouvrier se tenait dans la fouille sous le godet.
+- Livraison AIPR_visuels_modules_2026-10-27 : toutes les images ont été comparées ; seules M10 (I11) et M17 (I15) remplacent ou complètent la série. Les autres ont été écartées : marquage avec pelle en position irréelle (M02), affleurant avec engin près de la bande (M03), pictogramme « = » ambigu (M18), fuseaux qui se recouvrent (M08).
+- À redemander éventuellement : une version de M08 où les deux enveloppes sont nettement séparées.
+- Pour mémoire : ces images illustrent ; aucune distance ne se lit sur elles.

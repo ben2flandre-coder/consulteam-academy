@@ -79,3 +79,9 @@ document.querySelector('#tf').hidden=true;document.querySelector('#tcont').inner
 document.querySelector('#theme').onclick=()=>{document.body.classList.toggle('night');try{localStorage.setItem(KEY+'.t',document.body.classList.contains('night')?'n':'d')}catch(e){}};
 try{if(localStorage.getItem(KEY+'.t')==='n')document.body.classList.add('night')}catch(e){}
 window.addEventListener('hashchange',render);render();
+(function(){try{const bar=document.createElement('div');bar.id='prog';bar.setAttribute('aria-hidden','true');document.body.appendChild(bar);
+const upd=()=>{const h=document.documentElement,m=h.scrollHeight-h.clientHeight;bar.style.width=(m>0?Math.min(100,h.scrollTop/m*100):0)+'%'};addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;let io=null;
+if(!reduce&&'IntersectionObserver' in window){io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const t=e.target;t.classList.add('in');io.unobserve(t);setTimeout(()=>{t.classList.remove('rv','in');t.style.transitionDelay=''},700)}}),{rootMargin:'0px 0px -6% 0px'})}
+const arm=()=>{upd();if(!io)return;main.querySelectorAll('.card,.gi,.visual,.callout,.stepbar').forEach((el,i)=>{if(el.closest('details')&&!el.closest('details[open]'))return;el.classList.add('rv');el.style.transitionDelay=Math.min(i%6,5)*60+'ms';io.observe(el)})};
+new MutationObserver(()=>{clearTimeout(arm.t);arm.t=setTimeout(arm,30)}).observe(main,{childList:true});arm()}catch(e){}})();

@@ -402,3 +402,15 @@ u.warnu{text-decoration:underline wavy var(--c-sec);text-decoration-thickness:2p
 .figlink{white-space:normal}.figlink b{white-space:nowrap;flex:none}
 @media(max-width:600px){main .keyline{font-size:17px}details.teaching{padding:4px 14px 14px}details.teaching summary{font-size:18px}ul.pts li{padding:8px 6px}}
 main svg.sv{background:transparent!important}
+/* Équilibrage des cellules texte + visuels : pas de grand blanc, pas de visuel coupé */
+.lesson{max-width:none}
+.seccell.hasmedia.stack{grid-template-columns:minmax(0,1fr)!important}
+.seccell.hasmedia.stack .secmedia{position:static!important;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:16px;align-items:start}
+.seccell.hasmedia.stack .secmedia .visual{margin:0}
+.seccell.nosticky .secmedia{position:static!important}
+@media(min-width:1180px){.seccell.hasmedia{align-items:start}}
+.seccell.hasmedia.stack .mfig img{max-height:460px;width:100%;object-fit:contain;background:#fff}
+.seccell.hasmedia.stack .mfig:only-child{max-width:760px}
+.lesson details.teaching p,.lesson details.teaching ul,.lesson details.teaching ol{max-width:none}
+.seccell.hasmedia.stack .secmedia{justify-items:center}
+.seccell.hasmedia.stack .mfig:only-child{width:100%}

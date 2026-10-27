@@ -124,3 +124,7 @@ window.openZoom=open;document.addEventListener('click',e=>{const t=e.target.clos
 document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.dataset&&e.target.dataset.zoom){e.preventDefault();open(e.target)}});
 new MutationObserver(()=>tag()).observe(main,{childList:true,subtree:true});tag()}catch(e){}})();
 (function(){try{const nv=document.querySelector('#nav');new MutationObserver(()=>{const a=nv.querySelector('a.active');if(a&&nv.scrollWidth>nv.clientWidth+4){const x=a.offsetLeft-(nv.clientWidth-a.offsetWidth)/2;nv.scrollLeft=Math.max(0,x)}}).observe(nv,{childList:true})}catch(e){}})();
+;(function(){let t=null;function balance(){const wide=innerWidth>=1180;document.querySelectorAll('.seccell.hasmedia').forEach(c=>{c.classList.remove('stack','nosticky');if(!wide)return;const a=c.querySelector('.sectext'),m=c.querySelector('.secmedia');if(!a||!m)return;const ht=a.offsetHeight,hm=m.offsetHeight;if(hm>ht+40)c.classList.add('stack');else if(hm>innerHeight-40)c.classList.add('nosticky')})}
+function later(){clearTimeout(t);t=setTimeout(balance,60)}
+addEventListener('resize',later);document.addEventListener('toggle',later,true);document.addEventListener('load',later,true);
+new MutationObserver(later).observe(document.getElementById('main')||document.querySelector('main')||document.body,{childList:true,subtree:false});later()})();

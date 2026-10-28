@@ -6,6 +6,7 @@ Base : https://ben2flandre-coder.github.io/consulteam-academy/sessions/a2609la/
 |---|---|---|
 | Support apprenant | `apprenant.html` | apprenants |
 | Fiches nœuds | `noeuds.html` | apprenants |
+| Suivre l’animation | `suivre.html` | apprenants |
 | Mode animation | `animation.html` | projection formateur |
 | Espace formateur | `formateur.html` | formateur uniquement |
 | Programme SECU37 | `programme.html` | tous |

@@ -24,3 +24,43 @@ table.mx{border-collapse:collapse;margin:12px 0}table.mx td,table.mx th{border:1
 #t select{width:72px}#t td.sc{white-space:nowrap}#t input{min-width:140px}table td:first-child{min-width:110px}
 @media(prefers-color-scheme:dark){table.mx .g1{background:#143d29;color:#c6f1d9}table.mx .g2{background:#4a3a10;color:#ffe9a8}table.mx .g3{background:#55300f;color:#ffd9b0}table.mx .g4{background:#5a1f1a;color:#ffd5d0}}
 @media print{.polehead{-webkit-print-color-adjust:exact;print-color-adjust:exact}details.fiche-r{break-inside:avoid}}
+
+/* ===== v3 : pleine largeur, relief et mouvement ===== */
+main{max-width:min(1840px,96vw);padding:clamp(22px,3vw,52px) clamp(16px,3.2vw,64px) 80px}
+@media(min-width:1100px){body{font-size:clamp(17px,.42vw + 11px,21px)}p,li,.lead,.note,.warn,.ok,.q,details.fiche-r,ol.steps,footer{max-width:112ch}.lead{font-size:1.18em}.grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:clamp(14px,1.4vw,26px)}.gal{grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr))}h1{font-size:clamp(34px,3.4vw,66px)}h2{font-size:clamp(24px,2vw,38px)}table{font-size:1em}}
+@media(prefers-reduced-motion:no-preference){main>*{animation:pz-rise .65s cubic-bezier(.2,.75,.2,1) both}main>*:nth-child(2){animation-delay:.05s}main>*:nth-child(3){animation-delay:.1s}main>*:nth-child(4){animation-delay:.15s}main>*:nth-child(5){animation-delay:.2s}main>*:nth-child(n+6){animation-delay:.25s}.grid>*{animation:pz-rise .6s both}.grid>*:nth-child(2){animation-delay:.06s}.grid>*:nth-child(3){animation-delay:.12s}.grid>*:nth-child(4){animation-delay:.18s}.grid>*:nth-child(5){animation-delay:.24s}.grid>*:nth-child(n+6){animation-delay:.3s}}
+@keyframes pz-rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+/* accueil : bandeau d'ouverture */
+.hero{gap:clamp(18px,2.4vw,44px);margin-bottom:22px}
+.hero>div:first-child{position:relative;overflow:hidden;color:#fff;background:radial-gradient(900px 420px at 100% 0,#2d6aa6aa,transparent 70%),linear-gradient(135deg,#102c53,#0b4a82);border-radius:24px;padding:clamp(22px,2.6vw,52px);box-shadow:0 20px 50px #102c5340}
+.hero>div:first-child::after{content:"";position:absolute;right:-60px;bottom:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#f6b63d55,transparent 65%);animation:pz-float 9s ease-in-out infinite}
+.hero>div:first-child::before{content:"";position:absolute;inset:0;background:radial-gradient(#ffffff14 1.2px,transparent 1.4px) 0 0/26px 26px;pointer-events:none}
+.hero h1{color:#fff;position:relative;z-index:1}.hero .lead{color:#d6e8fa;position:relative;z-index:1}
+@keyframes pz-float{50%{transform:translate(-18px,-22px) scale(1.08)}}
+.hero .fiche{border-radius:24px;box-shadow:0 20px 50px #102c5330;display:flex;flex-direction:column;justify-content:center;font-size:1.05em}
+.hero .fiche dd{font-weight:600}
+.polebar{gap:12px}.polebar a{padding:8px 22px 8px 8px;font-size:1.05em;box-shadow:0 8px 20px #0002;transition:transform .2s,box-shadow .2s}.polebar a:hover{transform:translateY(-3px);box-shadow:0 14px 28px #0003}.polebar a img{width:36px;height:36px}
+/* cartes */
+.grid a.card,.grid .card{position:relative;border-radius:18px;padding:18px 22px;box-shadow:0 6px 18px #102c5314;transition:transform .2s,box-shadow .2s,border-color .2s;overflow:hidden}
+.grid a.card::after{content:"→";position:absolute;right:16px;bottom:10px;font:700 22px var(--ff);color:var(--pole,var(--b));opacity:0;transform:translateX(-8px);transition:.2s}
+.grid a.card:hover{transform:translateY(-5px);box-shadow:0 16px 36px #102c5330}.grid a.card:hover::after{opacity:1;transform:none}
+.grid a.card.ic img{width:56px;height:56px}
+.card{border-radius:16px}
+/* en-tête de pôle */
+.polehead{position:relative;overflow:hidden;border-radius:22px;padding:clamp(20px,2.2vw,40px) clamp(22px,2.6vw,48px);background:linear-gradient(120deg,var(--pole-t),color-mix(in srgb,var(--pole) 16%,var(--pole-t)));box-shadow:0 14px 36px #102c5318}
+.polehead::after{content:"";position:absolute;right:-70px;top:-70px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--pole) 35%,transparent),transparent 68%);animation:pz-float 10s ease-in-out infinite;pointer-events:none}
+.polehead img{width:clamp(72px,6vw,112px);height:auto}.polehead p{font-size:1.08em}
+/* titres, tableaux, encadrés */
+h2::before{width:12px;height:1.1em;border-radius:4px}
+tr:nth-child(even) td{background:color-mix(in srgb,var(--n) 4%,transparent)}tr:hover td{background:color-mix(in srgb,var(--pole,var(--b)) 10%,transparent)}
+th{background:linear-gradient(135deg,var(--pole,var(--n)),color-mix(in srgb,var(--pole,var(--n)) 60%,#000))}
+table{border-radius:16px;box-shadow:0 8px 22px #102c5312}
+.note,.warn,.ok{position:relative;border-radius:14px;padding:16px 20px 16px 62px;border-left-width:0;box-shadow:0 6px 18px #102c5310}
+.note::before,.warn::before,.ok::before{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font:800 18px/1 var(--ff);color:#fff}
+.note::before{content:"i";background:var(--b)}.warn::before{content:"!";background:var(--ko)}.ok::before{content:"✓";background:var(--ok)}
+ol.steps li{border-radius:14px;padding:14px 18px 14px 72px;box-shadow:0 4px 14px #102c5310}ol.steps li::before{left:16px;top:50%;transform:translateY(-50%);width:42px;height:42px;line-height:42px;border-radius:50%;background:var(--pole,var(--n));color:#fff}
+details.fiche-r{border-radius:14px;transition:box-shadow .2s}details.fiche-r:hover{box-shadow:0 8px 22px #102c5322}details.fiche-r[open]{box-shadow:0 10px 26px #102c5326}
+nav.sommaire a{padding:7px 16px;box-shadow:0 3px 10px #102c5310;transition:transform .15s}nav.sommaire a:hover{transform:translateY(-2px)}
+button,.btn{border-radius:12px;transition:transform .15s,box-shadow .15s;box-shadow:0 6px 16px #102c5330}button:hover,.btn:hover{transform:translateY(-2px)}
+header.top{padding:12px clamp(16px,2.4vw,44px)}header.top nav a{font-size:clamp(14px,.3vw + 11px,17px);transition:background .15s}
+@media print{main>*,.grid>*{animation:none!important}.hero>div:first-child{background:#fff;color:#000;box-shadow:none}.hero h1,.hero .lead{color:#000}.polehead::after,.hero>div:first-child::before,.hero>div:first-child::after{display:none}}

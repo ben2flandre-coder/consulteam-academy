@@ -12,7 +12,7 @@
 - Aucune donnée nominative ni information propre à l’établissement n’est publiée.
 
 ## Ajouts de l'édition du 28 octobre 2026
-- **Mode animation v2** : 93 diapositives ordonnées par séance (7 × 120 min), minutage, notes formateur, QR « Sur le site ». QR générés localement (bibliothèque segno), aucun service externe.
+- **Mode animation v2** : 96 diapositives ordonnées par séance (7 × 120 min), minutage, notes formateur, QR « Sur le site ». QR générés localement (bibliothèque segno), aucun service externe.
 - **Pages ajoutées** : allergenes.html, viande-poisson.html, complements-pms.html, cas.html (10 cas métiers), suivre.html (suivi et QR), examen.html (examen blanc de 30 questions, 40 min, seuil pédagogique de 70 %).
 - **Textes de référence** (à vérifier sur Légifrance / EUR-Lex) : règlements (CE) 178/2002, 852/2004, 853/2004 ; règlement (UE) 1169/2011 (14 allergènes) ; décret 2015-447 du 17 avril 2015 ; arrêté du 21 décembre 2009 ; Code rural L. 233-4 et arrêté du 5 octobre 2011 (formation à l'hygiène, citée en notes formateur) ; Code du travail L. 4121-1 et suivants (DUERP).
 - **Repères non réglementaires** (signalés comme tels dans les pages) : refroidissement de +63 °C à +10 °C en moins de 2 h ; reprise du personnel après 48 h sans symptômes ; 25 % de composés polaires pour l'huile ; Anisakis : −20 °C pendant 24 h au moins.

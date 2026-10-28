@@ -18,3 +18,6 @@ Les visuels d'équipements et de nœuds sont générés (non contractuels) : à 
 
 ## Version et traçabilité
 Version 1.3 du 21/10/2026. Voir `tracabilite.html` (historique, sources, rapprochement des illustrations, validation Consulteam en attente). Horaires : 9 h–12 h / 13 h–17 h (convocation Consulteam) ; déroulé formateur et mode animation recalés.
+
+## Mode animation : QR
+Touche Q (ou bouton « QR ») : affiche un QR « Sur le site » vers la page apprenant, fiches ou nœuds correspondant à la séquence ; à masquer ensuite pour libérer la diapositive.

@@ -13,7 +13,7 @@ const KEY='consulteam.a260bna.eval.v1';
 function sh(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function rnd(){const root=document.getElementById('qs');Q.forEach((q,i)=>{const d=document.createElement('div');d.className='q';d.id='q'+i;
 let h='<b>'+(i+1)+'. '+q[1]+'</b>'+(q[0]==='m'?' <em>(plusieurs réponses)</em>':q[0]==='o'?' <em>(indiquez le rang 1 à '+q[2].length+')</em>':'');
-if(q[0]==='o'){const N=q[2].length;sh(q[2].map((_,j)=>j)).forEach(j=>{const o=q[2][j];h+='<label>'+o+' → <select name="q'+i+'_'+j+'"><option value="">–</option>'+Array.from({length:N},(_,n)=>'<option>'+(n+1)+'</option>').join('')+'</select></label>'});}
+if(q[0]==='o'){const N=q[2].length;(()=>{let a;do{a=sh(q[2].map((_,j)=>j))}while(a.every((v,k)=>v===k));return a})().forEach(j=>{const o=q[2][j];h+='<label>'+o+' → <select name="q'+i+'_'+j+'"><option value="">–</option>'+Array.from({length:N},(_,n)=>'<option>'+(n+1)+'</option>').join('')+'</select></label>'});}
 else sh(q[2].map((_,j)=>j)).forEach(j=>{const o=q[2][j];h+='<label><input type="'+(q[0]==='m'?'checkbox':'radio')+'" name="q'+i+'" value="'+j+'"> '+o+'</label>'});
 h+='<div class="expl" hidden></div>';d.innerHTML=h;root.appendChild(d)})}
 function ident(){return {nom:document.getElementById('nom').value.trim(),prenom:document.getElementById('prenom').value.trim(),mail:document.getElementById('mail').value.trim(),org:document.getElementById('org').value.trim()}}

@@ -20,3 +20,6 @@ Points à contrôler avant diffusion : liens de la rubrique Ressources (ouvrir c
 - `formateur.html` et `animation.html` : espace formateur chiffré (e-mail + code, déchiffrement dans le navigateur). 33 diapositives avec notes.
 - Aucune donnée de stagiaire n'est conservée par le site.
 - Vidéos : titres, auteurs et durées lus dans les playlists ; contenus à visionner avant diffusion.
+
+## Mode animation (v4)
+QR « Sur le site » sur chaque diapositive, page `suivre.html`, fin prévue par diapositive (matin 8 h 30–12 h, après-midi 13 h 30–16 h 30) avec retard/avance le jour J, suivi local de l’avancement. Chiffres TMS de la diapositive « Repères chiffrés » : relevés le 21/10/2026, à recouper avant la séance.

@@ -17,7 +17,7 @@ Points à contrôler avant diffusion : liens de la rubrique Ressources (ouvrir c
 
 ## Contenu (v3)
 - `index.html` : plateforme participant (9 modules, galerie, glossaire de 20 termes, vidéothèque de 11 vidéos issues des playlists du formateur + sites de référence, auto-évaluation de 12 questions mélangées avec envoi facultatif du résultat par le stagiaire).
-- `formateur.html` et `animation.html` : espace formateur chiffré (e-mail + code, déchiffrement dans le navigateur). 40 diapositives avec notes (v6, 04/11/2026), regénérées pour la journée complète : 8h30–12h00 / 13h00–16h30, partie TMS puis incendie.
+- `formateur.html` et `animation.html` : espace formateur chiffré (e-mail + code, déchiffrement dans le navigateur). 45 diapositives avec notes (v6, 04/11/2026), regénérées pour la journée complète : 8h30–12h00 / 13h00–16h30, partie TMS puis incendie.
 - Aucune donnée de stagiaire n'est conservée par le site.
 - Vidéos : titres, auteurs et durées lus dans les playlists ; contenus à visionner avant diffusion.
 
@@ -36,7 +36,7 @@ QR « Sur le site » sur chaque diapositive, page `suivre.html`, fin prévue par
 
 Points à contrôler avant le 13/11 :
 - Matériel et zone d'exercice (types d'extincteurs, bac à flammes, balisage) : vérification et essai sur site le 10/11, puis adapter les consignes de sécurité du module 09 et le plan de zone (schéma générique).
-- Espace formateur chiffré (`hub.html`, `formateur.html`, `animation.html`) recréé le 04/11/2026 (40 diapositives, QR par diapositive, fiche formateur avec protocole de sécurité de l'exercice, grille d'observation, références). Même mécanisme e-mail + code ; le code est communiqué hors dépôt.
+- Espace formateur chiffré (`hub.html`, `formateur.html`, `animation.html`) recréé le 04/11/2026 (45 diapositives, QR par diapositive, fiche formateur avec protocole de sécurité de l'exercice, grille d'observation, références). Même mécanisme e-mail + code ; le code est communiqué hors dépôt.
 - Convocation et émargement : confirmer à Consul Team les horaires 8h30–16h30.
 
 ## Visuels incendie (v6, 04/11/2026)
@@ -53,3 +53,9 @@ Recoupement réglementaire (04/11/2026) : R4227-29 et R4227-39 relus sur OPPBTP,
 - Animation : points révélés un à un (→), encadrés « À vous » et « Sur votre téléphone », diapo n°/40 à côté du QR, liens Support / Suivre / Espace formateur.
 - QR de chaque diapo = `?d=N#ancre` : `assets/suivi.js` affiche sur le support un bandeau (diapo, consigne, précédent/suivant, sélecteur) et surligne la section. Pas de serveur : la synchro passe par le QR ou le sélecteur, aucune donnée collectée.
 - Module 9 : aide-mémoire interactif « Quel extincteur pour quel feu ? ».
+
+
+## v8 : module 9 complété (04/11/2026)
+- Nouvelles sections du module 9 : repères de couleur des extincteurs (indicatifs, seule l'étiquette fait foi), feu d'origine électrique, précautions communes avec message d'alerte, conduite à tenir en cas d'incident ou d'accident (PEFAS, brûlure, vêtements en feu, explosion, fumées). Points de contrôle portés à 6.
+- Animation : 45 diapositives ; horaires macro inchangés (théorie 14h30–15h15, pratique 15h25–16h15).
+- Sources : INRS (consignes d'intervention, ED 6054), Inserm (brûlure thermique), Wikipédia (couleurs, code non universel). Aucune norme confirmée pour le code couleur.

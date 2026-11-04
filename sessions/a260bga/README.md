@@ -1,6 +1,6 @@
 # Session A260BGA — Gestes et postures
 
-Formation présentielle · 1 journée · 6 h 30 · 13/11/2026 · 8h30–12h00 / 13h30–16h30.
+Formation présentielle · 1 journée · 7 heures (convention GesCOF ; plages 8h30–12h00 / 13h30–16h30 = 6 h 30) · 13/11/2026 · 8h30–12h00 / 13h30–16h30.
 
 Plateforme participant : `index.html` (programme, TMS, facteurs, biomécanique, gestes, adaptation du poste, EPI, réveil musculaire, auto-évaluation, ressources).
 
@@ -41,3 +41,6 @@ Points à contrôler avant le 13/11 :
 
 ## Visuels incendie (v6, 04/11/2026)
 16 visuels natifs (15 publiés ; EXT12, redondant avec le schéma des classes de feu, est conservé au manifeste mais non affiché) 1536×1024 ajoutés au module 9 : G14–G17 (repères, posture, zone, contre-exemple) et EXT01–EXT12 (agents, coupes de principe, étapes, classes de feu). Générés individuellement par IA, livrés en WebP avec perte (qualité 86) ; les PNG d'origine sans perte et leurs empreintes SHA-256 sont référencés dans `images/visuels/manifeste-sources.json` (29 entrées). Ces images illustrent ; elles ne certifient ni un geste ni un équipement. G17 est un contre-exemple, à toujours présenter avec sa légende. Les couleurs des bandeaux d'extincteur varient selon le fabricant et ne constituent pas un code de référence.
+
+Effectif confirmé : 6 stagiaires (GesCOF, CFM). Deux tirs chacun (environ 12 tirs sur 50 min de pratique). Au-delà de 10 stagiaires, prévoir un seul tir.
+Mode animation et espace formateur complet : à créer (le support apprenant ne les présente pas comme disponibles).

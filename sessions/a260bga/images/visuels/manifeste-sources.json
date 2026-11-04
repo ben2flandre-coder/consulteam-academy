@@ -311,7 +311,7 @@
    "situation": "Le jet vise le haut des flammes et manque leur base ; le formateur interrompt le geste.",
    "points_de_vigilance": "Repérer le jet trop haut qui manque la base des flammes, la posture debout et le geste d’arrêt du formateur.",
    "principes_ergonomiques": "Viser la base des flammes, rester bas, s’arrêter dès que le formateur le demande.",
-   "limites": "CONTRE-EXEMPLE : ne jamais présenter G17 comme une pratique recommandée. Reprendre uniquement sur consigne du formateur, avec un agent adapté et une issue disponible.",
+   "limites": "Contre-exemple pédagogique, à ne pas reproduire. En exercice, le formateur interrompt tout tir mal dirigé.",
    "controle_visuel": "Revue du pack du 04/11/2026 (REVUE_CONFORMITE.md) et relecture sur planche de contrôle réduite ; texte incrusté lisible, contenu recoupé avec INRS ED 6054. Les détails non visibles ne sont pas vérifiables.",
    "publication": "WebP avec perte (qualité 86) ; PNG d’origine sans perte conservé hors dépôt."
   },
@@ -330,7 +330,7 @@
    "situation": "Appareil à eau pulvérisée, classe A.",
    "points_de_vigilance": "Lire le marquage de l’appareil : classe A et restrictions, notamment au voisinage d’équipements électriques sous tension.",
    "principes_ergonomiques": "L’eau refroidit les solides avec braises (classe A).",
-   "limites": "Schéma générique : se référer à la notice du fabricant. Les images de synthèse illustrent et ne certifient ni un geste ni un équipement ; l’appareil réel et sa notice font foi.",
+   "limites": "Schéma générique : se référer à la notice du fabricant.",
    "controle_visuel": "Revue du pack du 04/11/2026 (REVUE_CONFORMITE.md) et relecture sur planche de contrôle réduite ; texte incrusté lisible, contenu recoupé avec INRS ED 6054. Les détails non visibles ne sont pas vérifiables.",
    "publication": "WebP avec perte (qualité 86) ; PNG d’origine sans perte conservé hors dépôt."
   },
@@ -368,7 +368,7 @@
    "situation": "Appareil à poudre ABC et ses précautions.",
    "points_de_vigilance": "Noter les résidus et la forte baisse de visibilité : éviter les locaux exigus, la poudre est corrosive pour le matériel électronique.",
    "principes_ergonomiques": "Pour un gaz enflammé, couper l’alimentation avant d’éteindre la flamme, afin d’éviter l’accumulation de gaz imbrûlé.",
-   "limites": "Les classes réellement couvertes dépendent du marquage de l’appareil. Les images de synthèse illustrent et ne certifient ni un geste ni un équipement ; l’appareil réel et sa notice font foi.",
+   "limites": "Les classes réellement couvertes dépendent du marquage de l’appareil.",
    "controle_visuel": "Revue du pack du 04/11/2026 (REVUE_CONFORMITE.md) et relecture sur planche de contrôle réduite ; texte incrusté lisible, contenu recoupé avec INRS ED 6054. Les détails non visibles ne sont pas vérifiables.",
    "publication": "WebP avec perte (qualité 86) ; PNG d’origine sans perte conservé hors dépôt."
   },
@@ -384,10 +384,10 @@
    "prompt": "Use case scientific-educational. ONE independent finished French educational image EXT04, landscape 3:2 at least 1536x1024 native. Premium clean technical illustration on ivory background, navy typography, red extinguisher at left occupying half page, concise legible text at right. Red CO2 cylinder, black insulated horn and handle, no pressure gauge. Mechanically plausible external model. Exact French title \"EXT04 — Dioxyde de carbone CO₂\". Class badge \"B selon marquage\". Body text exactly \"Sans résidu. Risques de gelure et d'asphyxie. Utiliser la poignée isolante du diffuseur.\". Footer \"Schéma générique • Se référer à la notice du fabricant\". Standalone asset, no other extinguisher types, no collage/contact sheet, no brand, no watermark. All text correct French.",
    "usage": "Module 9 · choisir",
    "legende": "Dioxyde de carbone (CO₂)",
-   "situation": "Appareil au CO₂ à diffuseur et prise isolante.",
-   "points_de_vigilance": "Utiliser la prise isolante du diffuseur : le froid peut provoquer des gelures. Risque d’asphyxie en espace confiné ; les braises peuvent se rallumer.",
+   "situation": "Appareil au CO₂ à diffuseur et poignée isolante.",
+   "points_de_vigilance": "Utiliser la poignée isolante du diffuseur : le froid peut provoquer des gelures. Risque d’asphyxie en espace confiné ; les braises peuvent se rallumer.",
    "principes_ergonomiques": "Décharge sans dépôt de poudre ; convient à certains feux de classe B selon marquage.",
-   "limites": "Sous tension, seul un appareil portant la mention adaptée peut être utilisé (INRS, moins de 1 000 V) ; l’image n’affirme rien de plus. Les images de synthèse illustrent et ne certifient ni un geste ni un équipement ; l’appareil réel et sa notice font foi.",
+   "limites": "Sous tension, seul un appareil portant la mention adaptée peut être utilisé (INRS, moins de 1 000 V) ; l’image n’affirme rien de plus.",
    "controle_visuel": "Revue du pack du 04/11/2026 (REVUE_CONFORMITE.md) et relecture sur planche de contrôle réduite ; texte incrusté lisible, contenu recoupé avec INRS ED 6054. Les détails non visibles ne sont pas vérifiables.",
    "publication": "WebP avec perte (qualité 86) ; PNG d’origine sans perte conservé hors dépôt."
   },
@@ -406,7 +406,7 @@
    "situation": "Appareil à poudre pour feux de métaux, classe D.",
    "points_de_vigilance": "Le choix de l’agent dépend du métal concerné.",
    "principes_ergonomiques": "Une poudre D n’est pas universelle et la poudre ABC ne la remplace pas.",
-   "limites": "Matériel réservé aux sites qui manipulent ces métaux, non utilisé pendant l’exercice. Les images de synthèse illustrent et ne certifient ni un geste ni un équipement ; l’appareil réel et sa notice font foi.",
+   "limites": "Matériel réservé aux sites qui manipulent ces métaux, non utilisé pendant l’exercice.",
    "controle_visuel": "Revue du pack du 04/11/2026 (REVUE_CONFORMITE.md) et relecture sur planche de contrôle réduite ; texte incrusté lisible, contenu recoupé avec INRS ED 6054. Les détails non visibles ne sont pas vérifiables.",
    "publication": "WebP avec perte (qualité 86) ; PNG d’origine sans perte conservé hors dépôt."
   },
@@ -425,7 +425,7 @@
    "situation": "Appareil à marquage F avec lance dédiée.",
    "points_de_vigilance": "Repérer le marquage F et la lance dédiée reliée par un flexible.",
    "principes_ergonomiques": "L’agent spécifique refroidit et forme une barrière sur l’huile. Ne jamais projeter d’eau ordinaire sur une huile.",
-   "limites": "Dans les limites de la notice de l’appareil. Les images de synthèse illustrent et ne certifient ni un geste ni un équipement ; l’appareil réel et sa notice font foi.",
+   "limites": "Dans les limites de la notice de l’appareil.",
    "controle_visuel": "Revue du pack du 04/11/2026 (REVUE_CONFORMITE.md) et relecture sur planche de contrôle réduite ; texte incrusté lisible, contenu recoupé avec INRS ED 6054. Les détails non visibles ne sont pas vérifiables.",
    "publication": "WebP avec perte (qualité 86) ; PNG d’origine sans perte conservé hors dépôt."
   },
@@ -520,7 +520,7 @@
    "situation": "Alerter, choisir l’agent, retirer la goupille, viser la base et balayer.",
    "points_de_vigilance": "Suivre l’enchaînement : alerter et garder une issue, choisir l’agent, retirer la goupille (percuter si nécessaire), viser la base et balayer.",
    "principes_ergonomiques": "Intervenir seulement sur un départ de feu, formé et sans s’exposer ; évacuer si le feu persiste.",
-   "limites": "La notice de l’appareil prime (la percussion de cartouche dépend du modèle). Les images de synthèse illustrent et ne certifient ni un geste ni un équipement ; l’appareil réel et sa notice font foi.",
+   "limites": "La notice de l’appareil prime (la percussion de cartouche dépend du modèle).",
    "controle_visuel": "Revue du pack du 04/11/2026 (REVUE_CONFORMITE.md) et relecture sur planche de contrôle réduite ; texte incrusté lisible, contenu recoupé avec INRS ED 6054. Les détails non visibles ne sont pas vérifiables.",
    "publication": "WebP avec perte (qualité 86) ; PNG d’origine sans perte conservé hors dépôt."
   },
@@ -534,12 +534,12 @@
    "generation": "native individuelle",
    "recadrage": false,
    "prompt": "Use case scientific-educational. ONE standalone French educational image EXT12 landscape 3:2 native minimum 1536x1024, clean premium precision illustration, ivory background navy typography red accents, large perfectly legible French labels. Title \"EXT12 — Les classes de feu\". One standalone educational reference infographic with five generous rows, icons and text. Rows exact: 'A · Solides avec braises · Bois, papier, carton', 'B · Liquides ou solides liquéfiables · Essence, solvants', 'C · Gaz · Butane, propane, méthane', 'D · Métaux · Agent spécifique au métal', 'F · Huiles et graisses de cuisson · Agent portant le marquage F'. Footer notes 'L’électricité est un risque, pas une classe de feu E en classification européenne.' and 'Gaz : ne pas éteindre une fuite enflammée sans pouvoir couper l’alimentation.' Do not show water on cooking oil, do not present universal agent recommendations. No branding, no watermark, no contact sheet of separate assets. Fully self-contained pedagogical image.",
-   "usage": "Module 9 · classes de feu",
+   "usage": "Non publiée dans le support : redondante avec le schéma et le tableau des classes de feu (module 9, section 2).",
    "legende": "Les classes de feu",
    "situation": "A, B, C, D et F, avec exemples.",
    "points_de_vigilance": "A solides avec braises, B liquides ou solides liquéfiables, C gaz, D métaux, F huiles et graisses de cuisson.",
    "principes_ergonomiques": "L’électricité est un risque, pas une classe E. Gaz : ne pas éteindre une fuite enflammée sans pouvoir couper l’alimentation.",
-   "limites": "Choisir l’agent d’après le marquage et la nature du feu. Les images de synthèse illustrent et ne certifient ni un geste ni un équipement ; l’appareil réel et sa notice font foi.",
+   "limites": "Choisir l’agent d’après le marquage et la nature du feu.",
    "controle_visuel": "Revue du pack du 04/11/2026 (REVUE_CONFORMITE.md) et relecture sur planche de contrôle réduite ; texte incrusté lisible, contenu recoupé avec INRS ED 6054. Les détails non visibles ne sont pas vérifiables.",
    "publication": "WebP avec perte (qualité 86) ; PNG d’origine sans perte conservé hors dépôt."
   }

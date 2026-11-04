@@ -38,3 +38,6 @@ Points à contrôler avant le 13/11 :
 - Matériel et zone d'exercice (types d'extincteurs, bac à flammes, balisage) : vérification et essai sur site le 10/11, puis adapter les consignes de sécurité du module 09 et le plan de zone (schéma générique).
 - Espace formateur chiffré (`formateur.html`, `animation.html`, 33 diapositives, fin prévue par diapositive) : non modifié, car le contenu est chiffré ; horaires et diapositives incendie à refaire.
 - Convocation et émargement : confirmer à Consul Team les horaires 8h30–16h30.
+
+## Visuels incendie (v6, 04/11/2026)
+16 visuels natifs 1536×1024 ajoutés au module 9 : G14–G17 (repères, posture, zone, contre-exemple) et EXT01–EXT12 (agents, coupes de principe, étapes, classes de feu). Générés individuellement par IA, livrés en WebP avec perte (qualité 86) ; les PNG d'origine sans perte et leurs empreintes SHA-256 sont référencés dans `images/visuels/manifeste-sources.json` (29 entrées). Ces images illustrent ; elles ne certifient ni un geste ni un équipement. G17 est un contre-exemple, à toujours présenter avec sa légende. Les couleurs des bandeaux d'extincteur varient selon le fabricant et ne constituent pas un code de référence.

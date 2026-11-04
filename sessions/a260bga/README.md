@@ -1,6 +1,6 @@
 # Session A260BGA — Gestes et postures
 
-Formation présentielle · 1 journée · 7 heures · 13/11/2026 · 8h30–12h00 / 13h30–17h00.
+Formation présentielle · 1 journée · 7 heures · 13/11/2026 · 8h30–12h00 / 13h30–16h30.
 
 Plateforme participant : `index.html` (programme, TMS, facteurs, biomécanique, gestes, adaptation du poste, EPI, réveil musculaire, auto-évaluation, ressources).
 
@@ -26,12 +26,15 @@ QR « Sur le site » sur chaque diapositive, page `suivre.html`, fin prévue par
 
 
 ## Complément incendie (v5, 04/11/2026)
-- Partie gestes et postures terminée à 15h00 (réveil musculaire ramené en début d'après-midi, module EPI allégé), fin de journée à 17h00 au lieu de 16h30.
-- Module 09 « Incendie : manipuler un extincteur » (2 h, 15h00–17h00) : théorie, classes de feu, choix de l'extincteur, réflexes, gestes, exercice pratique sur feu de formation, 4 points de contrôle. Initiation avec attestation de présence, sans certification ni habilitation.
-- Programme, bandeau, parcours, menu, glossaire (23 termes), cadre réglementaire (R4227-29, R4227-39) et page `suivre.html` mis à jour.
+- Horaires : 8h30–12h00 / 13h30–16h30. Partie gestes et postures terminée à 14h30 (réveil musculaire ramené en début d'après-midi, poste 25 min, EPI 15 min, bilan 10 min), puis 2 h d'incendie de 14h30 à 16h30.
+- Module 09 « Incendie : manipuler un extincteur » : théorie, classes de feu, choix de l'extincteur, réflexes, gestes, exercice pratique sur feu de formation, 4 points de contrôle, 5 vidéos INRS. Initiation avec attestation de présence, sans certification ni habilitation.
+- Charte : l'accent passe progressivement du rose (accueil) au rouge pompier (module 09), par interpolation de couleur par section (`--t` de 0 à 100) ; menu et parcours suivent la même progression.
+- 6 schémas SVG en ligne dans le module 09 (thème clair et sombre), exportés pour réemploi dans `images/incendie/` : triangle du feu, classes de feu, anatomie de l'extincteur, posture d'attaque, plan de la zone d'exercice, conduite à tenir.
+- Vidéos (INRS, lues le 04/11/2026, titres et auteur recoupés sur YouTube) : Q6vWkSZGsM0 (Anim-463), k9rFwVLkFSY (Anim-464), xI4keHXbZ3w (Anim-468), jBM0nzXnBFw (Anim-469), EgxPlm9znok (Anim-386).
+- Programme, bandeau, parcours, menu, glossaire (23 termes), cadre réglementaire (R4227-29, R4227-39) et `suivre.html` mis à jour.
 - Sources : Code du travail R4227-29 et R4227-39, INRS ED 6054 « Le choix d'un extincteur » (lus le 04/11/2026), à recouper sur Légifrance avant diffusion.
 
 Points à contrôler avant le 13/11 :
-- Matériel et zone d'exercice (types d'extincteurs, bac à flammes, balisage) : vérification et essai sur site le 10/11, puis adapter les consignes de sécurité du module 09 si besoin.
+- Matériel et zone d'exercice (types d'extincteurs, bac à flammes, balisage) : vérification et essai sur site le 10/11, puis adapter les consignes de sécurité du module 09 et le plan de zone (schéma générique).
 - Espace formateur chiffré (`formateur.html`, `animation.html`, 33 diapositives, fin prévue par diapositive) : non modifié, car le contenu est chiffré ; horaires et diapositives incendie à refaire.
-- Convocation et émargement : fin à 17h00 à faire valider par Consul Team.
+- Convocation et émargement : confirmer à Consul Team les horaires 8h30–16h30.

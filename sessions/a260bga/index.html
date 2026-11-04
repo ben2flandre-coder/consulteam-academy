@@ -116,6 +116,7 @@
   #incendie{--shadow-md:0 14px 30px -12px rgba(200,40,30,.20),0 2px 8px rgba(52,50,52,.07);--shadow-lg:0 24px 60px -20px rgba(200,40,30,.26)}
   #incendie .sec-head::after{content:"";display:block;height:4px;width:110px;border-radius:2px;background:linear-gradient(90deg,var(--rose),var(--fire));margin-top:12px}
   .diagram.fig{max-width:720px;margin:0 auto 18px}
+  .diagram img,.diagram svg{cursor:zoom-in}
 
 /* ================= BANNIÈRE DE TRANSITION TMS → INCENDIE ================= */
 .part-break{position:relative;overflow:hidden;margin:34px 0 10px;border-radius:18px;color:#fff;background:linear-gradient(100deg,#E5007D 0%,#D2144F 48%,#C8281E 100%);box-shadow:0 10px 28px rgba(200,40,30,.28);padding:22px 26px}
@@ -639,7 +640,7 @@
         <a class="parcours-node" href="#incendie"><span class="pn-ico"><svg class="icon"><use href="#i-hazard"/></svg></span><span class="pn-label">09 · Incendie</span></a>
       </div>
     </div>
-  <a href="suivre.html">Suivre</a><a href="animation.html">Mode animation</a></nav>
+  <a href="suivre.html">Suivre</a><a href="animation.html">Mode animation</a><a href="hub.html">Espace formateur</a></nav>
 
   <main>
   <div class="wrap">
@@ -1926,7 +1927,7 @@
       document.body.style.overflow = '';
       if(lastFocus && lastFocus.focus) lastFocus.focus();
     }
-    Array.prototype.slice.call(document.querySelectorAll('.photo-card img, .risk-card img')).forEach(function(img){
+    Array.prototype.slice.call(document.querySelectorAll('.photo-card img, .risk-card img, .diagram img, figure img')).forEach(function(img){
       img.setAttribute('tabindex', '0');
       img.setAttribute('role', 'button');
       img.setAttribute('aria-label', 'Agrandir la photo : ' + (img.getAttribute('data-caption') || img.alt || ''));
@@ -1935,6 +1936,12 @@
         if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openLightbox(img); }
       });
     });
+    Array.prototype.slice.call(document.querySelectorAll('figure.diagram svg')).forEach(function(sv){
+      sv.style.cursor='zoom-in';sv.setAttribute('tabindex','0');sv.setAttribute('role','button');
+      function open(){var box=document.createElement('div');box.id='lb-svgbox';box.style.cssText='background:#fff;border-radius:14px;padding:14px;width:min(94vw,900px);max-height:86vh;overflow:auto';var c=sv.cloneNode(true);c.style.width='100%';c.style.height='auto';c.removeAttribute('tabindex');box.appendChild(c);lbImg.style.display='none';lbImg.parentNode.insertBefore(box,lbImg);lbCaption.textContent=sv.getAttribute('aria-label')||'';lightbox.classList.add('open');lastFocus=document.activeElement;lbClose.focus();document.body.style.overflow='hidden'}
+      sv.addEventListener('click',open);sv.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+    });
+    var _cl=closeLightbox;closeLightbox=function(){var b=document.getElementById('lb-svgbox');if(b)b.remove();lbImg.style.display='';_cl()};
     lbClose.addEventListener('click', closeLightbox);
     lightbox.addEventListener('click', function(e){ if(e.target === lightbox) closeLightbox(); });
     document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox(); });

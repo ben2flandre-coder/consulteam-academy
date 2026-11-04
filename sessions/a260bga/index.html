@@ -559,6 +559,20 @@
   figure.diagram.fig img{cursor:zoom-in}
   .hero h1{text-wrap:balance}
   .hero .chips span:hover{background:rgba(255,255,255,.2)}
+
+  /* ===== Section accident : codes graphiques INRS (bandeau bleu pâle, orange, texte noir, puces rondes) ===== */
+  :root{--inrs-blue:#DCE5F2;--inrs-blue-2:#EEF3FA;--inrs-or:#E8501E;--inrs-ink:#161616}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--inrs-blue:#2b3446;--inrs-blue-2:#262d3b;--inrs-ink:#EDEEF0}}
+  :root[data-theme="dark"]{--inrs-blue:#2b3446;--inrs-blue-2:#262d3b;--inrs-ink:#EDEEF0}
+  .inrs-band{background:var(--inrs-blue);border-radius:14px;padding:18px 22px;margin:8px 0 18px}
+  .inrs-band h3{font-size:1.35rem!important;margin:0 0 4px!important;padding-left:14px;border-left:5px solid var(--inrs-or);color:var(--inrs-ink);line-height:1.2}
+  .inrs-band p{margin:6px 0 0 19px;font-size:.92rem;color:var(--ink-soft)}
+  .acc{border:0;border-top:0!important;border-radius:12px;box-shadow:0 2px 10px rgba(22,22,22,.12)}
+  .acc-media{background:var(--inrs-blue-2)}
+  .acc-body h4{color:var(--inrs-ink);font-size:1.15rem;padding-left:12px;border-left:4px solid var(--inrs-or)}
+  .acc-body ul{list-style:none;padding:0}
+  .acc-body li{position:relative;padding-left:30px;margin:.55em 0}
+  .acc-body li::before{content:"›";position:absolute;left:0;top:.05em;width:20px;height:20px;border:1.5px solid var(--inrs-or);border-radius:50%;color:var(--inrs-or);font-weight:700;line-height:17px;text-align:center;font-size:.95rem}
 </style>
 
 <!-- ============ ICON SPRITE ============ -->
@@ -1509,7 +1523,7 @@
 
     <div class="callout" style="margin-bottom:18px"><b>Évacuation</b> : dès l’alarme, chacun évacue rapidement, sans précipitation, vers le point de rassemblement. Trois rôles sont prévus sur les sites organisés : le <b>guide-file</b> (oriente vers la sortie), le <b>serre-file</b> (vérifie que personne ne reste) et le <b>coordinateur d’évacuation</b> (centralise les informations pour les secours). Au point de rassemblement, on se fait connaître pour le recensement. Source : INRS, consignes d’évacuation et d’intervention.</div>
 
-    <h3 id="incendie-accident" style="font-size:1.05rem;margin:6px 0 8px">9 · Si un incident ou un accident survient</h3>
+    <div class="inrs-band"><h3 id="incendie-accident">9 · Si un incident ou un accident survient</h3><p>Conduite à tenir : PREFAS, puis le geste adapté à chaque situation.</p></div>
     <figure class="diagram fig"><img src="images/diagrammes/prefas.svg" alt="PREFAS : protéger, examiner, faire alerter, secourir" loading="lazy" style="width:100%;height:auto;display:block;border-radius:10px"></figure>
     <div class="callout" style="margin-bottom:14px"><b>PREFAS</b> : <b>PR</b>otéger (se protéger, écarter le danger, baliser, couper le courant ou le gaz si possible), <b>E</b>xaminer la victime (consciente ? respire ? saigne ?), <b>F</b>aire <b>A</b>lerter (15, 18 ou 112), <b>S</b>ecourir par le geste adapté. Moyen mnémotechnique : PREFAS se prononce « préface », la page d’ouverture avant tout secours : on ne se précipite pas sur la victime, on commence par la préface. Ces repères complètent la formation de sauveteur secouriste du travail (SST) et ne la remplacent pas.</div>
 <div class="acc-grid" style="margin-bottom:18px"><article class="acc a-brul"><div class="acc-media"><div class="acc-pics"><figure><img src="images/logos/brulure-pictogramme.png" alt="Pictogramme : brûlure par flamme ou par produit chimique" loading="lazy"><figcaption>Brûlure</figcaption></figure><figure><img src="images/logos/douche-securite.png" alt="Pictogramme : douche de sécurité, rincer à l’eau abondante" loading="lazy"><figcaption>Eau abondante</figcaption></figure></div></div><div class="acc-body"><h4>Brûlure</h4><ul><li>Refroidir à l’eau courante, longuement (10 à 15 min au minimum), sans ôter les vêtements.</li><li>Retirer bagues et montre ; ne pas percer les cloques, aucun produit.</li><li>Brûlure étendue, profonde, au visage, aux mains ou aux voies respiratoires : 15 ou 112.</li></ul></div></article><article class="acc a-feu"><div class="acc-media"><img src="images/diagrammes/vetements-en-feu.svg" alt="Vêtements en feu : ne pas courir, allonger et rouler, étouffer les flammes" loading="lazy"></div><div class="acc-body"><h4>Vêtements en feu</h4><ul><li>Ne pas courir : arrêter la personne.</li><li>Allonger, étouffer (couverture anti-feu) ou arroser.</li><li>Puis refroidir la brûlure, alerter.</li></ul></div></article><article class="acc a-expl"><div class="acc-media"><img src="images/diagrammes/explosion-gaz.svg" alt="Explosion ou fuite de gaz : s’éloigner, ni flamme ni interrupteur" loading="lazy"></div><div class="acc-body"><h4>Explosion ou fuite de gaz</h4><ul><li>S’éloigner, alerter le 18 ou le 112 ; ne pas revenir.</li><li>Gaz : ni flamme, ni étincelle, ni interrupteur ; couper l’arrivée si sans risque ; aérer.</li><li>Ne déplacer une victime qu’en cas de danger vital immédiat.</li></ul></div></article><article class="acc a-fum"><div class="acc-media"><img src="images/diagrammes/fumees.svg" alt="Fumées : évacuer vers l’air libre" loading="lazy"></div><div class="acc-body"><h4>Inhalation de fumées</h4><ul><li>Évacuer à l’air libre, au calme.</li><li>Alerter le 15 ou le 18 : la gêne peut apparaître plus tard.</li><li>Ensuite : prévenir le responsable, déclarer l’accident du travail.</li></ul></div></article></div>

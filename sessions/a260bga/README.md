@@ -46,3 +46,10 @@ Effectif confirmé : 6 stagiaires (GesCOF, CFM). Deux tirs chacun (environ 12 ti
 Mode animation et espace formateur complet : créés (v6).
 
 Recoupement réglementaire (04/11/2026) : R4227-29 et R4227-39 relus sur OPPBTP, INRS (TJ 20, page Évacuation-intervention) et code.travail.gouv.fr ; ED 6054 = « Les extincteurs d'incendie portatifs, mobiles et fixes » (11/2023), intitulé corrigé dans le support. Légifrance non accessible depuis l'environnement : relecture directe à faire.
+
+
+## v7 : animation enrichie et suivi synchronisé
+- 8 diagrammes SVG (`images/diagrammes/`) intégrés à l'animation et au support (modules 0, 1, 2, 3, 6, 7).
+- Animation : points révélés un à un (→), encadrés « À vous » et « Sur votre téléphone », diapo n°/40 à côté du QR, liens Support / Suivre / Espace formateur.
+- QR de chaque diapo = `?d=N#ancre` : `assets/suivi.js` affiche sur le support un bandeau (diapo, consigne, précédent/suivant, sélecteur) et surligne la section. Pas de serveur : la synchro passe par le QR ou le sélecteur, aucune donnée collectée.
+- Module 9 : aide-mémoire interactif « Quel extincteur pour quel feu ? ».

@@ -116,6 +116,9 @@
   #incendie{--shadow-md:0 14px 30px -12px rgba(200,40,30,.20),0 2px 8px rgba(52,50,52,.07);--shadow-lg:0 24px 60px -20px rgba(200,40,30,.26)}
   #incendie .sec-head::after{content:"";display:block;height:4px;width:110px;border-radius:2px;background:linear-gradient(90deg,var(--rose),var(--fire));margin-top:12px}
   .diagram.fig{max-width:720px;margin:0 auto 18px}
+  .parcours-tools{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:6px 0 12px}
+  .parcours-tools a{font:600 .82rem/1 var(--mono,ui-monospace,Consolas,monospace);letter-spacing:.04em;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:9px 15px;min-height:36px;display:inline-flex;align-items:center}
+  .parcours-tools a:hover{border-color:var(--rose,#E5007D);color:var(--rose,#E5007D)}
   .diagram img,.diagram svg{cursor:zoom-in}
 
 /* ================= BANNIÈRE DE TRANSITION TMS → INCENDIE ================= */
@@ -639,8 +642,9 @@
         <a class="parcours-node" href="#quiz"><span class="pn-ico"><svg class="icon"><use href="#i-check"/></svg></span><span class="pn-label">08 · Quiz</span></a>
         <a class="parcours-node" href="#incendie"><span class="pn-ico"><svg class="icon"><use href="#i-hazard"/></svg></span><span class="pn-label">09 · Incendie</span></a>
       </div>
+      <div class="parcours-tools" aria-label="Autres espaces"><a href="suivre.html">Suivre en direct</a><a href="animation.html">Mode animation</a><a href="hub.html">Espace formateur</a></div>
     </div>
-  <a href="suivre.html">Suivre</a><a href="animation.html">Mode animation</a><a href="hub.html">Espace formateur</a></nav>
+  </nav>
 
   <main>
   <div class="wrap">

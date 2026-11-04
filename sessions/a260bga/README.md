@@ -17,7 +17,7 @@ Points à contrôler avant diffusion : liens de la rubrique Ressources (ouvrir c
 
 ## Contenu (v3)
 - `index.html` : plateforme participant (9 modules, galerie, glossaire de 20 termes, vidéothèque de 11 vidéos issues des playlists du formateur + sites de référence, auto-évaluation de 12 questions mélangées avec envoi facultatif du résultat par le stagiaire).
-- `formateur.html` et `animation.html` : espace formateur chiffré (e-mail + code, déchiffrement dans le navigateur). 33 diapositives avec notes.
+- `formateur.html` et `animation.html` : espace formateur chiffré (e-mail + code, déchiffrement dans le navigateur). 40 diapositives avec notes (v6, 04/11/2026), regénérées pour la journée complète : 8h30–12h00 / 13h00–16h30, partie TMS puis incendie.
 - Aucune donnée de stagiaire n'est conservée par le site.
 - Vidéos : titres, auteurs et durées lus dans les playlists ; contenus à visionner avant diffusion.
 
@@ -32,15 +32,17 @@ QR « Sur le site » sur chaque diapositive, page `suivre.html`, fin prévue par
 - 6 schémas SVG en ligne dans le module 09 (thème clair et sombre), exportés pour réemploi dans `images/incendie/` : triangle du feu, classes de feu, anatomie de l'extincteur, posture d'attaque, plan de la zone d'exercice, conduite à tenir.
 - Vidéos (INRS, lues le 04/11/2026, titres et auteur recoupés sur YouTube) : Q6vWkSZGsM0 (Anim-463), k9rFwVLkFSY (Anim-464), xI4keHXbZ3w (Anim-468), jBM0nzXnBFw (Anim-469), EgxPlm9znok (Anim-386).
 - Programme, bandeau, parcours, menu, glossaire (23 termes), cadre réglementaire (R4227-29, R4227-39) et `suivre.html` mis à jour.
-- Sources : Code du travail R4227-29 et R4227-39, INRS ED 6054 « Le choix d'un extincteur » (lus le 04/11/2026), à recouper sur Légifrance avant diffusion.
+- Sources : Code du travail R4227-29 et R4227-39, INRS ED 6054 « Les extincteurs d'incendie portatifs, mobiles et fixes » (11/2023) (lus le 04/11/2026), à recouper sur Légifrance avant diffusion.
 
 Points à contrôler avant le 13/11 :
 - Matériel et zone d'exercice (types d'extincteurs, bac à flammes, balisage) : vérification et essai sur site le 10/11, puis adapter les consignes de sécurité du module 09 et le plan de zone (schéma générique).
-- Espace formateur chiffré (`formateur.html`, `animation.html`, 33 diapositives, fin prévue par diapositive) : non modifié, car le contenu est chiffré ; horaires et diapositives incendie à refaire.
+- Espace formateur chiffré (`hub.html`, `formateur.html`, `animation.html`) recréé le 04/11/2026 (40 diapositives, QR par diapositive, fiche formateur avec protocole de sécurité de l'exercice, grille d'observation, références). Même mécanisme e-mail + code ; le code est communiqué hors dépôt.
 - Convocation et émargement : confirmer à Consul Team les horaires 8h30–16h30.
 
 ## Visuels incendie (v6, 04/11/2026)
 16 visuels natifs (15 publiés ; EXT12, redondant avec le schéma des classes de feu, est conservé au manifeste mais non affiché) 1536×1024 ajoutés au module 9 : G14–G17 (repères, posture, zone, contre-exemple) et EXT01–EXT12 (agents, coupes de principe, étapes, classes de feu). Générés individuellement par IA, livrés en WebP avec perte (qualité 86) ; les PNG d'origine sans perte et leurs empreintes SHA-256 sont référencés dans `images/visuels/manifeste-sources.json` (29 entrées). Ces images illustrent ; elles ne certifient ni un geste ni un équipement. G17 est un contre-exemple, à toujours présenter avec sa légende. Les couleurs des bandeaux d'extincteur varient selon le fabricant et ne constituent pas un code de référence.
 
 Effectif confirmé : 6 stagiaires (GesCOF, CFM). Deux tirs chacun (environ 12 tirs sur 50 min de pratique). Au-delà de 10 stagiaires, prévoir un seul tir.
-Mode animation et espace formateur complet : à créer (le support apprenant ne les présente pas comme disponibles).
+Mode animation et espace formateur complet : créés (v6).
+
+Recoupement réglementaire (04/11/2026) : R4227-29 et R4227-39 relus sur OPPBTP, INRS (TJ 20, page Évacuation-intervention) et code.travail.gouv.fr ; ED 6054 = « Les extincteurs d'incendie portatifs, mobiles et fixes » (11/2023), intitulé corrigé dans le support. Légifrance non accessible depuis l'environnement : relecture directe à faire.

@@ -1,6 +1,6 @@
 # Session A260BGA — Gestes et postures
 
-Formation présentielle · 1 journée · 7 heures (convention GesCOF ; plages 8h30–12h00 / 13h30–16h30 = 6 h 30) · 13/11/2026 · 8h30–12h00 / 13h30–16h30.
+Formation présentielle · 1 journée · 7 heures · 13/11/2026 · 8h30–12h00 / 13h00–16h30.
 
 Plateforme participant : `index.html` (programme, TMS, facteurs, biomécanique, gestes, adaptation du poste, EPI, réveil musculaire, auto-évaluation, ressources).
 
@@ -22,11 +22,11 @@ Points à contrôler avant diffusion : liens de la rubrique Ressources (ouvrir c
 - Vidéos : titres, auteurs et durées lus dans les playlists ; contenus à visionner avant diffusion.
 
 ## Mode animation (v4)
-QR « Sur le site » sur chaque diapositive, page `suivre.html`, fin prévue par diapositive (matin 8 h 30–12 h, après-midi 13 h 30–16 h 30) avec retard/avance le jour J, suivi local de l’avancement. Chiffres TMS de la diapositive « Repères chiffrés » : relevés le 21/10/2026, à recouper avant la séance.
+QR « Sur le site » sur chaque diapositive, page `suivre.html`, fin prévue par diapositive (matin 8 h 30–12 h, après-midi 13 h–16 h 30) avec retard/avance le jour J, suivi local de l’avancement. Chiffres TMS de la diapositive « Repères chiffrés » : relevés le 21/10/2026, à recouper avant la séance.
 
 
 ## Complément incendie (v5, 04/11/2026)
-- Horaires : 8h30–12h00 / 13h30–16h30. Partie gestes et postures terminée à 14h30 (réveil musculaire ramené en début d'après-midi, poste 25 min, EPI 15 min, bilan 10 min), puis 2 h d'incendie de 14h30 à 16h30.
+- Horaires : 8h30–12h00 / 13h00–16h30 (7 h, conforme à la convention GesCOF). Partie gestes et postures terminée à 14h30 (réveil 10 min, poste 35 min, EPI 20 min, bilan et auto-évaluation en classe 25 min), puis 2 h d'incendie de 14h30 à 16h30.
 - Module 09 « Incendie : manipuler un extincteur » : théorie, classes de feu, choix de l'extincteur, réflexes, gestes, exercice pratique sur feu de formation, 4 points de contrôle, 5 vidéos INRS. Initiation avec attestation de présence, sans certification ni habilitation.
 - Charte : l'accent passe progressivement du rose (accueil) au rouge pompier (module 09), par interpolation de couleur par section (`--t` de 0 à 100) ; menu et parcours suivent la même progression.
 - 6 schémas SVG en ligne dans le module 09 (thème clair et sombre), exportés pour réemploi dans `images/incendie/` : triangle du feu, classes de feu, anatomie de l'extincteur, posture d'attaque, plan de la zone d'exercice, conduite à tenir.

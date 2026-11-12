@@ -36,7 +36,7 @@ try{localStorage.setItem(KEY,JSON.stringify({d:res.date,pts:pts,t:t}))}catch(e){
 envoyer(res);r.scrollIntoView({behavior:'smooth'})}
 function rapportTxt(r){const a=r.apprenant;return 'Évaluation — '+r.session+'\nApprenant : '+a.prenom+' '+a.nom+'\nMail : '+a.mail+'\nService / fonction : '+a.org+'\nDate : '+r.date+'\nRésultat : '+r.score+' / '+r.total+' ('+r.pourcent+' %), seuil '+r.seuil+' % : '+(r.atteint?'atteint':'non atteint')+'\n'+r.modules.map(function(m){return m.module+' : '+m.score+'/'+m.total}).join('\n')+'\n\nDétail :\n'+r.detail.map(function(d){return d.n+'. '+(d.ok?'OK':'À REVOIR')+' — '+d.q+(d.ok?'':'\n     Réponse donnée : '+d.rep)}).join('\n')}
 function envoyer(r){let cfg={};
-fetch('assets/config.json',{cache:'no-store'}).then(function(x){return x.json()}).catch(function(){return {}}).then(function(c){cfg=Object.assign({destinataire:'formation@consul-team.fr',endpoint:''},c||{});
+fetch('assets/config.json',{cache:'no-store'}).then(function(x){return x.json()}).catch(function(){return {}}).then(function(c){cfg=Object.assign({destinataire:'rmbd.riskmanagement@gmail.com',endpoint:''},c||{});
 const box=document.getElementById('envoi');if(!box)return;const dest=cfg.destinataire||'';const a=r.apprenant;
 const court='Évaluation A2600EY — '+a.prenom+' '+a.nom+' : '+r.score+'/'+r.total+' ('+r.pourcent+' %)';
 const ko=r.detail.filter(function(d){return !d.ok}).map(function(d){return d.n}).join(', ');

@@ -9,6 +9,8 @@ css.textContent='#sv{position:fixed;left:0;right:0;bottom:0;z-index:60;backgroun
 document.head.appendChild(css);
 var bar=document.createElement('div');bar.id='sv';bar.setAttribute('role','region');bar.setAttribute('aria-label','Suivi de l’animation');
 document.body.appendChild(bar);
+function sh(){document.documentElement.style.setProperty('--sv-h',(bar.offsetHeight+10)+'px')}
+if(window.ResizeObserver)new ResizeObserver(sh).observe(bar);window.addEventListener('resize',sh);
 function hl(a){if(!a)return;var el=document.getElementById(a);if(!el)return;el.scrollIntoView({behavior:'smooth',block:'start'});el.classList.add('sv-hl');setTimeout(function(){el.classList.remove('sv-hl')},3500)}
 function paint(go){
  var s=D[n-1];bar.className=(s.part=='inc'?'inc ':'')+(bar.className.indexOf('min')>-1?'min':'');

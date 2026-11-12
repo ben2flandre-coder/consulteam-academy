@@ -59,3 +59,10 @@ Recoupement réglementaire (04/11/2026) : R4227-29 et R4227-39 relus sur OPPBTP,
 - Nouvelles sections du module 9 : repères de couleur des extincteurs (indicatifs, seule l'étiquette fait foi), feu d'origine électrique, précautions communes avec message d'alerte, conduite à tenir en cas d'incident ou d'accident (PREFAS, brûlure, vêtements en feu, explosion, fumées). Points de contrôle portés à 6.
 - Animation : 45 diapositives ; horaires macro inchangés (théorie 14h30–15h15, pratique 15h25–16h15).
 - Sources : INRS (consignes d'intervention, ED 6054), Inserm (brûlure thermique), Wikipédia (couleurs, code non universel). Aucune norme confirmée pour le code couleur.
+
+## v10 — largeur, boutons flottants, tablette et smartphone
+- Contenu élargi à l'espace disponible (jusqu'à 1360 px, grilles adaptatives, barre latérale réduite entre 961 et 1200 px) ; lignes de texte limitées à 80 caractères.
+- Boutons flottants harmonisés (charte rose/rouge, icônes vectorielles) : accueil, livret PDF, haut de page. Ils se placent au-dessus du bandeau de suivi (variable `--sv-h`) et respectent les zones sécurisées des téléphones.
+- Fiche formateur et espace formateur : mêmes boutons, largeur élargie, tableaux défilants sur mobile.
+- Animation : barre tactile (accueil, précédent, suivant, sommaire, notes, haut) sur tablette et smartphone ; sommaire et zoom passent au-dessus du bandeau.
+- Contrôles : 360, 390, 820, 1024, 1366 et 1920 px, sans débordement horizontal.

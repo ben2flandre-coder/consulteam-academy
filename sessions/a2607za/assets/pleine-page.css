@@ -1,0 +1,16 @@
+/* Mise en page pleine largeur + accès rapides (livrets PDF) */
+main{max-width:none;padding:30px clamp(18px,4.5vw,84px) 70px}
+p,li,.lead,.note,.warn,.ok,ol.steps,.q,footer,details.fiche-r,footer.credits p{max-width:none}
+.polehead{max-width:none}
+.prog{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+body{font-size:18px}
+table{width:100%}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 8px;align-items:stretch}
+.actions a{display:flex;flex-direction:column;justify-content:center;gap:2px;text-decoration:none;background:var(--w);color:var(--n);border:1px solid var(--l);border-left:8px solid var(--y);border-radius:10px;padding:12px 18px;min-width:230px;font:700 17px/1.2 var(--ff);box-shadow:0 1px 6px #0001}
+.actions a small{font:400 14px/1.3 var(--fb);color:var(--m)}
+.actions a.pdf{background:#102c53;color:#fff;border-left-color:var(--y)}.actions a.pdf small{color:#cfe2f6}
+.actions a:hover{box-shadow:0 0 0 3px #f6b63d88}
+header.top nav a.pdfnav{background:#f6b63d;color:#102c53;font-weight:700}
+.panel{background:var(--w);border:1px solid var(--l);border-left:8px solid var(--b);border-radius:12px;padding:6px 20px 16px;margin:20px 0}
+.panel h2{margin-top:.9em}
+.panel ul{columns:2 360px;column-gap:40px;padding-left:1.2em}

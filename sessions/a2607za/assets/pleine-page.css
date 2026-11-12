@@ -32,3 +32,8 @@ header.top nav a.on{background:#ffffff26;color:#fff;font-weight:700}
 .steps6 a::before{content:counter(q);float:right;font:700 28px var(--ff);color:var(--y);margin-left:10px}
 .steps6 b{display:block;font-family:var(--ff);color:var(--n)}
 header.top nav a{font-size:14.5px;padding:6px 8px}header.top .brand small{white-space:nowrap}
+.fab{position:fixed;right:clamp(12px,2vw,28px);bottom:clamp(12px,2vw,28px);display:flex;flex-direction:column;gap:10px;z-index:30}
+.fab a,.fab button{width:48px;height:48px;border-radius:50%;border:2px solid #f6b63d;background:#102c53;color:#fff;font:700 22px/1 var(--ff);display:grid;place-items:center;text-decoration:none;cursor:pointer;box-shadow:0 3px 12px #0005;padding:0}
+.fab a:hover,.fab button:hover{background:#f6b63d;color:#102c53}
+.fab .up{opacity:0;pointer-events:none;transition:opacity .2s}.fab .up.on{opacity:1;pointer-events:auto}
+@media print{.fab{display:none}}

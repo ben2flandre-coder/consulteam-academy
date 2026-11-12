@@ -129,4 +129,6 @@ if(!t.trim()||!last.length){o.innerHTML='<p>Aucune famille activée : décrivez 
 o.innerHTML='<p><b>'+last.length+' famille(s) à examiner</b> sur '+ENG.length+'. Une famille non activée peut malgré tout exister : l’outil ne remplace pas l’observation.</p>'+last.map(function(f){return '<div class="it"><b>'+esc(f.n)+'</b><small>Preuves à rechercher : '+esc(f.p)+'</small><small>Mesures à envisager : '+esc(f.m)+'</small><small>Références : '+esc(f.r)+'</small></div>'}).join('')}
 document.getElementById('e-go').onclick=run;
 document.getElementById('e-add').onclick=function(){if(!last.length)run();var d=data().filter(function(x){return x.u||x.s});tb.innerHTML='';d.forEach(row);last.forEach(function(f){row({u:'',s:f.n+' : situation à préciser',g:1,p:1,a:f.m})});save();msg(last.length+' ligne(s) ajoutée(s) au tableau ci-dessous : précisez les situations et cotez.')};
-load();})();</script></body></html>
+load();})();</script><div class="fab"><a href="accueil.html" aria-label="Retour à l’accueil" title="Retour à l’accueil">&#8962;</a><button type="button" class="up" aria-label="Remonter en haut de la page" title="Remonter en haut">&#8593;</button></div>
+<script>(function(){var b=document.querySelector('.fab .up');if(!b)return;b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});function t(){b.classList.toggle('on',(window.pageYOffset||document.documentElement.scrollTop)>300)}window.addEventListener('scroll',t,{passive:true});t()})();</script>
+</body></html>

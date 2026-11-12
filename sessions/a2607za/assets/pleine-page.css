@@ -14,3 +14,21 @@ header.top nav a.pdfnav{background:#f6b63d;color:#102c53;font-weight:700}
 .panel{background:var(--w);border:1px solid var(--l);border-left:8px solid var(--b);border-radius:12px;padding:6px 20px 16px;margin:20px 0}
 .panel h2{margin-top:.9em}
 .panel ul{columns:2 360px;column-gap:40px;padding-left:1.2em}
+header.top nav{align-items:center}
+header.top nav .sep{width:1px;height:22px;background:#ffffff40;margin:0 6px}
+header.top nav .util{margin-left:auto}
+header.top nav a.on{background:#ffffff26;color:#fff;font-weight:700}
+.hero2{display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:center;background:linear-gradient(135deg,#fff7ea,#fff);border:1px solid var(--l);border-left:10px solid var(--y);border-radius:16px;padding:28px clamp(18px,3vw,44px);margin:6px 0 18px}
+.hero2 h1{margin:.1em 0 .25em}.hero2 .meta{display:flex;flex-wrap:wrap;gap:8px 12px;margin:14px 0 0}.hero2 .meta span{background:#102c53;color:#fff;border-radius:99px;padding:5px 14px;font:700 15px var(--ff)}
+.hero2 .qrbox{display:flex;gap:18px;justify-content:flex-end;flex-wrap:wrap}.hero2 .qrbox figure{margin:0;text-align:center;font-size:14px;color:var(--m)}.hero2 .qrbox .qr{width:150px;height:150px;border:1px solid var(--l)}
+@media(max-width:900px){.hero2{grid-template-columns:1fr}.hero2 .qrbox{justify-content:flex-start}}
+@media(prefers-color-scheme:dark){.hero2{background:var(--w)}}
+.start{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:12px 0}
+.start a{display:block;text-decoration:none;background:var(--w);border:1px solid var(--l);border-top:6px solid var(--y);border-radius:12px;padding:16px 18px;color:var(--n);font:700 19px/1.25 var(--ff)}
+.start a small{display:block;font:400 15px/1.4 var(--fb);color:var(--m);margin-top:4px}
+.start a:hover{box-shadow:0 0 0 3px #f6b63d88}
+.steps6{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;counter-reset:q}
+.steps6 a{counter-increment:q;text-decoration:none;color:var(--i);background:var(--w);border:1px solid var(--l);border-left:6px solid var(--b);border-radius:10px;padding:12px 16px}
+.steps6 a::before{content:counter(q);float:right;font:700 28px var(--ff);color:var(--y);margin-left:10px}
+.steps6 b{display:block;font-family:var(--ff);color:var(--n)}
+header.top nav a{font-size:14.5px;padding:6px 8px}header.top .brand small{white-space:nowrap}

@@ -2,7 +2,7 @@
 
 Extraction fidèle des documents embarqués dans la maquette PMS source. Chaque modèle reste à adapter au fonctionnement réel d’Adonis et à faire valider avant emploi.
 
-**Correction du 19/09/2026 :** le pied de page hérité de la maquette source (« GRETA GIP-FIPAN », adresse `@ac-nice.fr`, « Académie de Nice ») a été retiré de chacun des 12 PDF et 7 XLSX ci-dessous, conformément au périmètre de diffusion publique. Les empreintes SHA-256 ont été recalculées après correction ; elles ne correspondent plus à celles de la maquette d’origine.
+**Correction du 19/09/2026 :** le pied de page hérité de la maquette source (identité institutionnelle et adresse d’origine) a été retiré de chacun des 12 PDF et 7 XLSX ci-dessous, conformément au périmètre de diffusion publique. Les empreintes SHA-256 ont été recalculées après correction ; elles ne correspondent plus à celles de la maquette d’origine.
 
 | Fichier | Format | SHA-256 |
 |---|---|---|

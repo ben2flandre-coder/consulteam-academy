@@ -39,7 +39,7 @@ Cette section documente honnêtement les écarts trouvés dans l’état livré 
 
 ### Écart corrigé n°1 — affirmation inexacte sur les identités institutionnelles
 
-La ligne « Contrôle textuel : aucune occurrence publique des anciennes identités ciblées » ci-dessus était **inexacte**. Les 12 PDF et 7 XLSX de `outils-pms/` (documents extraits de la maquette source et conservés en téléchargement) portaient toujours en pied de page l’identité complète GRETA / GIP-FIPAN / Académie de Nice, avec une adresse courriel `@ac-nice.fr`. Correction appliquée : voir `SOURCE_MAP.md`, section « Correction du 19/09/2026 ». Un nouveau scan (texte + binaire PDF/XLSX + JS/CSS/SVG) ne trouve plus aucune occurrence de ces identités dans le produit livré au 19/09/2026.
+La ligne « Contrôle textuel : aucune occurrence publique des anciennes identités ciblées » ci-dessus était **inexacte**. Les 12 PDF et 7 XLSX de `outils-pms/` (documents extraits de la maquette source et conservés en téléchargement) portaient toujours en pied de page une identité institutionnelle d’origine, avec une adresse courriel d’origine. Correction appliquée : voir `SOURCE_MAP.md`, section « Correction du 19/09/2026 ». Un nouveau scan (texte + binaire PDF/XLSX + JS/CSS/SVG) ne trouve plus aucune occurrence de ces identités dans le produit livré au 19/09/2026.
 
 ### Écart corrigé n°2 — bogue CSS bloquant silencieusement une partie de la feuille de style
 

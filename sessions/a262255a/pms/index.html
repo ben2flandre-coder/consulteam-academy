@@ -1127,7 +1127,7 @@ h1,h2,h3,.page-header h2,.section-header h2{font-family:Bahnschrift,"DIN Alterna
 <div class="app-shell">
 <div class="ban-bar">
 <span>📴 MODE OFFLINE</span><div class="ban-dot"></div>
-<span>Plateforme PMS 3.0 · Conception : Benoît Deflandre · RMBD Risk Management</span><div class="ban-dot"></div>
+<span>Plateforme PMS 3.0 · Conception : Benoît Deflandre</span><div class="ban-dot"></div>
 <span>Consulteam Groupe · A262255A</span>
 </div>
 <div class="app-header-wrap">
@@ -4995,7 +4995,7 @@ h1,h2,h3,.page-header h2,.section-header h2{font-family:Bahnschrift,"DIN Alterna
 <button class="fab-sm fab-home" onclick="nav('accueil')" title="Accueil">⌂</button>
 <button class="fab-sm" onclick="scrollDown()" title="Bas de page">↓</button>
 </div>
-<script>const FORMATEURS_EMAILS = ["rmbd.riskmanagement@gmail.com"];
+<script>const FORMATEURS_EMAILS = ["formation@consul-team.fr"];
 const KEY = {
   q1:{type:"single",correct:["B"],points:1,corr:"B",
     just:"Le PMS est un outil opérationnel de maîtrise sanitaire (BPH, HACCP, traçabilité), pas un simple classeur administratif."},
@@ -5367,8 +5367,7 @@ function openMailto(){
     "Cordialement,",
     "",
     "Benoît DEFLANDRE",
-    "Formateur — Prévention / Hygiène / Sécurité",
-    "RMBD Risk Management"
+    "Formateur — Prévention / Hygiène / Sécurité"
   ].join("\n");
   window.location.href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
@@ -6268,7 +6267,7 @@ document.getElementById("btnReset").addEventListener("click",()=>{
       });
       
       texte += '═══════════════════════════════════════\n';
-      texte += 'Benoît Deflandre · RMBD Risk Management\n';
+      texte += 'Benoît Deflandre\n';
       texte += '═══════════════════════════════════════\n';
       
       const blob = new Blob([texte], { type: 'text/plain;charset=utf-8' });
@@ -8072,7 +8071,7 @@ ${reco}
 
 ═══════════════════════════════════════════════════
 Document généré par Plateforme PMS
-Benoît Deflandre · RMBD Risk Management
+Benoît Deflandre
 ═══════════════════════════════════════════════════
   `.trim();
   

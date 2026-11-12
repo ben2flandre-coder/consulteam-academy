@@ -1112,7 +1112,7 @@ a.link-ref,a.link-ref:visited{font-weight:800;color:var(--blue-dk);text-decorati
 <div class="app-shell">
 <div class="ban-bar">
 <span>📴 MODE OFFLINE</span><div class="ban-dot"></div>
-<span>Plateforme PMS 3.0 · RMBD Risk Management · Consul Team</span><div class="ban-dot"></div>
+<span>Plateforme PMS 3.0 · Consul Team</span><div class="ban-dot"></div>
 <span>Benoît Deflandre</span>
 </div>
 <div class="app-header-wrap">
@@ -5056,7 +5056,7 @@ a.link-ref,a.link-ref:visited{font-weight:800;color:var(--blue-dk);text-decorati
 <button class="fab-sm fab-home" onclick="nav('accueil')" title="Accueil">⌂</button>
 <button class="fab-sm" onclick="scrollDown()" title="Bas de page">↓</button>
 </div>
-<script>const FORMATEURS_EMAILS = ["rmbd.riskmanagement@gmail.com","bdeflandre@rmbd-media.com"];
+<script>const FORMATEURS_EMAILS = ["formation@consul-team.fr"];
 const KEY = {
   q1:{type:"single",correct:["B"],points:1,corr:"B",
     just:"Le PMS est un outil opérationnel de maîtrise sanitaire (BPH, HACCP, traçabilité), pas un simple classeur administratif."},
@@ -5407,8 +5407,7 @@ function openMailto(){
     "Cordialement,",
     "",
     "Benoît DEFLANDRE",
-    "Formateur — Prévention / Hygiène / Sécurité",
-    "RMBD Risk Management · Consul Team"
+    "Formateur — Prévention / Hygiène / Sécurité", "Consul Team"
   ].join("\n");
   window.location.href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
@@ -6308,7 +6307,7 @@ document.getElementById("btnReset").addEventListener("click",()=>{
       });
       
       texte += '═══════════════════════════════════════\n';
-      texte += 'Benoît Deflandre · RMBD Risk Management · Consul Team\n';
+      texte += 'Benoît Deflandre · Consul Team\n';
       texte += '═══════════════════════════════════════\n';
       
       const blob = new Blob([texte], { type: 'text/plain;charset=utf-8' });
@@ -8112,7 +8111,7 @@ ${reco}
 
 ═══════════════════════════════════════════════════
 Document généré par Plateforme PMS
-Benoît Deflandre · RMBD Risk Management · Consul Team
+Benoît Deflandre · Consul Team
 ═══════════════════════════════════════════════════
   `.trim();
   

@@ -2143,7 +2143,7 @@
       });
     });
     (function(){
-      var DEST='rmbd.riskmanagement@gmail.com';
+      var DEST='formation@consul-team.fr';
       function rapport(){var n=parseInt(document.getElementById('score-val').textContent,10)||0;var nom=document.getElementById('qe-nom').value.trim();var d=new Date();var ds=('0'+d.getDate()).slice(-2)+'/'+('0'+(d.getMonth()+1)).slice(-2)+'/'+d.getFullYear();
         var pc=Math.round(n*100/12);return {sujet:'A260BGA - résultat auto-évaluation',corps:'Session : A260BGA - Gestes et postures (13/11/2026)\nParticipant : '+(nom||'(non renseigné)')+'\nDate : '+ds+'\nRésultat : '+n+' / 12 ('+pc+' %)\nRepère pédagogique : 70 % ('+(pc>=70?'atteint':'non atteint : reprise avec le formateur')+')'};}
       document.getElementById('qe-mail').addEventListener('click',function(ev){var r=rapport();this.href='mailto:'+DEST+'?subject='+encodeURIComponent(r.sujet)+'&body='+encodeURIComponent(r.corps);document.getElementById('qe-msg').textContent='Votre messagerie s’ouvre : vérifiez, puis envoyez.';});

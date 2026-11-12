@@ -49,6 +49,6 @@ Cette reprise fait suite à `RAPPORT_ETAT_ADONIS_V4_POUR_REPRISE.md`, qui reconn
 ### Corrections transverses
 
 - **Bogue CSS bloquant :** deux `linear-gradient(...)` sans parenthèse fermante dans `assets/adonis.css` faisaient échouer silencieusement l’analyse de tout le reste de la feuille de style (196 règles sur 666 non appliquées avant correction), affectant le mode nuit, l’impression et le responsive sur l’ensemble du site, pas seulement les outils. Corrigé.
-- **Identité institutionnelle résiduelle :** les 12 PDF et 7 XLSX de `outils-pms/` portaient encore en pied de page l’identité GRETA / GIP-FIPAN / Académie de Nice et une adresse `@ac-nice.fr`, malgré l’exigence explicite de suppression. Corrigé (remplacement du pied de page, recalcul des empreintes SHA-256 dans `MANIFEST_PMS_SUPPORTS.md` et `catalogue.json`).
+- **Identité institutionnelle résiduelle :** les 12 PDF et 7 XLSX de `outils-pms/` portaient encore en pied de page une identité institutionnelle d’origine et une adresse d’origine, malgré l’exigence explicite de suppression. Corrigé (remplacement du pied de page, recalcul des empreintes SHA-256 dans `MANIFEST_PMS_SUPPORTS.md` et `catalogue.json`).
 - Suppression des fichiers de contrôle internes non destinés à la diffusion (`*.xlsx.inspect.ndjson`, `CONTROLE_OUTILS_*.txt`) restés par erreur dans `outils-pms/` et `outils-hse/`.
 - Ajout de `assets/tools-engine.js` (moteur des registres, calculateurs, audits et tableaux de bord des outils PMS/HSE).

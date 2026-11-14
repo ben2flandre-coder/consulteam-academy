@@ -1,0 +1,17 @@
+fichier;origine;statut;usage SST;remarque
+assets/img/proteger-examiner.webp;a260bga/images/accident;reutilise;C2 Protéger / Examiner;illustration originale Consulteam ; texte alternatif à rédiger à l'intégration
+assets/img/brulure.webp;a260bga/images/accident;reutilise;C5 Brûlures;idem
+assets/img/vetements-en-feu.webp;a260bga/images/accident;reutilise;C5 Brûlures / C2;idem
+assets/img/hierarchie-prevention.svg;a260bga/images/diagrammes;reutilise;C6 Prévention (principes généraux);schéma charte navy/amber
+assets/img/prefas.svg;a260bga/images/diagrammes;reutilise-a-verifier;C2 Démarche;sigle PREFAS propre à un autre module : à aligner sur la démarche INRS Protéger-Examiner-Faire alerter-Secourir avant publication
+assets/img/staying-alive.svg;sst2/assets/images;reutilise-secondaire;C5 RCP (rythme);vignette simple, à remplacer par un visuel charte
+a260bga/images/accident/fumees.webp;a260bga;disponible-non-copie;C2 danger atmosphère irrespirable;à copier si besoin
+a260bga/images/accident/fuite-de-gaz.webp;a260bga;disponible-non-copie;C2 danger gaz;à copier si besoin
+a260bga/images/diagrammes/chaine-danger-dommage.svg;a260bga;a-adapter;C6;texte centré TMS ; refaire version générique
+a260bga/images/diagrammes/{quatre-familles,flexion-torsion,moment-de-force,morphologie,reveil-musculaire};a260bga;hors-perimetre;;TMS / gestes et postures
+a260bga/images/diagrammes/{couleurs-extincteurs,explosion-gaz,feu-electrique,fumees,precautions,prefas};a260bga;hors-perimetre-sst;;incendie ; potentiellement utile en C2
+a260bga/images/visuels/EXT01-06.webp;a260bga;hors-perimetre;;extincteurs
+a260bga/images/logos/{sst-inrs,sst-bandeau,inrs-logo,brulure-pictogramme,douche-securite}.png;a260bga;exclu-droits;;logos et pictogrammes INRS ou tiers : ne pas republier sans autorisation
+a262255a/assets/svg/S01-S16.svg et ico-*.svg;a262255a;hors-perimetre;;hygiène et restauration
+a262255a/assets/scenes/R01-R12.webp;a262255a;hors-perimetre;;scènes restauration
+consulteam-supports;;non-inspecte;;322 Mo, à parcourir

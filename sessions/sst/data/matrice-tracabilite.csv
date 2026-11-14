@@ -1,0 +1,28 @@
+question,competence,sous_competence,lecon,source,une_bonne_reponse
+Q01,C1,1.1,dj1-matin.html#c1,Code pénal art. 223-6,oui
+Q02,C1,1.2,dj1-matin.html#c1,"Manuel formateur 2024, compétence 1",oui
+Q03,C1,1.2,dj1-matin.html#c1,"Manuel formateur 2024, compétence 1",oui
+Q04,C2,2.3,dj1-apres-midi.html#c2,"Guide V5.01, Protéger ; tableau 1",oui
+Q05,C2,2.2,dj1-apres-midi.html#c2,"Manuel formateur 2024, compétence 2",oui
+Q06,C2,2.3,dj1-apres-midi.html#c2,"Guide V5.01, Protéger",oui
+Q07,C3,3.1,dj1-apres-midi.html#c3,"Manuel formateur 2024, compétence 3",oui
+Q08,C3,3.3,dj1-apres-midi.html#c3,"Guide V5.01, plan d’intervention",oui
+Q09,C3,3.3,dj1-apres-midi.html#c3,"Manuel formateur 2024, compétence 5",oui
+Q10,C4,4.1,dj1-apres-midi.html#c4,"Guide V5.01, Faire alerter ou alerter",oui
+Q11,C4,4.3,dj1-apres-midi.html#c4,"Guide V5.01, Faire alerter ou alerter",oui
+Q12,C4,4.2,dj1-apres-midi.html#c4,"Guide V5.01, Faire alerter ou alerter",oui
+Q13,C5,5.2,dj2-matin.html,"Guide V5.01, Secourir 2",oui
+Q14,C5,5.2,dj2-matin.html,"Guide V5.01, Secourir 1",oui
+Q15,C5,5.2,dj2-apres-midi.html,"Guide V5.01, Secourir 4",oui
+Q16,C5,5.2,dj2-apres-midi.html,"Guide V5.01, Secourir 7",oui
+Q17,C5,5.2,dj2-apres-midi.html,"Guide V5.01, Secourir 8",oui
+Q18,C5,5.2,dj2-apres-midi.html,"Guide V5.01, Secourir 3",oui
+Q19,C6,6.1,dj1-matin.html#c6,Fiche outil INRS prévention n° 3 (PAP),oui
+Q20,C6,6.2,dj1-matin.html#c6,Fiche outil INRS prévention n° 2,oui
+Q21,C6,6.2,dj1-matin.html#c6,"Manuel formateur 2024, compétence 6",oui
+Q22,C7,7.1,dj1-matin.html#c7,Fiche outil INRS prévention n° 3 (PAP),oui
+Q23,C7,7.1,dj1-matin.html#c7,Fiche outil INRS prévention n° 1 (ITAMaMi),oui
+Q24,C7,7.2,dj1-matin.html#c7,"Manuel formateur 2024, compétence 7",oui
+Q25,C8,8.1,dj1-matin.html#c8,Code du travail L4121-2,oui
+Q26,C8,8.1,dj1-matin.html#c8,Code du travail L4121-2,oui
+Q27,C8,8.2,dj1-matin.html#c8,"Manuel formateur 2024, compétence 8",oui

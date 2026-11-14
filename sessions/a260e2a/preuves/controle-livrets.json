@@ -1,0 +1,202 @@
+[
+ {
+  "controle": "Programme · Tronc commun : module(s) [1, 2, 3, 18] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · Accident / incendie : module(s) [8, 23] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · B0/H0/H0V : module(s) [4, 18] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · B1/B2 : module(s) [9] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · H1/H2 : module(s) [12] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · BR : module(s) [10, 21, 22] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · BC : module(s) [11] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · BE manœuvre : module(s) [6, 7] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · BE mesurage, vérification, essai : module(s) [15] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · HC : module(s) [13] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · HE manœuvre : module(s) [14] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · TP individualisés : module(s) [16] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · ADI SSI : module(s) [17] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Programme · Appareillage de tableau : module(s) [19, 20, 21, 22] au sommaire",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Toutes les sections de contenu des 23 modules figurent dans le livret de formation",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "Sommaire du livret de formation : numéros de page exacts",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "formation : dates 14, 15 et 16 décembre 2026",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "formation : durée 21 h dont 7 h de pratique",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "formation : Consul Team, charte (pas de GRETA/RMBD)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "formation : crédit Benoît Deflandre",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "formation : adresse du site apprenant",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : dates 14, 15 et 16 décembre 2026",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : durée 21 h dont 7 h de pratique",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : Consul Team, charte (pas de GRETA/RMBD)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : crédit Benoît Deflandre",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : adresse du site apprenant",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "formation : titre d'habilitation délivré par l'employeur",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "formation : pas de note formateur",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : pas de lien vers espace formateur ni animation (cartes retirées)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : section « Accueil de la formation »",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : section « Livret du participant »",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : section « Documents de session »",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : section « Glossaire »",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : section « Ressources officielles »",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : section « Crédits et limites »",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : section « Suivre à distance »",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "site : 23 modules dans le livret du participant",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "QR par module présents (23)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "controle": "livret-formation-a260e2a.pdf : aucune page presque vide (<20 %)",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "controle": "livret-site-a260e2a.pdf : aucune page presque vide (<20 %)",
+  "ok": true,
+  "detail": "[]"
+ }
+]

@@ -20,7 +20,7 @@ CSS = r'''
 @page{size:A4;margin:16mm 14mm 16mm 14mm}
 @page cover{margin:0}
 @page back{margin:0}
-*{box-sizing:border-box}
+*{box-sizing:border-box;font-feature-settings:"calt" 0,"case" 0,"ss01" 0;font-variant-ligatures:none}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 body{margin:0;font:9.4pt/1.4 "Segoe UI","Helvetica Neue",Arial,sans-serif;color:#16273d}
 h1,h2,h3,h4{font-family:Bahnschrift,"DIN Alternate","Arial Narrow",Arial,sans-serif;margin:0;color:#102c53}
@@ -54,11 +54,14 @@ ol.use{padding-left:5mm;margin:0 0 4mm}ol.use li{margin:0 0 1.6mm}
 .toc .p{font-weight:700;color:#102c53}
 .toc .sep{border:0;font:700 7.5pt Bahnschrift,Arial,sans-serif;letter-spacing:.14em;color:#53657a;text-transform:uppercase;padding-top:2.5mm}
 .part{break-before:page}
+.part.d1{font-size:9pt}.part.d1 .fiche{margin-bottom:2.8mm;padding:2.6mm 3.6mm}.part.d1 .fiche .ph img{height:28mm}.part.d1 .notes div{height:5.2mm}
+.part.d2{font-size:8.6pt}.part.d2 .fiche{margin-bottom:2.2mm;padding:2.2mm 3.2mm}.part.d2 .fiche .ph img{height:22mm}.part.d2 .notes div{height:4.6mm}.part.d2 .fiche h3{font-size:10.5pt}
+.part.d3{font-size:8.2pt}.part.d3 .fiche{margin-bottom:1.8mm;padding:1.8mm 3mm}.part.d3 .fiche .ph img{height:16mm}.part.d3 .notes div{height:4mm}.part.d3 .fiche h3{font-size:10pt}.part.d3 .site img{width:8mm;height:8mm}
 .band{display:flex;align-items:center;gap:4mm;color:#fff;border-radius:2.5mm;padding:4mm 5mm;margin-bottom:4mm;break-after:avoid}
 .band .num{font:700 17pt Bahnschrift,Arial,sans-serif;background:rgba(255,255,255,.18);border-radius:2mm;padding:1mm 3mm}
 .band h2{color:#fff;font-size:15pt;line-height:1.15}.band small{display:block;opacity:.85;font-size:7.5pt;letter-spacing:.14em;text-transform:uppercase;margin-top:1mm}
 .band .dots{margin-left:auto;display:flex;gap:1.2mm}.band .dots i{width:2.2mm;height:2.2mm;border-radius:50%;background:rgba(255,255,255,.35)}.band .dots i.on{background:#fff}
-.fiche{position:relative;background:#f3f6fa;border:1px solid #dfe6ee;border-top:3px solid var(--c);border-radius:2.5mm;padding:3mm 4mm 2.5mm;margin:0 0 3.5mm;break-inside:avoid;display:flow-root}
+.fiche{position:relative;background:#f3f6fa;border:1px solid #dfe6ee;border-top:3px solid var(--c);border-radius:2.5mm;padding:3mm 4mm 2.5mm;margin:0 0 3.5mm;break-inside:avoid-column;-webkit-column-break-inside:avoid;page-break-inside:avoid;display:block}
 .fiche .k{font:700 7pt Bahnschrift,Arial,sans-serif;letter-spacing:.18em;color:var(--c);text-transform:uppercase;display:flex;align-items:center;gap:1.5mm}
 .fiche .k svg{width:3.4mm;height:3.4mm}
 .fiche h3{font-size:11.5pt;margin:1mm 0 2mm;line-height:1.2}
@@ -91,6 +94,7 @@ ol.use{padding-left:5mm;margin:0 0 4mm}ol.use li{margin:0 0 1.6mm}
 .q span{display:block;padding-left:5mm;position:relative}.q span:before{content:"";position:absolute;left:0;top:1.6mm;width:2.6mm;height:2.6mm;border:1px solid #53657a;border-radius:50%}
 .notes{break-inside:avoid;margin:2mm 0 0}.notes h4{font:700 7.5pt Bahnschrift,Arial,sans-serif;letter-spacing:.16em;color:#0b68ae;text-transform:uppercase}
 .notes div{height:6mm;border-bottom:1px solid #b9c4d2}
+.cc{column-count:2;column-gap:7mm}.cc h3{break-after:avoid}
 .corr{break-inside:avoid;margin:0 0 2.6mm;font-size:9pt}.corr b{color:#102c53;display:block}.corr .a{color:#16794a;font-weight:700}.corr small{display:block;color:#53657a}
 .corr h3{font-size:11pt;margin:3mm 0 1.5mm;color:#102c53}
 table.pa{width:100%;border-collapse:collapse;margin-top:3mm}table.pa th{background:#102c53;color:#fff;text-align:left;padding:2mm 3mm;font-size:8.5pt}table.pa td{border:1px solid #b9c4d2;height:22mm}
@@ -113,7 +117,8 @@ def page_rules(parts):
 
 
 class Livret:
-    def __init__(self, mods, vis, schemas, tps, qr_dir):
+    def __init__(self, mods, vis, schemas, tps, qr_dir, dens=None):
+        self.dens = dens or {}
         self.mods = {m['id']: m for m in mods}
         self.V = {v['id']: v for v in vis}
         self.schemas = schemas
@@ -168,7 +173,7 @@ class Livret:
         for f in [s for s in self.schemas if s.get('module') == mid]:
             out.append(self.fiche('Schéma', f['titre'], '<div class="fig"><img src="%s" alt="%s"></div>' % (e(f['fichier']), e(f['titre'])), c, 'gauge', site=mid, wide=True))
         for fg in (m.get('figures') or []):
-            out.append(self.fiche('Schéma', fg[1], '<div class="fig"><img src="%s" alt="%s"></div>' % (e(fg[0]), e(fg[1])), c, 'gauge', site=mid, wide=True))
+            out.append(self.fiche('Schéma', re.split(r'(?<=[a-zéèà])(?=[A-ZÉ])', fg[1])[0], '<div class="fig"><img src="%s" alt="%s"></div>' % (e(fg[0]), e(fg[1])), c, 'gauge', site=mid, wide=True))
         if m.get('decision'):
             out.append(self.fiche('Décision à prendre', 'Que faites-vous ?', '<p><b>%s</b></p><p style="color:#53657a">Notez votre réponse, puis comparez-la avec le corrigé en fin de livret.</p><div class="notes"><div></div><div></div><div></div></div>' % e(clean(m['decision'])), c, 'help', site=mid))
         if m.get('check'):
@@ -199,7 +204,7 @@ class Livret:
                 dots = ''.join('<i class="on"></i>' if j <= (k - 1) * 10 // len(self.order) else '<i></i>' for j in range(10))
                 band = '<div class="band" style="background:%s"><div class="num">%02d</div><div><h2>%s</h2><small>%d fiches · %s</small></div><div class="dots">%s</div></div>' % (c, mid, e(m['title']), len(fiches), e(m.get('scope') or ''), dots)
                 notes = '<div class="notes"><h4>Mes notes</h4><div></div><div></div><div></div></div>'
-                body.append('<section class="part" id="p%d" style="page:%s">%s<div class="cols">%s%s</div></section>' % (mid, name, band, ''.join(fiches), notes))
+                body.append('<section class="part d%d" id="p%d" style="page:%s">%s<div class="cols">%s%s</div></section>' % (self.dens.get(mid, 0), mid, name, band, ''.join(fiches), notes))
                 tiles.append('<div class="tile" style="background:%s"><b>%02d</b>%s</div>' % (c, mid, e(m['title'])))
                 tocrows.append('<li><span class="n" style="background:%s">%d</span><span class="l">%s<small>%d fiches</small></span><span class="p">%s</span></li>' % (c, mid, e(m['title']), len(fiches), toc.get('p%d' % mid, '')))
                 if qs:
@@ -220,7 +225,7 @@ class Livret:
                '<div class="kicker">Le parcours en un coup d’œil</div>%s'
                '<p style="margin-top:5mm">Le site de la formation reste disponible après la session : <b>%s</b></p></section>' % (''.join(tiles), e(BASE.replace('https://', ''))))
         sommaire = '<section class="pg" id="som"><div class="kicker">Dans ce livret</div><h2 class="t">Sommaire</h2><ul class="toc">%s</ul></section>' % ''.join(tocrows)
-        corr_s = '<section class="pg" id="corr"><div class="kicker">Corrigés</div><h2 class="t">Questions flash et décisions</h2>%s</section>' % ''.join(corr)
+        corr_s = '<section class="pg" id="corr"><div class="kicker">Corrigés</div><h2 class="t">Questions flash et décisions</h2><div class="cc">%s</div></section>' % ''.join(corr)
         plan = ('<section class="pg" id="plan"><div class="kicker">À remplir en fin de formation</div><h2 class="t">Mon plan d’action</h2><p>Une idée retenue, une action que je peux mettre en œuvre, une proposition que je porte.</p>'
                 '<table class="pa"><tr><th>Ce que je retiens</th><th>Ce que je change ou propose</th><th>Avec qui, pour quand ?</th></tr>%s</table>'
                 '<div class="notes" style="margin-top:8mm"><h4>Mes notes</h4>%s</div></section>' % ('<tr><td></td><td></td><td></td></tr>' * 5, '<div></div>' * 8))

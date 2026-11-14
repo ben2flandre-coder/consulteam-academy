@@ -17,6 +17,8 @@ Durée retenue : 21 h dont 7 h de pratique (programme Consul Team HE-BTHT-INI-21
 | Studio et évaluations | 0 erreur | test-studio.json, test-evaluations.json |
 
 ## Ajouts de cette passe
+Mode animation : QR code par module (renvoi vers le module sur téléphone), trois QR sur la page Suivre, diapositives des modules 10, 11 et 18 (reprises du support Panzani) qui n'apparaissaient pas, QR décodés et vérifiés.
+
 Arbres de décision lampe, fusible, prise ; 68 questions pour atteindre le ratio de l'ED 6127 ; corrections du module 23 d'après l'ED 325 ; section de vidéos officielles de l'INRS (Napo, webinaire, interview) sur la page Ressources ; mentions périmées retirées des pages publiques (durée « en hypothèse », modules « en rédaction »).
 
 ## Ce qui reste à faire par Benoît

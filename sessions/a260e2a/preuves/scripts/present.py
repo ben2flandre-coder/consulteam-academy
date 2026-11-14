@@ -81,7 +81,7 @@ details.leg summary{cursor:pointer;color:var(--b);font-weight:700}
 .deck .ctl{display:flex;gap:10px;padding:12px;justify-content:center;flex-wrap:wrap;background:#0b2040;border-top:6px solid transparent;border-image:repeating-linear-gradient(135deg,#f6b63d 0 14px,#102c53 14px 28px) 6}
 .deck .ctl button,.deck .ctl a{min-width:56px;min-height:48px;border-radius:10px;border:1px solid #fff;background:none;color:#fff;font:700 16px var(--ff);display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:0 14px;cursor:pointer}
 .deck .ctl select{width:auto;max-width:60vw;min-height:48px}
-.deck .slide img{max-height:40vh;width:auto;border-radius:10px;margin-top:14px;align-self:flex-start}
+.deck .slide{position:relative}.deck .qrbox{position:absolute;right:84px;bottom:12px;display:flex;align-items:center;gap:10px;font-size:.8rem;color:#dbe6f5;background:rgba(11,32,64,.85);padding:6px 8px;border-radius:10px}.deck .qrbox img{height:88px;width:88px;max-height:none;margin:0;border-radius:6px;background:#fff}.deck .slide{padding-bottom:120px}@media(max-width:760px){.deck .qrbox{display:none}.deck .slide{padding-bottom:4vw}}.deck .slide img{max-width:100%;object-fit:contain}.deck .slide img{max-height:40vh;width:auto;border-radius:10px;margin-top:14px;align-self:flex-start}
 .ph{aspect-ratio:3/2;display:grid;place-items:center;background:repeating-linear-gradient(45deg,#e6edf5,#e6edf5 10px,#f3f5f8 10px,#f3f5f8 20px);color:var(--m);font-size:14px;text-align:center;padding:8px}
 .gal figure.ia details{font-size:13px;margin-top:6px}
 .logoband{display:inline-block;background:#102c53;border-radius:8px;padding:8px 14px}
@@ -93,7 +93,7 @@ open(f'{R}/assets/style.css','w',encoding='utf-8').write(FONTS+css+EXTRA)
 NAVP=[('index.html','Accueil'),('parcours.html','Parcours'),('cours/','Cours'),('evaluation.html','Évaluation'),('decision.html','Quel symbole ?'),('remplacer.html','Puis-je remplacer ?'),('documents.html','Documents'),('galerie.html','Galerie'),('glossaire.html','Glossaire'),('ressources.html','Ressources'),('credits.html','Crédits'),('suivre.html','Suivre'),('animation.html','Mode animation'),('formateur.html','Espace formateur')]
 FAB='''<div class="fab"><a href="index.html" aria-label="Retour à l’accueil" title="Retour à l’accueil">&#8962;</a><button type="button" class="up" aria-label="Remonter en haut de la page" title="Remonter en haut">&#8593;</button></div>
 <script>(function(){var b=document.querySelector('.fab .up');if(!b)return;b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});function t(){b.classList.toggle('on',(pageYOffset||document.documentElement.scrollTop)>300)}addEventListener('scroll',t,{passive:true});t();if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){navigator.serviceWorker.register('sw.js').catch(function(){})}})();</script>'''
-FOOT='''<footer><div class="flogo"><img src="assets/img/logo-consulteam-groupe-valto.png" alt="Consulteam Groupe · Groupe Valto" width="150" height="59" data-nozoom></div>Conception et ingénierie pédagogique : Benoît Deflandre · Contact et informations : formation@consul-team.fr. Édition du 14 novembre 2026, version de travail à valider par le formateur. <a href="REGISTRE-SOURCES.md">Sources et limites</a> · <a href="registre.html">Registre des sources</a> · <a href="QA.md">Contrôles</a><br>Formation, lecture et score ne constituent pas un titre d’habilitation : il est délivré par l’employeur après avis, selon les opérations confiées.</footer>'''
+FOOT='''<footer><div class="flogo"><img src="assets/img/logo-consulteam-groupe-valto.png" alt="Consulteam Groupe · Groupe Valto" width="150" height="59" data-nozoom></div>Conception et ingénierie pédagogique : Benoît Deflandre · Contact et informations : formation@consul-team.fr. Édition du 14 novembre 2026, à relire par le formateur avant la session. <a href="REGISTRE-SOURCES.md">Sources et limites</a> · <a href="registre.html">Registre des sources</a> · <a href="QA.md">Contrôles</a><br>Formation, lecture et score ne constituent pas un titre d’habilitation : il est délivré par l’employeur après avis, selon les opérations confiées.</footer>'''
 def page(name,title,body,extra='',on=None,scripts=True):
     on=on or name
     nav=''.join(f'<a href="{u}"{" class=on" if u==on else ""}>{t}</a>' for u,t in NAVP)
@@ -192,17 +192,27 @@ _sp2=_iu.spec_from_file_location('decision','/home/claude/work/src/decision.py')
 page('decision.html','Quel symbole ?',_dc.page_html(),SHARED_JS+_dc.js())
 _sp3=_iu.spec_from_file_location('decision_remplacement','/home/claude/work/src/decision_remplacement.py');_dr=_iu.module_from_spec(_sp3);_sp3.loader.exec_module(_dr)
 page('remplacer.html','Puis-je remplacer ?',_dr.page_html(),SHARED_JS+_dr.js())
+# ---------- QR CODES (suivre sur téléphone) ----------
+import segno as _sg, os as _qo
+BASE_URL='https://ben2flandre-coder.github.io/consulteam-academy/sessions/a260e2a/'
+_qo.makedirs('/home/claude/work/a260e2a/assets/qr',exist_ok=True)
+_qr={'home':'','parcours':'parcours.html','evaluation':'evaluation.html','remplacer':'remplacer.html','documents':'documents.html'}
+_qr.update({'m%d'%m['id']:'parcours.html#m%d'%m['id'] for m in mods})
+for _k,_v in _qr.items(): _sg.make(BASE_URL+_v,error='m').save('/home/claude/work/a260e2a/assets/qr/%s.svg'%_k,scale=4,border=2,dark='#102c53',light='#ffffff')
 # ---------- ANIMATION ----------
 page('animation.html','Mode animation','''<div class="deck" id="deck" role="region" aria-label="Mode animation"><div class="slide" id="sl" aria-live="polite"></div><div class="ctl"><button id="pr" aria-label="Précédent">←</button><span id="pg" style="align-self:center"></span><button id="nx" aria-label="Suivant">→</button><select id="ms" aria-label="Module"></select><a href="parcours.html">Quitter</a></div></div>''',SHARED_JS+r'''<script>
-var sl=document.getElementById('sl'),ms=document.getElementById('ms'),pg=document.getElementById('pg'),L=[],k=0;
+var sl=document.getElementById('sl'),ms=document.getElementById('ms'),pg=document.getElementById('pg'),L=[],k=0,cur=0;
 var okm=A.modules.filter(function(m){return m.sections.length||m.html});
 ms.innerHTML=okm.map(function(m){return '<option value="'+m.id+'">'+m.id+'. '+E(m.title)+'</option>'}).join('');
 function strip(h){var d=document.createElement('div');d.innerHTML=h;return d.textContent.replace(/\s+/g,' ').trim()}
-function build(id){var m=module(id);L=[{t:m.title,p:m.goal,i:(m.images||[])[0]}];if(m.scenario)L.push({t:'Situation',p:m.scenario});
+function build(id){cur=+id;var m=module(id);L=[{t:m.title,p:m.goal,i:(m.images||[])[0]}];if(m.scenario)L.push({t:'Situation',p:m.scenario});
 m.sections.forEach(function(s,i){L.push({t:s[0],p:s[1],i:(m.images||[])[i+1]})});
-if(!m.sections.length&&m.html){var d=document.createElement('div');d.innerHTML=m.html;[].slice.call(d.querySelectorAll('h2,h3')).forEach(function(h){var p=h.nextElementSibling;L.push({t:h.textContent,p:p?strip(p.outerHTML):''})})}
+if(!m.sections.length&&m.html){var d=document.createElement('div');d.innerHTML=m.html;var np=0;[].slice.call(d.children).forEach(function(el){var tg=el.tagName;
+if(tg==='P'){np++;L.push({t:np===1?'Repères':'À retenir',p:strip(el.outerHTML)})}
+else if(tg==='OL'||tg==='UL'){[].slice.call(el.children).forEach(function(li,n){var b=li.querySelector('b');var t=b?b.textContent.replace(/[.:]\s*$/,''):'Étape '+(n+1);var txt=strip(li.outerHTML);if(b&&txt.indexOf(b.textContent)===0)txt=txt.slice(b.textContent.length).trim();L.push({t:(tg==='OL'?(n+1)+'. ':'')+t,p:txt})})}
+else if(tg==='TABLE'){var rows=[].slice.call(el.querySelectorAll('tr')).map(function(r){return [].slice.call(r.children).map(function(c){return strip(c.outerHTML)}).join(' : ')});L.push({t:'En un coup d’œil',p:rows.join('\n')})}})}
 if(m.decision)L.push({t:'Décision à prendre',p:m.decision});if(m.check.length)L.push({t:'Avant d’agir',p:m.check.join(' · ')});k=0;show()}
-function show(){var s=L[k];var v=s.i&&vis(s.i);sl.innerHTML='<h1>'+E(s.t)+'</h1><p style="white-space:pre-line">'+E(s.p)+'</p>'+(v?'<img src="'+E(v.fichier)+'" alt="'+E(v.titre)+'" data-nozoom>':'');pg.textContent=(k+1)+' / '+L.length}
+function show(){var s=L[k];var v=s.i&&vis(s.i);sl.innerHTML='<h1>'+E(s.t)+'</h1><p style="white-space:pre-line">'+E(s.p)+'</p>'+(v?'<img src="'+E(v.fichier)+'" alt="'+E(v.titre)+'" data-nozoom>':'')+'<div class="qrbox"><img src="assets/qr/m'+cur+'.svg" alt="QR code : ouvrir le module '+cur+' sur son téléphone" data-nozoom><span>Suivre sur votre téléphone :<br>scannez ce code<br>(module '+cur+')</span></div>';pg.textContent=(k+1)+' / '+L.length}
 function go(d){k=Math.max(0,Math.min(L.length-1,k+d));show()}
 document.getElementById('pr').onclick=function(){go(-1)};document.getElementById('nx').onclick=function(){go(1)};
 ms.onchange=function(){location.hash='m'+ms.value;build(ms.value)};
@@ -266,6 +276,7 @@ page('credits.html','Crédits et limites',f'''<small>CRÉDITS</small><h1>Crédit
 <h2>Points de vigilance</h2><div class="warn"><ul><li>La norme NF C 18-510 est payante et n’est pas reproduite : le référentiel INRS fait foi.</li><li>Le domaine HTA ou HTB n’est pas précisé par le client : aucun contenu chiffré HT n’est donné sans source.</li><li>Les modules sont relus par le formateur avant la session.</li><li>Les images IA illustrent un propos ; elles ne prouvent aucune règle et peuvent contenir des détails à corriger.</li></ul></div>''')
 # ---------- SUIVRE ----------
 page('suivre.html','Suivre à distance ou hors ligne','''<small>SUIVRE</small><h1>Suivre à distance ou hors ligne</h1><p class="lead">La même plateforme sert en salle et à distance, sur ordinateur, tablette et téléphone.</p>
+<h2>Scanner pour suivre sur téléphone</h2><div class="grid"><div class="card k3"><img src="assets/qr/home.svg" alt="QR code : accueil de la plateforme" width="150" height="150"><b>Accueil</b><small>Adresse : '''+BASE_URL+'''</small></div><div class="card k3"><img src="assets/qr/parcours.svg" alt="QR code : parcours de formation" width="150" height="150"><b>Parcours</b><small>Les 23 modules. Chaque module de la salle porte son propre code en mode animation.</small></div><div class="card k3"><img src="assets/qr/evaluation.svg" alt="QR code : évaluations" width="150" height="150"><b>Évaluations</b><small>QCM par niveau et évaluation générale.</small></div></div><p class="expl">Les codes sont valables une fois la plateforme publiée à l’adresse ci-dessus. Le score reste dans le navigateur.</p>
 <h2>Mode d’emploi</h2><ol class="steps"><li>Ouvrez le lien de la plateforme dans le navigateur du téléphone ou de la tablette.</li><li>Parcourez la page d’accueil une première fois avec du réseau : les pages et les images légères se mettent en cache.</li><li>Ajoutez la plateforme à l’écran d’accueil si le navigateur le propose.</li><li>En salle, suivez sur votre appareil le module que le formateur projette (Mode animation).</li><li>À distance, ouvrez le même module et utilisez les exercices et le QCM.</li></ol>
 <div class="note"><b>Hors connexion.</b> Après un premier chargement complet, la plateforme fonctionne sans réseau, hors cours de base (fichier lourd) qui demande une première ouverture avec connexion.</div>
 <div class="note"><b>Données.</b> Aucune donnée nominative n’est collectée par ce site. Le score du QCM reste dans votre navigateur.</div>''')

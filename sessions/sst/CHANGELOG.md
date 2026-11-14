@@ -24,3 +24,12 @@
 - Plans INRS PAP et PI dématérialisés intégrés sans modification (outils-inrs/, page formateur plans.html), avec l’autorisation du responsable. Dépôt public.
 - Les 7 visuels en attente sont validés par Benoît Deflandre (data/visuels-statut.csv).
 - Aucun tarif Carsat repris de la fiche 2015 ; la revue HST (do36) est laissée de côté.
+
+## v0.5.0 — 14/11/2026
+- Accès à l’espace formateur et à l’animation par code ou adresse e-mail (contrôle côté navigateur, empreintes SHA-256 ; limite l’affichage, ne protège pas les fichiers).
+- Animations (protéger–examiner–alerter–secourir ; alerter–masser–défibriller) avec QR code « Sur le site » et repères à chaque étape.
+- Page « Suivre la formation » avec QR codes par séquence et par demi-journée (23 QR, décodage vérifié).
+- Parcours : vignettes de demi-journée actives, étapes numérotées dans l’ordre, bandeau « étape n sur N » dans les modules.
+- Modules enrichis : réflexe, pièges fréquents, question flash, icônes, explications « Comment lire » sous les schémas.
+- Espace formateur : fiches de séquence, matériel et salle, modèles de documents, questions du formateur.
+- Plans PI et PAP intégrés dans la page Plans (iframes) et liés depuis les modules.

@@ -1,11 +1,14 @@
 {
  "axe": {
+  "animation.html": [],
   "certification.html": [],
   "credits.html": [],
   "dj1-apres-midi.html": [],
   "dj1-matin.html": [],
   "dj2-apres-midi.html": [],
   "dj2-matin.html": [],
+  "documents.html": [],
+  "faq-formateur.html": [],
   "fiches-secourir.html": [],
   "formateur.html": [],
   "galerie.html": [],
@@ -22,6 +25,7 @@
   "m7.html": [],
   "m8.html": [],
   "mac.html": [],
+  "materiel.html": [],
   "matrice.html": [],
   "outils.html": [],
   "parcours.html": [],
@@ -30,8 +34,10 @@
   "registre.html": [],
   "ressources.html": [],
   "scenarios.html": [],
+  "sequences.html": [],
   "sources.html": [],
   "suivi.html": [],
+  "suivre.html": [],
   "valider.html": [],
   "visuels-relecture.html": []
  },

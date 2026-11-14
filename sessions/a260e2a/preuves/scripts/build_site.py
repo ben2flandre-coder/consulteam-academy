@@ -90,6 +90,10 @@ data['evals_cfg']=dict(zones=[4,18],socle=[1,2,3,8,23],dangers=[2],protec=[6,8,2
 open(f'{R}/data/content.js','w',encoding='utf-8').write("window.A="+json.dumps(data,ensure_ascii=False)+";")
 json.dump({"destinataire":"ben2flandre@gmail.com","endpoint":""},open(f'{R}/assets/config.json','w'))
 exec(open('/home/claude/work/present.py',encoding='utf-8').read())
+import shutil
+os.makedirs(R+'/pdf',exist_ok=True)
+for _f in ('livret-formation-a260e2a.pdf','livret-site-a260e2a.pdf'):
+    shutil.copy('/home/claude/work/livrets/'+_f,R+'/pdf/'+_f)
 import lock as _lkA
 _cl=open(f'{R}/animation.html',encoding='utf-8').read()
 os.makedirs('/home/claude/work/private',exist_ok=True);open('/home/claude/work/private/animation-clair.html','w',encoding='utf-8').write(_cl)

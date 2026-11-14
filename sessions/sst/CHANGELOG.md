@@ -1,4 +1,10 @@
 # Journal des changements
+## v0.6.0 — 14/11/2026
+- Animation complète : déroulé animé des 4 demi-journées, dans l'ordre des blocs du parcours (15 blocs, 25 étapes de projection avec les fiches secourir découpées par situation).
+- Pour chaque bloc : objectifs, réflexe, schémas commentés, essentiel, pièges, mise en situation, question flash, note formateur ; fiches secourir intégrées au bon moment (matin 2 : saignement, étouffement ; après-midi 2 : PLS, malaise, brûlure, plaie, douleur, RCP et DAE).
+- Repères et renvois par bloc : module apprenant (avec bandeau d'étape), fiche de séquence, déroulé formateur, fiches outils INRS, plans PI et PAP, glossaire, auto-évaluation, QR code de suivi.
+- Mode présentation (une étape à la fois, adresse partageable #j2a-b4) ou « Tout afficher » ; sans JavaScript, tout est affiché. Scènes animées A (protéger à secourir) et B (alerter, masser, défibriller) conservées dans les blocs concernés.
+- Ancres ajoutées : fiches de séquence (sq-C1 à sq-C8), « Suivre la formation » par demi-journée.
 ## v0.3.1 — 14/11/2026
 - Images IA V2 (gilet vert pour le sauveteur) : 31 visuels remplacés ; 24 affichés, 7 en attente de validation d'un formateur SST (PLS, claques, compressions abdominales, nourrisson, RCP, DAE, insufflations).
 - Scénarios F1–F4 et K1–K4 réécrits pour correspondre aux 8 scènes illustrées ; chaque scène est affichée dans sa fiche.

@@ -121,3 +121,15 @@ body.gated:not(.open) main>*:not(.gate):not(noscript){display:none}
 .qrg{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}.qrc{border:1px solid #c9d2e0;border-radius:12px;padding:12px;text-align:center;background:#fff}.qrc b,.qrc small,.qrc a{display:block;margin-top:4px}svg.qr{max-width:100%;height:auto}
 .qrbox{display:flex;gap:12px;align-items:center;margin-top:8px;padding:10px 14px;border:2px dashed #f6b63d;border-radius:12px;background:#fffdf6}.qrbox .rp{font-size:.9em}.qrbox a{font-weight:700}
 @media print{.qrg{grid-template-columns:repeat(4,1fr)}}
+
+.dtabs{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.dtab{font:700 15px var(--ff);padding:10px 14px;border-radius:999px;border:2px solid var(--n);background:#fff;color:var(--n);cursor:pointer;min-height:44px}.dtab[aria-pressed=true]{background:var(--n);color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}.chips .chip{white-space:nowrap}
+.pnav{display:flex;flex-wrap:wrap;gap:10px;align-items:center;position:sticky;top:0;z-index:4;background:#fff;border:1px solid var(--l);border-radius:12px;padding:8px 12px;margin:10px 0}.pnav button{font:700 14px var(--ff);padding:8px 12px;min-height:44px;border-radius:8px;border:2px solid var(--n);background:#fff;color:var(--n);cursor:pointer}.pnav .pc{font-weight:700}
+.stp{border:1px solid var(--l);border-left:8px solid var(--y);border-radius:12px;padding:6px 18px 14px;margin:18px 0;background:#fff}.stp .stpn{font:700 13px var(--ff);color:#5b6b85;text-transform:uppercase;letter-spacing:.04em}.stp h3{margin:2px 0 6px}
+.sh{font-weight:700;margin:16px 0 4px;color:var(--n)}
+.fch{border:1px dashed #9fb1cc;border-radius:10px;padding:4px 14px 8px;margin:12px 0;background:#f7faff}.fch h4{margin:8px 0}
+.repbar{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-top:14px;padding:10px 12px;border-radius:10px;background:#eef3fb}.repl{font-weight:700;color:var(--n);display:block}.repl2{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:4px}.rep .repl{display:inline;margin-right:8px}
+.repqr{text-align:center;font-size:.8em}.repqr small{display:block}
+.anim{border:2px solid #c9d2e0;border-radius:12px;padding:8px 12px;margin:12px 0;background:#fff}.anim:focus-visible{outline:3px solid var(--y)}
+[hidden]{display:none!important}
+@media print{.pnav,.dtabs,.anim .ctl{display:none}.stp{break-inside:avoid-page}.djs[hidden]{display:block}}

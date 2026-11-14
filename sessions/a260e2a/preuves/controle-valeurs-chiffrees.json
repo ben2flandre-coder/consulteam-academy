@@ -12,7 +12,7 @@
   16,
   17
  ],
- "affirmations": 239,
+ "affirmations": 326,
  "sans_reference": 0,
  "jetons_non_declares": [],
  "jetons_declares_inutilises": [],
@@ -95,11 +95,11 @@
   ],
   "8": [
    "C",
-   "circuits de l'exemple"
+   "numérotation des étapes d'un pas-à-pas"
   ],
   "6": [
    "C",
-   "circuits de l'exemple"
+   "numérotation des étapes d'un pas-à-pas"
   ],
   "4": [
    "S",
@@ -196,6 +196,14 @@
   "90": [
    "D",
    "distracteur"
+  ],
+  "5,5": [
+   "S",
+   "S29 : 5,5 h HE Mesurage et Vérification"
+  ],
+  "7": [
+   "C",
+   "numérotation des étapes d'un pas-à-pas"
   ]
  }
 }

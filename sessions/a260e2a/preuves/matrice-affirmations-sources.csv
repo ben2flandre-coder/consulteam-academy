@@ -149,12 +149,36 @@
 12;section : Thèmes techniques propres à la haute tension;Elle comprend l'induction et le couplage capacitif avec leurs mesures de prévention, dont la mise en équipotentialité [S29].;S29;S;OK
 12;section : Thèmes techniques propres à la haute tension;Elle comprend aussi le verrouillage et l'interverrouillage, ainsi que les équipements de protection collective et individuelle [S29].;S29;S;OK
 12;section : Pratique minimale;La formation pratique minimale est de 6,5 h pour H1, H1V, H2, H2V et H2V Essai : 3 h de thèmes communs, 1,5 h pour les spécificités HTA ou HTB et 2 h pour le module [S29].;S29;S;OK
+12;section : Ce que le module « travaux » demande de savoir;Caractériser les travaux et connaître leurs limites : hors tension, avec ou sans voisinage, en présence de tension, sous tension [S29].;S29;S;OK
+12;section : Ce que le module « travaux » demande de savoir;Connaître le rôle du chargé de consignation et du chargé d'exploitation électrique, respecter leurs instructions et échanger les informations [S29].;S29;S;OK
+12;section : Ce que le module « travaux » demande de savoir;Appliquer les mesures de prévention : éliminer le risque, organiser, délimiter, signaler, respecter et faire respecter [S29].;S29;S;OK
+12;section : Ce que le module « travaux » demande de savoir;Utiliser les documents applicables : instructions de sécurité, attestation de consignation, attestation de première étape de consignation, autorisation de travail, avis de fin de travail [S29].;S29;S;OK
+12;section : Induction, couplage capacitif, équipotentialité;Le module de thèmes techniques HT demande de comprendre l'induction et le couplage capacitif et d'appliquer les mesures de prévention associées, dont la mise en équipotentialité [S29].;S29;S;OK
+12;section : Induction, couplage capacitif, équipotentialité;Il demande aussi d'expliquer le fonctionnement et de manœuvrer les dispositifs de verrouillage et d'interverrouillage [S29].;S29;S;OK
+12;section : Induction, couplage capacitif, équipotentialité;Les équipements de protection collective et individuelle sont à identifier, vérifier et utiliser [S29].;S29;S;OK
+12;section : Les savoir-faire évalués selon le symbole;Pour H1 et H1V, on évalue le respect des consignes de sécurité pour exécuter les travaux et la mise en œuvre des équipements de protection individuelle [S29].;S29;S;OK
+12;section : Les savoir-faire évalués selon le symbole;Pour H1V et H2V, on évalue en plus la mise en œuvre des équipements de protection collective, comme la nappe isolante ou l'écran [S29].;S29;S;OK
+12;section : Les savoir-faire évalués selon le symbole;Pour H2 et H2V, on évalue la préparation et la direction des travaux, la rédaction ou le renseignement des documents, le balisage et la surveillance de la zone [S29].;S29;S;OK
+12;section : Pas-à-pas : préparer et exécuter des travaux hors tension en HT;1) Faire préciser le domaine (HTA ou HTB), l'installation et les travaux avant de choisir les thèmes [S29, R].;S29;R;OK
+12;section : Pas-à-pas : préparer et exécuter des travaux hors tension en HT;2) Identifier le chargé d'exploitation électrique et le chargé de consignation [S29].;S29;S;OK
+12;section : Pas-à-pas : préparer et exécuter des travaux hors tension en HT;3) Obtenir l'attestation de consignation avant de commencer les travaux [S29, R].;S29;R;OK
+12;section : Pas-à-pas : préparer et exécuter des travaux hors tension en HT;4) Organiser, délimiter et signaler la zone de travail [S29].;S29;S;OK
+12;section : Pas-à-pas : préparer et exécuter des travaux hors tension en HT;5) Identifier, vérifier et mettre en œuvre les équipements de protection [S29].;S29;S;OK
+12;section : Pas-à-pas : préparer et exécuter des travaux hors tension en HT;6) Exécuter les travaux dans les limites du symbole, en respectant les instructions de sécurité [S29].;S29;S;OK
+12;section : Pas-à-pas : préparer et exécuter des travaux hors tension en HT;7) Rendre compte, puis clôturer par l'avis de fin de travail [S29, R].;S29;R;OK
 12;situation;Un poste haute tension doit faire l'objet de travaux hors tension.;;;OK
 12;situation;Le client n'a pas précisé s'il s'agit de HTA ou de HTB.;;;OK
 12;réponse;On ne fixe pas le contenu technique : on fait préciser le domaine et les installations par l'employeur avant de choisir les thèmes et les travaux pratiques [S29, R].;S29;R;OK
 12;question T12-01 (explication);Les thèmes se développent différemment selon BT, HTA ou HTB [S29].;S29;S;OK
 12;question T12-02 (explication);6,5 h au total : thèmes communs, spécificités HT et module [S29].;S29;S;OK
 12;question T12-03 (explication);Induction, verrouillage et structure des ouvrages font partie du module de thèmes techniques [S29].;S29;S;OK
+12;question T12-04 (explication);V désigne le voisinage renforcé, comme en basse tension [S29].;S29;S;OK
+12;question T12-05 (explication);"Le chiffre 2 désigne le chargé de travaux ; 1 l'exécutant [S29].";S29;S;OK
+12;question T12-06 (explication);Préparation, direction, documents, balisage et surveillance figurent dans les savoir-faire de H2 et H2V [S29].;S29;S;OK
+12;question T12-07 (explication);La formation HT cite la mise en équipotentialité parmi les mesures associées [S29].;S29;S;OK
+12;question T12-08 (explication);Éliminer le risque, organiser, délimiter, signaler, respecter et faire respecter [S29].;S29;S;OK
+12;question T12-09 (explication);Le module de thèmes techniques demande d'expliquer le fonctionnement et de manœuvrer ces dispositifs [S29].;S29;S;OK
+12;question T12-10 (explication);"L'attestation de consignation fait partie des documents applicables aux travaux [S29] ; elle est reçue avant de commencer [R].";S29;R;OK
 13;section : Le rôle du chargé de consignation;Le chargé de consignation identifie le chargé d'exploitation électrique, connaît son rôle et échange avec lui les informations [S29].;S29;S;OK
 13;section : Le rôle du chargé de consignation;Il suit les instructions reçues [S29].;S29;S;OK
 13;section : Le rôle du chargé de consignation;Le symbole HC concerne la consignation d'un ouvrage ou d'une installation électrique en haute tension [S29].;S29;S;OK
@@ -163,12 +187,35 @@
 13;section : La réquisition;La formation HC comprend la description d'un régime de réquisition, l'analyse des risques et le renseignement d'un avis de réquisition, si nécessaire [S29].;S29;S;OK
 13;section : La réquisition;Le cas de réquisition dépend de l'organisation de l'installation : il se précise avec le client [R].;;R;OK
 13;section : Pratique minimale;La formation pratique minimale pour HC est de 6,5 h, comme pour les travaux HT : 3 h de thèmes communs, 1,5 h de spécificités HT et 2 h pour le module [S29].;S29;S;OK
+13;section : Une analyse préalable avant de consigner;Avant la consignation, on réalise une analyse préalable de l'opération, comme pour BC, BR et BS [S29].;S29;S;OK
+13;section : Une analyse préalable avant de consigner;On rédige ou on complète les documents propres à l'opération [S29].;S29;S;OK
+13;section : Une analyse préalable avant de consigner;La consignation en une étape fait partie des savoir-faire évalués pour BC et HC [S29].;S29;S;OK
+13;section : Une ou deux étapes : les documents;Les documents prévoient une attestation de consignation en une ou deux étapes et, si besoin, une attestation de première étape [S29].;S29;S;OK
+13;section : Une ou deux étapes : les documents;Le circuit exact de ces documents en haute tension se précise avec l'exploitant de l'installation [R].;;R;OK
+13;section : Une ou deux étapes : les documents;Le chargé de consignation connaît la fonction des matériels : coupure, protection, séparation [S29].;S29;S;OK
+13;section : Les thèmes techniques HT qui servent la consignation;Le module de thèmes techniques HT apporte la structure des ouvrages (ligne et poste), la fonction des matériels des postes (commande, protection, séparation) et le verrouillage et l'interverrouillage [S29].;S29;S;OK
+13;section : Les thèmes techniques HT qui servent la consignation;Les équipements de protection collective et individuelle sont à identifier, vérifier et utiliser [S29].;S29;S;OK
+13;section : Pas-à-pas : consigner et déconsigner;1) Identifier le chargé d'exploitation électrique et échanger les informations avec lui [S29].;S29;S;OK
+13;section : Pas-à-pas : consigner et déconsigner;2) Réaliser l'analyse préalable de l'opération [S29].;S29;S;OK
+13;section : Pas-à-pas : consigner et déconsigner;3) Séparer l'ouvrage des sources de tension [S22].;S22;S;OK
+13;section : Pas-à-pas : consigner et déconsigner;4) Condamner les organes de séparation [S22].;S22;S;OK
+13;section : Pas-à-pas : consigner et déconsigner;5) Identifier l'ouvrage à consigner [S22].;S22;S;OK
+13;section : Pas-à-pas : consigner et déconsigner;6) Vérifier l'absence de tension [S22].;S22;S;OK
+13;section : Pas-à-pas : consigner et déconsigner;7) Mettre à la terre et en court-circuit [S22].;S22;S;OK
+13;section : Pas-à-pas : consigner et déconsigner;8) Établir l'attestation de consignation, puis attendre l'avis de fin de travail avant de déconsigner [S29].;S29;S;OK
 13;situation;Un ouvrage HT doit être consigné pour permettre des travaux.;;;OK
 13;situation;Vous êtes le chargé de consignation : avec qui échangez-vous, quels documents établissez-vous ?;;;OK
 13;réponse;Non [S29].;S29;S;OK
 13;réponse;La déconsignation suit l'avis de fin de travail et l'organisation prévue avec le chargé d'exploitation [S29, R].;S29;R;OK
 13;question T13-01 (explication);Il identifie le chargé d'exploitation et échange avec lui [S29].;S29;S;OK
 13;question T13-02 (explication);Attestation (une ou deux étapes), avis de fin de travail, et avis de réquisition si nécessaire [S29].;S29;S;OK
+13;question T13-03 (explication);L'ordre général est séparation, condamnation, identification, vérification d'absence de tension, mise à la terre et en court-circuit [S22].;S22;S;OK
+13;question T13-04 (explication);Une analyse préalable est demandée pour la consignation [S29].;S29;S;OK
+13;question T13-05 (explication);Régime de réquisition, analyse des risques et avis de réquisition, si nécessaire [S29].;S29;S;OK
+13;question T13-06 (explication);HC : 6,5 h, comme les travaux HT [S29].;S29;S;OK
+13;question T13-07 (explication);Les documents prévoient une attestation en une ou deux étapes et une attestation de première étape [S29].;S29;S;OK
+13;question T13-08 (explication);La déconsignation suit l'avis de fin de travail et l'organisation prévue avec le chargé d'exploitation [S29, R].;S29;R;OK
+13;question T13-09 (explication);HC concerne la consignation en haute tension [S29].;S29;S;OK
 14;section : Un symbole à compléter par un attribut;Les symboles BE et HE doivent être complétés par un attribut : Essai, Vérification, Mesurage ou Manœuvre [S29].;S29;S;OK
 14;section : Un symbole à compléter par un attribut;HE seul ne dit donc pas quelle opération est permise [S29, R].;S29;R;OK
 14;section : Un symbole à compléter par un attribut;HE Manœuvre couvre la manœuvre de matériel pour mettre hors ou sous tension un équipement ou une installation [S29].;S29;S;OK
@@ -178,11 +225,32 @@
 14;section : Manœuvres en HTB;Les manœuvres en HTA suivent le module des manœuvres de la formation de base [S29].;S29;S;OK
 14;section : Manœuvres en HTB;Le choix HTA ou HTB reste à confirmer [R].;;R;OK
 14;section : Durée de pratique;La formation pratique minimale pour HE Manœuvre HTB est de 5 h [S29].;S29;S;OK
+14;section : Les thèmes propres aux manœuvres;Le module des manœuvres demande d'identifier les matériels électriques dans leur environnement, de reconnaître leurs caractéristiques et leur fonction [S29].;S29;S;OK
+14;section : Les thèmes propres aux manœuvres;Il demande d'identifier, vérifier et utiliser les équipements de protection individuelle [S29].;S29;S;OK
+14;section : Les thèmes propres aux manœuvres;Il demande de connaître les limites de l'habilitation BE ou HE (manœuvres permises) et d'évaluer les risques liés aux manœuvres [S29].;S29;S;OK
+14;section : Les acteurs et les échanges;Il faut connaître les acteurs concernés par les manœuvres : le chargé d'exploitation électrique et le chargé de consignation [S29].;S29;S;OK
+14;section : Les acteurs et les échanges;Il faut échanger avec eux les informations et les documents pertinents [S29].;S29;S;OK
+14;section : Les acteurs et les échanges;Le compte rendu de l'opération réalisée fait partie des savoir-faire évalués pour tous les symboles [S29].;S29;S;OK
+14;section : Ce que la haute tension ajoute à la manœuvre;Le module de thèmes techniques HT apporte la structure des ouvrages (ligne et poste), la fonction des matériels des postes (commande, protection, séparation) et le verrouillage et l'interverrouillage [S29].;S29;S;OK
+14;section : Ce que la haute tension ajoute à la manœuvre;Il comprend l'explication du fonctionnement des dispositifs de verrouillage et d'interverrouillage et leur manœuvre [S29].;S29;S;OK
+14;section : Pas-à-pas : exécuter une manœuvre;1) Vérifier que l'opération demandée est bien une manœuvre couverte par le symbole HE et son attribut Manœuvre [S29, R].;S29;R;OK
+14;section : Pas-à-pas : exécuter une manœuvre;2) Se procurer la fiche de manœuvre et les instructions de sécurité [S29].;S29;S;OK
+14;section : Pas-à-pas : exécuter une manœuvre;3) Identifier l'appareil et son environnement [S29].;S29;S;OK
+14;section : Pas-à-pas : exécuter une manœuvre;4) Identifier, vérifier et mettre les équipements de protection individuelle [S29].;S29;S;OK
+14;section : Pas-à-pas : exécuter une manœuvre;5) Exécuter la manœuvre dans l'ordre de la fiche, en respectant le verrouillage et l'interverrouillage [S29, R].;S29;R;OK
+14;section : Pas-à-pas : exécuter une manœuvre;6) En cas d'anomalie, s'arrêter et en rendre compte sans dépanner [R].;;R;OK
+14;section : Pas-à-pas : exécuter une manœuvre;7) Rendre compte au chargé d'exploitation électrique ou au chargé de consignation [S29].;S29;S;OK
 14;situation;On vous demande de manœuvrer un appareil de coupure d'un poste HT selon une fiche de manœuvre.;;;OK
 14;situation;Vous n'êtes ni chargé de travaux ni chargé de consignation.;;;OK
 14;réponse;On s'arrête, on décrit le fait au demandeur et on laisse la prise en charge à l'interlocuteur compétent : la manœuvre ne devient pas un dépannage [S29, R].;S29;R;OK
 14;question T14-01 (explication);BE et HE se complètent par Essai, Vérification, Mesurage ou Manœuvre [S29].;S29;S;OK
 14;question T14-02 (explication);La pratique évalue le respect des instructions et des documents, comme la fiche de manœuvre [S29].;S29;S;OK
+14;question T14-03 (explication);Le module des manœuvres cite le chargé d'exploitation électrique et le chargé de consignation [S29].;S29;S;OK
+14;question T14-04 (explication);Savoir-faire évalué : manœuvre d'exploitation ou de consignation avec fiche de manœuvre [S29].;S29;S;OK
+14;question T14-05 (explication);HE Manœuvre HTB : 5 h [S29].;S29;S;OK
+14;question T14-06 (explication);On s'arrête et on rend compte : la manœuvre ne devient pas un dépannage [S29, R].;S29;R;OK
+14;question T14-07 (explication);Le compte rendu fait partie des savoir-faire évalués pour tous les symboles [S29].;S29;S;OK
+14;question T14-08 (explication);Le module demande d'expliquer le fonctionnement et de manœuvrer ces dispositifs [S29].;S29;S;OK
 15;section : Trois attributs, trois formations;BE doit être complété par un attribut : Mesurage, Vérification ou Essai (ou Manœuvre) [S29].;S29;S;OK
 15;section : Trois attributs, trois formations;Le mesurage et la vérification partagent un module de formation, l'essai a le sien [S29].;S29;S;OK
 15;section : Trois attributs, trois formations;La vérification comprend l'examen visuel, l'essai et le mesurage [S29].;S29;S;OK
@@ -192,6 +260,19 @@
 15;section : Ce que couvre le module essai;Il ajoute les consignes pour les essais particuliers (source autonome, recherche de défaut de câble, laboratoire et plate-forme d'essais) [S29].;S29;S;OK
 15;section : Ce que couvre le module essai;Il comprend aussi la consignation pour son propre compte [S29].;S29;S;OK
 15;section : Pratique minimale;La formation pratique minimale est de 4 h pour BE Mesurage et BE Vérification, et de 5 h pour BE Essai [S29].;S29;S;OK
+15;section : Mesurer, vérifier, essayer : les savoir-faire évalués;Pour BE Mesurage et Vérification, on évalue la réalisation d'un mesurage ou d'une vérification, qui comprend l'examen visuel, l'essai et le mesurage [S29].;S29;S;OK
+15;section : Mesurer, vérifier, essayer : les savoir-faire évalués;Pour BE Essai, on évalue la réalisation d'un essai et d'un mesurage seul ou à plusieurs et d'une consignation pour son propre compte [S29].;S29;S;OK
+15;section : Mesurer, vérifier, essayer : les savoir-faire évalués;L'identification, la vérification et la mise en œuvre des équipements de protection individuelle sont évaluées pour BE et HE [S29].;S29;S;OK
+15;section : Mesurage et vérification : BE ou HE;Le module mesurage et vérification s'applique à BE et à HE [S29].;S29;S;OK
+15;section : Mesurage et vérification : BE ou HE;La pratique minimale est de 5,5 h pour HE Mesurage et HE Vérification, de 4 h pour BE Mesurage et BE Vérification [S29].;S29;S;OK
+15;section : Mesurage et vérification : BE ou HE;La réquisition ne concerne que le HE Essai, si nécessaire [S29].;S29;S;OK
+15;section : Pas-à-pas : mesurer ou vérifier;1) Nommer l'opération : mesurage, vérification ou essai [S29, R].;S29;R;OK
+15;section : Pas-à-pas : mesurer ou vérifier;2) Contrôler que l'attribut du titre correspond à cette opération [S29].;S29;S;OK
+15;section : Pas-à-pas : mesurer ou vérifier;3) Identifier le chargé d'exploitation électrique et obtenir l'autorisation de travail et les instructions de sécurité [S29].;S29;S;OK
+15;section : Pas-à-pas : mesurer ou vérifier;4) Identifier l'équipement de travail, le vérifier et connaître ses risques [S29].;S29;S;OK
+15;section : Pas-à-pas : mesurer ou vérifier;5) Appliquer les mesures de prévention : éliminer le risque, organiser, délimiter, signaler [S29].;S29;S;OK
+15;section : Pas-à-pas : mesurer ou vérifier;6) Réaliser l'opération sans sortir de son attribut [S29, R].;S29;R;OK
+15;section : Pas-à-pas : mesurer ou vérifier;7) Rendre compte au chargé d'exploitation électrique [S29].;S29;S;OK
 15;situation;On vous demande de contrôler un circuit et de mesurer une grandeur sur un équipement.;;;OK
 15;situation;Vous devez dire de quelle opération il s'agit avant de commencer.;;;OK
 15;réponse;Non, mesurer n'autorise pas à remplacer [S29].;S29;S;OK
@@ -199,6 +280,12 @@
 15;question T15-01 (explication);5 h pour BE Essai, 4 h pour Mesurage et Vérification [S29].;S29;S;OK
 15;question T15-02 (explication);Examen visuel, essai et mesurage [S29].;S29;S;OK
 15;question T15-03 (explication);Le symbole se limite à l'opération de son attribut [S29, R].;S29;R;OK
+15;question T15-04 (explication);"HE Mesurage et HE Vérification : 5,5 h ; BE Mesurage et BE Vérification : 4 h [S29].";S29;S;OK
+15;question T15-05 (explication);On vérifie que l'opération correspond à l'attribut du titre [S29, R].;S29;R;OK
+15;question T15-06 (explication);Essai, mesurage seul ou à plusieurs et consignation pour son propre compte [S29].;S29;S;OK
+15;question T15-07 (explication);La réquisition concerne uniquement HE Essai, si nécessaire [S29].;S29;S;OK
+15;question T15-08 (explication);EPI évalués pour BE et HE [S29].;S29;S;OK
+15;question T15-09 (explication);Le module essai ajoute des consignes pour ces essais particuliers [S29].;S29;S;OK
 16;section : Une pratique individuelle;La formation doit comporter une partie pratique, de préférence dans l'environnement habituel de l'apprenant ou dans un environnement aussi proche que possible du réel, sur des installations représentatives [S29].;S29;S;OK
 16;section : Une pratique individuelle;Pour les modules spécifiques, l'apprenant réalise lui-même les opérations [S29].;S29;S;OK
 16;section : Une pratique individuelle;Pour les thèmes communs, la formation pratique peut être individuelle ou de groupe [S29].;S29;S;OK

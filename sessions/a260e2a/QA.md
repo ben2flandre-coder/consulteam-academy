@@ -44,3 +44,11 @@ Contenu de formateur.html chiffré dans le navigateur (AES-GCM 256, PBKDF2 600 0
 
 ## Refonte pédagogique (14/11/2026, après benchmark)
 Écran de module en 5 phases (voir, comprendre, faire, vérifier, retenir), procédures pas à pas, coups de pouce gradués, entrée par symbole, avancement local. Benchmark : BENCHMARK.md. Tests : preuves/test-studio.json (22 modules ouverts sans erreur, 5 phases, pas-à-pas, aides, score), preuves/qa-responsive.json (68 combinaisons dont cours/ à 390 px, corrigé). Limite : les questions de « Faire » et « Vérifier » sont celles de la banque de l’évaluation (une moitié chacune) ; un stagiaire peut les avoir vues avant l’évaluation finale.
+
+## Évaluations, documents de session, modules HT (14/11/2026, 13 h)
+- Vue « Tout lire » ajoutée en tête de chaque module (lecture continue de tout le contenu) et ouverte par défaut ; les 5 phases guidées restent disponibles.
+- Modules 12, 13, 14 et 15 étoffés à partir de l'ED 6127 : 7 à 8 sections chacun, un pas-à-pas par module, 8 à 10 questions chacun. Banque : 144 questions (118 avant). check_modules : 326 affirmations, 0 sans référence.
+- Évaluations : générale complète (144 questions), tirage général de 75, et 12 évaluations par niveau de 20 questions (30 % zones et distances, 40 % limites du niveau, 30 % socle ; répartition inspirée de l'ED 6127). Seuil de référence 70 %, résultat par module. Preuves : preuves/test-evaluations.json (scripts/eval_test.py).
+- Page « Documents de session » : émargement par demi-journée, satisfaction à chaud, compte rendu jour par jour, 10 grilles d'évaluation pratique par symbole (ED 6127 §5.4.2, tableau relu sur la page), avis après formation (contenu de l'ED 6127 §7.2), attestation de fin de formation. Modèles de travail, à valider par le formateur et le commanditaire.
+- Tests : 60 combinaisons d'affichage sans débordement (preuves/qa-responsive.json), studio, hors ligne en local.
+- Limites : la banque de 144 questions ne respecte pas « cinq fois plus de questions que posées » par thème pour chaque niveau (ED 6127) ; les grilles pratiques et la liste des savoir-faire sont à valider ; durée 21 h (programme) ou 19,5 h (horaires du CPS) non levée ; textes de la NF C 18-510 non lus.

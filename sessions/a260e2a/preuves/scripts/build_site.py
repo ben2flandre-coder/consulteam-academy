@@ -62,6 +62,10 @@ for m in mods:
     for q in m['questions']: q.setdefault('type','s')
 for m in mods:
     m.setdefault('html','');m.setdefault('figures',[]);m.setdefault('exercices',[])
+import skin
+SCHEMAS+=skin.SCHEMAS_ADI
+for m in mods:
+    if m['id']==17: m['figures']=list(m.get('figures',[]))+skin.FIGS_M17
 import csv
 SUIVI={x['id']:x for x in csv.DictReader(open('/tmp/up/suivi-visuels-A260E2A.csv',encoding='utf-8-sig'),delimiter=';')}
 vis=[dict(id=i['id'],titre=i['titre'],module=i['module'],format=i['format'],legende=i['legende'],controle=i['controle_technique'],fichier=('images/ia/'+i['id']+'.webp'),statut=SUIVI.get(i['id'],{}).get('statut','image à venir'),relecteur=SUIVI.get(i['id'],{}).get('relecteur',''),detail=SUIVI.get(i['id'],{}).get('controle_effectue','')) for i in prompts['images']]

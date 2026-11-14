@@ -24,6 +24,13 @@ Le support de départ (A260BNA, Panzani) était générique. Il est adapté à l
 - **Sources ajoutées** S41 à S51 (France Compétences, Legrand, EPS Formation SSI et AES, AFNOR NF S 61-933 en fiche, CNPP, tableaux de vérifications, cahier des charges de maintenance). Les normes SSI n'ont pas été lues en texte intégral : périodicités et autonomies à confirmer par le formateur.
 - **Mode animation enrichi** : chaque section est découpée en diapositives courtes, mention « Chez ADI », décision avec « Voir la réponse », 4 questions flash par module (de 19 à 31 diapositives par module au lieu de 9).
 
+## Habillage et dynamisme
+- Accueil illustré (visuel SSI, boutons d'accès direct au module ADI), **défi du jour** (question tirée au hasard avec correction), plan des trois jours, bandeau « Détecter · Mettre en sécurité · Alimenter · Maintenir ».
+- Modules : icône par module et par section, bannière photo, accroche « Mise en situation », **encarts d'alerte rouges** sur les phrases de danger, bandeaux « Chez ADI », « À vous de décider », « Réflexes avant d'agir » à cocher.
+- **Quatre schémas SSI** (chaîne détection → ECS → CMSI → DAS, catégories A à E, secteur coupé et batterie encore source, visite de vérification), de principe, dérivés des sources S42 à S44 et S48.
+- Animation : couleurs par type de diapositive (Chez ADI, Attention, Décision, Question flash), barre de progression, icône par thème, schémas plein écran.
+- Contrôles : axe 0 violation, 68 combinaisons d'affichage sans débordement, hors ligne OK.
+
 ## Ajouts de la passe précédente
 Mode animation : QR code par module (renvoi vers le module sur téléphone), trois QR sur la page Suivre, diapositives des modules 10, 11 et 18 (reprises du support Panzani) qui n'apparaissaient pas, QR décodés et vérifiés.
 

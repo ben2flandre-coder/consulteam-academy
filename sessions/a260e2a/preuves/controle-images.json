@@ -1,8 +1,8 @@
 {
  "date": "14/11/2026",
- "n": 55,
+ "n": 64,
  "sha256_non_conformes": 0,
- "poids_total_leger_octets": 2236252,
+ "poids_total_leger_octets": 2732540,
  "images": [
   {
    "id": "TC01",
@@ -785,6 +785,141 @@
    "controle": "standard"
   },
   {
+   "id": "TB01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 76860,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "TB02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 28400,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "TB03",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 36532,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "TB04",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 34762,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "TB05",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 75986,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "TB06",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 65588,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "TB07",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 61298,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "TB08",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 53760,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "TB09",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 63102,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
    "id": "PC01",
    "sha256_ok": true,
    "dim_origine": [
@@ -830,5 +965,6 @@
    "controle": "standard"
   }
  ],
- "limites": "Examen visuel sur planches contact seulement ; statuts de Codex = examen préliminaire, pas une relecture de formateur habilité. Texte/logo en pleine taille à revérifier. À signaler : visages visibles (PR01, BT02, SI03, BT01, NE02, TC09, EX03), gants TC03 d'aspect non isolant, instrument EX01 d'aspect multimètre. 16 images « renforcé » à relire par un formateur habilité. TB01–TB09 : images non reçues."
+ "lot": "Lot de 64 images reçu à 11 h 42 (dossier Codex) : les 55 images du premier lot sont inchangées (mêmes SHA-256) ; TB01 à TB09 ajoutées.",
+ "limites": "Examen visuel : TB01 à TB09 vues une par une en pleine taille ; les 55 autres sur planches contact seulement. Les statuts de Codex sont des examens préliminaires, pas une relecture de formateur habilité. À signaler (lot de 55) : visages visibles (PR01, BT02, SI03, BT01, NE02, TC09, EX03), gants TC03 d'aspect non isolant, instrument EX01 d'aspect multimètre."
 }

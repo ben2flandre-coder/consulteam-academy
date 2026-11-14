@@ -78,11 +78,11 @@
 21;section : Poser et raccorder;Appareil équivalent : même calibre, même courbe, pouvoir de coupure au moins égal [R].;;R;OK
 21;section : Repérer, déconsigner, essayer;Mettre à jour le repérage du circuit [S15].;S15;S;OK
 21;section : Repérer, déconsigner, essayer;"Lever la consigne dans l'ordre prévu, puis essayer l'appareil ; pour un différentiel, utiliser le bouton test [S3, S4].";S3 S4;S;OK
-21;section : Limites du BS et du BR;La brochure INRS ED 6127 (édition de 2012) donne pour le BS un maximum de 400 V et 32 A en courant alternatif, hors tension et hors voisinage [S29].;S29;S;OK
-21;section : Limites du BS et du BR;Elle donne pour le BR un maximum de 1000 V et 63 A en courant alternatif, avec 500 V au maximum pour connecter ou déconnecter sous tension [S29].;S29;S;OK
-21;section : Limites du BS et du BR;La borne de 1000 V est celle du domaine basse tension [R].;;R;OK
+21;section : Limites du BS et du BR;La brochure INRS ED 6127, 3e édition de décembre 2020, décrit le BS comme une intervention élémentaire sur des circuits terminaux, au maximum 400 V et 32 A en courant alternatif, hors tension et en l'absence de voisinage renforcé [S29].;S29;S;OK
+21;section : Limites du BS et du BR;Elle décrit le BR avec, pour connecter ou déconnecter en présence de tension, au maximum 500 V et 63 A en courant alternatif, et hors charge [S29].;S29;S;OK
+21;section : Limites du BS et du BR;L'édition de 2012 indiquait pour le BR « maxi 1000 V et 63 A » et ne disait pas hors charge : cette mention n'apparaît plus dans le tableau de 2020 [S30].;S30;S;OK
 21;section : Limites du BS et du BR;Une section de 6 mm² en cuivre figure pour le BS et le BR dans deux sources secondaires issues de l'INRS, pas dans la brochure [S23, S24].;S23 S24;S;OK
-21;section : Limites du BS et du BR;L'INRS renvoie les seuils à la NF C 18-510 [S28], dont le texte payant, y compris ses amendements A1 et A2 en vigueur [S27], n'a pas été lu : confirmer ces valeurs à la norme avant de les enseigner comme limites réglementaires [R].;S27 S28;R;OK
+21;section : Limites du BS et du BR;L'INRS renvoie la portée exacte des symboles à la NF C 18-510 [S29, S28], dont le texte payant, y compris ses amendements A1 et A2 en vigueur [S27], n'a pas été lu : confirmer ces valeurs à la norme avant de les enseigner comme limites réglementaires [R].;S27 S28 S29;R;OK
 21;situation;Un disjoncteur ne se réarme plus.;;;OK
 21;situation;Le tableau est en service.;;;OK
 21;situation;On vous demande de le remplacer.;;;OK

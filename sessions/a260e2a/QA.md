@@ -62,3 +62,7 @@ Contenu de formateur.html chiffré dans le navigateur (AES-GCM 256, PBKDF2 600 0
 ## Durée : 21 h
 - La formation est présentée sur 21 h (dont 7 h de pratique) dans tous les documents de session ; plus aucune mention d'écart de durée. Tests studio et évaluations relancés : 0 erreur.
 - Non fait : ressources INRS SST (cloud.inrs.fr) non récupérées, aucun accès accordé à l'ordinateur ni au site ; module 8 reste fondé sur S31.
+
+## Ressources INRS SST (zip fourni le 14/11/2026)
+- Zip « 2-Ressources technico-pédagogiques » reçu et ouvert : 81 fichiers. Module 8 complété avec le guide des données techniques SST V5.01/2024, TS876 et ED 4085 (sources S33 à S35, preuves/module8-inrs-controle.md). Studio et évaluations retestés : 0 erreur.
+- Reste : ED 7000 non lu ; le contrôle automatique des affirmations ne couvre pas les sections ajoutées dans build_site.py, relues à la main (chaque phrase référencée).

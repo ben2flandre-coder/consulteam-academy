@@ -215,29 +215,14 @@ _qr={'home':'','parcours':'parcours.html','evaluation':'evaluation.html','rempla
 _qr.update({'m%d'%m['id']:'parcours.html#m%d'%m['id'] for m in mods})
 for _k,_v in _qr.items(): _sg.make(BASE_URL+_v,error='m').save('/home/claude/work/a260e2a/assets/qr/%s.svg'%_k,scale=4,border=2,dark='#102c53',light='#ffffff')
 # ---------- ANIMATION ----------
-page('animation.html','Mode animation','''<div class="deck" id="deck" role="region" aria-label="Mode animation"><div class="slide" id="sl" aria-live="polite" tabindex="0"></div><div class="ctl"><button id="pr" aria-label="Précédent">←</button><span id="pg" style="align-self:center"></span><button id="nx" aria-label="Suivant">→</button><select id="ms" aria-label="Module"></select><a href="parcours.html">Quitter</a></div></div>''',SHARED_JS+r'''<script>
-var sl=document.getElementById('sl'),ms=document.getElementById('ms'),pg=document.getElementById('pg'),L=[],k=0,cur=0;
-var okm=A.modules.filter(function(m){return m.sections.length||m.html});
-ms.innerHTML=okm.map(function(m){return '<option value="'+m.id+'">'+m.id+'. '+E(m.title)+'</option>'}).join('');
-function strip(h){var d=document.createElement('div');d.innerHTML=h;return d.textContent.replace(/\s+/g,' ').trim()}
-function sents(x){return x.split(/(?<=[.!?])\s+(?=[A-ZÀÂÉÈÊÎÔÛÇ«(])/)}
-function build(id){cur=+id;var m=module(id);L=[{t:m.title,p:m.goal,i:(m.images||[])[0],tag:'Objectif'}];if(m.scenario)L.push({t:'Situation',p:m.scenario,tag:'Situation de départ'});
-if(m.html){var d=document.createElement('div');d.innerHTML=m.html;var np=0;[].slice.call(d.children).forEach(function(el){var tg=el.tagName;
-if(tg==='P'){np++;L.push({t:np===1?'Repères':'À retenir',p:strip(el.outerHTML)})}
-else if(tg==='OL'||tg==='UL'){[].slice.call(el.children).forEach(function(li,n){var b=li.querySelector('b');var t=b?b.textContent.replace(/[.:]\s*$/,''):'Étape '+(n+1);var txt=strip(li.outerHTML);if(b&&txt.indexOf(b.textContent)===0)txt=txt.slice(b.textContent.length).trim();L.push({t:(tg==='OL'?(n+1)+'. ':'')+t,p:txt})})}
-else if(tg==='TABLE'){var rows=[].slice.call(el.querySelectorAll('tr')).map(function(r){return [].slice.call(r.children).map(function(c){return strip(c.outerHTML)}).join(' : ')});L.push({t:'En un coup d’œil',p:rows.join('\n')})}})}
-m.sections.forEach(function(s,i){var adi=/^Chez ADI/.test(s[0]);var ss=sents(s[1]);var ch=[];for(var j=0;j<ss.length;j+=2)ch.push(ss.slice(j,j+2).join(' '));ch.forEach(function(c,j){L.push({t:s[0]+(ch.length>1?' ('+(j+1)+'/'+ch.length+')':''),p:c.replace(/\s*\[[^\]]*\]/g,''),i:j===0?(m.images||[])[i+1]:null,tag:adi?'Chez ADI':(/(interdit|jamais|danger|s’arrêt|s'arrêt|dépasse|ne se juge pas|ne met pas|brûlure|chute)/i.test(c)?'Attention':'')})})});
-(m.figures||[]).forEach(function(f){L.push({t:f[1],p:'',fig:f[0],tag:'Schéma'})});
-if(m.decision)L.push({t:'Décision à prendre',p:m.decision,r:m.answer.replace(/\s*\[[^\]]*\]/g,''),tag:'Décision'});if(m.check.length)L.push({t:'Avant d’agir',p:m.check.map(function(c){return '• '+c}).join('\n')});
-var qs=(m.questions||[]).filter(function(q){return (q.type||'s')!=='m'}).slice(0,4);qs.forEach(function(q,n){var c=q.options[q.correct];L.push({t:'Question flash '+(n+1)+'/'+qs.length,p:q.q+'\n\n'+q.options.map(function(o,j){return 'ABCD'.charAt(j)+'. '+o}).join('\n'),r:'Réponse : '+'ABCD'.charAt(q.correct)+'. '+c+'\n'+(q.why||'').replace(/\s*\[[^\]]*\]/g,''),tag:'Question flash'})});
-k=0;show()}
-function show(){var s=L[k];var v=s.i&&vis(s.i);var dk=document.getElementById('deck');dk.className='deck'+(s.tag==='Attention'?' t-warn':s.tag==='Chez ADI'?' t-adi':s.tag==='Question flash'?' t-flash':s.tag==='Décision'?' t-dec':'');sl.innerHTML='<div class="pbar" style="width:'+Math.round(100*(k+1)/L.length)+'%"></div><span class="wm">'+ico(s.tag==='Attention'?'alert':s.tag==='Chez ADI'?'fire':s.tag==='Question flash'?'spark':icoFor(s.t))+'</span>'+(s.tag?'<small class="tg">'+E(s.tag)+'</small>':'')+'<h1>'+E(s.t)+'</h1><p style="white-space:pre-line">'+E(s.p)+'</p>'+(s.r?'<button class="rv" id="rv">Voir la réponse</button><p class="ans" id="an" style="white-space:pre-line" hidden>'+E(s.r)+'</p>':'')+(s.fig?'<img class="figbig" src="'+E(s.fig)+'" alt="'+E(s.t)+'" data-nozoom>':'')+(v?'<img src="'+E(v.fichier)+'" alt="'+E(v.titre)+'" data-nozoom>':'')+'<div class="qrbox"><img src="assets/qr/m'+cur+'.svg" alt="QR code : ouvrir le module '+cur+' sur son téléphone" data-nozoom><span>Suivre sur votre téléphone :<br>scannez ce code<br>(module '+cur+')</span></div>';pg.textContent=(k+1)+' / '+L.length;var rv=document.getElementById('rv');if(rv)rv.onclick=function(){document.getElementById('an').hidden=false;rv.hidden=true}}
-function go(d){k=Math.max(0,Math.min(L.length-1,k+d));show()}
-document.getElementById('pr').onclick=function(){go(-1)};document.getElementById('nx').onclick=function(){go(1)};
-ms.onchange=function(){location.hash='m'+ms.value;build(ms.value)};
-addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key===' ')go(1);if(e.key==='ArrowLeft')go(-1)});
-var x0=null;sl.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});sl.addEventListener('touchend',function(e){if(x0==null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(d<0?1:-1);x0=null});
-var mm=/^#m(\d+)/.exec(location.hash);var id=mm&&okm.some(function(m){return m.id==+mm[1]})?+mm[1]:okm[0].id;ms.value=id;build(id);</script>''')
+import deck_e2a as _de
+_dk=_de.Deck(mods,vis,data['tps'],None)
+_clair=_de.page(_dk.build())
+open(f'{R}/animation.html','w',encoding='utf-8').write(_clair)
+open(f'{R}/assets/deck.css','w',encoding='utf-8').write(_de.CSS)
+open(f'{R}/assets/deck.js','w',encoding='utf-8').write(_de.JS)
+SUIVRE_ROWS=''.join('<tr><td>J%d</td><td>%s</td><td>%d min</td><td><a href="parcours.html#m%d">Module %d</a></td></tr>'%(d,_dk.M[i]['title'],mn,i,i) for d,seq in ((1,_de.J1),(2,_de.J2),(3,[(16,270)])) for i,mn in seq)+'<tr><td>J3</td><td>À la carte selon symboles : B1 · B2 · H1 · H2 · HC · HE · mesurage</td><td>—</td><td>'+' · '.join('<a href="parcours.html#m%d">%d</a>'%(i,i) for i in _de.CARTE)+'</td></tr>'
+print('animation',_dk.n,'diapositives')
 # ---------- GALERIE / MÉDIATHÈQUE ----------
 GAL_JS=SHARED_JS+r'''<script>
 var g=document.getElementById('ia');
@@ -296,6 +281,8 @@ page('credits.html','Crédits et limites',f'''<small>CRÉDITS</small><h1>Crédit
 # ---------- SUIVRE ----------
 page('suivre.html','Suivre à distance ou hors ligne','''<small>SUIVRE</small><h1>Suivre à distance ou hors ligne</h1><p class="lead">La même plateforme sert en salle et à distance, sur ordinateur, tablette et téléphone.</p>
 <h2>Scanner pour suivre sur téléphone</h2><div class="grid"><div class="card k3"><img src="assets/qr/home.svg" alt="QR code : accueil de la plateforme" width="150" height="150"><b>Accueil</b><small>Adresse : '''+BASE_URL+'''</small></div><div class="card k3"><img src="assets/qr/parcours.svg" alt="QR code : parcours de formation" width="150" height="150"><b>Parcours</b><small>Les 23 modules. Chaque module de la salle porte son propre code en mode animation.</small></div><div class="card k3"><img src="assets/qr/evaluation.svg" alt="QR code : évaluations" width="150" height="150"><b>Évaluations</b><small>QCM par niveau et évaluation générale.</small></div></div><p class="expl">Les codes sont valables une fois la plateforme publiée à l’adresse ci-dessus. Le score reste dans le navigateur.</p>
+<h2>Pendant la formation : une diapositive, un QR</h2><p class="expl">Chaque diapositive du mode animation porte un encadré « Suivre sur votre téléphone » avec un QR code : il ouvre la page du module en cours. Sans téléphone, le tableau ci-dessous donne la page de chaque séquence.</p>
+<table><thead><tr><th>Jour</th><th>Séquence</th><th>Durée</th><th>Page</th></tr></thead><tbody>'''+SUIVRE_ROWS+'''</tbody></table>
 <h2>Mode d’emploi</h2><ol class="steps"><li>Ouvrez le lien de la plateforme dans le navigateur du téléphone ou de la tablette.</li><li>Parcourez la page d’accueil une première fois avec du réseau : les pages et les images légères se mettent en cache.</li><li>Ajoutez la plateforme à l’écran d’accueil si le navigateur le propose.</li><li>En salle, suivez sur votre appareil le module que le formateur projette (Mode animation).</li><li>À distance, ouvrez le même module et utilisez les exercices et le QCM.</li></ol>
 <div class="note"><b>Hors connexion.</b> Après un premier chargement complet, la plateforme fonctionne sans réseau, hors cours de base (fichier lourd) qui demande une première ouverture avec connexion.</div>
 <div class="note"><b>Données.</b> Aucune donnée nominative n’est collectée par ce site. Le score du QCM reste dans votre navigateur.</div>''')

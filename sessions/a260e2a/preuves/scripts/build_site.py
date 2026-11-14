@@ -90,11 +90,15 @@ data['evals_cfg']=dict(zones=[4,18],socle=[1,2,3,8,23],dangers=[2],protec=[6,8,2
 open(f'{R}/data/content.js','w',encoding='utf-8').write("window.A="+json.dumps(data,ensure_ascii=False)+";")
 json.dump({"destinataire":"ben2flandre@gmail.com","endpoint":""},open(f'{R}/assets/config.json','w'))
 exec(open('/home/claude/work/present.py',encoding='utf-8').read())
+import lock as _lkA
+_cl=open(f'{R}/animation.html',encoding='utf-8').read()
+os.makedirs('/home/claude/work/private',exist_ok=True);open('/home/claude/work/private/animation-clair.html','w',encoding='utf-8').write(_cl)
+open(f'{R}/animation.html','w',encoding='utf-8').write(_lkA.lock_document(_cl,'Mode animation'))
 open(f'{R}/manifest.webmanifest','w').write(json.dumps({"name":"Habilitation électrique A260E2A","short_name":"Habilitation","start_url":"index.html","display":"standalone","background_color":"#102c53","theme_color":"#102c53","lang":"fr","icons":[]}))
 files=['index.html','parcours.html','evaluation.html','documents.html','decision.html','remplacer.html','animation.html','mediatheque.html','galerie.html','glossaire.html','ressources.html','credits.html','suivre.html','livret.html','registre.html','formateur.html','assets/style.css','assets/lightbox.js','assets/config.json','data/content.js','manifest.webmanifest']
 import glob
 files+=sorted(os.path.relpath(p,R) for p in glob.glob(R+'/images/**/*',recursive=True) if os.path.isfile(p))
-files+=sorted(os.path.relpath(p,R) for p in glob.glob(R+'/assets/qr/*.svg'))
+files+=sorted(os.path.relpath(p,R) for p in glob.glob(R+'/assets/qr/*.svg'))+['assets/deck.css','assets/deck.js']
 ver=hashlib.sha256(b''.join(open(f'{R}/{f}','rb').read() for f in files)).hexdigest()[:10]
 open(f'{R}/sw.js','w').write("var V='a260e2a-%s',F=%s;self.addEventListener('install',function(e){e.waitUntil(caches.open(V).then(function(c){return c.addAll(F)}).then(function(){return self.skipWaiting()}))});self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(function(k){return Promise.all(k.filter(function(x){return x!==V}).map(function(x){return caches.delete(x)}))}).then(function(){return self.clients.claim()}))});self.addEventListener('fetch',function(e){if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(function(r){return r||fetch(e.request).then(function(n){var c=n.clone();caches.open(V).then(function(x){x.put(e.request,c)});return n}).catch(function(){return r})}))});"%(ver,json.dumps(files+['sw.js'][:0])))
 print(ver,len(mods),sum(len(m['questions']) for m in mods))

@@ -1,0 +1,62 @@
+[
+ {
+  "test": "animation.html : aucun contenu en clair",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "animation.html : contenu chiffré présent",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "formateur.html : aucun contenu en clair",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "formateur.html : contenu chiffré présent",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "animation.html : mauvais code refusé",
+  "ok": true,
+  "detail": "Code ou adresse incorrects."
+ },
+ {
+  "test": "animation.html mauvais : aucune erreur JS",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "test": "animation.html : bon code ouvre",
+  "ok": true,
+  "detail": "324"
+ },
+ {
+  "test": "animation.html bon : aucune erreur JS",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "test": "formateur.html : mauvais code refusé",
+  "ok": true,
+  "detail": "Code ou adresse incorrects."
+ },
+ {
+  "test": "formateur.html mauvais : aucune erreur JS",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "test": "formateur.html : bon code ouvre",
+  "ok": true,
+  "detail": "True"
+ },
+ {
+  "test": "formateur.html bon : aucune erreur JS",
+  "ok": true,
+  "detail": "[]"
+ }
+]

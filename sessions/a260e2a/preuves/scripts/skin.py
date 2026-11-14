@@ -94,3 +94,6 @@ section.card h3 .sico,details.sc summary .sico{color:#c0392b;margin-right:4px}
 CSS+='''
 main>.fiche{background:#102c53;color:#fff;border-radius:18px;padding:16px 22px;border-left:10px solid #f6b63d;margin:12px 0 22px;display:block}main>.fiche h2{color:#fff;margin-top:0}main>.fiche dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:0}main>.fiche dt{color:#f6b63d;font-weight:700}main>.fiche dd{margin:0;color:#fff}
 '''
+CSS+='''
+@media(max-width:900px){header.top{position:static;padding:8px 14px;gap:4px 12px}header.top .brand small{display:none}header.top .logo{height:30px;width:auto}header.top nav{flex-wrap:nowrap;overflow-x:auto;margin-left:0;width:100%;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:4px}header.top nav a{white-space:nowrap;flex:none;padding:6px 10px;font-size:14px}.herox h1{font-size:1.9rem}}
+'''

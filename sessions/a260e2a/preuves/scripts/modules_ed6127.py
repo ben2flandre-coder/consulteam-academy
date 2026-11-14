@@ -114,23 +114,8 @@ M16=dict(id=16,title="Travaux pratiques individualisés et évaluations",scope="
   Q("T16-04","s","Qui délivre l'habilitation ?",["L'employeur, après l'avis du formateur","Le formateur","Le stagiaire lui-même"],0,"Le formateur remet un avis après formation ; l'employeur habilite [S29]."),
  ])
 
-M17=dict(id=17,title="Spécificités métier : sécurité incendie (optionnel)",scope="Installations de sécurité incendie",niveaux=["SSI"],statut="nouveau",
- goal="Situer les opérations courantes sur des installations de sécurité incendie dans la logique de l'habilitation et décider, avec l'employeur, du symbole qui les couvre.",
- scenario="Un technicien de sécurité incendie doit contrôler les batteries d'une centrale d'alarme, remplacer un détecteur en hauteur et essayer un déclencheur manuel. Quelles opérations relèvent de quel symbole ?",
- sections=[
- ["Partir de l'opération, pas du métier","Le choix d'un symbole dépend de l'activité confiée et de l'environnement électrique [S29]. Le métier ne détermine pas le symbole : il se choisit à partir de la nature de l'opération et de la tension [S29, R]. Les listes de symboles d'ADI sécurité n'ont pas été communiquées : tout rattachement ci-dessous reste à décider avec l'employeur [R]."],
- ["Opérations courantes et symboles à étudier","Le contrôle d'une grandeur sur une alimentation relève d'une opération spécifique : l'attribut Mesurage ou Vérification de BE est à examiner [S29, R]. La manœuvre d'un dispositif de coupure relève de l'attribut Manœuvre [S29]. Une intervention sur un équipement avec recherche de panne ou remplacement relève de l'intervention générale BR, dans ses limites [S29, R]. Le remplacement de matériel défectueux (relais, borniers) fait partie des opérations BR [S29]."],
- ["Ce qui s'ajoute à l'électricité","Une pose de détecteur en hauteur ajoute un risque de chute : il faut organiser le travail en tenant compte à la fois de la hauteur et de la proximité de conducteurs [R]. Une alimentation de secours par batteries est une source qu'il faut identifier avant toute intervention [R]. Les consignes du fabricant de la centrale complètent l'habilitation [R]."],
- ["Un cadre à construire avec l'employeur","L'employeur définit, sous forme de cahier des charges, les opérations, l'organisation et le matériel pour choisir les symboles [S29]. Pour cette session, la liste des opérations d'ADI sécurité sera à fournir par le formateur à partir des cas réels [R]."]],
- decision="Un technicien est habilité BS. On lui demande de rechercher la cause d'un défaut d'alimentation d'une centrale. Que décidez-vous ?",
- answer="La recherche de panne dépasse l'intervention élémentaire BS [S29]. Elle relève de l'intervention générale BR ou d'un autre symbole adapté, on arrête et on demande le relais [S29, R].",
- check=["L'opération est-elle nommée précisément ?","Quelles sources d'alimentation (secteur, batteries) sont présentes ?","Le titre couvre-t-il l'opération ?","Le travail en hauteur est-il organisé ?"],
- source="INRS ED 6127 (déc. 2020), §2.4 pp. 11-12 [S29] ; hypothèse de travail pour ADI sécurité, aucune liste de symboles fournie [R].",note="Module nouveau, à valider par le formateur. Aucune valeur technique : à construire avec les cas réels fournis par le formateur."+NOTE,
- questions=[
-  Q("T17-01","s","Qu'est-ce qui détermine le symbole d'habilitation ?",["La nature de l'opération et l'environnement électrique","L'intitulé du poste seulement","L'ancienneté"],0,"Le choix tient compte de l'activité confiée et de l'environnement électrique [S29]."),
-  Q("T17-02","s","La recherche de panne relève-t-elle du BS ?",["Non, elle relève de l'intervention générale BR","Oui","Seulement hors tension"],0,"La recherche de panne fait partie des opérations BR [S29]."),
-  Q("T17-03","s","Une batterie de secours est :",["Une source à identifier avant toute intervention","Sans danger car elle est faible","Hors du périmètre de l'habilitation"],0,"Toutes les sources doivent être identifiées [R]."),
- ])
+import adi
+from adi import M17
 MODULES=[M9,M12,M13,M14,M15,M16,M17]
 VALEURS={'5':('S','S29 : 5 h de pratique'),'2':('S','S29 : chiffre 2 ; 2 h du module'),'1':('S','S29 : chiffre 1 exécutant'),'0':('S','S29 : chiffre 0'),'3':('S','S29 : 3 h de thèmes communs'),'6,5':('S','S29 : 6,5 h'),'1,5':('S','S29 : 1,5 h'),'4':('S','S29 : 4 h'),'15':('S','S29 : 15 questions minimum'),'70':('S','S29 : 70 %'),'30':('S','S29 : 30 % minimum'),'80':('D','distracteur : score fictif du stagiaire'),'50':('D','distracteur'),'90':('D','distracteur')}
 
@@ -241,8 +226,5 @@ M16['questions'].extend([
  Q("T16-07","s","Que contient l'avis après formation ?",["Le nom du stagiaire, le type de formation, les dates et lieu, les durées, le formateur, l'avis sur les symboles et les symboles recommandés","Uniquement la note du QCM","Le titre d'habilitation signé"],0,"Contenu minimal de l'avis après formation [S29]."),
  Q("T16-08","s","Qui évalue la pratique et formule l'avis ?",["Le formateur, qui le remet à l'employeur","L'employeur seul","Le stagiaire"],0,"Le formateur évalue et délivre l'avis ; l'employeur habilite [S29]."),
 ])
-M17['questions'].extend([
- Q("T17-04","s","Un technicien contrôle une grandeur sur une alimentation. Quel symbole examiner ?",["BE avec l'attribut Mesurage ou Vérification","B0","BC"],0,"Le contrôle d'une grandeur relève d'une opération spécifique à examiner [S29, R]."),
- Q("T17-05","s","Qui fixe la liste des opérations et des symboles d'une entreprise ?",["L'employeur, qui formalise ses besoins dans un cahier des charges","Le formateur seul","Le hasard du planning"],0,"L'employeur définit les besoins dans un cahier des charges pour la formation [S29]."),
- Q("T17-06","s","Un détecteur à remplacer en hauteur ajoute :",["Un risque de chute à organiser avec la proximité de conducteurs","Aucun risque","Un symbole de plus automatiquement"],0,"Le travail en hauteur ajoute un risque à organiser [R]."),
-])
+
+for _k,_v in adi.VALEURS_ADI.items(): VALEURS.setdefault(_k,_v)

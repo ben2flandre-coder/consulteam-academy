@@ -10,14 +10,17 @@ var sl=document.getElementById('sl'),ms=document.getElementById('ms'),pg=documen
 var okm=A.modules.filter(function(m){return m.sections.length||m.html});
 ms.innerHTML=okm.map(function(m){return '<option value="'+m.id+'">'+m.id+'. '+E(m.title)+'</option>'}).join('');
 function strip(h){var d=document.createElement('div');d.innerHTML=h;return d.textContent.replace(/\s+/g,' ').trim()}
-function build(id){cur=+id;var m=module(id);L=[{t:m.title,p:m.goal,i:(m.images||[])[0]}];if(m.scenario)L.push({t:'Situation',p:m.scenario});
-m.sections.forEach(function(s,i){L.push({t:s[0],p:s[1],i:(m.images||[])[i+1]})});
-if(!m.sections.length&&m.html){var d=document.createElement('div');d.innerHTML=m.html;var np=0;[].slice.call(d.children).forEach(function(el){var tg=el.tagName;
+function sents(x){return x.split(/(?<=[.!?])\s+(?=[A-ZÀÂÉÈÊÎÔÛÇ«(])/)}
+function build(id){cur=+id;var m=module(id);L=[{t:m.title,p:m.goal,i:(m.images||[])[0],tag:'Objectif'}];if(m.scenario)L.push({t:'Situation',p:m.scenario,tag:'Situation de départ'});
+if(m.html){var d=document.createElement('div');d.innerHTML=m.html;var np=0;[].slice.call(d.children).forEach(function(el){var tg=el.tagName;
 if(tg==='P'){np++;L.push({t:np===1?'Repères':'À retenir',p:strip(el.outerHTML)})}
 else if(tg==='OL'||tg==='UL'){[].slice.call(el.children).forEach(function(li,n){var b=li.querySelector('b');var t=b?b.textContent.replace(/[.:]\s*$/,''):'Étape '+(n+1);var txt=strip(li.outerHTML);if(b&&txt.indexOf(b.textContent)===0)txt=txt.slice(b.textContent.length).trim();L.push({t:(tg==='OL'?(n+1)+'. ':'')+t,p:txt})})}
 else if(tg==='TABLE'){var rows=[].slice.call(el.querySelectorAll('tr')).map(function(r){return [].slice.call(r.children).map(function(c){return strip(c.outerHTML)}).join(' : ')});L.push({t:'En un coup d’œil',p:rows.join('\n')})}})}
-if(m.decision)L.push({t:'Décision à prendre',p:m.decision});if(m.check.length)L.push({t:'Avant d’agir',p:m.check.join(' · ')});k=0;show()}
-function show(){var s=L[k];var v=s.i&&vis(s.i);sl.innerHTML='<h1>'+E(s.t)+'</h1><p style="white-space:pre-line">'+E(s.p)+'</p>'+(v?'<img src="'+E(v.fichier)+'" alt="'+E(v.titre)+'" data-nozoom>':'')+'<div class="qrbox"><img src="assets/qr/m'+cur+'.svg" alt="QR code : ouvrir le module '+cur+' sur son téléphone" data-nozoom><span>Suivre sur votre téléphone :<br>scannez ce code<br>(module '+cur+')</span></div>';pg.textContent=(k+1)+' / '+L.length}
+m.sections.forEach(function(s,i){var adi=/^Chez ADI/.test(s[0]);var ss=sents(s[1]);var ch=[];for(var j=0;j<ss.length;j+=2)ch.push(ss.slice(j,j+2).join(' '));ch.forEach(function(c,j){L.push({t:s[0]+(ch.length>1?' ('+(j+1)+'/'+ch.length+')':''),p:c.replace(/\s*\[[^\]]*\]/g,''),i:j===0?(m.images||[])[i+1]:null,tag:adi?'Chez ADI':''})})});
+if(m.decision)L.push({t:'Décision à prendre',p:m.decision,r:m.answer.replace(/\s*\[[^\]]*\]/g,''),tag:'Décision'});if(m.check.length)L.push({t:'Avant d’agir',p:m.check.map(function(c){return '• '+c}).join('\n')});
+var qs=(m.questions||[]).filter(function(q){return (q.type||'s')!=='m'}).slice(0,4);qs.forEach(function(q,n){var c=q.options[q.correct];L.push({t:'Question flash '+(n+1)+'/'+qs.length,p:q.q+'\n\n'+q.options.map(function(o,j){return 'ABCD'.charAt(j)+'. '+o}).join('\n'),r:'Réponse : '+'ABCD'.charAt(q.correct)+'. '+c+'\n'+(q.why||'').replace(/\s*\[[^\]]*\]/g,''),tag:'Question flash'})});
+k=0;show()}
+function show(){var s=L[k];var v=s.i&&vis(s.i);sl.innerHTML=(s.tag?'<small class="tg">'+E(s.tag)+'</small>':'')+'<h1>'+E(s.t)+'</h1><p style="white-space:pre-line">'+E(s.p)+'</p>'+(s.r?'<button class="rv" id="rv">Voir la réponse</button><p class="ans" id="an" style="white-space:pre-line" hidden>'+E(s.r)+'</p>':'')+(v?'<img src="'+E(v.fichier)+'" alt="'+E(v.titre)+'" data-nozoom>':'')+'<div class="qrbox"><img src="assets/qr/m'+cur+'.svg" alt="QR code : ouvrir le module '+cur+' sur son téléphone" data-nozoom><span>Suivre sur votre téléphone :<br>scannez ce code<br>(module '+cur+')</span></div>';pg.textContent=(k+1)+' / '+L.length;var rv=document.getElementById('rv');if(rv)rv.onclick=function(){document.getElementById('an').hidden=false;rv.hidden=true}}
 function go(d){k=Math.max(0,Math.min(L.length-1,k+d));show()}
 document.getElementById('pr').onclick=function(){go(-1)};document.getElementById('nx').onclick=function(){go(1)};
 ms.onchange=function(){location.hash='m'+ms.value;build(ms.value)};

@@ -370,28 +370,77 @@
 16;question T16-06 (explication);Trois critères : sans erreur, erreur mineure, erreur majeure [S29].;S29;S;OK
 16;question T16-07 (explication);Contenu minimal de l'avis après formation [S29].;S29;S;OK
 16;question T16-08 (explication);"Le formateur évalue et délivre l'avis ; l'employeur habilite [S29].";S29;S;OK
-17;section : Partir de l'opération, pas du métier;Le choix d'un symbole dépend de l'activité confiée et de l'environnement électrique [S29].;S29;S;OK
-17;section : Partir de l'opération, pas du métier;Le métier ne détermine pas le symbole : il se choisit à partir de la nature de l'opération et de la tension [S29, R].;S29;R;OK
-17;section : Partir de l'opération, pas du métier;Les listes de symboles d'ADI sécurité n'ont pas été communiquées : tout rattachement ci-dessous reste à décider avec l'employeur [R].;;R;OK
-17;section : Opérations courantes et symboles à étudier;Le contrôle d'une grandeur sur une alimentation relève d'une opération spécifique : l'attribut Mesurage ou Vérification de BE est à examiner [S29, R].;S29;R;OK
-17;section : Opérations courantes et symboles à étudier;La manœuvre d'un dispositif de coupure relève de l'attribut Manœuvre [S29].;S29;S;OK
-17;section : Opérations courantes et symboles à étudier;Une intervention sur un équipement avec recherche de panne ou remplacement relève de l'intervention générale BR, dans ses limites [S29, R].;S29;R;OK
-17;section : Opérations courantes et symboles à étudier;Le remplacement de matériel défectueux (relais, borniers) fait partie des opérations BR [S29].;S29;S;OK
-17;section : Ce qui s'ajoute à l'électricité;Une pose de détecteur en hauteur ajoute un risque de chute : il faut organiser le travail en tenant compte à la fois de la hauteur et de la proximité de conducteurs [R].;;R;OK
-17;section : Ce qui s'ajoute à l'électricité;Une alimentation de secours par batteries est une source qu'il faut identifier avant toute intervention [R].;;R;OK
-17;section : Ce qui s'ajoute à l'électricité;Les consignes du fabricant de la centrale complètent l'habilitation [R].;;R;OK
-17;section : Un cadre à construire avec l'employeur;L'employeur définit, sous forme de cahier des charges, les opérations, l'organisation et le matériel pour choisir les symboles [S29].;S29;S;OK
-17;section : Un cadre à construire avec l'employeur;Pour cette session, la liste des opérations d'ADI sécurité sera à fournir par le formateur à partir des cas réels [R].;;R;OK
-17;situation;Un technicien de sécurité incendie doit contrôler les batteries d'une centrale d'alarme, remplacer un détecteur en hauteur et essayer un déclencheur manuel.;;;OK
-17;situation;Quelles opérations relèvent de quel symbole ?;;;OK
-17;réponse;La recherche de panne dépasse l'intervention élémentaire BS [S29].;S29;S;OK
-17;réponse;Elle relève de l'intervention générale BR ou d'un autre symbole adapté, on arrête et on demande le relais [S29, R].;S29;R;OK
+17;section : Votre métier : un système, deux ensembles;Un système de sécurité incendie regroupe les matériels qui servent à la détection et à la collecte des informations ou ordres liés à la sécurité incendie [S42].;S42;S;OK
+17;section : Votre métier : un système, deux ensembles;Il comprend un système de détection, fait de détecteurs automatiques, de déclencheurs manuels et d'un équipement de contrôle et de signalisation (ECS) [S43].;S43;S;OK
+17;section : Votre métier : un système, deux ensembles;Il comprend aussi un système de mise en sécurité, dont le centralisateur de mise en sécurité incendie (CMSI) reçoit l'information de détection et commande les dispositifs actionnés de sécurité (DAS : portes coupe-feu, clapets, désenfumage) [S43].;S43;S;OK
+17;section : Votre métier : un système, deux ensembles;Le technicien de maintenance et de travaux en SSI intervient sur l'ensemble de cette chaîne, de la détection à la mise en sécurité [S41].;S41;S;OK
+17;section : Catégories A à E et types d'alarme;Les SSI sont classés en cinq catégories, de A à E, par ordre de sévérité décroissante [S42].;S42;S;OK
+17;section : Catégories A à E et types d'alarme;La catégorie A est la plus complète : détection automatique et CMSI [S43].;S43;S;OK
+17;section : Catégories A à E et types d'alarme;La catégorie B comporte un CMSI sans détection automatique, la C une commande regroupée avec signalisation des positions, la D des commandes regroupées et la E une commande locale de chaque DAS [S43].;S43;S;OK
+17;section : Catégories A à E et types d'alarme;Le métier couvre les catégories A à E et les équipements d'alarme de type 1 à 4 [S41].;S41;S;OK
+17;section : Catégories A à E et types d'alarme;Plus la catégorie est élevée, plus il y a d'armoires, d'alimentations et de liaisons à repérer avant d'intervenir [R].;;R;OK
+17;section : Les alimentations : le point électrique central du métier;Un SSI est alimenté par une source de sécurité : l'alimentation électrique de sécurité (AES) le maintient en service quand la source normale ou de remplacement fait défaut [S44].;S44;S;OK
+17;section : Les alimentations : le point électrique central du métier;Les batteries d'accumulateurs alimentent en très basse tension, 6, 12, 24 ou 48 V, des équipements à faible consommation, avec une autonomie de 12 h pour un SSI sur batteries [S44].;S44;S;OK
+17;section : Les alimentations : le point électrique central du métier;L'habilitation prévue au référentiel du métier couvre les installations de sécurité incendie y compris leurs alimentations basse tension [S41].;S41;S;OK
+17;section : Les alimentations : le point électrique central du métier;Couper le secteur ne met pas l'ECS hors tension : la batterie reste une source qu'il faut identifier et traiter avant d'ouvrir ou de remplacer un élément [R].;;R;OK
+17;section : Les alimentations : le point électrique central du métier;Une batterie en court-circuit expose à des brûlures et à un échauffement, même en très basse tension [R].;;R;OK
+17;section : Quelles habilitations pour ce métier ?;La fiche du titre professionnel du métier prévoit une habilitation électrique délivrée par l'employeur aux niveaux B2(V), B2(V) Essais, BR, BC et H0, limitée au champ d'intervention et aux installations de sécurité incendie [S41].;S41;S;OK
+17;section : Quelles habilitations pour ce métier ?;Ce n'est pas une liste pour ADI : l'employeur définit ses opérations et choisit les symboles dans un cahier des charges [S29].;S29;S;OK
+17;section : Quelles habilitations pour ce métier ?;"Aucun symbole ne se déduit du métier ; il se déduit de l'opération, de la tension et de l'environnement [S29, R].";S29;R;OK
+17;section : Quelles habilitations pour ce métier ?;La liste des opérations réelles d'ADI sera à confirmer avec le formateur avant la session [R].;;R;OK
+17;section : Maintenance préventive et corrective : le cadre;La norme NF S 61-933, éditée en décembre 2022, donne les règles générales d'exploitation et de maintenance des matériels et des liaisons des SSI [S45].;S45;S;OK
+17;section : Maintenance préventive et corrective : le cadre;Un contrat d'entretien est souscrit pour les SSI de catégorie A ou B, confié à un technicien compétent [S47].;S47;S;OK
+17;section : Maintenance préventive et corrective : le cadre;Ces SSI font en outre l'objet d'une vérification tous les 3 ans par un organisme agréé [S47].;S47;S;OK
+17;section : Maintenance préventive et corrective : le cadre;Chaque intervention alimente le dossier technique : fiches de maintenance, fiches d'intervention, registre de sécurité et dossier d'identité du SSI [S46].;S46;S;OK
+17;section : Maintenance préventive et corrective : le cadre;Quand une partie du système est hors service, des mesures compensatoires s'imposent [S46].;S46;S;OK
+17;section : Une visite de vérification, geste par geste;Le technicien prépare et consigne l'intervention avant de toucher au système [S41].;S41;S;OK
+17;section : Une visite de vérification, geste par geste;Il commence par une inspection visuelle des détecteurs, du câblage et de l'ECS [S48].;S48;S;OK
+17;section : Une visite de vérification, geste par geste;Il vérifie ensuite l'action des déclencheurs manuels et le fonctionnement des organes reliés à l'ECS [S48].;S48;S;OK
+17;section : Une visite de vérification, geste par geste;Il contrôle les asservissements en déclenchant des détecteurs [S48].;S48;S;OK
+17;section : Une visite de vérification, geste par geste;Il vérifie l'alimentation et la batterie d'AES, ainsi que les portes coupe-feu [S49].;S49;S;OK
+17;section : Une visite de vérification, geste par geste;Il remplace la pile de la source auxiliaire si nécessaire [S48].;S48;S;OK
+17;section : Une visite de vérification, geste par geste;Il termine par le compte rendu, la mise à jour des synoptiques et du dossier d'identité du SSI après chaque intervention [S48].;S48;S;OK
+17;section : Une visite de vérification, geste par geste;À chaque geste, le risque électrique à repérer dépend de l'organe touché : bornier sous secteur dans l'armoire, batterie, alimentation d'un DAS [R].;;R;OK
+17;section : Autour du SSI : désenfumage, éclairage, portes, extincteurs;Le métier ne s'arrête pas à la centrale : les installations de sécurité à vérifier comprennent le désenfumage mécanique et naturel, l'éclairage de sécurité, les portes à fermeture automatique, les extincteurs et les robinets d'incendie armés [S50].;S50;S;OK
+17;section : Autour du SSI : désenfumage, éclairage, portes, extincteurs;Le désenfumage naturel et les blocs autonomes d'éclairage de sécurité se vérifient chaque année, par un technicien compétent [S47].;S47;S;OK
+17;section : Autour du SSI : désenfumage, éclairage, portes, extincteurs;Les extincteurs et les robinets d'incendie armés sont également vérifiés chaque année [S51, S49].;S49 S51;S;OK
+17;section : Autour du SSI : désenfumage, éclairage, portes, extincteurs;L'éclairage de sécurité est lui aussi alimenté par une AES [S44].;S44;S;OK
+17;section : Autour du SSI : désenfumage, éclairage, portes, extincteurs;Les extincteurs et les robinets d'incendie armés ne sont pas des matériels électriques : le risque électrique vient du local, du tableau voisin ou de la circulation de câbles à proximité [R].;;R;OK
+17;section : Opérations courantes et symboles à étudier;Le remplacement d'un détecteur ou d'un diffuseur sur une boucle très basse tension, sans accès à une partie sous secteur, est à situer avec l'employeur entre B0 et BS [S29, R].;S29;R;OK
+17;section : Opérations courantes et symboles à étudier;Le remplacement d'une batterie dans une ECS ou une AES est à examiner comme intervention élémentaire (BS) ou générale (BR) selon l'organisation et les limites du symbole [S29, R].;S29;R;OK
+17;section : Opérations courantes et symboles à étudier;Les essais d'asservissements et la mesure de grandeurs relèvent de l'attribut Essai ou Mesurage, que le référentiel du métier prévoit sous la forme B2(V) Essais [S41, S29].;S29 S41;S;OK
+17;section : Opérations courantes et symboles à étudier;La recherche de panne et le dépannage dans l'armoire relèvent de la maintenance corrective, donc de BR dans ses limites [S41, S29].;S29 S41;S;OK
+17;section : Opérations courantes et symboles à étudier;La consignation d'un départ qui alimente la centrale ou l'AES relève de BC [S41, S29].;S29 S41;S;OK
+17;section : Opérations courantes et symboles à étudier;Le travail en hauteur, par exemple pour une pose en faux-plafond, ajoute un risque de chute à organiser avec la proximité de conducteurs [R].;;R;OK
+17;situation;Vous réalisez la vérification annuelle d'un SSI de catégorie A dans un établissement recevant du public.;;;OK
+17;situation;"À l'ECS, un voyant signale un défaut d'alimentation ; la batterie semble faible.";;;OK
+17;situation;Vous devez la remplacer, essayer les déclencheurs manuels, vérifier un asservissement de porte coupe-feu, puis rédiger le compte rendu.;;;OK
+17;situation;Quels risques électriques rencontrez-vous à chaque geste, et jusqu'où votre habilitation vous autorise-t-elle à aller ?;;;OK
+17;réponse;Remplacer la batterie peut relever d'une intervention élémentaire si elle entre dans les limites de votre habilitation, après avoir identifié la batterie comme une source [S29, R].;S29;R;OK
+17;réponse;Chercher la cause du défaut dans l'armoire est du dépannage : cela dépasse le BS, on s'arrête et on demande le relais à un technicien habilité BR [S41, S29].;S29 S41;S;OK
+17;réponse;L'ECS reste en défaut : prévenir l'exploitant, mettre en place des mesures compensatoires et consigner l'intervention [S46].;S46;S;OK
 17;question T17-01 (explication);Le choix tient compte de l'activité confiée et de l'environnement électrique [S29].;S29;S;OK
-17;question T17-02 (explication);La recherche de panne fait partie des opérations BR [S29].;S29;S;OK
-17;question T17-03 (explication);Toutes les sources doivent être identifiées [R].;;R;OK
-17;question T17-04 (explication);Le contrôle d'une grandeur relève d'une opération spécifique à examiner [S29, R].;S29;R;OK
-17;question T17-05 (explication);L'employeur définit les besoins dans un cahier des charges pour la formation [S29].;S29;S;OK
-17;question T17-06 (explication);Le travail en hauteur ajoute un risque à organiser [R].;;R;OK
+17;question T17-02 (explication);La catégorie A est la plus complète : détection automatique et CMSI [S43].;S43;S;OK
+17;question T17-03 (explication);Cinq catégories, de A à E, par ordre de sévérité décroissante [S42].;S42;S;OK
+17;question T17-04 (explication);Le CMSI relie la détection à la mise en sécurité [S43].;S43;S;OK
+17;question T17-05 (explication);"Détecteurs, déclencheurs manuels et ECS forment le système de détection ; les portes coupe-feu sont des DAS [S43].";S43;S;OK
+17;question T17-06 (explication);Le référentiel couvre les alimentations basse tension, et la batterie reste une source après coupure du secteur [S41, R].;S41;R;OK
+17;question T17-07 (explication);Une AES maintient l'ECS en service quand la source normale fait défaut [S44].;S44;S;OK
+17;question T17-08 (explication);Le support d'AES indique 12 h pour le SSI sur batteries, à confirmer dans la norme [S44].;S44;S;OK
+17;question T17-09 (explication);Les batteries d'accumulateurs alimentent en très basse tension : 6, 12, 24 ou 48 V [S44].;S44;S;OK
+17;question T17-10 (explication);La fiche prévoit B2(V), B2(V) Essais, BR, BC et H0 dans le domaine des installations de sécurité incendie [S41].;S41;S;OK
+17;question T17-11 (explication);La recherche de panne fait partie des opérations BR [S29].;S29;S;OK
+17;question T17-12 (explication);L'employeur formalise ses besoins pour choisir les symboles [S29].;S29;S;OK
+17;question T17-13 (explication);La NF S 61-933 traite l'exploitation et la maintenance des SSI [S45].;S45;S;OK
+17;question T17-14 (explication);Vérification tous les 3 ans par un organisme agréé [S47].;S47;S;OK
+17;question T17-15 (explication);Ces quatre documents forment le dossier technique [S46].;S46;S;OK
+17;question T17-16 (explication);Les mesures compensatoires compensent un système indisponible [S46].;S46;S;OK
+17;question T17-17 (explication);"Dépassement du symbole : on s'arrête et on demande le relais ; l'exploitant est prévenu [S29, S46, R].";S29 S46;R;OK
+17;question T17-18 (explication);L'inspection visuelle porte sur les détecteurs, le câblage et l'ECS [S48].;S48;S;OK
+17;question T17-19 (explication);Les asservissements se vérifient par déclenchement de détecteurs [S48].;S48;S;OK
+17;question T17-20 (explication);Le travail en hauteur ajoute un risque à organiser [R].;;R;OK
+17;question T17-21 (explication);"Ce ne sont pas des matériels électriques ; le risque tient à l'environnement [R, S50].";S50;R;OK
+17;question T17-22 (explication);L'éclairage de sécurité fait partie des installations alimentées par l'AES [S44].;S44;S;OK
 17;question C17-01 (explication);La hauteur ajoute un risque de chute à organiser avec la proximité électrique [R].;;R;OK
 17;question C17-02 (explication);L'employeur définit les opérations, l'organisation et le matériel [S29].;S29;S;OK
 23;section : Un risque rare mais grave;Entre 2014 et 2018, la Cnam enregistre en moyenne 660 accidents du travail d'origine électrique par an, soit 0,10 % de l'ensemble [S29].;S29;S;OK
@@ -449,3 +498,93 @@
 23;question T23-08 (explication);La présence de la ligne n'a été prise en compte par aucun intervenant [S32].;S32;S;OK
 23;question T23-09 (explication);Les quatre temps de la méthode d'analyse [R].;;R;OK
 23;question T23-10 (explication);Très basse tension de sécurité ou luminaires fermés à double isolation [S32].;S32;S;OK
+1-ADI;section : Chez ADI : votre titre d'habilitation;Pour le métier d'installateur et de mainteneur de SSI, la fiche du titre professionnel prévoit des habilitations de l'employeur aux niveaux B2(V), B2(V) Essais, BR, BC et H0, limitées aux installations de sécurité incendie [S41].;S41;S;OK
+1-ADI;section : Chez ADI : votre titre d'habilitation;Votre titre dépend pourtant de vos opérations réelles, que votre employeur décrit dans son cahier des charges [S29].;S29;S;OK
+1-ADI;section : Chez ADI : votre titre d'habilitation;Une habilitation ne vaut que pour les opérations et l'environnement indiqués dans votre titre [S29, R].;S29;R;OK
+1-ADI;question A01-01 (explication);L'employeur délivre l'habilitation après l'avis du formateur [S29].;S29;S;OK
+1-ADI;question A01-02 (explication);Le titre précise les opérations et limites autorisées [S29, R].;S29;R;OK
+2-ADI;section : Chez ADI : où rencontrer le danger dans une centrale;Sur une installation de sécurité incendie, le danger électrique se rencontre à l'armoire de la centrale, à son alimentation en basse tension et à sa batterie [S41, S44].;S41 S44;S;OK
+2-ADI;section : Chez ADI : où rencontrer le danger dans une centrale;Les circuits de détection sont en très basse tension, mais l'alimentation de la centrale et celle des DAS ne se jugent pas sur l'apparence [R].;;R;OK
+2-ADI;section : Chez ADI : où rencontrer le danger dans une centrale;Une batterie reste une source d'énergie après la coupure du secteur [S44, R].;S44;R;OK
+2-ADI;question A02-01 (explication);Le référentiel couvre les alimentations basse tension des SSI [S41, R].;S41;R;OK
+2-ADI;question A02-02 (explication);"La batterie reste une source ; l'identification précède l'intervention [S44, R].";S44;R;OK
+3-ADI;section : Chez ADI : qui fait quoi autour d'un SSI;Autour d'un SSI, le mainteneur agit sous contrat avec l'exploitant, qui tient le registre de sécurité et le dossier technique du système [S46].;S46;S;OK
+3-ADI;section : Chez ADI : qui fait quoi autour d'un SSI;Le technicien consigne chaque intervention dans les fiches de maintenance et d'intervention [S46].;S46;S;OK
+3-ADI;section : Chez ADI : qui fait quoi autour d'un SSI;Avant de toucher à une alimentation, il informe l'exploitant des parties du système qui seront hors service [S46, R].;S46;R;OK
+3-ADI;question A03-01 (explication);Fiches de maintenance et fiches d'intervention [S46].;S46;S;OK
+3-ADI;question A03-02 (explication);Mesures compensatoires et information de l'exploitant [S46, R].;S46;R;OK
+4-ADI;section : Chez ADI : zones d'un chantier SSI;Les opérations d'ADI se déroulent dans des locaux techniques, des armoires, des faux-plafonds et des circulations où passent aussi d'autres câbles [R].;;R;OK
+4-ADI;section : Chez ADI : zones d'un chantier SSI;Avant de commencer, identifier la nature et la tension des câbles voisins de ceux de la détection ou de l'alimentation de la centrale [R].;;R;OK
+4-ADI;section : Chez ADI : zones d'un chantier SSI;Tout travail près de conducteurs nus ou de tableaux ouverts se prépare avec les distances de la zone d'environnement [S29, R].;S29;R;OK
+4-ADI;question A04-01 (explication);Le risque vient aussi des câbles voisins [R].;;R;OK
+4-ADI;question A04-02 (explication);Les zones d'environnement fixent les distances [S29].;S29;S;OK
+5-ADI;section : Chez ADI : l'intervention élémentaire sur un SSI;Dans le métier, des opérations simples comme remplacer un détecteur, un diffuseur ou une batterie de petite capacité sont à examiner comme interventions élémentaires dans les limites du BS [S29, R].;S29;R;OK
+5-ADI;section : Chez ADI : l'intervention élémentaire sur un SSI;Dans chaque cas, c'est l'opération telle qu'elle est décrite par l'employeur qui compte, pas le matériel [S29].;S29;S;OK
+5-ADI;section : Chez ADI : l'intervention élémentaire sur un SSI;Dès qu'il faut chercher la cause d'un défaut, l'opération dépasse l'élémentaire [S29].;S29;S;OK
+5-ADI;question A05-01 (explication);Intervention élémentaire à confirmer avec l'employeur [S29, R].;S29;R;OK
+5-ADI;question A05-02 (explication);La recherche de panne dépasse l'élémentaire [S29].;S29;S;OK
+6-ADI;section : Chez ADI : mettre hors tension une centrale et son AES;Mettre hors tension une ECS ne se limite pas à couper le secteur : l'AES et sa batterie sont à traiter aussi [S44, R].;S44;R;OK
+6-ADI;section : Chez ADI : mettre hors tension une centrale et son AES;Les installations alimentées par une AES comprennent le SSI et l'éclairage de sécurité [S44].;S44;S;OK
+6-ADI;section : Chez ADI : mettre hors tension une centrale et son AES;Avant d'intervenir, repérer chaque source, puis vérifier l'absence de tension à l'endroit où l'on travaille [R].;;R;OK
+6-ADI;question A06-01 (explication);L'AES maintient le SSI en service [S44, R].;S44;R;OK
+6-ADI;question A06-02 (explication);Identifier et vérifier [R].;;R;OK
+7-ADI;section : Chez ADI : manœuvres et essais sur un SSI;Mettre un secteur du SSI en veille, déclencher un détecteur pour tester un asservissement ou actionner un déclencheur manuel sont des gestes de métier [S48].;S48;S;OK
+7-ADI;section : Chez ADI : manœuvres et essais sur un SSI;Ils produisent des effets sur le bâtiment (alarme, portes, désenfumage) qu'il faut annoncer à l'exploitant [S48, R].;S48;R;OK
+7-ADI;section : Chez ADI : manœuvres et essais sur un SSI;Une partie du système hors service impose des mesures compensatoires [S46].;S46;S;OK
+7-ADI;question A07-01 (explication);Les asservissements se vérifient par déclenchement de détecteurs [S48, R].;S48;R;OK
+7-ADI;question A07-02 (explication);Les essais ont des effets réels dans le bâtiment [S48, R].;S48;R;OK
+8-ADI;section : Chez ADI : un essai ou une vraie alarme ?;Pendant une vérification, un déclenchement volontaire ne doit jamais être confondu avec un incendie réel : on prévient l'exploitant avant et après l'essai [R].;;R;OK
+8-ADI;section : Chez ADI : un essai ou une vraie alarme ?;En cas d'accident électrique, on applique la conduite des secours : protéger, alerter, secourir [S31].;S31;S;OK
+8-ADI;section : Chez ADI : un essai ou une vraie alarme ?;Si le SSI est partiellement hors service, des mesures compensatoires protègent les occupants [S46].;S46;S;OK
+8-ADI;question A08-01 (explication);Éviter toute confusion avec une alarme réelle [R].;;R;OK
+8-ADI;question A08-02 (explication);Les trois actions de l'INRS [S31].;S31;S;OK
+9-ADI;section : Chez ADI : installer un SSI neuf, travaux hors tension;Pour la pose de câbles, de détecteurs ou d'une centrale dans un bâtiment neuf, le référentiel du métier prévoit B2(V) pour diriger des travaux hors tension [S41].;S41;S;OK
+9-ADI;section : Chez ADI : installer un SSI neuf, travaux hors tension;Le chargé de travaux prépare l'opération, donne les instructions de sécurité et surveille les exécutants [S29].;S29;S;OK
+9-ADI;section : Chez ADI : installer un SSI neuf, travaux hors tension;Les règles d'installation des SSI, distinctes des règles de maintenance, complètent ces dispositions [S45, R].;S45;R;OK
+9-ADI;question A09-01 (explication);B2 dirige, B1 exécute [S29].;S29;S;OK
+9-ADI;question A09-02 (explication);La norme NF S 61-933 ne traite pas des modifications et extensions, qui relèvent des règles d'installation [S45].;S45;S;OK
+10-ADI;section : Chez ADI : dépannage et maintenance corrective;La maintenance corrective d'un SSI est une activité centrale du métier : le référentiel la prévoit explicitement avec une habilitation BR [S41].;S41;S;OK
+10-ADI;section : Chez ADI : dépannage et maintenance corrective;Dans les limites du BR, le technicien recherche la panne, remplace le matériel défectueux et rend compte [S29].;S29;S;OK
+10-ADI;section : Chez ADI : dépannage et maintenance corrective;Les consignes du fabricant de la centrale complètent le titre [R].;;R;OK
+10-ADI;question A10-01 (explication);Le référentiel prévoit BR pour la maintenance corrective [S41].;S41;S;OK
+10-ADI;question A10-02 (explication);Les consignes du fabricant n'ajoutent pas de droit [R].;;R;OK
+11-ADI;section : Chez ADI : consigner le départ d'une centrale ou d'une AES;Consigner l'alimentation d'une centrale ou d'une AES est une opération de consignation, dans les limites d'un titre BC [S41, S29].;S29 S41;S;OK
+11-ADI;section : Chez ADI : consigner le départ d'une centrale ou d'une AES;Elle s'applique au départ qui alimente l'ECS, mais ne traite pas à elle seule la batterie qui continue d'alimenter le système [S44, R].;S44;R;OK
+11-ADI;section : Chez ADI : consigner le départ d'une centrale ou d'une AES;La déconsignation se fait dans l'ordre, après vérification que l'installation peut être remise en service [S29].;S29;S;OK
+11-ADI;question A11-01 (explication);BC est prévu au référentiel du métier [S41].;S41;S;OK
+11-ADI;question A11-02 (explication);La batterie reste une source [S44, R].;S44;R;OK
+12-ADI;section : Chez ADI : les installations HT ne sont pas au cœur du métier;Le référentiel du métier ne prévoit qu'un niveau H0 dans le domaine haute tension : le technicien SSI n'effectue pas d'opération HT [S41].;S41;S;OK
+12-ADI;section : Chez ADI : les installations HT ne sont pas au cœur du métier;Il peut néanmoins rencontrer des postes HT dans l'environnement de certains établissements [R].;;R;OK
+12-ADI;section : Chez ADI : les installations HT ne sont pas au cœur du métier;Les symboles H1, H2 sont alors à réserver à d'autres spécialistes [S29, R].;S29;R;OK
+12-ADI;question A12-01 (explication);Seul H0 figure dans la liste du métier [S41].;S41;S;OK
+12-ADI;question A12-02 (explication);Les symboles HT sont à réserver à d'autres spécialistes [S29, R].;S29;R;OK
+13-ADI;section : Chez ADI : la consignation HC reste hors métier;Le référentiel du métier ne prévoit pas de consignation HC : cette opération est réservée à des spécialistes de la HT [S41, R].;S41;R;OK
+13-ADI;section : Chez ADI : la consignation HC reste hors métier;Si un SSI est alimenté depuis un poste HT, le départ concerné se consigne par un tiers habilité [R].;;R;OK
+13-ADI;question A13-01 (explication);HC ne figure pas au référentiel [S41, R].;S41;R;OK
+13-ADI;question A13-02 (explication);Opération HT à confier à un tiers habilité [R].;;R;OK
+14-ADI;section : Chez ADI : manœuvres HT hors métier;La manœuvre d'ouvrages HT ne fait pas partie des symboles du métier [S41, R].;S41;R;OK
+14-ADI;section : Chez ADI : manœuvres HT hors métier;Pour un SSI, on se limite aux dispositifs de coupure de la basse tension qui alimente le système [S41, R].;S41;R;OK
+14-ADI;question A14-01 (explication);Seul H0 est prévu côté HT [S41].;S41;S;OK
+14-ADI;question A14-02 (explication);Les alimentations basse tension des SSI [S41, R].;S41;R;OK
+15-ADI;section : Chez ADI : mesurer, vérifier et essayer sur un SSI;Le référentiel du métier prévoit l'habilitation B2(V) Essais pour les mesurages, vérifications et essais [S41].;S41;S;OK
+15-ADI;section : Chez ADI : mesurer, vérifier et essayer sur un SSI;Une vérification annuelle comprend l'inspection de l'ECS, des détecteurs, des organes reliés, des diffuseurs sonores, de l'alimentation et de la batterie d'AES [S49, S48].;S48 S49;S;OK
+15-ADI;section : Chez ADI : mesurer, vérifier et essayer sur un SSI;Chaque mesure s'accompagne de la vérification du bon fonctionnement de l'appareil de mesure avant et après usage [R].;;R;OK
+15-ADI;question A15-01 (explication);Titre prévu au référentiel [S41].;S41;S;OK
+15-ADI;question A15-02 (explication);Inspection annuelle de l'alimentation et de la batterie [S49].;S49;S;OK
+16-ADI;section : Chez ADI : une pratique sur une centrale et son alimentation;Les savoir-faire se pratiquent de préférence dans un environnement proche du réel, sur des installations représentatives [S29].;S29;S;OK
+16-ADI;section : Chez ADI : une pratique sur une centrale et son alimentation;Pour ADI, cela suggère une centrale ou une ECS avec batterie, un déclencheur manuel et un détecteur, sur lesquels chaque stagiaire opère lui-même [S29, R].;S29;R;OK
+16-ADI;section : Chez ADI : une pratique sur une centrale et son alimentation;Le matériel de la session sera à confirmer avec ADI avant décembre [R].;;R;OK
+16-ADI;question A16-01 (explication);Environnement proche du réel [S29].;S29;S;OK
+16-ADI;question A16-02 (explication);L'apprenant réalise lui-même les opérations [S29].;S29;S;OK
+18-ADI;section : Chez ADI : zones et voisinage dans un local technique;En local technique, la proximité de pièces nues sous tension, de tableaux ouverts et de câbles se juge avant d'ouvrir l'armoire de la centrale [R].;;R;OK
+18-ADI;section : Chez ADI : zones et voisinage dans un local technique;Le voisinage renforcé (V) impose des dispositions supplémentaires et le titre doit l'indiquer [S29].;S29;S;OK
+18-ADI;question A18-01 (explication);La lettre V désigne le voisinage renforcé [S29].;S29;S;OK
+18-ADI;question A18-02 (explication);Le voisinage se juge avant d'ouvrir [R].;;R;OK
+19-ADI;section : Chez ADI : reconnaître l'appareillage d'une alimentation de centrale;Les armoires d'alimentation des centrales contiennent des protections, des borniers et des batteries : savoir les reconnaître évite de prendre un élément pour un autre [R].;;R;OK
+19-ADI;section : Chez ADI : reconnaître l'appareillage d'une alimentation de centrale;Le repérage des circuits et des synoptiques mis à jour fait partie des attentes d'un donneur d'ordre [S48].;S48;S;OK
+19-ADI;question A19-01 (explication);Synoptiques et schémas à jour [S48].;S48;S;OK
+19-ADI;question A19-02 (explication);Éviter les confusions avant d'intervenir [R].;;R;OK
+21-ADI;section : Chez ADI : remplacer un élément d'alimentation ou une batterie;Remplacer une batterie ou un élément d'alimentation d'ECS suit la même logique que le remplacement d'un appareillage : identifier la source, mettre hors tension, remplacer à l'identique, essayer et consigner [S44, S48, R].;S44 S48;R;OK
+21-ADI;section : Chez ADI : remplacer un élément d'alimentation ou une batterie;Si le remplacement impose de modifier le circuit, l'opération dépasse le simple remplacement [R].;;R;OK
+21-ADI;question A21-01 (explication);Essai et compte rendu [S48].;S48;S;OK
+21-ADI;question A21-02 (explication);Modification : hors périmètre du simple remplacement [R].;;R;OK

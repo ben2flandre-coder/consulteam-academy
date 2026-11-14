@@ -41,7 +41,7 @@ for q in PZ['questions']:
     byid[q['module']]['questions'].append(dict(id=q['id'],type=q['type'],q=q['q'],options=q['options'],correct=q['correct'],why=q['why']))
 import sys; sys.path.insert(0,'/home/claude/work/src')
 import modules_tb, sources_new
-LEG=" Repères : [S1…S40] = source du registre ; [C] = calcul prouvé par script ; [R] = principe de raisonnement à valider par le formateur."
+LEG=" Repères : [S1…S51] = source du registre ; [C] = calcul prouvé par script ; [R] = principe de raisonnement à valider par le formateur."
 import modules_ed6127
 for m in modules_tb.MODULES:
     m=dict(m); m['note']=m['note']+LEG; mods.append(m)
@@ -51,7 +51,11 @@ for m in modules_ed6127.MODULES:
         if x['id']==m['id']: mods[k]=m; break
     else: mods.append(m)
 SCHEMAS=[("F1-facade-tableau.svg","Vue de face d'un tableau de répartition",19),("F2-coupe-disjoncteur.svg","Coupe d'un disjoncteur modulaire",19),("F3-principe-differentiel.svg","Principe d'un interrupteur différentiel",19),("F4-coupe-contacteur.svg","Coupe d'un contacteur",19),("F5-coupe-rail-peigne.svg","Coupe d'une rangée : rail, peigne, raccordements",21),("F6-equilibrage-avant-apres.svg","Équilibrage : avant et après (exemple chiffré)",20),("F7-remplacement-appareil.svg","Remplacer un appareil : les étapes",21),("F8-installation-appareil.svg","Installer un nouvel appareil : les étapes",22)]
-import q_complements
+import q_complements, adi
+for m in mods:
+    _c=adi.CHEZ.get(m['id'])
+    if _c:
+        m['sections']=list(m['sections'])+[_c['sec']]; m['questions']=list(m['questions'])+_c['qs']
 for m in mods:
     m['questions'].extend(q_complements.QC.get(m['id'],[]))
 for m in mods:

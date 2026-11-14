@@ -11,9 +11,28 @@
   15,
   16,
   17,
-  23
+  23,
+  "1-ADI",
+  "2-ADI",
+  "3-ADI",
+  "4-ADI",
+  "5-ADI",
+  "6-ADI",
+  "7-ADI",
+  "8-ADI",
+  "9-ADI",
+  "10-ADI",
+  "11-ADI",
+  "12-ADI",
+  "13-ADI",
+  "14-ADI",
+  "15-ADI",
+  "16-ADI",
+  "18-ADI",
+  "19-ADI",
+  "21-ADI"
  ],
- "affirmations": 450,
+ "affirmations": 589,
  "sans_reference": 0,
  "jetons_non_declares": [],
  "jetons_declares_inutilises": [],
@@ -71,16 +90,16 @@
    "S14 : réserve minimale de 20 %"
   ],
   "230": [
-   "S",
-   "S21"
+   "D",
+   "distracteur : tension du secteur citée sans valeur technique"
   ],
   "400": [
    "S",
    "S21"
   ],
   "10": [
-   "C",
-   "calcul-equilibrage : 3 x 10 A = neutre 0 A ; courant d'un circuit"
+   "D",
+   "distracteur"
   ],
   "0": [
    "S",
@@ -115,8 +134,8 @@
    "renvoi aux modules"
   ],
   "24": [
-   "C",
-   "L1 après"
+   "S",
+   "S44 : batteries 24 V"
   ],
   "26": [
    "C",
@@ -253,6 +272,34 @@
   "1993": [
    "S",
    "S32 : édition de 1993 de l'ED 325"
+  ],
+  "29900": [
+   "S",
+   "S41 : numéro de la fiche RNCP"
+  ],
+  "61": [
+   "S",
+   "S45 : numéro de la norme NF S 61-933"
+  ],
+  "933": [
+   "S",
+   "S45 : numéro de la norme NF S 61-933"
+  ],
+  "12": [
+   "S",
+   "S44 : 12 h d'autonomie du SSI sur batteries"
+  ],
+  "48": [
+   "S",
+   "S44 : batteries 48 V"
+  ],
+  "2022": [
+   "S",
+   "S45 : édition de décembre 2022"
+  ],
+  "000": [
+   "D",
+   "distracteur : 10 000 à 20 000 V"
   ],
   "300": [
    "D",

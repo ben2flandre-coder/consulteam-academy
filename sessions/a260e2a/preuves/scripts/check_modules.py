@@ -6,6 +6,9 @@ import q_complements as QCx
 QCx.declare(T.VALEURS)
 for _m in T.MODULES:
     _m['questions']=list(_m['questions'])+QCx.QC.get(_m['id'],[])
+import adi
+for _i,_c in adi.CHEZ.items():
+    T.MODULES.append(dict(id=str(_i)+'-ADI',title='Chez ADI',goal='',scenario='',decision='',answer='',source='',note='',check=[],sections=[_c['sec']],questions=list(_c['qs'])))
 OUT='/home/claude/work/a260e2a/preuves'
 ids={s['id'] for s in SN.SOURCES}
 def strip(s):

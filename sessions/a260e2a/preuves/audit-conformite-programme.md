@@ -35,8 +35,8 @@ Généré par qa/audit_programme.py sur le site construit. Programme : HE-BTHT-I
 | Questionnaire de satisfaction à chaud | CPS | CONFORME | page Documents |
 | Compte rendu jour par jour | CPS | CONFORME | page Documents |
 | Aucune mention GRETA ni RMBD sur la plateforme | CPS/consigne | CONFORME | pages publiques (hors espace formateur chiffré) |
-| Au moins 8 questions par module | qualité | CONFORME | min = 8 (module 3) |
+| Au moins 8 questions par module | qualité | CONFORME | min = 8 (module 20) |
 
 Total : 32 conformes sur 32.
 
-Questions par module : 1:12, 2:20, 3:8, 4:8, 5:12, 6:8, 7:12, 8:12, 9:9, 10:8, 11:20, 12:20, 13:20, 14:20, 15:20, 16:8, 17:8, 18:12, 19:8, 20:8, 21:8, 22:8, 23:10
+Questions par module : 1:14, 2:22, 3:10, 4:10, 5:14, 6:10, 7:14, 8:14, 9:11, 10:10, 11:22, 12:22, 13:22, 14:22, 15:22, 16:10, 17:24, 18:14, 19:10, 20:8, 21:10, 22:8, 23:10

@@ -67,7 +67,8 @@ M21=dict(id=21,title="Remplacer un appareillage dans un tableau",scope="BS · BR
  ["Consigner et vérifier l'absence de tension","Séparer, condamner, identifier, vérifier l'absence de tension [S22]. La VAT porte sur tous les conducteurs actifs, neutre compris, et le VAT se contrôle avant et après sur une source connue [S16]."],
  ["Déposer","Disjoncteur à vis : dévisser les quatre vis, puis extraire l'appareil en faisant levier sur la griffe de fixation ; si un peigne l'alimente, desserrer les vis du haut de tous les disjoncteurs de la rangée [S8]. Disjoncteur à bornes automatiques : retirer le peigne avec un tournevis en levier, appuyer sur les poussoirs pour libérer les fils, puis extraire l'appareil en faisant levier sur la griffe [S8]. Repérer les fils avant de les retirer [R]."],
  ["Poser et raccorder","Clipser le nouvel appareil sur le rail à l'emplacement libéré, relier par fils ou peigne en haut et par fils en bas [S8]. Pour un calibre supérieur, vérifier d'abord que les conducteurs supportent l'intensité visée [S8]. Appareil équivalent : même calibre, même courbe, pouvoir de coupure au moins égal [R]."],
- ["Repérer, déconsigner, essayer","Mettre à jour le repérage du circuit [S15]. Lever la consigne dans l'ordre prévu, puis essayer l'appareil ; pour un différentiel, utiliser le bouton test [S3, S4]."]],
+ ["Repérer, déconsigner, essayer","Mettre à jour le repérage du circuit [S15]. Lever la consigne dans l'ordre prévu, puis essayer l'appareil ; pour un différentiel, utiliser le bouton test [S3, S4]."],
+ ["Limites du BS et du BR relayées","Deux sources secondaires, issues de l'INRS, donnent pour le BS une tension inférieure à 400 V en alternatif, une protection de 32 A au plus, une section de 6 mm² en cuivre et une intervention hors tension [S23, S24]. Pour le BR, elles donnent une protection amont de 63 A au plus et une connexion sous tension jusqu'à 500 V en alternatif [S23, S24]. Ces valeurs ne sont pas lues dans la NF C 18-510, payante, ni dans sa version compilée de juin 2023 [S27] : les confirmer avant de les enseigner comme limites réglementaires [R]."]],
  decision="Le disjoncteur à remplacer est sur un peigne, avec des bornes automatiques. Par où commencez-vous la dépose, une fois le tableau consigné ?",
  answer="Par le retrait du peigne d'alimentation en partie haute, puis les poussoirs des bornes, puis le levier sur la griffe [S8].",
  check=["Mon titre couvre-t-il cette opération ?","Ai-je relevé calibre, courbe, pouvoir de coupure ?","VAT faite, neutre compris, VAT contrôlé avant et après ?","Fils repérés avant dépose ?"],
@@ -127,6 +128,8 @@ MODULES=[M19,M20,M21,M22]
 
 # ---- déclaration des valeurs chiffrées : jeton -> (niveau, référence) ----
 VALEURS={
+ '2023':('S','S27 : texte compilé de juin 2023'),
+ '32':('S','S23 et S24 : protection 32 A du BS'),'63':('S','S23 et S24 : protection amont 63 A du BR'),'500':('S','S23 et S24 : 500 V en connexion sous tension'),
  '0,02':('S','S2 : déclenchement < 0,02 s'),
  '3':('S','S19 : courbe B entre 3 et 5 fois In'),'5':('S','S19 ; C : 5,3 %'),
  '30':('S','S3 : sensibilité 30 mA en logement'),'20':('S','S14 : réserve minimale de 20 %'),

@@ -1,0 +1,834 @@
+{
+ "date": "14/11/2026",
+ "n": 55,
+ "sha256_non_conformes": 0,
+ "poids_total_leger_octets": 2236252,
+ "images": [
+  {
+   "id": "TC01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 21858,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Examen visuel standard effectué",
+   "controle": "standard"
+  },
+  {
+   "id": "TC02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 53276,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "TC03",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 42130,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "TC04",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 47266,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "TC05",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 77538,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "TC06",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 59680,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "TC07",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 26158,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "TC08",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 44288,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "TC09",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 37698,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "NE01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 30272,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "NE02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 32914,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "NE03",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 42290,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BS01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 38378,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BS02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 27578,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BS03",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 43930,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BT01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 40372,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BT02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 42846,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BT03",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 43558,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "BR01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 52160,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BR02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 51004,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BR03",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 50888,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BR04",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 47474,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BC01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 33198,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BC02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 28246,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BC03",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 49108,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "BC04",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 47742,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "BC05",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 46546,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "HT01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 100838,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "HT02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 36240,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "HT03",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 38458,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "HT04",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 34416,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "HT05",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 50072,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "HT06",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 28166,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "EX01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 45978,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "EX02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 28150,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "EX03",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 57228,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "SI01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 45920,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "SI02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 24736,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "SI03",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 48808,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "SI04",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 53138,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "SI05",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 26518,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "SI06",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 21978,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "AC01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 37822,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "AC02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 37398,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "AC03",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 38578,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "AC04",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 21088,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "AC05",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 37078,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "AC06",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 34128,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "AC07",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 34994,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture renforcée requise",
+   "controle": "renforcé"
+  },
+  {
+   "id": "AC08",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 40572,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "PR01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 53808,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "PR02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1536,
+    1024
+   ],
+   "poids_leger": 67724,
+   "dim_leger": [
+    1024,
+    683
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "PC01",
+   "sha256_ok": true,
+   "dim_origine": [
+    1024,
+    1024
+   ],
+   "poids_leger": 8940,
+   "dim_leger": [
+    640,
+    640
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "PC02",
+   "sha256_ok": true,
+   "dim_origine": [
+    1024,
+    1024
+   ],
+   "poids_leger": 12506,
+   "dim_leger": [
+    640,
+    640
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  },
+  {
+   "id": "PC03",
+   "sha256_ok": true,
+   "dim_origine": [
+    1024,
+    1024
+   ],
+   "poids_leger": 12576,
+   "dim_leger": [
+    640,
+    640
+   ],
+   "statut": "Relecture technique à effectuer",
+   "controle": "standard"
+  }
+ ],
+ "limites": "Examen visuel sur planches contact seulement ; statuts de Codex = examen préliminaire, pas une relecture de formateur habilité. Texte/logo en pleine taille à revérifier. À signaler : visages visibles (PR01, BT02, SI03, BT01, NE02, TC09, EX03), gants TC03 d'aspect non isolant, instrument EX01 d'aspect multimètre. 16 images « renforcé » à relire par un formateur habilité. TB01–TB09 : images non reçues."
+}

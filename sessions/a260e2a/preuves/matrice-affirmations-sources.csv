@@ -78,6 +78,9 @@
 21;section : Poser et raccorder;Appareil équivalent : même calibre, même courbe, pouvoir de coupure au moins égal [R].;;R;OK
 21;section : Repérer, déconsigner, essayer;Mettre à jour le repérage du circuit [S15].;S15;S;OK
 21;section : Repérer, déconsigner, essayer;"Lever la consigne dans l'ordre prévu, puis essayer l'appareil ; pour un différentiel, utiliser le bouton test [S3, S4].";S3 S4;S;OK
+21;section : Limites du BS et du BR relayées;Deux sources secondaires, issues de l'INRS, donnent pour le BS une tension inférieure à 400 V en alternatif, une protection de 32 A au plus, une section de 6 mm² en cuivre et une intervention hors tension [S23, S24].;S23 S24;S;OK
+21;section : Limites du BS et du BR relayées;Pour le BR, elles donnent une protection amont de 63 A au plus et une connexion sous tension jusqu'à 500 V en alternatif [S23, S24].;S23 S24;S;OK
+21;section : Limites du BS et du BR relayées;Ces valeurs ne sont pas lues dans la NF C 18-510, payante, ni dans sa version compilée de juin 2023 [S27] : les confirmer avant de les enseigner comme limites réglementaires [R].;S27;R;OK
 21;situation;Un disjoncteur ne se réarme plus.;;;OK
 21;situation;Le tableau est en service.;;;OK
 21;situation;On vous demande de le remplacer.;;;OK

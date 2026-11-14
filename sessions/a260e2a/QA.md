@@ -23,3 +23,9 @@ Limites, à lire :
 - S13 (Fluke) et S14 (Éduscol) ont été relues le 14/11/2026 par l'outil de lecture web avec une question ciblée : formule du déséquilibre et réserve minimale de 20 % confirmées. Cette relecture a conduit à corriger une formulation (connexions desserrées, et non échauffement).
 - Les schémas sont des schémas de principe non à l'échelle ; leur justesse technique est à valider par le formateur.
 - Contraste, lecteur d'écran et mode nuit : non vérifiés. Espace formateur non chiffré. Visuels IA : aucun intégré.
+
+## Mise à jour du 14/11/2026 — images IA et NF C 18-510
+- Images : 55/55 SHA-256 conformes au suivi (preuves/controle-images.json) ; versions légères dans images/ia (précachées hors ligne), originaux dans sources-images (non précachés). Statuts repris du suivi : examen visuel préliminaire de Codex, relecture technique ou renforcée à faire ; ce n'est pas une relecture de formateur habilité. TB01–TB09 sans image.
+- À signaler : visages visibles (PR01, BT02, SI03, BT01, NE02, TC09, EX03), gants de TC03 d'aspect non isolant, instrument d'EX01 d'aspect multimètre, texte et logos à revérifier en pleine taille.
+- NF C 18-510 : sources S23 à S27 ajoutées (recherches élargies). Limites BS (400 V, 32 A, 6 mm²) et BR (63 A, 500 V sous tension) recoupées par deux sources secondaires issues de l'INRS ; texte de la norme (payant) non lu. Écart non tranché : fiche MSA « BR 1000 V / 63 A » (probablement le domaine BT) et page de formation « 400 V / 32 A » (limites du BS) ; lecture [R] à valider.
+- Contrôles rejoués : 115 affirmations sourcées, 0 sans référence ; responsive, QCM (97 questions), hors ligne, exercices : sans erreur JS.

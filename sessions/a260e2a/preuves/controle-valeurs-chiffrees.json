@@ -5,11 +5,27 @@
   21,
   22
  ],
- "affirmations": 112,
+ "affirmations": 115,
  "sans_reference": 0,
  "jetons_non_declares": [],
  "jetons_declares_inutilises": [],
  "valeurs": {
+  "2023": [
+   "S",
+   "S27 : texte compilé de juin 2023"
+  ],
+  "32": [
+   "S",
+   "S23 et S24 : protection 32 A du BS"
+  ],
+  "63": [
+   "S",
+   "S23 et S24 : protection amont 63 A du BR"
+  ],
+  "500": [
+   "S",
+   "S23 et S24 : 500 V en connexion sous tension"
+  ],
   "0,02": [
    "S",
    "S2 : déclenchement < 0,02 s"

@@ -14,6 +14,7 @@ document.head.insertAdjacentHTML('beforeend','<style>'+
 'button.primary,.button.primary{background:var(--navy);border-color:var(--navy);font-family:var(--ff)}.callout{border-left:7px solid var(--amber);background:var(--warm)}.tag{background:var(--navy);color:#fff;font-family:var(--ff)}.number{color:var(--navy)}.cover-rule{background:var(--amber)}'+
 'body.night header{background:#102c53!important}body.night h1,body.night h2,body.night h3{color:#a9d0f5}body.night .tag{background:#244a77}'+
 '@media(max-width:720px){header nav.sitenav{margin-left:0;width:100%}}'+
+'@media(max-width:600px){header.top div,header.top b,header.top span,.hero div,.hero b,.hero span{white-space:normal!important;overflow-wrap:anywhere}.trainer-navigation{max-width:calc(100vw - 24px);flex-wrap:wrap;right:12px!important}html,body{overflow-x:hidden}}'+
 '</style>');
 (function(){const h=document.querySelector('header');if(!h)return;const im=h.querySelector('img');if(im){im.src='../assets/img/logo-consulteam-groupe.png';im.alt='Consulteam Groupe'}
 const L=[["../index.html", "Accueil"], ["../parcours.html", "Parcours"], ["#", "Cours complet", 1], ["../evaluation.html", "Évaluation"], ["../galerie.html", "Galerie"], ["../glossaire.html", "Glossaire"], ["../animation.html", "Mode animation"], ["../formateur.html", "Espace formateur"]];

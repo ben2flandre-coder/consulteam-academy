@@ -41,3 +41,6 @@ Limites, à lire :
 
 ## Espace formateur chiffré (14/11/2026)
 Contenu de formateur.html chiffré dans le navigateur (AES-GCM 256, PBKDF2 600 000 itérations). Déverrouillage : code + une adresse e-mail autorisée. Ni le code ni les adresses ne sont dans le site ; le texte en clair est absent. Test : preuves/test-formateur-verrou.json. Limite : un code court se devine par essais hors ligne ; le corrigé du QCM reste lisible dans data/content.js.
+
+## Refonte pédagogique (14/11/2026, après benchmark)
+Écran de module en 5 phases (voir, comprendre, faire, vérifier, retenir), procédures pas à pas, coups de pouce gradués, entrée par symbole, avancement local. Benchmark : BENCHMARK.md. Tests : preuves/test-studio.json (22 modules ouverts sans erreur, 5 phases, pas-à-pas, aides, score), preuves/qa-responsive.json (68 combinaisons dont cours/ à 390 px, corrigé). Limite : les questions de « Faire » et « Vérifier » sont celles de la banque de l’évaluation (une moitié chacune) ; un stagiaire peut les avoir vues avant l’évaluation finale.

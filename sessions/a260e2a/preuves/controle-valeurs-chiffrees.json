@@ -5,14 +5,30 @@
   21,
   22
  ],
- "affirmations": 115,
+ "affirmations": 117,
  "sans_reference": 0,
  "jetons_non_declares": [],
  "jetons_declares_inutilises": [],
  "valeurs": {
-  "2023": [
+  "6127": [
    "S",
-   "S27 : texte compilé de juin 2023"
+   "S29 : numéro de la brochure ED 6127"
+  ],
+  "2012": [
+   "S",
+   "S29 : édition de décembre 2012"
+  ],
+  "1": [
+   "S",
+   "S27 : amendement A1"
+  ],
+  "2": [
+   "S",
+   "S27 : amendement A2 ; S23 : 6 mm²"
+  ],
+  "1000": [
+   "S",
+   "S29 : maxi 1000 V du BR, borne du domaine BT"
   ],
   "32": [
    "S",

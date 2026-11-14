@@ -430,5 +430,85 @@
   ],
   "bonne": 3,
   "correction": "Il transmet aux personnes en charge de la prévention les éléments de la situation dangereuse."
+ },
+ {
+  "id": "Q28",
+  "competence": "C2",
+  "sous": "2.1",
+  "lecon": "dj1-apres-midi.html#c2",
+  "source": "Manuel formateur 2024, compétence 2",
+  "question": "Parmi ces éléments, lequel fait partie des outils d’alerte de la population ?",
+  "options": [
+   "L’alarme incendie d’un seul bâtiment",
+   "Le message d’alerte aux secours (15, 18, 112)",
+   "Le panneau de sortie de secours",
+   "Le Signal National d’Alerte, qui peut être diffusé par des sirènes"
+  ],
+  "bonne": 3,
+  "correction": "L’alerte de la population s’appuie sur plusieurs outils : Signal National d’Alerte, médias, réseaux sociaux, FR-Alert. Le SST applique les consignes de protection diffusées."
+ },
+ {
+  "id": "Q29",
+  "competence": "C3",
+  "sous": "3.2",
+  "lecon": "dj1-apres-midi.html#c3",
+  "source": "Manuel formateur 2024, compétence 3",
+  "question": "Après les signes qui menacent la vie, quels autres signes la victime peut-elle présenter ?",
+  "options": [
+   "Un malaise, une brûlure, une douleur empêchant certains mouvements, une plaie qui ne saigne pas abondamment",
+   "Uniquement une douleur",
+   "Aucun : on passe directement à l’alerte",
+   "Seulement une plaie"
+  ],
+  "bonne": 0,
+  "correction": "Ces signes indiquent que la vie n’est pas immédiatement menacée ; ils orientent l’action de secours."
+ },
+ {
+  "id": "Q30",
+  "competence": "C5",
+  "sous": "5.1",
+  "lecon": "dj2-matin.html",
+  "source": "Manuel formateur 2024, compétence 5",
+  "question": "À l’issue de l’examen, comment le SST choisit-il son action de secours ?",
+  "options": [
+   "Il choisit toujours la RCP",
+   "Il applique le geste qu’il connaît le mieux",
+   "Il associe le signe décelé au résultat à atteindre, puis choisit l’action correspondante de la conduite à tenir",
+   "Il attend l’avis des secours avant d’agir"
+  ],
+  "bonne": 2,
+  "correction": "Chaque signe est associé à un résultat à atteindre, qui détermine l’action de secours selon le Guide."
+ },
+ {
+  "id": "Q31",
+  "competence": "C5",
+  "sous": "5.3",
+  "lecon": "dj2-matin.html",
+  "source": "Manuel formateur 2024, compétence 5",
+  "question": "Après son geste de secours, que fait le SST jusqu’à l’arrivée des secours ?",
+  "options": [
+   "Il ne fait plus rien",
+   "Il change de geste toutes les minutes",
+   "Il quitte la victime pour accueillir les secours",
+   "Il contrôle l’efficacité du geste, réexamine la victime si besoin et adapte sa conduite"
+  ],
+  "bonne": 3,
+  "correction": "Il surveille l’état de la victime, contrôle l’efficacité du geste et adapte sa conduite jusqu’à la prise en charge par les secours spécialisés."
+ },
+ {
+  "id": "Q32",
+  "competence": "C8",
+  "sous": "8.3",
+  "lecon": "dj1-matin.html#c8",
+  "source": "Manuel formateur 2024, compétence 8",
+  "question": "Que peut proposer le SST pour améliorer une situation dangereuse ?",
+  "options": [
+   "Rien : ce n’est pas son rôle",
+   "Seulement un rappel de la consigne à l’oral",
+   "Une sanction contre la personne exposée",
+   "Une action de prévention, si possible appuyée sur les principes généraux de prévention"
+  ],
+  "bonne": 3,
+  "correction": "Le SST propose, si possible, des pistes d’amélioration en s’appuyant sur les 9 principes généraux de prévention ; ses actions dépendent du contexte de l’entreprise."
  }
 ]

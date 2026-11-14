@@ -1,0 +1,8 @@
+date;écart;correction;preuve
+2026-11-14;Matrice : « 1 a 8 », « 2 a 5 », « 6 a 26 » sans accent affichés;Corrigé dans data/matrice.json;relecture Red Team, commit 830f43c
+2026-11-14;Pages de modules : aucune image, ossature austère;Refonte : 25 visuels, modules apprenants, galerie, livret;captures preuves/captures
+2026-11-14;Édition apprenant : lien « Espace formateur » dans le menu;Retiré du menu apprenant (page formateur.html non liée);qa-liens
+2026-11-14;Images IA : 10 gestes ou schémas signalés à valider, 8 scènes sans lien avec les scénarios F et K;"Non affichés aux apprenants (data/visuels-statut.csv) ; page visuels-relecture.html";OBSERVATIONS-SUR-LES-VISUELS.md reçu avec le lot
+2026-11-14;Contrôle de liens : faux positif sur les ancres;Expression du contrôleur corrigée, 734 liens testés, 0 cassé;preuves/liens.json
+2026-11-14;Aide-mémoire ED 4085 de mai 2026 signalé;Ajouté au registre (R23) et à sources.html, à lire;registre.html
+2026-11-14;Sources « Manuel formateur » citées dans les pages apprenant;"Titre de document, conservé ; à arbitrer par le concepteur";m1 à m8

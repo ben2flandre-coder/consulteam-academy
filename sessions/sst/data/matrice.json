@@ -91,7 +91,7 @@
       "epreuve": 2,
       "sources": [
         "MF p.5+",
-        "Code penal art. 223-6",
+        "Code pénal art. 223-6",
         "Code du travail R4224-15"
       ],
       "module_site": "cadre-juridique"
@@ -102,7 +102,7 @@
       "sous": [
         [
           "2.1",
-          "Mettre en œuvre les mesures de protection du processus d'alerte aux populations"
+          "Mettre en œuvre les mesures de protection décrites dans le processus d'alerte aux populations"
         ],
         [
           "2.2",
@@ -116,7 +116,7 @@
       "epreuve": 1,
       "sources": [
         "GDT Protéger",
-        "GDT tableau 1 (degagement d'urgence)",
+        "GDT tableau 1 (dégagement d'urgence)",
         "MF"
       ],
       "module_site": "proteger"

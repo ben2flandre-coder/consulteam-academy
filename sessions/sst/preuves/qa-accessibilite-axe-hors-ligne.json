@@ -1,0 +1,44 @@
+{
+ "axe": {
+  "credits.html": [],
+  "dj1-apres-midi.html": [],
+  "dj1-matin.html": [],
+  "dj2-apres-midi.html": [],
+  "dj2-matin.html": [],
+  "fiches-secourir.html": [],
+  "formateur.html": [],
+  "galerie.html": [],
+  "glossaire.html": [],
+  "index.html": [],
+  "initiale.html": [],
+  "livret.html": [],
+  "m1.html": [],
+  "m2.html": [],
+  "m3.html": [],
+  "m4.html": [],
+  "m5.html": [],
+  "m6.html": [],
+  "m7.html": [],
+  "m8.html": [],
+  "mac.html": [],
+  "matrice.html": [],
+  "parcours.html": [],
+  "registre.html": [],
+  "ressources.html": [],
+  "scenarios.html": [],
+  "sources.html": [],
+  "suivi.html": [],
+  "valider.html": [],
+  "visuels-relecture.html": []
+ },
+ "hors_ligne": {
+  "service_worker_actif": true,
+  "page_module_hors_ligne": true,
+  "images_fiches_chargees": true
+ },
+ "quiz_module": {
+  "questions": 8,
+  "correction_affichee": true,
+  "lien_lecon": "m5.html#retenir"
+ }
+}

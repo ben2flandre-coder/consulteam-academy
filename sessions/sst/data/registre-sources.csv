@@ -1,0 +1,24 @@
+id;sujet;source et version;statut;emplacements;consulté
+R01;Obligation de porter assistance;"Code pénal, art. 223-6 ; Manuel du formateur 2024, compétence 1";"Texte cité via le Manuel ; relecture Légifrance à faire";"m1.html ; valider.html (Q C1)";novembre 2026
+R02;Secours organisés par l’employeur;"Code du travail, art. R4224-15 ; Document de référence V8 01/2021";"Cité via le référentiel ; relecture Légifrance à faire";"m1.html ; dj1-matin.html";novembre 2026
+R03;Durées : initiale 14 h, MAC 7 h, MAC dans les 24 mois;"Document de référence V8 01/2021 ; Manuel du formateur 2024";Version V8 à confirmer (une version plus récente possible);"index.html ; parcours.html ; mac.html";novembre 2026
+R04;8 compétences, 21 sous-compétences;Document de référence V8 01/2021;idem;"matrice.html ; suivi.html ; m1 à m8";novembre 2026
+R05;Épreuves certificatives 1 et 2;"Document de référence V8 ; Manuel du formateur 2024";idem;"matrice.html ; scenarios.html";novembre 2026
+R06;Démarche protéger, examiner, alerter, secourir;Guide des données techniques V5.01/2024;Lu en entier;"m2.html ; fiches-secourir.html";novembre 2026
+R07;Quatre familles de dangers persistants;Manuel du formateur 2024, compétence 2;Lu;"m2.html ; m7.html";novembre 2026
+R08;Dégagement d’urgence;Guide V5.01, Protéger, tableau 1;Lu;"dj1-apres-midi.html ; glossaire.html";novembre 2026
+R09;"Message d’alerte ; numéros 15, 18, 112, 114";Guide V5.01, Faire alerter ou alerter;Lu;"m4.html ; ressources.html";novembre 2026
+R10;Saignement : compression directe, garrot en dernier recours;"Guide V5.01, Secourir 1, tableaux 6 à 12 ; fiche outil garrot";Lu;fiches-secourir.html#s1;novembre 2026
+R11;Étouffement : 1 à 5 claques puis 1 à 5 compressions;Guide V5.01, Secourir 2;Lu;fiches-secourir.html#s2;novembre 2026
+R12;Malaise : observer les signes avant la mise au repos;Guide V5.01, Secourir 3;Lu;fiches-secourir.html#s3;novembre 2026
+R13;Brûlure : refroidir au moins 10 min, idéalement 20;Guide V5.01, Secourir 4;Lu;fiches-secourir.html#s4;novembre 2026
+R14;Douleur et mouvement gêné;Guide V5.01, Secourir 5;Lu;fiches-secourir.html#s5;novembre 2026
+R15;Plaie simple et plaie grave;Guide V5.01, Secourir 6, tableau 18;Lu;fiches-secourir.html#s6;novembre 2026
+R16;PLS, côté gauche de préférence si grossesse ou obésité;Guide V5.01, Secourir 7;Lu;fiches-secourir.html#s7;novembre 2026
+R17;RCP : 30:2 adulte, 5 insufflations puis 15:2 enfant et nourrisson, 100 à 120/min, environ 5 cm sans dépasser 6 cm;Guide V5.01, Secourir 8;Lu;fiches-secourir.html#s8;novembre 2026
+R18;Neuf principes généraux de prévention;"Code du travail, art. L4121-2 ; Manuel du formateur 2024";"Cité via le Manuel ; relecture Légifrance à faire";"m8.html ; neuf-principes.svg";novembre 2026
+R19;Définition de l’accident du travail;Code de la sécurité sociale, art. L411-1;"Cité via le Manuel ; relecture Légifrance à faire";"glossaire.html ; dj1-matin.html";novembre 2026
+R20;ITAMaMi, plan d’action de prévention;Fiches outils INRS 2015 à 2019;Citées, non reproduites;"m7.html ; glossaire.html";novembre 2026
+R21;Évolutions V4.07/2022 vers V5.01/2024;INRS, document « Principales modifications »;Lu;mac.html;novembre 2026
+R23;Aide-mémoire ED 4085, édition de mai 2026;INRS (notice : alignement sur le dernier guide, numéro non précisé);"À lire ; V5.01/2024 reste la base retenue tant qu’un guide plus récent n’est pas identifié";"sources.html ; mac.html";novembre 2026
+R22;Durées d’activité, ordre des demi-journées;Choix pédagogique de Benoît Deflandre;Non réglementaire, annoncé comme tel;dj1-matin.html à dj2-apres-midi.html;novembre 2026

@@ -52,3 +52,9 @@ Contenu de formateur.html chiffré dans le navigateur (AES-GCM 256, PBKDF2 600 0
 - Page « Documents de session » : émargement par demi-journée, satisfaction à chaud, compte rendu jour par jour, 10 grilles d'évaluation pratique par symbole (ED 6127 §5.4.2, tableau relu sur la page), avis après formation (contenu de l'ED 6127 §7.2), attestation de fin de formation. Modèles de travail, à valider par le formateur et le commanditaire.
 - Tests : 60 combinaisons d'affichage sans débordement (preuves/qa-responsive.json), studio, hors ligne en local.
 - Limites : la banque de 144 questions ne respecte pas « cinq fois plus de questions que posées » par thème pour chaque niveau (ED 6127) ; les grilles pratiques et la liste des savoir-faire sont à valider ; durée 21 h (programme) ou 19,5 h (horaires du CPS) non levée ; textes de la NF C 18-510 non lus.
+
+## Études de cas, arbre de décision, compléments (14/11/2026, 14 h)
+- Module 23 « Études de cas d'accidents » : 8 cas réels résumés d'après l'INRS ED 325 (source S32, lue par synthèse de page, édition de 1993 réimprimée en 2012), méthode d'analyse en quatre temps, 10 questions. À comparer à la brochure avant publication.
+- Page « Quel symbole ? » : arbre de décision fondé sur le tableau de choix de l'ED 6127 (§2.3 et §2.4) ; testé sur les chemins BS, H2V, B0 et HE Manœuvre, retour arrière et mobile sans débordement. Les limites détaillées relèvent de la NF C 18-510, non lue.
+- Questions ajoutées aux modules 9, 16 et 17. Banque : 165 questions (module 23 inclus) ; check_modules : 391 affirmations, 0 sans référence.
+- Tests : 64 combinaisons d'affichage sans débordement, évaluations (complète 165, tirage 75, 12 niveaux de 20), studio et 23 modules ouverts sans erreur.

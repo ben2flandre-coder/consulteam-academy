@@ -141,6 +141,10 @@
 9;question T09-03 (explication);Seules les opérations concourant à l'exploitation et à la maintenance sont autorisées [S29].;S29;S;OK
 9;question T09-04 (explication);Instructions de sécurité, attestation de consignation et avis de fin de travail figurent parmi les documents applicables [S29].;S29;S;OK
 9;question T09-05 (explication);La brochure ne détaille pas les formations aux travaux sous tension [S29].;S29;S;OK
+9;question T09-06 (explication);La formation pratique minimale est de 5 h, dont 2 h propres au module [S29].;S29;S;OK
+9;question T09-07 (explication);V indique des travaux au voisinage renforcé [S29].;S29;S;OK
+9;question T09-08 (explication);Création, modification et remplacement d'un coffret relèvent des travaux [S29].;S29;S;OK
+9;question T09-09 (explication);Le module demande de caractériser les travaux et leurs limites [S29].;S29;S;OK
 12;section : Les symboles HT;Les symboles H1, H1V, H2 et H2V suivent la même logique que leurs équivalents BT : H pour la haute tension, 1 pour l'exécutant, 2 pour le chargé de travaux, V pour le voisinage renforcé [S29].;S29;S;OK
 12;section : Les symboles HT;En voisinage renforcé, le symbole H0V s'applique aux opérations d'ordre non électrique [S29].;S29;S;OK
 12;section : HTA ou HTB : le contenu change;Les thèmes de la formation doivent être développés différemment selon le domaine de tension considéré : BT, HTA ou HTB [S29].;S29;S;OK
@@ -306,6 +310,10 @@
 16;question T16-02 (explication);Deux erreurs mineures au maximum, aucune majeure [S29].;S29;S;OK
 16;question T16-03 (explication);15 questions minimum [S29].;S29;S;OK
 16;question T16-04 (explication);"Le formateur remet un avis après formation ; l'employeur habilite [S29].";S29;S;OK
+16;question T16-05 (explication);Les savoir-faire sont évalués après l'évaluation positive des savoirs [S29].;S29;S;OK
+16;question T16-06 (explication);Trois critères : sans erreur, erreur mineure, erreur majeure [S29].;S29;S;OK
+16;question T16-07 (explication);Contenu minimal de l'avis après formation [S29].;S29;S;OK
+16;question T16-08 (explication);"Le formateur évalue et délivre l'avis ; l'employeur habilite [S29].";S29;S;OK
 17;section : Partir de l'opération, pas du métier;Le choix d'un symbole dépend de l'activité confiée et de l'environnement électrique [S29].;S29;S;OK
 17;section : Partir de l'opération, pas du métier;Le métier ne détermine pas le symbole : il se choisit à partir de la nature de l'opération et de la tension [S29, R].;S29;R;OK
 17;section : Partir de l'opération, pas du métier;Les listes de symboles d'ADI sécurité n'ont pas été communiquées : tout rattachement ci-dessous reste à décider avec l'employeur [R].;;R;OK
@@ -325,3 +333,60 @@
 17;question T17-01 (explication);Le choix tient compte de l'activité confiée et de l'environnement électrique [S29].;S29;S;OK
 17;question T17-02 (explication);La recherche de panne fait partie des opérations BR [S29].;S29;S;OK
 17;question T17-03 (explication);Toutes les sources doivent être identifiées [R].;;R;OK
+17;question T17-04 (explication);Le contrôle d'une grandeur relève d'une opération spécifique à examiner [S29, R].;S29;R;OK
+17;question T17-05 (explication);L'employeur définit les besoins dans un cahier des charges pour la formation [S29].;S29;S;OK
+17;question T17-06 (explication);Le travail en hauteur ajoute un risque à organiser [R].;;R;OK
+23;section : Un risque rare mais grave;Entre 2014 et 2018, la Cnam enregistre en moyenne 660 accidents du travail d'origine électrique par an, soit 0,10 % de l'ensemble [S29].;S29;S;OK
+23;section : Un risque rare mais grave;La gravité est plus élevée : 0,43 % de ces accidents sont mortels, contre 0,08 % pour l'ensemble des risques [S29].;S29;S;OK
+23;section : Un risque rare mais grave;Bien des accidents surviennent sur des installations restées sous tension ou non complètement consignées, et une meilleure préparation du travail aurait souvent permis la mise hors tension complète [S29].;S29;S;OK
+23;section : Méthode : analyser un accident en quatre temps;1) Décrire les faits : qui faisait quoi, avec quel matériel, dans quel état de l'installation [R].;;R;OK
+23;section : Méthode : analyser un accident en quatre temps;2) Chercher les causes : matériel, méthode, organisation, personne et environnement [R].;;R;OK
+23;section : Méthode : analyser un accident en quatre temps;3) Repérer la barrière qui a manqué : mise hors tension, consignation, vérification d'absence de tension, protection différentielle, outil isolé, surveillance [S32, R].;S32;R;OK
+23;section : Méthode : analyser un accident en quatre temps;4) Relier à la règle : symbole d'habilitation, limites de l'opération, document applicable [S29, R].;S29;R;OK
+23;section : Cas 1 · Remplacement d'un coffret sous tension;Lors du remplacement d'un coffret dans un sous-sol, un ouvrier touche une pièce sous tension et est foudroyé [S32].;S32;S;OK
+23;section : Cas 1 · Remplacement d'un coffret sous tension;L'enquête retient que le travail a été fait sous tension alors que ce n'était pas indispensable [S32].;S32;S;OK
+23;section : Cas 1 · Remplacement d'un coffret sous tension;La règle : les travaux se font hors tension chaque fois que c'est possible, et le remplacement d'un coffret relève des travaux B1 ou B2 [S29].;S29;S;OK
+23;section : Cas 1 · Remplacement d'un coffret sous tension;Voir les modules 9 et 11 [R].;;R;OK
+23;section : Cas 2 · Fusible retiré en charge;Un électricien retire un fusible sans arrêter la machine : un arc se produit et il est gravement brûlé [S32].;S32;S;OK
+23;section : Cas 2 · Fusible retiré en charge;Le coupe-circuit à fusible n'était pas prévu pour séparer un circuit en charge [S32].;S32;S;OK
+23;section : Cas 2 · Fusible retiré en charge;À retenir : arrêter l'installation avant d'intervenir et ne pas utiliser un organe qui ne sait pas couper en charge [S32, R].;S32;R;OK
+23;section : Cas 2 · Fusible retiré en charge;Voir le module 5 [R].;;R;OK
+23;section : Cas 3 · Pointes de touche remplacées;Pendant une mesure dans une armoire, un flash brûle un dépanneur à la main et au visage [S32].;S32;S;OK
+23;section : Cas 3 · Pointes de touche remplacées;Les pointes de touche d'origine avaient été remplacées par des pointes artisanales, dénudées sur plusieurs millimètres, qui ont touché deux bornes voisines [S32].;S32;S;OK
+23;section : Cas 3 · Pointes de touche remplacées;À retenir : un appareil de mesure et ses accessoires doivent être conformes, entretenus et à pointes protégées [S32, R].;S32;R;OK
+23;section : Cas 3 · Pointes de touche remplacées;Voir le module 15 [R].;;R;OK
+23;section : Cas 4 · Une clé tombe sur les barres;Après le remplacement d'un disjoncteur, un électricien serre des bornes restées sous tension : sa clé tombe sur les barres, provoque un court-circuit et le brûle [S32].;S32;S;OK
+23;section : Cas 4 · Une clé tombe sur les barres;L'intervention sous tension n'était pas nécessaire [S32].;S32;S;OK
+23;section : Cas 4 · Une clé tombe sur les barres;À retenir : travailler hors tension, ou utiliser des outils sans partie métallique exposée [S32].;S32;S;OK
+23;section : Cas 4 · Une clé tombe sur les barres;Voir les modules 19 à 22 [R].;;R;OK
+23;section : Cas 5 · Un pôle resté fermé;Un ajusteur non habilité intervient seul : son bras touche les bornes d'un transformateur et il est profondément brûlé [S32].;S32;S;OK
+23;section : Cas 5 · Un pôle resté fermé;Un pôle de l'interrupteur général était resté fermé après un mauvais contact et l'ouverture n'avait pas été vérifiée sur tous les pôles [S32].;S32;S;OK
+23;section : Cas 5 · Un pôle resté fermé;À retenir : intervention réservée à un personnel qualifié et habilité, et vérification de l'absence de tension sur tous les pôles [S32].;S32;S;OK
+23;section : Cas 5 · Un pôle resté fermé;Voir le module 6 [R].;;R;OK
+23;section : Cas 6 · Retour dans une cellule voisine;"Pendant le nettoyage d'une cellule consignée, un électricien revient après une pause, monte sur un escabeau près d'une cellule voisine restée sous tension et touche un conducteur ; il chute et décède [S32].";S32;S;OK
+23;section : Cas 6 · Retour dans une cellule voisine;Les installations voisines sous tension n'étaient pas identifiées et la zone de travail n'était pas délimitée [S32].;S32;S;OK
+23;section : Cas 6 · Retour dans une cellule voisine;À retenir : définir précisément les travaux, identifier ce qui reste sous tension et délimiter la zone [S32].;S32;S;OK
+23;section : Cas 6 · Retour dans une cellule voisine;Voir les modules 13 et 18 [R].;;R;OK
+23;section : Cas 7 · Ampoule remplacée sous tension;Dans un sous-sol humide, un ouvrier remplace une ampoule sans couper le courant, touche une douille en contact avec un conducteur sous tension et meurt [S32].;S32;S;OK
+23;section : Cas 7 · Ampoule remplacée sous tension;L'éclairage provisoire était inadapté et le travail a été fait sans électricien [S32].;S32;S;OK
+23;section : Cas 7 · Ampoule remplacée sous tension;À retenir : couper avant de remplacer, et préférer un éclairage très basse tension de sécurité ou des luminaires fermés en local mouillé [S32].;S32;S;OK
+23;section : Cas 7 · Ampoule remplacée sous tension;Rapprochez ce cas du remplacement d'une lampe autorisé au BS, qui se fait hors tension [S29].;S29;S;OK
+23;section : Cas 8 · Des couvreurs près d'une ligne;Deux couvreurs travaillent tout près d'une ligne haute tension : l'un touche vraisemblablement les conducteurs, chute et décède [S32].;S32;S;OK
+23;section : Cas 8 · Des couvreurs près d'une ligne;La présence de la ligne n'a été prise en compte par personne et aucune déclaration d'intention de commencement de travaux n'avait été établie [S32].;S32;S;OK
+23;section : Cas 8 · Des couvreurs près d'une ligne;À retenir : repérer les ouvrages électriques avant les travaux et respecter les distances [S32].;S32;S;OK
+23;section : Cas 8 · Des couvreurs près d'une ligne;Voir le module 18 sur le voisinage [R].;;R;OK
+23;situation;Un électricien remplace un appareil dans une armoire sans avoir coupé l'alimentation, « pour gagner du temps ».;;;OK
+23;situation;Qu'est-ce qui peut mal tourner, et qu'aurait-il fallu avoir en place ?;;;OK
+23;réponse;Trois cas sur huit viennent d'un travail sous tension non nécessaire [S32].;S32;S;OK
+23;réponse;Les travaux se font hors tension chaque fois que c'est possible, après une préparation qui inclut la consignation et la vérification d'absence de tension [S29].;S29;S;OK
+23;réponse;Il faut donc couper, consigner, vérifier, puis remplacer [S29, R].;S29;R;OK
+23;question T23-01 (explication);L'enquête retient un travail sous tension non indispensable [S32].;S32;S;OK
+23;question T23-02 (explication);Le coupe-circuit à fusible n'était pas conçu pour séparer en charge [S32].;S32;S;OK
+23;question T23-03 (explication);Pointes remplacées, dénudées, touchant deux bornes voisines [S32].;S32;S;OK
+23;question T23-04 (explication);Dans le cas du transformateur, l'ouverture n'avait pas été vérifiée sur tous les pôles [S32].;S32;S;OK
+23;question T23-05 (explication);Les installations voisines sous tension n'étaient pas identifiées ni les zones délimitées [S32].;S32;S;OK
+23;question T23-06 (explication);Hors tension, vérification d'absence de tension et outils adaptés reviennent dans les cas analysés [S32, R].;S32;R;OK
+23;question T23-07 (explication);0,43 % sont mortels contre 0,08 % pour l'ensemble des risques [S29].;S29;S;OK
+23;question T23-08 (explication);La présence de la ligne n'a été prise en compte par aucun intervenant [S32].;S32;S;OK
+23;question T23-09 (explication);Les quatre temps de la méthode d'analyse [R].;;R;OK
+23;question T23-10 (explication);Très basse tension de sécurité ou luminaires fermés à double isolation [S32].;S32;S;OK

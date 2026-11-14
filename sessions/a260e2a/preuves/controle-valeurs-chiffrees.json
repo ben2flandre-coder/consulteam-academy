@@ -10,9 +10,10 @@
   14,
   15,
   16,
-  17
+  17,
+  23
  ],
- "affirmations": 326,
+ "affirmations": 391,
  "sans_reference": 0,
  "jetons_non_declares": [],
  "jetons_declares_inutilises": [],
@@ -23,7 +24,7 @@
   ],
   "2012": [
    "S",
-   "S29 : édition de décembre 2012"
+   "S32 : réimpression de 2012"
   ],
   "1": [
    "S",
@@ -99,7 +100,7 @@
   ],
   "6": [
    "C",
-   "numérotation des étapes d'un pas-à-pas"
+   "numérotation / renvoi de module"
   ],
   "4": [
    "S",
@@ -111,7 +112,7 @@
   ],
   "18": [
    "C",
-   "L2 avant"
+   "renvoi aux modules"
   ],
   "24": [
    "C",
@@ -204,6 +205,54 @@
   "7": [
    "C",
    "numérotation des étapes d'un pas-à-pas"
+  ],
+  "660": [
+   "S",
+   "S29 : moyenne annuelle d'accidents d'origine électrique 2014-2018"
+  ],
+  "0,10": [
+   "S",
+   "S29 : part des accidents du travail"
+  ],
+  "0,43": [
+   "S",
+   "S29 : part des accidents mortels en électricité"
+  ],
+  "0,08": [
+   "S",
+   "S29 : part pour l'ensemble des risques"
+  ],
+  "2014": [
+   "S",
+   "S29 : période 2014-2018"
+  ],
+  "2018": [
+   "S",
+   "S29 : période 2014-2018"
+  ],
+  "19": [
+   "C",
+   "renvoi aux modules 19 à 22"
+  ],
+  "22": [
+   "C",
+   "renvoi aux modules 19 à 22"
+  ],
+  "9": [
+   "C",
+   "renvoi aux modules"
+  ],
+  "11": [
+   "C",
+   "renvoi aux modules"
+  ],
+  "13": [
+   "C",
+   "renvoi aux modules"
+  ],
+  "1993": [
+   "S",
+   "S32 : édition de 1993 de l'ED 325"
   ]
  }
 }

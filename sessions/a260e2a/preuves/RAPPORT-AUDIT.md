@@ -43,3 +43,11 @@ Arbres de décision lampe, fusible, prise ; 68 questions pour atteindre le ratio
 ## Précisions de méthode
 - La norme NF C 18-510 est payante et n'est pas reproduite ; les seuils et périmètres suivent le référentiel INRS. L'amendement A2 (juin 2023, applicable octobre 2024) ne change aucun seuil relevé.
 - Les sections ajoutées directement dans build_site.py (module 8) et les pages de décision ne sont pas couvertes par le contrôle automatique : relues à la main.
+
+
+## Mode animation refondu (14/11/2026, modèle Panzani A260BNA et « Travail en hauteur »)
+- 324 diapositives statiques (générateur `scripts/deck_e2a.py`), alignées sur le déroulé : J1 comprendre et se situer, J2 le métier d'ADI en pratique, J3 pratiquer et valider ; minutes par séquence = 420 min par jour (test), modules à la carte (9, 12 à 15) déclarés hors base.
+- Chaque diapositive : QR code vers la page du module (parcours), mention « Suivre sur votre téléphone », lien Parcours / Cours / Suivre dans la barre, notes formateur (sources et [R] en note), chrono par séquence, sommaire, plein écran, écran noir, touche Q pour agrandir le QR, balayage tactile.
+- Contenus × médias : ouverture de module en photo plein cadre, situation de départ, encarts révélés un à un (chiffres en grand, dangers en rouge), schémas SVG en planche, décision avec réponse masquée + réflexes, 2 QCM collectifs par module avec score de salle, 1 bilan par jour, évaluations, clôture.
+- Module 17 (ADI) en rouge/marine, visuels SI01–SI06. Page Suivre : tableau séquences × pages.
+- Test `qa/animation_test.py` (preuves/test-animation.json) : QR et mention sur 324/324 diapositives, 103 images présentes, 23 modules, 4 formats (1920, 1280, 768, 390) sans débordement ni erreur JS, QCM, notes, sommaire, révélation, axe 0 violation sur 7 diapositives types.

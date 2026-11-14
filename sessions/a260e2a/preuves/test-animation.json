@@ -1,0 +1,150 @@
+{
+ "verifs": [
+  {
+   "test": "nombre de diapositives",
+   "ok": true,
+   "detail": 324
+  },
+  {
+   "test": "QR sur chaque diapositive",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "mention téléphone sur chaque diapositive",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "fichiers QR présents",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "images présentes",
+   "ok": true,
+   "detail": "103 images, manquantes []"
+  },
+  {
+   "test": "23 modules présents",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "minutes par jour = 420 (7 h)",
+   "ok": true,
+   "detail": {
+    "J1": 420,
+    "J2": 420,
+    "J3": 420
+   }
+  },
+  {
+   "test": "notes formateur",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "projecteur-1920 : pas de débordement horizontal",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "projecteur-1920 : QR visible partout",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "projecteur-1920 : aucune erreur JS",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "bureau-1280 : pas de débordement horizontal",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "bureau-1280 : QR visible partout",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "bureau-1280 : aucune erreur JS",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "QCM collectif : score salle",
+   "ok": true,
+   "detail": "Salle : 1 / 1"
+  },
+  {
+   "test": "touche Q agrandit le QR",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "notes formateur (N)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "sommaire (G)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "révélation progressive (→)",
+   "ok": true,
+   "detail": [
+    1,
+    2
+   ]
+  },
+  {
+   "test": "chrono réglé sur la séquence",
+   "ok": true,
+   "detail": "⏱ 30:00"
+  },
+  {
+   "test": "axe (7 diapositives types) : 0 violation",
+   "ok": true,
+   "detail": {}
+  },
+  {
+   "test": "tablette-768 : pas de débordement horizontal",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "tablette-768 : QR visible partout",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "tablette-768 : aucune erreur JS",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "tel-390 : pas de débordement horizontal",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "tel-390 : aucune erreur JS",
+   "ok": true,
+   "detail": []
+  }
+ ],
+ "axe": {
+  "1": [],
+  "6": [],
+  "12": [],
+  "150": [],
+  "219": [],
+  "227": [],
+  "231": []
+ }
+}

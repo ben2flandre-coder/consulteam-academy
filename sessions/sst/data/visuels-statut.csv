@@ -6,17 +6,17 @@ examiner-signes;affiche;
 alerter-message;affiche;
 s1-saignement-compression;affiche;
 s1-pansement-compressif;affiche;
-s2-etouffement-claques;a_valider;Points de contact sur le dos et le thorax à faire vérifier par un formateur SST.
-s2-etouffement-abdominales;a_valider;Repères du nombril et de la pointe du sternum peu lisibles.
-s2-etouffement-nourrisson;a_valider;Soutien de la mandibule, sans pression sur la gorge, à faire vérifier.
+s2-etouffement-claques;valide;Validé par Benoît Deflandre le 14/11/2026
+s2-etouffement-abdominales;valide;Validé par Benoît Deflandre le 14/11/2026
+s2-etouffement-nourrisson;valide;Validé par Benoît Deflandre le 14/11/2026
 s3-malaise-repos;affiche;
 s4-brulure-refroidissement;affiche;
 s5-douleur-immobilisation;affiche;
 s6-plaie-protection;affiche;
-s7-pls;a_valider;Latéralité et position exacte du bras inférieur à vérifier dans les deux vues.
-s8-rcp-compressions;a_valider;Placement sur la moitié inférieure du sternum à confirmer.
-s8-dae-etapes;a_valider;Repères anatomiques des électrodes à confirmer avec le schéma du fabricant.
-s8-insufflations;a_valider;Distinction adulte/enfant, ouverture des voies aériennes et pincement du nez à vérifier.
+s7-pls;valide;Validé par Benoît Deflandre le 14/11/2026
+s8-rcp-compressions;valide;Validé par Benoît Deflandre le 14/11/2026
+s8-dae-etapes;valide;Validé par Benoît Deflandre le 14/11/2026
+s8-insufflations;valide;Validé par Benoît Deflandre le 14/11/2026
 danger-situation-risque;affiche;
 itamami-5-axes;affiche;
 quatre-familles-dangers;affiche;

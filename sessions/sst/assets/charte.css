@@ -70,6 +70,8 @@ header.top{padding:12px clamp(16px,2.4vw,44px)}header.top nav a{font-size:clamp(
 
 
 
+
+
 /* v4 */
 .kick{font:700 14px var(--ff);letter-spacing:.12em;text-transform:uppercase;color:#f6b63d;margin:0 0 6px;position:relative;z-index:1}
 .btn{display:inline-block;text-decoration:none;margin:4px 8px 4px 0;position:relative;z-index:1}.hero .btn{background:#f6b63d;color:#102c53}.hero .btn.alt{background:#ffffff26;color:#fff}

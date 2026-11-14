@@ -19,3 +19,8 @@
 - Exploitation des ressources INRS : nouvelle page apprenant outils.html (PAP, ITAMaMi, Carsat, DAE, garrot, trousse, origine des gestes, responsabilité, malaises mortels, organisation des secours, repères historiques) et page formateur pedagogie.html.
 - Bloc « Pour aller plus loin » dans chaque module ; registre R24 à R27.
 - Garrot, DAE et trousse recoupés avec le Guide V5.01 : pas d’écart.
+
+## v0.4.0 — 14/11/2026
+- Plans INRS PAP et PI dématérialisés intégrés sans modification (outils-inrs/, page formateur plans.html), avec l’autorisation du responsable. Dépôt public.
+- Les 7 visuels en attente sont validés par Benoît Deflandre (data/visuels-statut.csv).
+- Aucun tarif Carsat repris de la fiche 2015 ; la revue HST (do36) est laissée de côté.

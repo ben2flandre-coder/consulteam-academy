@@ -67,6 +67,7 @@ header.top{padding:12px clamp(16px,2.4vw,44px)}header.top nav a{font-size:clamp(
 
 
 
+
 /* v4 */
 .kick{font:700 14px var(--ff);letter-spacing:.12em;text-transform:uppercase;color:#f6b63d;margin:0 0 6px;position:relative;z-index:1}
 .btn{display:inline-block;text-decoration:none;margin:4px 8px 4px 0;position:relative;z-index:1}.hero .btn{background:#f6b63d;color:#102c53}.hero .btn.alt{background:#ffffff26;color:#fff}
@@ -78,4 +79,5 @@ ol.tl{list-style:none;padding:0;border-left:6px solid var(--y);margin-left:10px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.chip{background:var(--n);color:#fff;text-decoration:none;border-radius:999px;padding:1px 12px;font:700 14px var(--ff)}
 dl.glos{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:12px}dl.glos div{background:var(--w);border:1px solid var(--l);border-left:8px solid var(--y);border-radius:10px;padding:10px 16px}dl.glos dt{font:700 18px var(--ff);color:var(--n)}dl.glos dd{margin:4px 0 0}
 .score{font-weight:700;margin-top:18px}
+section>figure.vis{max-width:780px}
 @media print{figure.vis img{cursor:auto}}

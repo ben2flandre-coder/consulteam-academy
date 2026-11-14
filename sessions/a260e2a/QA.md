@@ -68,7 +68,10 @@ Contenu de formateur.html chiffré dans le navigateur (AES-GCM 256, PBKDF2 600 0
 - Reste : ED 7000 non lu ; le contrôle automatique des affirmations ne couvre pas les sections ajoutées dans build_site.py, relues à la main (chaque phrase référencée).
 
 ## Audit complet du 14/11/2026
-Voir preuves/RAPPORT-AUDIT.md : programme 30/31, réglementaire 7 vérifiés / 6 réserves / 1 non vérifiable, 405 affirmations sans écart, accessibilité axe 0 violation (13 pages), 60 combinaisons d'affichage sans défaut, hors ligne OK, 211 questions. Fiche de parcours et mention handicap ajoutées.
+Voir preuves/RAPPORT-AUDIT.md : programme 32/32, réglementaire 14/14, 450 affirmations sans écart, 279 questions (ratio ED 6127 atteint), accessibilité axe 0 violation (14 pages), 64 combinaisons d'affichage, hors ligne OK. Fiche de parcours et mention handicap ajoutées.
 
 ## Recherches élargies (14/11/2026)
-Sources S37 à S40 ajoutées ; audit réglementaire : 13 vérifiés sur 14 ; ED 325 récupérée (édition 1993, réimpression 2012, 24 cas).
+Sources S37 à S40 ajoutées ; audit réglementaire : 13 vérifiés sur 14 ; ED 325 lue (édition 1993, réimpression 2012, 26 cas), 8 récits du module 23 comparés au texte et corrigés.
+
+## Complétude (14/11/2026, après-midi)
+Page « Puis-je remplacer ? » (lampe, fusible, prise), 68 questions ajoutées (ratio ED 6127 : QCM de 16 questions, base de 20 questions au moins par thème), vidéos officielles INRS sur la page Ressources, pages publiques mises à jour (21 h, plus d'hypothèse).

@@ -129,7 +129,7 @@ MODULES=[M19,M20,M21,M22]
 # ---- déclaration des valeurs chiffrées : jeton -> (niveau, référence) ----
 VALEURS={
  '2020':('S','S29 : ED 6127 de décembre 2020'),
- '6127':('S','S29 : numéro de la brochure ED 6127'),'2012':('S','S29 : édition de décembre 2012'),'1':('S','S27 : amendement A1'),'2':('S','S27 : amendement A2 ; S23 : 6 mm²'),
+'2012':('S','S29 : édition de décembre 2012'),'1':('S','S27 : amendement A1'),'2':('S','S27 : amendement A2 ; S23 : 6 mm²'),
  '1000':('S','S29 : maxi 1000 V du BR, borne du domaine BT'),
  '32':('S','S23 et S24 : protection 32 A du BS'),'63':('S','S23 et S24 : protection amont 63 A du BR'),'500':('S','S23 et S24 : 500 V en connexion sous tension'),
  '0,02':('S','S2 : déclenchement < 0,02 s'),

@@ -18,7 +18,7 @@ Généré par qa/audit_programme.py sur le site construit. Programme : HE-BTHT-I
 | BE : manœuvre, mesurage, vérification, essai | Programme HE-BTHT-INI-21 | CONFORME | modules 7, 15 |
 | HE manœuvre | Programme HE-BTHT-INI-21 | CONFORME | module 14 |
 | Travaux pratiques individualisés | Programme HE-BTHT-INI-21 | CONFORME | module 16, page Documents (10 grilles) |
-| Évaluation théorique individuelle (questionnaire) | Programme HE-BTHT-INI-21 | CONFORME | page Évaluation : générale, tirage de 75, 12 niveaux |
+| Évaluation théorique individuelle (questionnaire) | Programme HE-BTHT-INI-21 | CONFORME | page Évaluation : générale, tirage de 75, 12 niveaux, QCM de 16 questions (ED 6127 : 15 minimum) |
 | Évaluation pratique individuelle (grilles) | Programme HE-BTHT-INI-21 | CONFORME | page Documents |
 | Avis après formation individualisé (symboles, attributs, domaines de tension, champs) | Programme HE-BTHT-INI-21 | CONFORME | page Documents |
 | Attestation individuelle de fin de formation | Programme HE-BTHT-INI-21 | CONFORME | page Documents |
@@ -29,13 +29,14 @@ Généré par qa/audit_programme.py sur le site construit. Programme : HE-BTHT-I
 | Accessibilité handicap (référent handicap) | Programme HE-BTHT-INI-21 | CONFORME | page Documents |
 | Pas de travail à distance ni e-learning : support de salle | Programme HE-BTHT-INI-21 | CONFORME | plateforme utilisée en salle, à distance non requis (support, hors programme) |
 | Parcours individualisé : choix du symbole | Programme HE-BTHT-INI-21 | CONFORME | page Quel symbole ? |
-| Réalité virtuelle (« lorsqu'elle est mobilisée ») | Programme HE-BTHT-INI-21 | ÉCART | non couvert : équipement hors plateforme, à la charge du centre |
+| Base de questions : au moins cinq fois plus de questions par thème (ED 6127) | Programme HE-BTHT-INI-21 | CONFORME | preuves/controle-ratio-questions.json |
+| Arbres de décision de remplacement (lampe, fusible, prise) | Programme HE-BTHT-INI-21 | CONFORME | page Puis-je remplacer ?, test-arbres-remplacement.json |
 | Support aux couleurs Consul Team | CPS | CONFORME | index |
 | Questionnaire de satisfaction à chaud | CPS | CONFORME | page Documents |
 | Compte rendu jour par jour | CPS | CONFORME | page Documents |
 | Aucune mention GRETA ni RMBD sur la plateforme | CPS/consigne | CONFORME | pages publiques (hors espace formateur chiffré) |
 | Au moins 8 questions par module | qualité | CONFORME | min = 8 (module 3) |
 
-Total : 30 conformes sur 31.
+Total : 32 conformes sur 32.
 
-Questions par module : 1:12, 2:16, 3:8, 4:8, 5:8, 6:8, 7:8, 8:12, 9:9, 10:8, 11:12, 12:10, 13:9, 14:8, 15:9, 16:8, 17:8, 18:8, 19:8, 20:8, 21:8, 22:8, 23:10
+Questions par module : 1:12, 2:20, 3:8, 4:8, 5:12, 6:8, 7:12, 8:12, 9:9, 10:8, 11:20, 12:20, 13:20, 14:20, 15:20, 16:8, 17:8, 18:12, 19:8, 20:8, 21:8, 22:8, 23:10

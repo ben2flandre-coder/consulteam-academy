@@ -1,10 +1,15 @@
 import re,json,csv,sys,hashlib
 sys.path.insert(0,'/home/claude/work/src')
-import modules_tb as T, sources_new as SN
+import modules_tb as T, sources_new as SN, modules_ed6127 as E6
+T.MODULES=T.MODULES+E6.MODULES; T.VALEURS={**T.VALEURS,**E6.VALEURS}
+import q_complements as QCx
+QCx.declare(T.VALEURS)
+for _m in T.MODULES:
+    _m['questions']=list(_m['questions'])+QCx.QC.get(_m['id'],[])
 OUT='/home/claude/work/a260e2a/preuves'
 ids={s['id'] for s in SN.SOURCES}
 def strip(s):
-    s=re.sub(r'NF C \d+-\d+','',s); s=re.sub(r'\b[SFTCR]\d+(?:[, ]+S\d+)*\b','',s); return s
+    s=re.sub(r'NF C \d+-\d+','',s); s=re.sub(r'§\s?[\d.]+','',s); s=re.sub(r'pp?\. [\d, -]+','',s); s=re.sub(r'\bED \d+','',s); s=re.sub(r'\b[BH][0-2][VTNX]?\b','',s); s=re.sub(r'\b[SFTCR]\d+(?:[, ]+S\d+)*\b','',s); return s
 tok=lambda s:re.findall(r'\d+(?:,\d+)?',strip(s))
 rows=[];bad=[];used=set()
 def stmts(m):
@@ -13,7 +18,7 @@ def stmts(m):
     for q in m['questions']: yield 'question '+q['id']+' (explication)',q['why']
     for k,q in enumerate(m.get('exercices',[]),1): yield 'exercice '+str(k)+' (explication)',q['why']
 for m in T.MODULES:
-    texts=[m['title'],m['goal'],m['scenario'],m['decision'],m['answer'],m['source'],m['note']]+m['check']+[f[1] for f in m['figures']]
+    texts=[m['title'],m['goal'],m['scenario'],m['decision'],m['answer'],m['source'],m['note']]+m['check']+[f[1] for f in m.get('figures',[])]
     texts+= [s[0]+' '+s[1] for s in m['sections']]
     for q in m['questions']+m.get('exercices',[]): texts+= [q['q'],q['why']]+q['options']
     for s in texts:

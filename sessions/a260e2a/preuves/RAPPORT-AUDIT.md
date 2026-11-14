@@ -1,24 +1,28 @@
 # Rapport d'audit — plateforme A260E2A (14/11/2026)
 
-Durée retenue : 21 h dont 7 h de pratique (programme Consul Team HE-BTHT-INI-21).
+Durée retenue : 21 h dont 7 h de pratique (programme Consul Team HE-BTHT-INI-21). Référentiel : INRS (ED 6127, FAQ, diaporama, guide SST, ED 325), qui fait foi pour la formation.
 
 ## Résultats
 | Contrôle | Résultat | Preuve |
 |---|---|---|
-| Conformité au programme commandé | 30 exigences conformes sur 31 ; seul écart : réalité virtuelle (équipement du centre, hors plateforme) | audit-conformite-programme.md |
-| Conformité réglementaire | 13 vérifiés sur 14 (référentiel INRS : ED 6127, FAQ, diaporama, ED 325, TS876, guide SST ; arrêtés de 2013 et 2024 ; NF C 15-100) ; 1 réserve : détail de chaque récit du module 23 à comparer à l'ED 325 | audit-conformite-reglementaire.md |
-| Traçabilité des contenus | 405 affirmations, 0 sans référence, 0 nombre non déclaré (sections ajoutées dans build_site.py du module 8 relues à la main) | matrice-affirmations-sources.csv, controle-valeurs-chiffrees.json |
-| Banque de questions | 211 questions, au moins 8 par module ; 12 évaluations par niveau, générale complète, tirage de 75 | audit-conformite-programme.md, test-evaluations.json |
-| Accessibilité (axe, WCAG 2.1 AA) | 0 violation sur 13 pages, clair et sombre (affichage clair forcé) | qa-accessibilite-axe.json |
-| Affichage | 60 combinaisons (15 pages × 4 appareils) sans débordement ni erreur | qa-responsive.json |
-| Hors ligne | service worker prêt, page et images chargées sans réseau | test-hors-ligne.json |
+| Conformité au programme commandé | 32 exigences sur 32 conformes (la réalité virtuelle est hors périmètre de cette session) | audit-conformite-programme.md |
+| Conformité réglementaire | 14 points sur 14 vérifiés : seuils BS/BR (ED 6127, FAQ et diaporama INRS), voisinage (arrêté du 9 juillet 2013, ED 6127), zones 1 à 4 (tableau ED 6127), arrêtés de 2013 et 2024, NF C 15-100, ED 325 | audit-conformite-reglementaire.md |
+| Études de cas d'accidents (module 23) | Les 8 récits comparés au texte de l'ED 325 (26 cas : 13 contacts directs, 6 indirects, 7 brûlures ou explosions) ; 4 résumés corrigés (boîte de jonction, échelle contre la cellule voisine, brûlures, décompte « quatre cas sur huit ») | S32 du registre |
+| Traçabilité des contenus | 450 affirmations, 0 sans référence, 0 nombre non déclaré | matrice-affirmations-sources.csv, controle-valeurs-chiffrees.json |
+| Banque de questions | 279 questions, 8 au moins par module. QCM par niveau de 16 questions (ED 6127 : 15 au minimum), 4 par thème, tirées d'une base d'au moins 20 questions par thème (cinq fois plus) : dangers 20, zones 20, protections 30, limites de chaque niveau de 20 à 24 | controle-ratio-questions.json, test-evaluations.json |
+| Arbres de décision de remplacement | Page « Puis-je remplacer ? » : lampe, fusible, socle de prise ; 21 chemins testés, chaque chemin mène à une issue (arrêt, à faire avant, remplacement possible) | test-arbres-remplacement.json |
+| Accessibilité (axe, WCAG 2.1 AA) | 0 violation sur 14 pages, clair et sombre | qa-accessibilite-axe.json |
+| Affichage | 64 combinaisons (16 pages × 4 appareils), 0 débordement, 0 erreur | qa-responsive.json |
+| Hors ligne | service worker prêt, pages et images chargées sans réseau | test-hors-ligne.json |
 | Studio et évaluations | 0 erreur | test-studio.json, test-evaluations.json |
 
 ## Ajouts de cette passe
-Fiche individuelle de parcours et mention accessibilité handicap (exigences du programme), module 8 complété (INRS S33 à S35), sources S36 à S40 (arrêté de 2013, FAQ et diaporama INRS, amendement A2, NF C 15-100), 46 questions, mode clair forcé, tableaux accessibles au clavier.
+Arbres de décision lampe, fusible, prise ; 68 questions pour atteindre le ratio de l'ED 6127 ; corrections du module 23 d'après l'ED 325 ; section de vidéos officielles de l'INRS (Napo, webinaire, interview) sur la page Ressources ; mentions périmées retirées des pages publiques (durée « en hypothèse », modules « en rédaction »).
 
-## Ce qui reste hors de portée de cette session
-- NF C 18-510 (norme payante) : texte non lu, mais seuils BS/BR et périmètre alignés sur le référentiel INRS (ED 6127, FAQ, diaporama), qui fait foi pour la formation ; amendement A2 (juin 2023, applicable octobre 2024) précise les interventions sans nouveau seuil relevé. Relecture finale par le formateur.
-- Relecture technique par un formateur habilité : modules 9, 12 à 17, 19 à 23, schémas, images IA, grilles pratiques, documents de session.
-- Détail de chaque récit du module 23 à comparer à l'ED 325 (édition et thèmes confirmés) ; le ratio de cinq fois plus de questions que posées (ED 6127) n'est pas atteint par niveau.
-- Arbres de décision détaillés de remplacement (lampe, fusible, prise) et vidéos non produits ; équipement de réalité virtuelle non couvert.
+## Ce qui reste à faire par Benoît
+- Relecture technique des modules, schémas, images IA, grilles pratiques et documents de session avant la session de décembre.
+- Décision sur `main` (fusion directe, pull request ou attente) ; les liens apprenants sont actifs après fusion.
+
+## Précisions de méthode
+- La norme NF C 18-510 est payante et n'est pas reproduite ; les seuils et périmètres suivent le référentiel INRS. L'amendement A2 (juin 2023, applicable octobre 2024) ne change aucun seuil relevé.
+- Les sections ajoutées directement dans build_site.py (module 8) et les pages de décision ne sont pas couvertes par le contrôle automatique : relues à la main.

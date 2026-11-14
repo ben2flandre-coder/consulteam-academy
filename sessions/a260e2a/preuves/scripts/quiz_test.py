@@ -13,7 +13,7 @@ with sync_playwright() as p:
         res=pg.evaluate("""(mode)=>{
           const Q={};A.modules.forEach(m=>m.questions.forEach(q=>Q[q.q]=q));
           document.querySelectorAll('fieldset').forEach(fs=>{
-            const q=Q[fs.querySelector('legend strong').textContent.replace(/^\\d+\\. /,'')];const t=q.type||'s';
+            const q=Q[fs.querySelector('legend').textContent.replace(/^\\d+\\. /,'')];const t=q.type||'s';
             const opts=[...fs.querySelectorAll('.opt')];
             if(t==='o'){opts.forEach(l=>{const tx=l.querySelector('span').textContent;const i=q.options.indexOf(tx);const sel=l.querySelector('select');sel.value=String(mode==='all'?i:(i+1)%q.options.length)})}
             else{opts.forEach(l=>{const tx=l.querySelector('span').textContent;const i=q.options.indexOf(tx);const good=t==='s'?i===q.correct:q.correct.includes(i);const inp=l.querySelector('input');inp.checked=(mode==='all')?good:!good})}

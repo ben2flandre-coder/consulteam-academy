@@ -195,6 +195,16 @@
 12;question T12-08 (explication);Éliminer le risque, organiser, délimiter, signaler, respecter et faire respecter [S29].;S29;S;OK
 12;question T12-09 (explication);Le module de thèmes techniques demande d'expliquer le fonctionnement et de manœuvrer ces dispositifs [S29].;S29;S;OK
 12;question T12-10 (explication);"L'attestation de consignation fait partie des documents applicables aux travaux [S29] ; elle est reçue avant de commencer [R].";S29;R;OK
+12;question N12-01 (explication);Le chiffre 1 désigne l'exécutant [S29].;S29;S;OK
+12;question N12-02 (explication);En voisinage renforcé, H0V s'applique aux opérations d'ordre non électrique [S29].;S29;S;OK
+12;question N12-03 (explication);Pour H1V et H2V, on évalue en plus les équipements de protection collective [S29].;S29;S;OK
+12;question N12-04 (explication);Répartition : 3 h, 1,5 h et 2 h [S29].;S29;S;OK
+12;question N12-05 (explication);Pour H1 et H1V : consignes de sécurité et EPI [S29].;S29;S;OK
+12;question N12-06 (explication);Pour H2 et H2V, on évalue la préparation et la direction des travaux [S29].;S29;S;OK
+12;question N12-07 (explication);Ordre du pas-à-pas du module [S29, R].;S29;R;OK
+12;question N12-08 (explication);Il connaît le rôle du chargé de consignation et du chargé d'exploitation électrique [S29].;S29;S;OK
+12;question N12-09 (explication);Le domaine se précise avant le choix des thèmes [S29, R].;S29;R;OK
+12;question N12-10 (explication);H désigne la haute tension [S29].;S29;S;OK
 13;section : Le rôle du chargé de consignation;Le chargé de consignation identifie le chargé d'exploitation électrique, connaît son rôle et échange avec lui les informations [S29].;S29;S;OK
 13;section : Le rôle du chargé de consignation;Il suit les instructions reçues [S29].;S29;S;OK
 13;section : Le rôle du chargé de consignation;Le symbole HC concerne la consignation d'un ouvrage ou d'une installation électrique en haute tension [S29].;S29;S;OK
@@ -232,6 +242,17 @@
 13;question T13-07 (explication);Les documents prévoient une attestation en une ou deux étapes et une attestation de première étape [S29].;S29;S;OK
 13;question T13-08 (explication);La déconsignation suit l'avis de fin de travail et l'organisation prévue avec le chargé d'exploitation [S29, R].;S29;R;OK
 13;question T13-09 (explication);HC concerne la consignation en haute tension [S29].;S29;S;OK
+13;question N13-01 (explication);HC concerne la consignation en haute tension [S29].;S29;S;OK
+13;question N13-02 (explication);Il suit les instructions reçues [S29].;S29;S;OK
+13;question N13-03 (explication);Ordre général des étapes du module BC [S22].;S22;S;OK
+13;question N13-04 (explication);On déconsigne après l'avis de fin de travail [S29].;S29;S;OK
+13;question N13-05 (explication);Une analyse préalable précède la consignation [S29].;S29;S;OK
+13;question N13-06 (explication);L'avis de réquisition se renseigne si nécessaire [S29].;S29;S;OK
+13;question N13-07 (explication);Ces thèmes figurent au module de thèmes techniques HT [S29].;S29;S;OK
+13;question N13-08 (explication);Répartition identique à celle des travaux HT : 3 h, 1,5 h, 2 h [S29].;S29;S;OK
+13;question N13-09 (explication);Elle est évaluée pour BC et HC [S29].;S29;S;OK
+13;question N13-10 (explication);Le circuit exact se précise avec l'exploitant [R].;;R;OK
+13;question N13-11 (explication);Il connaît la fonction des matériels : coupure, protection, séparation [S29].;S29;S;OK
 14;section : Un symbole à compléter par un attribut;Les symboles BE et HE doivent être complétés par un attribut : Essai, Vérification, Mesurage ou Manœuvre [S29].;S29;S;OK
 14;section : Un symbole à compléter par un attribut;HE seul ne dit donc pas quelle opération est permise [S29, R].;S29;R;OK
 14;section : Un symbole à compléter par un attribut;HE Manœuvre couvre la manœuvre de matériel pour mettre hors ou sous tension un équipement ou une installation [S29].;S29;S;OK
@@ -267,6 +288,18 @@
 14;question T14-06 (explication);On s'arrête et on rend compte : la manœuvre ne devient pas un dépannage [S29, R].;S29;R;OK
 14;question T14-07 (explication);Le compte rendu fait partie des savoir-faire évalués pour tous les symboles [S29].;S29;S;OK
 14;question T14-08 (explication);Le module demande d'expliquer le fonctionnement et de manœuvrer ces dispositifs [S29].;S29;S;OK
+14;question N14-01 (explication);HE Manœuvre couvre la manœuvre de matériel [S29].;S29;S;OK
+14;question N14-02 (explication);Les attributs sont Essai, Vérification, Mesurage et Manœuvre [S29].;S29;S;OK
+14;question N14-03 (explication);Il échange avec le chargé d'exploitation électrique et le chargé de consignation [S29].;S29;S;OK
+14;question N14-04 (explication);Les manœuvres en HTA suivent le module de base [S29].;S29;S;OK
+14;question N14-05 (explication);Un module est propre aux manœuvres en HTB [S29].;S29;S;OK
+14;question N14-06 (explication);Ordre du pas-à-pas du module [S29, R].;S29;R;OK
+14;question N14-07 (explication);On respecte le verrouillage et l'interverrouillage [S29, R].;S29;R;OK
+14;question N14-08 (explication);Identifier, vérifier et utiliser les EPI [S29].;S29;S;OK
+14;question N14-09 (explication);Le choix reste à confirmer [R].;;R;OK
+14;question N14-10 (explication);On rend compte au chargé d'exploitation ou au chargé de consignation [S29].;S29;S;OK
+14;question N14-11 (explication);Il connaît les limites de l'habilitation HE ou BE (manœuvres permises) [S29].;S29;S;OK
+14;question N14-12 (explication);Structure des ouvrages (ligne et poste) [S29].;S29;S;OK
 15;section : Trois attributs, trois formations;BE doit être complété par un attribut : Mesurage, Vérification ou Essai (ou Manœuvre) [S29].;S29;S;OK
 15;section : Trois attributs, trois formations;Le mesurage et la vérification partagent un module de formation, l'essai a le sien [S29].;S29;S;OK
 15;section : Trois attributs, trois formations;La vérification comprend l'examen visuel, l'essai et le mesurage [S29].;S29;S;OK
@@ -302,6 +335,17 @@
 15;question T15-07 (explication);La réquisition concerne uniquement HE Essai, si nécessaire [S29].;S29;S;OK
 15;question T15-08 (explication);EPI évalués pour BE et HE [S29].;S29;S;OK
 15;question T15-09 (explication);Le module essai ajoute des consignes pour ces essais particuliers [S29].;S29;S;OK
+15;question N15-01 (explication);Mesurage et vérification partagent un module, l'essai a le sien [S29].;S29;S;OK
+15;question N15-02 (explication);4 h pour BE Mesurage et BE Vérification [S29].;S29;S;OK
+15;question N15-03 (explication);La réquisition ne concerne que le HE Essai, si nécessaire [S29].;S29;S;OK
+15;question N15-04 (explication);Le module essai ajoute ces trois éléments [S29].;S29;S;OK
+15;question N15-05 (explication);On évalue la réalisation d'un mesurage ou d'une vérification [S29].;S29;S;OK
+15;question N15-06 (explication);Il s'applique à BE et à HE [S29].;S29;S;OK
+15;question N15-07 (explication);Ordre du pas-à-pas du module [S29, R].;S29;R;OK
+15;question N15-08 (explication);L'attribut du titre doit correspondre à l'opération [S29, R].;S29;R;OK
+15;question N15-09 (explication);Autorisation de travail et instructions de sécurité [S29].;S29;S;OK
+15;question N15-10 (explication);Éliminer le risque, organiser, délimiter, signaler [S29].;S29;S;OK
+15;question N15-11 (explication);Il comprend l'identification du chargé d'exploitation et l'échange avec lui [S29].;S29;S;OK
 16;section : Une pratique individuelle;La formation doit comporter une partie pratique, de préférence dans l'environnement habituel de l'apprenant ou dans un environnement aussi proche que possible du réel, sur des installations représentatives [S29].;S29;S;OK
 16;section : Une pratique individuelle;Pour les modules spécifiques, l'apprenant réalise lui-même les opérations [S29].;S29;S;OK
 16;section : Une pratique individuelle;Pour les thèmes communs, la formation pratique peut être individuelle ou de groupe [S29].;S29;S;OK
@@ -357,10 +401,11 @@
 23;section : Méthode : analyser un accident en quatre temps;2) Chercher les causes : matériel, méthode, organisation, personne et environnement [R].;;R;OK
 23;section : Méthode : analyser un accident en quatre temps;3) Repérer la barrière qui a manqué : mise hors tension, consignation, vérification d'absence de tension, protection différentielle, outil isolé, surveillance [S32, R].;S32;R;OK
 23;section : Méthode : analyser un accident en quatre temps;4) Relier à la règle : symbole d'habilitation, limites de l'opération, document applicable [S29, R].;S29;R;OK
-23;section : Cas 1 · Remplacement d'un coffret sous tension;Lors du remplacement d'un coffret dans un sous-sol, un ouvrier touche une pièce sous tension et est foudroyé [S32].;S32;S;OK
-23;section : Cas 1 · Remplacement d'un coffret sous tension;L'enquête retient que le travail a été fait sous tension alors que ce n'était pas indispensable [S32].;S32;S;OK
-23;section : Cas 1 · Remplacement d'un coffret sous tension;La règle : les travaux se font hors tension chaque fois que c'est possible, et le remplacement d'un coffret relève des travaux B1 ou B2 [S29].;S29;S;OK
-23;section : Cas 1 · Remplacement d'un coffret sous tension;Voir les modules 9 et 11 [R].;;R;OK
+23;section : Cas 1 · Boîte de jonction remplacée sous tension;Dans un sous-sol, un électricien remplace une boîte de jonction sous tension, touche une partie active et est électrocuté [S32].;S32;S;OK
+23;section : Cas 1 · Boîte de jonction remplacée sous tension;L'enquête retient que le travail a été fait sous tension alors que ce n'était pas indispensable [S32].;S32;S;OK
+23;section : Cas 1 · Boîte de jonction remplacée sous tension;La règle de l'ED 325 : travailler hors tension, sauf si la séparation est impossible ou si la tâche exige la tension [S32].;S32;S;OK
+23;section : Cas 1 · Boîte de jonction remplacée sous tension;Le remplacement d'un coffret ou d'une armoire relève des travaux B1 ou B2 [S29].;S29;S;OK
+23;section : Cas 1 · Boîte de jonction remplacée sous tension;Voir les modules 9 et 11 [R].;;R;OK
 23;section : Cas 2 · Fusible retiré en charge;Un électricien retire un fusible sans arrêter la machine : un arc se produit et il est gravement brûlé [S32].;S32;S;OK
 23;section : Cas 2 · Fusible retiré en charge;Le coupe-circuit à fusible n'était pas prévu pour séparer un circuit en charge [S32].;S32;S;OK
 23;section : Cas 2 · Fusible retiré en charge;À retenir : arrêter l'installation avant d'intervenir et ne pas utiliser un organe qui ne sait pas couper en charge [S32, R].;S32;R;OK
@@ -373,25 +418,25 @@
 23;section : Cas 4 · Une clé tombe sur les barres;L'intervention sous tension n'était pas nécessaire [S32].;S32;S;OK
 23;section : Cas 4 · Une clé tombe sur les barres;À retenir : travailler hors tension, ou utiliser des outils sans partie métallique exposée [S32].;S32;S;OK
 23;section : Cas 4 · Une clé tombe sur les barres;Voir les modules 19 à 22 [R].;;R;OK
-23;section : Cas 5 · Un pôle resté fermé;Un ajusteur non habilité intervient seul : son bras touche les bornes d'un transformateur et il est profondément brûlé [S32].;S32;S;OK
+23;section : Cas 5 · Un pôle resté fermé;Un ajusteur non habilité intervient seul : son bras touche les bornes d'un transformateur et il est brûlé [S32].;S32;S;OK
 23;section : Cas 5 · Un pôle resté fermé;Un pôle de l'interrupteur général était resté fermé après un mauvais contact et l'ouverture n'avait pas été vérifiée sur tous les pôles [S32].;S32;S;OK
 23;section : Cas 5 · Un pôle resté fermé;À retenir : intervention réservée à un personnel qualifié et habilité, et vérification de l'absence de tension sur tous les pôles [S32].;S32;S;OK
 23;section : Cas 5 · Un pôle resté fermé;Voir le module 6 [R].;;R;OK
-23;section : Cas 6 · Retour dans une cellule voisine;"Pendant le nettoyage d'une cellule consignée, un électricien revient après une pause, monte sur un escabeau près d'une cellule voisine restée sous tension et touche un conducteur ; il chute et décède [S32].";S32;S;OK
-23;section : Cas 6 · Retour dans une cellule voisine;Les installations voisines sous tension n'étaient pas identifiées et la zone de travail n'était pas délimitée [S32].;S32;S;OK
+23;section : Cas 6 · Retour dans une cellule voisine;Pendant le nettoyage d'une cellule consignée, un électricien appuie une échelle contre une cellule voisine restée sous tension, touche un conducteur, chute et décède [S32].;S32;S;OK
+23;section : Cas 6 · Retour dans une cellule voisine;La tâche était mal définie, les installations sous tension n'étaient pas identifiées et les zones de travail n'étaient pas délimitées [S32].;S32;S;OK
 23;section : Cas 6 · Retour dans une cellule voisine;À retenir : définir précisément les travaux, identifier ce qui reste sous tension et délimiter la zone [S32].;S32;S;OK
 23;section : Cas 6 · Retour dans une cellule voisine;Voir les modules 13 et 18 [R].;;R;OK
 23;section : Cas 7 · Ampoule remplacée sous tension;Dans un sous-sol humide, un ouvrier remplace une ampoule sans couper le courant, touche une douille en contact avec un conducteur sous tension et meurt [S32].;S32;S;OK
 23;section : Cas 7 · Ampoule remplacée sous tension;L'éclairage provisoire était inadapté et le travail a été fait sans électricien [S32].;S32;S;OK
 23;section : Cas 7 · Ampoule remplacée sous tension;À retenir : couper avant de remplacer, et préférer un éclairage très basse tension de sécurité ou des luminaires fermés en local mouillé [S32].;S32;S;OK
 23;section : Cas 7 · Ampoule remplacée sous tension;Rapprochez ce cas du remplacement d'une lampe autorisé au BS, qui se fait hors tension [S29].;S29;S;OK
-23;section : Cas 8 · Des couvreurs près d'une ligne;Deux couvreurs travaillent tout près d'une ligne haute tension : l'un touche vraisemblablement les conducteurs, chute et décède [S32].;S32;S;OK
+23;section : Cas 8 · Des couvreurs près d'une ligne;Deux couvreurs travaillent tout près d'une ligne haute tension : l'un touche les conducteurs et décède [S32].;S32;S;OK
 23;section : Cas 8 · Des couvreurs près d'une ligne;La présence de la ligne n'a été prise en compte par personne et aucune déclaration d'intention de commencement de travaux n'avait été établie [S32].;S32;S;OK
 23;section : Cas 8 · Des couvreurs près d'une ligne;À retenir : repérer les ouvrages électriques avant les travaux et respecter les distances [S32].;S32;S;OK
 23;section : Cas 8 · Des couvreurs près d'une ligne;Voir le module 18 sur le voisinage [R].;;R;OK
 23;situation;Un électricien remplace un appareil dans une armoire sans avoir coupé l'alimentation, « pour gagner du temps ».;;;OK
 23;situation;Qu'est-ce qui peut mal tourner, et qu'aurait-il fallu avoir en place ?;;;OK
-23;réponse;Trois cas sur huit viennent d'un travail sous tension non nécessaire [S32].;S32;S;OK
+23;réponse;Dans quatre des huit cas (1, 2, 4 et 7), l'accident vient d'un travail sous tension ou en charge qu'une mise hors tension ou un arrêt préalable aurait évité [S32].;S32;S;OK
 23;réponse;Les travaux se font hors tension chaque fois que c'est possible, après une préparation qui inclut la consignation et la vérification d'absence de tension [S29].;S29;S;OK
 23;réponse;Il faut donc couper, consigner, vérifier, puis remplacer [S29, R].;S29;R;OK
 23;question T23-01 (explication);L'enquête retient un travail sous tension non indispensable [S32].;S32;S;OK

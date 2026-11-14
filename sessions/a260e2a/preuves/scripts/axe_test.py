@@ -1,6 +1,6 @@
 import json,sys
 from playwright.sync_api import sync_playwright
-pages=['index.html','parcours.html','evaluation.html','documents.html','decision.html','registre.html','galerie.html','glossaire.html','livret.html','credits.html','cours/index.html','ressources.html','mediatheque.html']
+pages=['index.html','parcours.html','evaluation.html','documents.html','decision.html','remplacer.html','registre.html','galerie.html','glossaire.html','livret.html','credits.html','cours/index.html','ressources.html','mediatheque.html']
 axe=open('/tmp/axe/node_modules/axe-core/axe.min.js').read()
 out={}
 with sync_playwright() as p:

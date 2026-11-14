@@ -1,0 +1,98 @@
+{
+ "qcm_questions": 16,
+ "minimum_ed6127": 15,
+ "ok_taille": true,
+ "tirage_par_theme": 4,
+ "themes": {
+  "dangers": {
+   "base": 20,
+   "exigence": 20,
+   "ok": true
+  },
+  "zones": {
+   "base": 20,
+   "exigence": 20,
+   "ok": true
+  },
+  "protections": {
+   "base": 30,
+   "exigence": 20,
+   "ok": true
+  }
+ },
+ "niveaux": {
+  "socle": {
+   "titre": "Socle commun",
+   "base_limites": 62,
+   "exigence": 20,
+   "ok": true
+  },
+  "b0": {
+   "titre": "B0 · H0 · H0V",
+   "base_limites": 20,
+   "exigence": 20,
+   "ok": true
+  },
+  "bs": {
+   "titre": "BS",
+   "base_limites": 20,
+   "exigence": 20,
+   "ok": true
+  },
+  "bem": {
+   "titre": "BE Manœuvre",
+   "base_limites": 20,
+   "exigence": 20,
+   "ok": true
+  },
+  "bemve": {
+   "titre": "BE Mesurage · Vérification · Essai",
+   "base_limites": 20,
+   "exigence": 20,
+   "ok": true
+  },
+  "b1b2": {
+   "titre": "B1 · B1V · B2 · B2V",
+   "base_limites": 21,
+   "exigence": 20,
+   "ok": true
+  },
+  "br": {
+   "titre": "BR",
+   "base_limites": 24,
+   "exigence": 20,
+   "ok": true
+  },
+  "bc": {
+   "titre": "BC",
+   "base_limites": 20,
+   "exigence": 20,
+   "ok": true
+  },
+  "h1h2": {
+   "titre": "H1 · H1V · H2 · H2V",
+   "base_limites": 20,
+   "exigence": 20,
+   "ok": true
+  },
+  "hc": {
+   "titre": "HC",
+   "base_limites": 20,
+   "exigence": 20,
+   "ok": true
+  },
+  "he": {
+   "titre": "HE Manœuvre",
+   "base_limites": 20,
+   "exigence": 20,
+   "ok": true
+  },
+  "metier": {
+   "titre": "Appareillage, pratique et métier",
+   "base_limites": 32,
+   "exigence": 20,
+   "ok": true
+  }
+ },
+ "defauts": []
+}

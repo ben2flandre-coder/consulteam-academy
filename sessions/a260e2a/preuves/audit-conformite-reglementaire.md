@@ -14,12 +14,12 @@ Affirmations réglementaires structurantes de la plateforme, avec la source lue 
 | Avis après formation (contenu minimal) ; titre délivré par l'employeur | ED 6127 §7.2 + programme commandé | S29 | VÉRIFIÉ | Documents |
 | Conduite à tenir en cas d'accident : trois actions, protéger, brûlures, dégagement d'urgence | INRS SST | S31, S33, S34, S35 | VÉRIFIÉ | Module 8 |
 | Pas d'obligation de former les habilités au SST ; double compétence recommandée | Code du travail R. 4224-15/16 via INRS TS876 | S34 | VÉRIFIÉ (réponse INRS indicative) ; articles non relus | Module 8 |
-| Études de cas d'accidents | INRS ED 325 | S32 | VÉRIFIÉ pour l'édition et les thèmes (fetch du PDF INRS : 24 cas, dont fusible en charge, mesure avec appareil en mauvais état, éclairage provisoire en local mouillé, toiture près d'une ligne, nettoyage de poste HT, personnel non qualifié) ; RÉSERVE : détail de chaque récit à comparer à la brochure | Module 23 |
+| Études de cas d'accidents | INRS ED 325 | S32 | VÉRIFIÉ pour l'édition et les thèmes (fetch du PDF INRS : 26 cas, dont fusible en charge, mesure avec appareil en mauvais état, éclairage provisoire en local mouillé, toiture près d'une ligne, nettoyage de poste HT, personnel non qualifié)  ; chaque récit du module 23 comparé au texte et corrigé le 14/11/2026 | Module 23 |
 | Réserve de 20 % de modules libres en tableau de logement | NF C 15-100 | S14, S40 | VÉRIFIÉ : trois sources concordantes (Eduscol, Promotelec, Legrand) ; norme elle-même non lue | Module 22 |
 | Périmètre exact des opérations BR/BS/BE (remplacement, installation d'appareil) | NF C 18-510 compilée juin 2023 | S27, S37, S38, S39 | VÉRIFIÉ : CONFORME AU RÉFÉRENTIEL INRS (qui fait foi pour la formation) ; amendement A2 (juin 2023, applicable octobre 2024) précise les interventions sans seuil nouveau relevé ; texte payant non lu : relecture finale du formateur | Modules 21, 22 |
 | Arrêté du 5 juillet 2024 (travaux d'ordre non électrique) et normes citées | Arrêté du 5 juillet 2024 | S26 | VÉRIFIÉ : texte publié au JO consulté en copie (distances 3 m / 5 m, visa de l'arrêté de 2013) | Registre |
 
-Bilan : 13 vérifiés sans réserve, 1 avec réserve, 0 non vérifiables ici.
+Bilan : 14 vérifiés sans réserve, 0 avec réserve, 0 non vérifiables ici.
 
 ## Registre : limites déclarées par source
 
@@ -54,7 +54,7 @@ Bilan : 13 vérifiés sans réserve, 1 avec réserve, 0 non vérifiables ici.
 - S29 (lu (texte extrait du PDF de 52 pages)) : Antérieure à A2 (juin 2023) ; pas de section de conducteur dans la brochure ; renvoie à la NF C 18-510 pour la portée des symboles et les limitations.
 - S30 (lu) : Édition remplacée, conservée pour tracer l'évolution ; ne pas enseigner à partir d'elle.
 - S31 (lu (rubrique de secours)) : Ne distingue pas la basse et la haute tension dans les étapes de secours ; ne traite ni les brûlures ni le suivi médical ; les gestes détaillés du SST (ED 7000, guide des données techniques) n'ont pas été lus.
-- S32 (lu par synthèse de page (outil de lecture), pas en lecture intégrale du PDF) : Édition confirmée le 14/11/2026 (2e édition 1993, réimpression août 2012, 24 cas : 11 contacts directs, 6 contacts indirects, 7 brûlures, incendies ou explosions) ; les thèmes de plusieurs cas du module 23 y figurent (fusible en charge, appareil de mesure en mauvais état, éclairage provisoire en local mouillé, toiture près d'une ligne, nettoyage d'un poste HT, personnel non qualifié) ; le détail de chaque récit reste à comparer à la brochure.
+- S32 (lu par synthèse de page (outil de lecture), pas en lecture intégrale du PDF) : Édition confirmée le 14/11/2026 (2e édition 1993, réimpression août 2012, 26 cas : 13 contacts directs, 6 contacts indirects, 7 brûlures, incendies ou explosions) ; les thèmes de plusieurs cas du module 23 y figurent (fusible en charge, appareil de mesure en mauvais état, éclairage provisoire en local mouillé, toiture près d'une ligne, nettoyage d'un poste HT, personnel non qualifié) ; chaque récit du module 23 a été comparé au texte (cas 7, 11, 13, 15, 20, 23, 24, 26 de la brochure) et corrigé le 14/11/2026.
 - S33 (lu (extraits : protéger, brûlures, défibrillation ; fichier du cloud SST fourni par Benoît le 14/11/2026)) : Lu par extraits ; le guide ne détaille pas la coupure d'une installation électrique, qui relève de l'habilitation.
 - S34 (lu en entier (une page)) : Réponse indicative ; renvoie aux articles R. 4224-15 et R. 4224-16 du Code du travail, non relus ici.
 - S35 (lu (extraits : protéger, brûlures)) : Aide-mémoire synthétique ; lu par extraits.

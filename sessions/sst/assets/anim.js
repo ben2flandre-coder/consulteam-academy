@@ -27,5 +27,5 @@ function play(){stop();timer=setInterval(function(){go(i+1)},5000);pl.textConten
 box.querySelector(".pv").onclick=function(){stop();go(i-1)};box.querySelector(".nx").onclick=function(){stop();go(i+1)};pl.onclick=function(){timer?stop():play()};
 box.addEventListener("keydown",function(e){if(e.key==="ArrowRight"){stop();go(i+1)}if(e.key==="ArrowLeft"){stop();go(i-1)}});
 render()}
-Array.prototype.forEach.call(document.querySelectorAll(".anim[data-sc]"),init);
+window.initAnim=init;Array.prototype.forEach.call(document.querySelectorAll(".anim[data-sc]"),init);
 })();

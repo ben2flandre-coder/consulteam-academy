@@ -1,4 +1,10 @@
 # Journal des changements
+## v0.7.0 — 14/11/2026
+- Diaporama dans la partie animation : choix des diapositives par demi-journée, bloc ou diapositive, lancement plein écran, clavier, plan, mémorisation locale du choix.
+- Mise en page optimisée (site, animation, livrets) : espaces mieux occupés, grilles texte/visuels, impression ajustée.
+- Livret formateur (page + PDF) ; livret apprenant refondu.
+- Accès formateur : code ou l'une des deux adresses e-mail autorisées.
+- Déroulé strictement respecté : J1 matin C1-C6-C7-C8 ; J1 après-midi C2, C3 + introduction C4 ; J2 matin réactivation puis reprise C4 et début C5 (saignements, étouffement) ; J2 après-midi suite C5 (PLS, malaise, brûlure, plaies × traumatismes, RCP/DAE).
 ## v0.6.0 — 14/11/2026
 - Animation complète : déroulé animé des 4 demi-journées, dans l'ordre des blocs du parcours (15 blocs, 25 étapes de projection avec les fiches secourir découpées par situation).
 - Pour chaque bloc : objectifs, réflexe, schémas commentés, essentiel, pièges, mise en situation, question flash, note formateur ; fiches secourir intégrées au bon moment (matin 2 : saignement, étouffement ; après-midi 2 : PLS, malaise, brûlure, plaie, douleur, RCP et DAE).

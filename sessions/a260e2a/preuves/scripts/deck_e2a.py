@@ -292,10 +292,10 @@ h1,h2,h3,.k,.tag2,.pill{font-family:var(--ff)}
 .dk-top button{background:#0d3a5c;color:#fff;border:1px solid #9ed0ea;border-radius:8px;padding:6px 10px;cursor:pointer;font:inherit;font-weight:800;min-height:36px}
 body.qbig #qbtn{background:var(--y);color:var(--n)}
 .timer.over{background:var(--ko)!important}
-#stage{position:fixed;top:var(--bar);bottom:64px;left:0;right:0;background:var(--bg);overflow:hidden}
-.slide{display:none;height:100%;overflow:auto;padding:clamp(14px,3vh,40px) clamp(16px,4.5vw,72px) 150px;position:relative}
-.slide.active{display:block;animation:sl .32s ease both}@keyframes sl{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
-.slide.back.active{animation-name:slb}@keyframes slb{from{opacity:0;transform:translateX(-18px)}to{opacity:1;transform:none}}
+#stage{position:fixed;top:var(--bar);bottom:148px;left:0;right:0;background:var(--bg);overflow:hidden}
+.slide{display:none;height:100%;overflow:auto;padding:clamp(14px,3vh,40px) clamp(16px,4.5vw,72px) 24px;position:relative}
+.slide.active{display:block;animation:sl .32s ease both}@keyframes sl{from{opacity:0}to{opacity:1}}
+.slide.back.active{animation-name:slb}@keyframes slb{from{opacity:0}to{opacity:1}}
 .slide h1{font-size:2.4em;margin:.1em 0 .3em;line-height:1.08;color:var(--n)}.slide h2{font-size:1.75em;line-height:1.12;margin:.05em 0 .55em;color:var(--n);display:flex;align-items:center;gap:.4em}.slide h3{font-size:1.15em;margin:.1em 0 .3em;color:var(--n)}
 .slide .k{display:block;color:#8a520a;font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:.62em;margin-bottom:.25em}
 .ic{width:1.3em;height:1.3em;flex:none}.ic.h{width:1.2em;height:1.2em;color:var(--b)}.ic.sm{width:1.6em;height:1.6em;color:var(--b);margin-bottom:.15em}
@@ -329,11 +329,11 @@ body.qbig #qbtn{background:var(--y);color:var(--n)}
 .opt .l{flex:0 0 auto;width:1.6em;height:1.6em;border-radius:50%;background:var(--n);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:.8em}
 .opt.good{border-color:var(--ok);background:#e9f7f0}.opt.bad{border-color:var(--ko);background:#fdeceb}.qexp{margin-top:.6em;font-weight:700}
 /* QR : visible sur chaque diapo */
-.qb{position:fixed;right:14px;bottom:78px;display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:14px;background:rgba(16,44,83,.96);color:#fff;font-size:12px;z-index:15;box-shadow:0 8px 24px rgba(0,0,0,.35);flex-direction:row-reverse;max-width:min(360px,60vw)}
+.qb{position:fixed;left:0;right:0;bottom:64px;height:84px;display:flex;align-items:center;justify-content:space-between;flex-direction:row-reverse;gap:12px;padding:6px max(14px,3vw);background:var(--n);color:#fff;font-size:clamp(12px,.9vw + .5vh,19px);z-index:15;border-top:3px solid var(--y)}
 .qb:not(.qa){display:none}.slide.active .qb{display:flex}
 .qb span{display:flex;flex-direction:column;line-height:1.3}.qb b{color:var(--y);font-size:1.05em}.qb a{color:#9ed0ea;font-weight:700}
-.qb img{width:92px;height:92px;border-radius:8px;background:#fff;padding:2px;transition:width .2s,height .2s}
-body.qbig .slide.active .qb{font-size:20px;padding:14px 18px}body.qbig .slide.active .qb img{width:min(30vh,260px);height:min(30vh,260px)}
+.qb img{width:72px;height:72px;border-radius:8px;background:#fff;padding:2px;transition:width .2s,height .2s;flex:none}.qb span{flex:1}
+body.qbig .slide.active .qb{height:auto;padding:14px 24px;font-size:20px;box-shadow:0 -12px 30px #0008}body.qbig .slide.active .qb img{width:min(34vh,300px);height:min(34vh,300px)}
 .dk-bot{position:fixed;left:0;right:0;bottom:0;height:64px;z-index:20;display:flex;align-items:center;gap:8px;padding:0 10px;background:#fff;border-top:1px solid var(--l)}
 .dk-bot button{min-width:48px;min-height:48px;border-radius:12px;border:0;background:var(--n);color:#fff;font:inherit;font-weight:800;font-size:16px;cursor:pointer;padding:0 14px}.dk-bot button.alt{background:#dbe7ee;color:var(--i)}
 .dk-bot .prog{flex:1;height:8px;background:#dbe7ee;border-radius:99px;overflow:hidden;min-width:40px}.dk-bot .prog i{display:block;height:100%;width:0;background:var(--y);transition:width .3s}
@@ -345,8 +345,8 @@ body.qbig .slide.active .qb{font-size:20px;padding:14px 18px}body.qbig .slide.ac
 #help{position:fixed;inset:0;z-index:40;background:rgba(16,44,83,.94);color:#fff;display:none;align-items:center;justify-content:center;padding:20px}#help.on{display:flex}#help div{max-width:560px;font-size:16px}#help kbd{background:#fff;color:#000;border-radius:5px;padding:1px 7px;font-weight:700}
 .black #stage,.black #notes{visibility:hidden}.slide .note{display:none}
 @media(max-width:900px){.cols3,.cols5{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}.mhead{max-width:100%}}
-@media(max-width:760px){:root{--bar:46px}.dk-top a:not(.keep),.dk-top #qsc,.dk-top .sec{display:none}.dk-top{gap:6px}.dk-top button{white-space:nowrap;padding:4px 8px;font-size:13px}.dk-top .cnt{flex:1;text-align:right}.cols2,.cols3,.cols5{grid-template-columns:1fr}.dk-top img,.dk-top .back{display:none}.slide h1{font-size:1.9em}.slide h2{font-size:1.4em}.dk-bot .hide-s{display:none}.slide{padding-bottom:110px}
- .qb{left:8px;right:8px;bottom:70px;max-width:none;flex-direction:row;padding:6px 10px}.qb img{display:none}body.qbig .slide.active .qb img{display:block;width:40vw;height:40vw}}
+@media(max-width:760px){:root{--bar:46px}.dk-top a:not(.keep),.dk-top #qsc,.dk-top .sec{display:none}.dk-top{gap:6px}.dk-top button{white-space:nowrap;padding:4px 8px;font-size:13px}.dk-top .cnt{flex:1;text-align:right}.cols2,.cols3,.cols5{grid-template-columns:1fr}.dk-top img,.dk-top .back{display:none}.slide h1{font-size:1.9em}.slide h2{font-size:1.4em}.dk-bot .hide-s{display:none}.slide{padding-bottom:24px}
+ #stage{bottom:64px}.slide.active{display:flex;flex-direction:column}.slide.active>*{flex:none}.slide .qb,body.qbig .slide.active .qb{position:static;order:99;margin:18px 0 0;height:auto;max-width:none;width:100%;flex-direction:row;padding:10px 12px;box-shadow:none;border-radius:12px;border-top:0;font-size:14px}.qb img{display:none}body.qbig .slide.active .qb img{display:block;width:60vw;height:60vw}}
 @media print{html,body{height:auto;overflow:visible}.dk-top,.dk-bot,#notes,#ovw,#help,.qb{display:none!important}#stage{position:static}.slide{display:block!important;break-after:page;height:auto;overflow:visible}.frag{opacity:1!important;visibility:visible!important;transform:none!important}}
 @media(prefers-reduced-motion:reduce){.slide.active{animation:none}.frag{transition:none}}
 '''

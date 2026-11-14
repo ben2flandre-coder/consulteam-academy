@@ -9,7 +9,8 @@ threading.Thread(target=srv.serve_forever, daemon=True).start()
 R = {'verifs': []}
 def ok(n, c, d=''):
     R['verifs'].append({'test': n, 'ok': bool(c), 'detail': d}); print(('OK  ' if c else 'KO  ') + n, d)
-src = open(root + '/animation.html', encoding='utf-8').read()
+clear = sys.argv[2] if len(sys.argv) > 2 else root + '/animation.html'
+src = open(clear, encoding='utf-8').read()
 slides = re.findall(r'<section class="slide([^"]*)" data-sec="([^"]*)"([^>]*)>(.*?)</section>', src, re.S)
 ok('nombre de diapositives', 250 <= len(slides) <= 400, len(slides))
 ok('QR sur chaque diapositive', all('class="qb"' in s[3] and 'assets/qr/' in s[3] and 'Suivre sur votre téléphone' in s[3] for s in slides) or all(('class="qb"' in s[3]) for s in slides))
@@ -31,15 +32,20 @@ with sync_playwright() as p:
     b = p.chromium.launch(executable_path='/usr/bin/google-chrome', args=['--no-sandbox'])
     for name, (w, hh, touch) in {'projecteur-1920': (1920, 1080, False), 'bureau-1280': (1280, 720, False), 'tablette-768': (768, 1024, True), 'tel-390': (390, 844, True)}.items():
         ctx = b.new_context(viewport={'width': w, 'height': hh}, has_touch=touch, is_mobile=touch)
+        ctx.route('**/animation.html', lambda r: r.fulfill(body=src, content_type='text/html; charset=utf-8'))
         pg = ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
         pg.goto('http://127.0.0.1:%d/animation.html' % port); pg.wait_for_timeout(500)
-        n = pg.evaluate("document.querySelectorAll('.slide').length"); over = []; hid = []
+        n = pg.evaluate("document.querySelectorAll('.slide').length"); over = []; hid = []; ovl = []; scr = []
         for i in range(1, n + 1, 1 if w > 800 else 3):
             pg.evaluate("location.hash='#%d'" % i); pg.wait_for_timeout(60)
-            r = pg.evaluate("(()=>{var s=document.querySelector('.slide.active');return [document.documentElement.scrollWidth>innerWidth+1,s.scrollWidth>s.clientWidth+2,getComputedStyle(s.querySelector('.qb')).display]})()")
+            r = pg.evaluate("(()=>{var s=document.querySelector('.slide.active'),q=s.querySelector('.qb');return [document.documentElement.scrollWidth>innerWidth+1,s.scrollWidth>s.clientWidth+2,getComputedStyle(q).display,document.getElementById('stage').getBoundingClientRect().bottom>q.getBoundingClientRect().top+1&&getComputedStyle(q).position==='fixed',s.scrollHeight>s.clientHeight+2]})()")
+            if r[3]: ovl.append(i)
+            if r[4]: scr.append(i)
             if r[0] or r[1]: over.append(i)
             if r[2] == 'none' and w > 760: hid.append(i)
         ok('%s : pas de débordement horizontal' % name, not over, over[:8])
+        ok('%s : le QR ne masque aucun contenu' % name, not ovl, ovl[:8])
+        print('INFO %s : %d diapositives à défiler verticalement' % (name, len(scr)))
         if w > 760: ok('%s : QR visible partout' % name, not hid, hid[:8])
         ok('%s : aucune erreur JS' % name, not errs, errs)
         if name == 'bureau-1280':

@@ -50,6 +50,11 @@
    "detail": []
   },
   {
+   "test": "projecteur-1920 : le QR ne masque aucun contenu",
+   "ok": true,
+   "detail": []
+  },
+  {
    "test": "projecteur-1920 : QR visible partout",
    "ok": true,
    "detail": []
@@ -61,6 +66,11 @@
   },
   {
    "test": "bureau-1280 : pas de débordement horizontal",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "bureau-1280 : le QR ne masque aucun contenu",
    "ok": true,
    "detail": []
   },
@@ -118,6 +128,11 @@
    "detail": []
   },
   {
+   "test": "tablette-768 : le QR ne masque aucun contenu",
+   "ok": true,
+   "detail": []
+  },
+  {
    "test": "tablette-768 : QR visible partout",
    "ok": true,
    "detail": []
@@ -129,6 +144,11 @@
   },
   {
    "test": "tel-390 : pas de débordement horizontal",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "test": "tel-390 : le QR ne masque aucun contenu",
    "ok": true,
    "detail": []
   },

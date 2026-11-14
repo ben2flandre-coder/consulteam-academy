@@ -58,3 +58,7 @@ Contenu de formateur.html chiffré dans le navigateur (AES-GCM 256, PBKDF2 600 0
 - Page « Quel symbole ? » : arbre de décision fondé sur le tableau de choix de l'ED 6127 (§2.3 et §2.4) ; testé sur les chemins BS, H2V, B0 et HE Manœuvre, retour arrière et mobile sans débordement. Les limites détaillées relèvent de la NF C 18-510, non lue.
 - Questions ajoutées aux modules 9, 16 et 17. Banque : 165 questions (module 23 inclus) ; check_modules : 391 affirmations, 0 sans référence.
 - Tests : 64 combinaisons d'affichage sans débordement, évaluations (complète 165, tirage 75, 12 niveaux de 20), studio et 23 modules ouverts sans erreur.
+
+## Durée : 21 h
+- La formation est présentée sur 21 h (dont 7 h de pratique) dans tous les documents de session ; plus aucune mention d'écart de durée. Tests studio et évaluations relancés : 0 erreur.
+- Non fait : ressources INRS SST (cloud.inrs.fr) non récupérées, aucun accès accordé à l'ordinateur ni au site ; module 8 reste fondé sur S31.

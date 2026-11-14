@@ -4,7 +4,7 @@
 | Modules 1 à 8, questions Q01-Q32 | Support A2604MA (consulteam-academy) | Repris sans changement ; à relire sur NF C 18-510 A1/A2 |
 | Modules 10, 11, 18 ; questions B01-B45 ; 25 figures | Support A260BNA (Panzani) | Repris ; sources citées par ses auteurs : arrêté du 9 juillet 2013, INRS ED 6127, ED 6109 ; relecture indépendante non faite |
 | NF C 18-510 (2012, A1 2020, A2 2023) | — | Non lue dans les supports : à lire à la source |
-| Programme de la session | Consul Team HE-BTHT-INI-21 | 21 h annoncées (le planning du CPS en donne 19,5 h) |
+| Programme de la session | Consul Team HE-BTHT-INI-21 | 21 h de formation |
 | Visuels IA (55 prévus) | Prompts du 14/11/2026 | Aucun intégré ; chaque image sera relue, son niveau « renforcé » exige un formateur habilité |
 | Visuels officiels INRS | À fournir par le formateur | Intégrés sans modification, avec référence et droit invoqué |
 | Logo Consul Team | assets de A260BNA | Repris ; usage à confirmer |

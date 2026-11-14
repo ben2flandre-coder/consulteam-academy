@@ -1,4 +1,4 @@
-266cdf6aa00108a79ab3a4cced5995e4c4c7a19d169f68635a83aa62dd9dc8f4  ./QA.md
+daf38bc1b2a2e731a1013b4447b016a9d445ac4908745b90d0b4e76bbf91cfa7  ./QA.md
 e508aede390dc73cd1f0d8d23be4af9b75603c09458b9a272280d93027f9f8ec  ./README.md
 3fac97990e918104ba53b5f95eda629f358b9e9a16d57632cabad9dcc8375324  ./REGISTRE-SOURCES.md
 88fcfb591738adf2936755197b37bff6250d380ad02e2208634d2f61657ddb79  ./animation.html
@@ -24,7 +24,7 @@ a1c841a8c28f79edb3629a4079df544ac0d177fcc42c5bda69347ae5ddced377  ./cours/a260e2
 9457309d8e28f7e639cf6e63930f22a298afec45d63ce5f968400c0c24ad5932  ./credits.html
 032c7abd78b05437999fe85fb87b78cee5eb39f5caa42049f96ed410f27ebd40  ./data/content.js
 7af62aaf2a72e6c93155e6a9cbad9f223c305a62bea1036c76f6696b9b29a62a  ./evaluation.html
-bc60f2f7382093651bfcefa635a01546db7ce59645c09fbe214f502356e4013b  ./formateur.html
+3ad643e13b168bc491083bc9093d997a797f0f08ea2e0165f40ec2ed48417bb3  ./formateur.html
 783031b73f05e2bb5231d553f1249ddf5b3913f13008087f48a050105ce5bcbd  ./galerie.html
 0a0beb6d5e3b5b2a1ce21c2517f393f8c2c39dbabf0723ddd078a4a0acab2750  ./glossaire.html
 76836de3d64e2dcaab6b5decf997eba9487862cb561e26074f6248c6367e5d20  ./images/coupes/coupe-A.webp
@@ -157,6 +157,7 @@ ae140295327393a58bed2270206acac49c1b08a0b8409ee0739e7e59a6f7b7ee  ./preuves/prom
 01df8226fe3233a695597aae99d338738803e52af886ad84f05f10a1af9579cd  ./preuves/scripts/build_site.py
 485f76d808756ad8bd35551c953d8feb4314d5de0247b7fc1c2dcf20f79a9f66  ./preuves/scripts/calc_equilibrage.py
 c46fe1acd4b9defd21e5ede329ae998aef7af8d0f2e031d4e79078cdc79ac8d3  ./preuves/scripts/check_modules.py
+54956115ac2466034341ad6ac444201aad897019256a560f74be24d31587db78  ./preuves/scripts/lock.py
 2d4d62e335e1f50279abc13beb453c4fa0b0e5b4abf4762f4bd39769ac325ff3  ./preuves/scripts/modules_tb.py
 38638d9bb42251bd24b4b96211f8d10522b317a706dcea9f61f1bcdfaaeaaa1b  ./preuves/scripts/quiz_test.py
 dcc0ec866d84f1f8ea950e6cf9ceaab6022cfa5da722411872d61d2b38c16ed6  ./preuves/scripts/render_svgs.py
@@ -164,9 +165,11 @@ f2dad64318bd60f5ca90009d9018c2df8e6f4689a94b34604be6569e115530aa  ./preuves/scri
 2679fe1b94c60a73aa6fbc9e36b32659a9a4f4662aaf755707b0d6b12bcf8e1a  ./preuves/scripts/shots.py
 236746667c4fb7387545a862bd0f90b9d5cf165f82d48c17e2cde0c2ebff84ff  ./preuves/scripts/sources_new.py
 1df97624d1d416a082af5321e053b97b43fe82ac1450fb21f78983c944ea3dc1  ./preuves/scripts/svgs.py
+e7159370cbbe7c24082c6b33d17478f3a595112a3af8d38ae1d3acc959949126  ./preuves/scripts/test-formateur-verrou.py
 59e01e6e9e977127e255a26f633828e7b1fe9a32fbf43e6ab980cd1896a6d1c2  ./preuves/sources-lues.json
 997f6e64b8f3674bf5e0b0722bbb2863431041813b084972253a7e37bb7ea7c3  ./preuves/suivi-visuels-A260E2A.csv
 c857cd768e7f4af811bda9906b561049d426959e5e9a54abf4db9fe50da5323b  ./preuves/test-exercices.json
+792267760848e2af2f68a94aa9814b66df5d1bb9832e22eae681ccea7126f75b  ./preuves/test-formateur-verrou.json
 1d892ef57718a1417b4d6dbea733f0bf213ae44316c60b752bcc61abdb8ac009  ./preuves/test-hors-ligne.json
 b6fbd0d90fc9e8ecadab12ec905cdf6f2b76a67979865f52d2fd0c8392128617  ./preuves/test-mediatheque-images.json
 84ef0edfa3c8a81898b10dec0adc9c9b0fed26b75b062242a3cb8a53683e8590  ./preuves/test-qcm.json
@@ -176,4 +179,4 @@ b6fbd0d90fc9e8ecadab12ec905cdf6f2b76a67979865f52d2fd0c8392128617  ./preuves/test
 5bb5eb7bbd1baaac46da2afb704a0f1a22314230a5604945b607abfbfc08e071  ./registre.html
 e45331d05316d7e7381c6de07cdf983041e103a47364e79c25933514c9873a9c  ./ressources.html
 0c4c2c7b81c64ac8a2efe2fcd70678fc919d023515fbe9e416fe2f1420c4253d  ./suivre.html
-998a231f0e81d7280b9c90ce9409bab5d4f387d103bbe7acd4219e69fd1b1962  ./sw.js
+197602131a5285bd282a8deb0cd8c8026fa0996c723caf2016230423654a8e50  ./sw.js

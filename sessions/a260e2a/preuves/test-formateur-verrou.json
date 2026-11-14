@@ -1,0 +1,12 @@
+{
+ "date": "2026-11-14",
+ "chiffrement": "AES-GCM 256, PBKDF2-SHA256 600000 itérations, clé de contenu enveloppée par adresse e-mail",
+ "resultats": {
+  "bon code + e-mail": "ouvert",
+  "e-mail en majuscules/espaces": "ouvert",
+  "mauvais code": "refusé",
+  "mauvais e-mail": "refusé",
+  "erreurs JavaScript": 0
+ },
+ "clair absent du site": true
+}

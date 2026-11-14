@@ -38,3 +38,6 @@ Limites, à lire :
 | Traçabilité des modules 9, 12 à 17, 19 à 22 | 239 affirmations, 0 sans référence, 0 nombre non déclaré | matrice-affirmations-sources.csv |
 | Cours de base (12 routes) | toutes affichent leur contenu, 0 erreur JS | non archivé |
 | Lot GPT du 14/11/2026 (12 h) | 64 SHA-256 conformes au suivi ; 4 images modifiées (TB01, TB03, TB06, TB07, vues et intégrées) ; 5 coupes ajoutées (A à E, vues) ; galerie : 69 images affichées | controle-images.json, test-mediatheque-images.json |
+
+## Espace formateur chiffré (14/11/2026)
+Contenu de formateur.html chiffré dans le navigateur (AES-GCM 256, PBKDF2 600 000 itérations). Déverrouillage : code + une adresse e-mail autorisée. Ni le code ni les adresses ne sont dans le site ; le texte en clair est absent. Test : preuves/test-formateur-verrou.json. Limite : un code court se devine par essais hors ligne ; le corrigé du QCM reste lisible dans data/content.js.

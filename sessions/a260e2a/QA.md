@@ -1,4 +1,4 @@
-# Contrôles A260E2A — 14/11/2026 (version avec modules 19 à 22)
+# Contrôles A260E2A — 14/11/2026 (refonte charte Panzani, 22 modules rédigés)
 Chaque ligne renvoie à une pièce du dossier `preuves/`.
 | Contrôle | Résultat | Pièce |
 |---|---|---|
@@ -29,3 +29,12 @@ Limites, à lire :
 - Statuts du suivi : examen préliminaire de Codex (43 relectures techniques, 20 renforcées, 1 examen standard) ; ce n'est pas une relecture de formateur habilité. Lot de 55 : visages visibles (PR01, BT02, SI03, BT01, NE02, TC09, EX03), gants de TC03 non isolants, instrument d'EX01 d'aspect multimètre ; lot TB : conducteurs bleus sur bornes de phase (TB03, TB09), sectionneur jaune et rouge (TB06), main nue (TB09), pince d'aspect de marque connue (TB08).
 - NF C 18-510 : sources S23 à S30. Limites lues dans l'INRS ED 6127, 3e édition de décembre 2020 (fichier fourni par Benoît, p. 11-12) : BS circuits terminaux, 400 V et 32 A, hors tension et sans voisinage renforcé ; BR connexion sous tension jusqu'à 500 V et 63 A en courant alternatif, hors charge. L'édition de 2012 (S30) disait « BR maxi 1000 V et 63 A » : mention absente en 2020. Section de 6 mm² : sources secondaires seulement. L'édition lue date de décembre 2020, avant A2 (juin 2023) ; texte de la norme (payant) non lu.
 - Contrôles rejoués : 117 affirmations sourcées, 0 sans référence ; responsive, QCM (97 questions), hors ligne, exercices : sans erreur JS.
+
+## Refonte du 14/11/2026 (après-midi)
+| Contrôle | Résultat | Pièce |
+|---|---|---|
+| 13 pages × 4 largeurs (390 à 1280 px) | 52 combinaisons : 0 débordement, 0 erreur JS, 0 image sans alt, lang fr | qa-responsive.json |
+| QCM global (75 questions tirées de 118) | tout juste = 75/75, tout faux = 0/75 ; deux tirages partagent environ 46 questions sur 75 | test-qcm.json |
+| Traçabilité des modules 9, 12 à 17, 19 à 22 | 239 affirmations, 0 sans référence, 0 nombre non déclaré | matrice-affirmations-sources.csv |
+| Cours de base (12 routes) | toutes affichent leur contenu, 0 erreur JS | non archivé |
+| Lot GPT du 14/11/2026 (12 h) | 64 SHA-256 conformes au suivi ; 4 images modifiées (TB01, TB03, TB06, TB07, vues et intégrées) ; 5 coupes ajoutées (A à E, vues) ; galerie : 69 images affichées | controle-images.json, test-mediatheque-images.json |

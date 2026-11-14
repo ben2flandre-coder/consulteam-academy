@@ -1,1 +1,1 @@
-{"date":"14/11/2026","page":"mediatheque.html (390 px, défilement complet)","images_ia_attendues":64,"images_ia_affichees":64,"placeholders_restants":0,"erreurs_js":0,"note":"Défaut corrigé : l image créée hors DOM en loading=lazy ne se chargeait jamais ; chargement par IntersectionObserver."}
+{"date": "2026-11-14", "galerie_figures": 69, "non_affichees": []}

@@ -1,0 +1,13 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Consulteam · Habilitation électrique · A260E2A</title><body><p id="loading" role="status">Chargement du parcours…</p><script>
+(async()=>{try{
+const response=await fetch('base.html');if(!response.ok)throw Error('HTTP '+response.status);
+let html=await response.text();
+const changes=[['16–17 septembre 2026','14, 15 et 16 décembre 2026'],['DGA Toulon','Consul Team Security · La Seyne-sur-Mer'],['consulteam.he.2026.v1','consulteam.he.a260e2a.2026.v1'],['SESSION · 14 HEURES','FORMATION INITIALE · A260E2A'],['B0 · H0 · H0V · BS · BE Manœuvre','Cours de base B0 · H0 · H0V · BS · BE Manœuvre'],['12 participants','4 à 10 participants'],['Édition enrichie · 12 septembre','Édition du 14 novembre'],['Édition finale consolidée du 12 septembre 2026.','Édition du 14 novembre 2026.'],['Édition enrichie du 12 septembre 2026.','Édition du 14 novembre 2026.']];
+for(const [from,to] of changes)html=html.replaceAll(from,to);
+html=html.replace('Le livret rassemble le socle','Pour les autres niveaux, utilisez le <a href="../livret.html">livret du participant</a>. Ce livret de base rassemble les huit séquences',1);html=html.replace('</body>','<script src="a260e2a.js"><\/script><script src="charte-a260e2a.js"><\/script></body>');
+document.open();document.write(html);document.close();
+}catch(error){document.getElementById('loading').textContent='Le parcours ne peut pas être chargé. Actualisez la page ou contactez le formateur. '+error.message;}})();
+</script><style id="fabcss">.fab{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:2147483000}.fab a,.fab button{width:48px;height:48px;border-radius:50%;border:2px solid #f6b63d;background:#102c53;color:#fff;font:700 22px/1 system-ui,sans-serif;display:grid;place-items:center;text-decoration:none;cursor:pointer;box-shadow:0 3px 12px #0005;padding:0;margin:0}.fab a:hover,.fab button:hover{background:#f6b63d;color:#102c53}.fab .up{opacity:0;pointer-events:none;transition:opacity .2s}.fab .up.on{opacity:1;pointer-events:auto}@media print{.fab{display:none}}</style>
+<div class="fab"><a href="../index.html" aria-label="Retour à l’accueil" title="Retour à l’accueil">&#8962;</a><button type="button" class="up" aria-label="Remonter en haut de la page" title="Remonter en haut">&#8593;</button></div>
+<script>(function(){var b=document.querySelector('.fab .up');if(!b)return;b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});function t(){b.classList.toggle('on',(window.pageYOffset||document.documentElement.scrollTop)>300)}window.addEventListener('scroll',t,{passive:true});t()})();</script>
+</body></html>

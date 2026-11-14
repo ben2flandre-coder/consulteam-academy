@@ -1,3 +1,8 @@
-all Score : 97 / 97 (97 question(s) traitée(
-wrong Score : 0 / 97 (97 question(s) traitée(s
-erreurs JS: []
+{
+ "sortie": [
+  "all Score : 75 / 75 (75 question(s) traitée(",
+  "wrong Score : 0 / 75 (74 question(s) traitée(s",
+  "erreurs JS: []"
+ ],
+ "note": "Évaluation globale : 75 questions tirées dans une banque de 118 (stratifié par module)"
+}

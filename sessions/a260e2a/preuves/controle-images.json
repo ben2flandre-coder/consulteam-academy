@@ -1,8 +1,8 @@
 {
- "date": "14/11/2026",
+ "date": "2026-11-14 (lot repris par GPT : TB01, TB03, TB06, TB07 modifiés ; 5 coupes ajoutées)",
  "n": 64,
- "sha256_non_conformes": 0,
- "poids_total_leger_octets": 2732540,
+ "sha256_non_conformes": [],
+ "poids_total_leger_octets": 2726772,
  "images": [
   {
    "id": "TC01",
@@ -791,7 +791,7 @@
     1536,
     1024
    ],
-   "poids_leger": 76860,
+   "poids_leger": 77124,
    "dim_leger": [
     1024,
     683
@@ -821,7 +821,7 @@
     1536,
     1024
    ],
-   "poids_leger": 36532,
+   "poids_leger": 33484,
    "dim_leger": [
     1024,
     683
@@ -866,7 +866,7 @@
     1536,
     1024
    ],
-   "poids_leger": 65588,
+   "poids_leger": 63936,
    "dim_leger": [
     1024,
     683
@@ -881,7 +881,7 @@
     1536,
     1024
    ],
-   "poids_leger": 61298,
+   "poids_leger": 59966,
    "dim_leger": [
     1024,
     683

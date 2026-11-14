@@ -116,3 +116,125 @@
 22;question T22-04 (explication);Repérage des circuits [S15].;S15;S;OK
 22;exercice 1 (explication);"Réserve minimale de 20 % préconisée [S14] ; l'usage est de prévoir les extensions [R].";S14;R;OK
 22;exercice 2 (explication);Consignation [S22, S16], pose sur rail, peigne, raccordement [S9].;S16 S22 S9;S;OK
+9;section : Exécutant ou chargé de travaux;Le symbole se lit en trois caractères : le domaine de tension (B ou H), le type d'opération (0, 1, 2, C, R, S, E…), puis une lettre additionnelle (T, V, N, X) ou un attribut [S29].;S29;S;OK
+9;section : Exécutant ou chargé de travaux;Le chiffre 1 désigne l'exécutant d'une opération d'ordre électrique, le chiffre 2 le chargé de travaux d'ordre électrique [S29].;S29;S;OK
+9;section : Exécutant ou chargé de travaux;Les travaux couvrent par exemple la création ou la modification d'une installation et le remplacement d'un coffret ou d'une armoire [S29].;S29;S;OK
+9;section : Exécutant ou chargé de travaux;Le balisage de la zone de travail et la vérification de la bonne exécution des travaux reviennent uniquement au chargé de travaux [S29].;S29;S;OK
+9;section : Le V : voisinage renforcé;La lettre V indique des travaux au voisinage renforcé : B1V et B2V s'ajoutent à B1 et B2 [S29].;S29;S;OK
+9;section : Le V : voisinage renforcé;Au voisinage, seules les opérations qui concourent à l'exploitation et à la maintenance de l'installation sont autorisées, les autres sont interdites [S29].;S29;S;OK
+9;section : Le V : voisinage renforcé;Le symbole V ne se déduit pas du métier : il dépend de la zone d'environnement dans laquelle les travaux se déroulent [R].;;R;OK
+9;section : Ce que la formation doit couvrir;Le module de formation B1, B1V, B2, B2V comprend de quoi caractériser les travaux et connaître leurs limites : hors tension avec ou sans voisinage, en présence de tension, sous tension [S29].;S29;S;OK
+9;section : Ce que la formation doit couvrir;Il comprend aussi le rôle du chargé de consignation et du chargé d'exploitation électrique, dont on respecte les instructions [S29].;S29;S;OK
+9;section : Ce que la formation doit couvrir;S'y ajoutent les mesures de prévention : éliminer le risque, organiser, délimiter, signaler, respecter et faire respecter [S29].;S29;S;OK
+9;section : Les documents applicables;Les travaux s'appuient sur des documents : instructions de sécurité, attestation de consignation, attestation de première étape de consignation, autorisation de travail, avis de fin de travail [S29].;S29;S;OK
+9;section : Les documents applicables;Le chargé de travaux reçoit l'attestation de consignation avant de commencer [R].;;R;OK
+9;section : Les documents applicables;Un exécutant ne commence pas sans avoir reçu les consignes [R].;;R;OK
+9;section : Équipements et pratique;Il faut identifier les équipements de travail utilisés et les risques associés, les vérifier et les utiliser en sécurité [S29].;S29;S;OK
+9;section : Équipements et pratique;La formation pratique minimale pour ce groupe de symboles est de 5 h, dont 2 h propres au module [S29].;S29;S;OK
+9;section : Équipements et pratique;Les travaux sous tension (T, N) ne sont pas détaillés dans la brochure et ne font pas partie de cette formation [S29].;S29;S;OK
+9;situation;On vous confie le remplacement d'un coffret de distribution dans un local technique.;;;OK
+9;situation;Une équipe doit y intervenir : qui prépare, qui exécute, qui surveille, et avec quels documents ?;;;OK
+9;réponse;Un symbole avec V (B1V ou B2V selon le rôle) [S29].;S29;S;OK
+9;réponse;Si le titre ne le porte pas, on n'exécute pas la tâche et on demande à l'employeur de faire évoluer le titre ou de désigner un titulaire habilité [S29, R].;S29;R;OK
+9;question T09-01 (explication);"Le chiffre 2 désigne le chargé de travaux [S29] ; 1 l'exécutant [S29].";S29;S;OK
+9;question T09-02 (explication);Ces deux tâches reviennent uniquement au chargé de travaux [S29].;S29;S;OK
+9;question T09-03 (explication);Seules les opérations concourant à l'exploitation et à la maintenance sont autorisées [S29].;S29;S;OK
+9;question T09-04 (explication);Instructions de sécurité, attestation de consignation et avis de fin de travail figurent parmi les documents applicables [S29].;S29;S;OK
+9;question T09-05 (explication);La brochure ne détaille pas les formations aux travaux sous tension [S29].;S29;S;OK
+12;section : Les symboles HT;Les symboles H1, H1V, H2 et H2V suivent la même logique que leurs équivalents BT : H pour la haute tension, 1 pour l'exécutant, 2 pour le chargé de travaux, V pour le voisinage renforcé [S29].;S29;S;OK
+12;section : Les symboles HT;En voisinage renforcé, le symbole H0V s'applique aux opérations d'ordre non électrique [S29].;S29;S;OK
+12;section : HTA ou HTB : le contenu change;Les thèmes de la formation doivent être développés différemment selon le domaine de tension considéré : BT, HTA ou HTB [S29].;S29;S;OK
+12;section : HTA ou HTB : le contenu change;Le choix HTA ou HTB n'est pas encore fixé pour cette session : il reste à confirmer avant tout affichage de contenu technique [R].;;R;OK
+12;section : Thèmes techniques propres à la haute tension;Une formation HT comprend un module de thèmes techniques : types, structure et fonctionnement des ouvrages et installations (ligne et poste), fonction des matériels des postes (commande, protection, séparation) [S29].;S29;S;OK
+12;section : Thèmes techniques propres à la haute tension;Elle comprend l'induction et le couplage capacitif avec leurs mesures de prévention, dont la mise en équipotentialité [S29].;S29;S;OK
+12;section : Thèmes techniques propres à la haute tension;Elle comprend aussi le verrouillage et l'interverrouillage, ainsi que les équipements de protection collective et individuelle [S29].;S29;S;OK
+12;section : Pratique minimale;La formation pratique minimale est de 6,5 h pour H1, H1V, H2, H2V et H2V Essai : 3 h de thèmes communs, 1,5 h pour les spécificités HTA ou HTB et 2 h pour le module [S29].;S29;S;OK
+12;situation;Un poste haute tension doit faire l'objet de travaux hors tension.;;;OK
+12;situation;Le client n'a pas précisé s'il s'agit de HTA ou de HTB.;;;OK
+12;réponse;On ne fixe pas le contenu technique : on fait préciser le domaine et les installations par l'employeur avant de choisir les thèmes et les travaux pratiques [S29, R].;S29;R;OK
+12;question T12-01 (explication);Les thèmes se développent différemment selon BT, HTA ou HTB [S29].;S29;S;OK
+12;question T12-02 (explication);6,5 h au total : thèmes communs, spécificités HT et module [S29].;S29;S;OK
+12;question T12-03 (explication);Induction, verrouillage et structure des ouvrages font partie du module de thèmes techniques [S29].;S29;S;OK
+13;section : Le rôle du chargé de consignation;Le chargé de consignation identifie le chargé d'exploitation électrique, connaît son rôle et échange avec lui les informations [S29].;S29;S;OK
+13;section : Le rôle du chargé de consignation;Il suit les instructions reçues [S29].;S29;S;OK
+13;section : Le rôle du chargé de consignation;Le symbole HC concerne la consignation d'un ouvrage ou d'une installation électrique en haute tension [S29].;S29;S;OK
+13;section : Étapes et documents;Le chargé de consignation réalise les étapes de la consignation et utilise les documents applicables, dont l'attestation de consignation en une ou deux étapes et l'avis de fin de travail [S29].;S29;S;OK
+13;section : Étapes et documents;L'ordre général des étapes (séparation, condamnation, identification, vérification d'absence de tension, mise à la terre et en court-circuit) est celui du module BC [S22].;S22;S;OK
+13;section : La réquisition;La formation HC comprend la description d'un régime de réquisition, l'analyse des risques et le renseignement d'un avis de réquisition, si nécessaire [S29].;S29;S;OK
+13;section : La réquisition;Le cas de réquisition dépend de l'organisation de l'installation : il se précise avec le client [R].;;R;OK
+13;section : Pratique minimale;La formation pratique minimale pour HC est de 6,5 h, comme pour les travaux HT : 3 h de thèmes communs, 1,5 h de spécificités HT et 2 h pour le module [S29].;S29;S;OK
+13;situation;Un ouvrage HT doit être consigné pour permettre des travaux.;;;OK
+13;situation;Vous êtes le chargé de consignation : avec qui échangez-vous, quels documents établissez-vous ?;;;OK
+13;réponse;Non [S29].;S29;S;OK
+13;réponse;La déconsignation suit l'avis de fin de travail et l'organisation prévue avec le chargé d'exploitation [S29, R].;S29;R;OK
+13;question T13-01 (explication);Il identifie le chargé d'exploitation et échange avec lui [S29].;S29;S;OK
+13;question T13-02 (explication);Attestation (une ou deux étapes), avis de fin de travail, et avis de réquisition si nécessaire [S29].;S29;S;OK
+14;section : Un symbole à compléter par un attribut;Les symboles BE et HE doivent être complétés par un attribut : Essai, Vérification, Mesurage ou Manœuvre [S29].;S29;S;OK
+14;section : Un symbole à compléter par un attribut;HE seul ne dit donc pas quelle opération est permise [S29, R].;S29;R;OK
+14;section : Un symbole à compléter par un attribut;HE Manœuvre couvre la manœuvre de matériel pour mettre hors ou sous tension un équipement ou une installation [S29].;S29;S;OK
+14;section : Exécuter une manœuvre;La pratique à évaluer est de réaliser une manœuvre d'exploitation ou de consignation dans le respect des instructions et des documents, comme la fiche de manœuvre [S29].;S29;S;OK
+14;section : Exécuter une manœuvre;Il faut connaître les limites de l'habilitation HE ou BE (manœuvres permises) [S29].;S29;S;OK
+14;section : Manœuvres en HTB;Il existe un module de formation propre aux manœuvres en HTB [S29].;S29;S;OK
+14;section : Manœuvres en HTB;Les manœuvres en HTA suivent le module des manœuvres de la formation de base [S29].;S29;S;OK
+14;section : Manœuvres en HTB;Le choix HTA ou HTB reste à confirmer [R].;;R;OK
+14;section : Durée de pratique;La formation pratique minimale pour HE Manœuvre HTB est de 5 h [S29].;S29;S;OK
+14;situation;On vous demande de manœuvrer un appareil de coupure d'un poste HT selon une fiche de manœuvre.;;;OK
+14;situation;Vous n'êtes ni chargé de travaux ni chargé de consignation.;;;OK
+14;réponse;On s'arrête, on décrit le fait au demandeur et on laisse la prise en charge à l'interlocuteur compétent : la manœuvre ne devient pas un dépannage [S29, R].;S29;R;OK
+14;question T14-01 (explication);BE et HE se complètent par Essai, Vérification, Mesurage ou Manœuvre [S29].;S29;S;OK
+14;question T14-02 (explication);La pratique évalue le respect des instructions et des documents, comme la fiche de manœuvre [S29].;S29;S;OK
+15;section : Trois attributs, trois formations;BE doit être complété par un attribut : Mesurage, Vérification ou Essai (ou Manœuvre) [S29].;S29;S;OK
+15;section : Trois attributs, trois formations;Le mesurage et la vérification partagent un module de formation, l'essai a le sien [S29].;S29;S;OK
+15;section : Trois attributs, trois formations;La vérification comprend l'examen visuel, l'essai et le mesurage [S29].;S29;S;OK
+15;section : Ce que couvre le module mesurage et vérification;Il comprend la fonction des matériels (coupure, protection, séparation), l'identification du chargé d'exploitation électrique et l'échange avec lui [S29].;S29;S;OK
+15;section : Ce que couvre le module mesurage et vérification;Il comprend les équipements de travail utilisés et leurs risques, les documents applicables (autorisation de travail, instructions de sécurité) et les mesures de prévention [S29].;S29;S;OK
+15;section : Ce que couvre le module essai;Le module essai ajoute les symboles et leurs limites pour les personnes intervenant lors des essais [S29].;S29;S;OK
+15;section : Ce que couvre le module essai;Il ajoute les consignes pour les essais particuliers (source autonome, recherche de défaut de câble, laboratoire et plate-forme d'essais) [S29].;S29;S;OK
+15;section : Ce que couvre le module essai;Il comprend aussi la consignation pour son propre compte [S29].;S29;S;OK
+15;section : Pratique minimale;La formation pratique minimale est de 4 h pour BE Mesurage et BE Vérification, et de 5 h pour BE Essai [S29].;S29;S;OK
+15;situation;On vous demande de contrôler un circuit et de mesurer une grandeur sur un équipement.;;;OK
+15;situation;Vous devez dire de quelle opération il s'agit avant de commencer.;;;OK
+15;réponse;Non, mesurer n'autorise pas à remplacer [S29].;S29;S;OK
+15;réponse;Il rend compte et laisse l'opération au titulaire du symbole adapté [S29, R].;S29;R;OK
+15;question T15-01 (explication);5 h pour BE Essai, 4 h pour Mesurage et Vérification [S29].;S29;S;OK
+15;question T15-02 (explication);Examen visuel, essai et mesurage [S29].;S29;S;OK
+15;question T15-03 (explication);Le symbole se limite à l'opération de son attribut [S29, R].;S29;R;OK
+16;section : Une pratique individuelle;La formation doit comporter une partie pratique, de préférence dans l'environnement habituel de l'apprenant ou dans un environnement aussi proche que possible du réel, sur des installations représentatives [S29].;S29;S;OK
+16;section : Une pratique individuelle;Pour les modules spécifiques, l'apprenant réalise lui-même les opérations [S29].;S29;S;OK
+16;section : Une pratique individuelle;Pour les thèmes communs, la formation pratique peut être individuelle ou de groupe [S29].;S29;S;OK
+16;section : Évaluation des savoirs;L'évaluation des savoirs se fait par un QCM de 15 questions minimum, constitué de façon aléatoire à partir d'une base d'au moins cinq fois plus de questions par thème [S29].;S29;S;OK
+16;section : Évaluation des savoirs;Les thèmes sont les dangers de l'électricité, les distances et zones d'environnement, les limites des opérations associées au symbole et les mesures de protection [S29].;S29;S;OK
+16;section : Évaluation des savoirs;L'apprenant doit obtenir au minimum 70 % de bonnes réponses [S29].;S29;S;OK
+16;section : Évaluation des savoirs;Les distances et zones comme les limites du symbole représentent chacune au moins 30 % des questions [S29].;S29;S;OK
+16;section : Évaluation des savoir-faire;Elle se fait après l'évaluation positive des savoirs, à partir d'une ou plusieurs situations de travail [S29].;S29;S;OK
+16;section : Évaluation des savoir-faire;Trois critères : sans erreur, erreur mineure sans conséquence pour la sécurité des personnes, erreur majeure avec conséquence directe [S29].;S29;S;OK
+16;section : Évaluation des savoir-faire;Les critères d'acceptation sont deux erreurs mineures au maximum et aucune erreur majeure [S29].;S29;S;OK
+16;section : Les savoir-faire par symbole;Tous les symboles évaluent l'identification des risques, un comportement adapté et le compte rendu de l'opération [S29].;S29;S;OK
+16;section : Les savoir-faire par symbole;Chaque symbole ajoute les siens : baliser et surveiller pour le chargé de chantier et de travaux, réaliser une consignation pour BC et HC, une intervention BT générale pour BR, une intervention élémentaire et un réarmement pour BS, une manœuvre pour BE et HE Manœuvre [S29].;S29;S;OK
+16;section : L'avis après formation;À l'issue de la formation, le formateur formule un avis après formation et le remet à l'employeur [S29].;S29;S;OK
+16;section : L'avis après formation;L'employeur délivre ensuite l'habilitation : ni la formation ni un score ne valent habilitation [S29].;S29;S;OK
+16;situation;Quatre à dix stagiaires, des symboles différents : chaque stagiaire doit réaliser lui-même les opérations de son symbole, puis être évalué.;;;OK
+16;réponse;Les savoirs sont acquis, mais l'évaluation des savoir-faire n'est pas validée : aucune erreur majeure n'est tolérée [S29].;S29;S;OK
+16;question T16-01 (explication);70 % de bonnes réponses au minimum [S29].;S29;S;OK
+16;question T16-02 (explication);Deux erreurs mineures au maximum, aucune majeure [S29].;S29;S;OK
+16;question T16-03 (explication);15 questions minimum [S29].;S29;S;OK
+16;question T16-04 (explication);"Le formateur remet un avis après formation ; l'employeur habilite [S29].";S29;S;OK
+17;section : Partir de l'opération, pas du métier;Le choix d'un symbole dépend de l'activité confiée et de l'environnement électrique [S29].;S29;S;OK
+17;section : Partir de l'opération, pas du métier;Le métier ne détermine pas le symbole : il se choisit à partir de la nature de l'opération et de la tension [S29, R].;S29;R;OK
+17;section : Partir de l'opération, pas du métier;Les listes de symboles d'ADI sécurité n'ont pas été communiquées : tout rattachement ci-dessous reste à décider avec l'employeur [R].;;R;OK
+17;section : Opérations courantes et symboles à étudier;Le contrôle d'une grandeur sur une alimentation relève d'une opération spécifique : l'attribut Mesurage ou Vérification de BE est à examiner [S29, R].;S29;R;OK
+17;section : Opérations courantes et symboles à étudier;La manœuvre d'un dispositif de coupure relève de l'attribut Manœuvre [S29].;S29;S;OK
+17;section : Opérations courantes et symboles à étudier;Une intervention sur un équipement avec recherche de panne ou remplacement relève de l'intervention générale BR, dans ses limites [S29, R].;S29;R;OK
+17;section : Opérations courantes et symboles à étudier;Le remplacement de matériel défectueux (relais, borniers) fait partie des opérations BR [S29].;S29;S;OK
+17;section : Ce qui s'ajoute à l'électricité;Une pose de détecteur en hauteur ajoute un risque de chute : il faut organiser le travail en tenant compte à la fois de la hauteur et de la proximité de conducteurs [R].;;R;OK
+17;section : Ce qui s'ajoute à l'électricité;Une alimentation de secours par batteries est une source qu'il faut identifier avant toute intervention [R].;;R;OK
+17;section : Ce qui s'ajoute à l'électricité;Les consignes du fabricant de la centrale complètent l'habilitation [R].;;R;OK
+17;section : Un cadre à construire avec l'employeur;L'employeur définit, sous forme de cahier des charges, les opérations, l'organisation et le matériel pour choisir les symboles [S29].;S29;S;OK
+17;section : Un cadre à construire avec l'employeur;Pour cette session, la liste des opérations d'ADI sécurité sera à fournir par le formateur à partir des cas réels [R].;;R;OK
+17;situation;Un technicien de sécurité incendie doit contrôler les batteries d'une centrale d'alarme, remplacer un détecteur en hauteur et essayer un déclencheur manuel.;;;OK
+17;situation;Quelles opérations relèvent de quel symbole ?;;;OK
+17;réponse;La recherche de panne dépasse l'intervention élémentaire BS [S29].;S29;S;OK
+17;réponse;Elle relève de l'intervention générale BR ou d'un autre symbole adapté, on arrête et on demande le relais [S29, R].;S29;R;OK
+17;question T17-01 (explication);Le choix tient compte de l'activité confiée et de l'environnement électrique [S29].;S29;S;OK
+17;question T17-02 (explication);La recherche de panne fait partie des opérations BR [S29].;S29;S;OK
+17;question T17-03 (explication);Toutes les sources doivent être identifiées [R].;;R;OK

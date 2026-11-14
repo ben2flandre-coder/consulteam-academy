@@ -385,7 +385,7 @@ var bn=document.getElementById('bnotes'),bo=document.getElementById('bovw');
 bn.onclick=function(){tog(notes,bn)};bo.onclick=function(){tog(ovw,bo)};
 document.getElementById('bhelp').onclick=function(){document.getElementById('help').classList.add('on')};document.getElementById('help').onclick=function(){this.classList.remove('on')};
 function fs(){var d=document,e=d.documentElement;if(!d.fullscreenElement&&e.requestFullscreen){e.requestFullscreen().catch(function(){})}else if(d.exitFullscreen){d.exitFullscreen()}}
-var bf=document.getElementById('bfs');bf.onclick=fs;if(!document.documentElement.requestFullscreen)bf.style.display='none';
+var bf=document.getElementById('bfs');bf.onclick=fs;if(!document.documentElement.requestFullscreen||window.matchMedia('(pointer:coarse)').matches||window.self!==window.top)bf.style.display='none';
 function qtog(){document.body.classList.toggle('qbig')}document.getElementById('qbtn').onclick=qtog;
 document.addEventListener('keydown',function(e){if(/INPUT|TEXTAREA|SELECT/.test((e.target||{}).tagName||'')&&e.key!=='Escape')return;var k=e.key;
  if(k==='ArrowRight'||k==='PageDown'||k===' '||k==='Enter'){if(e.target.tagName==='BUTTON'&&(k===' '||k==='Enter'))return;e.preventDefault();next()}

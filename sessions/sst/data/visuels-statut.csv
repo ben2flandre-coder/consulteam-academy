@@ -6,27 +6,27 @@ examiner-signes;affiche;
 alerter-message;affiche;
 s1-saignement-compression;affiche;
 s1-pansement-compressif;affiche;
-s2-etouffement-claques;a_valider;La main de soutien paraît latérale : confirmer l’appui thoracique.
-s2-etouffement-abdominales;a_valider;Appui par rapport au nombril et au sternum non lisible.
-s2-etouffement-nourrisson;a_valider;Confirmer que le soutien s’exerce sur la mandibule sans pression sur la gorge.
-s3-malaise-repos;a_valider;La victime tient une tasse : retirer pour ne pas suggérer une boisson systématique.
+s2-etouffement-claques;a_valider;Points de contact sur le dos et le thorax à faire vérifier par un formateur SST.
+s2-etouffement-abdominales;a_valider;Repères du nombril et de la pointe du sternum peu lisibles.
+s2-etouffement-nourrisson;a_valider;Soutien de la mandibule, sans pression sur la gorge, à faire vérifier.
+s3-malaise-repos;affiche;
 s4-brulure-refroidissement;affiche;
 s5-douleur-immobilisation;affiche;
 s6-plaie-protection;affiche;
-s7-pls;a_valider;Côté gauche, bras inférieur et orientation de la bouche non lisibles : refaire ou valider avec une démonstration de référence.
-s8-rcp-compressions;a_valider;Point d’appui sternal à confirmer en vue de profil.
-s8-dae-etapes;a_valider;Position des électrodes (sous-claviculaire droite, latérale gauche) non confirmable sur les vignettes 2 et 3.
+s7-pls;a_valider;Latéralité et position exacte du bras inférieur à vérifier dans les deux vues.
+s8-rcp-compressions;a_valider;Placement sur la moitié inférieure du sternum à confirmer.
+s8-dae-etapes;a_valider;Repères anatomiques des électrodes à confirmer avec le schéma du fabricant.
 s8-insufflations;a_valider;Distinction adulte/enfant, ouverture des voies aériennes et pincement du nez à vérifier.
 danger-situation-risque;affiche;
-itamami-5-axes;a_valider;L’activité centrale représente un secours : vérifier la distinction travail prescrit / activité réelle.
-quatre-familles-dangers;a_valider;Séquence de secours en bas de l’image, qui détourne des quatre pictogrammes.
+itamami-5-axes;affiche;
+quatre-familles-dangers;affiche;
 neuf-principes-prevention;affiche;
 remonter-informations;affiche;
-scene-f1;a_valider;"Scène de repérage du danger : ne correspond pas aux scénarios F et K du site ; à rattacher ou à retirer."
-scene-f2;a_valider;"Scène de repérage du danger : ne correspond pas aux scénarios F et K du site ; à rattacher ou à retirer. Numéros ajoutés hors des séquences demandées."
-scene-f3;a_valider;"Scène de repérage du danger : ne correspond pas aux scénarios F et K du site ; à rattacher ou à retirer."
-scene-f4;a_valider;"Scène de repérage du danger : ne correspond pas aux scénarios F et K du site ; à rattacher ou à retirer. Numéros ajoutés hors des séquences demandées."
-scene-k1;a_valider;"Scène de repérage du danger : ne correspond pas aux scénarios F et K du site ; à rattacher ou à retirer."
-scene-k2;a_valider;"Scène de repérage du danger : ne correspond pas aux scénarios F et K du site ; à rattacher ou à retirer."
-scene-k3;a_valider;"Scène de repérage du danger : ne correspond pas aux scénarios F et K du site ; à rattacher ou à retirer. Numéros ajoutés hors des séquences demandées."
-scene-k4;a_valider;"Scène de repérage du danger : ne correspond pas aux scénarios F et K du site ; à rattacher ou à retirer."
+scene-f1;affiche;
+scene-f2;affiche;
+scene-f3;affiche;
+scene-f4;affiche;
+scene-k1;affiche;
+scene-k2;affiche;
+scene-k3;affiche;
+scene-k4;affiche;

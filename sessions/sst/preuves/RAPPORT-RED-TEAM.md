@@ -3,9 +3,9 @@ Contrôles exécutés : rendu 1280 et 390 px (0 débordement, 0 erreur console),
 
 ## Écarts ouverts (à traiter ou arbitrer)
 1. **Relecture indépendante non faite** : elle revient à B. Deflandre. Aucun second passage sans connaissance de la production n'a eu lieu.
-2. **Visuels IA à valider (10 gestes ou schémas)** : s7-pls, s8-dae-etapes, s8-rcp-compressions, s8-insufflations, s2 (claques, abdominales, nourrisson), s3-malaise-repos (tasse), itamami-5-axes, quatre-familles-dangers. Non affichés aux apprenants. Observations dans `visuels-relecture.html`.
-3. **Scènes F et K (8 images)** : elles ne correspondent pas aux scénarios F1-F4 et K1-K4 écrits sur le site (contextes et victimes différents). Rattachement à décider ; présentées à part dans `scenarios.html`.
-4. **Croix blanches sur trousses vertes** dans plusieurs images : signe générique, aucun logo identifié ; à confirmer au regard de la charte.
+2. **Visuels IA à valider (7)** : s7-pls, s2 (claques, abdominales, nourrisson), s8 (RCP, DAE, insufflations). Non affichés aux apprenants ; observations de la V2 dans `visuels-relecture.html`. Le visuel des neuf principes n'a plus ses numéros 1 à 3 : l'ordre de lecture figure dans la légende.
+3. **Scénarios F et K** : réécrits (v0.3.1) à partir des scènes illustrées ; contenus cliniques (signes, attendus) rédigés par Claude d'après le Guide V5.01, **à valider par le formateur** ; la RCP et l'étouffement ne sont pas couverts par une scène illustrée.
+4. **Croix blanches sur trousses vertes** dans plusieurs images : signe générique, aucun logo identifié ; le gilet vert signale le sauveteur (code couleur Consulteam).
 5. **Images reprises de la session a260bga** : mention « générée par IA » à confirmer.
 6. **Version du référentiel** : Document de référence V8 01/2021 (version plus récente possible) ; Guide V5.01/2024 retenu ; aide-mémoire ED 4085 de mai 2026 signalé, non lu, il annonce un alignement sur le dernier guide sans en donner le numéro.
 7. **Textes de loi** (223-6, R4224-15, L411-1) cités d'après les documents INRS, non relus sur Légifrance dans cet outil ; L4121-2 vérifié par le contrôle documentaire livré avec les images.

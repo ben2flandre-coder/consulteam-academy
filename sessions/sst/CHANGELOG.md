@@ -9,3 +9,8 @@
 - Menu apprenant sans lien « Espace formateur ».
 ## v0.2 — module initial
 - Déroulé, fiches secourir, validation, scénarios, MAC, suivi, matrice (voir historique git).
+
+## v0.3.2 — 14/11/2026
+- Correction MAC selon la grille officielle INRS de juillet 2023 : épreuve 2 = C6, C7, C8 ; 7 compétences ; C1 absente de la grille MAC.
+- Nouvelle page formateur certification.html (indicateurs reformulés, incontournables, conditions d’acquisition, initiale juin 2020 et MAC juillet 2023).
+- Registre R05 et sources mis à jour avec les grilles.

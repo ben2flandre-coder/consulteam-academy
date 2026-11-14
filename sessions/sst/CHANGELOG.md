@@ -1,4 +1,7 @@
 # Journal des changements
+## v0.7.1 — 15/11/2026
+- Mode jour / nuit : bouton flottant sur toutes les pages, choix mémorisé, suit le réglage du système par défaut ; fonds des encarts, tableaux et schémas adaptés au mode nuit ; l'impression reste en mode jour.
+- Livrets complets : livret de formation apprenant (93 pages, avec sommaire paginé : démarche, parcours, 8 compétences, fiches secourir, scénarios, validation, plans, glossaire, ressources, sources, aide-mémoire) et livret formateur (137 pages : synthèse, espace formateur, 4 demi-journées, séquences, animation complète, scénarios, pédagogie, matériel, matrice, certification, FAQ, suivi, validation, fiches, plans, glossaire, sources).
 ## v0.7.0 — 14/11/2026
 - Diaporama dans la partie animation : choix des diapositives par demi-journée, bloc ou diapositive, lancement plein écran, clavier, plan, mémorisation locale du choix.
 - Mise en page optimisée (site, animation, livrets) : espaces mieux occupés, grilles texte/visuels, impression ajustée.

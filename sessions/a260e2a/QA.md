@@ -69,3 +69,6 @@ Contenu de formateur.html chiffré dans le navigateur (AES-GCM 256, PBKDF2 600 0
 
 ## Audit complet du 14/11/2026
 Voir preuves/RAPPORT-AUDIT.md : programme 30/31, réglementaire 7 vérifiés / 6 réserves / 1 non vérifiable, 405 affirmations sans écart, accessibilité axe 0 violation (13 pages), 60 combinaisons d'affichage sans défaut, hors ligne OK, 211 questions. Fiche de parcours et mention handicap ajoutées.
+
+## Recherches élargies (14/11/2026)
+Sources S37 à S40 ajoutées ; audit réglementaire : 13 vérifiés sur 14 ; ED 325 récupérée (édition 1993, réimpression 2012, 24 cas).

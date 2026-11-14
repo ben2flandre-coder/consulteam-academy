@@ -14,3 +14,8 @@
 - Correction MAC selon la grille officielle INRS de juillet 2023 : épreuve 2 = C6, C7, C8 ; 7 compétences ; C1 absente de la grille MAC.
 - Nouvelle page formateur certification.html (indicateurs reformulés, incontournables, conditions d’acquisition, initiale juin 2020 et MAC juillet 2023).
 - Registre R05 et sources mis à jour avec les grilles.
+
+## v0.3.3 — 14/11/2026
+- Exploitation des ressources INRS : nouvelle page apprenant outils.html (PAP, ITAMaMi, Carsat, DAE, garrot, trousse, origine des gestes, responsabilité, malaises mortels, organisation des secours, repères historiques) et page formateur pedagogie.html.
+- Bloc « Pour aller plus loin » dans chaque module ; registre R24 à R27.
+- Garrot, DAE et trousse recoupés avec le Guide V5.01 : pas d’écart.

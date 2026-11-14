@@ -1,0 +1,22 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Évaluation · Consul Team</title><meta name="theme-color" content="#102c53"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23102c53'/%3E%3Cpath d='M18 3L8 18h7l-1 11 11-17h-8z' fill='%23f6b63d'/%3E%3C/svg%3E"><link rel="stylesheet" href="assets/style.css"></head><body>
+<main id="main"><h1>Évaluation</h1><p class="small">Les réponses sont mélangées à chaque essai. Ce QCM est un exercice de formation, il ne remplace pas l'évaluation du formateur.</p><div id="out"></div></main><script src="data/content.js"></script><script src="assets/app.js"></script><script>
+var out=document.getElementById('out');
+function choix(){var h='<div class="grid">';A.modules.forEach(function(m){h+='<div class="card"><strong>'+m.id+'. '+E(m.title)+'</strong><br><span class="small">'+m.questions.length+' question(s)</span><br>'+(m.questions.length?'<a class="btn" href="#m'+m.id+'">Commencer</a>':'<span class="small">Banque de questions à créer</span>')+'</div>'});
+h+='</div><p><a class="btn sec" href="#all">Tout le QCM ('+A.modules.reduce(function(s,m){return s+m.questions.length},0)+' questions)</a></p>';out.innerHTML=h}
+function quiz(ids){var qs=[];A.modules.forEach(function(m){if(ids==='all'||m.id==ids)m.questions.forEach(function(q){qs.push(q)})});
+qs=shuffle(qs).map(function(q){var t=q.type||'s';var o=q.options.map(function(x,i){return{t:x,i:i,ok:t==='s'?i===q.correct:t==='m'?q.correct.indexOf(i)>=0:false}});return{id:q.id,t:t,q:q.q,why:q.why,c:q.correct,o:shuffle(o),n:o.length}});
+var h='<p><a href="#">← Retour</a></p><form id="fm">';
+qs.forEach(function(q,i){h+='<fieldset class="card"><legend><strong>'+(i+1)+'. '+E(q.q)+'</strong></legend>';
+if(q.t==='o'){h+='<p class="small">Attribuez à chaque étape son rang (1 = première).</p>';q.o.forEach(function(o,j){h+='<label class="opt"><select name="q'+i+'_'+j+'" style="min-height:44px;font:inherit"><option value="">–</option>'+q.o.map(function(x,k){return '<option value="'+k+'">'+(k+1)+'</option>'}).join('')+'</select><span>'+E(o.t)+'</span></label>'})}
+else{if(q.t==='m')h+='<p class="small">Plusieurs réponses possibles.</p>';q.o.forEach(function(o,j){h+='<label class="opt"><input type="'+(q.t==='m'?'checkbox':'radio')+'" name="q'+i+'" value="'+j+'"><span>'+E(o.t)+'</span></label>'})}
+h+='<p class="small why" hidden>'+E(q.why)+'</p></fieldset>'});
+h+='<button class="btn" type="submit">Corriger</button></form><div id="res" class="card" hidden></div>';out.innerHTML=h;
+document.getElementById('fm').onsubmit=function(e){e.preventDefault();var s=0,ans=0;
+qs.forEach(function(q,i){var fs=document.querySelectorAll('fieldset')[i],ok=false,given=false;
+if(q.t==='o'){var all=true;q.o.forEach(function(o,j){var v=fs.querySelector('select[name=q'+i+'_'+j+']').value;if(v!=='')given=true;else all=false;if(v===''||+v!==o.i)all=false});ok=all;fs.querySelectorAll('.opt').forEach(function(l,j){l.classList.add(+fs.querySelector('select[name=q'+i+'_'+j+']').value===q.o[j].i&&fs.querySelector('select[name=q'+i+'_'+j+']').value!==''?'good':'bad')})}
+else{var lab=fs.querySelectorAll('.opt'),sel=fs.querySelectorAll('input:checked');given=sel.length>0;var picked=[];sel.forEach(function(x){picked.push(+x.value)});
+ok=picked.length>0&&q.o.every(function(o,j){return o.ok===(picked.indexOf(j)>=0)});q.o.forEach(function(o,j){if(o.ok)lab[j].classList.add('good');else if(picked.indexOf(j)>=0)lab[j].classList.add('bad')})}
+if(given)ans++;if(ok)s++;fs.querySelector('.why').hidden=false});
+var r=document.getElementById('res');r.hidden=false;r.innerHTML='<strong>Score : '+s+' / '+qs.length+'</strong> ('+ans+' question(s) traitée(s))<p class="small">Résultat conservé uniquement si vous l\'envoyez.</p><a class="btn" href="mailto:'+encodeURIComponent((window.CFG&&CFG.destinataire)||'')+'?subject='+encodeURIComponent('Résultat QCM A260E2A')+'&body='+encodeURIComponent('Score '+s+'/'+qs.length+' - module '+ids)+'">Envoyer mon résultat</a>';r.scrollIntoView()}}
+function route(){var h=location.hash;if(h==='#all')quiz('all');else if(/^#m\d+/.test(h))quiz(+h.slice(2));else choix()}
+addEventListener('hashchange',route);route();</script></body></html>

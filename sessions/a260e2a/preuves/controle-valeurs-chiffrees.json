@@ -1,0 +1,138 @@
+{
+ "modules": [
+  19,
+  20,
+  21,
+  22
+ ],
+ "affirmations": 112,
+ "sans_reference": 0,
+ "jetons_non_declares": [],
+ "jetons_declares_inutilises": [],
+ "valeurs": {
+  "0,02": [
+   "S",
+   "S2 : déclenchement < 0,02 s"
+  ],
+  "3": [
+   "S",
+   "S19 : courbe B entre 3 et 5 fois In"
+  ],
+  "5": [
+   "S",
+   "S19 ; C : 5,3 %"
+  ],
+  "30": [
+   "S",
+   "S3 : sensibilité 30 mA en logement"
+  ],
+  "20": [
+   "S",
+   "S14 : réserve minimale de 20 %"
+  ],
+  "230": [
+   "S",
+   "S21"
+  ],
+  "400": [
+   "S",
+   "S21"
+  ],
+  "10": [
+   "C",
+   "calcul-equilibrage : 3 x 10 A = neutre 0 A ; courant d'un circuit"
+  ],
+  "0": [
+   "C",
+   "calcul-equilibrage : 3 x 10 A = 0 A"
+  ],
+  "76": [
+   "C",
+   "calcul-equilibrage : somme 16+16+10+10+8+6+6+4 = 76 A"
+  ],
+  "16": [
+   "C",
+   "circuits de l'exemple"
+  ],
+  "8": [
+   "C",
+   "circuits de l'exemple"
+  ],
+  "6": [
+   "C",
+   "circuits de l'exemple"
+  ],
+  "4": [
+   "C",
+   "circuits de l'exemple"
+  ],
+  "42": [
+   "C",
+   "calcul-equilibrage : L1 avant"
+  ],
+  "18": [
+   "C",
+   "L2 avant"
+  ],
+  "24": [
+   "C",
+   "L1 après"
+  ],
+  "26": [
+   "C",
+   "L2 et L3 après"
+  ],
+  "25,06": [
+   "C",
+   "neutre avant"
+  ],
+  "25,33": [
+   "C",
+   "moyenne"
+  ],
+  "65,8": [
+   "C",
+   "déséquilibre avant"
+  ],
+  "5,3": [
+   "C",
+   "déséquilibre après"
+  ],
+  "2,0": [
+   "C",
+   "neutre après"
+  ],
+  "6561": [
+   "C",
+   "3^8 répartitions énumérées"
+  ],
+  "25": [
+   "D",
+   "distracteur"
+  ],
+  "100": [
+   "R",
+   "formule du pourcentage (× 100) [S13]"
+  ],
+  "16,7": [
+   "D",
+   "distracteur : écart en A"
+  ],
+  "60,3": [
+   "D",
+   "distracteur : moyenne ÷ maximum"
+  ],
+  "50": [
+   "D",
+   "distracteur"
+  ],
+  "1,3": [
+   "D",
+   "distracteur : écart arrondi"
+  ],
+  "1,33": [
+   "C",
+   "25,33 − 24"
+  ]
+ }
+}

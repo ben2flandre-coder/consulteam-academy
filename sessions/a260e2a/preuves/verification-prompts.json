@@ -1,0 +1,45 @@
+{
+ "date": "2026-11-14",
+ "prompts": 64,
+ "identifiants_uniques": true,
+ "chiffre_plus_unite": [],
+ "mention_INRS": [],
+ "ajoutes": [
+  "TB01",
+  "TB02",
+  "TB03",
+  "TB04",
+  "TB05",
+  "TB06",
+  "TB07",
+  "TB08",
+  "TB09"
+ ],
+ "renforces": [
+  "TC06",
+  "BT03",
+  "BC04",
+  "BC05",
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT06",
+  "EX01",
+  "SI03",
+  "AC01",
+  "AC02",
+  "AC04",
+  "AC06",
+  "AC07",
+  "TB01",
+  "TB06",
+  "TB07",
+  "TB08"
+ ],
+ "fichiers": [
+  "prompts-visuels-A260E2A.json",
+  "prompts-visuels-A260E2A.md",
+  "suivi-visuels-A260E2A.csv"
+ ]
+}

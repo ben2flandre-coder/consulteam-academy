@@ -1,0 +1,69 @@
+{
+ "avant": {
+  "affectation": {
+   "C1": "L1",
+   "C2": "L1",
+   "C3": "L1",
+   "C4": "L2",
+   "C5": "L2",
+   "C6": "L3",
+   "C7": "L3",
+   "C8": "L3"
+  },
+  "courants_par_phase": {
+   "L1": 42,
+   "L2": 18,
+   "L3": 16
+  },
+  "courant_neutre_A": 25.06,
+  "moyenne_A": 25.33,
+  "desequilibre_pct": 65.8
+ },
+ "apres_methode": {
+  "affectation": {
+   "C1": "L1",
+   "C2": "L2",
+   "C3": "L3",
+   "C4": "L3",
+   "C5": "L1",
+   "C6": "L2",
+   "C7": "L3",
+   "C8": "L2"
+  },
+  "courants_par_phase": {
+   "L1": 24,
+   "L2": 26,
+   "L3": 26
+  },
+  "courant_neutre_A": 2.0,
+  "moyenne_A": 25.33,
+  "desequilibre_pct": 5.3
+ },
+ "optimum_enumeration": {
+  "affectation": {
+   "C1": "L1",
+   "C2": "L2",
+   "C3": "L2",
+   "C4": "L3",
+   "C5": "L1",
+   "C6": "L3",
+   "C7": "L3",
+   "C8": "L3"
+  },
+  "courants_par_phase": {
+   "L1": 24,
+   "L2": 26,
+   "L3": 26
+  },
+  "courant_neutre_A": 2.0,
+  "moyenne_A": 25.33,
+  "desequilibre_pct": 5.3
+ },
+ "nb_affectations_testees": 6561,
+ "hypotheses": "charges résistives, cos φ = 1, circuits monophasés phase-neutre, courants d'emploi fictifs ; pas d'harmoniques ; ordre des phases L1,L2,L3 à 120°",
+ "tout_sur_L1": {
+  "courant_neutre_A": 76.0,
+  "total_A": 76
+ },
+ "trois_courants_egaux_10A_neutre_A": 0.0
+}

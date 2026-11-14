@@ -1,0 +1,41 @@
+:root{--n:#102c53;--b:#0b68ae;--y:#f6b63d;--i:#16273d;--m:#53657a;--l:#cbd5e1;--bg:#f3f5f8;--w:#fff;--ok:#16794a;--ko:#b3261e;--r:12px}
+body.nuit{--bg:#0d1722;--w:#15253a;--i:#e7eef6;--m:#9fb2c8;--l:#2c4058;--b:#7cc0f5}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--i);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+img{max-width:100%;height:auto}a{color:var(--b)}
+header.top{background:var(--n);color:#fff;position:sticky;top:0;z-index:5}
+.bar{max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;padding:8px 14px}
+.brand{font-weight:700;color:#fff;text-decoration:none;display:flex;align-items:center;gap:8px;min-height:44px}
+.brand i{width:28px;height:28px;border-radius:6px;background:var(--y);display:inline-block}
+nav{display:flex;flex-wrap:wrap;gap:2px 4px;margin-left:auto}
+nav a,nav button{color:#fff;text-decoration:none;padding:10px 12px;min-height:44px;border-radius:8px;background:none;border:0;font:inherit;cursor:pointer;display:inline-flex;align-items:center}
+nav a:hover,nav a[aria-current],nav button:hover{background:rgba(255,255,255,.15)}
+main{max-width:1100px;margin:auto;padding:18px 14px 60px}
+h1{font-size:clamp(1.5rem,5vw,2.2rem);line-height:1.2;color:var(--n);margin:.2em 0}body.nuit h1,body.nuit h2{color:var(--i)}
+h2{color:var(--n);font-size:1.3rem;margin-top:1.6em}
+.card{background:var(--w);border:1px solid var(--l);border-radius:var(--r);padding:16px;margin:12px 0}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.btn,button.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border-radius:10px;border:1px solid var(--n);background:var(--n);color:#fff;font:600 15px/1.3 inherit;text-decoration:none;cursor:pointer}
+.btn.sec{background:var(--w);color:var(--n)}body.nuit .btn.sec{color:var(--i);border-color:var(--l)}
+.tag{display:inline-block;font-size:.78rem;font-weight:700;padding:2px 9px;border-radius:99px;background:#e6edf5;color:var(--n);margin:0 4px 4px 0}
+.tag.rep{background:#d9f1e4;color:#0f5c37}.tag.cpl{background:#fff1cc;color:#6b4a00}.tag.red{background:#e6edf5}
+body.nuit .tag{background:#233b55;color:#e7eef6}
+.opt{display:flex;align-items:flex-start;gap:10px;padding:12px;border:1px solid var(--l);border-radius:10px;margin:8px 0;min-height:44px;cursor:pointer;background:var(--w)}
+.opt input{width:22px;height:22px;margin-top:2px;flex:none}
+.opt.good{border-color:var(--ok);background:rgba(22,121,74,.12)}.opt.bad{border-color:var(--ko);background:rgba(179,38,30,.1)}
+.note{border-left:5px solid var(--y);background:rgba(246,182,61,.14);padding:10px 14px;border-radius:0 10px 10px 0}
+.small{font-size:.9rem;color:var(--m)}:focus-visible{outline:3px solid var(--y);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;color:#000;padding:8px;z-index:9}
+.fig{margin:0}.fig img{border-radius:10px;display:block;width:100%}.ph{aspect-ratio:3/2;display:grid;place-items:center;background:repeating-linear-gradient(45deg,#e6edf5,#e6edf5 10px,#f3f5f8 10px,#f3f5f8 20px);border-radius:10px;color:var(--m);font-size:.85rem;text-align:center;padding:8px}
+body.nuit .ph{background:#1b2d44}
+.deck{position:fixed;inset:0;background:var(--n);color:#fff;display:flex;flex-direction:column;z-index:20}
+.deck .slide{flex:1;display:flex;flex-direction:column;justify-content:center;padding:4vw;max-width:1100px;margin:auto;width:100%;overflow:auto}
+.deck h1{color:#fff;font-size:clamp(1.6rem,5.5vw,3.2rem)}.deck p{font-size:clamp(1.1rem,3.2vw,1.9rem);line-height:1.5}
+.deck .ctl{display:flex;gap:8px;padding:10px;justify-content:center;flex-wrap:wrap;background:rgba(0,0,0,.25)}
+.deck .ctl button,.deck .ctl a{min-width:56px;min-height:48px;border-radius:10px;border:1px solid #fff;background:none;color:#fff;font:600 16px inherit;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:0 14px}
+td a{display:inline-block;padding:11px 0}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--l);padding:8px;text-align:left;vertical-align:top}
+.scroll{overflow-x:auto}
+@media (max-width:600px){main{padding:12px 10px 50px}.card{padding:12px}}
+@media print{header.top,.deck .ctl{display:none}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}

@@ -1,0 +1,226 @@
+{
+ "date": "2026-11-14",
+ "remarque": "Registre des sources lues pour les modules 19 à 22. 'lu' = page lue en entier par l'outil de lecture web ; 'extrait' = seul un extrait a été obtenu. Aucune copie de page n'est conservée : le hachage d'une page web n'est donc pas fourni. Chaque source est à rouvrir par son URL pour contrôle.",
+ "sources": [
+  {
+   "id": "S1",
+   "titre": "INRS — Risques électriques : Opérations sur les installations électriques",
+   "url": "https://www.inrs.fr/risques/electriques/operations-installations.html",
+   "editeur": "INRS",
+   "acces": "lu",
+   "fiabilite": "institutionnelle",
+   "usage": "Périmètre des opérations BS et BR, consignation par le BR.",
+   "limites": "La page ne mentionne pas le « remplacement d'un élément d'armoire » pour le BS. Elle ne définit pas le BC. NF C 18-510 non lue."
+  },
+  {
+   "id": "S2",
+   "titre": "Legrand — Comment fonctionne un disjoncteur en cas de surcharges électriques ?",
+   "url": "https://www.legrand.fr/questions-frequentes/comment-fonctionne-un-disjoncteur-en-cas-de-surcharges-electriques",
+   "editeur": "Legrand (fabricant)",
+   "acces": "lu",
+   "fiabilite": "fabricant, visée commerciale",
+   "usage": "Trois organes internes d'un disjoncteur ; temps de réaction (extrait de FAQ) ; disjoncteur différentiel.",
+   "limites": "Pas de courbes ni de valeurs de seuils ; temps de réaction donné seulement dans un extrait de FAQ."
+  },
+  {
+   "id": "S3",
+   "titre": "Legrand — Comment fonctionne un interrupteur différentiel ?",
+   "url": "https://www.legrand.fr/questions-frequentes/comment-fonctionne-un-interrupteur-differentiel",
+   "editeur": "Legrand (fabricant)",
+   "acces": "lu",
+   "fiabilite": "fabricant, visée commerciale",
+   "usage": "Comparaison des courants entrant et sortant ; sensibilité 30 mA en logement ; bouton test ; types AC et A.",
+   "limites": "Ne mentionne ni le tore ni le mécanisme interne ni le temps de réaction. Cadre logement (NF C 15-100)."
+  },
+  {
+   "id": "S4",
+   "titre": "Promotelec — Dossier technique « Dispositifs différentiels à haute sensibilité (DDR) 30 mA »",
+   "url": "https://forums.futura-sciences.com/attachments/depannage/72970d1237726460-electrocution-electrisation-baignoire-e1e2cf51-2cc8-42b2-9669-ebe676329720.pdf",
+   "editeur": "Promotelec (copie hébergée sur un forum)",
+   "acces": "extrait",
+   "fiabilite": "association professionnelle, copie non officielle",
+   "usage": "Circuit d'essai du bouton test qui dérive un courant hors du tore ; test périodique ; différence interrupteur / disjoncteur différentiel.",
+   "limites": "Extrait de recherche seulement ; copie hébergée sur un forum : remplacer par le document sur le site de Promotelec."
+  },
+  {
+   "id": "S5",
+   "titre": "ABB Revue n° 1/1997 — Nouveau contacteur électromagnétique à large plage de tension de commande (pp. 29-32)",
+   "url": "https://library.e.abb.com/public/9e8b8133b39143aac1256ddd00346f15/29-32m530.pdf",
+   "editeur": "ABB",
+   "acces": "lu",
+   "fiabilite": "constructeur, article technique ancien",
+   "usage": "Constitution et fonctionnement d'un contacteur ; enroulement auxiliaire en alternatif ; rôle du relais thermique.",
+   "limites": "Article de 1997 sur un produit précis ; ne parle pas de « spire de déphasage »."
+  },
+  {
+   "id": "S6",
+   "titre": "IZI by EDF — Composition d'un tableau électrique : coffret, disjoncteurs & autres modules",
+   "url": "https://izi-by-edf.fr/blog/comprendre-composition-tableau-electrique",
+   "editeur": "IZI by EDF",
+   "acces": "lu",
+   "fiabilite": "blog commercial grand public",
+   "usage": "Liste des appareils d'un tableau et de leur rôle (logement).",
+   "limites": "Affirme qu'un interrupteur différentiel coupe en cas de court-circuit ou de surcharge : non repris, contredit par S4."
+  },
+  {
+   "id": "S7",
+   "titre": "Legrand — Comment déterminer le pouvoir de coupure d'un disjoncteur ?",
+   "url": "https://www.legrand.fr/questions-frequentes/comment-determiner-le-pouvoir-de-coupure-dun-disjoncteur",
+   "editeur": "Legrand (fabricant)",
+   "acces": "lu",
+   "fiabilite": "fabricant, visée commerciale",
+   "usage": "Définition du pouvoir de coupure et règle Pdc supérieur à Icc.",
+   "limites": "Renvoie à la NF C 15-100 pour le choix ; valeur de 3 kA citée pour le domestique, non reprise."
+  },
+  {
+   "id": "S8",
+   "titre": "Legrand — Comment changer un disjoncteur ?",
+   "url": "https://www.legrand.fr/questions-frequentes/comment-changer-un-disjoncteur",
+   "editeur": "Legrand (fabricant)",
+   "acces": "lu",
+   "fiabilite": "fabricant, visée commerciale",
+   "usage": "Dépose et pose d'un disjoncteur à vis ou à bornes automatiques ; précautions.",
+   "limites": "Ne détaille ni le repérage des conducteurs, ni le serrage, ni la remise sous tension, ni les essais."
+  },
+  {
+   "id": "S9",
+   "titre": "Legrand — Comment ajouter un disjoncteur au tableau électrique ?",
+   "url": "https://www.legrand.fr/questions-frequentes/comment-ajouter-un-disjoncteur-au-tableau-electrique",
+   "editeur": "Legrand (fabricant)",
+   "acces": "lu",
+   "fiabilite": "fabricant, visée commerciale",
+   "usage": "Étapes d'ajout : choix, coupure, pose sur rail, peigne, raccordement, repérage, essais.",
+   "limites": "Ne traite pas la vérification d'absence de tension. Cotes de dénudage propres au produit Legrand."
+  },
+  {
+   "id": "S10",
+   "titre": "Brevet EP 0 508 846 A1 — Disjoncteur unipolaire modulaire perfectionné et son procédé de montage",
+   "url": "https://data.epo.org/publication-server/rest/v1.2/patents/EP0508846NWA1/document.pdf",
+   "editeur": "Office européen des brevets",
+   "acces": "extrait",
+   "fiabilite": "document technique de brevet",
+   "usage": "Ordre des éléments entre les deux bornes : bilame, bobine avec noyau, contact mobile, chambres de coupure.",
+   "limites": "Extrait de recherche ; décrit un produit précis."
+  },
+  {
+   "id": "S11",
+   "titre": "Schneider Electric — Cahier Technique n° 202 (harmoniques, surcharge du neutre)",
+   "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/ressources/techniques/3309/3309-ct202.pdf",
+   "editeur": "Schneider Electric (copie Éduscol)",
+   "acces": "extrait",
+   "fiabilite": "constructeur, cahier technique",
+   "usage": "Harmoniques de rang 3 et multiples : surcharge du conducteur neutre ; charges triphasées équilibrées sans harmonique de rang 3.",
+   "limites": "Extrait de recherche ; document à lire en entier pour la méthode de calcul."
+  },
+  {
+   "id": "S12",
+   "titre": "Chauvin Arnoux — document D00ZQG50 (diagnostic réseau)",
+   "url": "https://chauvin-arnoux.at/sites/default/files/D00ZQG50.PDF",
+   "editeur": "Chauvin Arnoux",
+   "acces": "extrait",
+   "fiabilite": "constructeur d'appareils de mesure",
+   "usage": "Le courant dans le neutre correspond au déséquilibre des charges monophasées entre phases.",
+   "limites": "Extrait de recherche ; contexte d'une étude de cas."
+  },
+  {
+   "id": "S13",
+   "titre": "Fluke — Transitoires et déséquilibre de tension",
+   "url": "https://fluke.com/fr/apprendre/blog/moteurs-variateurs-pompes-compresseurs/desequilibre-de-tension",
+   "editeur": "Fluke",
+   "acces": "relu le 14/11/2026 (réponse ciblée de l'outil de lecture)",
+   "fiabilite": "constructeur d'appareils de mesure",
+   "usage": "Formule du pourcentage de déséquilibre ; effets sur les moteurs ; connexions desserrées.",
+   "limites": "Formule donnée pour la tension ou le courant ; la page ne parle pas d'échauffement des connexions mais de connexions desserrées et de contacts usés."
+  },
+  {
+   "id": "S14",
+   "titre": "Éduscol STI — Fiche NF C 15-100 (ETEL et GTL)",
+   "url": "https://eduscol.education.fr/sti/sites/eduscol.education.fr.sti/files/ressources/pedagogiques/9930/9930-etel-et-gtl-2018-05-15.pdf",
+   "editeur": "Éduscol (Éducation nationale)",
+   "acces": "relu le 14/11/2026 (réponse ciblée de l'outil de lecture)",
+   "fiabilite": "ressource pédagogique institutionnelle",
+   "usage": "Réserve minimale de 20 % de modules libres dans les tableaux de répartition (logement).",
+   "limites": "Concerne les logements (NF C 15-100, édition de la fiche : 2018) ; la réserve peut être limitée à six modules par logement en immeuble collectif."
+  },
+  {
+   "id": "S15",
+   "titre": "IZI by EDF — Comment étiqueter son tableau électrique ?",
+   "url": "https://izi-by-edf.fr/blog/tableau-electrique-solutions-pour-etiqueter",
+   "editeur": "IZI by EDF",
+   "acces": "extrait",
+   "fiabilite": "blog commercial grand public",
+   "usage": "Citation de la NF C 15-100 sur le repérage des circuits (locaux desservis et fonction).",
+   "limites": "Citation de seconde main ; NF C 15-100 non lue."
+  },
+  {
+   "id": "S16",
+   "titre": "EPS Formation — support BS « Les interventions BS »",
+   "url": "https://elearning.eps-formation.fr/uploads/lecture/1768229225QnszIvPRIf.pdf",
+   "editeur": "EPS Formation (organisme de formation)",
+   "acces": "extrait",
+   "fiabilite": "support de formation, source secondaire",
+   "usage": "VAT sur tous les conducteurs actifs, neutre compris ; contrôle du VAT avant et après ; attention à la séparation non simultanée des pôles.",
+   "limites": "Extrait de recherche ; source secondaire à confronter à la NF C 18-510 et au module 11."
+  },
+  {
+   "id": "S17",
+   "titre": "Centre universitaire de Mila — cours sur le contacteur",
+   "url": "https://elearning.centre-univ-mila.dz/a2025/mod/resource/view.php?id=54305",
+   "editeur": "Centre universitaire de Mila",
+   "acces": "extrait",
+   "fiabilite": "cours universitaire",
+   "usage": "Contacts principaux et auxiliaires ; circuit magnétique feuilleté.",
+   "limites": "Extrait de recherche."
+  },
+  {
+   "id": "S18",
+   "titre": "Cours « fonction distribuer préactionneurs électriques » (spire de Frager)",
+   "url": "https://www.dreamjob.ma/wp-content/uploads/2023/10/fonction-distribuer-preactionneurs-electriques-cours.pdf",
+   "editeur": "Support de cours en ligne",
+   "acces": "extrait",
+   "fiabilite": "cours en ligne, source faible",
+   "usage": "Spire de Frager (bague de déphasage) qui évite les vibrations en alternatif.",
+   "limites": "Extrait de recherche ; à confirmer par une notice de constructeur."
+  },
+  {
+   "id": "S19",
+   "titre": "Enseignons.be — fiche « Disjoncteur magnétothermique »",
+   "url": "https://www.enseignons.be/preparation/download/63443",
+   "editeur": "Fiche pédagogique belge",
+   "acces": "extrait",
+   "fiabilite": "fiche pédagogique, source faible",
+   "usage": "Courbe B : déclenchement magnétique entre 3 et 5 fois In ; pouvoir de coupure supérieur à Icc max.",
+   "limites": "Extrait de recherche ; contexte belge."
+  },
+  {
+   "id": "S20",
+   "titre": "Viox — Qu'est-ce qu'un disjoncteur modulaire (MCB)",
+   "url": "https://viox.com/fr/what-is-a-miniature-circuit-breaker-mcb/",
+   "editeur": "Viox (fabricant)",
+   "acces": "extrait",
+   "fiabilite": "fabricant, visée commerciale",
+   "usage": "Les courbes B, C, D, K, Z décrivent le multiple de courant auquel le déclencheur magnétique agit ; clip rail DIN.",
+   "limites": "Extrait de recherche."
+  },
+  {
+   "id": "S21",
+   "titre": "Le Bâtiment Performant — guide NF C 15-100 (système de distribution)",
+   "url": "https://lebatimentperformant.fr/upload/edl/product/book/696772ae82c95.pdf",
+   "editeur": "Le Bâtiment Performant",
+   "acces": "extrait",
+   "fiabilite": "ouvrage professionnel",
+   "usage": "Réseau triphasé + neutre : 230 V entre phase et neutre, 400 V entre phases.",
+   "limites": "Extrait de recherche."
+  },
+  {
+   "id": "S22",
+   "titre": "Plateforme A260BNA (Panzani), séquence 5 « BC : consignation » et séquence 4 « BR »",
+   "url": "sessions/a260bna/parcours.html",
+   "editeur": "Consulteam (interne)",
+   "acces": "lu",
+   "fiabilite": "interne, recalé par ses auteurs sur ED 6109 et ED 6127",
+   "usage": "Ordre de la consignation (séparation, condamnation, identification, VAT, mise à la terre) ; renvoi du module 11.",
+   "limites": "NF C 18-510 non lue ; relecture indépendante non faite."
+  }
+ ]
+}

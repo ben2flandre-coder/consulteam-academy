@@ -1,0 +1,11 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Accueil · Consul Team</title><meta name="theme-color" content="#102c53"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23102c53'/%3E%3Cpath d='M18 3L8 18h7l-1 11 11-17h-8z' fill='%23f6b63d'/%3E%3C/svg%3E"><link rel="stylesheet" href="assets/style.css"></head><body>
+<main id="main"><h1>Habilitation électrique : formation initiale</h1>
+<p class="small" id="meta"></p>
+<div class="card"><p>Support de la formation animée en présentiel par le formateur, avec le même contenu pour le suivi à distance. Il s'utilise sur ordinateur, tablette et smartphone, y compris hors connexion une fois chargé.</p>
+<p class="note">Lire ce support et réussir les exercices ne valent pas habilitation. L'employeur délivre le titre pour les opérations qu'il confie.</p>
+<p><a class="btn" href="parcours.html">Ouvrir le parcours</a> <a class="btn sec" href="evaluation.html">M'évaluer</a></p></div>
+<h2>Les niveaux</h2><div class="grid" id="niv"></div></main><script src="data/content.js"></script><script src="assets/app.js"></script><script>
+document.getElementById('meta').textContent=A.dates+' · '+A.lieu;
+var n={};A.modules.forEach(function(m){m.niveaux.forEach(function(x){(n[x]=n[x]||[]).push(m)})});
+var h='';Object.keys(n).forEach(function(k){h+='<a class="card" style="text-decoration:none;color:inherit" href="parcours.html#niv-'+encodeURIComponent(k)+'"><strong>'+E(k)+'</strong><br><span class="small">'+n[k].length+' module(s)</span></a>'});
+document.getElementById('niv').innerHTML=h;</script></body></html>

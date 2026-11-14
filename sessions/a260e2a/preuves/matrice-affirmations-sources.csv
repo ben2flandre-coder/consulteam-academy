@@ -1,0 +1,113 @@
+﻿module;emplacement;affirmation;sources;niveau (S source / C calcul / R principe);statut
+19;section : Lire un tableau de l'amont vers l'aval;Un tableau de répartition se lit de l'amont vers l'aval : l'arrivée, les protections de tête, puis les départs vers les circuits [S6].;S6;S;OK
+19;section : Lire un tableau de l'amont vers l'aval;Les rangées sont alimentées par un peigne, la terre et le neutre vont sur des borniers [S6, R].;S6;R;OK
+19;section : Lire un tableau de l'amont vers l'aval;La disposition varie d'un tableau à l'autre : appuyez-vous sur les repères et sur le schéma du tableau, pas seulement sur la place des appareils [R].;;R;OK
+19;section : Le disjoncteur divisionnaire;Il protège un circuit [S2].;S2;S;OK
+19;section : Le disjoncteur divisionnaire;Il contient trois organes [S2] : une bobine électromagnétique qui réagit au court-circuit en moins de 0,02 s, un bilame qui réagit à la surcharge en deux minutes à plusieurs minutes, et une chambre de coupure qui disloque l'arc électrique.;S2;S;OK
+19;section : Le disjoncteur divisionnaire;Entre les deux bornes, on trouve dans l'ordre le bilame, la bobine avec son noyau, le contact mobile, puis les chambres de coupure [S10].;S10;S;OK
+19;section : Courbe et pouvoir de coupure;La courbe indique à partir de quel multiple du calibre le déclencheur magnétique agit : les courbes B, C, D, K et Z existent [S20], et pour la courbe B, le magnétique agit entre 3 et 5 fois le calibre [S19].;S19 S20;S;OK
+19;section : Courbe et pouvoir de coupure;Le pouvoir de coupure du disjoncteur doit être supérieur au courant de court-circuit présumé à son emplacement [S7].;S7;S;OK
+19;section : L'interrupteur différentiel;"Il compare le courant qui part et le courant qui revient ; un écart signale une fuite vers la terre et provoque le déclenchement [S3].";S3;S;OK
+19;section : L'interrupteur différentiel;En logement, la sensibilité est de 30 mA [S3].;S3;S;OK
+19;section : L'interrupteur différentiel;Le bouton test (T) alimente un circuit d'essai qui dérive un courant en dehors du tore [S4].;S4;S;OK
+19;section : L'interrupteur différentiel;Il ne protège pas contre la surcharge ni le court-circuit : c'est le rôle du disjoncteur en aval [S4].;S4;S;OK
+19;section : L'interrupteur différentiel;Les types AC et A se distinguent par les courants de fuite qu'ils détectent [S3].;S3;S;OK
+19;section : Contacteur, télérupteur, minuterie, parafoudre;Le contacteur ferme ses contacts quand sa bobine est alimentée et les rouvre par un ressort quand elle est coupée [S5].;S5;S;OK
+19;section : Contacteur, télérupteur, minuterie, parafoudre;Il a des contacts de puissance et des contacts auxiliaires [S17].;S17;S;OK
+19;section : Contacteur, télérupteur, minuterie, parafoudre;Le télérupteur commande un circuit par impulsions, la minuterie coupe après un délai, le parafoudre limite les surtensions d'origine atmosphérique [S6, R].;S6;R;OK
+19;section : Contacteur, télérupteur, minuterie, parafoudre;Repérez la fonction de chaque appareil avant toute intervention [R].;;R;OK
+19;section : Ce que la position d'un appareil ne prouve pas;Un appareil en position ouvert ne prouve pas que l'aval est hors tension [R].;;R;OK
+19;section : Ce que la position d'un appareil ne prouve pas;Seule la vérification d'absence de tension, sur tous les conducteurs actifs, neutre compris, permet de conclure [S16, S22].;S16 S22;S;OK
+19;situation;Vous ouvrez le capot d'un tableau de répartition : plusieurs rangées d'appareils, un peigne, des borniers.;;;OK
+19;situation;Avant de toucher à quoi que ce soit, vous devez dire ce que vous voyez et à quoi cela sert.;;;OK
+19;réponse;Que la position OFF ne suffit pas : on sépare, on condamne, on identifie, puis on vérifie l'absence de tension, neutre compris, avant d'intervenir [S16, S22].;S16 S22;S;OK
+19;question T19-01 (explication);Le bilame se dilate à la chaleur et déclenche [S2].;S2;S;OK
+19;question T19-01 (explication);La bobine répond au court-circuit, la chambre disloque l'arc [S2].;S2;S;OK
+19;question T19-02 (explication);La bobine électromagnétique abaisse la manette, déclenchement inférieur à 0,02 s [S2].;S2;S;OK
+19;question T19-03 (explication);Comparaison des courants et 30 mA [S3], bouton test [S3, S4].;S3 S4;S;OK
+19;question T19-03 (explication);Il ne protège pas contre la surcharge ni le court-circuit [S4].;S4;S;OK
+19;question T19-04 (explication);Pouvoir de coupure supérieur au courant de court-circuit [S7].;S7;S;OK
+19;question T19-05 (explication);Seule la VAT, neutre compris, permet de conclure [S16, S22].;S16 S22;S;OK
+19;question T19-06 (explication);Bobine alimentée : l'armature est attirée, les contacts se ferment [S5].;S5;S;OK
+19;question T19-06 (explication);Bobine coupée : le ressort les rouvre [S5].;S5;S;OK
+19;exercice 1 (explication);Le peigne alimente les appareils de la rangée [S9].;S9;S;OK
+19;exercice 1 (explication);Le bornier de terre reçoit les conducteurs de terre [S6, R].;S6;R;OK
+19;exercice 2 (explication);Ordre bilame, bobine avec noyau, contact mobile, chambres de coupure [S10].;S10;S;OK
+19;exercice 3 (explication);Le bouton test dérive un courant en dehors du tore : le différentiel doit déclencher [S3, S4].;S3 S4;S;OK
+20;section : Pourquoi équilibrer;Avec des charges monophasées, le courant dans le neutre correspond au déséquilibre entre phases [S12].;S12;S;OK
+20;section : Pourquoi équilibrer;Plus le déséquilibre est fort, plus le neutre est sollicité [S12, R].;S12;R;OK
+20;section : Pourquoi équilibrer;Un déséquilibre pénalise aussi les moteurs (couple, surintensité, surchauffe) et peut signaler des connexions desserrées ou des contacts usés [S13].;S13;S;OK
+20;section : Pourquoi équilibrer;Équilibrer répartit la charge pour limiter ces effets [R].;;R;OK
+20;section : La tension et le neutre;Dans un réseau triphasé avec neutre, on mesure 230 V entre une phase et le neutre, 400 V entre deux phases [S21].;S21;S;OK
+20;section : La tension et le neutre;"Les trois courants de phase sont décalés ; leur somme vectorielle passe dans le neutre [C].";;C;OK
+20;section : La tension et le neutre;"Trois courants égaux de 10 A, avec des charges résistives, donnent 0 A dans le neutre ; tous les circuits sur une seule phase, 76 A au total, donnent 76 A dans le neutre [C].";;C;OK
+20;section : Mesurer le déséquilibre;Le pourcentage de déséquilibre se calcule ainsi : écart maximal à la moyenne, divisé par la moyenne, multiplié par cent [S13].;S13;S;OK
+20;section : Mesurer le déséquilibre;La moyenne des trois courants de l'exemple est de 25,33 A [C].;;C;OK
+20;section : Exemple chiffré fictif;Huit circuits de 16, 16, 10, 10, 8, 6, 6 et 4 A, charges résistives [C].;;C;OK
+20;section : Exemple chiffré fictif;Avant : 42, 18 et 16 A par phase, neutre à 25,06 A, déséquilibre de 65,8 % [C].;;C;OK
+20;section : Exemple chiffré fictif;Après répartition : 24, 26 et 26 A, neutre à 2,0 A, déséquilibre de 5,3 % [C].;;C;OK
+20;section : Exemple chiffré fictif;Ce résultat est le meilleur possible parmi les 6561 répartitions testées par le script [C].;;C;OK
+20;section : Méthode;"Lister les courants d'emploi des circuits ; les classer du plus fort au plus faible ; brancher chacun sur la phase la moins chargée à cet instant ; contrôler à la pince ampèremétrique, en charge normale ; repérer chaque circuit avec sa phase [R].";;R;OK
+20;section : Méthode;Respecter l'habilitation et les règles de sécurité de l'intervention : déplacer un circuit est une opération sur l'installation [S1].;S1;S;OK
+20;section : Une limite à connaître;Des phases équilibrées ne suppriment pas les courants harmoniques de rang 3 et multiples, qui s'additionnent dans le neutre avec des charges non linéaires (informatique, éclairage électronique) [S11].;S11;S;OK
+20;section : Une limite à connaître;Le calcul ci-dessus suppose des charges résistives [C].;;C;OK
+20;situation;Un tableau triphasé alimente huit circuits monophasés.;;;OK
+20;situation;Trois d'entre eux sont sur la même phase, deux sur une autre, trois sur la dernière.;;;OK
+20;situation;On vous demande de les répartir pour équilibrer le tableau.;;;OK
+20;réponse;"Répartir les circuits du plus fort au plus faible sur la phase la moins chargée, puis mesurer les courants de phase et du neutre en charge normale ; sur l'exemple, on passe à 24, 26 et 26 A [C].";;C;OK
+20;question T20-01 (explication);Trois courants égaux et décalés de manière régulière s'annulent dans le neutre [C].;;C;OK
+20;question T20-02 (explication);Un seul courant de phase revient entièrement par le neutre [C].;;C;OK
+20;question T20-03 (explication);Après répartition : 24, 26 et 26 A, neutre à 2,0 A [C].;;C;OK
+20;question T20-04 (explication);(42 − 25,33) ÷ 25,33 × 100 ≈ 65,8 % [S13, C].;S13;C;OK
+20;question T20-04 (explication);16,7 est l'écart en ampères, 60,3 le rapport moyenne sur maximum [C].;;C;OK
+20;question T20-05 (explication);Les harmoniques de rang 3 et multiples s'additionnent dans le neutre [S11].;S11;S;OK
+20;exercice 1 (explication);Écart maximal : 25,33 − 24 = 1,33 A, soit 5,3 % de la moyenne [S13, C].;S13;C;OK
+20;exercice 1 (explication);1,3 est l'écart en ampères arrondi, pas un pourcentage [C].;;C;OK
+20;exercice 2 (explication);Méthode de l'exemple [R], formule de contrôle [S13].;S13;R;OK
+21;section : Cadrer : ai-je le droit ?;La page de l'INRS lue décrit pour le BS le remplacement à l'identique d'un fusible ou le réarmement d'un dispositif de protection, et pour le BR le dépannage et le remplacement d'un matériel défectueux [S1].;S1;S;OK
+21;section : Cadrer : ai-je le droit ?;Elle ne cite pas le remplacement d'un élément d'armoire : le périmètre exact se vérifie dans le titre d'habilitation, la NF C 18-510 (non lue ici) et les consignes de l'employeur [S1].;S1;S;OK
+21;section : Diagnostiquer avant de remplacer;Un disjoncteur qui ne se réarme pas est peut-être défectueux, ou le défaut de l'installation persiste : vérifier d'abord la cause [S8].;S8;S;OK
+21;section : Diagnostiquer avant de remplacer;Relever les caractéristiques de l'appareil : calibre, courbe, pouvoir de coupure, type de différentiel [S7, S8].;S7 S8;S;OK
+21;section : Consigner et vérifier l'absence de tension;Séparer, condamner, identifier, vérifier l'absence de tension [S22].;S22;S;OK
+21;section : Consigner et vérifier l'absence de tension;La VAT porte sur tous les conducteurs actifs, neutre compris, et le VAT se contrôle avant et après sur une source connue [S16].;S16;S;OK
+21;section : Déposer;"Disjoncteur à vis : dévisser les quatre vis, puis extraire l'appareil en faisant levier sur la griffe de fixation ; si un peigne l'alimente, desserrer les vis du haut de tous les disjoncteurs de la rangée [S8].";S8;S;OK
+21;section : Déposer;Disjoncteur à bornes automatiques : retirer le peigne avec un tournevis en levier, appuyer sur les poussoirs pour libérer les fils, puis extraire l'appareil en faisant levier sur la griffe [S8].;S8;S;OK
+21;section : Déposer;Repérer les fils avant de les retirer [R].;;R;OK
+21;section : Poser et raccorder;Clipser le nouvel appareil sur le rail à l'emplacement libéré, relier par fils ou peigne en haut et par fils en bas [S8].;S8;S;OK
+21;section : Poser et raccorder;Pour un calibre supérieur, vérifier d'abord que les conducteurs supportent l'intensité visée [S8].;S8;S;OK
+21;section : Poser et raccorder;Appareil équivalent : même calibre, même courbe, pouvoir de coupure au moins égal [R].;;R;OK
+21;section : Repérer, déconsigner, essayer;Mettre à jour le repérage du circuit [S15].;S15;S;OK
+21;section : Repérer, déconsigner, essayer;"Lever la consigne dans l'ordre prévu, puis essayer l'appareil ; pour un différentiel, utiliser le bouton test [S3, S4].";S3 S4;S;OK
+21;situation;Un disjoncteur ne se réarme plus.;;;OK
+21;situation;Le tableau est en service.;;;OK
+21;situation;On vous demande de le remplacer.;;;OK
+21;réponse;Par le retrait du peigne d'alimentation en partie haute, puis les poussoirs des bornes, puis le levier sur la griffe [S8].;S8;S;OK
+21;question T21-01 (explication);Diagnostic d'abord [S8].;S8;S;OK
+21;question T21-02 (explication);Vérifier les conducteurs avant de passer à un calibre supérieur [S8].;S8;S;OK
+21;question T21-03 (explication);Consignation et VAT d'abord [S22, S16], dépose et pose [S8], repérage [S15], déconsignation et essais [S3].;S15 S16 S22 S3 S8;S;OK
+21;question T21-04 (explication);VAT neutre compris, contrôle du VAT avant et après [S16], avant d'intervenir [S22].;S16 S22;S;OK
+21;question T21-04 (explication);La position OFF ne la remplace pas [S16].;S16;S;OK
+21;question T21-05 (explication);Retirer le peigne, puis les poussoirs, puis le levier sur la griffe [S8].;S8;S;OK
+21;exercice 1 (explication);Contrôle du VAT avant et après usage [S16].;S16;S;OK
+21;exercice 2 (explication);Quatre vis, levier sur la griffe, peigne libéré en desserrant le haut de la rangée [S8].;S8;S;OK
+21;exercice 2 (explication);On n'extrait pas l'appareil en tirant sur les fils [R].;;R;OK
+22;section : Cadrer l'opération;Ajouter un appareil modifie l'installation [R].;;R;OK
+22;section : Cadrer l'opération;Le BS décrit par l'INRS se limite notamment à la connexion sur un circuit de réserve protégé [S1] : vérifier le titre et le périmètre avant d'agir, la NF C 18-510 n'ayant pas été lue [S1].;S1;S;OK
+22;section : Vérifier la place et la réserve;Une réserve minimale de 20 % de modules libres est prescrite pour les tableaux de répartition de logement, avec une possibilité de la limiter à six modules par logement en immeuble collectif d'habitation [S14].;S14;S;OK
+22;section : Vérifier la place et la réserve;Vérifier qu'un emplacement est libre sur la rangée [S9].;S9;S;OK
+22;section : Choisir l'appareil;Le choix porte sur le calibre, la courbe, le pouvoir de coupure et, pour un différentiel, le type [S9, S7].;S7 S9;S;OK
+22;section : Choisir l'appareil;Le calibre dépend des conducteurs du circuit à protéger, selon la NF C 15-100 [S8].;S8;S;OK
+22;section : Choisir l'appareil;Le pouvoir de coupure doit être supérieur au courant de court-circuit présumé [S7].;S7;S;OK
+22;section : Poser et raccorder;Consigner et vérifier l'absence de tension [S22, S16].;S16 S22;S;OK
+22;section : Poser et raccorder;Clipser l'appareil sur le rail, insérer le peigne, serrer la borne amont, raccorder le circuit aval et la terre au bornier [S9].;S9;S;OK
+22;section : Repérer et essayer;Repérer le circuit et mettre à jour le schéma du tableau [S15].;S15;S;OK
+22;section : Repérer et essayer;Remettre en place le plastron, lever la consigne, essayer le circuit [S9, S16].;S16 S9;S;OK
+22;situation;Un nouveau circuit doit être protégé dans un tableau existant.;;;OK
+22;situation;Il reste des emplacements libres sur la rangée.;;;OK
+22;réponse;On n'improvise pas : on vérifie la réserve préconisée, on alerte le responsable et on décide avec lui d'une extension ou d'un autre tableau [S14, R].;S14;R;OK
+22;question T22-01 (explication);Réserve minimale de 20 % [S14].;S14;S;OK
+22;question T22-02 (explication);Le calibre dépend des conducteurs [S8].;S8;S;OK
+22;question T22-03 (explication);Ordre du schéma F8 : cadrage [S1], place [S14], choix [S7, S9], consignation [S22, S16], pose et raccordement [S9], repérage [S15], essais [S16].;S1 S14 S15 S16 S22 S7 S9;S;OK
+22;question T22-04 (explication);Repérage des circuits [S15].;S15;S;OK
+22;exercice 1 (explication);"Réserve minimale de 20 % préconisée [S14] ; l'usage est de prévoir les extensions [R].";S14;R;OK
+22;exercice 2 (explication);Consignation [S22, S16], pose sur rail, peigne, raccordement [S9].;S16 S22 S9;S;OK

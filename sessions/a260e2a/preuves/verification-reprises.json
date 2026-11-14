@@ -1,0 +1,72 @@
+{
+ "date": "2026-11-14",
+ "images_panzani": {
+  "methode": "sha256 du fichier du site comparé au sha256 du fichier du dépôt consulteam-academy (sessions/a260bna/mediatheque)",
+  "resultats": [
+   {
+    "fichier": "images/panneaux/PN02.webp",
+    "origine": "a260bna/mediatheque/panneaux/PN02.webp",
+    "sha256_site": "b906fecdf51549bf0e3c0ea497d7486193bcec301086fb73afee362353a629c0",
+    "sha256_origine": "b906fecdf51549bf0e3c0ea497d7486193bcec301086fb73afee362353a629c0",
+    "identique": true
+   },
+   {
+    "fichier": "images/panneaux/PN03.webp",
+    "origine": "a260bna/mediatheque/panneaux/PN03.webp",
+    "sha256_site": "1671d9f7a5907d6da080e0b12e3918495eaf64bc38cc60db3f0335ee8a8ec63b",
+    "sha256_origine": "1671d9f7a5907d6da080e0b12e3918495eaf64bc38cc60db3f0335ee8a8ec63b",
+    "identique": true
+   },
+   {
+    "fichier": "images/panneaux/PN05.webp",
+    "origine": "a260bna/mediatheque/panneaux/PN05.webp",
+    "sha256_site": "31aa9ef5531ce4750a87771e5b12358f1237ddcff6fe05236edeb9c3bef41ec1",
+    "sha256_origine": "31aa9ef5531ce4750a87771e5b12358f1237ddcff6fe05236edeb9c3bef41ec1",
+    "identique": true
+   },
+   {
+    "fichier": "images/parties/04.webp",
+    "origine": "a260bna/mediatheque/parties/04.webp",
+    "sha256_site": "42bfc9ccdad5ed9e6da68bcaa14a13e73678f8d4034f46435545c40df6c05796",
+    "sha256_origine": "42bfc9ccdad5ed9e6da68bcaa14a13e73678f8d4034f46435545c40df6c05796",
+    "identique": true
+   },
+   {
+    "fichier": "images/parties/06.webp",
+    "origine": "a260bna/mediatheque/parties/06.webp",
+    "sha256_site": "85ccdfb36c4d277d42c7ea375a62b3c860bd61db030742d4d38473940a621e46",
+    "sha256_origine": "85ccdfb36c4d277d42c7ea375a62b3c860bd61db030742d4d38473940a621e46",
+    "identique": true
+   }
+  ],
+  "tous_identiques": true
+ },
+ "textes_panzani": {
+  "methode": "Chaque question, option, explication et phrase des séquences 10, 11 et 18 importées est cherchée dans les fichiers du dépôt (sessions/a260bna), après retrait des balises, des espaces, de la ponctuation et de la casse.",
+  "elements": 289,
+  "introuvables": 0,
+  "note": "Une première comparaison stricte avait signalé 21 écarts, tous dus aux espaces autour des balises HTML ; ils disparaissent à la comparaison tolérante.",
+  "limites": "Vérifie la présence du texte, pas l'ordre des phrases ni l'exactitude de l'indice de réponse correcte de chaque question."
+ },
+ "textes_a2604ma": {
+  "methode": "Chaque question, option, explication, objectif, situation, décision, réponse, section et point de contrôle des 8 modules repris est cherché dans sessions/a2604ma (comparaison à la casse et aux espaces près).",
+  "elements": 276,
+  "introuvables": 0,
+  "limites": "Même limite : présence du texte, pas contrôle de l'indice de réponse."
+ },
+ "questions_reprises_comparaison_exacte": {
+  "methode": "Chaque question reprise (type, énoncé, options, indice de réponse correcte, explication) est comparée tuple à tuple à celle du dépôt d'origine.",
+  "panzani_a260bna": {
+   "importees": 45,
+   "tuples_lus": 45,
+   "identiques": 45,
+   "ecarts": []
+  },
+  "a2604ma": {
+   "questions": 32,
+   "lues_source": 32,
+   "identiques": 32,
+   "ecarts": []
+  }
+ }
+}

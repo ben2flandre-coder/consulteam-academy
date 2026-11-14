@@ -1,0 +1,12 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Animation · Consul Team</title><meta name="theme-color" content="#102c53"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23102c53'/%3E%3Cpath d='M18 3L8 18h7l-1 11 11-17h-8z' fill='%23f6b63d'/%3E%3C/svg%3E"><link rel="stylesheet" href="assets/style.css"></head><body>
+<main id="main"><div class="deck" id="deck" role="region" aria-label="Mode animation"><div class="slide" id="sl" aria-live="polite"></div><div class="ctl"><button id="pr" aria-label="Précédent">←</button><span id="pg" style="align-self:center"></span><button id="nx" aria-label="Suivant">→</button><select id="ms" aria-label="Module" style="min-height:48px;font:inherit"></select><a href="parcours.html">Quitter</a></div></div></main><script src="data/content.js"></script><script src="assets/app.js"></script><script>
+var sl=document.getElementById('sl'),ms=document.getElementById('ms'),pg=document.getElementById('pg'),L=[],k=0;
+ms.innerHTML=A.modules.filter(function(m){return m.statut!=='à rédiger'}).map(function(m){return '<option value="'+m.id+'">'+m.id+'. '+E(m.title)+'</option>'}).join('');
+function build(id){var m=module(id);L=[{t:m.title,p:m.goal}];if(m.scenario)L.push({t:'Situation',p:m.scenario});m.sections.forEach(function(s){L.push({t:s[0],p:s[1]})});if(m.decision)L.push({t:'Décision à prendre',p:m.decision});k=0;show()}
+function show(){var s=L[k];sl.innerHTML='<h1>'+E(s.t)+'</h1><p>'+E(s.p)+'</p>';pg.textContent=(k+1)+' / '+L.length}
+function go(d){k=Math.max(0,Math.min(L.length-1,k+d));show()}
+document.getElementById('pr').onclick=function(){go(-1)};document.getElementById('nx').onclick=function(){go(1)};
+ms.onchange=function(){location.hash='m'+ms.value;build(ms.value)};
+addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key===' ')go(1);if(e.key==='ArrowLeft')go(-1)});
+var x0=null;sl.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});sl.addEventListener('touchend',function(e){if(x0==null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(d<0?1:-1);x0=null});
+var m=/^#m(\d+)/.exec(location.hash);var id=m&&module(+m[1])&&module(+m[1]).statut!=='à rédiger'?+m[1]:A.modules[0].id;ms.value=id;build(id);</script></body></html>

@@ -1,0 +1,74 @@
+{
+ "F1-facade-tableau.svg": {
+  "w": 960,
+  "h": 640,
+  "nb_textes": 59,
+  "hors_cadre": [],
+  "chevauchements": [],
+  "png_sha256": "423626040f63d61367431ca246b4a07f8abb003ac3ae690ed650fe0fbece559f",
+  "svg_sha256": "6cc4abddf3770070aec378472c62c1f7c5e76e4472c81355a63919015a74ffb4"
+ },
+ "F2-coupe-disjoncteur.svg": {
+  "w": 960,
+  "h": 580,
+  "nb_textes": 38,
+  "hors_cadre": [],
+  "chevauchements": [],
+  "png_sha256": "129ba02627f1b3d2dac2c0627e2c63cdf3969e2b2da91eee18745691754408eb",
+  "svg_sha256": "581cba387aeebacb7aace58e1bb4f8dd8147945f1418a023f960728d8631688c"
+ },
+ "F3-principe-differentiel.svg": {
+  "w": 960,
+  "h": 600,
+  "nb_textes": 45,
+  "hors_cadre": [],
+  "chevauchements": [],
+  "png_sha256": "bd79a7f0f0a8b6d6f72230eba383f8ae179345f29a3f7b28dc4061e1f6afb5fb",
+  "svg_sha256": "bee0ece891a4c48e531808ca39f427ba87487c64fe34afaac7d37325ad85fd95"
+ },
+ "F4-coupe-contacteur.svg": {
+  "w": 960,
+  "h": 640,
+  "nb_textes": 44,
+  "hors_cadre": [],
+  "chevauchements": [],
+  "png_sha256": "7e4bba50ddea4b02362818ae4bb6d82aff4d573e32eb89c813cb91adde26d001",
+  "svg_sha256": "ec561f93fe72eb61f79e11a29bfdb341735ec1efa4c9a587094d1bec50e2edd3"
+ },
+ "F5-coupe-rail-peigne.svg": {
+  "w": 960,
+  "h": 600,
+  "nb_textes": 41,
+  "hors_cadre": [],
+  "chevauchements": [],
+  "png_sha256": "824199c6525b3701faa6bceca8e7c2089acef945888ec7d36562b640bfb12101",
+  "svg_sha256": "6f48b1975949e6bd356971d8c82d92beeed6a2e3ed3678d6a0d8081d279a54a1"
+ },
+ "F6-equilibrage-avant-apres.svg": {
+  "w": 960,
+  "h": 640,
+  "nb_textes": 50,
+  "hors_cadre": [],
+  "chevauchements": [],
+  "png_sha256": "d22a92eacf9736661a1a7955122a30fc784db62362978088db4922ee545116fb",
+  "svg_sha256": "3241f335bea92813eaa5e7d4767ed614914c5b33f7ff7bc15df7625357b9f5ba"
+ },
+ "F7-remplacement-appareil.svg": {
+  "w": 960,
+  "h": 660,
+  "nb_textes": 27,
+  "hors_cadre": [],
+  "chevauchements": [],
+  "png_sha256": "c953dd2ec76ded54cce6975fffad9c7cb5343cfc8d60f416dd1bdd830a57feee",
+  "svg_sha256": "d2fde30f2d502bf9c48599063f07ac6deb5f0f87adc1cc0315eb285359cd9325"
+ },
+ "F8-installation-appareil.svg": {
+  "w": 960,
+  "h": 660,
+  "nb_textes": 27,
+  "hors_cadre": [],
+  "chevauchements": [],
+  "png_sha256": "3ecf059e96d8db13bd589b6c24dfc0fe39fcbecbc51f37274e266d65c5d48ea0",
+  "svg_sha256": "2a2320cd04eca513714d04bc32943a877d0eba9baf33c7bd43c8214ac24257c4"
+ }
+}

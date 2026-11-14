@@ -1,0 +1,29 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Parcours · Consul Team</title><meta name="theme-color" content="#102c53"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23102c53'/%3E%3Cpath d='M18 3L8 18h7l-1 11 11-17h-8z' fill='%23f6b63d'/%3E%3C/svg%3E"><link rel="stylesheet" href="assets/style.css"></head><body>
+<main id="main"><h1>Parcours</h1><p class="small">Tous les niveaux sont accessibles. Choisir un module, ou filtrer par niveau.</p>
+<p><label for="f">Niveau : </label><select id="f" style="min-height:44px;font:inherit"></select></p><div id="out"></div></main><script src="data/content.js"></script><script src="assets/app.js"></script><script>
+var f=document.getElementById('f'),out=document.getElementById('out');
+var lv=['Tous'];A.modules.forEach(function(m){m.niveaux.forEach(function(x){if(lv.indexOf(x)<0)lv.push(x)})});
+f.innerHTML=lv.map(function(x){return '<option>'+E(x)+'</option>'}).join('');
+function liste(){var v=f.value;var h='<div class="grid">';A.modules.filter(function(m){return v==='Tous'||m.niveaux.indexOf(v)>=0||m.niveaux.indexOf('Tous')>=0||m.niveaux.indexOf('TC')>=0&&false}).forEach(function(m){h+='<a class="card" style="text-decoration:none;color:inherit" href="#m'+m.id+'"><strong>'+m.id+'. '+E(m.title)+'</strong><br>'+statTag(m.statut)+'<span class="tag">'+E(m.scope)+'</span><br><span class="small">'+E(m.goal)+'</span></a>'});out.innerHTML=h+'</div>'}
+function mod(id){var m=module(id);if(!m){liste();return}
+var h='<p><a href="#">← Tous les modules</a></p><h1>'+m.id+'. '+E(m.title)+'</h1>'+statTag(m.statut)+'<span class="tag">'+E(m.scope)+'</span><div class="card"><strong>Objectif</strong><br>'+E(m.goal)+'</div>';
+if(m.note)h+='<p class="note">'+E(m.note)+'</p>';
+if(m.scenario)h+='<div class="card"><strong>Situation</strong><br>'+E(m.scenario)+'</div>';
+if(m.figures&&m.figures.length)h+='<div class="grid">'+m.figures.map(function(f){return '<figure class="card fig"><img src="'+E(f[0])+'" alt="'+E(f[1])+'" loading="lazy"><figcaption class="small">'+E(f[1])+(/[.]svg$/.test(f[0])?' <a href="'+E(f[0])+'" target="_blank" rel="noopener" style="display:inline-block;padding:11px 0">Ouvrir en grand (zoom)</a>':'')+'</figcaption></figure>'}).join('')+'</div>';
+if(m.html)h+='<div class="card">'+m.html+'</div>';
+m.sections.forEach(function(s,i){h+='<h2>'+E(s[0])+'</h2><p>'+E(s[1])+'</p>';(m.exercices||[]).forEach(function(x,k){if(x.after===i)h+=exo(x,m.id+'_'+k)})});
+if(m.decision)h+='<div class="card"><strong>Décision à prendre</strong><br>'+E(m.decision)+'<details><summary style="min-height:44px;display:flex;align-items:center;cursor:pointer">Voir la réponse</summary><p>'+E(m.answer)+'</p></details></div>';
+if(m.check.length)h+='<div class="card"><strong>Avant d\'agir</strong><ul>'+m.check.map(function(c){return '<li>'+E(c)+'</li>'}).join('')+'</ul></div>';
+h+='<p class="small">Source : '+E(m.source)+'</p>';
+h+='<p><a class="btn" href="evaluation.html#m'+m.id+'">Évaluer ce module</a> <a class="btn sec" href="animation.html#m'+m.id+'">Mode animation</a></p>';
+out.innerHTML=h;scrollTo(0,0)}
+function exo(x,id){var t=x.type,h='<div class="card exo" data-id="'+id+'"><strong>Exercice rapide</strong><p>'+E(x.q)+'</p>';
+if(t==='o'){var ord=x.options.map(function(o,i){return i}).sort(function(a,b){return (a*7+3)%5-(b*7+3)%5||a-b});h+='<p class="small">Choisissez la position de chaque élément.</p>';ord.forEach(function(i){h+='<label class="opt"><select data-i="'+i+'" aria-label="Position"><option value="">–</option>'+x.options.map(function(_,p){return '<option value="'+p+'">'+(p+1)+'</option>'}).join('')+'</select> <span>'+E(x.options[i])+'</span></label>'})}
+else{x.options.forEach(function(o,i){h+='<label class="opt"><input type="'+(t==='m'?'checkbox':'radio')+'" name="x'+id+'" value="'+i+'"> <span>'+E(o)+'</span></label>'})}
+return h+'<p><button class="btn sec" type="button" onclick="exoCheck(this,'+x.after+','+(x.__k||0)+')" data-x="'+id+'">Vérifier</button></p><div class="exo-res" aria-live="polite"></div></div>'}
+window.exoCheck=function(btn){var c=btn.closest('.exo'),id=c.dataset.id.split('_'),m=module(+id[0]),x=m.exercices[+id[1]],ok=false;
+if(x.type==='o'){var v=[];[].slice.call(c.querySelectorAll('select')).forEach(function(s){v[+s.dataset.i]=s.value===''?-1:+s.value});ok=x.options.every(function(_,i){return v[i]===x.correct.indexOf(i)})}
+else{var sel=[].slice.call(c.querySelectorAll('input:checked')).map(function(i){return +i.value}).sort();var cor=[].concat(x.correct).sort();ok=sel.length===cor.length&&sel.every(function(v,i){return v===cor[i]})}
+c.querySelector('.exo-res').innerHTML='<p class="'+(ok?'ok':'note')+'"><strong>'+(ok?'Juste.':'À revoir.')+'</strong> '+E(x.why)+'</p>'};
+function route(){var m=/^#m(\d+)/.exec(location.hash);if(m)mod(+m[1]);else liste()}
+f.onchange=liste;addEventListener('hashchange',route);route();</script></body></html>

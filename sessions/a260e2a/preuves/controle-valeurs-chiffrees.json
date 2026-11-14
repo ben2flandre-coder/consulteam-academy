@@ -13,7 +13,7 @@
   17,
   23
  ],
- "affirmations": 391,
+ "affirmations": 405,
  "sans_reference": 0,
  "jetons_non_declares": [],
  "jetons_declares_inutilises": [],
@@ -253,6 +253,14 @@
   "1993": [
    "S",
    "S32 : édition de 1993 de l'ED 325"
+  ],
+  "300": [
+   "D",
+   "distracteur : sensibilité fausse (30 mA en logement)"
+  ],
+  "110": [
+   "D",
+   "distracteur : tension fausse (230 V phase-neutre)"
   ]
  }
 }

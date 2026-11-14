@@ -66,3 +66,6 @@ Contenu de formateur.html chiffré dans le navigateur (AES-GCM 256, PBKDF2 600 0
 ## Ressources INRS SST (zip fourni le 14/11/2026)
 - Zip « 2-Ressources technico-pédagogiques » reçu et ouvert : 81 fichiers. Module 8 complété avec le guide des données techniques SST V5.01/2024, TS876 et ED 4085 (sources S33 à S35, preuves/module8-inrs-controle.md). Studio et évaluations retestés : 0 erreur.
 - Reste : ED 7000 non lu ; le contrôle automatique des affirmations ne couvre pas les sections ajoutées dans build_site.py, relues à la main (chaque phrase référencée).
+
+## Audit complet du 14/11/2026
+Voir preuves/RAPPORT-AUDIT.md : programme 30/31, réglementaire 7 vérifiés / 6 réserves / 1 non vérifiable, 405 affirmations sans écart, accessibilité axe 0 violation (13 pages), 60 combinaisons d'affichage sans défaut, hors ligne OK, 211 questions. Fiche de parcours et mention handicap ajoutées.

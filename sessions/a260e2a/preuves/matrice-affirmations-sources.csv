@@ -30,6 +30,8 @@
 19;question T19-05 (explication);Seule la VAT, neutre compris, permet de conclure [S16, S22].;S16 S22;S;OK
 19;question T19-06 (explication);Bobine alimentée : l'armature est attirée, les contacts se ferment [S5].;S5;S;OK
 19;question T19-06 (explication);Bobine coupée : le ressort les rouvre [S5].;S5;S;OK
+19;question C19-01 (explication);En logement, la sensibilité est de 30 mA [S3].;S3;S;OK
+19;question C19-02 (explication);La chambre de coupure disloque l'arc [S2].;S2;S;OK
 19;exercice 1 (explication);Le peigne alimente les appareils de la rangée [S9].;S9;S;OK
 19;exercice 1 (explication);Le bornier de terre reçoit les conducteurs de terre [S6, R].;S6;R;OK
 19;exercice 2 (explication);Ordre bilame, bobine avec noyau, contact mobile, chambres de coupure [S10].;S10;S;OK
@@ -61,6 +63,9 @@
 20;question T20-04 (explication);(42 − 25,33) ÷ 25,33 × 100 ≈ 65,8 % [S13, C].;S13;C;OK
 20;question T20-04 (explication);16,7 est l'écart en ampères, 60,3 le rapport moyenne sur maximum [C].;;C;OK
 20;question T20-05 (explication);Les harmoniques de rang 3 et multiples s'additionnent dans le neutre [S11].;S11;S;OK
+20;question C20-01 (explication);Formule du déséquilibre [S13].;S13;S;OK
+20;question C20-02 (explication);230 V entre phase et neutre, 400 V entre deux phases [S21].;S21;S;OK
+20;question C20-03 (explication);Les harmoniques de rang 3 s'additionnent dans le neutre avec des charges non linéaires [S11, C].;S11;C;OK
 20;exercice 1 (explication);Écart maximal : 25,33 − 24 = 1,33 A, soit 5,3 % de la moyenne [S13, C].;S13;C;OK
 20;exercice 1 (explication);1,3 est l'écart en ampères arrondi, pas un pourcentage [C].;;C;OK
 20;exercice 2 (explication);Méthode de l'exemple [R], formule de contrôle [S13].;S13;R;OK
@@ -93,6 +98,9 @@
 21;question T21-04 (explication);VAT neutre compris, contrôle du VAT avant et après [S16], avant d'intervenir [S22].;S16 S22;S;OK
 21;question T21-04 (explication);La position OFF ne la remplace pas [S16].;S16;S;OK
 21;question T21-05 (explication);Retirer le peigne, puis les poussoirs, puis le levier sur la griffe [S8].;S8;S;OK
+21;question C21-01 (explication);Le VAT se contrôle avant et après sur une source connue [S16].;S16;S;OK
+21;question C21-02 (explication);Pour un différentiel, utiliser le bouton test [S3, S4].;S3 S4;S;OK
+21;question C21-03 (explication);Il faut vérifier que les conducteurs supportent l'intensité visée [S8].;S8;S;OK
 21;exercice 1 (explication);Contrôle du VAT avant et après usage [S16].;S16;S;OK
 21;exercice 2 (explication);Quatre vis, levier sur la griffe, peigne libéré en desserrant le haut de la rangée [S8].;S8;S;OK
 21;exercice 2 (explication);On n'extrait pas l'appareil en tirant sur les fils [R].;;R;OK
@@ -114,6 +122,10 @@
 22;question T22-02 (explication);Le calibre dépend des conducteurs [S8].;S8;S;OK
 22;question T22-03 (explication);Ordre du schéma F8 : cadrage [S1], place [S14], choix [S7, S9], consignation [S22, S16], pose et raccordement [S9], repérage [S15], essais [S16].;S1 S14 S15 S16 S22 S7 S9;S;OK
 22;question T22-04 (explication);Repérage des circuits [S15].;S15;S;OK
+22;question C22-01 (explication);Ajouter un appareil modifie l'installation [R].;;R;OK
+22;question C22-02 (explication);Le calibre dépend des conducteurs du circuit à protéger [S8].;S8;S;OK
+22;question C22-03 (explication);Le pouvoir de coupure doit être supérieur au courant de court-circuit [S19, S20].;S19 S20;S;OK
+22;question C22-04 (explication);Repérer, remettre en place le plastron, lever la consigne, essayer [S15, S9, S16].;S15 S16 S9;S;OK
 22;exercice 1 (explication);"Réserve minimale de 20 % préconisée [S14] ; l'usage est de prévoir les extensions [R].";S14;R;OK
 22;exercice 2 (explication);Consignation [S22, S16], pose sur rail, peigne, raccordement [S9].;S16 S22 S9;S;OK
 9;section : Exécutant ou chargé de travaux;Le symbole se lit en trois caractères : le domaine de tension (B ou H), le type d'opération (0, 1, 2, C, R, S, E…), puis une lettre additionnelle (T, V, N, X) ou un attribut [S29].;S29;S;OK
@@ -336,6 +348,8 @@
 17;question T17-04 (explication);Le contrôle d'une grandeur relève d'une opération spécifique à examiner [S29, R].;S29;R;OK
 17;question T17-05 (explication);L'employeur définit les besoins dans un cahier des charges pour la formation [S29].;S29;S;OK
 17;question T17-06 (explication);Le travail en hauteur ajoute un risque à organiser [R].;;R;OK
+17;question C17-01 (explication);La hauteur ajoute un risque de chute à organiser avec la proximité électrique [R].;;R;OK
+17;question C17-02 (explication);L'employeur définit les opérations, l'organisation et le matériel [S29].;S29;S;OK
 23;section : Un risque rare mais grave;Entre 2014 et 2018, la Cnam enregistre en moyenne 660 accidents du travail d'origine électrique par an, soit 0,10 % de l'ensemble [S29].;S29;S;OK
 23;section : Un risque rare mais grave;La gravité est plus élevée : 0,43 % de ces accidents sont mortels, contre 0,08 % pour l'ensemble des risques [S29].;S29;S;OK
 23;section : Un risque rare mais grave;Bien des accidents surviennent sur des installations restées sous tension ou non complètement consignées, et une meilleure préparation du travail aurait souvent permis la mise hors tension complète [S29].;S29;S;OK

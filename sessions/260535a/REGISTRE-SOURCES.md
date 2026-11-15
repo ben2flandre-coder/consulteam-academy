@@ -23,3 +23,6 @@
 - Illustrations `assets/img/s/` : plateforme SST du dépôt (`sessions/sst`), images générées par IA selon brief Consul Team (voir `sessions/sst/credits.html`).
 - Planches `assets/img/m/p*.jpg` : planches pédagogiques d’une autre session Consul Team (illustratives, génériques ; la planche à contexte sectoriel n’est pas reprise). Scènes `E03`, `E04`, `E06` : scènes d’une autre session Consul Team (génériques).
 - Limites : images illustratives, sans classe ni marquage lisibles ; la NF C 18-510 n’a pas été lue en entier ; relecture par un électricien qualifié non réalisée.
+
+## Illustrations complémentaires (assets/img/pc)
+Quatre illustrations fournies par Consul Team : engin de levage près d'une ligne aérienne, guide des extincteurs, alerte et guidage des secours sur chantier, bandeau chantier (engin, alerte, balisage, secours). Origine exacte (illustrations générées) à confirmer par Consul Team avant diffusion hors session.

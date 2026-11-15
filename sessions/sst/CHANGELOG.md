@@ -1,4 +1,6 @@
 # Journal des changements
+## v0.7.8 — 15/11/2026
+- Correction : les pages apprenant (accueil, parcours, suivre, fiches secourir, valider mes acquis, galerie, glossaire, plans, ressources, modules 1 à 8, crédits) ne proposaient aucun lien vers l'espace formateur ni vers l'animation. Un lien « Espace formateur » (accès protégé par code) est ajouté dans la navigation de ces 20 pages.
 ## v0.7.7 — 15/11/2026
 - Audit red team (41 pages × 3 formats : mobile 375, tablette 768, bureau 1366) : aucune erreur console, aucun lien ou image cassé, aucun défilement horizontal. Correction : la porte d'accès des pages formateur ajoutait un second titre de niveau 1 (21 pages) ; elle utilise désormais un titre de niveau 2.
 ## v0.7.6 — 15/11/2026

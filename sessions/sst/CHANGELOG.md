@@ -1,4 +1,6 @@
 # Journal des changements
+## v0.7.11 — 15/11/2026
+- Page Grilles de certification : le lien file:// vers le dossier des grilles ne s'ouvrant pas (bloqué par le navigateur, confirmé en usage réel), remplacé par un bouton « Copier le chemin du dossier » qui copie le chemin dans le presse-papier (testé fonctionnel).
 ## v0.7.10 — 15/11/2026
 - Page Grilles de certification : bouton « Ouvrir le dossier des grilles » (lien local vers le dossier de la session sur le poste du formateur) avec le chemin affiché en clair en repli si le navigateur bloque les liens file://.
 ## v0.7.9 — 15/11/2026

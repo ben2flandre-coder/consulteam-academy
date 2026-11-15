@@ -1,0 +1,26 @@
+/* Consulteam · couche visuelle (enrich v1) — additive, sans changement de contenu */
+.hero{position:relative;isolation:isolate;background:radial-gradient(120% 150% at 0% 0%,#1d5290 0%,#0f3363 46%,#0a2347 100%);color:#fff;border-radius:22px;padding:36px 36px 32px;gap:28px;overflow:hidden;box-shadow:0 16px 44px rgba(10,35,71,.30);margin-bottom:26px;border:1px solid rgba(255,255,255,.08)}
+.hero::before{content:"";position:absolute;right:-100px;top:-110px;width:340px;height:340px;border-radius:50%;border:38px solid rgba(246,182,61,.17);z-index:-1}
+.hero::after{content:"";position:absolute;left:-70px;bottom:-120px;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.05);z-index:-1}
+.hero h1,.hero h2{color:#fff}
+.hero .lead{color:#d6e4f5}
+.hero>div:first-child{position:relative}
+.hero .wm{position:absolute;right:-6px;top:-8px;width:150px;height:150px;color:#fff;opacity:.09;pointer-events:none}
+.hero .frieze{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:22px 0 2px;padding:0;list-style:none}
+.hero .frieze li{display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:12px 12px 11px;border-radius:14px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(2px);font:600 13.5px/1.2 var(--ff,system-ui);color:#fff;transition:transform .15s,background .15s}
+.hero .frieze li:hover{transform:translateY(-2px);background:rgba(255,255,255,.15)}
+.hero .frieze svg{width:30px;height:30px;stroke:var(--t,#f6b63d);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.hero .frieze small{display:block;font:400 11.5px/1.25 var(--fb,system-ui);color:#c3d6ee;margin-top:2px}
+.hero .fiche{align-self:start;box-shadow:0 8px 24px rgba(0,0,0,.28);border-left-color:#f6b63d}
+@media(max-width:720px){.hero{padding:24px 20px 22px;border-radius:18px}.hero .wm{width:110px;height:110px}}
+/* titres de section : repère coloré */
+main h2:not(.fiche h2):not(.hero h2):not(.polehead h2){position:relative}
+/* cartes du parcours : relief et reperes */
+.card{box-shadow:0 1px 2px rgba(16,44,83,.06),0 6px 18px rgba(16,44,83,.06)}
+/* polehead (document unique et pôles) en bandeau dégradé */
+.polehead{background:linear-gradient(120deg,var(--pole-t,#fbf0dc) 0%,#fff 130%);box-shadow:0 8px 26px rgba(16,44,83,.09)}
+.polehead img{width:84px;height:84px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.15))}
+.prog>div{position:relative;overflow:hidden;box-shadow:0 1px 2px rgba(16,44,83,.06),0 6px 16px rgba(16,44,83,.06)}
+.prog>div::after{content:"";position:absolute;right:-18px;top:-18px;width:56px;height:56px;border-radius:50%;background:rgba(246,182,61,.18)}
+@media print{.hero{background:#0f3363!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;box-shadow:none}.hero .frieze li{break-inside:avoid}}
+.hero svg.wm{stroke:#fff;fill:none;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}

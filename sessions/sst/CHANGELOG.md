@@ -1,4 +1,7 @@
 # Journal des changements
+## v0.7.5 — 15/11/2026
+- Les deux formats de livrets sont proposés : longs (apprenant 93 p., formateur 137 p.) et compacts (apprenant 39 p., formateur 56 p.), documents.html les relie tous ; les deux livrets formateur sont protégés par le même mot de passe.
+- Visuel des neuf principes : pastilles 1, 2, 3, 5 et 7 rétablies (numérotation 1 à 9 complète, article L4121-2 du Code du travail) sur le site et dans les livrets.
 ## v0.7.4 — 15/11/2026
 - Décision : conservation des livrets longs (apprenant 93 pages, formateur 137 pages) conformément à la demande ; les versions compactes (39 et 56 pages) de la v0.7.3 restent consultables dans l'historique (commit f1ae58c). Correctif de contraste du mode nuit conservé. Livret formateur protégé par un nouveau mot de passe.
 ## v0.7.3 — 15/11/2026

@@ -1,4 +1,4 @@
-3fa757ce4a7ef1cfb8fa48964e4a7ae33d12a5cb8ae3fb45975944a13e7fb85e  ./CHANGELOG.md
+0b7b6d09eb57db6bee2d8995299d3f0cbb54793f053e30b57ca70f21120ecc97  ./CHANGELOG.md
 e1b0d35ee30a88ac0cde735cd628712bc4ab1653edacaff65122eebee0a27723  ./README.md
 172f86063f6d841f82200048f9c5714d788e4e43d40f3ee3f0474e085613fbd8  ./animation.html
 41165638fefe81a95af3c0424aef26fb35426deaee703e954a27f554173cc592  ./assets/acces.js
@@ -21,7 +21,7 @@ c0e84b1d6b098857072c712f2e6944c0164a4527291794ef5d6ece2c4e89167b  ./assets/img/i
 d4f39065a34efdde049d0e17d5c77758bbccc212a7d006032bf9232d997b796c  ./assets/img/ia/demarche-4-etapes.webp
 8c08d14e850032bee06ac03f2b055f8d579a487aa8e8635ed7ff547ecf41509a  ./assets/img/ia/examiner-signes.webp
 a243e66a53defc5b612d75a02cccbcc6fca50bb78e5bc0dea6dc689a30065600  ./assets/img/ia/itamami-5-axes.webp
-5fa4d9909704dfa70d95d1b2fcb37074e12997f686225b3a6cbf5530348d65bc  ./assets/img/ia/neuf-principes-prevention.webp
+526e7a117a14e6e525ac5665d025bb4764c2530e5aaffd0948505d24820107b3  ./assets/img/ia/neuf-principes-prevention.webp
 8b594f6fce0c79f1298f960fb68e29e92bcc4642d944e59cc5ecc018dbcbced9  ./assets/img/ia/proteger-balisage.webp
 e25af5532e87a6d5f525eee619201e5efcf63fb1d0ddcdfb7aad4af00366d542  ./assets/img/ia/proteger-couper-energie.webp
 7afe7a83c5fe55396628d15b67e1c34784040130a27e144205564b686af14355  ./assets/img/ia/quatre-familles-dangers.webp
@@ -78,7 +78,7 @@ cafa306ad57bff15823f6f2bd4e023e3bda1a9762ae5fce30416defa2a1bf30f  ./data/visuels
 0dbbb7accbd2996fac22c85164eac1ffd7d3e0408be27a8be7b3fc7368db8833  ./dj1-matin.html
 e7c79f165aac44b19afe47e15fdee0139d34c552b1141cd546d0ff47d0466e06  ./dj2-apres-midi.html
 016974bc745f79d9381f36c7bea6aafaeec5b13ddeee3da546de54450c792272  ./dj2-matin.html
-578120250f010845ed8dd06644e77b68596c8254620dcfa8ba2a44074c3c6bcd  ./documents.html
+379fb07a9e130b223f27f9bcd7a7d3203e1dd2bc008c84b5041a39f0b8d8e7b3  ./documents.html
 ddc427e60879337b75df694fc10b27d88ab6cd49731baef7b42ac6d3c9df7f5d  ./faq-formateur.html
 29df12bf1c7e16349c078217c270efe4a212920192689065c45831836e55d753  ./fiches-secourir.html
 94ad59d0a32cfd114296dd0d6d22af6ca5d2338c91dd382468c8bbb30661b708  ./formateur.html
@@ -172,8 +172,10 @@ e68ac4b55450e0ead4d6bea8699ab55c1485cd11d99054e920d4a3fb0133720c  ./outils-inrs/
 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./outils-inrs/PI_SST/story_content/user.js
 e9bb4706a78519d87de649e0fc163b3edfdd85f00c610cff06c2ac8cfab98663  ./outils.html
 231a253b6e2051825dfdf7a81efb3059a175cd8063237a9eb32f00e464a789b3  ./parcours.html
-99d95ca9e81bf7cbe713acb4cf77a20dc92c8d1160e474c60d7fd29e7446ec8c  ./pdf/livret-formateur-sst-consulteam.pdf
-c37634c4150497645b64a343c5a1ad52b8887c739908ca285a5563a794b18ae3  ./pdf/livret-sst-consulteam.pdf
+ac26bac3b71c329d3f999d64a6a9b7e44d88993c2c5b5196c91895bfc5fe8724  ./pdf/livret-formateur-sst-consulteam-compact.pdf
+346eefac5da262bf6632a9db032c1079ba457c61e81c9f2234018a03f42f090e  ./pdf/livret-formateur-sst-consulteam.pdf
+c4756c53a50d96df13831d4505967d250a9cd201eed75cad26329c725b8d8691  ./pdf/livret-sst-consulteam-compact.pdf
+e40ffd44339c24d9c608c3c8a8829f006d5b22474cb5c4ada23a71ef5e09f80a  ./pdf/livret-sst-consulteam.pdf
 8e1a3c3236bfb8e114d62c19b2fd4e4a5822ecfd18466d93d42753730cfd7df4  ./pedagogie.html
 ccc0c4b514cad2886ded034934ab01459004a07ec11136995fb8ecca2b3860bd  ./plans.html
 fcd0a945bd8515721e0f950edf7a6a05904a46956b9051b832341f463e97d9f2  ./registre.html
@@ -183,6 +185,6 @@ fcd0a945bd8515721e0f950edf7a6a05904a46956b9051b832341f463e97d9f2  ./registre.htm
 83767a733e21dcc2e32b8f9f19f48ab703a86114b458b2ebdd68fbd5fa137fee  ./sources.html
 481c05f04ff5e41d714a045e0aea0efedd99b1159bdfeedc021c807b5e27a531  ./suivi.html
 c9d22e922c81d4e1980bb4455f8c7bf5027508821b667d719b40beefe41ee38e  ./suivre.html
-d058426677e2602ba88d62dbb63b523e6491a22c4aaec635493fd4f226fba726  ./sw.js
+71fb74fa4339cceb5a8ec6f929670d261589c5e7685ca5242bd30301ad28f65e  ./sw.js
 fd01206d047e82c7c30987e8fc36908895a35c01614a9cdbb6986197975f574c  ./valider.html
 c699aa50e41d7c21a6d819c833704dc14bc75dd51fea2e87a4fd616dfa632cdb  ./visuels-relecture.html

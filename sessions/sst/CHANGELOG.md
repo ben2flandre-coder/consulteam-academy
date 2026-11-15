@@ -1,4 +1,6 @@
 # Journal des changements
+## v0.7.6 — 15/11/2026
+- Page Grilles de certification : encart « Mes grilles de la session » (marche à suivre, aucune donnée de stagiaire publiée) et lien vers les grilles INRS vierges.
 ## v0.7.5 — 15/11/2026
 - Les deux formats de livrets sont proposés : longs (apprenant 93 p., formateur 137 p.) et compacts (apprenant 39 p., formateur 56 p.), documents.html les relie tous ; les deux livrets formateur sont protégés par le même mot de passe.
 - Visuel des neuf principes : pastilles 1, 2, 3, 5 et 7 rétablies (numérotation 1 à 9 complète, article L4121-2 du Code du travail) sur le site et dans les livrets.

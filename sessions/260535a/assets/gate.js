@@ -28,8 +28,18 @@
     },
     isOpen:function(){return !!saved();},
     lock:forget,
-    /* page chiffrée : packs = {iv, ct} */
-    page:function(pack){
+    /* page chiffrée : pack = {iv, ct} ou tableau de {iv, ct} (un par adresse autorisée) */
+    page:function(packs){
+      var list=Array.isArray(packs)?packs:[packs];
+      function tryAll(raw){
+        var i=0;
+        function next(){
+          if(i>=list.length)return Promise.reject();
+          var p=list[i++];
+          return decrypt(raw,p).catch(next);
+        }
+        return next();
+      }
       function render(html){document.open();document.write(html);document.close();}
       function ask(msg){
         document.documentElement.lang='fr';
@@ -37,13 +47,13 @@
         document.getElementById('f').onsubmit=function(ev){
           ev.preventDefault();var b=this.querySelector('button');b.disabled=true;b.textContent='Vérification…';
           derive(document.getElementById('m').value,document.getElementById('c').value).then(function(raw){
-            return decrypt(raw,pack).then(function(h){save(raw);render(h);},function(){b.disabled=false;b.textContent='Ouvrir';document.getElementById('e').textContent='E-mail ou code incorrect.';});
+            return tryAll(raw).then(function(h){save(raw);render(h);},function(){b.disabled=false;b.textContent='Ouvrir';document.getElementById('e').textContent='E-mail ou code incorrect.';});
           });
         };
         document.getElementById('m').focus();
       }
       var raw=saved();
-      if(raw)decrypt(raw,pack).then(render,function(){forget();ask();});else ask();
+      if(raw)tryAll(raw).then(render,function(){forget();ask();});else ask();
     }
   };
 })();

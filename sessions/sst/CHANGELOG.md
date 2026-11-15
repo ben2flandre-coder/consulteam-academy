@@ -1,4 +1,6 @@
 # Journal des changements
+## v0.7.10 — 15/11/2026
+- Page Grilles de certification : bouton « Ouvrir le dossier des grilles » (lien local vers le dossier de la session sur le poste du formateur) avec le chemin affiché en clair en repli si le navigateur bloque les liens file://.
 ## v0.7.9 — 15/11/2026
 - Correction : le bandeau de pied de page de toutes les pages (41) affichait encore « v0.3 du 14/11/2026 » alors que le site avait déjà reçu plusieurs mises à jour. Mis à jour en « v0.7.8 du 15/11/2026 ».
 ## v0.7.8 — 15/11/2026

@@ -47,3 +47,12 @@ main h2:not(.fiche h2):not(.hero h2):not(.polehead h2){position:relative}
 .gf{margin-top:12px;padding:0;font-weight:600}.gf.good,.gf.bad{padding:12px 14px;border-radius:10px}.gf.good{background:#e4f6ec;color:#0d5a38}.gf.bad{background:#fdeaea;color:#8a1f1f}
 #gnx,.scen .alt{margin-top:12px}
 .figs.ph img{aspect-ratio:auto;max-height:420px}
+/* pleine page */
+main{max-width:min(1560px,96vw);padding:34px clamp(16px,3vw,56px) 70px}
+p,li{max-width:112ch}.lead{max-width:100ch}
+.note,.warn,.ok,.q,ol.steps,footer{max-width:none}
+.figs{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.figs.ph img{max-height:520px}
+.hero{grid-template-columns:1.5fr .9fr}
+@media print{main{max-width:none}}
+ol.steps li,.card li{max-width:none}

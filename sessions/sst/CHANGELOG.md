@@ -1,4 +1,9 @@
 # Journal des changements
+## v0.7.4 — 15/11/2026
+- Décision : conservation des livrets longs (apprenant 93 pages, formateur 137 pages) conformément à la demande ; les versions compactes (39 et 56 pages) de la v0.7.3 restent consultables dans l'historique (commit f1ae58c). Correctif de contraste du mode nuit conservé. Livret formateur protégé par un nouveau mot de passe.
+## v0.7.3 — 15/11/2026
+- Mode nuit corrigé : variables de couleur, titres, liens, encarts et livret formateur redéfinis ; contrôle automatique du contraste WCAG AA sur toutes les pages (nuit et jour, mobile) : 187 défauts avant, 0 après, y compris animation et espace formateur déverrouillés.
+- Livrets PDF refaits en mise en page éditoriale A4 : couverture, sommaire paginé, bandeaux de module, schémas plafonnés, encarts non coupés, questions en deux colonnes, cadres « Mes notes » ajustés au vide restant, corrigés regroupés. Livret apprenant 39 pages (3,7 Mo), livret formateur 56 pages (3 Mo), contre 93 et 137 pages (43 et 37 Mo) : plus de pages quasi vides ni de texte coupé. Le livret formateur reste protégé (copie et modification interdites).
 ## v0.7.1 — 15/11/2026
 - Mode jour / nuit : bouton flottant sur toutes les pages, choix mémorisé, suit le réglage du système par défaut ; fonds des encarts, tableaux et schémas adaptés au mode nuit ; l'impression reste en mode jour.
 - Livrets complets : livret de formation apprenant (93 pages, avec sommaire paginé : démarche, parcours, 8 compétences, fiches secourir, scénarios, validation, plans, glossaire, ressources, sources, aide-mémoire) et livret formateur (137 pages : synthèse, espace formateur, 4 demi-journées, séquences, animation complète, scénarios, pédagogie, matériel, matrice, certification, FAQ, suivi, validation, fiches, plans, glossaire, sources).

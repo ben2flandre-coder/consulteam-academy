@@ -3,7 +3,7 @@
   {
    "test": "nombre de diapositives",
    "ok": true,
-   "detail": 324
+   "detail": 334
   },
   {
    "test": "QR sur chaque diapositive",
@@ -23,7 +23,7 @@
   {
    "test": "images présentes",
    "ok": true,
-   "detail": "103 images, manquantes []"
+   "detail": "108 images, manquantes []"
   },
   {
    "test": "23 modules présents",

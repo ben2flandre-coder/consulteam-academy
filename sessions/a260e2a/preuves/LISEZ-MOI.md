@@ -1,5 +1,5 @@
 # Dossier de preuves A260E2A
-Pièces classées par sujet. Les scripts qui les produisent sont dans `scripts/` ; conservés pour trace, avec les chemins de l'environnement de travail.
+Pièces classées par sujet. Les scripts de production ne sont pas publiés (ils contiennent le contenu de l’espace formateur).
 - `sources-lues.json`, `matrice-affirmations-sources.csv`, `controle-valeurs-chiffrees.json` : d'où vient chaque affirmation des modules 19 à 22.
 - `calcul-equilibrage.json` : calcul de l'exemple d'équilibrage (script `calc_equilibrage.py`).
 - `validation-svg.json` : validation des 8 schémas (script `render_svgs.py`).

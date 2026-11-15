@@ -1,4 +1,6 @@
 # Journal des changements
+## v0.7.7 — 15/11/2026
+- Audit red team (41 pages × 3 formats : mobile 375, tablette 768, bureau 1366) : aucune erreur console, aucun lien ou image cassé, aucun défilement horizontal. Correction : la porte d'accès des pages formateur ajoutait un second titre de niveau 1 (21 pages) ; elle utilise désormais un titre de niveau 2.
 ## v0.7.6 — 15/11/2026
 - Page Grilles de certification : encart « Mes grilles de la session » (marche à suivre, aucune donnée de stagiaire publiée) et lien vers les grilles INRS vierges.
 ## v0.7.5 — 15/11/2026

@@ -8,7 +8,7 @@ function hex(buf){return Array.prototype.map.call(new Uint8Array(buf),function(x
 function sha(s){return crypto.subtle.digest("SHA-256",new TextEncoder().encode("sst|"+s)).then(hex)}
 var m=document.getElementById("main");
 var g=document.createElement("section");g.className="gate";g.setAttribute("aria-labelledby","gt");
-g.innerHTML='<h1 id="gt">🔒 Accès réservé</h1><p>Cet espace est destiné au formateur. Saisissez votre code d’accès ou votre adresse e-mail.</p><form><label for="gc">Code ou adresse e-mail</label><input id="gc" name="c" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" required><button class="btn" type="submit">Entrer</button></form><p class="gerr" role="status" aria-live="polite"></p><p><small>Contrôle d’accès simple, adapté à un site statique : il limite l’affichage, il ne protège pas les fichiers.</small></p>';
+g.innerHTML='<h2 id="gt">🔒 Accès réservé</h2><p>Cet espace est destiné au formateur. Saisissez votre code d’accès ou votre adresse e-mail.</p><form><label for="gc">Code ou adresse e-mail</label><input id="gc" name="c" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" required><button class="btn" type="submit">Entrer</button></form><p class="gerr" role="status" aria-live="polite"></p><p><small>Contrôle d’accès simple, adapté à un site statique : il limite l’affichage, il ne protège pas les fichiers.</small></p>';
 m.insertBefore(g,m.firstChild);
 g.querySelector("form").addEventListener("submit",function(e){e.preventDefault();
 var v=document.getElementById("gc").value,err=g.querySelector(".gerr");

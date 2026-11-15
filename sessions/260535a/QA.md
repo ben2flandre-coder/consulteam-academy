@@ -14,3 +14,10 @@
 - Espace formateur (15/11/2026) : champ unique participants, deux brouillons en copie cachée (évaluation, site + livret), lien PDF vérifié ; 30/30 évaluation ; aucune erreur JS ; aucun secret ni terme interdit dans le dépôt.
 
 - 15/11/2026 (visuels) : images chargées sans erreur sur toutes les pages (ordinateur et téléphone), jeu missions 9/9 situations, scénarios secours, cours complet sans erreur JS (modules 1-4 et 8 conservés, renumérotés 1 à 5), animation 32 diapositives, évaluation 30/30.
+
+## Revue critique du 15 novembre 2026
+- Cours complet : le bouton de livret pointait vers le livret d'une autre session ; il pointe désormais vers le livret de la session.
+- Images : trois planches montrant une chaîne de production agroalimentaire retirées (site, animation) ; remplacées par des illustrations neutres.
+- Animation : diapos à deux images et diapo « Acteurs et documents » corrigées pour les écrans 1366 × 768 (aucun débordement constaté en 1366 × 768 et 1920 × 1080).
+- Livret : mention interne d'origine des images retirée du livret participant ; sommaire paginé vérifié.
+- Contrôles : liens internes (aucun cassé), textes alternatifs (aucun manquant), termes interdits et adresses (aucune occurrence dans les pages en clair), accès formateur et animation (deux adresses autorisées), évaluation fermée sans lien privé.

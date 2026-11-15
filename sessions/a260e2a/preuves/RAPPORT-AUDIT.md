@@ -64,3 +64,8 @@ Arbres de décision lampe, fusible, prise ; 68 questions pour atteindre le ratio
 ## Corrigés et évaluation finale (15/11/2026)
 - Le tirage de l'évaluation finale exclut les questions reprises, avec leur corrigé, dans le livret apprenant (les 3 premières questions simples de chaque module, 69 au total) : 0 question exclue tirée sur 12 essais, 75 questions à chaque tirage.
 - Limite assumée : le site est statique, les réponses de la base restent lisibles par une personne qui ouvre le code de la page (data/content.js). Le garde-fou reste la surveillance de l'évaluation en salle ; le code de contrôle ne détecte que la modification grossière d'un score.
+
+## Répartition des bonnes réponses (15/11/2026)
+- Source des questions à choix unique rééquilibrée : A 97, B 99, C 96, D 1 (auparavant 73 % en A). À l'affichage, l'ordre des propositions est de toute façon mélangé (quiz, parcours, évaluation) : 1 640 tirages à 3 propositions → 857 / 854 / 867 par position.
+- Livret apprenant régénéré : corrigés A 22, B 23, C 23, D 1.
+- Point connu : la bonne réponse est la plus longue dans 63 % des questions (209/333), choix assumé : l'évaluation valide des notions et ne cherche pas à piéger les apprenants (décision du formateur, 15/11/2026).

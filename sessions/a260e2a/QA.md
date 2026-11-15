@@ -22,7 +22,7 @@ Limites, à lire :
 - La comparaison des sections reprises prouve la présence du texte d'origine, pas l'ordre des phrases. Les questions, elles, sont comparées une à une, indice de réponse compris.
 - S13 (Fluke) et S14 (Éduscol) ont été relues le 14/11/2026 par l'outil de lecture web avec une question ciblée : formule du déséquilibre et réserve minimale de 20 % confirmées. Cette relecture a conduit à corriger une formulation (connexions desserrées, et non échauffement).
 - Les schémas sont des schémas de principe non à l'échelle ; leur justesse technique est à valider par le formateur.
-- Contraste, lecteur d'écran et mode nuit : non vérifiés. Espace formateur non chiffré. Visuels IA : aucun intégré.
+- Contraste, lecteur d'écran et mode nuit : non vérifiés. Visuels IA : aucun intégré.
 
 ## Mise à jour du 14/11/2026 — images IA, NF C 18-510 (état de 11 h 45)
 - Images : lot de 64 (11 h 42) intégré, 64/64 SHA-256 conformes au suivi (preuves/controle-images.json) ; les 55 premières sont inchangées. Versions légères dans images/ia (précachées), originaux dans sources-images. TB01 à TB09 vues une par une en pleine taille : réserves dans preuves/controle-images-TB.md. Défaut corrigé : les images n'apparaissaient pas dans la médiathèque (chargement paresseux d'une image hors DOM) ; 64/64 affichées après correction (preuves/test-mediatheque-images.json).

@@ -32,7 +32,7 @@
  {
   "test": "animation.html : bon code ouvre",
   "ok": true,
-  "detail": "324"
+  "detail": "334"
  },
  {
   "test": "animation.html bon : aucune erreur JS",

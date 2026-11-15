@@ -27,9 +27,9 @@ function finalForm(){var h='<p><a href="#">← Retour</a></p><h2>Évaluation fin
 A.evals.forEach(function(ev){if(ev.id!=='socle')h+='<label class="opt"><input type="checkbox" name="sym" value="'+ev.id+'"><span>'+E(ev.titre)+'</span></label>'});
 h+='</fieldset><button type="submit">Commencer</button></form>';out.innerHTML=h;
 document.getElementById('idf').onsubmit=function(e){e.preventDefault();var f=e.target,sy=[].slice.call(f.querySelectorAll('input[name=sym]:checked')).map(function(x){return x.value});if(!sy.length){document.getElementById('idf').insertAdjacentHTML('beforeend','<p class="expl" role="alert" style="color:#b3261e">Cochez au moins un symbole visé.</p>');return}ID={prenom:f.prenom.value.trim(),nom:f.nom.value.trim(),org:f.org.value.trim(),sym:sy};location.hash='#final-go'}}
-function finalItems(){var used={},soc=A.evals.filter(function(e){return e.id==='socle'})[0],r=pick(byId(soc.modules),45,used),mods=[];
+function finalItems(){var used={},fl={},soc=A.evals.filter(function(e){return e.id==='socle'})[0],mods=[];A.modules.forEach(function(m){var c=0;m.questions.forEach(function(q){if((q.type||'s')==='s'&&c<3){fl[q.id]=1;c++}})});function nof(p){return p.filter(function(x){return !fl[x.q.id]})}var r=pick(nof(byId(soc.modules)),45,used);
 ID.sym.forEach(function(id){A.evals.filter(function(e){return e.id===id})[0].modules.forEach(function(m){if(soc.modules.indexOf(m)<0&&mods.indexOf(m)<0)mods.push(m)})});
-r=r.concat(pick(byId(mods),30,used));if(r.length<75)r=r.concat(pick(byId(soc.modules),75-r.length,used));if(r.length<75)r=r.concat(pick(byId(A.modules.map(function(m){return m.id})),75-r.length,used));return r}
+r=r.concat(pick(nof(byId(mods)),30,used));if(r.length<75)r=r.concat(pick(nof(byId(A.modules.map(function(m){return m.id}))),75-r.length,used));if(r.length<75)r=r.concat(pick(byId(soc.modules),75-r.length,used));if(r.length<75)r=r.concat(pick(byId(A.modules.map(function(m){return m.id})),75-r.length,used));return r}
 function quiz(kind,key){var items=[],titre='';
 if(kind==='complete'){items=byId(A.modules.map(function(m){return m.id}));titre='Évaluation générale complète'}
 else if(kind==='all'){items=tirage(75);titre='Tirage général de 75 questions'}

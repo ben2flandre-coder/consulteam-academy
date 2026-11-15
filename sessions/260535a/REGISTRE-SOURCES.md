@@ -26,3 +26,5 @@
 
 ## Illustrations complémentaires (assets/img/pc)
 Quatre illustrations fournies par Consul Team : engin de levage près d'une ligne aérienne, guide des extincteurs, alerte et guidage des secours sur chantier, bandeau chantier (engin, alerte, balisage, secours). Origine exacte (illustrations générées) à confirmer par Consul Team avant diffusion hors session.
+
+Planches retirées le 15/11/2026 : « Armoire électrique », « Balisage et coordination », « Situations à analyser » (arrière-plan de production agroalimentaire, non adapté à une session inter-entreprises).

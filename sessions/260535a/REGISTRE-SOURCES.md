@@ -16,3 +16,10 @@
 - Aucun seuil de courant ni chiffre non sourcé ; les normes d’EPI ne sont plus citées par numéro (textes non consultés).
 - Aucune information sur l’activité ou les installations d’un employeur : tous les cas sont génériques.
 - Les libellés « initiale / recyclage / exécutant » des émargements GESCoF ne sont pas repris : contenu unique B0 · H0(V).
+
+## Visuels (15/11/2026)
+- Schémas `assets/img/v/` : 18 planches « schéma de principe » du cours complet (conception pédagogique Consul Team). Écartées : planches BS/VAT/MALT, relais BS/BE, zonage HT et courbe intensité-durée (chiffres non vérifiés ici).
+- Photographies `assets/img/p/` (Wikimedia Commons) : gants isolants (Jpbazard, CC BY-SA 4.0), vérificateur d’absence de tension (Raimond Spekking, CC BY-SA 4.0), disjoncteur et contacteur (Kae, CC BY-SA 3.0), DDR (Diermaier, CC0), arrêt d’urgence (Cjp24, CC BY-SA 3.0), cadenas de condamnation (Bill Bradford, CC BY 2.0), outil isolé (Wiha Werkzeuge, CC BY-SA 4.0), pince isolée (ElectricEye, CC BY-SA 4.0), armoire électrique (photographie libre, auteur à confirmer).
+- Illustrations `assets/img/s/` : plateforme SST du dépôt (`sessions/sst`), images générées par IA selon brief Consul Team (voir `sessions/sst/credits.html`).
+- Planches `assets/img/m/p*.jpg` : planches pédagogiques d’une autre session Consul Team (illustratives, génériques ; la planche à contexte sectoriel n’est pas reprise). Scènes `E03`, `E04`, `E06` : scènes d’une autre session Consul Team (génériques).
+- Limites : images illustratives, sans classe ni marquage lisibles ; la NF C 18-510 n’a pas été lue en entier ; relecture par un électricien qualifié non réalisée.

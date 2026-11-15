@@ -1,0 +1,30 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Consul Team · Cours complet · session 260535A</title><body><p id="loading" role="status">Chargement du cours…</p><script>
+(async()=>{try{
+const response=await fetch('base.html');if(!response.ok)throw Error('HTTP '+response.status);
+let html=await response.text();
+const changes=[
+['B0 · H0 · H0V<br>BS · BE Manœuvre','B0 · H0 · H0V<br>personnel non électricien'],
+['Édition finale consolidée du 12 septembre 2026','Session 260535A · édition du 15 novembre 2026'],
+['Édition enrichie du 12 septembre 2026','Session 260535A · édition du 15 novembre 2026'],
+['Les procédures BS et BE Manœuvre, les photographies et les planches associées sont intégrées','Les photographies et les planches associées sont intégrées'],
+['Le livret rassemble le socle, les huit séquences, les procédures BS et BE Manœuvre, les corrigés','Le livret rassemble le socle, les cinq séquences de la session, les corrigés'],
+['16–17 septembre 2026','lundi 16 novembre 2026'],
+['DGA Toulon','Consul Team · Six-Fours-les-Plages'],
+['consulteam.he.2026.v1','consulteam.he.260535a.2026.v1'],
+['SESSION · 14 HEURES','SESSION 260535A · 7 HEURES'],
+['B0 · H0 · H0V · BS · BE Manœuvre','B0 · H0 · H0V · personnel non électricien · formation initiale'],
+['Édition enrichie · 12 septembre<br>Relecture finale formateur requise','Session 260535A · édition du 15 novembre 2026'],
+['max="8"','max="5"'],
+['/ 8 séquences','/ 5 séquences'],
+['<title>Consulteam · Habilitation électrique</title>','<title>Consul Team · Habilitation électrique B0 · H0(V) · cours complet</title>'],
+['["trainer","Espace formateur"],',''],
+["['trainer','Espace formateur'],",''],
+['/^m[1-8]$/','/^m[1-5]$/'],['sur 8</span>','sur 5</span>']
+];
+for(const [from,to] of changes)html=html.replaceAll(from,to);
+const filtre="const D=(function(a){const MAP={1:1,2:2,3:3,4:4,8:5},K=function(x){return MAP[x]!==undefined};a.modules=a.modules.filter(m=>K(m.id)).map(m=>Object.assign({},m,{id:MAP[m.id]}));a.questions=a.questions.filter(q=>K(q.module)).map(q=>Object.assign({},q,{module:MAP[q.module]}));a.videos=a.videos.filter(v=>K(v.module)).map(v=>Object.assign({},v,{module:MAP[v.module]}));a.tps=a.tps.filter(t=>/B0/.test(t.scope));if(a.visuals)a.visuals=a.visuals.map(v=>Object.assign({},v,{modules:Array.isArray(v.modules)?v.modules.filter(K).map(x=>MAP[x]):v.modules}));return a})(window.ACADEMY),";
+html=html.replace('const D=window.ACADEMY,',filtre);
+html=html.replace('</body>','<script>(function(){var m=document.querySelector("main");if(!m)return;var n=document.createElement("div");n.className="note";n.setAttribute("role","note");n.style.cssText="margin:0;padding:10px 16px;background:#fff4d9;border-bottom:1px solid #d5dfeb;font:14px/1.5 system-ui,sans-serif";n.innerHTML="<a href=../index.html>← Retour au site de la session</a> · <a href=../secours.html>Accident : que faire ?</a> · <b>Session 260535A · B0 · H0(V).</b> Ce cours est le cours complet de la plateforme. Les séquences BS et BE Manœuvre ne sont pas au programme de cette session et ont été retirées. Les fiches de socle et de repères qui mentionnent BS, VAT ou MALT/CC sont à lire comme culture : elles ne donnent aucune habilitation et ne permettent pas à un non-électricien d’y intervenir. Le titre d’habilitation est délivré par l’employeur.";document.body.insertBefore(n,document.body.firstChild)})();<\/script></body>');
+document.open();document.write(html);document.close();
+}catch(error){document.getElementById('loading').textContent='Le cours ne peut pas être chargé. Actualisez la page ou contactez le formateur. '+error.message;}})();
+</script></body></html>

@@ -12,3 +12,5 @@
 - Non fait : test sur téléphone réel, vérification en ligne après publication.
 
 - Espace formateur (15/11/2026) : champ unique participants, deux brouillons en copie cachée (évaluation, site + livret), lien PDF vérifié ; 30/30 évaluation ; aucune erreur JS ; aucun secret ni terme interdit dans le dépôt.
+
+- 15/11/2026 (visuels) : images chargées sans erreur sur toutes les pages (ordinateur et téléphone), jeu missions 9/9 situations, scénarios secours, cours complet sans erreur JS (modules 1-4 et 8 conservés, renumérotés 1 à 5), animation 32 diapositives, évaluation 30/30.

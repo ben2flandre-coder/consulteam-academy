@@ -10,3 +10,5 @@
 - Évaluation : fermée sans lien, ouverte avec le lien ; résultat 30/30 et 0/30 vérifiés.
 - Recherche de l’e-mail et du code dans le dépôt de travail : aucune occurrence en clair.
 - Non fait : test sur téléphone réel, vérification en ligne après publication.
+
+- Espace formateur (15/11/2026) : champ unique participants, deux brouillons en copie cachée (évaluation, site + livret), lien PDF vérifié ; 30/30 évaluation ; aucune erreur JS ; aucun secret ni terme interdit dans le dépôt.

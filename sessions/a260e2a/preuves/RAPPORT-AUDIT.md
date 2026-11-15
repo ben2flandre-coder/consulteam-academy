@@ -68,4 +68,4 @@ Arbres de décision lampe, fusible, prise ; 68 questions pour atteindre le ratio
 ## Répartition des bonnes réponses (15/11/2026)
 - Source des questions à choix unique rééquilibrée : A 97, B 99, C 96, D 1 (auparavant 73 % en A). À l'affichage, l'ordre des propositions est de toute façon mélangé (quiz, parcours, évaluation) : 1 640 tirages à 3 propositions → 857 / 854 / 867 par position.
 - Livret apprenant régénéré : corrigés A 22, B 23, C 23, D 1.
-- Point connu : la bonne réponse est la plus longue dans 63 % des questions (209/333), biais classique à corriger à la relecture.
+- Point connu : la bonne réponse est la plus longue dans 63 % des questions (209/333), choix assumé : l'évaluation valide des notions et ne cherche pas à piéger les apprenants (décision du formateur, 15/11/2026).

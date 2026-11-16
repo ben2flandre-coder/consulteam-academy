@@ -20,11 +20,12 @@
     box.querySelector('img').src=im.currentSrc||im.src;box.querySelector('img').alt=im.alt||'';
     box.querySelector('.cap').textContent=(idx+1)+' / '+list.length+(capOf(im)?' · '+capOf(im):'');
   }
-  function close(){if(!box)return;box.remove();box=null;document.removeEventListener('keydown',key);document.body.style.overflow='';if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+  function close(){if(!box)return;box.remove();box=null;document.removeEventListener('keydown',key,true);document.body.style.overflow='';if(lastFocus&&lastFocus.focus)lastFocus.focus();}
   function key(e){
-    if(e.key==='Escape')close();
-    else if(e.key==='ArrowRight')show(idx+1);
-    else if(e.key==='ArrowLeft')show(idx-1);
+    var k=e.key;if(k==='Escape'||k==='ArrowRight'||k==='ArrowLeft'||k===' '||k==='PageDown'||k==='PageUp'){e.stopImmediatePropagation();e.preventDefault();}
+    if(k==='Escape')close();
+    else if(k==='ArrowRight'||k===' '||k==='PageDown')show(idx+1);
+    else if(k==='ArrowLeft'||k==='PageUp')show(idx-1);
   }
   function open(im){
     list=zoomable();idx=Math.max(0,list.indexOf(im));lastFocus=document.activeElement;
@@ -36,7 +37,7 @@
       close();
     });
     document.body.appendChild(box);document.body.style.overflow='hidden';
-    document.addEventListener('keydown',key);show(idx);box.querySelector('.x').focus();
+    document.addEventListener('keydown',key,true);show(idx);box.querySelector('.x').focus();
   }
   document.addEventListener('click',function(e){
     var im=e.target;if(!im||im.tagName!=='IMG')return;

@@ -1,4 +1,12 @@
 # Journal des changements
+## v0.7.12 — 15/11/2026
+- Page Grilles de certification : le bouton « Copier le chemin » ne fonctionnant pas non plus en usage réel (API presse-papier indisponible sur ce poste), retiré au profit du chemin affiché en texte sélectionnable, avec retour à la ligne corrigé pour éviter un débordement horizontal sur mobile.
+## v0.7.11 — 15/11/2026
+- Page Grilles de certification : le lien file:// vers le dossier des grilles ne s'ouvrant pas (bloqué par le navigateur, confirmé en usage réel), remplacé par un bouton « Copier le chemin du dossier » qui copie le chemin dans le presse-papier (testé fonctionnel).
+## v0.7.10 — 15/11/2026
+- Page Grilles de certification : bouton « Ouvrir le dossier des grilles » (lien local vers le dossier de la session sur le poste du formateur) avec le chemin affiché en clair en repli si le navigateur bloque les liens file://.
+## v0.7.9 — 15/11/2026
+- Correction : le bandeau de pied de page de toutes les pages (41) affichait encore « v0.3 du 14/11/2026 » alors que le site avait déjà reçu plusieurs mises à jour. Mis à jour en « v0.7.8 du 15/11/2026 ».
 ## v0.7.8 — 15/11/2026
 - Correction : les pages apprenant (accueil, parcours, suivre, fiches secourir, valider mes acquis, galerie, glossaire, plans, ressources, modules 1 à 8, crédits) ne proposaient aucun lien vers l'espace formateur ni vers l'animation. Un lien « Espace formateur » (accès protégé par code) est ajouté dans la navigation de ces 20 pages.
 ## v0.7.7 — 15/11/2026

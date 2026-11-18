@@ -20,6 +20,7 @@ document.head.insertAdjacentHTML('beforeend','<style>'+
 'button.primary,.button.primary{background:var(--navy);border-color:var(--navy);font-family:var(--ff)}.callout{border-left:7px solid var(--amber);background:var(--warm)}.tag{background:var(--navy);color:#fff;font-family:var(--ff)}.number{color:var(--navy)}.cover-rule{background:var(--amber)}'+
 'body.night header{background:#102c53!important}body.night h1,body.night h2,body.night h3{color:#a9d0f5}body.night .tag{background:#244a77}'+
 '@media(max-width:720px){header nav.sitenav{margin-left:0;width:100%}}'+
+'.shell{max-width:none!important;width:100%!important}main{padding-left:clamp(20px,3vw,56px)!important;padding-right:clamp(20px,3vw,56px)!important}'+
 '</style>');
 (function(){const h=document.querySelector('header');if(!h)return;const im=h.querySelector('img');if(im){im.src='../assets/img/logo-consulteam-groupe.png';im.alt='Consulteam Groupe'}
 const L=[['../index.html','Accueil'],['../parcours.html','Parcours'],['#','Socle électrique',1],['../metiers.html','Cas par métier'],['../evaluation.html','Évaluation'],['../galerie.html','Galerie'],['../securite-site.html','Sur le site'],['../electricien.html','Électricien de métier']];

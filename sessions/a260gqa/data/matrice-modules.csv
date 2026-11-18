@@ -1,0 +1,9 @@
+competence;module apprenant;déroulé formateur;sous-compétences;questions;sous-compétences couvertes par les questions;sources;statut
+C1;m1.html;dj1-matin;1.1 1.2;3;1.1 1.2;"MF p.5+; Code pénal art. 223-6; Code du travail R4224-15";OK
+C2;m2.html;dj1-apres-midi;2.1 2.2 2.3;4;2.1 2.2 2.3;"GDT Protéger; GDT tableau 1 (dégagement d'urgence); MF";OK
+C3;m3.html;dj1-apres-midi;3.1 3.2 3.3;4;3.1 3.2 3.3;GDT Examiner, tableaux 2 à 5;OK
+C4;m4.html;dj1-apres-midi / dj2-matin;4.1 4.2 4.3;3;4.1 4.2 4.3;"GDT Faire alerter ou alerter; FT trousse/organisation des secours";OK
+C5;m5.html;dj2-matin / dj2-apres-midi;5.1 5.2 5.3;8;5.1 5.2 5.3;"GDT Secourir 1 à 8, tableaux 6 à 26; FT DAE, garrot, gestes techniques";OK
+C6;m6.html;dj1-matin;6.1 6.2;3;6.1 6.2;"MF; Code SS L411-1, L411-2, L461-1";OK
+C7;m7.html;dj1-matin;7.1 7.2;3;7.1 7.2;"MF; FT ITAMaMi; FT PAP";OK
+C8;m8.html;dj1-matin;8.1 8.2 8.3;4;8.1 8.2 8.3;"MF; Code du travail L4121-2 (9 principes); ED 6037, ED 6077";OK

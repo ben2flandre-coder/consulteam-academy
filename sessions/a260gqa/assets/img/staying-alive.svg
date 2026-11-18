@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 88" fill="none">
+  <rect x="1.5" y="1.5" width="257" height="85" rx="18" fill="#fff" stroke="#dbeafe" stroke-width="3"/>
+  <path d="M42 61c19-12.8 19-35.2 0-48-19 12.8-19 35.2 0 48Z" fill="#ef4444"/>
+  <path d="M33 41h18M42 32v18" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <text x="74" y="38" fill="#0f172a" font-size="26" font-family="Arial" font-weight="700">Staying Alive</text>
+  <text x="74" y="60" fill="#475569" font-size="14" font-family="Arial">DAE • citoyens secouristes • arrêt cardiaque</text>
+</svg>

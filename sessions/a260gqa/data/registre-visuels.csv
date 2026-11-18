@@ -1,0 +1,39 @@
+fichier;origine;remarque;statut
+assets/img/*.svg (9 schémas);Conception Consulteam;Schémas originaux générés pour le site;affiche
+assets/img/hierarchie-prevention.svg;Session a260bga;Reprise;affiche
+assets/img/proteger-examiner.webp;Session a260bga;"Reprise ; mention IA à confirmer";affiche
+assets/img/vetements-en-feu.webp;Session a260bga;"Reprise ; mention IA à confirmer";affiche
+assets/img/brulure.webp;Session a260bga;"Doublon de s4-brulure-refroidissement ; non affiché";non affiche
+assets/img/prefas.svg;Session a260bga;"Sigle PREFAS propre à un autre module ; non affiché";non affiche
+assets/img/staying-alive.svg;Dépôt sst2;"Vignette provisoire ; non affichée";non affiche
+assets/img/ia/demarche-4-etapes.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/proteger-balisage.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/proteger-couper-energie.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/examiner-signes.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/alerter-message.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/s1-saignement-compression.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/s1-pansement-compressif.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/s2-etouffement-claques.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);Validé par Benoît Deflandre le 14/11/2026;valide
+assets/img/ia/s2-etouffement-abdominales.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);Validé par Benoît Deflandre le 14/11/2026;valide
+assets/img/ia/s2-etouffement-nourrisson.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);Validé par Benoît Deflandre le 14/11/2026;valide
+assets/img/ia/s3-malaise-repos.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/s4-brulure-refroidissement.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/s5-douleur-immobilisation.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/s6-plaie-protection.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/s7-pls.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);Validé par Benoît Deflandre le 14/11/2026;valide
+assets/img/ia/s8-rcp-compressions.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);Validé par Benoît Deflandre le 14/11/2026;valide
+assets/img/ia/s8-dae-etapes.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);Validé par Benoît Deflandre le 14/11/2026;valide
+assets/img/ia/s8-insufflations.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);Validé par Benoît Deflandre le 14/11/2026;valide
+assets/img/ia/danger-situation-risque.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/itamami-5-axes.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/quatre-familles-dangers.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/neuf-principes-prevention.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/remonter-informations.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/scene-f1.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/scene-f2.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/scene-f3.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/scene-f4.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/scene-k1.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/scene-k2.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/scene-k3.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche
+assets/img/ia/scene-k4.webp;Image générée par IA, conçue pour Consulteam (livraison du 14/11/2026);;affiche

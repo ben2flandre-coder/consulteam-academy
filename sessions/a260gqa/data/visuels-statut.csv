@@ -1,0 +1,32 @@
+identifiant;statut;observation
+demarche-4-etapes;affiche;
+proteger-balisage;affiche;
+proteger-couper-energie;affiche;
+examiner-signes;affiche;
+alerter-message;affiche;
+s1-saignement-compression;affiche;
+s1-pansement-compressif;affiche;
+s2-etouffement-claques;valide;Validé par Benoît Deflandre le 14/11/2026
+s2-etouffement-abdominales;valide;Validé par Benoît Deflandre le 14/11/2026
+s2-etouffement-nourrisson;valide;Validé par Benoît Deflandre le 14/11/2026
+s3-malaise-repos;affiche;
+s4-brulure-refroidissement;affiche;
+s5-douleur-immobilisation;affiche;
+s6-plaie-protection;affiche;
+s7-pls;valide;Validé par Benoît Deflandre le 14/11/2026
+s8-rcp-compressions;valide;Validé par Benoît Deflandre le 14/11/2026
+s8-dae-etapes;valide;Validé par Benoît Deflandre le 14/11/2026
+s8-insufflations;valide;Validé par Benoît Deflandre le 14/11/2026
+danger-situation-risque;affiche;
+itamami-5-axes;affiche;
+quatre-familles-dangers;affiche;
+neuf-principes-prevention;affiche;
+remonter-informations;affiche;
+scene-f1;affiche;
+scene-f2;affiche;
+scene-f3;affiche;
+scene-f4;affiche;
+scene-k1;affiche;
+scene-k2;affiche;
+scene-k3;affiche;
+scene-k4;affiche;

@@ -1,0 +1,272 @@
+{
+  "version": "brouillon",
+  "date": "2026-11-14",
+  "sources": {
+    "DR": "Document de référence SST V8 01/2021 (INRS) - PDF PC Telechargements ; version plus récente à vérifier",
+    "GDT": "Guide des données techniques et conduites à tenir V5.01/2024 (INRS)",
+    "MF": "Manuel du formateur SST janvier 2024 (INRS)",
+    "AM": "Aide-mémoire SST (ED 4085 6e ed.)",
+    "FT": "Fiches outils (DAE, gestes techniques, garrot, trousse, ITAMaMi, PAP)"
+  },
+  "organisation": {
+    "initiale": {
+      "duree_h": 14,
+      "demi_journees": 4,
+      "plan_MF": [
+        "Presentation, role du SST, bases prevention, prevention en entreprise",
+        "Proteger, Examiner, Alerter, Secourir",
+        "Secourir (suite)",
+        "Secourir (fin), epreuves certificatives, bilan"
+      ],
+      "deroule": {
+        "matin_1": [
+          "C1",
+          "C6",
+          "C7",
+          "C8"
+        ],
+        "apres_midi_1": [
+          "C2",
+          "C3",
+          "intro C4"
+        ],
+        "matin_2": {
+          "reactivation": [
+            "C1",
+            "C6",
+            "C7",
+            "C8",
+            "C2",
+            "C4"
+          ],
+          "reprise": [
+            "C4"
+          ],
+          "debut_C5": [
+            "saignements abondants",
+            "etouffement"
+          ]
+        },
+        "apres_midi_2": {
+          "suite_C5": [
+            "PLS",
+            "malaises",
+            "brulures",
+            "plaies simples x traumatismes",
+            "RCP (+DAE)"
+          ]
+        }
+      }
+    },
+    "MAC": {
+      "duree_h": 7,
+      "demi_journees": 2,
+      "periodicite_mois_max": 24,
+      "plan_MF": [
+        "Presentation, retour d'experiences, actualisation",
+        "Actualisation, epreuves certificatives, bilan"
+      ],
+      "deroule": "programme classique du Manuel 2024"
+    },
+    "certification": {
+      "epreuve_1": "accident du travail simule (C2 a C5), sans risque specifique",
+      "epreuve_2": "echange avec PAP (C1, C6, C7, C8)",
+      "évaluation_formative": "a l'issue de chaque sequence"
+    }
+  },
+  "competences": [
+    {
+      "id": "C1",
+      "titre": "Situer son rôle de SST dans l'organisation des secours",
+      "sous": [
+        [
+          "1.1",
+          "Identifier le cadre juridique du rôle du SST"
+        ],
+        [
+          "1.2",
+          "Délimiter son champ d'intervention en matière de secours"
+        ]
+      ],
+      "epreuve": 2,
+      "sources": [
+        "MF p.5+",
+        "Code pénal art. 223-6",
+        "Code du travail R4224-15"
+      ],
+      "module_site": "cadre-juridique"
+    },
+    {
+      "id": "C2",
+      "titre": "Protéger de façon adaptée",
+      "sous": [
+        [
+          "2.1",
+          "Mettre en œuvre les mesures de protection décrites dans le processus d'alerte aux populations"
+        ],
+        [
+          "2.2",
+          "Identifier les dangers persistants et les personnes exposées"
+        ],
+        [
+          "2.3",
+          "Supprimer ou isoler le danger, ou soustraire la victime sans s'exposer"
+        ]
+      ],
+      "epreuve": 1,
+      "sources": [
+        "GDT Protéger",
+        "GDT tableau 1 (dégagement d'urgence)",
+        "MF"
+      ],
+      "module_site": "proteger"
+    },
+    {
+      "id": "C3",
+      "titre": "Examiner la victime",
+      "sous": [
+        [
+          "3.1",
+          "Rechercher dans l'ordre les signes de menace vitale"
+        ],
+        [
+          "3.2",
+          "Reconnaître les autres signes"
+        ],
+        [
+          "3.3",
+          "Prioriser les actions"
+        ]
+      ],
+      "epreuve": 1,
+      "sources": [
+        "GDT Examiner, tableaux 2 à 5"
+      ],
+      "module_site": "examiner"
+    },
+    {
+      "id": "C4",
+      "titre": "Garantir une alerte adaptée",
+      "sous": [
+        [
+          "4.1",
+          "Définir les éléments du message d'alerte"
+        ],
+        [
+          "4.2",
+          "Identifier qui alerter selon l'organisation des secours"
+        ],
+        [
+          "4.3",
+          "Faire alerter par la personne la plus apte ou alerter soi-même"
+        ]
+      ],
+      "epreuve": 1,
+      "sources": [
+        "GDT Faire alerter ou alerter",
+        "FT trousse/organisation des secours"
+      ],
+      "module_site": "alerter"
+    },
+    {
+      "id": "C5",
+      "titre": "Secourir la victime de manière appropriée",
+      "sous": [
+        [
+          "5.1",
+          "Choisir l'action de secours à l'issue de l'examen"
+        ],
+        [
+          "5.2",
+          "Réaliser l'action selon la conduite à tenir du guide"
+        ],
+        [
+          "5.3",
+          "Surveiller jusqu'à la prise en charge par les secours"
+        ]
+      ],
+      "epreuve": 1,
+      "sources": [
+        "GDT Secourir 1 à 8, tableaux 6 à 26",
+        "FT DAE, garrot, gestes techniques"
+      ],
+      "module_site": "secourir",
+      "situations_guide": [
+        "1 saigne abondamment",
+        "2 s'etouffe",
+        "3 malaise",
+        "4 brulures",
+        "5 douleur empechant des mouvements",
+        "6 plaie ne saignant pas abondamment",
+        "7 ne repond pas mais respire",
+        "8 ne repond pas et ne respire pas"
+      ]
+    },
+    {
+      "id": "C6",
+      "titre": "Situer son rôle dans l'organisation de la prévention",
+      "sous": [
+        [
+          "6.1",
+          "S'approprier les enjeux de la prévention"
+        ],
+        [
+          "6.2",
+          "Se positionner comme un des acteurs de la prévention"
+        ]
+      ],
+      "epreuve": 2,
+      "sources": [
+        "MF",
+        "Code SS L411-1, L411-2, L461-1"
+      ],
+      "module_site": "prevention-role"
+    },
+    {
+      "id": "C7",
+      "titre": "Caractériser des risques professionnels",
+      "sous": [
+        [
+          "7.1",
+          "Repérer des dangers et informer les personnes exposées"
+        ],
+        [
+          "7.2",
+          "Déterminer des risques et leurs dommages potentiels"
+        ]
+      ],
+      "epreuve": 2,
+      "sources": [
+        "MF",
+        "FT ITAMaMi",
+        "FT PAP"
+      ],
+      "module_site": "risques"
+    },
+    {
+      "id": "C8",
+      "titre": "Participer à la maîtrise des risques par la prévention",
+      "sous": [
+        [
+          "8.1",
+          "Supprimer ou réduire les risques sur lesquels agir directement"
+        ],
+        [
+          "8.2",
+          "Transmettre aux personnes en charge de la prévention"
+        ],
+        [
+          "8.3",
+          "Proposer des pistes d'amélioration"
+        ]
+      ],
+      "epreuve": 2,
+      "sources": [
+        "MF",
+        "Code du travail L4121-2 (9 principes)",
+        "ED 6037, ED 6077"
+      ],
+      "module_site": "actions-prevention"
+    }
+  ]
+}

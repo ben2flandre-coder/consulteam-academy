@@ -1,0 +1,31 @@
+(function(){
+var RM=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+function person(id,col,cls){return '<g class="res '+(cls||"")+'"><circle cx="0" cy="-58" r="14" fill="#f2c9a0"/><rect x="-14" y="-44" width="28" height="44" rx="8" fill="'+col+'"/><rect x="-10" y="-2" width="8" height="28" fill="#33415c"/><rect x="2" y="-2" width="8" height="28" fill="#33415c"/></g>'}
+var common='<rect x="0" y="262" width="720" height="38" fill="#e8edf5"/><g transform="translate(250,246)"><circle cx="-18" cy="-6" r="13" fill="#f2c9a0"/><rect x="-6" y="-16" width="120" height="24" rx="12" fill="#6b7a99"/></g>';
+var A={st:[
+["🛑 <b>Protéger</b> : repérer le danger persistant, le supprimer ou l’isoler (ici, couper l’énergie), sans s’exposer.","Les quatre familles : mécanique, électrique, thermique, atmosphère toxique."],
+["🔍 <b>Examiner</b> dans l’ordre : saignement abondant, obstruction des voies aériennes, réponse, respiration.","Parler à la victime, observer, chercher les signes qui menacent la vie."],
+["📞 <b>Alerter</b> : choisir la personne, dicter le message (qui appelle, où, quoi, combien de victimes, état, actions), ne pas raccrocher le premier.","15, 18, 112 ou 114 ; en entreprise, secours internes."],
+["🩹 <b>Secourir</b> : action adaptée au résultat à atteindre, puis surveillance jusqu’à la prise en charge.","Compression d’un saignement, claques dans le dos, PLS, RCP et DAE selon le cas."]],
+svg:common+'<g><rect x="470" y="110" width="150" height="152" rx="8" fill="#6b7a99"/><text x="545" y="205" font-size="64" text-anchor="middle">⚡</text></g><circle class="g s1 pulse" cx="545" cy="186" r="100" fill="none" stroke="#c0392b" stroke-width="5" stroke-dasharray="10 8"/><g class="g s1"><circle cx="440" cy="236" r="16" fill="#c0392b"/><text x="440" y="242" font-size="16" fill="#fff" text-anchor="middle">0</text></g>'+person("r","#2e9d57")+'<g class="g s2"><text x="330" y="150" font-size="26">🩸 ?</text><text x="330" y="182" font-size="26">😮‍💨 ?</text><text x="400" y="150" font-size="26">🗣️ ?</text><text x="400" y="182" font-size="26">🫁 ?</text></g><g class="g s3"><rect x="100" y="30" width="250" height="86" rx="12" fill="#fff8e6" stroke="#f6b63d" stroke-width="3"/><text x="115" y="58" font-size="20">📞 15 · 18 · 112 · 114</text><text x="115" y="84" font-size="15">Qui · Où · Quoi · Combien · État · Actions</text><text x="115" y="104" font-size="15">Ne pas raccrocher le premier</text></g><g class="g s4"><text x="345" y="120" font-size="44" class="pulse">🫶</text><text x="330" y="160" font-size="22">👀 surveiller</text></g>',pos:[[60,262],[190,262],[190,262],[190,262]]};
+var B={st:[
+["👀 <b>Reconnaître</b> : la victime ne répond pas et ne respire pas, ou pas normalement.","Libérer les voies aériennes, regarder le thorax."],
+["📞 <b>Alerter</b> sans attendre : 15 ou 112, et demander un défibrillateur.","Faire apporter le DAE si un témoin est là."],
+["❤️ <b>Masser</b> : compressions au centre de la poitrine, 100 à 120 par minute, environ 5 cm sans dépasser 6 cm. Adulte : 30 compressions puis 2 insufflations.","Le rythme pulse à l’écran : suivez-le."],
+["⚡ <b>Défibriller</b> : mettre en marche le DAE, coller les électrodes, suivre les instructions vocales.","Personne ne touche la victime pendant l’analyse et le choc."]],
+svg:common+'<g class="g s2"><rect x="440" y="40" width="240" height="70" rx="12" fill="#fff8e6" stroke="#f6b63d" stroke-width="3"/><text x="455" y="70" font-size="20">📞 15 ou 112</text><text x="455" y="96" font-size="15">+ demander un DAE</text></g><g class="g s1"><text x="300" y="140" font-size="22">🗣️ ne répond pas</text><text x="300" y="172" font-size="22">🫁 ne respire pas</text></g><g class="g s3"><text x="548" y="170" font-size="26">30 : 2</text><text x="548" y="196" font-size="14">100–120 / min</text></g><g class="g s4"><rect x="520" y="200" width="160" height="62" rx="10" fill="#2e9d57"/><text x="600" y="228" font-size="22" fill="#fff" text-anchor="middle">⚡ DAE</text><text x="600" y="250" font-size="13" fill="#fff" text-anchor="middle">voix : suivre</text></g>'+'<g class="g s3 s4"><g class="beat" style="--bt:.545s"><text x="305" y="228" font-size="36">🙌</text></g></g>'+person("r","#2e9d57"),pos:[[170,262],[170,262],[250,262],[250,262]]};
+function init(box){
+var cur=box.getAttribute("data-sc")==="B"?B:A,key=box.getAttribute("data-sc")||"A",i=0,timer=null;
+var sv=box.querySelector("svg"),cap=box.querySelector(".cap"),dots=box.querySelector(".dots"),pl=box.querySelector(".pl"),qb=box.querySelector(".qrbox");
+function render(){sv.innerHTML=cur.svg;sv.setAttribute("data-s",i+1);var r=sv.querySelector(".res");r.style.transform="translate("+cur.pos[i][0]+"px,"+cur.pos[i][1]+"px)";
+sv.querySelectorAll(".s3.s4").forEach(function(e){e.style.opacity=(i>=2)?1:0});
+cap.innerHTML=cur.st[i][0]+"<br><small>"+cur.st[i][1]+"</small>";var Q=(window.__AQ||{})[key];if(Q&&qb){var z=Q[i];qb.innerHTML=z.svg+'<div class="rp"><b>📱 Sur le site</b><br>'+z.t+'<br><span>📍 Repère '+(i+1)+' sur '+cur.st.length+' · '+z.c+' · '+z.j+'</span><br><a href="'+z.url+'">Ouvrir la page</a></div>'}
+dots.innerHTML=cur.st.map(function(_,k){return '<i class="'+(k===i?"on":"")+'"></i>'}).join("")}
+function go(n){i=(n+cur.st.length)%cur.st.length;render()}
+function stop(){if(timer){clearInterval(timer);timer=null}pl.textContent="▶ Lecture";pl.classList.remove("on")}
+function play(){stop();timer=setInterval(function(){go(i+1)},5000);pl.textContent="⏸ Pause";pl.classList.add("on")}
+box.querySelector(".pv").onclick=function(){stop();go(i-1)};box.querySelector(".nx").onclick=function(){stop();go(i+1)};pl.onclick=function(){timer?stop():play()};
+box.addEventListener("keydown",function(e){if(e.key==="ArrowRight"){stop();go(i+1)}if(e.key==="ArrowLeft"){stop();go(i-1)}});
+render()}
+window.initAnim=init;Array.prototype.forEach.call(document.querySelectorAll(".anim[data-sc]"),init);
+})();

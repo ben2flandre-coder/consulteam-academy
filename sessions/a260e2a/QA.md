@@ -78,3 +78,6 @@ Page « Puis-je remplacer ? » (lampe, fusible, prise), 68 questions ajoutées (
 
 ## 18/11/2026 : ajout secours.html
 Page secours, scénarios (2 x 3 étapes), recommandation SST / MAC SST, lien de navigation, cache hors ligne et manifeste mis à jour ; contrôles : voir journal de la session.
+
+## 18/11/2026 : recommandation SST / MAC SST dans les pages réservées
+Diapositive « Habilitation électrique et SST » (animation) et espace formateur : recommandation forte de passer le SST ou le MAC SST. Pages rechiffrées (même clé de contenu, nouvel IV) ; ouverture testée avec bon code et e-mail, refus avec mauvais code ; aucune erreur JavaScript.

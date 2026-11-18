@@ -24,3 +24,8 @@ main h2:not(.fiche h2):not(.hero h2):not(.polehead h2){position:relative}
 .prog>div::after{content:"";position:absolute;right:-18px;top:-18px;width:56px;height:56px;border-radius:50%;background:rgba(246,182,61,.18)}
 @media print{.hero{background:#0f3363!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;box-shadow:none}.hero .frieze li{break-inside:avoid}}
 .hero svg.wm{stroke:#fff;fill:none;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* A2703AA · scènes du site */
+.fg{margin:16px 0 24px;border-radius:14px}.fg img{width:100%;height:auto;display:block;cursor:zoom-in;background:#e9eef4}.fg figcaption{padding:10px 14px;font-size:15px;color:#33475b}
+.gal.g2{grid-template-columns:repeat(auto-fill,minmax(min(640px,100%),1fr))}
+.fmt table{width:100%;margin:10px 0 18px}.fmt h3{margin:1.4em 0 .4em}

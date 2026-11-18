@@ -23,7 +23,7 @@ document.head.insertAdjacentHTML('beforeend','<style>'+
 '.shell{max-width:none!important;width:100%!important}main{padding-left:clamp(20px,3vw,56px)!important;padding-right:clamp(20px,3vw,56px)!important}'+
 '</style>');
 (function(){const h=document.querySelector('header');if(!h)return;const im=h.querySelector('img');if(im){im.src='../assets/img/logo-consulteam-groupe.png';im.alt='Consulteam Groupe'}
-const L=[['../index.html','Accueil'],['../parcours.html','Parcours'],['#','Socle électrique',1],['../metiers.html','Cas par métier'],['../evaluation.html','Évaluation'],['../galerie.html','Galerie'],['../securite-site.html','Sur le site'],['../electricien.html','Électricien de métier']];
+const L=[['../index.html','Accueil'],['../parcours.html','Parcours'],['#','Socle électrique',1],['../metiers.html','Cas par métier'],['../evaluation.html','Évaluation'],['../galerie.html','Galerie'],['../securite-site.html','Sur le site'],['../electricien.html','Électricien de métier'],['../suivre.html','Suivre'],['../animation.html','Mode animation'],['../formateur.html','Espace formateur']];
 const n=document.createElement('nav');n.className='sitenav';n.setAttribute('aria-label','Site de la session');n.innerHTML=L.map(([u,t,on])=>'<a href="'+u+'"'+(on?' class="on" aria-current="page"':'')+'>'+t+'</a>').join('');
 const b=h.querySelector('button');h.insertBefore(n,b||null)})();
 const siteHome=home;

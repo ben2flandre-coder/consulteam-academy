@@ -80,3 +80,7 @@ nav.fil a{background:linear-gradient(120deg,#1a5f96,#12315d)}
 }
 @media(prefers-color-scheme:dark){.tile .tb .dg{color:#ff9a8f}.tile .tb .ms{color:#7be0a8}.tl li span{color:#fff}.tl li b{color:var(--k)}}
 @media(max-width:600px){.seance .sh{padding:14px 16px;gap:12px}.seance .sh svg{display:none}.seance .sh .num{width:46px;height:46px;font-size:24px;border-radius:14px}.seance .sb{padding:14px 16px 20px}}
+
+/* illustrations (bandeaux) */
+.bandeau{margin:14px 0 22px;border-radius:16px;overflow:hidden;background:#f6f9fd;border:1px solid rgba(16,44,83,.12)}.bandeau img{display:block;width:100%;height:auto;object-fit:contain}.bandeau figcaption{padding:8px 14px;font-size:.92rem;color:#3a4d68;background:#fff;border-top:1px solid rgba(16,44,83,.08)}
+@media (prefers-color-scheme:dark){.bandeau{border-color:rgba(255,255,255,.18)}.bandeau figcaption{background:#14284a;color:#cfe0f5}}

@@ -1132,7 +1132,7 @@ h1,h2,h3,.page-header h2,.section-header h2{font-family:Bahnschrift,"DIN Alterna
 <span>Consulteam Groupe · A26094A</span>
 </div>
 <div class="app-header-wrap">
-<!--CT-HEADER--><header class="ct-head"><div class="ct-in"><a class="ct-logo" href="../index.html" aria-label="Retour à l’accueil de la session"><img src="../assets/img/logo-consulteam-groupe.png" alt="Consulteam Groupe" height="38"></a><div class="ct-title"><small>HACCP en biscuiterie · A26094A</small><div class="ct-h1">Plateforme PMS</div></div><nav class="ct-links" aria-label="Session"><a class="ct-home" href="../index.html">← Accueil de la session</a><a href="../parcours.html">Parcours</a><a href="../activite.html">Mon activité</a><a href="../glossaire.html">Glossaire</a><a href="../evaluation.html">Évaluations</a><a href="../suivre.html">Suivre</a><a href="../animation.html">Mode animation</a></nav><button aria-pressed="false" class="btn btn-secondary projection-toggle" id="projToggle" type="button">Mode projection</button></div></header><!--/CT-HEADER-->
+<!--CT-HEADER--><header class="ct-head"><div class="ct-in"><a class="ct-logo" href="../index.html" aria-label="Retour à l’accueil de la session"><img src="../assets/img/logo-consulteam-groupe.png" alt="Consulteam Groupe" height="38"></a><div class="ct-title"><small>HACCP en biscuiterie · A26094A</small><div class="ct-h1">Plateforme PMS</div></div><nav class="ct-links" aria-label="Session"><a class="ct-home" href="../index.html">← Accueil de la session</a><a href="../parcours.html">Parcours</a><a href="../positionnement.html">Positionnement</a><a href="../reglementation.html">Cadre réglementaire</a><a href="../activite.html">Mon activité</a><a href="../denrees.html">Autres denrées</a><a href="../evaluation.html">Évaluation</a><a href="../glossaire.html">Glossaire</a><a href="../suivre.html">Suivre</a><a href="../animation.html">Mode animation</a><a href="../hub.html">Espace formateur</a></nav><button aria-pressed="false" class="btn btn-secondary projection-toggle" id="projToggle" type="button">Mode projection</button></div></header><!--/CT-HEADER-->
 </div>
 <div class="app-nav-wrap">
 <nav class="top-nav"><button class="nav-btn" id="nb-accueil" onclick="nav('accueil')">🏠 Accueil</button>
@@ -8271,9 +8271,10 @@ try{const st=JSON.parse(localStorage.getItem('PMS28_A26094A')||'{}');nav(PAGES.i
   document.addEventListener('click',function(e){ const a=e.target.closest('a[href^="#"]'); if(!a) return; const href=a.getAttribute('href'); if(href==='#'){ e.preventDefault(); return; } const key=href.slice(1); if(PAGES.includes(key)){ e.preventDefault(); nav(key); return; } const sec=document.getElementById('page-'+cur); const target=sec?sec.querySelector(href):null; if(target){ e.preventDefault(); const top=target.getBoundingClientRect().top + window.scrollY - offset(); window.scrollTo({top,behavior:'smooth'}); } }, true);
   const proj=document.getElementById('projToggle'); if(proj){ proj.addEventListener('click',()=>{ const on=document.body.classList.toggle('projection-mode'); proj.textContent=on?'Quitter projection':'Mode projection'; proj.setAttribute('aria-pressed', on?'true':'false'); window.scrollTo({top:0,behavior:'smooth'}); updateBar(); }); }
   window.addEventListener('scroll',updateBar,{passive:true}); window.addEventListener('resize',updateBar);
-  const start='accueil';
+  const hs=(location.hash||'').slice(1); const start=PAGES.includes(hs)?hs:'accueil';
   cur=start; setActive(start);
-  if(location.hash && location.hash !== '#accueil'){ history.replaceState(null,'',location.pathname+'#accueil'); }
+  if(!PAGES.includes(hs) && location.hash && location.hash !== '#accueil'){ history.replaceState(null,'',location.pathname+'#accueil'); }
+  window.addEventListener('hashchange',function(){const h=(location.hash||'').slice(1); if(PAGES.includes(h)&&h!==cur) window.nav(h);});
   requestAnimationFrame(()=>{ const sec=document.getElementById('page-'+start); if(sec) window.scrollTo({top:Math.max(0, sec.offsetTop-offset()),behavior:'auto'}); updateBar(); });
 })();
 </script>

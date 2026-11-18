@@ -13,4 +13,6 @@
 - Article L. 201-7 du code rural et de la pêche maritime (information immédiate de l’autorité).
 - Règlement (CE) n° 853/2004 : congélation du poisson destiné à être consommé cru (−20 °C ≥ 24 h ou −35 °C ≥ 15 h).
 - Alim’confiance : quatre niveaux de résultat, publication pendant un an.
-- Limites : articles R. 412-12 à R. 412-14 cités sans paraphrase (à consulter sur Légifrance) ; définitions détaillées des niveaux Alim’confiance, mention de l’arrêté du 28 juin 1994 et suites d’un contrôle à confirmer sur les sites officiels avant toute diffusion externe.
+- Limites : articles R. 412-12 à R. 412-14 cités sans paraphrase (à consulter sur Légifrance) ; définitions détaillées des niveaux Alim’confiance, suites d’un contrôle à confirmer sur les sites officiels avant toute diffusion externe.
+
+- Vérifié le 18 novembre 2026 : arrêté du 28 juin 1994 (cité par la notice du Cerfa 13984, article 1er : déclaration obligatoire) ; quatre niveaux Alim’confiance, validité un an, nouveau contrôle pour « À améliorer » et « À corriger de manière urgente » (agriculture.gouv.fr, justice.fr).

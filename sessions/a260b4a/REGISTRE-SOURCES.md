@@ -24,3 +24,6 @@
 
 ## Secours : démarche et scénarios (18/11/2026)
 Page `secours.html` et complément de `securite-*.html` repris de la session 260535A du 16/11/2026 : démarche protéger, examiner, alerter, secourir (formation SST appliquée au risque électrique ; ne remplace pas la formation SST), deux scénarios à choix sans score, numéros 15, 18 et 112, message d’alerte en six éléments, guide des extincteurs. Illustrations `assets/img/s` (plateforme SST du dépôt, images générées par IA selon brief Consul Team) et `assets/img/pc` (fournies par Consul Team ; origine exacte à confirmer avant diffusion hors session). Sources : INRS, accidents d’origine électrique et habilitation électrique. Limites : conduite à tenir générale ; consignes du site et formation SST prévalent ; aucun geste ne s’apprend sans formateur.
+
+## Questions flash et défi du jour (18/11/2026)
+Banque `assets/qbank.js` : 37 questions à choix unique extraites de `evaluation.html` (mêmes énoncés, mêmes corrigés). Aucune donnée nominative ; scores et défis stockés uniquement dans le navigateur (clés `b4a.defi`, `b4a.flash`).

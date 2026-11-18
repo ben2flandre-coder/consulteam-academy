@@ -19,3 +19,6 @@
 
 ## 18/11/2026 : ajout secours.html
 Page secours, scénarios (2 × 3 étapes), images (12) et lien de navigation ajoutés ; contrôles : voir journal de la session.
+
+## 18/11/2026 : pleine page et couche dynamique
+Mise en page du site en pleine largeur (comme A260E2A) ; ajout du défi du jour, de la page Questions flash (série de 5, score), du bloc de progression de l'accueil et de l'apparition douce des cartes. Les questions viennent de `assets/qbank.js` : les 37 questions à choix unique de l'évaluation théorique, sans nouveau contenu. Contrôles : ouverture des 11 pages en 1366 et 375 px sans erreur console ni débord horizontal, réponses, explications, rejouer, mouvement réduit et impression (blocs dynamiques masqués). Reste non fait : test sur téléphone avec le réseau de l'île.

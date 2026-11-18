@@ -20,3 +20,7 @@
 - Six scènes S01 à S06 ajoutées (accueil, parcours séquence par séquence avec schémas F/V, cas par métier, sécurité du site, galerie) ; 0 débordement horizontal à 1920 et 375 px sur les 9 pages.
 - Espace formateur et animation : chiffrement testé (mauvais code refusé, bon code accepté, à 1920 et 390 px) ; 43 diapositives parcourues, 0 image cassée, 0 erreur console, 0 débordement à 1920×1080 ; 33 diapositives portent un QR vers la page du site.
 - Non fait : relecture indépendante des contenus et des corrigés, test sur téléphone réel, vérification en ligne après publication, horaires de reprise et de pause à confirmer avec le client.
+
+
+## 18/11/2026 : ajout secours.html
+Page secours, scénarios (2 × 3 étapes), images (12) et lien de navigation ajoutés ; contrôles : voir journal de la session.

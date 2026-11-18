@@ -20,3 +20,7 @@
 - **Schémas F01 à F06** : création originale (SVG), contenu repris des pages du support (INRS, ED 6127, arrêté du 9 juillet 2013).
 - **Visuels repris d'un autre support Consul Team** : schémas V01, V03, V04, V12, V13, V15, V18, V19, V20 et V02, V05, V09, V10, V21, V22, V24 ; planches PN01 à PN04 ; illustrations I04 à I06. Choisis pour leur caractère générique ; ceux propres à un autre secteur d'activité n'ont pas été repris.
 - **Cas de maintenance (espace électricien)** : neuf situations génériques, décisions rédigées à partir de l'INRS ED 6127 et ED 6109 ; non évaluées, hors programme.
+
+
+## Secours : démarche et scénarios (18/11/2026)
+Page `secours.html` et complément de `securite-*.html` repris de la session 260535A du 16/11/2026 : démarche protéger, examiner, alerter, secourir (formation SST appliquée au risque électrique ; ne remplace pas la formation SST), deux scénarios à choix sans score, numéros 15, 18 et 112, message d’alerte en six éléments, guide des extincteurs. Illustrations `assets/img/s` (plateforme SST du dépôt, images générées par IA selon brief Consul Team) et `assets/img/pc` (fournies par Consul Team ; origine exacte à confirmer avant diffusion hors session). Sources : INRS, accidents d’origine électrique et habilitation électrique. Limites : conduite à tenir générale ; consignes du site et formation SST prévalent ; aucun geste ne s’apprend sans formateur.

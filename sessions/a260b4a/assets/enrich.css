@@ -24,3 +24,25 @@ main h2:not(.fiche h2):not(.hero h2):not(.polehead h2){position:relative}
 .prog>div::after{content:"";position:absolute;right:-18px;top:-18px;width:56px;height:56px;border-radius:50%;background:rgba(246,182,61,.18)}
 @media print{.hero{background:#0f3363!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;box-shadow:none}.hero .frieze li{break-inside:avoid}}
 .hero svg.wm{stroke:#fff;fill:none;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* Secours : démarche en 4 gestes, scénarios (repris de 260535A, 18/11/2026) */
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin:16px 0 22px}
+.figs:has(figure:only-child){grid-template-columns:minmax(0,640px)}
+.figs figure{margin:0;background:#fff;border:1px solid #d5dfeb;border-radius:12px;overflow:hidden;box-shadow:0 1px 4px rgba(16,44,83,.08)}
+.figs img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover;cursor:zoom-in}
+.figs figure:only-child img{object-fit:contain;background:#0f2a4d}
+.figs.ph img{aspect-ratio:auto;max-height:420px;object-fit:contain;background:#f4f7fb;padding:6px}
+.figs figcaption{padding:9px 12px 11px;font-size:14px;font-weight:600;color:#102c53;border-top:3px solid #f6b63d}
+.figs figcaption small{display:block;font-weight:400;color:#53677d;font-size:12px;margin-top:2px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;align-items:start;margin:12px 0 22px}
+.grid2 .figs{margin:0}.grid2>.card{margin:0}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.tabs button{padding:10px 16px;border:2px solid #d5dfeb;border-radius:999px;background:#fff;color:#102c53;font:600 15px/1.2 inherit;cursor:pointer}
+.tabs button[aria-selected=true]{background:#102c53;color:#fff;border-color:#102c53}
+.scen{border-left:6px solid #f6b63d}
+.gq{font-size:1.2em;font-weight:700;color:#102c53;margin:6px 0 14px}
+.gbtn{display:grid;gap:10px}.gbtn button{text-align:left;padding:14px 16px;border:2px solid #d5dfeb;border-radius:12px;background:#fff;font:600 16px/1.35 inherit;cursor:pointer;color:#102c53}
+.gbtn button:hover:not(:disabled){border-color:#f6b63d;background:#fff8e6}.gbtn button:disabled{opacity:.7;cursor:default}
+.gf{margin-top:12px;padding:0;font-weight:600}.gf.good,.gf.bad{padding:12px 14px;border-radius:10px}.gf.good{background:#e4f6ec;color:#0d5a38}.gf.bad{background:#fdeaea;color:#8a1f1f}
+.scen .alt{margin-top:12px}
+@media print{.figs{grid-template-columns:repeat(2,1fr);break-inside:avoid}.figs figure{break-inside:avoid}}

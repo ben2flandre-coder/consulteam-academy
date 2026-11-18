@@ -75,3 +75,6 @@ Sources S37 à S40 ajoutées ; audit réglementaire : 13 vérifiés sur 14 ; ED 
 
 ## Complétude (14/11/2026, après-midi)
 Page « Puis-je remplacer ? » (lampe, fusible, prise), 68 questions ajoutées (ratio ED 6127 : QCM de 16 questions, base de 20 questions au moins par thème), vidéos officielles INRS sur la page Ressources, pages publiques mises à jour (21 h, plus d'hypothèse).
+
+## 18/11/2026 : ajout secours.html
+Page secours, scénarios (2 x 3 étapes), recommandation SST / MAC SST, lien de navigation, cache hors ligne et manifeste mis à jour ; contrôles : voir journal de la session.

@@ -15,3 +15,7 @@
 - Horaires de l'animation (pauses 15 min et 75 min) : indicatifs, à ajuster avec le client.
 - Écart à lever : Gescof indique 12 stagiaires confirmés ; la fiche d'accueil du site mentionne 10.
 - Toujours non fait : relecture indépendante, test sur téléphone avec le réseau de l'île, vérification des numéros de page ED 6127.
+
+
+## 18/11/2026 : ajout secours.html
+Page secours, scénarios (2 × 3 étapes), images (12) et lien de navigation ajoutés ; contrôles : voir journal de la session.

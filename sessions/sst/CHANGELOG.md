@@ -1,4 +1,7 @@
 # Journal des changements
+## v0.8.0 — 18/11/2026
+- Session recalée : formation initiale A260GNA, jeudi 3 et mercredi 9 décembre 2026, 9 h – 17 h 30, à Cuers, 9 stagiaires (remplace la session de Hyères reportée). Pages mises à jour : espace formateur (cadre de session), matériel et salle, livret formateur (page), chemin des grilles de certification, couverture du livret apprenant PDF (93 p.).
+- Pied de page des 41 pages passé en v0.8.0 du 18/11/2026. Heure de reprise de l'après-midi à caler avec le client (le CPS ne la précise pas).
 ## v0.7.12 — 15/11/2026
 - Page Grilles de certification : le bouton « Copier le chemin » ne fonctionnant pas non plus en usage réel (API presse-papier indisponible sur ce poste), retiré au profit du chemin affiché en texte sélectionnable, avec retour à la ligne corrigé pour éviter un débordement horizontal sur mobile.
 ## v0.7.11 — 15/11/2026

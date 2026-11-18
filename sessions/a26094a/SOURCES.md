@@ -6,3 +6,11 @@
 - **Limites** : Légifrance n’a pas pu être consulté depuis l’environnement de production ; les textes cités sont à vérifier sur leur version en vigueur. Les sanctions pénales ne sont volontairement pas détaillées.
 - **Données** : aucune donnée de stagiaire n’est conservée par le site. L’évaluation ne transmet un résultat que si le stagiaire l’envoie lui-même au formateur.
 - **Validation Consulteam** : en attente.
+
+## Ajouts du 18 novembre 2026 (pages « Cadre réglementaire » et « Autres denrées »)
+- Programme officiel Consul Team (HACCP en restauration commerciale, SECU36) : structure des contenus réglementaires, contrôles officiels, Alim’confiance, attestation et suivi à trois mois.
+- Cerfa 13984 (déclaration d’activité), 13983 (demande d’agrément), 13982 (dérogation) ; arrêté du 8 juin 2006 ; arrêté du 21 décembre 2009.
+- Article L. 201-7 du code rural et de la pêche maritime (information immédiate de l’autorité).
+- Règlement (CE) n° 853/2004 : congélation du poisson destiné à être consommé cru (−20 °C ≥ 24 h ou −35 °C ≥ 15 h).
+- Alim’confiance : quatre niveaux de résultat, publication pendant un an.
+- Limites : articles R. 412-12 à R. 412-14 cités sans paraphrase (à consulter sur Légifrance) ; définitions détaillées des niveaux Alim’confiance, mention de l’arrêté du 28 juin 1994 et suites d’un contrôle à confirmer sur les sites officiels avant toute diffusion externe.

@@ -1,0 +1,39 @@
+{
+  "id": "PN04",
+  "title": "ÉQUIPEMENTS DE PROTECTION",
+  "sub": "Le symbole d’habilitation ne détermine pas à lui seul les EPI.",
+  "image": "I06",
+  "headline": "Choisir à partir des risques.",
+  "bullets": [
+    [
+      "Analyser",
+      "Contact, arc, projections et environnement."
+    ],
+    [
+      "Adapter",
+      "Performances, taille et compatibilité avec la tâche."
+    ],
+    [
+      "Vérifier",
+      "État, marquages, notice et contrôles requis."
+    ],
+    [
+      "Prévenir d’abord",
+      "Supprimer le danger et protéger collectivement."
+    ]
+  ],
+  "note": "Objets illustratifs sans performances attestées : ce n’est pas un kit universel de protection.",
+  "refs": [
+    "S01"
+  ],
+  "question": "Quelles données faut-il connaître avant de choisir des gants et une protection contre l’arc ?",
+  "limits": "Aucun classement de gant, casque, écran, vêtement ou outil n’est déduit de l’image ; conformité, marquages et performances non vérifiables.",
+  "file": "panneaux/PN04.png",
+  "kind": "Panneau pédagogique illustré",
+  "width": 3200,
+  "height": 1800,
+  "status": "Principes relus sur sources accessibles ; pas une procédure validée pour le site.",
+  "reviewer": "Relecture et inspection par l’assistant ; aucun visa technique indépendant.",
+  "date": "2026-10-19",
+  "sha256": "f084f3b1b4ad71df3292c96766a49258b809ef45b5947e878a478c959521dff0"
+}

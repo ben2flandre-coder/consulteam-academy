@@ -1,0 +1,72 @@
+[
+  {
+    "id": "S01",
+    "title": "INRS — Prévention du risque électrique",
+    "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique.html",
+    "scope": "Page consultée : priorité au hors tension, consignation, voisinage, EPI. Synthèse accessible, pas texte intégral NF C 18-510.",
+    "consulted": "2026-10-19"
+  },
+  {
+    "id": "S02",
+    "title": "INRS — FAQ habilitation électrique",
+    "url": "https://www.inrs.fr/risques/electriques/habilitation-electrique-foire-aux-questions.html",
+    "scope": "Page consultée : rubriques dépannage, consignation pour soi et pour tiers, limites BR, opérations spécifiques.",
+    "consulted": "2026-10-19"
+  },
+  {
+    "id": "S03",
+    "title": "INRS — ED 6127, L’habilitation électrique",
+    "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6127.pdf",
+    "scope": "Extraits accessibles consultés : tableau de choix des symboles. Ne remplace pas la norme ni le titre employeur.",
+    "consulted": "2026-10-19"
+  },
+  {
+    "id": "S04",
+    "title": "INRS — Consignations et déconsignations ED 6109",
+    "url": "https://www.inrs.fr/media.html?refINRS=ED+6109",
+    "scope": "Notice et extraits accessibles : dangers des énergies multiples et consignations incomplètes. PDF direct non ouvert intégralement dans cette session.",
+    "consulted": "2026-10-19"
+  },
+  {
+    "id": "S05",
+    "title": "AFNOR — NF C18-510 COMPIL 2",
+    "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-c18510-compil-2/fa207914/347189",
+    "scope": "Notice officielle consultée : janvier 2012 + A1 février 2020 + A2 juin 2023 ; tirage juillet 2024. Texte intégral de 277 pages non consulté.",
+    "consulted": "2026-10-19"
+  },
+  {
+    "id": "S06",
+    "title": "Légifrance — Arrêté du 5 juillet 2024, article 1",
+    "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000049922372/2024-07-08",
+    "scope": "Article consulté : références recommandées NF C 18-510 janvier 2012 et A1 février 2020 ; distinguer cette liste de la compilation commerciale AFNOR.",
+    "consulted": "2026-10-19"
+  },
+  {
+    "id": "S07",
+    "title": "Chauvin Arnoux — notice C.A 703",
+    "url": "https://www.chauvin-arnoux.com/sites/default/files/D00UPM34.PDF",
+    "scope": "Notice fabricant consultée : cet appareil de mesure ne constitue pas un VAT ; renvoi à un détecteur conforme IEC 61243-3.",
+    "consulted": "2026-10-19"
+  },
+  {
+    "id": "S08",
+    "title": "INRS — Sécurité des équipements de travail ED 6122",
+    "url": "https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-6122.pdf",
+    "scope": "Extrait accessible consulté : arrêt d’urgence, mesure complémentaire, et renvoi à la consignation des énergies.",
+    "consulted": "2026-10-19"
+  },
+  {
+    "id": "S09",
+    "title": "INRS — Risques liés à l’électricité",
+    "url": "https://www.inrs.fr/risques/electriques/risques-electricite.html",
+    "scope": "Page consultée : contacts directs, contacts indirects et arcs électriques. Définitions de danger ; aucun seuil physiologique déduit.",
+    "consulted": "2026-10-19"
+  },
+  {
+    "id": "S10",
+    "title": "Chauvin Arnoux — notice adaptateur C.A 751",
+    "url": "https://www.chauvin-arnoux.com/sites/default/files/D00AYT15_9.PDF",
+    "scope": "Extrait fabricant consulté : autotest immédiatement avant et après avec les détecteurs C.A 704 / 760 / 765 cités ; ne pas transposer la méthode à un autre appareil.",
+    "consulted": "2026-10-19"
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "id": "PN03",
+  "title": "VÉRIFICATION D’ABSENCE DE TENSION",
+  "sub": "La VAT et le mesurage de diagnostic ont des objectifs distincts.",
+  "image": "I04",
+  "headline": "Un zéro affiché ne suffit pas.",
+  "bullets": [
+    [
+      "La bonne fonction",
+      "Employer un vérificateur adapté à la VAT."
+    ],
+    [
+      "Le bon domaine",
+      "Vérifier l’adéquation AC/DC et les limites d’emploi."
+    ],
+    [
+      "Le bon contrôle",
+      "Contrôler le fonctionnement selon la notice, avant et après."
+    ],
+    [
+      "Au moindre doute",
+      "Suspendre l’opération et faire résoudre l’anomalie."
+    ]
+  ],
+  "note": "Matériel synthétique illustratif : ce dessin photographique ne remplace ni la notice ni une démonstration encadrée.",
+  "refs": [
+    "S01",
+    "S07",
+    "S10"
+  ],
+  "question": "Que conclure si le contrôle du vérificateur après la VAT échoue ?",
+  "limits": "Aucun appareil réel identifié ou certifié. Aucun contact de pointes ou point de vérification n’est enseigné par la photo.",
+  "file": "panneaux/PN03.png",
+  "kind": "Panneau pédagogique illustré",
+  "width": 3200,
+  "height": 1800,
+  "status": "Principes relus sur sources accessibles ; pas une procédure validée pour le site.",
+  "reviewer": "Relecture et inspection par l’assistant ; aucun visa technique indépendant.",
+  "date": "2026-10-19",
+  "sha256": "034b07345a69f983c701f95911b20dba1bd068b2ef2561afadd53ac770181f7d"
+}

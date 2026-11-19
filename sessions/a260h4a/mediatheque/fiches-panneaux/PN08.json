@@ -1,0 +1,39 @@
+{
+  "id": "PN08",
+  "title": "FIN D’OPÉRATION ET REPRISE",
+  "sub": "La remise en service exige une coordination organisée.",
+  "image": "I01",
+  "headline": "Terminé ne signifie pas redémarrage autorisé.",
+  "bullets": [
+    [
+      "Restituer",
+      "L’état final et les écarts constatés."
+    ],
+    [
+      "Contrôler",
+      "Le dégagement des personnes et de l’outillage."
+    ],
+    [
+      "Coordonner",
+      "Les équipes et les autres énergies."
+    ],
+    [
+      "Autoriser",
+      "La reprise selon la procédure et les rôles prévus."
+    ]
+  ],
+  "note": "Ne pas retirer arbitrairement un dispositif de condamnation posé par un tiers.",
+  "refs": [
+    "S04"
+  ],
+  "question": "Peut-on redémarrer si une autre équipe n’a pas restitué sa zone ?",
+  "limits": "Ni ordre universel de déconsignation ni autorisation de reprise. Documents et conditions locales restent nécessaires.",
+  "file": "panneaux/PN08.png",
+  "kind": "Panneau pédagogique illustré",
+  "width": 3200,
+  "height": 1800,
+  "status": "Principes relus sur sources accessibles ; pas une procédure validée pour le site.",
+  "reviewer": "Relecture et inspection par l’assistant ; aucun visa technique indépendant.",
+  "date": "2026-10-19",
+  "sha256": "a51eb4944ec3cce97374f6fdd879adaca6f979e6c107edbd49c48b4ee16b09a2"
+}

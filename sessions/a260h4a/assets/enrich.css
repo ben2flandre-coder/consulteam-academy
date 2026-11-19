@@ -1,0 +1,70 @@
+/* Consulteam · couche visuelle (enrich v1) — additive, sans changement de contenu */
+.hero{position:relative;isolation:isolate;background:radial-gradient(120% 150% at 0% 0%,#1d5290 0%,#0f3363 46%,#0a2347 100%);color:#fff;border-radius:22px;padding:36px 36px 32px;gap:28px;overflow:hidden;box-shadow:0 16px 44px rgba(10,35,71,.30);margin-bottom:26px;border:1px solid rgba(255,255,255,.08)}
+.hero::before{content:"";position:absolute;right:-100px;top:-110px;width:340px;height:340px;border-radius:50%;border:38px solid rgba(246,182,61,.17);z-index:-1}
+.hero::after{content:"";position:absolute;left:-70px;bottom:-120px;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.05);z-index:-1}
+.hero h1,.hero h2{color:#fff}
+.hero .lead{color:#d6e4f5}
+.hero>div:first-child{position:relative}
+.hero .wm{position:absolute;right:-6px;top:-8px;width:150px;height:150px;color:#fff;opacity:.09;pointer-events:none}
+.hero .frieze{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:22px 0 2px;padding:0;list-style:none}
+.hero .frieze li{display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:12px 12px 11px;border-radius:14px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(2px);font:600 13.5px/1.2 var(--ff,system-ui);color:#fff;transition:transform .15s,background .15s}
+.hero .frieze li:hover{transform:translateY(-2px);background:rgba(255,255,255,.15)}
+.hero .frieze svg{width:30px;height:30px;stroke:var(--t,#f6b63d);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.hero .frieze small{display:block;font:400 11.5px/1.25 var(--fb,system-ui);color:#c3d6ee;margin-top:2px}
+.hero .fiche{align-self:start;box-shadow:0 8px 24px rgba(0,0,0,.28);border-left-color:#f6b63d}
+@media(max-width:720px){.hero{padding:24px 20px 22px;border-radius:18px}.hero .wm{width:110px;height:110px}}
+/* titres de section : repère coloré */
+main h2:not(.fiche h2):not(.hero h2):not(.polehead h2){position:relative}
+/* cartes du parcours : relief et reperes */
+.card{box-shadow:0 1px 2px rgba(16,44,83,.06),0 6px 18px rgba(16,44,83,.06)}
+/* polehead (document unique et pôles) en bandeau dégradé */
+.polehead{background:linear-gradient(120deg,var(--pole-t,#fbf0dc) 0%,#fff 130%);box-shadow:0 8px 26px rgba(16,44,83,.09)}
+.polehead img{width:84px;height:84px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.15))}
+.prog>div{position:relative;overflow:hidden;box-shadow:0 1px 2px rgba(16,44,83,.06),0 6px 16px rgba(16,44,83,.06)}
+.prog>div::after{content:"";position:absolute;right:-18px;top:-18px;width:56px;height:56px;border-radius:50%;background:rgba(246,182,61,.18)}
+@media print{.hero{background:#0f3363!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;box-shadow:none}.hero .frieze li{break-inside:avoid}}
+.hero svg.wm{stroke:#fff;fill:none;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* Secours : démarche en 4 gestes, scénarios (repris de 260535A, 18/11/2026) */
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin:16px 0 22px}
+.figs:has(figure:only-child){grid-template-columns:minmax(0,640px)}
+.figs figure{margin:0;background:#fff;border:1px solid #d5dfeb;border-radius:12px;overflow:hidden;box-shadow:0 1px 4px rgba(16,44,83,.08)}
+.figs img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover;cursor:zoom-in}
+.figs figure:only-child img{object-fit:contain;background:#0f2a4d}
+.figs.ph img{aspect-ratio:auto;max-height:420px;object-fit:contain;background:#f4f7fb;padding:6px}
+.figs figcaption{padding:9px 12px 11px;font-size:14px;font-weight:600;color:#102c53;border-top:3px solid #f6b63d}
+.figs figcaption small{display:block;font-weight:400;color:#53677d;font-size:12px;margin-top:2px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;align-items:start;margin:12px 0 22px}
+.grid2 .figs{margin:0}.grid2>.card{margin:0}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.tabs button{padding:10px 16px;border:2px solid #d5dfeb;border-radius:999px;background:#fff;color:#102c53;font:600 15px/1.2 inherit;cursor:pointer}
+.tabs button[aria-selected=true]{background:#102c53;color:#fff;border-color:#102c53}
+.scen{border-left:6px solid #f6b63d}
+.gq{font-size:1.2em;font-weight:700;color:#102c53;margin:6px 0 14px}
+.gbtn{display:grid;gap:10px}.gbtn button{text-align:left;padding:14px 16px;border:2px solid #d5dfeb;border-radius:12px;background:#fff;font:600 16px/1.35 inherit;cursor:pointer;color:#102c53}
+.gbtn button:hover:not(:disabled){border-color:#f6b63d;background:#fff8e6}.gbtn button:disabled{opacity:.7;cursor:default}
+.gf{margin-top:12px;padding:0;font-weight:600}.gf.good,.gf.bad{padding:12px 14px;border-radius:10px}.gf.good{background:#e4f6ec;color:#0d5a38}.gf.bad{background:#fdeaea;color:#8a1f1f}
+.scen .alt{margin-top:12px}
+@media print{.figs{grid-template-columns:repeat(2,1fr);break-inside:avoid}.figs figure{break-inside:avoid}}
+
+/* Dynamisme : défi du jour, questions flash, progression, apparition douce */
+.dq,.pg{background:#fff;border:1px solid #cbd5e1;border-left:7px solid #f6b63d;border-radius:12px;padding:18px 22px;margin:22px 0}
+.pg{display:flex;gap:22px;align-items:center;flex-wrap:wrap;border-left-color:#0b68ae}.pg h2{margin:0 0 4px;font-size:20px}.pg p{margin:.2em 0}
+.pg-ring{--p:0;width:84px;height:84px;border-radius:50%;background:conic-gradient(#0b68ae calc(var(--p)*1%),#dbe5f0 0);display:grid;place-items:center;flex:none}
+.pg-ring span{width:62px;height:62px;border-radius:50%;background:#fff;display:grid;place-items:center;font:700 17px var(--ff);color:#102c53}
+.dq-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}.dq-head h2{margin:0}.dq-streak{font-weight:700;color:#8a5a00}
+.dq-sub{color:#475569;font-size:15px;margin:.4em 0 .8em;max-width:none}
+.dq-q{font-size:19px;margin:.6em 0;max-width:none}.dq-opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.dq-o{font:inherit;text-align:left;padding:13px 16px;border:2px solid #cbd5e1;border-radius:10px;background:#f8fafc;color:#10243a;cursor:pointer;transition:transform .15s,border-color .15s,background .15s}
+.dq-o:hover:not(:disabled){border-color:#0b68ae;background:#e8f1fb;transform:translateY(-2px)}.dq-o:focus-visible{outline:3px solid #f6b63d;outline-offset:2px}
+.dq-o.good{border-color:#1b7a3d;background:#e3f4e8;font-weight:700}.dq-o.bad{border-color:#b3261e;background:#fde8e6}.dq-o:disabled{cursor:default}
+.dq-fb{margin:12px 0 4px;padding:12px 16px;border-radius:8px;border-left:6px solid;animation:dqin .3s ease}.dq-fb.ok{background:#e3f4e8;border-color:#1b7a3d}.dq-fb.ko{background:#fff1d4;border-color:#c77d00}
+@keyframes dqin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.dq-actions{margin-top:12px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}.dq-btn{font:700 16px var(--ff);padding:11px 20px;border-radius:8px;border:0;background:#102c53;color:#fff;cursor:pointer;margin-top:12px}.dq-btn:hover{background:#0b68ae}.dq-actions .dq-btn{margin-top:0}
+.dq-link{font-weight:700}
+.fl-bar{height:8px;border-radius:8px;background:#dbe5f0;overflow:hidden;margin:6px 0}.fl-bar div{height:100%;background:#f6b63d;transition:width .4s}.fl-n{color:#475569;margin:.2em 0 .6em}
+#flash .dq-card{background:#fff;border:1px solid #cbd5e1;border-radius:12px;padding:18px 22px}
+.fl-end{background:#fff;border:1px solid #cbd5e1;border-radius:12px;padding:20px 24px}.fl-score{font:700 54px/1 var(--ff);color:#102c53;margin:.1em 0}.fl-rev{list-style:none;padding:0}.fl-rev li{padding:9px 12px;border-radius:8px;margin:6px 0;max-width:none}.fl-rev li.ok{background:#e3f4e8}.fl-rev li.ko{background:#fde8e6}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .45s ease,transform .45s ease}.rv.rv-in{opacity:1;transform:none}
+@media print{.rv{opacity:1!important;transform:none!important}#defi,#prog,#flash{display:none}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.dq-o,.dq-fb{transition:none;animation:none}}

@@ -50,3 +50,9 @@ Limite : le chargement du manifeste de la galerie échoue en ouverture directe d
 ## Dernière analyse red team constructive — 19/10/2026
 Améliorations : exercices optionnels signalés en séquence 5 (75 min), préchargement de tous les médias du mode animation, préférence d'affichage des notes mémorisée, bouton d'impression (PDF avec notes), question H0V alignée sur la zone 2.
 Points de vigilance, non modifiés : (1) accès formateur : le contenu est chiffré dans le navigateur ; un code court de 6 chiffres, associé à une adresse e-mail connue, résiste mal à une attaque par force brute hors ligne : rallonger le code si la confidentialité des corrigés compte ; (2) le support suppose une connexion Internet en salle : ouvrir le mode animation la veille et prévoir l'impression PDF comme secours ; (3) réception des résultats dépendante de l'envoi par l'apprenant : vérifier la réception avant de partir ; (4) H0V et attestation médicale, titre et date d'attestation du participant : à contrôler sur site ; (5) NF C 18-510 non lue.
+
+## Contrôles du 19/11/2026 — mise au niveau des autres plateformes
+- Ajouts : page Secours avec recommandation forte SST ou MAC SST, défi du jour et progression, parcours lisible (objectifs, renvois), bouton secours sur toutes les pages, mode animation et espace formateur re-chiffrés pour A260H4A (accès testé : mauvais code refusé, bon code accepté).
+- Mode animation : 66 diapositives, planning aligné sur le livret (17/12 08:30–12:00 et 13:00–16:30, 18/12 08:30–12:00), diapositives propres au site Panzani retirées, QR codes régénérés vers A260H4A, jalons de fin de jour 1 et de reprise.
+- Livret de formation : annexes « Accident : que faire ? » et « Mon parcours : repères et suivi » (35 pages).
+- Limites : le moteur de diaporama issu d'A260BNA n'a pas la barre de renvois (deck-plus) des diaporamas plus récents ; les renvois passent par les QR codes. Symboles de chaque participant à relever sur leur titre en séance.

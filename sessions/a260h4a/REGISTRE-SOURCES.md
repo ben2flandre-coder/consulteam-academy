@@ -107,3 +107,5 @@ Lu en ligne : INRS ED 6127 (pp. 9-17, 37-40), INRS ED 6109 (pp. 8, 14-16), arrê
 
 ## Édition du 19/11/2026 (A260H4A)
 Plateforme dérivée de A260BNA (même programme HE-BTHT-REC-10, H0V B2V BR BC). Retirés : la page « Site, secours, poussières, incendie », la section 6 du livret, le glossaire ATEX et la page REX meunerie, propres au site de A260BNA (semoulerie) ; aucune donnée du site CIRCET n'a été relevée. Déroulé sur 2 jours proposé par Claude, à valider ; parcours à individualiser selon les symboles détenus (liste des stagiaires non reçue). Cas métiers et visuels génériques, illustratifs. Livret PDF non régénéré : livret.html imprimable sur le site.
+
+Mise à jour du 19/11/2026 : mode animation A260H4A (66 diapositives) adapté du mode animation A260BNA : contenu technique inchangé (INRS ED 6127, ED 6109, NF C 18-510), horaires et public réécrits, diapositives propres au site Panzani retirées, ajout des diapositives Secours et prévention (démarche SST, recommandation SST ou MAC SST ; source : INRS, périodicité à confirmer auprès de l'organisme de formation).

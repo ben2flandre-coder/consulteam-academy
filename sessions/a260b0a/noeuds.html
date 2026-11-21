@@ -11,10 +11,31 @@
 
 <p class="callout">Pour aller plus loin : <a href="approfondissement.html">nœuds complémentaires (chaise, arrêt, pêcheur, sangle)</a> · <a href="cordes.html">fiche cordes : types, contrôle, entretien</a>.</p>
 <nav class="tabs" data-tabs="#fiches" aria-label="Choisir un nœud">
-<button type="button">1 · Huit tressé</button><button type="button">2 · Cabestan</button><button type="button">3 · Demi-cabestan + mule</button><button type="button">Approfondir</button><button type="button">Grille d’observation</button>
+<button type="button">Choisir un nœud</button><button type="button">1 · Huit tressé</button><button type="button">2 · Cabestan</button><button type="button">3 · Demi-cabestan + mule</button><button type="button">Approfondir</button><button type="button">Grille d’observation</button>
 </nav>
 
 <div id="fiches">
+<section role="tabpanel" class="panel" id="choisir">
+<h2>Choisir un nœud selon l’usage</h2>
+<p class="callout warn"><strong>Attention :</strong> ces fiches sont un aide-mémoire. Elles ne remplacent ni la formation, ni la démonstration du formateur, ni la notice du fabricant. En cas de doute sur un nœud ou un ancrage : on ne s’engage pas, on demande.</p>
+<div class="start"><strong>Commencer ici :</strong> le <a href="#" data-tab="1">nœud en huit tressé</a> est le nœud de base de la journée. Il part du <a href="approfondissement.html#huit-arret">huit simple</a>, qu’il faut maîtriser d’abord. Ensuite : <a href="#" data-tab="2">cabestan</a>, puis <a href="#" data-tab="3">demi-cabestan et mule</a>.</div>
+<label for="nq"><strong>Rechercher un nœud</strong></label><br><input id="nq" class="nsearch" type="search" placeholder="huit, chaise, sangle, arrêt…" autocomplete="off">
+<div class="nfilter" role="group" aria-label="Filtrer par usage">
+<button type="button" data-f="tous" aria-pressed="true">Tous</button><button type="button" data-f="relier" aria-pressed="false">Se relier à un point</button><button type="button" data-f="freiner" aria-pressed="false">Freiner, bloquer</button><button type="button" data-f="arreter" aria-pressed="false">Arrêter le bout de corde</button><button type="button" data-f="joindre" aria-pressed="false">Joindre deux bouts</button>
+</div>
+<p id="nres" class="muted" aria-live="polite"></p>
+<div class="grid g3">
+<article class="card accent kn" data-u="relier" data-k="huit tresse suivre chemin anneau boucle"><span class="tag at">Atelier du jour</span><span class="tag">Boucle</span><h3>Huit tressé</h3><p>Boucle solide sur un anneau ou un point de connexion prévu.</p><dl><dt>Contrôle</dt><dd>Paires de brins parallèles, sans croisement</dd><dt>Avant</dt><dd>Huit simple</dd></dl><a class="btn" href="#" data-tab="1">Ouvrir la fiche →</a></article>
+<article class="card accent kn" data-u="relier" data-k="cabestan barre amarrage"><span class="tag at">Atelier du jour</span><span class="tag">Amarrage</span><h3>Cabestan</h3><p>Amarrage réglable sur une barre ou un connecteur ; surveillé et sécurisé.</p><dl><dt>Contrôle</dt><dd>Deux tours réguliers, sécurité en place</dd></dl><a class="btn" href="#" data-tab="2">Ouvrir la fiche →</a></article>
+<article class="card accent kn" data-u="freiner" data-k="demi cabestan mule mousqueton freinage blocage"><span class="tag at">Atelier du jour</span><span class="tag">Freinage</span><h3>Demi-cabestan et mule</h3><p>Freiner ou bloquer sur un connecteur adapté, sous contrôle du formateur.</p><dl><dt>Contrôle</dt><dd>Connecteur verrouillé, nœud d’arrêt en place</dd></dl><a class="btn" href="#" data-tab="3">Ouvrir la fiche →</a></article>
+<article class="card kn" data-u="arreter" data-k="arret simple double stopper"><span class="tag">Arrêt</span><h3>Nœud d’arrêt</h3><p>Gros nœud en bout de corde qui l’empêche de sortir d’un descendeur, d’un connecteur ou d’un anneau.</p><a class="btn alt" href="approfondissement.html#arret">Voir la fiche →</a></article>
+<article class="card kn" data-u="arreter" data-k="huit simple arret"><span class="tag">Arrêt</span><h3>Huit simple</h3><p>Nœud d’arrêt volumineux, facile à défaire après charge ; première étape du huit tressé.</p><a class="btn alt" href="approfondissement.html#huit-arret">Voir la fiche →</a></article>
+<article class="card kn" data-u="relier" data-k="chaise bouline boucle fixe poteau"><span class="tag">Boucle</span><h3>Nœud de chaise</h3><p>Boucle fixe qui ne coulisse pas, autour d’une structure, d’un poteau ou d’un anneau.</p><a class="btn alt" href="approfondissement.html#chaise">Voir la fiche →</a></article>
+<article class="card kn" data-u="joindre" data-k="pecheur double jonction cordelette"><span class="tag">Jonction</span><h3>Pêcheur double</h3><p>Assemblage de deux cordes ou cordelettes de même diamètre, ou fermeture d’une cordelette en anneau.</p><a class="btn alt" href="approfondissement.html#pecheur">Voir la fiche →</a></article>
+<article class="card kn" data-u="joindre" data-k="sangle plate jonction water knot nœud d eau"><span class="tag">Jonction</span><h3>Nœud de sangle</h3><p>Assemblage de deux bouts de sangle plate, ou fermeture d’une sangle en boucle.</p><a class="btn alt" href="approfondissement.html#sangle">Voir la fiche →</a></article>
+</div>
+<p class="muted">Un nœud de plus à proposer ? Le dire au formateur : le catalogue s’enrichit à chaque session.</p>
+</section>
 <section role="tabpanel" class="panel">
 <div class="grid g2">
 <div>
@@ -129,9 +150,9 @@
 </section>
 </div>
 </main><footer class="site"><img src="assets/img/logo-consulteam-groupe-valto.png" alt="Consulteam Groupe · Groupe Valto" width="150" height="59">
-<p class="trace" style="font-size:.85em">Version 1.2 · 14/10/2026 · Rédaction : Benoît Deflandre · Validation Consulteam : en attente · <a href="tracabilite.html">Traçabilité et sources</a></p>
+<p class="trace" style="font-size:.85em">Version 1.3 · 21/11/2026 · Rédaction : Benoît Deflandre · Validation Consulteam : en attente · <a href="tracabilite.html">Traçabilité et sources</a></p>
 <p>Formation « Travail en hauteur – port du harnais » (SECU37) · session A260B0A · 7 h · lundi 26 octobre 2026 · Consulteam Security, La Seyne-sur-Mer.</p>
-<p>Support pédagogique : il ne remplace ni les notices des fabricants, ni l’évaluation des risques de l’employeur, ni les consignes du site. Les images d’équipements sont des illustrations générées, non contractuelles.</p></footer><script src="js/qcm-data.js"></script><script src="js/common.js"></script><script src="js/zoom.js"></script><style id="fabcss">.fab{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:2147483000}.fab a,.fab button{width:48px;height:48px;border-radius:50%;border:2px solid #f6b63d;background:#102c53;color:#fff;font:700 22px/1 system-ui,sans-serif;display:grid;place-items:center;text-decoration:none;cursor:pointer;box-shadow:0 3px 12px #0005;padding:0;margin:0}.fab a:hover,.fab button:hover{background:#f6b63d;color:#102c53}.fab .up{opacity:0;pointer-events:none;transition:opacity .2s}.fab .up.on{opacity:1;pointer-events:auto}@media print{.fab{display:none}}</style>
+<p>Support pédagogique : il ne remplace ni les notices des fabricants, ni l’évaluation des risques de l’employeur, ni les consignes du site. Les images d’équipements sont des illustrations générées, non contractuelles.</p></footer><script src="js/qcm-data.js"></script><script src="js/common.js"></script><script src="js/noeuds.js"></script><script src="js/zoom.js"></script><style id="fabcss">.fab{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:2147483000}.fab a,.fab button{width:48px;height:48px;border-radius:50%;border:2px solid #f6b63d;background:#102c53;color:#fff;font:700 22px/1 system-ui,sans-serif;display:grid;place-items:center;text-decoration:none;cursor:pointer;box-shadow:0 3px 12px #0005;padding:0;margin:0}.fab a:hover,.fab button:hover{background:#f6b63d;color:#102c53}.fab .up{opacity:0;pointer-events:none;transition:opacity .2s}.fab .up.on{opacity:1;pointer-events:auto}@media print{.fab{display:none}}</style>
 <div class="fab"><a href="index.html" aria-label="Retour à l’accueil" title="Retour à l’accueil">&#8962;</a><a href="https://ben2flandre-coder.github.io/consulteam-supports/pdf/a260b0a/livret-formation-a260b0a.pdf" aria-label="Livret PDF" title="Livret PDF" download>&#8681;</a><button type="button" class="up" aria-label="Remonter en haut de la page" title="Remonter en haut">&#8593;</button></div>
 <script>(function(){var b=document.querySelector('.fab .up');if(!b)return;b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});function t(){b.classList.toggle('on',(window.pageYOffset||document.documentElement.scrollTop)>300)}window.addEventListener('scroll',t,{passive:true});t()})();</script>
 </body></html>

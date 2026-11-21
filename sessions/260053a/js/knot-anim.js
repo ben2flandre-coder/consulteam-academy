@@ -63,7 +63,7 @@ function fit(P,box){ /* recadre dans box {x,y,w,h} */
 function arclen(P){var s=[0];for(var i=1;i<P.length;i++)s.push(s[i-1]+Math.hypot(P[i].x-P[i-1].x,P[i].y-P[i-1].y));return s}
 function resample(P,step){var s=arclen(P),L=s[s.length-1],n=Math.max(2,Math.round(L/step)),out=[],j=0;
   for(var k=0;k<=n;k++){var t=L*k/n;while(j<s.length-2&&s[j+1]<t)j++;var u=(t-s[j])/Math.max(1e-9,s[j+1]-s[j]);
-    out.push({x:P[j].x+(P[j+1].x-P[j].x)*u,y:P[j].y+(P[j+1].y-P[j].y)*u,z:P[j].z+(P[j+1].z-P[j].z)*u})}return out}
+    var q={x:P[j].x+(P[j+1].x-P[j].x)*u,y:P[j].y+(P[j+1].y-P[j].y)*u,z:P[j].z+(P[j+1].z-P[j].z)*u};if(P[j].b||P[j+1].b)q.b=!!(u<.5?P[j].b:P[j+1].b);out.push(q)}return out}
 
 /* ---------- rendu ---------- */
 function defs(svg,id,pal){
@@ -97,8 +97,8 @@ function Knot(container,cfg){
   for(var q=0;q<=7;q++){var t=q/7;layers.push({w:rw*(1-.80*t)-0.4*(q===0?0:0),c:t<.5?mix(pal.mid,pal.light,t*2):mix(pal.light,pal.hi,(t-.5)*2),o:1,dx:-1.4*t,dy:-3.4*t})}
   layers.push({w:rw*.12,c:'#ffffff',o:.85,dx:-2.2,dy:-4.6});
   layers.push({w:rw,c:'#000',o:.10,dash:'2.6 5.0'});
-  function addPiece(a,b,withShadow){
-    var els=[],g=el('g',{},gRope);
+  function addPiece(a,b,withShadow,grp){
+    var els=[],g=el('g',{},grp||gRope);
     layers.forEach(function(l,li){
       if(li===0&&!withShadow&&false)return;
       if(l.base&&!withShadow)return;var attrs={fill:'none',stroke:l.c,'stroke-width':l.w,'stroke-linecap':'round','stroke-linejoin':'round',opacity:l.o};
@@ -113,6 +113,15 @@ function Knot(container,cfg){
   /* réordonne : base, puis (ombre, pièce) pour chaque passage dessus */
   gRope.appendChild(base.els[0].parentNode);
   wins.forEach(function(w,k){gRope.appendChild(occ[k]);gRope.appendChild(pieces[k].els[0].parentNode)});
+  /* occulteur (anneau, barre) : tout ce qui est marqué b:true passe derrière ; le reste repasse devant */
+  var fp=[],fo=[],fw=[];
+  if(cfg.occluder){
+    var gOcc=el('g',{},svg),gFr=el('g',{},svg);svg.insertBefore(gOcc,gFront);svg.insertBefore(gFr,gFront);cfg.occluder(gOcc,id,el);
+    var i0=0;while(i0<n){if(P[i0].b){i0++;continue}var j0=i0;while(j0+1<n&&!P[j0+1].b)j0++;fp.push(addPiece(i0,j0,false,gFr));i0=j0+1}
+    wins.forEach(function(w,k){var mid=Math.round((w.a+w.b)/2);if(P[mid]&&!P[mid].b){
+      var o2=el('path',{fill:'none',stroke:'#071a29','stroke-width':rw+16,'stroke-linecap':'round',opacity:.34,filter:'url(#'+id+'b2)'},gFr);fo.push({w:w,e:o2});fw.push(addPiece(w.a,w.b,false,gFr))}});
+    if(cfg.frontOver)cfg.frontOver(gFr,id,el);
+  }
   var tip=el('circle',{r:rw*.95,fill:'none',stroke:pal.acc,'stroke-width':3,opacity:0},svg);
   var tag=el('g',{},svg);
 
@@ -123,6 +132,7 @@ function Knot(container,cfg){
       var d=(hi>a)?pathD(P,a,hi):'M0 0';pc.els.forEach(function(e){e.setAttribute('d',d)})}
     setPiece(base,0,n-1);pieces.forEach(function(pc){setPiece(pc,pc.a,pc.b)});
     occ.forEach(function(o,k){var w=wins[k],hi=Math.min(w.b,cut);o.setAttribute('d',hi>w.a?pathD(P,w.a,hi):'M0 0')});
+    fp.concat(fw).forEach(function(pc){setPiece(pc,pc.a,pc.b)});fo.forEach(function(o){var hi=Math.min(o.w.b,cut);o.e.setAttribute('d',hi>o.w.a?pathD(P,o.w.a,hi):'M0 0')});
     var T=P[cut];tip.setAttribute('cx',T.x);tip.setAttribute('cy',T.y);tip.setAttribute('opacity',p>0&&p<1?.95:0);
   }
   render(0);
@@ -140,7 +150,7 @@ function Knot(container,cfg){
   function showCap(i){var s=steps[i];cap.innerHTML='<strong>Étape '+(i+1)+' / '+steps.length+' · '+s.t+'</strong><p>'+s.d+'</p>'+(s.w?'<p class="kn-warn">'+s.w+'</p>':'');
     [].forEach.call(dots.querySelectorAll('button'),function(b,j){b.setAttribute('aria-current',j===i?'step':'false');b.className=j<i?'done':''})}
   function tween(to,done){cancelAnimationFrame(raf);var from=ctrl.p;if(reduce||from===to){ctrl.p=to;render(to);if(done)done();return}
-    var dur=Math.max(500,Math.abs(to-from)*L*4.2),t0=performance.now();
+    var dur=Math.min(2600,Math.max(600,Math.abs(to-from)*L*4.2)),t0=performance.now();
     (function f(t){var u=Math.min(1,(t-t0)/dur);ctrl.p=from+(to-from)*ease(u);render(ctrl.p);if(u<1)raf=requestAnimationFrame(f);else if(done)done()})(t0)}
   function goTo(i,anim,done){ctrl.step=i;showCap(i);var to=steps[i].p;if(anim)tween(to,done);else{ctrl.p=to;render(to);if(done)done()}}
   function stop(){playing=false;clearTimeout(timer);bar.querySelector('[data-a=play]').textContent='▶ Lecture'}

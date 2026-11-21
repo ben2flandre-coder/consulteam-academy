@@ -28,6 +28,12 @@ window.KNOTS={
   huit:{title:'Nœud en huit simple',kind:'huit',intro:'<strong>Usage :</strong> nœud d’arrêt volumineux, facile à défaire après charge ; première étape du huit tressé.',fin:'Le huit est formé : deux boucles croisées, le bout ressort du côté du brin dormant.',tail:{},steps:[]}
 };
 window.buildKnotPoints=build;
+function ph(id,list){return list.map(function(x,i){return{src:'assets/img/noeuds/'+id+'-'+x[0]+'.jpg',cap:x[1]}})}
+window.KNOT_PHOTOS={
+  overhand:ph('arret-simple',[['final','Nœud d’arrêt simple, terminé'],['1','Former la boucle'],['2','Passer le bout dans la boucle'],['3','Serrer']]),
+  huit:ph('huit-simple',[['final','Nœud en huit simple, terminé'],['1','Former la boucle'],['2','Contourner le brin dormant'],['3','Passer dans la boucle'],['4','Serrer']]),
+  tresse:ph('huit-tresse',[['final','Huit tressé sur anneau, terminé'],['1','Huit simple, lâche'],['2','Passer le bout dans l’anneau'],['3','Suivre le chemin'],['4','Serrer, aligner']])
+};
 /* anneau métallique en relief (occulteur) */
 function ringOcc(C,r,w){return function(g,id,el){
   var gr=el('linearGradient',{id:id+'rg',gradientUnits:'userSpaceOnUse',x1:C.x-r,y1:C.y-r,x2:C.x+r,y2:C.y+r},g);

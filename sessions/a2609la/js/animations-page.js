@@ -13,7 +13,10 @@ document.addEventListener('DOMContentLoaded',function(){
   function mount(k,s,full){var c=window.KNOTS[k];if(!c)return;
     if(full){var h=document.createElement('h2');h.textContent=c.title;s.appendChild(h);var intro=document.createElement('p');intro.innerHTML=c.intro||'';s.appendChild(intro)}else{var cap=document.createElement('p');cap.className='muted';cap.innerHTML='<strong>Animation : '+c.title+'.</strong> Tracé du trajet de la corde, repère visuel : elle ne montre ni la mise en tension ni les gestes de la main, et ne remplace pas la démonstration du formateur.';s.appendChild(cap)}
     var P=c.custom?c.custom.points:window.buildKnotPoints(c.kind,c.tail);
-    window.KnotAnim.create(s,{title:c.title,points:P,occluder:c.occluder,steps:c.steps.length?c.steps:autoSteps(P,c),startStep:0});
+    var holder=document.createElement('div');holder.className='kn-pair';s.appendChild(holder);
+    window.KnotAnim.create(holder,{title:c.title,points:P,occluder:c.occluder,steps:c.steps.length?c.steps:autoSteps(P,c),startStep:0});
+    var ph=(window.KNOT_PHOTOS||{})[k];if(ph&&ph.length){var g=document.createElement('div');g.className='kn-photos';var hd=document.createElement('p');hd.className='muted';hd.innerHTML='<strong>Photos de référence</strong> (toucher une photo pour l’agrandir) : illustrations générées, elles ne remplacent pas la démonstration du formateur.';g.appendChild(hd);
+      ph.forEach(function(x){var f=document.createElement('figure');f.className='photo';var im=document.createElement('img');im.src=x.src;im.alt=x.alt||x.cap;im.loading='lazy';im.addEventListener('error',function(){f.remove();if(!g.querySelector('figure'))g.remove()});var fc=document.createElement('figcaption');fc.textContent=x.cap;f.appendChild(im);f.appendChild(fc);g.appendChild(f)});holder.appendChild(g)}
   }
   if(box)Object.keys(window.KNOTS).forEach(function(k){var s=document.createElement('section');s.className='panel';s.id=k;box.appendChild(s);mount(k,s,true)});
   embeds.forEach(function(e){mount(e.dataset.knot,e,false)});

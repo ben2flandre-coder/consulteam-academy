@@ -158,3 +158,10 @@ ol.check.stepmode li{display:none}ol.check.stepmode li.cur{display:block;font-si
 .kn-ctl{display:flex;flex-wrap:wrap;gap:8px}.kn-dots{display:flex;gap:8px;list-style:none;padding:0;margin:10px 0;flex-wrap:wrap}
 .kn-dots button{width:44px;height:44px;border-radius:50%;border:2px solid var(--navy);background:#fff;font:inherit;font-weight:800;color:var(--navy);cursor:pointer}
 .kn-dots button.done{background:#dbe7ee}.kn-dots button[aria-current=step]{background:var(--navy);color:#fff}
+
+.kn-pair{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:20px;align-items:start}
+.kn-pair:not(:has(.kn-photos)){grid-template-columns:1fr}
+.kn-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}.kn-photos>p{grid-column:1/-1;margin:0}.kn-photos figure{margin:0}.kn-photos img{width:100%;height:auto;border-radius:10px;cursor:zoom-in;display:block}
+.kn-photos figcaption{font-size:.85em}.kn-photos figure:first-of-type{grid-column:1/-1}
+.kn-anim:fullscreen{background:#f4f8fb;padding:16px;overflow:auto;max-width:none;margin:0}.kn-anim:fullscreen .kn-svg{max-height:70vh}.kn-anim.kn-big{position:fixed;inset:0;z-index:50;background:#f4f8fb;padding:12px;overflow:auto;max-width:none;margin:0}
+@media(max-width:900px){.kn-pair{grid-template-columns:1fr}}

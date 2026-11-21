@@ -140,7 +140,7 @@ function Knot(container,cfg){
   var steps=cfg.steps,wrap=document.createElement('div');wrap.className='kn-anim';
   var cap=document.createElement('div');cap.className='kn-cap';cap.setAttribute('aria-live','polite');
   var bar=document.createElement('div');bar.className='kn-ctl';
-  bar.innerHTML='<button type="button" class="btn alt" data-a="prev">← Précédente</button><button type="button" class="btn" data-a="play">▶ Lecture</button><button type="button" class="btn alt" data-a="next">Suivante →</button><button type="button" class="btn alt" data-a="re">↺ Recommencer</button>';
+  bar.innerHTML='<button type="button" class="btn alt" data-a="prev">← Précédente</button><button type="button" class="btn" data-a="play">▶ Lecture</button><button type="button" class="btn alt" data-a="next">Suivante →</button><button type="button" class="btn alt" data-a="re">↺ Recommencer</button><button type="button" class="btn alt" data-a="fs" aria-label="Agrandir l’animation en plein écran">⤢ Plein écran</button>';
   var dots=document.createElement('ol');dots.className='kn-dots';
   steps.forEach(function(s,i){var li=document.createElement('li');var b=document.createElement('button');b.type='button';b.textContent=i+1;b.setAttribute('aria-label','Étape '+(i+1)+' : '+s.t);li.appendChild(b);dots.appendChild(li);b.addEventListener('click',function(){stop();goTo(i,true)})});
   wrap.appendChild(svg);wrap.appendChild(dots);wrap.appendChild(cap);wrap.appendChild(bar);container.appendChild(wrap);
@@ -161,6 +161,7 @@ function Knot(container,cfg){
     if(a==='prev'){stop();goTo(Math.max(0,ctrl.step-1),true)}
     else if(a==='next'){stop();goTo(Math.min(steps.length-1,ctrl.step+1),true)}
     else if(a==='re'){stop();ctrl.step=0;ctrl.p=0;render(0);goTo(0,false)}
+    else if(a==='fs'){var d=document;if(d.fullscreenElement){d.exitFullscreen()}else if(wrap.requestFullscreen){wrap.requestFullscreen()}else{wrap.classList.toggle('kn-big')}}
     else if(a==='play'){if(playing)stop();else{if(ctrl.step>=steps.length-1){ctrl.step=0;ctrl.p=0;render(0);showCap(0)}play()}}});
   goTo(cfg.startStep===undefined?0:cfg.startStep,false);
   return{goTo:goTo,render:render,points:P,crossings:cr};

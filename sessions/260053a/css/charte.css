@@ -150,3 +150,9 @@ dl.defs dt{font-weight:800;color:var(--navy);margin-top:12px}dl.defs dd{margin:2
 .start{border-left:6px solid var(--rose);background:#fff5fa;padding:14px 18px;border-radius:10px;margin:14px 0}
 .stepbar{margin:6px 0 10px}.stepctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.stepn{font-weight:800;min-width:96px;text-align:center}
 ol.check.stepmode li{display:none}ol.check.stepmode li.cur{display:block;font-size:1.2em;padding:14px;border:2px solid var(--blue);border-radius:12px;background:#f2f8fc}
+/* Animations de nœuds */
+.kn-anim{max-width:860px;margin:10px 0 30px}.kn-svg{width:100%;height:auto;display:block;border-radius:14px;box-shadow:0 10px 30px rgba(8,43,69,.18)}
+.kn-cap{margin:12px 0;padding:14px 18px;border-left:6px solid var(--rose);background:#fff;border-radius:10px;box-shadow:var(--shadow)}.kn-cap p{margin:6px 0 0}.kn-warn{font-weight:800;color:var(--rose-txt)}
+.kn-ctl{display:flex;flex-wrap:wrap;gap:8px}.kn-dots{display:flex;gap:8px;list-style:none;padding:0;margin:10px 0;flex-wrap:wrap}
+.kn-dots button{width:44px;height:44px;border-radius:50%;border:2px solid var(--navy);background:#fff;font:inherit;font-weight:800;color:var(--navy);cursor:pointer}
+.kn-dots button.done{background:#dbe7ee}.kn-dots button[aria-current=step]{background:var(--navy);color:#fff}

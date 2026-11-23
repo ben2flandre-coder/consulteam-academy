@@ -153,3 +153,5 @@ dl.defs dt{font-weight:800;color:var(--navy);margin-top:12px}dl.defs dd{margin:2
 .kn-photos figcaption{font-size:.85em}.kn-photos figure:first-of-type{grid-column:1/-1}
 .kn-anim:fullscreen{background:#f4f8fb;padding:16px;overflow:auto;max-width:none;margin:0}.kn-anim:fullscreen .kn-svg{max-height:70vh}.kn-anim.kn-big{position:fixed;inset:0;z-index:50;background:#f4f8fb;padding:12px;overflow:auto;max-width:none;margin:0}
 @media(max-width:900px){.kn-pair{grid-template-columns:1fr}}
+.kn-embed .kn-pair{grid-template-columns:1fr}.kn-embed .kn-photos{grid-template-columns:repeat(2,1fr)}
+@container (min-width:700px){.kn-embed .kn-photos{grid-template-columns:repeat(4,1fr)}}

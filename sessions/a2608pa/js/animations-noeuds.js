@@ -15,7 +15,7 @@ function build(kind,tail){
 }
 var TR=window.KnotTresse?window.KnotTresse():null;
 window.KNOTS={
-  overhand:{title:'Nœud d’arrêt simple',kind:'overhand',intro:'<strong>Usage :</strong> arrêter le bout d’une corde pour qu’il ne sorte pas d’un descendeur, d’un connecteur ou d’un anneau.',fin:'Le nœud est formé : une boucle dans laquelle le bout est passé.',tail:{box:{x:240,y:130,w:320,h:270},len:110},steps:[]},
+  overhand:{title:'Nœud d’arrêt simple',kind:'overhand',fiche:[{t:'Départ : le brin dormant',d:'La corde part du brin dormant ; la pastille rose suit le bout libre.',p0:0.03},{t:'Boucle',d:'Former une boucle avec le bout libre, en laissant une queue suffisante.',ev:0},{t:'Passer',d:'Passer le bout dans la boucle.',ev:2},{t:'Serrer et contrôler',d:'Tirer sur le bout et sur le brin dormant pour former un nœud compact. Bout libre d’au moins une dizaine de centimètres (repère courant).',end:1,w:'Il arrête le bout de la corde : il n’amarre pas.'}],intro:'<strong>Usage :</strong> arrêter le bout d’une corde pour qu’il ne sorte pas d’un descendeur, d’un connecteur ou d’un anneau.',fin:'Le nœud est formé : une boucle dans laquelle le bout est passé.',tail:{box:{x:240,y:130,w:320,h:270},len:110},steps:[]},
   tresse:TR?{title:'Nœud en huit tressé sur un anneau',custom:TR,occluder:ringOcc(TR.ring,57,26),steps:TR?[
 {t:'Départ : le brin dormant',d:'La corde part du brin dormant. Suivre la pastille rose : elle montre le bout de la corde qui avance.',p:0.02},
 {t:'Préparer : un huit simple, lâche',d:'Prévoir assez de corde et former un huit simple, lâche, à distance du point de connexion (anneau). Le bout se retrouve devant l’anneau.',p:TR.marks.a},
@@ -25,14 +25,14 @@ window.KNOTS={
 {t:'Suivre le chemin (3/3)',d:'Terminer le parcours : le bout ressort à côté du brin dormant. Dans le nœud, les brins restent parallèles, sans croisement.',p:TR.marks.c},
 {t:'Serrer, aligner, contrôler',d:'Reprendre chaque brin pour serrer le nœud, aligner les paires parallèles, conserver un brin libre suffisant.',p:1,w:'Contrôle croisé par le binôme avant toute mise en charge.'}
 ]:[],intro:'<strong>Usage :</strong> former une boucle solide sur un anneau ou un point de connexion prévu, en suivant en double le chemin d’un huit.'}:null,
-  huit:{title:'Nœud en huit simple',kind:'huit',intro:'<strong>Usage :</strong> nœud d’arrêt volumineux, facile à défaire après charge ; première étape du huit tressé.',fin:'Le huit est formé : deux boucles croisées, le bout ressort du côté du brin dormant.',tail:{},steps:[]}
+  huit:{title:'Nœud en huit simple',kind:'huit',fiche:[{t:'Départ : le brin dormant',d:'La corde part du brin dormant ; la pastille rose suit le bout libre.',p0:0.03},{t:'Boucle',d:'Former une boucle avec le bout libre.',ev:0},{t:'Contourner',d:'Passer le bout derrière le brin dormant.',ev:1},{t:'Revenir',d:'Ramener le bout par-devant et le glisser dans la boucle, de l’avant vers l’arrière.',ev:3},{t:'Serrer',d:'Tirer les deux brins pour obtenir un 8 régulier, sans croisement parasite, avec un bout libre suffisant.',end:1}],intro:'<strong>Usage :</strong> nœud d’arrêt volumineux, facile à défaire après charge ; première étape du huit tressé.',fin:'Le huit est formé : deux boucles croisées, le bout ressort du côté du brin dormant.',tail:{},steps:[]}
 };
 window.buildKnotPoints=build;
 function ph(id,list){return list.map(function(x,i){return{src:'assets/img/noeuds/'+id+'-'+x[0]+'.jpg',cap:x[1]}})}
 window.KNOT_PHOTOS={
-  overhand:ph('arret-simple',[['final','Nœud d’arrêt simple, terminé'],['1','Former la boucle'],['2','Passer le bout dans la boucle'],['3','Serrer']]),
-  huit:ph('huit-simple',[['final','Nœud en huit simple, terminé'],['1','Former la boucle'],['2','Contourner le brin dormant'],['3','Passer dans la boucle'],['4','Serrer']]),
-  tresse:ph('huit-tresse',[['final','Huit tressé sur anneau, terminé'],['1','Huit simple, lâche'],['2','Passer le bout dans l’anneau'],['3','Suivre le chemin'],['4','Serrer, aligner']])
+  overhand:ph('arret-simple',[['final','Résultat : nœud d’arrêt simple'],['1','Étape 1 · Boucle'],['2','Étape 2 · Passer'],['3','Étape 3 · Serrer']]),
+  huit:ph('huit-simple',[['final','Résultat : nœud en huit simple'],['1','Étape 1 · Boucle'],['2','Étape 2 · Contourner'],['3','Étape 3 · Revenir'],['4','Étape 4 · Serrer']]),
+  tresse:ph('huit-tresse',[['final','Résultat : huit tressé sur anneau'],['1','Étape 1 · Préparer'],['2','Étape 2 · Connecter'],['3','Étape 3 · Suivre le chemin'],['4','Étape 4 · Serrer et aligner']])
 };
 /* anneau métallique en relief (occulteur) */
 function ringOcc(C,r,w){return function(g,id,el){

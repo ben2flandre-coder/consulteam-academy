@@ -1,6 +1,167 @@
 {
-  "pages": 36,
-  "bytes": 2489357,
-  "lines": 1295,
-  "out_of_bounds": []
+  "pages": 28,
+  "bytes": 1639768,
+  "format": "A4 portrait",
+  "overflow": [],
+  "page_layout": [
+    {
+      "page": 2,
+      "title": "Mon livret de formation",
+      "bottom": 311,
+      "overflow": false
+    },
+    {
+      "page": 3,
+      "title": "Le parcours en un regard",
+      "bottom": 219,
+      "overflow": false
+    },
+    {
+      "page": 4,
+      "title": "Prévenir avant de s’équiper",
+      "bottom": 243,
+      "overflow": false
+    },
+    {
+      "page": 5,
+      "title": "Les exigences à connaître",
+      "bottom": 231,
+      "overflow": false
+    },
+    {
+      "page": 6,
+      "title": "Trois systèmes, trois objectifs",
+      "bottom": 167,
+      "overflow": false
+    },
+    {
+      "page": 7,
+      "title": "Ajuster le harnais",
+      "bottom": 227,
+      "overflow": false
+    },
+    {
+      "page": 8,
+      "title": "Contrôler et décider du retrait",
+      "bottom": 215,
+      "overflow": false
+    },
+    {
+      "page": 9,
+      "title": "Choisir l’ancrage",
+      "bottom": 255,
+      "overflow": false
+    },
+    {
+      "page": 10,
+      "title": "Vérifier le tirant d’air",
+      "bottom": 229,
+      "overflow": false
+    },
+    {
+      "page": 11,
+      "title": "Préparer le déplacement",
+      "bottom": 228,
+      "overflow": false
+    },
+    {
+      "page": 12,
+      "title": "Atelier : le huit tressé",
+      "bottom": 209.0,
+      "overflow": false
+    },
+    {
+      "page": 13,
+      "title": "Atelier : le cabestan",
+      "bottom": 182.0,
+      "overflow": false
+    },
+    {
+      "page": 14,
+      "title": "Atelier : demi-cabestan et mule",
+      "bottom": 178.0,
+      "overflow": false
+    },
+    {
+      "page": 15,
+      "title": "Reconnaître les nœuds d’arrêt",
+      "bottom": 172.0,
+      "overflow": false
+    },
+    {
+      "page": 16,
+      "title": "Approfondir : le nœud de chaise",
+      "bottom": 216.0,
+      "overflow": false
+    },
+    {
+      "page": 17,
+      "title": "Approfondir : pêcheur double et sangle",
+      "bottom": 174.0,
+      "overflow": false
+    },
+    {
+      "page": 18,
+      "title": "Cordes : identifier et préserver",
+      "bottom": 238,
+      "overflow": false
+    },
+    {
+      "page": 19,
+      "title": "Préparer le secours avant de monter",
+      "bottom": 229,
+      "overflow": false
+    },
+    {
+      "page": 20,
+      "title": "Trois situations à résoudre",
+      "bottom": 221,
+      "overflow": false
+    },
+    {
+      "page": 21,
+      "title": "Je vérifie mes acquis · 1 / 2",
+      "bottom": 265,
+      "overflow": false
+    },
+    {
+      "page": 22,
+      "title": "Je vérifie mes acquis · 2 / 2",
+      "bottom": 265,
+      "overflow": false
+    },
+    {
+      "page": 23,
+      "title": "Comprendre les réponses",
+      "bottom": 291,
+      "overflow": false
+    },
+    {
+      "page": 24,
+      "title": "Mon plan d’action",
+      "bottom": 222,
+      "overflow": false
+    },
+    {
+      "page": 25,
+      "title": "Notes et observations",
+      "bottom": 248,
+      "overflow": false
+    },
+    {
+      "page": 26,
+      "title": "Retrouver les sources",
+      "bottom": 215,
+      "overflow": false
+    },
+    {
+      "page": 27,
+      "title": "Crédits et limites des images",
+      "bottom": 334,
+      "overflow": false
+    }
+  ],
+  "fonts": "Segoe UI et Georgia incorporées",
+  "html": "livret.html",
+  "pdf": "pdf/livret-formation-260053a.pdf"
 }

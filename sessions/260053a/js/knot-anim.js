@@ -90,6 +90,7 @@ function Knot(container,cfg){
   el('rect',{width:W,height:H,fill:'url(#'+id+'bg)',rx:14},svg);
   /* objet fixe (barre, anneau…) : dessiné avant/après la corde selon cfg.objects */
   var gBack=el('g',{},svg);if(cfg.drawBack)cfg.drawBack(gBack,id,el);
+  var guide=el('path',{d:pathD(P,0,n-1),fill:'none',class:'kn-underlay',visibility:'hidden'},svg);
   var gRope=el('g',{},svg),gFront=el('g',{},svg);if(cfg.drawFront)cfg.drawFront(gFront,id,el);
   function hex(c){return[1,3,5].map(function(i){return parseInt(c.substr(i,2),16)})}
   function mix(c1,c2,t){var a=hex(c1),b=hex(c2);return'rgb('+a.map(function(v,i){return Math.round(v+(b[i]-v)*t)}).join(',')+')'}
@@ -113,6 +114,7 @@ function Knot(container,cfg){
       if(l.base&&!withShadow)return;var attrs={fill:'none',stroke:l.c,'stroke-width':l.w,'stroke-linecap':'round','stroke-linejoin':'round',opacity:l.o};
       if(l.f)attrs.filter='url(#'+id+l.f+')';if(l.dash){attrs['stroke-dasharray']=l.dash;attrs['stroke-linecap']='butt';var o0=(l.off||0)+(S[a]||0);if(o0)attrs['stroke-dashoffset']=o0.toFixed(2)}
       if(!withShadow)attrs['stroke-linecap']='butt';
+      if(l.dash)attrs.class='kn-texture';if(l.f)attrs.class='kn-shadow';
       var p=el('path',attrs,g);if(l.dx||l.dy)p.setAttribute('transform','translate('+(l.dx||0)+' '+(l.dy||0)+')');els.push(p)});
     return{a:a,b:b,els:els,shadowOnly:false};
   }
@@ -141,8 +143,9 @@ function Knot(container,cfg){
   var tip=el('circle',{r:rw*.95,fill:'none',stroke:pal.acc,'stroke-width':3,opacity:0},svg);
   var tag=el('g',{},svg);
 
-  var ctrl={p:0,step:0};
+  var ctrl={p:0,step:0},progressEl=null,progressOut=null;
   function render(p){
+    if(progressEl){progressEl.value=Math.round(p*1000);progressOut.value=Math.round(p*100)+' %';progressEl.setAttribute('aria-valuetext',Math.round(p*100)+' % du trajet visible')}
     var cut=Math.max(0,Math.min(n-1,Math.round(p*(n-1))));
     function setPiece(pc,a,b){var hi=Math.min(b,cut);
       var d=(hi>a)?pathD(P,a,hi):'M0 0';pc.els.forEach(function(e){e.setAttribute('d',d)})}
@@ -154,37 +157,50 @@ function Knot(container,cfg){
     var T=P[cut];tip.setAttribute('cx',T.x);tip.setAttribute('cy',T.y);tip.setAttribute('opacity',p>0&&p<1?.95:0);
   }
   render(0);
-  /* légendes / commandes */
+  /* Commandes : pause immédiate, reprise au même point et exploration libre. */
   var steps=cfg.steps,wrap=document.createElement('div');wrap.className='kn-anim';
+  var mode=document.createElement('p');mode.className='kn-mode';mode.textContent='Lecture du trajet ouvert · la pastille rose indique le point actuellement suivi.';
   var cap=document.createElement('div');cap.className='kn-cap';cap.setAttribute('aria-live','polite');
   var bar=document.createElement('div');bar.className='kn-ctl';
-  bar.innerHTML='<button type="button" class="btn alt" data-a="prev">← Précédente</button><button type="button" class="btn" data-a="play">▶ Lecture</button><button type="button" class="btn alt" data-a="next">Suivante →</button><button type="button" class="btn alt" data-a="re">↺ Recommencer</button><button type="button" class="btn alt" data-a="fs" aria-label="Agrandir l’animation en plein écran">⤢ Plein écran</button>';
-  var dots=document.createElement('ol');dots.className='kn-dots';
+  bar.innerHTML='<button type="button" class="btn alt" data-a="prev">Précédente</button><button type="button" class="btn" data-a="play">Lecture</button><button type="button" class="btn alt" data-a="next">Suivante</button><button type="button" class="btn alt" data-a="re">Recommencer</button><button type="button" class="btn alt" data-a="all">Trajet complet</button><button type="button" class="btn alt" data-a="fs">Agrandir</button>';
+  var options=document.createElement('div');options.className='kn-options';
+  options.innerHTML='<label class="kn-progress">Parcours <input type="range" min="0" max="1000" value="0" step="1" aria-label="Parcourir le trajet de '+cfg.title+'"><output>0 %</output></label><label>Vitesse <select aria-label="Vitesse de lecture"><option value="0.5">Lente × 0,5</option><option value="1" selected>Normale × 1</option><option value="2">Rapide × 2</option></select></label><label><input type="checkbox" data-kn="guide"> Trajet en pointillés</label><label><input type="checkbox" data-kn="contrast"> Sans textures</label>';
+  progressEl=options.querySelector('input[type=range]');progressOut=options.querySelector('output');
+  var dots=document.createElement('ol');dots.className='kn-dots';dots.setAttribute('aria-label','Étapes du trajet');
   steps.forEach(function(s,i){var li=document.createElement('li');var b=document.createElement('button');b.type='button';b.textContent=i+1;b.setAttribute('aria-label','Étape '+(i+1)+' : '+s.t);li.appendChild(b);dots.appendChild(li);b.addEventListener('click',function(){stop();goTo(i,true)})});
-  wrap.appendChild(svg);wrap.appendChild(dots);wrap.appendChild(cap);wrap.appendChild(bar);container.appendChild(wrap);
+  wrap.appendChild(mode);wrap.appendChild(svg);wrap.appendChild(options);wrap.appendChild(dots);wrap.appendChild(cap);wrap.appendChild(bar);container.appendChild(wrap);
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var raf=0,playing=false,timer=0;
+  var raf=0,playing=false,timer=0,speed=1;
   function ease(t){return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2}
   function showCap(i){var s=steps[i];cap.innerHTML='<strong>Étape '+(i+1)+' / '+steps.length+' · '+s.t+'</strong><p>'+s.d+'</p>'+(s.w?'<p class="kn-warn">'+s.w+'</p>':'');
-    [].forEach.call(dots.querySelectorAll('button'),function(b,j){b.setAttribute('aria-current',j===i?'step':'false');b.className=j<i?'done':''})}
-  function tween(to,done){cancelAnimationFrame(raf);var from=ctrl.p;if(reduce||from===to){ctrl.p=to;render(to);if(done)done();return}
-    var dur=Math.min(2600,Math.max(600,Math.abs(to-from)*L*4.2)),t0=performance.now();
-    (function f(t){var u=Math.min(1,(t-t0)/dur);ctrl.p=from+(to-from)*ease(u);render(ctrl.p);if(u<1)raf=requestAnimationFrame(f);else if(done)done()})(t0)}
-  function goTo(i,anim,done){ctrl.step=i;showCap(i);var to=steps[i].p;if(anim)tween(to,done);else{ctrl.p=to;render(to);if(done)done()}}
-  function stop(){playing=false;clearTimeout(timer);bar.querySelector('[data-a=play]').textContent='▶ Lecture'}
-  function play(){playing=true;bar.querySelector('[data-a=play]').textContent='❚❚ Pause';
-    (function nxt(){if(!playing)return;if(ctrl.step>=steps.length-1){stop();return}
-      goTo(ctrl.step+1,true,function(){timer=setTimeout(nxt,reduce?1500:900)})})()}
+    [].forEach.call(dots.querySelectorAll('button'),function(b,j){b.setAttribute('aria-current',j===i?'step':'false');b.className=j<i?'done':''});bar.querySelector('[data-a=prev]').disabled=i===0&&ctrl.p<=steps[0].p;bar.querySelector('[data-a=next]').disabled=i===steps.length-1&&ctrl.p===1}
+  function tween(to,done){cancelAnimationFrame(raf);var from=ctrl.p;if(reduce||Math.abs(from-to)<.00001){ctrl.p=to;render(to);if(done)done();return}
+    var dur=Math.min(4200,Math.max(700,Math.abs(to-from)*L*5))/speed,t0=performance.now();
+    function frame(t){var u=Math.min(1,(t-t0)/dur);ctrl.p=from+(to-from)*ease(u);render(ctrl.p);if(u<1)raf=requestAnimationFrame(frame);else{raf=0;showCap(ctrl.step);if(done)done()}}raf=requestAnimationFrame(frame)}
+  function goTo(i,anim,done){ctrl.step=Math.max(0,Math.min(steps.length-1,i));showCap(ctrl.step);var to=steps[ctrl.step].p;if(anim)tween(to,done);else{cancelAnimationFrame(raf);ctrl.p=to;render(to);showCap(ctrl.step);if(done)done()}}
+  function stop(){playing=false;clearTimeout(timer);cancelAnimationFrame(raf);raf=0;var b=bar.querySelector('[data-a=play]');b.textContent='Lecture';b.setAttribute('aria-pressed','false')}
+  function play(){playing=true;var b=bar.querySelector('[data-a=play]');b.textContent='Pause';b.setAttribute('aria-pressed','true');
+    function next(){if(!playing)return;var target=ctrl.p<steps[ctrl.step].p-.00001?ctrl.step:ctrl.step+1;if(target>=steps.length){stop();return}goTo(target,true,function(){if(playing)timer=setTimeout(next,(reduce?1800:1400)/speed)})}next()}
+  progressEl.addEventListener('input',function(){stop();ctrl.p=Number(progressEl.value)/1000;var i=steps.findIndex(function(s){return s.p>=ctrl.p-.00001});ctrl.step=i<0?steps.length-1:i;render(ctrl.p);showCap(ctrl.step)});
+  options.querySelector('select').addEventListener('change',function(e){var resume=playing;stop();speed=Number(e.target.value);if(resume)play()});
+  options.querySelector('[data-kn=guide]').addEventListener('change',function(e){guide.setAttribute('visibility',e.target.checked?'visible':'hidden')});
+  options.querySelector('[data-kn=contrast]').addEventListener('change',function(e){wrap.classList.toggle('kn-high-contrast',e.target.checked)});
   bar.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var a=b.dataset.a;
     if(a==='prev'){stop();goTo(Math.max(0,ctrl.step-1),true)}
-    else if(a==='next'){stop();goTo(Math.min(steps.length-1,ctrl.step+1),true)}
-    else if(a==='re'){stop();ctrl.step=0;ctrl.p=0;render(0);goTo(0,false)}
-    else if(a==='fs'){var d=document;if(d.fullscreenElement){d.exitFullscreen()}else if(wrap.requestFullscreen){wrap.requestFullscreen()}else{wrap.classList.toggle('kn-big')}}
-    else if(a==='play'){if(playing)stop();else{if(ctrl.step>=steps.length-1){ctrl.step=0;ctrl.p=0;render(0);showCap(0)}play()}}});
-  goTo(cfg.startStep===undefined?0:cfg.startStep,false);
-  return{goTo:goTo,render:render,points:P,crossings:cr,svg:svg,steps:steps,rw:rw};
+    else if(a==='next'){stop();goTo(ctrl.p<steps[ctrl.step].p-.00001?ctrl.step:Math.min(steps.length-1,ctrl.step+1),true)}
+    else if(a==='re'){stop();goTo(0,false)}
+    else if(a==='all'){stop();goTo(steps.length-1,false)}
+    else if(a==='fs'){var d=document;if(d.fullscreenElement){d.exitFullscreen()}else if(wrap.requestFullscreen){wrap.requestFullscreen().catch(function(){wrap.classList.toggle('kn-big')})}else{wrap.classList.toggle('kn-big')}}
+    else if(a==='play'){if(playing)stop();else{if(ctrl.p>=1)goTo(0,false);play()}}});
+  document.addEventListener('visibilitychange',function(){if(document.hidden)stop()});window.addEventListener('pagehide',stop);
+  var panel=container.closest('[role=tabpanel]');if(panel&&window.MutationObserver)new MutationObserver(function(){if(panel.hidden)stop()}).observe(panel,{attributes:true,attributeFilter:['hidden']});
+  if(window.IntersectionObserver)new IntersectionObserver(function(entries){if(!entries[0].isIntersecting)stop()}).observe(wrap);
+  var moving=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)');if(moving&&moving.addEventListener)moving.addEventListener('change',function(e){reduce=e.matches;stop()});
+  goTo(cfg.startStep===undefined?0:cfg.startStep,false);stop();
+  return{goTo:goTo,render:render,pause:stop,getState:function(){return{progress:ctrl.p,step:ctrl.step,playing:playing}},points:P,crossings:cr,svg:svg,steps:steps,rw:rw};
 }
 
 root.KnotAnim={create:Knot,crossings:crossings,foxDet:foxDet,openKnot:openKnot,fit:fit,resample:resample,arclen:arclen};
 if(typeof module!=='undefined')module.exports=root.KnotAnim;
 })(typeof window!=='undefined'?window:globalThis);
+

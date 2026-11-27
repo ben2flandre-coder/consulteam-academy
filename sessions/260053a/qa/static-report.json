@@ -1,0 +1,6 @@
+{
+  "pages": 17,
+  "local_and_external_references": 809,
+  "errors": [],
+  "scope": "Existence des cibles locales, ancres statiques, attributs, alternatives, syntaxe JS et XML ; les services externes ne sont pas testés par ce contrôle."
+}

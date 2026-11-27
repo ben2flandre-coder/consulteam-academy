@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded',function(){
     steps.push({t:'Le bout libre est sorti',d:c.fin,p:1,w:'Serrer, aligner les brins, laisser un bout libre suffisant, puis faire contrôler par le binôme.'});
     return steps}
   function mount(k,s,full){var c=window.KNOTS[k];if(!c)return;
-    if(full){var h=document.createElement('h2');h.textContent=c.title;s.appendChild(h);var intro=document.createElement('p');intro.innerHTML=c.intro||'';s.appendChild(intro)}else{var cap=document.createElement('p');cap.className='muted';cap.innerHTML='<strong>Animation : '+c.title+'.</strong> Tracé du trajet de la corde, repère visuel : elle ne montre ni la mise en tension ni les gestes de la main, et ne remplace pas la démonstration du formateur.';s.appendChild(cap)}
+    if(full){var h=document.createElement('h2');h.textContent=c.title;s.appendChild(h);var intro=document.createElement('p');intro.innerHTML=c.intro||'';s.appendChild(intro)}else{var cap=document.createElement('p');cap.className='muted';cap.innerHTML='<strong>Animation : '+c.title+'.</strong> Le dessin montre un nœud ouvert : la corde est dévoilée progressivement. Il ne montre pas le geste de nouage ni le serrage. Réaliser ces gestes sur corde réelle, au sol, avec le formateur.';s.appendChild(cap)}
     var P=c.custom?c.custom.points:window.buildKnotPoints(c.kind,c.tail);
     var holder=document.createElement('div');holder.className='kn-pair';s.appendChild(holder);
     window.KnotAnim.create(holder,{title:c.title,points:P,occluder:c.occluder,flat:c.flat,ropeWidth:c.ropeWidth,palette:c.palette,caps:c.caps,fadeAt:c.fadeAt,steps:c.steps.length?c.steps:(c.fiche?ficheSteps(P,c.fiche):autoSteps(P,c)),startStep:0});
@@ -23,3 +23,4 @@ document.addEventListener('DOMContentLoaded',function(){
   if(box)Object.keys(window.KNOTS).forEach(function(k){var s=document.createElement('section');s.className='panel';s.id=k;box.appendChild(s);mount(k,s,true)});
   embeds.forEach(function(e){mount(e.dataset.knot,e,false)});
 });
+

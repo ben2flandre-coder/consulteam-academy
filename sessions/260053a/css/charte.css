@@ -18,7 +18,7 @@ a{color:var(--blue);text-underline-offset:3px}
 .skip{position:absolute;left:8px;top:-60px;background:#fff;padding:10px 14px;border-radius:8px;z-index:100}.skip:focus{top:8px}
 
 /* En-tête */
-.top{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:14px;padding:8px max(16px,env(safe-area-inset-left));background:var(--navy);color:#fff;border-bottom:4px solid var(--rose)}
+.top{position:relative;top:0;z-index:30;display:flex;align-items:center;gap:14px;padding:8px max(16px,env(safe-area-inset-left));background:var(--navy);color:#fff;border-bottom:4px solid var(--rose)}
 .top .logo{height:44px;width:auto;flex:0 0 auto}
 .top .ttl{min-width:0;line-height:1.2}.top .ttl small{display:block;opacity:.8;font-size:.78rem;letter-spacing:.06em}.top .ttl strong{display:block;font-size:.98rem}
 .top nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
@@ -130,7 +130,7 @@ dl.defs dt{font-weight:800;color:var(--navy);margin-top:12px}dl.defs dd{margin:2
   .top nav{display:none;width:100%;margin:0;flex-direction:column}.top nav.open{display:flex}
 }
 @media(min-width:761px) and (max-width:1400px){.top nav.open{display:grid;grid-template-columns:repeat(3,1fr)}}
-.only-p{display:none}.esp-p .only-p,.top nav a.only-p{display:inline-flex}.esp-p .only-f{display:none!important}
+.only-p{display:none!important}.esp-p .only-p{display:inline-flex!important}.esp-p .only-f{display:none!important}
 .esp-p .top .ttl small::after{content:" · ESPACE PARTICIPANT"}
 .vt{display:block;margin:0 0 10px;border-radius:10px;overflow:hidden;background:var(--navy)}.vt img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
 
@@ -164,3 +164,24 @@ ol.check.stepmode li{display:none}ol.check.stepmode li.cur{display:block;font-si
 @media(max-width:900px){.kn-pair{grid-template-columns:1fr}}
 .kn-embed .kn-pair{grid-template-columns:1fr}.kn-embed .kn-photos{grid-template-columns:repeat(2,1fr)}
 @container (min-width:700px){.kn-embed .kn-photos{grid-template-columns:repeat(4,1fr)}}
+
+
+/* Recette 1.8 : navigation, lecture, zoom et impression. */
+.esp-p .trace{display:none}
+.top nav.open{max-height:70vh;overflow-y:auto;overscroll-behavior:contain}
+.fab{z-index:90!important}
+.print-exclude{display:initial}
+.out[data-state=insufficient]{background:var(--danger)}
+.out[data-state=geometry]{background:#4c5265}
+.kn-dots button[aria-current=step]{outline:3px solid var(--rose);outline-offset:2px}
+@media print{
+  @page{size:A4 landscape;margin:12mm}
+  html body .print-exclude.print-exclude{display:none!important}
+  .tw{overflow:visible;margin:0;padding:0}.tw table{min-width:0}
+  thead{display:table-header-group}tr{break-inside:avoid}
+  h2,h3{break-after:avoid}p,li{orphans:3;widows:3}
+  .stepbar{display:none!important}ol.check.stepmode li{display:list-item!important;font-size:inherit;border:0;padding:0;background:none}
+  .kn-ctl,.kn-dots,.kn-cap{display:none!important}
+  #forms>section{break-before:page}#forms>section:first-child{break-before:auto}
+  #forms td:empty{height:9mm;min-width:24mm}
+}

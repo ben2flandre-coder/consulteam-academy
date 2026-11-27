@@ -3,7 +3,7 @@
 var root,box,img,cap,cnt,list=[],idx=0,scale=1,fitW=0,open=false,lastFocus=null;
 function cands(){
   var sel='main img, .slide img';var all=[].slice.call(document.querySelectorAll(sel)).filter(function(i){
-    return !i.closest('button,.dk-top,.dk-bot,#ovw,#notes,#help,[data-nozoom]')&&!i.hasAttribute('data-nozoom')});
+    return !i.closest('a,button,.dk-top,.dk-bot,#ovw,#notes,#help,[data-nozoom]')&&!i.hasAttribute('data-nozoom')});
   return all;
 }
 function visible(i){var s=i.closest('.slide');return !s||s.classList.contains('active')}
@@ -70,3 +70,4 @@ document.addEventListener('DOMContentLoaded',function(){
   document.addEventListener('keydown',function(e){if(open)return;var t=e.target;if(t.classList&&t.classList.contains('zm-able')&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopPropagation();openAt(t)}},true);
 });
 })();
+

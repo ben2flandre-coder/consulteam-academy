@@ -1,33 +1,15 @@
-# Liens de diffusion — 260053a
+# Diffusion 260053A — version 1.8 du 27/11/2026
 
 Base : https://ben2flandre-coder.github.io/consulteam-academy/sessions/260053a/
 
-| Ressource | Adresse | Public |
+| Public | Entrée | Utilisation |
 |---|---|---|
-| Support apprenant | `apprenant.html` | apprenants |
-| Fiches nœuds | `noeuds.html` | apprenants |
-| Mode animation | `animation.html` | projection formateur |
-| Espace formateur | `formateur.html` | formateur uniquement |
-| Programme SECU37 | `programme.html` | tous |
-| Formulaires | `formulaires.html` | formateur (imprimable) |
+| Participants | apprenants.html?e=p | Accueil et ressources de la formation |
+| Formateur | index.html | Préparation et accès aux outils de séance |
+| Projection | animation.html | Diaporama, notes, chrono et QCM collectif |
+| Formateur | formulaires.html | Impression séparée de chaque formulaire |
+| Tous | pdf/livret-formation-260053a.pdf | Livret révisé de 36 pages, A4 paysage |
 
-## Organisation de la diffusion
+Les liens d’accueil des participants restent dans leur parcours. Les documents et corrigés du formateur sont sur un hébergement public : le masquage de navigation ne constitue pas un contrôle d’accès.
 
-Le dossier contient **tout** (version de travail complète). Avant envoi aux apprenants, relecture de contenu par Cindy et Noémie, puis seules les pages « apprenants » sont transmises.
-
-| Page | Usage | Diffusion prévue |
-|---|---|---|
-| `apprenant.html` | Support participant | apprenants (après relecture) |
-| `noeuds.html` | Fiches nœuds | apprenants (après relecture) |
-| `fiches.html` | Fiches réflexes et suivis | apprenants (après relecture) |
-| `videos.html` | Vidéothèque | apprenants (après relecture) |
-| `programme.html` | Programme SECU37 | tous |
-| `formulaires.html` | Émargement, ouverture de zone, grille, bilan | formateur (imprimable) |
-| `animation.html` | Mode animation (notes) | formateur uniquement |
-| `formateur.html` | Corrigés, déroulé, vigilance | formateur uniquement |
-
-Points à valider à la relecture : périodicités de contrôle (fiches réflexes), seuils de criticité (proposés), liens vidéo de la section « à tester ».
-
-## Deux entrées distinctes
-- **Formateur (version complète)** : `index.html` — animation, espace formateur, formulaires, éléments de relecture (cases « Validée », notes « à valider »).
-- **Participants (version cadrée)** : `apprenants.html?e=p` — accueil participant, programme, support, nœuds, fiches réflexes, vidéos. Le menu est réduit à ces pages et les éléments de relecture sont masqués.
+Les validations Consulteam restent à leur état réel dans la traçabilité. La réception de la zone, du matériel et des moyens de secours est à effectuer avant la pratique. Voir qa/RECETTE-1.8.md pour les corrections et les contrôles.

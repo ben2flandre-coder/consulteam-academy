@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict');
+const T=require('../js/safety-tools.js');
+for(const s of ['', ' ', '-1','NaN','Infinity','2m','1.2.3','1,2,3','1e3'])assert.equal(T.number(s),null,s);
+assert.equal(T.number(' 1,75 '),1.75);assert.equal(T.number('.5'),.5);assert.equal(T.number('0'),0);
+assert.equal(T.clearance('0','5','feet').state,'invalid');
+assert.equal(T.clearance('4','-2','feet').state,'invalid');
+assert.equal(T.clearance('4','5','').state,'reference');
+assert.equal(T.clearance('4','3,99','feet').state,'insufficient');
+assert.equal(T.clearance('4','4','feet').state,'geometry');
+assert.equal(T.clearance('4','5','anchor').delta,1);
+assert.equal(T.factor('-1','2').state,'invalid');assert.equal(T.factor('2','0').state,'invalid');
+assert.deepEqual(T.factor('0','2'),{state:'model',factor:0});
+assert.equal(T.factor('4','2').factor,2);assert.equal(T.factor('4.01','2').state,'outside');
+console.log('Outils de sécurité : 23 cas de saisie et de limites contrôlés.');

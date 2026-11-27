@@ -2,7 +2,7 @@
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#082b45"><meta name="robots" content="noindex,nofollow"><meta name="description" content="Mode animation plein écran : travail en hauteur, port du harnais (SECU37)">
 <title>Mode animation · Travail en hauteur · Consulteam Security</title>
-<link rel="icon" href="assets/img/logo-consulteam-groupe.png"><link rel="stylesheet" href="css/charte.css"><link rel="stylesheet" href="css/deck.css"><style>.demo-ph{display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;border:2px dashed #9fb4c4;border-radius:12px;color:#36506a;font-weight:800;text-align:center;padding:10px;background:#f2f7fa}</style></head>
+<link rel="icon" href="assets/img/logo-consulteam-groupe.png"><link rel="stylesheet" href="css/charte.css?v=1.8"><link rel="stylesheet" href="css/deck.css?v=1.8"><style>.demo-ph{display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;border:2px dashed #9fb4c4;border-radius:12px;color:#36506a;font-weight:800;text-align:center;padding:10px;background:#f2f7fa}</style></head>
 <body class="deck">
 <header class="dk-top"><a class="back" href="index.html">← Hub</a><img src="assets/img/logo-consulteam-groupe.png" alt="Consulteam Groupe" width="164" height="34"><span class="sec" aria-live="polite"></span><span class="cnt"></span><button id="timer" class="timer" type="button" title="Chrono de la séquence : clic = démarrer / pause, double-clic = remettre à zéro">⏱ --:--</button></header>
 
@@ -165,7 +165,7 @@
 <div class="tile acc frag"><b class="n">1</b><h3>Ancrage</h3><p>Point et support validés</p></div>
 <div class="tile acc frag"><b class="n">2</b><h3>Liaison</h3><p>Longe, absorbeur, antichute mobile ou à rappel</p></div>
 <div class="tile acc frag"><b class="n">3</b><h3>Harnais</h3><p>Ajusté, point d’attache prévu</p></div></div>
-<ul class="big frag"><li>Pas de chute libre de plus d’<strong>un mètre</strong></li><li><strong>Jamais seul</strong> : un secours doit pouvoir arriver à temps</li><li>Une <strong>notice</strong> de l’employeur précise ancrages et usage</li></ul>
+<ul class="big frag"><li>Chute libre <strong>≤ 1 m</strong>, ou effets d’une chute plus haute limités de façon équivalente</li><li><strong>Jamais seul</strong> : un secours doit pouvoir arriver à temps</li><li>Une <strong>notice</strong> de l’employeur précise ancrages et usage</li></ul>
 </div><div class="figs"><figure class="vis svg"><img src="assets/svg/systeme-arret-chute.svg" alt="Système d’arrêt de chute : ancrage, liaison avec absorbeur, harnais antichute" loading="lazy"></figure></div></div><div class="note"><p>R. 4323-61 : à utiliser lorsque la protection collective est impossible. Vérifier compatibilité des connecteurs, diamètres, sens des antichutes, limites de la notice.</p></div>
 </section>
 
@@ -233,13 +233,12 @@
 </section>
 
 <section class="slide" data-sec="3 · EPI, ancrages, tirant d’air" data-title="Tirant d’air — calculateur">
-<span class="k">Séquence 3 · outil</span><h2>Le tirant d’air : additionner, avec la notice</h2><div class="split"><div class="txt">
+<span class="k">Séquence 3 · outil</span><h2>Le tirant d’air : comparer avec la notice</h2><div class="split"><div class="txt">
 <div class="cols2"><div class="tile"><form id="ta-form" onsubmit="return false">
-<label class="f">Chute libre (m)<input id="ta1" inputmode="decimal" type="text" placeholder="valeur de la notice"></label>
-<label class="f">Déploiement de l’absorbeur (m)<input id="ta2" inputmode="decimal" type="text"></label>
-<label class="f">Distance point d’attache – pieds (m)<input id="ta3" inputmode="decimal" type="text"></label>
-<label class="f">Marge de sécurité prescrite (m)<input id="ta4" inputmode="decimal" type="text"></label>
-<label class="f">Hauteur libre disponible (m) — facultatif<input id="ta5" inputmode="decimal" type="text"></label>
+<label class="f">Repère commun de mesure<select id="ta-ref"><option value="">Choisir le repère de la notice</option><option value="feet">Depuis les pieds de l’utilisateur</option><option value="anchor">Depuis le point d’ancrage</option></select></label>
+<label class="f">Espace minimal requis par la notice pour cette configuration (m)<input id="ta1" inputmode="decimal" type="text" autocomplete="off" placeholder="valeur de la notice"></label>
+<label class="f">Espace libre réellement disponible, depuis le même repère (m)<input id="ta5" inputmode="decimal" type="text" autocomplete="off" placeholder="mesure sur le site"></label>
+<p class="muted">Lire la notice du modèle exact pour la masse équipée, la position de l’ancrage, la liaison et les accessoires prévus. Intégrer les effets de l’ancrage ou de la ligne de vie selon leurs notices. Le point de départ de la mesure doit être identique.</p>
 <output id="ta-out" class="out" aria-live="polite"></output></form></div>
 <div><p class="callout warn">Les valeurs saisies viennent de la notice du matériel de la session.</p></div></div>
 </div><div class="figs"><ul class="big"><li>Lire la notice du <strong>système exact</strong></li><li>Aucun chiffre générique à retenir</li><li>Vérifier chaque <strong>obstacle</strong> sur la trajectoire</li></ul><figure class="vis svg"><img src="assets/svg/tirant-d-air.svg" alt="Tirant d’air : espace libre nécessaire sous l’utilisateur" loading="lazy"></figure></div></div><div class="note"><p>Faire saisir les valeurs d’un équipement réel de la salle. Ne pas fournir de valeurs types.</p></div>
@@ -248,7 +247,7 @@
 <section class="slide planche" data-sec="3 · EPI, ancrages, tirant d’air" data-title="Planche D — Facteur de chute et tirant d’air">
 <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Planche D — Facteur de chute et tirant d’air</h2>
 <figure class="vis"><img src="assets/img/gpt/D-facteur-chute.jpg" alt="Facteur de chute et tirant d’air" loading="lazy"><figcaption>Illustration générée par IA.</figcaption></figure>
-<div class="note"><p>Planche D : modèle simplifié, aucun tirant d’air universel. Chute libre limitée à 1 m (R. 4323-61). Calcul avec la notice du système.</p></div>
+<div class="note"><p>Planche D : modèle simplifié, aucun tirant d’air universel. R. 4323-61 : 1 m au plus ou limitation équivalente des effets d’une chute plus haute. Calcul avec la notice du système.</p></div>
 </section>
 
 <section class="slide" data-sec="3 · EPI, ancrages, tirant d’air" data-title="Facteur de chute et pendule">
@@ -263,7 +262,7 @@
 <span class="k">Séquence 3</span><h2>Trois niveaux de contrôle</h2>
 <div class="cols3">
 <div class="tile acc frag"><h3>Avant chaque emploi</h3><p><strong>L’utilisateur.</strong> État, marquage, compatibilité, verrouillage.</p></div>
-<div class="tile acc frag"><h3>Périodique</h3><p><strong>Personne compétente.</strong> Au moins annuel pour l’antichute (INRS). Trace : registre de sécurité, fiche de vie.</p></div>
+<div class="tile acc frag"><h3>Périodique</h3><p><strong>Personne compétente.</strong> Vérification de moins de douze mois pour les systèmes antichute (arrêté du 19/03/1993). Intervalle réduit si nécessaire. Trace : registre de sécurité, fiche de vie.</p></div>
 <div class="tile acc frag"><h3>Après événement</h3><p>Chute arrêtée : <strong>retrait</strong> du matériel, décision selon la notice.</p></div></div>
 <div class="below"><figure class="vis"><img src="assets/img/ph-connecteurs.webp" alt="Longes avec absorbeur et connecteurs à verrouillage" loading="lazy"><figcaption>Illustration générée — non contractuelle.</figcaption></figure></div><div class="note"><p>Références : R. 4323-99 à R. 4323-103. Ancrages et lignes de vie : selon notice et dossier d’installation ; support évalué par personne compétente.</p></div>
 </section>
@@ -325,7 +324,7 @@
 <section class="slide" data-sec="4 · Préparer l’intervention" data-title="Qui secourt ? Compétences exigées">
 <span class="k">Séquence 4 · secours</span><h2>Qui secourt ? Deux compétences à vérifier</h2>
 <div class="cols2">
-<div class="tile acc frag"><h3>1 · SST / INRS en cours de validité</h3><ul><li>Certificat valable <strong>2 ans</strong></li><li>Prolongé par un <strong>MAC tous les 24 mois</strong></li><li>Un membre du personnel formé dans chaque atelier ou chantier à travaux dangereux (<a href="https://code.travail.gouv.fr/code-du-travail/r4224-15" target="_blank" rel="noopener">R. 4224-15</a>)</li></ul></div>
+<div class="tile acc frag"><h3>1 · SST / INRS en cours de validité</h3><ul><li>Certificat valable <strong>2 ans</strong></li><li>Prolongé par un <strong>MAC tous les 24 mois</strong></li><li>Secouriste : ateliers dangereux ; chantiers dangereux ≥ 20 travailleurs pendant plus de 15 jours. Secours à organiser dans tous les cas (<a href="https://code.travail.gouv.fr/code-du-travail/r4224-15" target="_blank" rel="noopener">R. 4224-15</a>)</li></ul></div>
 <div class="tile acc frag"><h3>2 · Secours en hauteur et sur cordes</h3><ul><li>Décrocher et évacuer une personne suspendue : <strong>compétence distincte du SST</strong></li><li>Formation aux procédures de sauvetage, matériel dédié, entraînement</li><li>Travaux sur cordes : formation spécifique et secours immédiat (<a href="https://code.travail.gouv.fr/code-du-travail/r4323-89" target="_blank" rel="noopener">R. 4323-89</a>)</li></ul></div></div>
 <p class="callout warn frag">Avant l’exposition : <strong>noms, dates de certificat / MAC, matériel de sauvetage</strong> sont relevés sur la fiche d’ouverture de zone.</p>
 <p class="frag muted">Ressource : <a href="https://www.inrs.fr/dam/inrs/CataloguePapier/ED/TI-ED-4085-2.pdf" target="_blank" rel="noopener">INRS ED 4085 — Sauvetage secourisme du travail, aide-mémoire</a> · <a href="https://www.inrs.fr/formation/themes/sauvetage-secourisme/sauveteurs-secouristes-du-travail.html" target="_blank" rel="noopener">INRS — devenir SST</a></p>
@@ -490,5 +489,6 @@
 <button id="bnotes" class="alt" type="button" aria-pressed="false" aria-label="Notes formateur">✎<span class="hide-s"> Notes</span></button>
 <button id="bfs" class="alt" type="button" aria-label="Plein écran">⛶</button>
 <button id="bhelp" class="alt hide-s" type="button" aria-label="Aide">?</button></nav>
-<script src="js/qcm-data.js"></script><script src="js/common.js"></script><script src="js/zoom.js"></script><script src="js/deck.js"></script>
+<script src="js/qcm-data.js?v=1.8"></script><script src="js/safety-tools.js?v=1.8"></script><script src="js/common.js?v=1.8"></script><script src="js/zoom.js?v=1.8"></script><script src="js/deck.js?v=1.8"></script>
 </body></html>
+

@@ -354,20 +354,19 @@
 16;section : Évaluation des savoirs;L'apprenant doit obtenir au minimum 70 % de bonnes réponses [S29].;S29;S;OK
 16;section : Évaluation des savoirs;Les distances et zones comme les limites du symbole représentent chacune au moins 30 % des questions [S29].;S29;S;OK
 16;section : Évaluation des savoir-faire;Elle se fait après l'évaluation positive des savoirs, à partir d'une ou plusieurs situations de travail [S29].;S29;S;OK
-16;section : Évaluation des savoir-faire;Trois critères : sans erreur, erreur mineure sans conséquence pour la sécurité des personnes, erreur majeure avec conséquence directe [S29].;S29;S;OK
-16;section : Évaluation des savoir-faire;Les critères d'acceptation sont deux erreurs mineures au maximum et aucune erreur majeure [S29].;S29;S;OK
+16;section : Évaluation des savoir-faire;Elle est individuelle : le formateur observe chaque stagiaire sur les opérations de son symbole et en tire l'avis qu'il remet à l'employeur [S29].;S29;S;OK
+16;réponse;Non : les savoirs sont acquis, mais l'évaluation pratique n'est pas faite [S29].;S29;S;OK
+16;question T16-02 (explication);Le QCM est constitué de façon aléatoire à partir d'une base d'au moins cinq fois plus de questions par thème [S29].;S29;S;OK
+16;question T16-06 (explication);Pour les modules spécifiques, l'apprenant réalise lui-même les opérations [S29].;S29;S;OK
 16;section : Les savoir-faire par symbole;Tous les symboles évaluent l'identification des risques, un comportement adapté et le compte rendu de l'opération [S29].;S29;S;OK
 16;section : Les savoir-faire par symbole;Chaque symbole ajoute les siens : baliser et surveiller pour le chargé de chantier et de travaux, réaliser une consignation pour BC et HC, une intervention BT générale pour BR, une intervention élémentaire et un réarmement pour BS, une manœuvre pour BE et HE Manœuvre [S29].;S29;S;OK
 16;section : L'avis après formation;À l'issue de la formation, le formateur formule un avis après formation et le remet à l'employeur [S29].;S29;S;OK
 16;section : L'avis après formation;L'employeur délivre ensuite l'habilitation : ni la formation ni un score ne valent habilitation [S29].;S29;S;OK
 16;situation;Quatre à dix stagiaires, des symboles différents : chaque stagiaire doit réaliser lui-même les opérations de son symbole, puis être évalué.;;;OK
-16;réponse;Les savoirs sont acquis, mais l'évaluation des savoir-faire n'est pas validée : aucune erreur majeure n'est tolérée [S29].;S29;S;OK
 16;question T16-01 (explication);70 % de bonnes réponses au minimum [S29].;S29;S;OK
-16;question T16-02 (explication);Deux erreurs mineures au maximum, aucune majeure [S29].;S29;S;OK
 16;question T16-03 (explication);15 questions minimum [S29].;S29;S;OK
 16;question T16-04 (explication);"Le formateur remet un avis après formation ; l'employeur habilite [S29].";S29;S;OK
 16;question T16-05 (explication);Les savoir-faire sont évalués après l'évaluation positive des savoirs [S29].;S29;S;OK
-16;question T16-06 (explication);Trois critères : sans erreur, erreur mineure, erreur majeure [S29].;S29;S;OK
 16;question T16-07 (explication);Contenu minimal de l'avis après formation [S29].;S29;S;OK
 16;question T16-08 (explication);"Le formateur évalue et délivre l'avis ; l'employeur habilite [S29].";S29;S;OK
 17;section : Votre métier : un système, deux ensembles;Un système de sécurité incendie regroupe les matériels qui servent à la détection et à la collecte des informations ou ordres liés à la sécurité incendie [S42].;S42;S;OK

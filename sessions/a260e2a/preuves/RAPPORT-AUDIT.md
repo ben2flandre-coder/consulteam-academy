@@ -69,3 +69,9 @@ Arbres de décision lampe, fusible, prise ; 68 questions pour atteindre le ratio
 - Source des questions à choix unique rééquilibrée : A 97, B 99, C 96, D 1 (auparavant 73 % en A). À l'affichage, l'ordre des propositions est de toute façon mélangé (quiz, parcours, évaluation) : 1 640 tirages à 3 propositions → 857 / 854 / 867 par position.
 - Livret apprenant régénéré : corrigés A 22, B 23, C 23, D 1.
 - Point connu : la bonne réponse est la plus longue dans 63 % des questions (209/333), choix assumé : l'évaluation valide des notions et ne cherche pas à piéger les apprenants (décision du formateur, 15/11/2026).
+
+## Évaluation pratique : cotation Consul Team retirée du côté apprenant (27/11/2026)
+- La cotation interne (sans erreur / erreur mineure / erreur majeure, critères d'acceptation) relève de Consul Team : elle ne figure plus dans le site apprenant, le livret du participant ni les documents de session. Les grilles d'observation par symbole sont déplacées dans l'espace formateur (verrouillé).
+- Module 16 : texte, décision, point de contrôle et questions T16-02 et T16-06 reformulés sans cotation ; l'avis repose sur l'évaluation des savoirs et l'évaluation pratique, individuelle.
+- Livrets PDF du dépôt des supports corrigés (formation 115 p., site 113 p.).
+- Répartition des bonnes réponses : ordre des propositions rééquilibré (le correct ne se concentre plus sur une position), contrôle rejoué.

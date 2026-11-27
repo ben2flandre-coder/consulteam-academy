@@ -1,0 +1,152 @@
+[
+  {
+    "id": "B01",
+    "affirmation": "Exception de poste sur échelle",
+    "source": "https://code.travail.gouv.fr/code-du-travail/r4323-63",
+    "source_label": "Code du travail · R.4323-63",
+    "portee": "Règle réglementaire",
+    "emplacement": "animation.html",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B02",
+    "affirmation": "Accès distinct de la protection contre la chute",
+    "source": "https://www.inrs.fr/risques/chutes-hauteur/equipements-protection-individuelle-chutes-hauteur.html",
+    "source_label": "INRS · Systèmes individuels contre les chutes",
+    "portee": "Fonction et prévention",
+    "emplacement": "apprenant.html#fiches",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B03",
+    "affirmation": "Surface fragile : signaler ne suffit pas à protéger",
+    "source": "https://www.preventionbtp.fr/ressources/solutions/travaux-de-couverture-en-materiaux-fragiles-securiser-le-travail-en-hauteur_HNsxXVCnonwUrUx22JnFan",
+    "source_label": "OPPBTP · Couvertures en matériaux fragiles",
+    "portee": "Situation de chantier",
+    "emplacement": "decisions.html#toiture",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B04",
+    "affirmation": "Construction de corde distincte de la fonction",
+    "source": "https://kratossafety.com/products/hope-longe-toronnee-1-50-m-en-fourche-avec-absorbeur-d-energie-et-mousquetons-fa5010117-et-fa5020755",
+    "source_label": "Kratos · HOPE FA3020015, longe en corde toronnée avec absorbeur",
+    "portee": "Contre-exemple fabricant identifié",
+    "emplacement": "cordes.html#construction-usage",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B05",
+    "affirmation": "Stationnement du brin inutilisé",
+    "source": "https://www.petzl.com/fr/fr/professionnel/conseils-techniques/les-basiques/longes-absorbica-y-et-porte-connecteur-de-longe-dantichute-sur-le-harnais/absorbica-pe04-lanyardparking_PRO_a77w0000000Gmx9AAC.html",
+    "source_label": "Petzl · ABSORBICA-Y et porte-connecteur",
+    "portee": "ABSORBICA-Y : modèle et génération",
+    "emplacement": "apprenant.html#longe-double",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B06",
+    "affirmation": "Longueur des bouts libres",
+    "source": "https://m.petzl.com/sfc/servlet.shepherd/version/download/068Tx000002rwKuIAI",
+    "source_label": "Petzl · Notice CORDELETTE",
+    "portee": "Produit et montage de la notice, pas une règle universelle",
+    "emplacement": "noeuds.html#controle-final",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B07",
+    "affirmation": "Formation adaptée à l’utilisation",
+    "source": "https://code.travail.gouv.fr/code-du-travail/r4323-106",
+    "source_label": "Code du travail · Formation EPI, R.4323-106",
+    "portee": "Compétences réellement observées",
+    "emplacement": "programme.html#perimetre",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B08",
+    "affirmation": "Justification des décisions",
+    "source": "https://www.inrs.fr/risques/chutes-hauteur/equipements-protection-individuelle-chutes-hauteur.html",
+    "source_label": "INRS · Systèmes individuels contre les chutes",
+    "portee": "Conception pédagogique, pas validation psychométrique",
+    "emplacement": "decisions.html",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B09",
+    "affirmation": "Dégagement et repère de mesure",
+    "source": "https://www.petzl.com/fr/fr/calculateur-de-degagement/clearancecalculator.html",
+    "source_label": "Petzl · Calculateur de dégagement et limites",
+    "portee": "Calculateur réservé aux références prévues",
+    "emplacement": "decisions.html#reperes",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B10",
+    "affirmation": "Hauteur, déport et trajectoire",
+    "source": "https://www.inrs.fr/risques/chutes-hauteur/equipements-protection-individuelle-chutes-hauteur.html",
+    "source_label": "INRS · Systèmes individuels contre les chutes",
+    "portee": "Limites d’emploi propres au dispositif",
+    "emplacement": "apprenant.html#ancrage",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B11",
+    "affirmation": "Inspection visuelle, tactile et historique",
+    "source": "https://www.petzl.com/on/demandware.static/-/Sites-petzl-master-catalog/default/dwcf84739d/media/product/verif-EPI-cordes-procedure-FR_068bK00000uzwgLQAQ.pdf",
+    "source_label": "Petzl · Procédure de vérification des cordes",
+    "portee": "Procédure cordes Petzl ; autres produits : leur notice",
+    "emplacement": "observations.html",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B12",
+    "affirmation": "Forme du nœud et maîtrise du geste",
+    "source": "https://www.petzl.com/ch/fr/sport/conseils-techniques/les-basiques/noeuds/Noeuds_SPO_a77w0000000GnbmAAC.html",
+    "source_label": "Petzl · Nœuds, référence gestuelle sportive",
+    "portee": "Référence sportive ; emploi professionnel non déduit",
+    "emplacement": "noeuds.html#controle-final",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B13",
+    "affirmation": "Revue des ressources avant projection",
+    "source": "https://code.travail.gouv.fr/code-du-travail/r4323-106",
+    "source_label": "Code du travail · Formation EPI, R.4323-106",
+    "portee": "Vidéos de tiers non qualifiées : réserve formateur",
+    "emplacement": "videos.html",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B14",
+    "affirmation": "Critère observable et nouvelle tentative",
+    "source": "https://code.travail.gouv.fr/code-du-travail/r4323-106",
+    "source_label": "Code du travail · Formation EPI, R.4323-106",
+    "portee": "Organisation pédagogique proposée",
+    "emplacement": "formulaires.html",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  },
+  {
+    "id": "B15",
+    "affirmation": "Concordance des règles de diffusion",
+    "source": "https://code.travail.gouv.fr/code-du-travail/r4323-87",
+    "source_label": "Code du travail · R.4323-87",
+    "portee": "Alternative de prise sûre prévue par R.4323-87",
+    "emplacement": "tracabilite.html",
+    "revue_documentaire": "28/11/2026",
+    "visa_terrain": "Non attesté par la recette numérique"
+  }
+]

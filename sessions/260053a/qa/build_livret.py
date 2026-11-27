@@ -54,7 +54,7 @@ def cover(c,back=False):
         c.setFillColor(colors.HexColor('#cfe0f4'));c.setFont('Serif',13);c.drawString(62,448,'Prévenir · contrôler · pratiquer · préparer le secours')
         c.setFillColor(colors.white);c.setFont('SansB',11)
         for i,t in enumerate(['Formation présentielle · 7 h','Lundi 30 novembre 2026','Consulteam Security · La Seyne-sur-Mer']):c.drawString(62,180-i*17,t)
-        q=Paragraph('Conception et ingénierie pédagogique : Benoît Deflandre · Contact : formation@consul-team.fr<br/>Édition du 27/11/2026 · version 1.9 · validation Consulteam en attente',ParagraphStyle('footC',fontName='Sans',fontSize=7,leading=10,textColor=colors.HexColor('#a9c4e4')));q.wrap(470,60);q.drawOn(c,62,59)
+        q=Paragraph('Conception et ingénierie pédagogique : Benoît Deflandre · Contact : formation@consul-team.fr<br/>Édition du 28/11/2026 · version 2.0 · validation Consulteam en attente',ParagraphStyle('footC',fontName='Sans',fontSize=7,leading=10,textColor=colors.HexColor('#a9c4e4')));q.wrap(470,60);q.drawOn(c,62,59)
     else:
         c.setFillColor(colors.white);c.roundRect(62,519,136,136,8,fill=1,stroke=0);qr(c,65,522,130)
         c.setFont('SansB',19);c.drawString(62,480,'Pour aller plus loin')
@@ -97,7 +97,7 @@ def block(c,b,x,y,w):
     raise ValueError(kind)
 def build_pdf():
     path=ROOT/'pdf/livret-formation-260053a.pdf';c=canvas.Canvas(str(path),pagesize=(W,H),pageCompression=1)
-    c.setTitle('Livret de formation apprenant · Travail en hauteur et port du harnais · 260053A');c.setAuthor('Benoît Deflandre · Consulteam Groupe');c.setSubject('Fiches, ateliers au sol, notes et plan d’action · version 1.9')
+    c.setTitle('Livret de formation apprenant · Travail en hauteur et port du harnais · 260053A');c.setAuthor('Benoît Deflandre · Consulteam Groupe');c.setSubject('Fiches, ateliers au sol, notes et plan d’action · version 2.0')
     cover(c);c.showPage()
     for n,page in enumerate(PAGES,2):
         c.bookmarkPage('page'+str(n));c.addOutlineEntry(page['title'],'page'+str(n),0,False)
@@ -110,7 +110,7 @@ def build_pdf():
         REPORT.append({'page':n,'title':page['title'],'bottom':round(y,2),'overflow':y<52})
         if y<52:raise ValueError('Débordement page '+str(n)+' '+page['title']+' : '+str(y))
         c.setStrokeColor(LINE);c.setLineWidth(.5);c.line(x,39,W-46,39)
-        c.setFont('Sans',7);c.setFillColor(MUTED);c.drawString(x,26,'Livret de formation apprenant · 260053A · Consulteam · version 1.9');c.drawRightString(W-46,26,str(n)+' / '+str(N));c.showPage()
+        c.setFont('Sans',7);c.setFillColor(MUTED);c.drawString(x,26,'Livret de formation apprenant · 260053A · Consulteam · version 2.0');c.drawRightString(W-46,26,str(n)+' / '+str(N));c.showPage()
     cover(c,True);c.save();return path
 
 def html_block(b):
@@ -124,11 +124,11 @@ def html_block(b):
     if t=='link':return '<p class="source"><b>'+b['text']+'</b><br><a href="'+escape(b['url'],quote=True)+'">'+escape(b['url'])+'</a></p>'
 def build_html():
     css=(Path(__file__).parent/'livret-style.css').read_text(encoding='utf-8');(ROOT/'css/livret.css').write_text(css,encoding='utf-8')
-    coverhtml='<section class="lv-page lv-cover"><div class="cbar"></div><img class="cover-logo" src="assets/img/logo-consulteam-blanc.png" alt="Consulteam Groupe"><div class="cover-main"><p class="kick">Livret de formation apprenant · 260053A</p><h1>Travail en hauteur<br>et port du harnais</h1><p>Prévenir · contrôler · pratiquer · préparer le secours</p></div><div class="cover-meta"><b>Formation présentielle · 7 h<br>Lundi 30 novembre 2026<br>Consulteam Security · La Seyne-sur-Mer</b><small>Conception et ingénierie pédagogique : Benoît Deflandre · formation@consul-team.fr<br>Version 1.9 du 27/11/2026 · validation Consulteam en attente</small></div><span class="pn">1 / '+str(N)+'</span></section>'
+    coverhtml='<section class="lv-page lv-cover"><div class="cbar"></div><img class="cover-logo" src="assets/img/logo-consulteam-blanc.png" alt="Consulteam Groupe"><div class="cover-main"><p class="kick">Livret de formation apprenant · 260053A</p><h1>Travail en hauteur<br>et port du harnais</h1><p>Prévenir · contrôler · pratiquer · préparer le secours</p></div><div class="cover-meta"><b>Formation présentielle · 7 h<br>Lundi 30 novembre 2026<br>Consulteam Security · La Seyne-sur-Mer</b><small>Conception et ingénierie pédagogique : Benoît Deflandre · formation@consul-team.fr<br>Version 2.0 du 28/11/2026 · validation Consulteam en attente</small></div><span class="pn">1 / '+str(N)+'</span></section>'
     sections=[]
-    for n,pg in enumerate(PAGES,2):sections.append('<section class="lv-page" id="page-'+str(n)+'"><header>LIVRET DE FORMATION APPRENANT <span>260053A</span></header><p class="kick">'+pg['kicker']+'</p><h2>'+pg['title']+'</h2><p class="lead">'+pg['lead']+'</p><div class="amber"></div>'+''.join(html_block(b) for b in pg['blocks'])+'<footer>Livret de formation apprenant · 260053A · Consulteam · version 1.9<span>'+str(n)+' / '+str(N)+'</span></footer></section>')
+    for n,pg in enumerate(PAGES,2):sections.append('<section class="lv-page" id="page-'+str(n)+'"><header>LIVRET DE FORMATION APPRENANT <span>260053A</span></header><p class="kick">'+pg['kicker']+'</p><h2>'+pg['title']+'</h2><p class="lead">'+pg['lead']+'</p><div class="amber"></div>'+''.join(html_block(b) for b in pg['blocks'])+'<footer>Livret de formation apprenant · 260053A · Consulteam · version 2.0<span>'+str(n)+' / '+str(N)+'</span></footer></section>')
     back='<section class="lv-page lv-cover lv-back"><div class="cbar"></div><img class="cover-logo" src="assets/img/logo-consulteam-blanc.png" alt="Consulteam Groupe"><div class="back-main"><img class="qr" src="assets/img/qr-apprenants.svg" alt="QR code de l’espace apprenant"><h2>Pour aller plus loin</h2><p>Fiches, nœuds, animations, vidéos et auto-évaluation.</p><a href="'+URL+'">Accéder à mon espace apprenant</a><div class="previews"><img src="assets/img/livret-apercu-1.jpg" alt="Aperçu de la fiche de contrôle"><img src="assets/img/livret-apercu-2.jpg" alt="Aperçu de la fiche cabestan"></div></div><div class="cover-meta"><small>Les textes en vigueur, les notices et les consignes du site prévalent sur cet aide-mémoire.<br>Consulteam Groupe · SECU37 · Benoît Deflandre · formation@consul-team.fr</small></div><span class="pn">'+str(N)+' / '+str(N)+'</span></section>'
-    html='<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Livret apprenant · 260053A · Travail en hauteur</title><link rel="stylesheet" href="css/livret.css?v=1.9"></head><body><nav class="lv-bar" aria-label="Livret"><a href="pdf/livret-formation-260053a.pdf" download>Télécharger le PDF</a><button type="button" onclick="window.print()">Imprimer</button><a href="apprenants.html?e=p">Espace apprenant</a><a href="#page-3">Sommaire</a></nav><main>'+coverhtml+''.join(sections)+back+'</main></body></html>'
+    html='<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Livret apprenant · 260053A · Travail en hauteur</title><link rel="stylesheet" href="css/livret.css?v=2.0"></head><body><nav class="lv-bar" aria-label="Livret"><a href="pdf/livret-formation-260053a.pdf" download>Télécharger le PDF</a><button type="button" onclick="window.print()">Imprimer</button><a href="apprenants.html?e=p">Espace apprenant</a><a href="#page-3">Sommaire</a></nav><main>'+coverhtml+''.join(sections)+back+'</main></body></html>'
     (ROOT/'livret.html').write_text(html,encoding='utf-8')
 def render(path):
     import pypdfium2 as pdfium

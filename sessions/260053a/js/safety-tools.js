@@ -9,7 +9,7 @@ function number(value){
 function clearance(required,available,reference){
   var r=number(required),a=number(available);
   if(r===null||r<=0||a===null)return{state:'invalid'};
-  if(reference!=='feet'&&reference!=='anchor')return{state:'reference'};
+  if(reference!=='feet'&&reference!=='anchor'&&reference!=='attachment')return{state:'reference'};
   return{state:a<r?'insufficient':'geometry',required:r,available:a,delta:a-r};
 }
 function factor(height,length){

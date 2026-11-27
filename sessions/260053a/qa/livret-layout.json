@@ -1,6 +1,6 @@
 {
-  "pages": 28,
-  "bytes": 1639768,
+  "pages": 32,
+  "bytes": 1649296,
   "format": "A4 portrait",
   "overflow": [],
   "page_layout": [
@@ -120,42 +120,66 @@
     },
     {
       "page": 21,
-      "title": "Je vérifie mes acquis · 1 / 2",
-      "bottom": 265,
+      "title": "Lire la notice pour décider",
+      "bottom": 233,
       "overflow": false
     },
     {
       "page": 22,
-      "title": "Je vérifie mes acquis · 2 / 2",
-      "bottom": 265,
+      "title": "Longe double : le brin inutilisé",
+      "bottom": 231,
       "overflow": false
     },
     {
       "page": 23,
-      "title": "Comprendre les réponses",
-      "bottom": 291,
+      "title": "Décider et justifier · 1 / 2",
+      "bottom": 307,
       "overflow": false
     },
     {
       "page": 24,
+      "title": "Décider et justifier · 2 / 2",
+      "bottom": 321,
+      "overflow": false
+    },
+    {
+      "page": 25,
+      "title": "Je vérifie mes acquis · 1 / 2",
+      "bottom": 251,
+      "overflow": false
+    },
+    {
+      "page": 26,
+      "title": "Je vérifie mes acquis · 2 / 2",
+      "bottom": 251,
+      "overflow": false
+    },
+    {
+      "page": 27,
+      "title": "Comprendre les réponses",
+      "bottom": 249,
+      "overflow": false
+    },
+    {
+      "page": 28,
       "title": "Mon plan d’action",
       "bottom": 222,
       "overflow": false
     },
     {
-      "page": 25,
+      "page": 29,
       "title": "Notes et observations",
       "bottom": 248,
       "overflow": false
     },
     {
-      "page": 26,
+      "page": 30,
       "title": "Retrouver les sources",
       "bottom": 215,
       "overflow": false
     },
     {
-      "page": 27,
+      "page": 31,
       "title": "Crédits et limites des images",
       "bottom": 334,
       "overflow": false

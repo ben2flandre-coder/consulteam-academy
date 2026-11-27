@@ -38,7 +38,7 @@ for p,h in pages.items():
 for p in (BASE/'js').glob('*.js'):
     r=subprocess.run(['node','--check',str(p)],text=True,capture_output=True,encoding='utf-8')
     if r.returncode:errors.append({'file':p.name,'error':r.stderr})
-for p in (BASE/'assets/svg').glob('*.svg'):
+for p in (BASE/'assets/svg').rglob('*.svg'):
     try:ET.parse(p)
     except ET.ParseError as e:errors.append({'file':p.name,'error':str(e)})
 report={'pages':len(pages),'local_and_external_references':refs,'errors':errors,'scope':'Existence des cibles locales, ancres statiques, attributs, alternatives, syntaxe JS et XML ; les services externes ne sont pas testés par ce contrôle.'}

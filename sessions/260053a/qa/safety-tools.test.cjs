@@ -11,4 +11,5 @@ assert.equal(T.clearance('4','5','anchor').delta,1);
 assert.equal(T.factor('-1','2').state,'invalid');assert.equal(T.factor('2','0').state,'invalid');
 assert.deepEqual(T.factor('0','2'),{state:'model',factor:0});
 assert.equal(T.factor('4','2').factor,2);assert.equal(T.factor('4.01','2').state,'outside');
-console.log('Outils de sécurité : 23 cas de saisie et de limites contrôlés.');
+assert.equal(T.clearance('4','5','attachment').state,'geometry');
+console.log('Outils de sécurité : 24 cas de saisie et de limites contrôlés.');

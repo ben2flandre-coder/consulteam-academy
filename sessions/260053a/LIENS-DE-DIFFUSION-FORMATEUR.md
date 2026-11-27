@@ -13,3 +13,6 @@ Base : https://ben2flandre-coder.github.io/consulteam-academy/sessions/260053a/
 Les liens d’accueil des participants restent dans leur parcours. Les documents et corrigés du formateur sont sur un hébergement public : le masquage de navigation ne constitue pas un contrôle d’accès.
 
 Les validations Consulteam restent à leur état réel dans la traçabilité. La réception de la zone, du matériel et des moyens de secours est à effectuer avant la pratique. Voir qa/RECETTE-1.8.md pour les corrections et les contrôles.
+
+
+Version 2.0 du 28/11/2026 : livret apprenant 32 pages. Cas terrain : [decisions.html](decisions.html) ; [observations](observations.html). Les liens de diffusion habituels restent inchangés.

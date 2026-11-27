@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',function(){
   var host=document.getElementById('qcm-slides'),score=0,answered=0;
   if(host&&window.QCM){
     QCM.forEach(function(x,i){
-      var s=document.createElement('section');s.className='slide';s.dataset.title='QCM '+(i+1)+'/10';s.dataset.q=i;s.dataset.sec='8 · QCM';if(i===0)s.dataset.min='25';
+      var s=document.createElement('section');s.className='slide';s.dataset.title='QCM '+(i+1)+'/'+QCM.length;s.dataset.q=i;s.dataset.sec='8 · QCM';if(i===0)s.dataset.min='25';
       s.innerHTML='<span class="k">QCM · question '+(i+1)+' sur '+QCM.length+'</span><h2></h2><div class="opts"></div><p class="qexp" aria-live="polite"></p><div class="note"><p>Laisser répondre (main levée ou individuellement), puis toucher la réponse. Reprendre oralement chaque erreur. Le QCM contribue à l’évaluation ; la maîtrise pratique est appréciée séparément. Seuil de réussite : à fixer avec l’organisme avant la session.</p></div>';
       s.querySelector('h2').textContent=x.q;
       var o=s.querySelector('.opts');
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded',function(){
   function go(i,showAll,back){
     i=Math.max(0,Math.min(slides.length-1,i));
     slides.forEach(function(s,k){s.classList.remove('active','back')});
-    var s=slides[i];s.classList.add('active');if(back)s.classList.add('back');
+    var s=slides[i];s.classList.add('active');slides.forEach(function(other){other.setAttribute('aria-hidden',String(other!==s))});if(back)s.classList.add('back');
     if(showAll||back)frags(s).forEach(function(f){f.classList.add('show')});
     else if(!s.dataset.seen)frags(s).forEach(function(f){f.classList.remove('show')});
     s.dataset.seen='1';s.scrollTop=0;
@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded',function(){
     if(m&&(curSec!==s.dataset.sec)){curMin=m;if(!tRun){tLeft=m*60;tDraw()}}
     curSec=s.dataset.sec;
     /* notes */
+    ol.querySelectorAll('button').forEach(function(b,k){b.classList.toggle('cur',k===i);if(k===i)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});
     var n=s.querySelector('.note');notes.innerHTML='<h4>Notes formateur — '+(s.dataset.title||(s.querySelector('h1,h2')||{}).textContent||'')+'</h4>'+(n?n.innerHTML:'<p>Pas de note.</p>');
     if(location.hash!=='#'+(i+1))history.replaceState(null,'','#'+(i+1));
     S.set('h-deck-pos',String(i));
@@ -66,6 +67,7 @@ document.addEventListener('DOMContentLoaded',function(){
     if(f.length){f[f.length-1].classList.remove('show');return}
     if(cur>0){go(cur-1,false,true)}}
   document.getElementById('bn').addEventListener('click',next);
+  var reveal=document.getElementById('breveal');if(reveal)reveal.addEventListener('click',function(){frags(slides[cur]).forEach(function(f){f.classList.add('show')})});
   document.getElementById('bp').addEventListener('click',prev);
   function tog(el,btn){el.classList.toggle('on');if(btn)btn.setAttribute('aria-pressed',el.classList.contains('on'))}
   var bnotes=document.getElementById('bnotes'),bovw=document.getElementById('bovw'),bfs=document.getElementById('bfs'),bhelp=document.getElementById('bhelp'),help=document.getElementById('help');
@@ -94,6 +96,7 @@ document.addEventListener('DOMContentLoaded',function(){
   var sx=0,sy=0,st=0;
   stage.addEventListener('touchstart',function(e){var t=e.changedTouches[0];sx=t.clientX;sy=t.clientY;st=Date.now()},{passive:true});
   stage.addEventListener('touchend',function(e){var t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;
+    if(e.target.closest('input,textarea,select,button,a,[data-photo-sequence]'))return;
     if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.6&&Date.now()-st<700){dx<0?next():prev()}},{passive:true});
   /* ateliers : état mémorisé */
   document.querySelectorAll('.atl').forEach(function(b,i){var k='h-atl-'+i,st=S.get(k)||'todo';b.dataset.s=st;lab(b);
@@ -107,3 +110,4 @@ document.addEventListener('DOMContentLoaded',function(){
   tDraw();
 });
 })();
+

@@ -102,6 +102,26 @@ page('Trois situations à résoudre','Expliquer la décision et les informations
  h('3 · Le secours reste imprécis'),p('Deux salariés sont équipés. Personne ne sait qui pourrait évacuer une victime suspendue et aucun matériel de sauvetage n’est identifié.'),notes('Conditions à réunir avant de commencer',3),
  p('Repères de correction : 1. Retirer le matériel et appliquer la notice ; tracer. 2. Refuser cette configuration et rechercher une solution adaptée. 3. Organiser un secours réalisable et vérifier les compétences et moyens avant l’exposition.'))
 
+
+page('Lire la notice pour décider','Une référence précise, une configuration et des limites à retrouver.',
+ table(['Information à rechercher','Ma preuve dans le document'],['Produit, référence, génération, édition','________________________________'],['Fonction et combinaisons autorisées','________________________________'],['Masse équipée et position de l’ancrage','________________________________'],['Liaison, connecteurs, espace libre et repère','________________________________'],['Obstacles, arêtes, déport et effets de la ligne','________________________________'],['Vérification, entretien et secours','________________________________']),
+ alert('Une donnée indispensable absente ne se remplace pas par une valeur habituelle. Suspendre le choix jusqu’à une information exploitable.'),
+ h('La construction ne détermine pas la fonction'),p('Toronnée, tressée ou âme-gaine décrit une construction. Le fabricant Kratos propose par exemple une longe HOPE FA3020015 en corde toronnée avec absorbeur. Ce contre-exemple ne rend utilisable aucun cordage inconnu : identifier produit, usage et compatibilité.'),
+ notes('Information manquante / interlocuteur / décision',4),kicker='Lecture de notice')
+page('Longe double : le brin inutilisé','Vérifier toute la transition, y compris le stationnement du brin libre.',
+ bullets('Identifier le modèle exact et sa génération.','Retrouver les connexions et les points de stationnement autorisés dans la notice.','Décrire la transition au sol, puis la réaliser sous observation.','Conserver la protection prévue pendant le transfert.','Éviter toute liaison parasite qui contrarie le fonctionnement du système.'),
+ h('Un exemple documentaire à délimiter'),p('Petzl distingue des générations d’ABSORBICA-Y avant et depuis 2024 dans son explication du stationnement. La position autorisée et le fonctionnement ne se déduisent pas d’un dessin générique ; consulter la notice du matériel réellement utilisé.'),
+ table(['Pendant l’atelier','Observation du binôme / formateur'],['Modèle et notice identifiés','________________________________'],['Point de stationnement montré','________________________________'],['Transition et limites expliquées','________________________________'],['Correction et nouvelle tentative','________________________________']),
+ alert('Une démonstration regardée ou une vidéo consultée ne prouvent pas la maîtrise du geste. Le formateur renseigne ce qui a été réellement observé.'),notes('Mes points de vigilance',3),kicker='Atelier supervisé')
+page('Décider et justifier · 1 / 2','Énoncés fictifs : aucune valeur ne décrit un matériel du site.',
+ h('1 · Comparer depuis le même repère'),p('Une notice d’exercice demande 4,20 m depuis les pieds. Un relevé annonce 4,60 m depuis l’ancrage. Peut-on conclure ? Quelle information faut-il retrouver ?'),notes('Ma décision et sa justification',4),
+ h('2 · Une combinaison incomplètement identifiée'),p('Harnais et antichute sont marqués. La corde ressemble à celle d’hier, mais sa référence et la combinaison prescrite ne sont pas établies. Que décider ?'),notes('Ma décision et sa justification',4),
+ h('Critères de retour'),p('1. Refuser une comparaison directe de repères différents et demander une mesure exploitable. 2. Ne pas déduire la compatibilité de l’aspect ou du diamètre ; retrouver la référence prescrite. Discuter aussi ancrage, obstacles et secours.'),kicker='Raisonnement technique')
+page('Décider et justifier · 2 / 2','Une condition manquante suffit à suspendre une configuration.',
+ h('3 · Deux minutes, vingt fois'),p('La tâche sur échelle est courte et répétée vingt fois. Aucune impossibilité technique de protection collective n’est établie. Quelle condition manque dans la branche « risque faible et courte durée » ?'),notes('Ma décision et sa justification',4),
+ h('4 · Une rubalise autour d’une surface fragile'),p('Le cheminement passe près d’un lanterneau ; rien n’empêche de le franchir. Quelle différence entre signalisation, exclusion effective et protection contre la chute ?'),notes('Ma décision et sa justification',4),
+ h('Critères de retour'),p('3. La branche considérée exige aussi l’absence de caractère répétitif ; la courte durée ne suffit pas. 4. Une rubalise signale sans démontrer une protection. Revoir accès, circulation, zone d’exposition et mise en place des mesures.'),kicker='Raisonnement technique')
+
 js="const fs=require('fs'),vm=require('vm');const c={window:{}};vm.runInNewContext(fs.readFileSync(process.argv[1],'utf8'),c);process.stdout.write(JSON.stringify(c.window.QCM));"
 QCM=json.loads(subprocess.check_output(['node','-e',js,str(ROOT/'js/qcm-data.js')],text=True,encoding='utf-8'))
 for start in [0,5]:
@@ -125,7 +145,7 @@ SOURCES=[
  ('INRS : équipements de protection individuelle contre les chutes','https://www.inrs.fr/risques/chutes-hauteur/equipements-protection-individuelle-chutes-hauteur.html'),
  ('Petzl : calculateur de dégagement et limites des configurations','https://www.petzl.com/fr/fr/calculateur-de-degagement/clearancecalculator.html'),
  ('Petzl : demi-cabestan, mule et nœud d’arrêt','https://www.petzl.com/ca/fr/sport/conseils-techniques/les-basiques/video---demi-cabestan-avec-un-noeud-de-mule-et-noeud-darret/Video---Demi-cabestan-avec-un-noeud-de-mule-et-noe_SPO_a77bK000007VEnRQAW.html')]
-page('Retrouver les sources','Sources du contenu révisé le 27 novembre 2026 ; notices à consulter pour le matériel utilisé.',
+page('Retrouver les sources','Sources du contenu révisé le 28 novembre 2026 ; notices à consulter pour le matériel utilisé.',
  *[link(label,url) for label,url in SOURCES],
  p('Les références détaillées et l’historique des corrections se trouvent dans la page « Traçabilité et sources » de la plateforme. Les textes en vigueur, notices et consignes du site prévalent sur cet aide-mémoire.'),
  notes('Mes notices et documents à retrouver',4),kicker='Références')
@@ -134,5 +154,5 @@ page('Crédits et limites des images','Des formes de référence pour observer, 
  p('Les images Wikimedia sont reproduites sans retouche de contenu ; certaines sont des prévisualisations. Les pages sources, fichiers originaux et liens de licence figurent dans les crédits en ligne. Conserver l’attribution, la licence et l’indication des modifications lors d’une réutilisation.'),
  p('Les tracés ouverts du huit et les animations de la plateforme facilitent la lecture du parcours de corde. Ils ne reproduisent ni le geste de nouage ni le serrage et ne valident aucune mise en charge.'),
  link('Crédits détaillés des nœuds','https://ben2flandre-coder.github.io/consulteam-academy/sessions/260053a/credits-noeuds.html'),
- h('Édition et conception'),p('Conception et ingénierie pédagogique : Benoît Deflandre. Consulteam Groupe · session 260053A. Version 1.9 du 27 novembre 2026. Validation Consulteam : en attente.'),
+ h('Édition et conception'),p('Conception et ingénierie pédagogique : Benoît Deflandre. Consulteam Groupe · session 260053A. Version 2.0 du 28 novembre 2026. Validation Consulteam : en attente.'),
  p('Présentation reprise des livrets du dépôt Consulteam Supports : couverture bleu nuit et bandeau ambre, fiches apprenant, zones de notes, plan d’action et pagination continue.'),kicker='Médiathèque et édition')

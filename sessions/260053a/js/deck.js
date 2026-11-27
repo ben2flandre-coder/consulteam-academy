@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded',function(){
   tm.addEventListener('dblclick',function(){tLeft=curMin*60;tDraw()});
   var curMin=0,curSec='';
   function frags(s){return [].slice.call(s.querySelectorAll('.frag'))}
+  var revealStatus=document.createElement('span');revealStatus.className='reveal-status';document.querySelector('.dk-bot').appendChild(revealStatus);
+  function drawReveal(){var fs=frags(slides[cur]),left=fs.filter(function(f){return !f.classList.contains('show')}).length,b=document.getElementById('breveal');if(b){b.disabled=left===0;b.textContent=left?'Tout révéler ('+left+')':'Vue complète';}revealStatus.textContent=fs.length?(fs.length-left)+' / '+fs.length+' repères visibles':'';}
   function go(i,showAll,back){
     i=Math.max(0,Math.min(slides.length-1,i));
     slides.forEach(function(s,k){s.classList.remove('active','back')});
@@ -60,14 +62,15 @@ document.addEventListener('DOMContentLoaded',function(){
     var n=s.querySelector('.note');notes.innerHTML='<h4>Notes formateur — '+(s.dataset.title||(s.querySelector('h1,h2')||{}).textContent||'')+'</h4>'+(n?n.innerHTML:'<p>Pas de note.</p>');
     if(location.hash!=='#'+(i+1))history.replaceState(null,'','#'+(i+1));
     S.set('h-deck-pos',String(i));
+    drawReveal();
   }
   function next(){var s=slides[cur],f=frags(s).filter(function(x){return!x.classList.contains('show')});
-    if(f.length){f[0].classList.add('show');return}go(cur+1)}
+    if(f.length){f[0].classList.add('show');drawReveal();return}go(cur+1)}
   function prev(){var s=slides[cur],f=frags(s).filter(function(x){return x.classList.contains('show')});
-    if(f.length){f[f.length-1].classList.remove('show');return}
+    if(f.length){f[f.length-1].classList.remove('show');drawReveal();return}
     if(cur>0){go(cur-1,false,true)}}
   document.getElementById('bn').addEventListener('click',next);
-  var reveal=document.getElementById('breveal');if(reveal)reveal.addEventListener('click',function(){frags(slides[cur]).forEach(function(f){f.classList.add('show')})});
+  var reveal=document.getElementById('breveal');if(reveal)reveal.addEventListener('click',function(){frags(slides[cur]).forEach(function(f){f.classList.add('show')});drawReveal()});
   document.getElementById('bp').addEventListener('click',prev);
   function tog(el,btn){el.classList.toggle('on');if(btn)btn.setAttribute('aria-pressed',el.classList.contains('on'))}
   var bnotes=document.getElementById('bnotes'),bovw=document.getElementById('bovw'),bfs=document.getElementById('bfs'),bhelp=document.getElementById('bhelp'),help=document.getElementById('help');

@@ -1,6 +1,6 @@
 {
   "pages": 32,
-  "bytes": 1649296,
+  "bytes": 1650813,
   "format": "A4 portrait",
   "overflow": [],
   "page_layout": [
@@ -121,13 +121,13 @@
     {
       "page": 21,
       "title": "Lire la notice pour décider",
-      "bottom": 233,
+      "bottom": 192,
       "overflow": false
     },
     {
       "page": 22,
       "title": "Longe double : le brin inutilisé",
-      "bottom": 231,
+      "bottom": 180,
       "overflow": false
     },
     {

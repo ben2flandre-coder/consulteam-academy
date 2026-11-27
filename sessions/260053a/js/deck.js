@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded',function(){
   slides.forEach(function(s,i){var li=document.createElement('li'),b=document.createElement('button');b.type='button';
     var t=s.dataset.title||(s.querySelector('h1,h2')||{}).textContent||('Diapositive '+(i+1));
     b.innerHTML='<small>'+(i+1)+' · '+(s.dataset.sec||'')+'</small>';b.appendChild(document.createTextNode(t));
-    b.addEventListener('click',function(){ovw.classList.remove('on');go(i,true)});li.appendChild(b);ol.appendChild(li)});
+    b.addEventListener('click',function(){ovw.classList.remove('on');document.getElementById('bovw').setAttribute('aria-pressed','false');go(i,true)});li.appendChild(b);ol.appendChild(li)});
   var prog=document.querySelector('.prog i'),cnt=document.querySelector('.cnt'),sec=document.querySelector('.sec');
   /* chrono */
   var tm=document.getElementById('timer'),tRun=false,tLeft=0,tInt=null;
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded',function(){
     else if(k==='t'||k==='T')tm.click();
     else if(k==='b'||k==='B'||k==='.')document.body.classList.toggle('black');
     else if(k==='?'||k==='h')help.classList.toggle('on');
-    else if(k==='Escape'){help.classList.remove('on');ovw.classList.remove('on');notes.classList.remove('on')}
+    else if(k==='Escape'){help.classList.remove('on');ovw.classList.remove('on');notes.classList.remove('on');bovw.setAttribute('aria-pressed','false');bnotes.setAttribute('aria-pressed','false')}
   });
   /* balayage tactile */
   var sx=0,sy=0,st=0;

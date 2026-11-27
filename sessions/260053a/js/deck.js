@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded',function(){
   tm.addEventListener('click',function(){tRun?tStop():tStart()});
   tm.addEventListener('dblclick',function(){tLeft=curMin*60;tDraw()});
   var curMin=0,curSec='';
-  function frags(s){return [].slice.call(s.querySelectorAll('.frag'))}
+  function frags(s){return [].slice.call(s.querySelectorAll('.frag')).filter(function(f){return !f.closest('.note')})}
   var revealStatus=document.createElement('span');revealStatus.className='reveal-status';document.querySelector('.dk-bot').appendChild(revealStatus);
   function drawReveal(){var fs=frags(slides[cur]),left=fs.filter(function(f){return !f.classList.contains('show')}).length,b=document.getElementById('breveal');if(b){b.disabled=left===0;b.textContent=left?'Tout révéler ('+left+')':'Vue complète';}revealStatus.textContent=fs.length?(fs.length-left)+' / '+fs.length+' repères visibles':'';}
   function go(i,showAll,back){

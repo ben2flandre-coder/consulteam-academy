@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-28",
+  "edition": "2.1",
+  "resultats": [
+    {
+      "controle": "Livret PDF : 32 pages",
+      "conforme": true
+    },
+    {
+      "controle": "Livret HTML : 32 sections paginées",
+      "conforme": true
+    },
+    {
+      "controle": "Version 2.1 indiquée dans le PDF et le HTML",
+      "conforme": true
+    },
+    {
+      "controle": "Pagination PDF n / 32",
+      "conforme": true
+    },
+    {
+      "controle": "Dix questions communes",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 1 : énoncé présent dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 1 : réponse juste présente dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 2 : énoncé présent dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 2 : réponse juste présente dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 3 : énoncé présent dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 3 : réponse juste présente dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 4 : énoncé présent dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 4 : réponse juste présente dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 5 : énoncé présent dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 5 : réponse juste présente dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 6 : énoncé présent dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 6 : réponse juste présente dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 7 : énoncé présent dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 7 : réponse juste présente dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 8 : énoncé présent dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 8 : réponse juste présente dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 9 : énoncé présent dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 9 : réponse juste présente dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 10 : énoncé présent dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "QCM 10 : réponse juste présente dans le PDF",
+      "conforme": true
+    },
+    {
+      "controle": "index.html : libellé courant 32 pages",
+      "conforme": true
+    },
+    {
+      "controle": "apprenants.html : libellé courant 32 pages",
+      "conforme": true
+    },
+    {
+      "controle": "apprenant.html : libellé courant 32 pages",
+      "conforme": true
+    },
+    {
+      "controle": "67 vues de projection : 57 statiques + 10 QCM",
+      "conforme": true
+    },
+    {
+      "controle": "Source du QCM partagée par cours et projection",
+      "conforme": true
+    },
+    {
+      "controle": "Périmètre de session inchangé",
+      "conforme": true
+    }
+  ],
+  "limite": "Contrôle éditorial automatisé ciblé ; la concordance technique complète fait aussi l’objet d’une revue documentaire et la pratique reste soumise au contrôle humain."
+}

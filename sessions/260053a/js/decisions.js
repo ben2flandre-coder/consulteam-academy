@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded',function(){
   });
   document.getElementById('decision-print').addEventListener('click',function(){window.print();});
   document.getElementById('decision-export').addEventListener('click',function(){
-    var data={version:'2.0',session:'260053A',nature:'Atelier formatif sans validation automatique de compétence',exporte:new Date().toISOString(),reponses:views.map(function(v){return{id:v.c.id,decision:v.answer()===null?null:v.c.options[v.answer()],justification:v.ta.value};})};
+    var data={version:'2.1',session:'260053A',nature:'Atelier formatif sans validation automatique de compétence',exporte:new Date().toISOString(),reponses:views.map(function(v){return{id:v.c.id,decision:v.answer()===null?null:v.c.options[v.answer()],justification:v.ta.value};})};
     var u=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=u;a.download='mes-decisions-260053a.json';a.click();setTimeout(function(){URL.revokeObjectURL(u);},1000);
   });
   document.getElementById('decision-reset').addEventListener('click',function(){views.forEach(function(v){S.del('decision-2-'+v.c.id);v.field.querySelectorAll('input').forEach(function(r){r.checked=false;});v.ta.value='';v.status.textContent='Réponse effacée.';v.result.hidden=true;v.btn.setAttribute('aria-expanded','false');});});

@@ -30,7 +30,9 @@ main#stage{position:fixed;inset:var(--bar) 0 var(--bottom);padding:0;margin:0;ma
  .mission-list .n{font-size:1.45em;color:#0b68ae}
  .slide .callout,.slide .answer{border-radius:0 10px 10px 0}
  .visual-focus.projection>.vis{max-width:none}
- .visual-focus.projection>.vis img{max-height:calc(100dvh - 275px);width:auto;max-width:100%;margin:auto;border:0;box-shadow:none;border-radius:10px}
+ .visual-focus.projection>.vis img{max-height:calc(100dvh - 315px);width:auto;max-width:100%;margin:auto;border:0;box-shadow:none;border-radius:10px}
+ .visual-focus.projection:has(.projection-takeaway)>.vis img{max-height:calc(100dvh - 345px)}
+ .slide:has(img[src$="trois-usages.svg"]) .below img{max-height:25vh}
  .visual-focus.projection>.vis figcaption{display:block;text-align:center;font-size:14px;line-height:1.3;margin:5px 0}
  .visual-focus.projection:has(.answer)>.vis img{max-height:calc(100dvh - 350px)}
  .projection-takeaway{border-left:4px solid #f6b63d;padding:8px 16px;margin:8px auto 0!important;font-size:.92em;font-weight:700;max-width:1000px;background:#e8f0f8}
@@ -59,7 +61,7 @@ main#stage{position:fixed;inset:var(--bar) 0 var(--bottom);padding:0;margin:0;ma
  .reveal-status{font:700 13px var(--font);color:#52677d;white-space:nowrap;margin-left:6px}
  .dk-bot button:disabled{background:#e6edf4;color:#5d7288;cursor:default}
  .dk-bot #bn{background:#0b68ae}.dk-top{background:#102c53}
- #notes details{background:#fff;color:#18314c}#notes h2{font-size:1.2em}
+ #notes details{background:#fff;color:#18314c}#notes h2{font-size:1.2em}#notes .frag{opacity:1;visibility:visible;transform:none;pointer-events:auto}
  @media(min-width:1500px){.slide{padding-top:32px}.visual-focus.projection>.vis img{max-height:calc(100dvh - 300px)}}
  @media(max-width:700px){.visual-focus.projection>.vis img,.visual-focus.projection:has(.answer)>.vis img{width:100%;max-height:none}.projection-takeaway{font-size:17px}.calculator-view .split{grid-template-columns:1fr}.calculator-view .measure-visual{min-height:280px;padding:22px}.reveal-status{display:none}.cover-scene{background:linear-gradient(110deg,#102c53f7,#102c53c9),url('../assets/img/formation-hauteur.webp') center/cover}.slide .k{font-size:12px}.slide.projection{padding-inline:14px}.dk-bot{overflow-x:auto}.prog{min-width:12px}}
 }

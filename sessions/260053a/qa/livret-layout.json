@@ -1,6 +1,6 @@
 {
   "pages": 32,
-  "bytes": 1650813,
+  "bytes": 1650979,
   "format": "A4 portrait",
   "overflow": [],
   "page_layout": [
@@ -25,7 +25,7 @@
     {
       "page": 5,
       "title": "Les exigences à connaître",
-      "bottom": 231,
+      "bottom": 181,
       "overflow": false
     },
     {

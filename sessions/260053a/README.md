@@ -1,6 +1,6 @@
-# Version 2.0 — consolidation du 28/11/2026
+# Version 2.1 — consolidation du 28/11/2026
 
-Quinze points du benchmark traités dans les contenus et outils ; six cas avec justification, dossiers d’observation, grille observable, 15 schémas originaux et diaporama de 57 vues statiques + 10 questions. Livret commun HTML/PDF : 32 pages A4 portrait. Voir [matrice](qa/PLAN-2.0.md) et [recette](qa/RECETTE-2.0.md). Les validations matérielles et les visas humains restent distincts de la recette numérique.
+Pleine largeur à l’écran, menu Pilotage avec reprise de la dernière vue, 15 variantes de schémas pour projection et comparaison géométrique animée. Quinze points du benchmark traités dans les contenus et outils ; six cas avec justification, dossiers d’observation, grille observable, 15 schémas originaux et diaporama de 57 vues statiques + 10 questions. Livret commun HTML/PDF : 32 pages A4 portrait. Voir [matrice](qa/PLAN-2.0.md) et [recette](qa/RECETTE-2.0.md). Les validations matérielles et les visas humains restent distincts de la recette numérique.
 
 # Session 260053a — Travail en hauteur / port du harnais (SECU37)
 
@@ -20,7 +20,7 @@ Diffuser uniquement les liens des pages concernées, jamais celui du dépôt.
 Les visuels d’équipements sont générés (non contractuels) : à remplacer par des photos réelles. Les nœuds sont dessinés d’après un trajet de corde calculé et contrôlé (test automatique) ; cabestan, demi-cabestan et mule : démonstration sur corde réelle.
 
 
-## Version et traçabilité
+## Historique et traçabilité
 Version **1.9 du 27/11/2026** : photos et planche libres créditées, séquence photographique cabestan, commandes de lecture et pause immédiate, livret apprenant A4 portrait standardisé de 28 pages. Sources communes HTML/PDF : `qa/livret_content.py` et `qa/build_livret.py` ; dépendances ReportLab, Pillow, pypdf et pypdfium2.
 
 Version **1.8 du 27/11/2026** : correction des résumés R.4323-61 et R.4224-15, du délai des vérifications de l’arrêté du 19 mars 1993, des repères du tirant d’air et des consignes après suspension. Comparateur de distances selon la notice, saisies contrôlées, parcours participant conservé, stockage séparé par session, onglets accessibles au clavier, impression individuelle des formulaires, QR codes dimensionnés avec un viewBox. Livret révisé dans `pdf/` (ancienne génération depuis les HTML, remplacée en 1.9 par le contenu éditorial commun).

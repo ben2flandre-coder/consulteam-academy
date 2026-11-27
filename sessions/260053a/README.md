@@ -32,3 +32,5 @@ Version 1.7 du 27/11/2026 (revue critique : nœuds redessinés sous la forme des
 - Présentation alignée sur `consulteam-supports/pdf/261537b/livret-formation-261537b.pdf` et la trame éditoriale de `sessions/a260h4a/livret.html`. Couverture bleu nuit/ambre, quatrième de couverture et QR participant, pagination n / N.
 - `assets/img/noeuds-libres/credits.json` et `credits-noeuds.html` : origine, auteur et licence des 13 médias intégrés. Les six vues du cabestan sont une préparation à plat ; elles ne simulent pas le nouage sur une barre.
 - Les tracés géométriques montrent un parcours ouvert ; les photos de référence ne valident aucun système antichute.
+
+Recette de la version 1.9 : [qa/RECETTE-1.9.md](qa/RECETTE-1.9.md).

@@ -13,8 +13,8 @@ Session **260053A** · lundi 30 novembre 2026 · 09 h–12 h / 13 h–17 h (7 h)
 | `formateur.html` | Déroulé, corrigés, vigilance | **formateur uniquement** |
 
 Diffuser uniquement les liens des pages concernées, jamais celui du dépôt.
-Les visuels d'équipements et de nœuds sont générés (non contractuels) : à remplacer par des photos réelles.
+Les visuels d’équipements sont générés (non contractuels) : à remplacer par des photos réelles. Les nœuds sont dessinés d’après un trajet de corde calculé et contrôlé (test automatique) ; cabestan, demi-cabestan et mule : démonstration sur corde réelle.
 
 
 ## Version et traçabilité
-Version 1.6 du 23/11/2026 (planches pas à pas dessinées, étapes alignées sur les fiches). Version 1.5 du 21/11/2026 (animations de nœuds, retrait de la photo du huit sur anneau). Version 1.4 du 21/11/2026 (page Nœuds : choix par usage, recherche, mode étape par étape). Version 1.3 du 20/11/2026 (reprise de la session A260B0A pour 260053A : INTER, 10 participants, salle MILLENNIUM STADIUM, commande 260053A-15752). Voir `tracabilite.html` (historique, sources, rapprochement des illustrations, validation Consulteam en attente). Horaires : 9 h–12 h / 13 h–17 h (convocation Consulteam) ; déroulé formateur et mode animation recalés.
+Version 1.7 du 27/11/2026 (revue critique : nœuds redessinés sous la forme des manuels, images générées de nœuds retirées, fiches, vidéos et références corrigées). Version 1.6 du 23/11/2026 (planches pas à pas dessinées, étapes alignées sur les fiches). Version 1.5 du 21/11/2026 (animations de nœuds, retrait de la photo du huit sur anneau). Version 1.4 du 21/11/2026 (page Nœuds : choix par usage, recherche, mode étape par étape). Version 1.3 du 20/11/2026 (reprise de la session A260B0A pour 260053A : INTER, 10 participants, salle MILLENNIUM STADIUM, commande 260053A-15752). Voir `tracabilite.html` (historique, sources, rapprochement des illustrations, validation Consulteam en attente). Horaires : 9 h–12 h / 13 h–17 h (convocation Consulteam) ; déroulé formateur et mode animation recalés.

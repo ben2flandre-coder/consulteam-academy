@@ -13,4 +13,4 @@ Session **A2608PA** · vendredi 2 octobre 2026 · 09 h–12 h / 13 h 30–17 h 3
 | `formateur.html` | Déroulé, corrigés, vigilance | **formateur uniquement** |
 
 Diffuser uniquement les liens des pages concernées, jamais celui du dépôt.
-Les visuels d'équipements et de nœuds sont générés (non contractuels) : à remplacer par des photos réelles.
+Les visuels d’équipements sont générés (non contractuels) : à remplacer par des photos réelles. Les nœuds sont dessinés d’après un trajet de corde calculé et contrôlé (test automatique) ; cabestan, demi-cabestan et mule : démonstration sur corde réelle.

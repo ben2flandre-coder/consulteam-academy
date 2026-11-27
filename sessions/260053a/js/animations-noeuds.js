@@ -1,23 +1,16 @@
 (function(){
 'use strict';
 var K=window.KnotAnim,G=window.KnotGeo;
+/* trajets ouverts dessinés (knots-geo.js), recadrés dans la zone de dessin */
 function build(kind,tail){
-  tail=tail||{};
-  var P=K.fit(G[kind](),tail.box||{x:230,y:60,w:340,h:330});
-  var want=K.crossings(P,true).length,n=P.length,cx=0,cy=0;P.forEach(function(p){cx+=p.x;cy+=p.y});cx/=n;cy/=n;
-  var idx=P.map(function(p,i){return i}).sort(function(a,b){return Math.hypot(P[b].x-cx,P[b].y-cy)-Math.hypot(P[a].x-cx,P[a].y-cy)});
-  var best=null,tries=0;
-  for(var q=0;q<idx.length&&!best&&tries<3000;q+=6){[.8,1.2,1.8].forEach(function(sp){[60,40].forEach(function(gp){if(best)return;tries++;
-    var O0=K.openKnot(P,idx[q],tail.gap||gp,tail.len||170,sp),C=K.resample(O0,7);
-    if(K.crossings(C,false).length===want&&Math.hypot(C[0].x-C[C.length-1].x,C[0].y-C[C.length-1].y)>70&&C.every(function(p){return p.x>4&&p.x<796&&p.y>4&&p.y<446})){var F=K.resample(O0,2.2);if(K.crossings(F,false).length===want)best=F}})})}
-  if(!best)best=K.resample(K.openKnot(P,idx[0],26,170,.5),2.2);
-  return best;
+  tail=tail||{};var P=kind==='huit'?G.huitOpen(1.5):G.overhandOpen(1.5);
+  return K.resample(K.fit(P,tail.box||{x:230,y:28,w:340,h:400}),2.2);
 }
 var TR=window.KnotTresse?window.KnotTresse():null,SG=window.KnotSangle?window.KnotSangle():null;
 window.KNOTS={
-  overhand:{title:'Nœud d’arrêt simple',kind:'overhand',fiche:[{t:'Départ : le brin dormant',d:'La corde part du brin dormant ; la pastille rose suit le bout libre.',p0:0.03},{t:'Boucle',d:'Former une boucle avec le bout libre, en laissant une queue suffisante.',ev:0},{t:'Passer',d:'Passer le bout dans la boucle.',ev:2},{t:'Serrer et contrôler',d:'Tirer sur le bout et sur le brin dormant pour former un nœud compact. Bout libre d’au moins une dizaine de centimètres (repère courant).',end:1,w:'Il arrête le bout de la corde : il n’amarre pas.'}],intro:'<strong>Usage :</strong> arrêter le bout d’une corde pour qu’il ne sorte pas d’un descendeur, d’un connecteur ou d’un anneau.',fin:'Le nœud est formé : une boucle dans laquelle le bout est passé.',tail:{box:{x:240,y:130,w:320,h:270},len:110},steps:[]},
+  overhand:{title:'Nœud d’arrêt simple',kind:'overhand',fiche:[{t:'Départ : le brin dormant',d:'La corde part du brin dormant ; la pastille rose suit le bout libre.',p0:0.03},{t:'Boucle',d:'Former une boucle avec le bout libre, le bout passant par-dessus le brin dormant, en laissant une queue suffisante.',ev:0},{t:'Passer',d:'Passer le bout dans la boucle.',ev:2},{t:'Serrer et contrôler',d:'Tirer sur le bout et sur le brin dormant pour former un nœud compact. Bout libre d’au moins une dizaine de centimètres (repère courant).',end:1,w:'Il arrête le bout de la corde : il n’amarre pas.'}],intro:'<strong>Usage :</strong> arrêter le bout d’une corde pour qu’il ne sorte pas d’un descendeur, d’un connecteur ou d’un anneau.',fin:'Le nœud est formé : une boucle dans laquelle le bout est passé.',tail:{box:{x:250,y:40,w:330,h:380}},steps:[]},
   tresse:TR?{title:'Nœud en huit tressé sur un anneau',custom:TR,occluder:ringOcc(TR.ring,57,26),steps:TR?[
-{t:'Départ : le brin dormant',d:'La corde part du brin dormant. Suivre la pastille rose : elle montre le bout de la corde qui avance.',p:0.02},
+{t:'Départ : le brin dormant',d:'La corde part du brin dormant. Suivre la pastille rose : elle montre le bout de la corde qui avance.',p:0.06},
 {t:'Préparer : un huit simple, lâche',d:'Prévoir assez de corde et former un huit simple, lâche, à distance du point de connexion (anneau). Le bout se retrouve devant l’anneau.',p:TR.marks.a},
 {t:'Connecter : passer le bout dans l’anneau',d:'Passer le brin actif dans l’anneau ou le point de connexion prévu, puis revenir vers le huit.',p:TR.marks.b},
 {t:'Suivre le chemin (1/3)',d:'Repasser le brin actif dans le huit, brin contre brin, en suivant exactement le premier passage. Aucun croisement, aucune vrille.',p:TR.marks.b+(TR.marks.c-TR.marks.b)/3},
@@ -27,11 +20,11 @@ window.KNOTS={
 ]:[],intro:'<strong>Usage :</strong> former une boucle solide sur un anneau ou un point de connexion prévu, en suivant en double le chemin d’un huit.'}:null,
   sangle:SG?{title:'Nœud de sangle',custom:SG,flat:true,ropeWidth:28,palette:{dark:'#0b1b3f',mid:'#2153c9',light:'#6c9cf2',hi:'#d4e3ff',acc:'#ec168c'},caps:[SG.iAend],fadeAt:[0,SG.iBst],
     intro:'<strong>Usage :</strong> assembler deux bouts de sangle plate, ou fermer une sangle en boucle, pour un usage non critique, hors dispositif antichute.',
-    steps:[{t:'Départ',d:'La première extrémité de la sangle part d’ici ; la pastille rose suit le bout.',p:.03},
+    steps:[{t:'Départ',d:'La première extrémité de la sangle part d’ici ; la pastille rose suit le bout.',p:.06},
       {t:'Nœud simple',d:'Faire un nœud simple lâche à une extrémité de la sangle, bien à plat.',p:SG.marks.a},
       {t:'Suivre',d:'Avec l’autre extrémité, suivre le même cheminement dans le sens inverse, en gardant la sangle à plat.',p:SG.marks.b},
       {t:'Serrer et contrôler',d:'Serrer progressivement en tirant sur les quatre brins, sans vrille. Sangle à plat, queues d’au moins une dizaine de centimètres.',p:1,w:'Une sangle assemblée par nœud ne sert pas d’ancrage antichute sans validation du fabricant.'}]}:null,
-  huit:{title:'Nœud en huit simple',kind:'huit',fiche:[{t:'Départ : le brin dormant',d:'La corde part du brin dormant ; la pastille rose suit le bout libre.',p0:0.03},{t:'Boucle',d:'Former une boucle avec le bout libre.',ev:0},{t:'Contourner',d:'Passer le bout derrière le brin dormant.',ev:1},{t:'Revenir',d:'Ramener le bout par-devant et le glisser dans la boucle, de l’avant vers l’arrière.',ev:3},{t:'Serrer',d:'Tirer les deux brins pour obtenir un 8 régulier, sans croisement parasite, avec un bout libre suffisant.',end:1}],intro:'<strong>Usage :</strong> nœud d’arrêt volumineux, facile à défaire après charge ; première étape du huit tressé.',fin:'Le huit est formé : deux boucles croisées, le bout ressort du côté du brin dormant.',tail:{},steps:[]}
+  huit:{title:'Nœud en huit simple',kind:'huit',fiche:[{t:'Départ : le brin dormant',d:'La corde part du brin dormant ; la pastille rose suit le bout libre.',p0:0.03},{t:'Boucle',d:'Former une boucle avec le bout libre, le bout passant par-dessus le brin dormant.',ev:0},{t:'Contourner',d:'Passer le bout derrière le brin dormant.',ev:1},{t:'Revenir',d:'Ramener le bout par-devant et le glisser dans la boucle, de l’avant vers l’arrière.',ev:3},{t:'Serrer',d:'Tirer les deux brins pour obtenir un 8 régulier, sans croisement parasite, avec un bout libre suffisant.',end:1}],intro:'<strong>Usage :</strong> nœud d’arrêt volumineux, plus facile à défaire que le nœud d’arrêt simple ; première étape du huit tressé.',fin:'Le huit est formé : deux boucles en forme de 8 autour du brin dormant.',tail:{},steps:[]}
 };
 window.buildKnotPoints=build;
 function ph(id,list){return list.map(function(x,i){return{src:'assets/img/noeuds/'+id+'-'+x[0]+'.jpg',cap:x[1]}})}

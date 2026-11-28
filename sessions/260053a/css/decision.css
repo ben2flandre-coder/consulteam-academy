@@ -13,3 +13,8 @@
 .observation-grid td{min-width:110px}.observation-grid input,.observation-grid select,.observation-grid textarea{font:inherit;max-width:100%;width:100%;min-height:40px;border:1px solid #b1c3d2;padding:5px;background:#fff;border-radius:4px}.observation-grid textarea{min-width:200px;min-height:80px}.observation-grid td:first-child{min-width:260px}
 @media(max-width:760px){.decision-split{grid-template-columns:1fr}.decision-case h2{max-width:none}.decision-case,.observation{padding:25px 0}.case-feedback{padding:16px}.decision-split .case-scene{padding-left:15px}}
 @media print{.case-nav,.case-actions,.case-status,.decision-case>button{display:none!important}.decision-case{break-before:page;border-top:0;padding:0}.decision-split{grid-template-columns:1fr 1fr;gap:15px}.decision-case textarea{height:90px;min-height:0;resize:none}.case-feedback{break-inside:avoid}.observation-grid textarea{min-width:0}.review-resource{break-inside:avoid}}
+
+
+/* Valeurs de la grille : lecture complète à l’impression, sans persistance. */
+.print-value{display:none}
+@media print{.print-source{display:none!important}.print-value{display:block;white-space:pre-wrap;overflow-wrap:anywhere;margin:0;min-height:12mm}.observation-grid{table-layout:fixed;font-size:9pt}.observation-grid th:first-child{width:38%}.observation-grid th:nth-child(2){width:12%}.observation-grid th:last-child{width:50%}.observation-grid td{min-width:0}}

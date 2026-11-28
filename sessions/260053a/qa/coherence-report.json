@@ -11,7 +11,23 @@
       "conforme": true
     },
     {
-      "controle": "Version 2.1 indiquée dans le PDF et le HTML",
+      "controle": "Couverture PDF et HTML : édition 2.1",
+      "conforme": true
+    },
+    {
+      "controle": "Colophon PDF et HTML : édition 2.1",
+      "conforme": true
+    },
+    {
+      "controle": "Aucune ancienne édition 2.0 dans le livret courant",
+      "conforme": true
+    },
+    {
+      "controle": "Grille individuelle sans mémorisation inter-participants",
+      "conforme": true
+    },
+    {
+      "controle": "Programme : restriction des exercices pour les mineurs conservée",
       "conforme": true
     },
     {

@@ -1,6 +1,6 @@
 # Version 2.1 — consolidation du 28/11/2026
 
-Pleine largeur à l’écran, menu Pilotage avec reprise de la dernière vue, 15 variantes de schémas pour projection et comparaison géométrique animée. Quinze points du benchmark traités dans les contenus et outils ; six cas avec justification, dossiers d’observation, grille observable, 15 schémas originaux et diaporama de 57 vues statiques + 10 questions. Livret commun HTML/PDF : 32 pages A4 portrait. Voir [matrice](qa/PLAN-2.0.md) et [recette](qa/RECETTE-2.0.md). Les validations matérielles et les visas humains restent distincts de la recette numérique.
+Pleine largeur à l’écran, menu Pilotage avec reprise de la dernière vue, 15 variantes de schémas pour projection et comparaison géométrique animée. Quinze points du benchmark traités dans les contenus et outils ; six cas avec justification, dossiers d’observation, grille observable, 15 schémas originaux et diaporama de 57 vues statiques + 10 questions. Livret commun HTML/PDF : 32 pages A4 portrait. Voir [matrice](qa/PLAN-2.0.md) et [recette finale](qa/RECETTE-2.1.md). Correctifs de clôture : édition du livret harmonisée, prérequis SECU37 complets, grille sans restauration à la visite suivante et valeurs complètes préparées pour l’impression. Les validations matérielles et les visas humains restent distincts de la recette numérique.
 
 # Session 260053a — Travail en hauteur / port du harnais (SECU37)
 
@@ -38,3 +38,4 @@ Version 1.7 du 27/11/2026 (revue critique : nœuds redessinés sous la forme des
 - Les tracés géométriques montrent un parcours ouvert ; les photos de référence ne valident aucun système antichute.
 
 Recette de la version 1.9 : [qa/RECETTE-1.9.md](qa/RECETTE-1.9.md).
+

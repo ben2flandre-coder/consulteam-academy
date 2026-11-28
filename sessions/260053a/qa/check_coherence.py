@@ -13,7 +13,11 @@ results=[]
 def check(label,ok):results.append({'controle':label,'conforme':bool(ok)})
 check('Livret PDF : 32 pages',len(pdf.pages)==32)
 check('Livret HTML : 32 sections paginées',len(re.findall(r'<section[^>]*class="[^"]*page',book))==32)
-check('Version 2.1 indiquée dans le PDF et le HTML','version 2.1' in pdftext.lower() and 'version 2.1' in book.lower())
+check('Couverture PDF et HTML : édition 2.1', 'version 2.1' in pdf.pages[0].extract_text().lower() and 'version 2.1' in book.split('</section>',1)[0].lower())
+check('Colophon PDF et HTML : édition 2.1', norm('version 2.1 du 28 novembre 2026') in norm(pdf.pages[30].extract_text()) and 'version 2.1 du 28 novembre 2026' in book.lower())
+check('Aucune ancienne édition 2.0 dans le livret courant', not re.search(r'version\s+2\.0',pdftext+' '+book,re.I))
+check('Grille individuelle sans mémorisation inter-participants', 'data-save=' not in read('formulaires.html'))
+check('Programme : restriction des exercices pour les mineurs conservée', 'exercices pratiques non accessibles aux mineurs' in read('programme.html').lower())
 check('Pagination PDF n / 32',all(f'{n} / 32' in pdf.pages[n-1].extract_text() for n in range(2,32)))
 check('Dix questions communes',len(questions)==10)
 for i,q in enumerate(questions):
@@ -28,3 +32,4 @@ report={'date':'2026-11-28','edition':'2.1','resultats':results,'limite':'Contr�
 (ROOT/'qa/coherence-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps({'controles':len(results),'echecs':[x['controle'] for x in results if not x['conforme']]},ensure_ascii=True))
 assert all(x['conforme'] for x in results)
+

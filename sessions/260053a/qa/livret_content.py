@@ -154,5 +154,6 @@ page('Crédits et limites des images','Des formes de référence pour observer, 
  p('Les images Wikimedia sont reproduites sans retouche de contenu ; certaines sont des prévisualisations. Les pages sources, fichiers originaux et liens de licence figurent dans les crédits en ligne. Conserver l’attribution, la licence et l’indication des modifications lors d’une réutilisation.'),
  p('Les tracés ouverts du huit et les animations de la plateforme facilitent la lecture du parcours de corde. Ils ne reproduisent ni le geste de nouage ni le serrage et ne valident aucune mise en charge.'),
  link('Crédits détaillés des nœuds','https://ben2flandre-coder.github.io/consulteam-academy/sessions/260053a/credits-noeuds.html'),
- h('Édition et conception'),p('Conception et ingénierie pédagogique : Benoît Deflandre. Consulteam Groupe · session 260053A. Version 2.0 du 28 novembre 2026. Validation Consulteam : en attente.'),
+ h('Édition et conception'),p('Conception et ingénierie pédagogique : Benoît Deflandre. Consulteam Groupe · session 260053A. Version 2.1 du 28 novembre 2026. Validation Consulteam : en attente.'),
  p('Présentation reprise des livrets du dépôt Consulteam Supports : couverture bleu nuit et bandeau ambre, fiches apprenant, zones de notes, plan d’action et pagination continue.'),kicker='Médiathèque et édition')
+

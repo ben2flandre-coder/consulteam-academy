@@ -55,7 +55,11 @@ document.addEventListener('DOMContentLoaded',function(){
     if(r.state==='invalid'){out.textContent='Saisir une hauteur de chute positive ou nulle et une longueur de liaison strictement positive, en mètres.';return}
     out.textContent='Facteur géométrique : '+fr(r.factor)+(r.state==='outside'?' — supérieur à 2 : hors du modèle simple, revoir les données et la configuration.':' — modèle simplifié. Ce rapport ne donne ni la force de choc, ni le tirant d’air, ni une autorisation d’utilisation.');
   };ff.addEventListener('input',factor);factor()}
-  function restorePrint(){document.querySelectorAll('.print-exclude').forEach(function(e){e.classList.remove('print-exclude')})}
+  /* Imprimer la valeur entière des champs, sans la limite visuelle des textarea. */
+  function clearPrintValues(){document.querySelectorAll('.print-value').forEach(function(e){e.remove()});document.querySelectorAll('.print-source').forEach(function(e){e.classList.remove('print-source')});}
+  function preparePrintValues(){clearPrintValues();document.querySelectorAll('#forms textarea,#forms select').forEach(function(el){var v=document.createElement('p');v.className='print-value';v.textContent=el.tagName==='SELECT'?el.options[el.selectedIndex].text:el.value;el.insertAdjacentElement('afterend',v);el.classList.add('print-source');});}
+  function restorePrint(){document.querySelectorAll('.print-exclude').forEach(function(e){e.classList.remove('print-exclude')});clearPrintValues();}
+  window.addEventListener('beforeprint',preparePrintValues);
   window.addEventListener('afterprint',restorePrint);
   document.querySelectorAll('[data-print-section]').forEach(function(b){b.addEventListener('click',function(){restorePrint();var node=b.closest('section');if(!node)return;while(node&&node!==document.body){Array.prototype.forEach.call(node.parentElement.children,function(s){if(s!==node)s.classList.add('print-exclude')});node=node.parentElement}window.print()})});
   /* QCM */
@@ -75,4 +79,5 @@ document.addEventListener('DOMContentLoaded',function(){
   }
 });
 })();
+
 

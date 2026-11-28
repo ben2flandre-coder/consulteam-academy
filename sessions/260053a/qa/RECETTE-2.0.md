@@ -1,5 +1,6 @@
 # Recette 2.0 — session 260053A
 
-État : contrôle en cours, avant publication. Périmètre autorisé le 28/11/2026 : quinze points du benchmark et amélioration graphique du diaporama.
+La consolidation est publiée. La clôture et les résultats vérifiés figurent dans [la recette 2.1](RECETTE-2.1.md), qui couvre les ajouts 2.0 et 2.1, les correctifs finaux et les limites terrain.
 
-Les résultats définitifs, les références de publication et les limites seront consignés après contrôle. Les observations physiques et les visas humains ne sont pas déduits de la recette numérique.
+Le plan initial reste dans [PLAN-2.0.md](PLAN-2.0.md). Les observations physiques et les visas humains ne sont pas déduits de la recette numérique.
+
